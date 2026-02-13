@@ -1,0 +1,28 @@
+name: Daily Economic Analysis
+
+on:
+  schedule:
+    # 한국 시간(KST) 오전 8시는 UTC 기준으로 전날 오후 11시입니다.
+    - cron: '0 23 * * *'
+  workflow_dispatch: # 우리가 직접 실행 버튼을 누를 수 있게 해줍니다.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install feedparser yfinance google-generativeai
+
+      - name: Run script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python insight_engine.py
