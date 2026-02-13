@@ -11,58 +11,55 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 def send_telegram_message(message):
     """텔레그램으로 메시지 전송"""
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
     try:
-        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-        # 텔레그램 메시지 글자수 제한(4096자)을 고려하여 자르기
-        if len(message) > 4000:
-            message = message[:4000] + "..."
-        payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
-        requests.post(url, json=payload)
+        res = requests.post(url, json=payload)
+        print(f"텔레그램 전송 결과: {res.status_code}")
     except Exception as e:
-        print(f"텔레그램 전송 중 오류 발생: {e}")
+        print(f"텔레그램 전송 중 오류: {e}")
 
 def run_analysis():
-    if not GEMINI_API_KEY:
-        print("에러: GEMINI_API_KEY가 설정되지 않았습니다.")
-        return
-
-    genai.configure(api_key=GEMINI_API_KEY)
+    print("시스템 가동...")
     
-    # 가장 안정적인 'gemini-pro' 모델로 고정합니다.
-    model = genai.GenerativeModel('gemini-pro')
-
+    # 1. 뉴스 수집 (주소 변경 및 예비 주소 설정)
     print("뉴스 수집 중...")
-    url = "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNR3lm荤XpUaU1pSklSREl6S0FBU0Fnback?hl=ko&gl=KR&ceid=KR%3Ako"
-    feed = feedparser.parse(url)
+    # 더 안정적인 구글 뉴스 '비즈니스' 섹션 한국어 주소입니다.
+    news_url = "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko"
+    feed = feedparser.parse(news_url)
     
+    # 만약 수집 실패 시 예비 주소로 시도
     if not feed.entries:
-        print("뉴스를 가져오지 못했습니다.")
-        return
-        
-    news_text = "\n".join([f"- {entry.title}" for entry in feed.entries[:10]])
+        print("기본 뉴스 수집 실패, 예비 주소로 시도합니다.")
+        news_url = "https://www.yonhapnewstv.co.kr/browse/feed/" # 연합뉴스TV RSS
+        feed = feedparser.parse(news_url)
 
+    if not feed.entries:
+        print("모든 뉴스 수집 실패. 실행을 중단합니다.")
+        return
+
+    # 상위 10개 추출
+    news_text = "\n".join([f"- {entry.title}" for entry in feed.entries[:10]])
+    print(f"수집된 뉴스 개수: {len(feed.entries[:10])}개")
+
+    # 2. Gemini 분석
     print("Gemini 분석 중...")
-    prompt = f"""
-    당신은 경제 전문가입니다. 다음 뉴스를 요약하고 유망 종목 3개를 추천하세요:
+    genai.configure(api_key=GEMINI_API_KEY)
+    model = genai.GenerativeModel('gemini-pro')
     
-    {news_text}
-    
-    반드시 다음 형식을 지켜주세요:
-    1. 오늘의 뉴스 요약
-    2. 추천 종목 3가지 (종목명/티커/이유)
-    """
+    prompt = f"당신은 경제 전문가입니다. 다음 뉴스들을 요약하고 주가 상승이 기대되는 종목 3가지를 추천하세요:\n{news_text}"
     
     try:
         response = model.generate_content(prompt)
         report_content = response.text
     except Exception as e:
-        report_content = f"AI 분석 중 오류가 발생했습니다: {e}"
-    
+        print(f"AI 분석 중 오류: {e}")
+        return
+
+    # 3. 결과 전송
     report = f"📅 *{datetime.now().strftime('%Y-%m-%d')} 경제 리포트*\n\n{report_content}"
-    
-    print(report)
     send_telegram_message(report)
-    print("작업 완료!")
+    print("전체 공정 완료!")
 
 if __name__ == "__main__":
     run_analysis()
