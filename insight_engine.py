@@ -1,56 +1,38 @@
 import os
 import feedparser
-import yfinance as yf
 import google.generativeai as genai
+import requests  # 텔레그램 전송을 위해 추가
 from datetime import datetime
 
-# GitHub Secrets에서 키 가져오기
+# 설정값 가져오기
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+def send_telegram_message(message):
+    """텔레그램으로 메시지 전송"""
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
+    requests.post(url, json=payload)
 
 def run_analysis():
-    if not GEMINI_API_KEY:
-        print("에러: GEMINI_API_KEY를 찾을 수 없습니다.")
-        return
-
     genai.configure(api_key=GEMINI_API_KEY)
-    
-    # 모델명을 가장 안정적인 것으로 변경했습니다.
-    try:
-        model = genai.GenerativeModel('gemini-1.5-flash-latest') 
-        # 만약 위 이름도 안되면 'gemini-pro'로 바꿔보세요.
-    except:
-        model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
-    # 1. 뉴스 수집
-    print("뉴스 수집 중...")
+    print("뉴스 수집 및 분석 중...")
     url = "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNR3lm荤XpUaU1pSklSREl6S0FBU0Fnback?hl=ko&gl=KR&ceid=KR%3Ako"
     feed = feedparser.parse(url)
-    
-    if not feed.entries:
-        print("뉴스를 가져오지 못했습니다.")
-        return
-        
     news_text = "\n".join([f"- {entry.title}" for entry in feed.entries[:10]])
 
-    # 2. Gemini 분석
-    print("Gemini 분석 중...")
-    prompt = f"""
-    당신은 글로벌 투자 전략가입니다. 다음 뉴스를 보고 보고서를 작성하세요.
-    
-    [오늘의 뉴스]:
-    {news_text}
-    
-    [작성 지침]:
-    1. 10대 뉴스 핵심 요약 (전문가적 시점)
-    2. 주가 상승이 기대되는 종목 3가지 (한국/미국 포함, 티커 명시)
-    3. 각 종목별 상승 예측 근거와 예상 등락폭
-    """
-    
+    prompt = f"당신은 경제 전문가입니다. 다음 뉴스를 요약하고 유망 종목 3개를 추천하세요:\n{news_text}"
     response = model.generate_content(prompt)
     
-    # 3. 결과 출력
-    print(f"\n=== {datetime.now().strftime('%Y-%m-%d')} 리포트 ===\n")
-    print(response.text)
+    report = f"📅 *{datetime.now().strftime('%Y-%m-%d')} 경제 리포트*\n\n{response.text}"
+    
+    # 콘솔 출력 및 텔레그램 전송
+    print(report)
+    send_telegram_message(report)
+    print("텔레그램 전송 완료!")
 
 if __name__ == "__main__":
     run_analysis()
