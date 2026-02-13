@@ -2,9 +2,8 @@ name: Daily Economic Analysis
 
 on:
   schedule:
-    # 한국 시간(KST) 오전 8시는 UTC 기준으로 전날 오후 11시입니다.
     - cron: '0 23 * * *'
-  workflow_dispatch: # 우리가 직접 실행 버튼을 누를 수 있게 해줍니다.
+  workflow_dispatch:
 
 jobs:
   build:
