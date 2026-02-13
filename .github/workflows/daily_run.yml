@@ -2,8 +2,9 @@ name: Daily Economic Analysis
 
 on:
   schedule:
+    # 한국 시간(KST) 오전 8시는 UTC 기준으로 전날 오후 11시(23:00)입니다.
     - cron: '0 23 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # 수동 실행 버튼 활성화
 
 jobs:
   build:
@@ -19,9 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install feedparser yfinance google-generativeai
+          pip install feedparser yfinance google-generativeai requests
 
       - name: Run script
         env:
+          # GitHub Secrets에 저장한 키들을 파이썬 코드로 전달합니다.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python insight_engine.py
