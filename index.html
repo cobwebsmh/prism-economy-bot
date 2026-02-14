@@ -14,106 +14,86 @@
 </head>
 <body class="p-4 pb-10">
     <header class="mb-6">
-        <h1 class="text-2xl font-bold italic tracking-tight">PRISM <span class="text-teal-400">INSIGHT</span></h1>
-        <p id="update-date" class="text-xs text-slate-500 mt-1">데이터 업데이트 중...</p>
+        <h1 class="text-2xl font-bold italic tracking-tight uppercase">Prism <span class="text-teal-400">Insight</span></h1>
+        <p id="update-date" class="text-[10px] text-slate-500 mt-1">CONNECTING DATA...</p>
     </header>
 
     <div class="card">
-        <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Global Market</h2>
-        <div class="grid grid-cols-2 gap-4">
-            <div class="bg-slate-800/50 p-3 rounded-lg text-center">
-                <p class="text-xs text-slate-400">NASDAQ</p>
-                <p class="text-lg font-bold accent-green">▲ 1.12%</p>
+        <h2 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Global Market Overview</h2>
+        <div id="index-grid" class="grid grid-cols-2 gap-3">
             </div>
-            <div class="bg-slate-800/50 p-3 rounded-lg text-center">
-                <p class="text-xs text-slate-400">S&P 500</p>
-                <p class="text-lg font-bold accent-red">▼ 0.24%</p>
-            </div>
-        </div>
     </div>
 
-    <div class="card bg-gradient-to-br from-slate-800 to-slate-900 border-none shadow-xl">
-        <h2 class="text-xs font-semibold text-teal-400 uppercase mb-2">Today's Focus</h2>
-        <p id="summary" class="text-sm leading-relaxed text-slate-200">리포트를 분석하고 있습니다...</p>
+    <div class="card bg-gradient-to-br from-slate-800 to-indigo-950 border-none shadow-2xl">
+        <h2 class="text-[10px] font-bold text-teal-400 uppercase mb-2">Today's Focus</h2>
+        <p id="summary" class="text-sm leading-relaxed text-slate-200 font-medium">분석 데이터를 불러오는 중입니다...</p>
     </div>
 
     <div class="card border-l-4 border-amber-500">
-        <h2 class="text-xs font-bold text-amber-500 uppercase mb-3">🔥 Top Picks</h2>
-        <div id="top-picks" class="space-y-4"></div>
-    </div>
-
-    <div class="card border-l-4 border-blue-500">
-        <h2 class="text-xs font-bold text-blue-500 uppercase mb-3">🎯 Accuracy & History</h2>
-        <div id="accuracy-stats" class="grid grid-cols-2 gap-2 text-center">
-            <div class="border-r border-slate-700">
-                <p class="text-[10px] text-slate-400">어제 적중률</p>
-                <p class="text-lg font-bold accent-green">67%</p>
-            </div>
-            <div>
-                <p class="text-[10px] text-slate-400">누적 정합성</p>
-                <p class="text-lg font-bold">78.5%</p>
-            </div>
-        </div>
+        <h2 class="text-[10px] font-bold text-amber-500 uppercase mb-3">🔥 AI Top Picks</h2>
+        <div id="top-picks" class="space-y-3"></div>
     </div>
 
     <div class="card">
-        <h2 class="text-xs font-semibold text-slate-400 uppercase mb-3">📰 영향력 큰 뉴스</h2>
-        <ul id="news-list" class="text-sm space-y-3 text-slate-300">
-            </ul>
+        <h2 class="text-[10px] font-bold text-slate-400 uppercase mb-3">📰 Breaking News (Mixed)</h2>
+        <ul id="news-list" class="text-[13px] space-y-3 text-slate-300"></ul>
     </div>
 
     <script>
-    async function loadData() {
-        try {
-            // 1. 이 부분을 본인의 GitHub 정보로 수정하세요!
-            // 예: https://prism.github.io/prism-economy-bot/recommendations.json
-            // 주소 끝에 ?v=... 는 캐시 방지를 위해 꼭 유지하세요.
-            const GITHUB_ID = "cobwebsmh"; // 예: prism
-            const REPO_NAME = "prism-economy-bot"; // 예: prism-economy-bot
-            const url = `https://${GITHUB_ID}.github.io/${REPO_NAME}/recommendations.json?v=${Math.random()}`;
-            
-            const response = await fetch(url);
-            
-            if (!response.ok) throw new Error('네트워크 응답 에러');
-            
-            const data = await response.json();
-            console.log("데이터 로드 성공:", data); // 확인용 로그
+        async function loadData() {
+            try {
+                // 본인의 GitHub 정보로 주소를 수정하세요!
+                const url = `https://프리즘ID.github.io/저장소명/recommendations.json?v=${Math.random()}`;
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                document.getElementById('update-date').innerText = `LAST UPDATE: ${data.date}`;
 
-            // ... 나머지 렌더링 코드는 동일 ...
-            document.getElementById('update-date').innerText = `마지막 업데이트: ${data.date}`;
+                // 지수 렌더링
+                const indexGrid = document.getElementById('index-grid');
+                indexGrid.innerHTML = '';
+                data.indices.forEach(item => {
+                    const statusColor = item.is_open ? 'bg-green-500' : 'bg-slate-600';
+                    const changeColor = item.change >= 0 ? 'accent-green' : 'accent-red';
+                    const sign = item.change >= 0 ? '▲' : '▼';
+                    const div = document.createElement('div');
+                    div.className = "bg-slate-800/40 p-3 rounded-xl border border-slate-700/50 relative overflow-hidden";
+                    div.innerHTML = `
+                        <div class="absolute top-1 right-1 w-1.5 h-1.5 rounded-full ${statusColor}"></div>
+                        <p class="text-[10px] text-slate-500 font-bold mb-1">${item.name}</p>
+                        <p class="text-sm font-black ${changeColor}">${sign} ${Math.abs(item.change)}%</p>
+                    `;
+                    indexGrid.appendChild(div);
+                });
 
-            // 종목 렌더링
-            const pickContainer = document.getElementById('top-picks');
-            pickContainer.innerHTML = '';
-            data.tickers.forEach((ticker, index) => {
-                const div = document.createElement('div');
-                div.className = "flex justify-between items-center bg-slate-800/30 p-2 rounded-md";
-                div.innerHTML = `
-                    <span class="text-slate-400 font-mono text-xs">0${index+1}</span>
-                    <span class="font-bold text-slate-100">${ticker}</span>
-                    <span class="text-[10px] px-2 py-1 bg-teal-500/20 text-teal-400 rounded">상승 예측</span>
-                `;
-                pickContainer.appendChild(div);
-            });
+                // 종목 렌더링
+                const pickContainer = document.getElementById('top-picks');
+                pickContainer.innerHTML = '';
+                data.tickers.forEach((ticker, index) => {
+                    const div = document.createElement('div');
+                    div.className = "flex justify-between items-center bg-slate-900/50 p-3 rounded-lg border border-slate-800";
+                    div.innerHTML = `<span class="text-slate-500 font-mono text-xs">#0${index+1}</span>
+                                     <span class="font-bold text-slate-100">${ticker}</span>
+                                     <span class="text-[9px] font-bold px-2 py-1 bg-amber-500/10 text-amber-500 rounded">STRONG BUY</span>`;
+                    pickContainer.appendChild(div);
+                });
 
-            // 요약 및 뉴스 연동
-            document.getElementById('summary').innerText = data.summary || "분석 리포트가 준비되었습니다.";
+                document.getElementById('summary').innerText = data.summary;
 
-            const newsContainer = document.getElementById('news-list');
-            newsContainer.innerHTML = '';
-            if (data.news_list && data.news_list.length > 0) {
-                data.news_list.forEach((news) => {
+                // 뉴스 렌더링
+                const newsContainer = document.getElementById('news-list');
+                newsContainer.innerHTML = '';
+                data.news_list.forEach(news => {
                     const li = document.createElement('li');
-                    li.className = "border-b border-slate-800 pb-2 last:border-0";
-                    li.innerHTML = `<span class="text-teal-400 mr-2">•</span>${news}`;
+                    li.className = "border-b border-slate-800/50 pb-2 last:border-0";
+                    li.innerHTML = `<span class="text-teal-500 font-bold mr-1">·</span>${news}`;
                     newsContainer.appendChild(li);
                 });
+            } catch (e) {
+                document.getElementById('summary').innerText = "데이터 로딩 실패. 잠시 후 다시 시도해주세요.";
             }
-
-        } catch (e) {
-            console.error("데이터 로드 실패:", e);
-            document.getElementById('summary').innerText = "데이터 주소를 확인해주세요: " + e.message;
         }
-    }
-    loadData();
-</script>
+        loadData();
+    </script>
+</body>
+</html>
