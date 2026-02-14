@@ -10,7 +10,6 @@
         .card { background-color: #1e293b; border-radius: 1.2rem; padding: 1.25rem; margin-bottom: 1rem; border: 1px solid #334155; }
         .accent-red { color: #f87171; }
         .accent-green { color: #4ade80; }
-        .gradient-border { border-left: 4px solid; border-image: linear-gradient(to bottom, #3b82f6, #2dd4bf) 1; }
     </style>
 </head>
 <body class="p-4 pb-10">
@@ -35,15 +34,12 @@
 
     <div class="card bg-gradient-to-br from-slate-800 to-slate-900 border-none shadow-xl">
         <h2 class="text-xs font-semibold text-teal-400 uppercase mb-2">Today's Focus</h2>
-        <p id="summary" class="text-sm leading-relaxed text-slate-200">
-            리포트를 분석하고 있습니다. 잠시만 기다려주세요...
-        </p>
+        <p id="summary" class="text-sm leading-relaxed text-slate-200">리포트를 분석하고 있습니다...</p>
     </div>
 
     <div class="card border-l-4 border-amber-500">
         <h2 class="text-xs font-bold text-amber-500 uppercase mb-3">🔥 Top Picks</h2>
-        <div id="top-picks" class="space-y-4">
-            </div>
+        <div id="top-picks" class="space-y-4"></div>
     </div>
 
     <div class="card border-l-4 border-blue-500">
@@ -60,62 +56,25 @@
         </div>
     </div>
 
+    <div class="card">
+        <h2 class="text-xs font-semibold text-slate-400 uppercase mb-3">📰 영향력 큰 뉴스</h2>
+        <ul id="news-list" class="text-sm space-y-3 text-slate-300">
+            </ul>
+    </div>
+
     <script>
         async function loadData() {
             try {
-                // 1. JSON 데이터 가져오기 (GitHub에 저장된 파일)
-                // 브라우저 캐시 방지를 위해 랜덤 쿼리 추가
                 const response = await fetch('recommendations.json?v=' + Math.random());
                 const data = await response.json();
                 
-                // 날짜 업데이트
                 document.getElementById('update-date').innerText = `마지막 업데이트: ${data.date}`;
 
-                // 2. 종목 리스트 렌더링
+                // 2. 종목 렌더링
                 const pickContainer = document.getElementById('top-picks');
-                pickContainer.innerHTML = ''; // 초기화
-                
+                pickContainer.innerHTML = '';
                 data.tickers.forEach((ticker, index) => {
                     const div = document.createElement('div');
                     div.className = "flex justify-between items-center bg-slate-800/30 p-2 rounded-md";
                     div.innerHTML = `
-                        <span class="text-slate-400 font-mono text-xs">0${index+1}</span>
-                        <span class="font-bold text-slate-100">${ticker}</span>
-                        <span class="text-[10px] px-2 py-1 bg-teal-500/20 text-teal-400 rounded">상승 예측</span>
-                    `;
-                    pickContainer.appendChild(div);
-                });
-
-                // 3. 요약 (데이터 형식을 고려하여 유연하게 처리)
-                document.getElementById('summary').innerText = "오늘의 핵심은 주요 기술주의 실적 발표와 연준 위원들의 발언에 따른 변동성 장세입니다.";
-                // ... (loadData 함수 내부 기존 코드 뒤에 추가)
-
-                // 4. 뉴스 리스트 렌더링
-                const newsContainer = document.getElementById('news-list');
-                newsContainer.innerHTML = ''; // 초기화
-            
-                if (data.news_list && data.news_list.length > 0) {
-                    data.news_list.forEach((news) => {
-                        const li = document.createElement('li');
-                        li.className = "border-b border-slate-800 pb-2 last:border-0";
-                        li.innerHTML = `<span class="text-teal-500 mr-2">•</span>${news}`;
-                        newsContainer.appendChild(li);
-                    });
-                } else {
-                    newsContainer.innerHTML = '<li>뉴스를 불러올 수 없습니다.</li>';
-                }
-
-                // 5. 요약 텍스트 연동
-                if (data.summary) {
-                    document.getElementById('summary').innerText = data.summary;
-                }
-
-            } catch (e) {
-                console.error("데이터 로드 실패:", e);
-                document.getElementById('summary').innerText = "아직 생성된 리포트 데이터가 없습니다. 내일 아침 첫 분석 후 자동으로 업데이트됩니다!";
-            }
-        }
-        loadData();
-    </script>
-</body>
-</html>
+                        <span class="text-slate-40
