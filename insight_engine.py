@@ -66,7 +66,22 @@ def run_analysis():
     # Gemini 분석
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel(MODEL_NAME)
-    prompt = f"당신은 헤지펀드 전략가입니다. 아래 뉴스를 기반으로 시장 요약과 상승 예상 종목 3개를 뽑아주세요.\n[데이터]: {news_text}\n[규칙]: 1. '핵심 분석:' 섹션 필수. 2. 마지막에 TICKERS: [\"T1\", \"T2\", \"T3\"] 형식 필수."
+    prompt = f"""
+    당신은 글로벌 헤지펀드 전략가입니다. 아래 제공된 [데이터]는 한국과 미국의 주요 경제 뉴스입니다.
+    
+    [데이터]:
+    {news_text}
+
+    [작성 규칙]:
+    1. '핵심 분석:' 섹션에 오늘 시장의 핵심 흐름을 한 문장으로 요약할 것.
+    2. 상승 기대 종목 3개를 추천할 것. 
+       - **중요**: 뉴스 내용을 바탕으로 한국 시장(KOSPI/KOSDAQ)과 미국 시장(NYSE/NASDAQ) 종목을 적절히 섞어서 추천하세요.
+       - 예: 1. 삼성전자(005930), 2. NVIDIA(NVDA)...
+    3. 반드시 마지막 줄에 다음 형식을 포함하세요: TICKERS: ["티커1", "티커2", "티커3"]
+       - 한국 종목은 6자리 숫자로, 미국 종목은 심볼로 작성하세요.
+
+    한국어로 명확하고 간결하게 작성하세요.
+    """
     
     try:
         response = model.generate_content(prompt)
