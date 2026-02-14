@@ -81,30 +81,26 @@ def run_analysis():
 
     한국어로 명확하고 간결하게 작성하세요.
     """
-    
+
+    # 4. 티커 추출 및 뉴스 데이터와 함께 저장
     try:
-        response = model.generate_content(prompt)
-        full_text = response.text
-        
-        # 티커 추출 로직 (더 유연하게)
-        tickers = []
-        match = re.search(r'TICKERS:\s*(\[.*?\])', full_text)
+        import re
+        match = re.search(r'TICKERS:\s*(\[.*?\])', response.text)
         if match:
             tickers = json.loads(match.group(1))
-            # 파일 저장
-            with open(REC_FILE, 'w') as f:
-                json.dump({'date': datetime.now().strftime('%Y-%m-%d'), 'tickers': tickers}, f)
-            # 리포트에서 데이터용 문자열은 가독성을 위해 제거
-            clean_text = full_text.replace(match.group(0), "").strip()
-        else:
-            clean_text = full_text
-
-        final_msg = f"📅 *{datetime.now().strftime('%Y-%m-%d')} 리포트*\n\n{accuracy_report}\n{clean_text}"
-        send_telegram_message(final_msg)
-        print("전송 완료")
-        
+            
+            # 대시보드용 데이터 구조 생성
+            dashboard_data = {
+                'date': datetime.now().strftime('%Y-%m-%d'),
+                'tickers': tickers,
+                'summary': response.text.split("주요 시장 트렌드 분석:")[0].replace("##", "").strip(), # 요약 부분만 추출
+                'news_list': news_combined[:10] # 수집했던 뉴스 10개 포함
+            }
+            
+            with open(REC_FILE, 'w', encoding='utf-8') as f:
+                json.dump(dashboard_data, f, ensure_ascii=False, indent=4)
     except Exception as e:
-        print(f"오류 발생: {e}")
+        print(f"데이터 저장 실패: {e}")
 
 if __name__ == "__main__":
     run_analysis()
