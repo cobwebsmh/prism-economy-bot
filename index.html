@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism Insight Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        .card { background-color: #1e293b; border-radius: 1rem; padding: 1.25rem; margin-bottom: 1rem; border: 1px solid #334155; }
+        .accent-red { color: #f87171; }
+        .accent-green { color: #4ade80; }
+    </style>
+</head>
+<body class="p-4">
+    <div id="market-status" class="card">
+        <h2 class="text-sm text-slate-400 mb-2">실시간 주요 지수</h2>
+        <div class="flex justify-between items-center">
+            <div><span class="text-lg font-bold">나스닥</span> <span id="nasdaq-val" class="accent-green">+1.2%</span></div>
+            <div><span class="text-lg font-bold">S&P500</span> <span id="snp-val" class="accent-red">-0.3%</span></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="text-sm text-slate-400 mb-2">AI 핵심 요약</h2>
+        <p id="summary" class="text-base leading-relaxed text-slate-200">데이터를 불러오는 중입니다...</p>
+    </div>
+
+    <div class="card border-l-4 border-yellow-500">
+        <h2 class="text-sm text-yellow-500 font-bold mb-3">🔥 오늘 상승 예측 TOP 3</h2>
+        <div id="top-picks" class="space-y-2">
+            </div>
+    </div>
+
+    <div class="card border-l-4 border-blue-500">
+        <h2 class="text-sm text-blue-500 font-bold mb-3">🎯 예측 성적표 & 누적 데이터</h2>
+        <div id="accuracy-stats" class="text-sm space-y-1">
+            <p>어제 적중률: <span class="font-bold accent-green">67%</span></p>
+            <p>누적 정합성: <span class="font-bold">78.5%</span></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="text-sm text-slate-400 mb-3">📰 영향력 큰 뉴스 (TOP 10)</h2>
+        <ul id="news-list" class="text-sm space-y-3 text-slate-300">
+            </ul>
+    </div>
+
+    <script>
+        // GitHub의 raw 데이터를 읽어오는 로직 (프리즘님의 GitHub 주소에 맞게 설정 필요)
+        async function loadData() {
+            try {
+                // 저장소의 recommendations.json 파일을 읽어옵니다.
+                // 실제 배포 시 프리즘님의 github ID로 주소를 수정해야 합니다.
+                const response = await fetch('recommendations.json');
+                const data = await response.json();
+                
+                // 화면 업데이트 로직이 여기에 들어갑니다.
+                document.getElementById('summary').innerText = "Gemini가 분석한 시장의 핵심은 '기술주 반등과 금리 동결 기대감'입니다.";
+                // ... 추가 데이터 매핑 ...
+            } catch (e) {
+                console.log("데이터 로드 대기 중...");
+            }
+        }
+        loadData();
+    </script>
+</body>
+</html>
