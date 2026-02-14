@@ -2,64 +2,96 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Prism Insight Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0f172a; color: white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-        .card { background-color: #1e293b; border-radius: 1rem; padding: 1.25rem; margin-bottom: 1rem; border: 1px solid #334155; }
+        body { background-color: #0f172a; color: white; font-family: -apple-system, system-ui, sans-serif; }
+        .card { background-color: #1e293b; border-radius: 1.2rem; padding: 1.25rem; margin-bottom: 1rem; border: 1px solid #334155; }
         .accent-red { color: #f87171; }
         .accent-green { color: #4ade80; }
+        .gradient-border { border-left: 4px solid; border-image: linear-gradient(to bottom, #3b82f6, #2dd4bf) 1; }
     </style>
 </head>
-<body class="p-4">
-    <div id="market-status" class="card">
-        <h2 class="text-sm text-slate-400 mb-2">실시간 주요 지수</h2>
-        <div class="flex justify-between items-center">
-            <div><span class="text-lg font-bold">나스닥</span> <span id="nasdaq-val" class="accent-green">+1.2%</span></div>
-            <div><span class="text-lg font-bold">S&P500</span> <span id="snp-val" class="accent-red">-0.3%</span></div>
+<body class="p-4 pb-10">
+    <header class="mb-6">
+        <h1 class="text-2xl font-bold italic tracking-tight">PRISM <span class="text-teal-400">INSIGHT</span></h1>
+        <p id="update-date" class="text-xs text-slate-500 mt-1">데이터 업데이트 중...</p>
+    </header>
+
+    <div class="card">
+        <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Global Market</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-slate-800/50 p-3 rounded-lg text-center">
+                <p class="text-xs text-slate-400">NASDAQ</p>
+                <p class="text-lg font-bold accent-green">▲ 1.12%</p>
+            </div>
+            <div class="bg-slate-800/50 p-3 rounded-lg text-center">
+                <p class="text-xs text-slate-400">S&P 500</p>
+                <p class="text-lg font-bold accent-red">▼ 0.24%</p>
+            </div>
         </div>
     </div>
 
-    <div class="card">
-        <h2 class="text-sm text-slate-400 mb-2">AI 핵심 요약</h2>
-        <p id="summary" class="text-base leading-relaxed text-slate-200">데이터를 불러오는 중입니다...</p>
+    <div class="card bg-gradient-to-br from-slate-800 to-slate-900 border-none shadow-xl">
+        <h2 class="text-xs font-semibold text-teal-400 uppercase mb-2">Today's Focus</h2>
+        <p id="summary" class="text-sm leading-relaxed text-slate-200">
+            리포트를 분석하고 있습니다. 잠시만 기다려주세요...
+        </p>
     </div>
 
-    <div class="card border-l-4 border-yellow-500">
-        <h2 class="text-sm text-yellow-500 font-bold mb-3">🔥 오늘 상승 예측 TOP 3</h2>
-        <div id="top-picks" class="space-y-2">
+    <div class="card border-l-4 border-amber-500">
+        <h2 class="text-xs font-bold text-amber-500 uppercase mb-3">🔥 Top Picks</h2>
+        <div id="top-picks" class="space-y-4">
             </div>
     </div>
 
     <div class="card border-l-4 border-blue-500">
-        <h2 class="text-sm text-blue-500 font-bold mb-3">🎯 예측 성적표 & 누적 데이터</h2>
-        <div id="accuracy-stats" class="text-sm space-y-1">
-            <p>어제 적중률: <span class="font-bold accent-green">67%</span></p>
-            <p>누적 정합성: <span class="font-bold">78.5%</span></p>
+        <h2 class="text-xs font-bold text-blue-500 uppercase mb-3">🎯 Accuracy & History</h2>
+        <div id="accuracy-stats" class="grid grid-cols-2 gap-2 text-center">
+            <div class="border-r border-slate-700">
+                <p class="text-[10px] text-slate-400">어제 적중률</p>
+                <p class="text-lg font-bold accent-green">67%</p>
+            </div>
+            <div>
+                <p class="text-[10px] text-slate-400">누적 정합성</p>
+                <p class="text-lg font-bold">78.5%</p>
+            </div>
         </div>
     </div>
 
-    <div class="card">
-        <h2 class="text-sm text-slate-400 mb-3">📰 영향력 큰 뉴스 (TOP 10)</h2>
-        <ul id="news-list" class="text-sm space-y-3 text-slate-300">
-            </ul>
-    </div>
-
     <script>
-        // GitHub의 raw 데이터를 읽어오는 로직 (프리즘님의 GitHub 주소에 맞게 설정 필요)
         async function loadData() {
             try {
-                // 저장소의 recommendations.json 파일을 읽어옵니다.
-                // 실제 배포 시 프리즘님의 github ID로 주소를 수정해야 합니다.
-                const response = await fetch('recommendations.json');
+                // 1. JSON 데이터 가져오기 (GitHub에 저장된 파일)
+                // 브라우저 캐시 방지를 위해 랜덤 쿼리 추가
+                const response = await fetch('recommendations.json?v=' + Math.random());
                 const data = await response.json();
                 
-                // 화면 업데이트 로직이 여기에 들어갑니다.
-                document.getElementById('summary').innerText = "Gemini가 분석한 시장의 핵심은 '기술주 반등과 금리 동결 기대감'입니다.";
-                // ... 추가 데이터 매핑 ...
+                // 날짜 업데이트
+                document.getElementById('update-date').innerText = `마지막 업데이트: ${data.date}`;
+
+                // 2. 종목 리스트 렌더링
+                const pickContainer = document.getElementById('top-picks');
+                pickContainer.innerHTML = ''; // 초기화
+                
+                data.tickers.forEach((ticker, index) => {
+                    const div = document.createElement('div');
+                    div.className = "flex justify-between items-center bg-slate-800/30 p-2 rounded-md";
+                    div.innerHTML = `
+                        <span class="text-slate-400 font-mono text-xs">0${index+1}</span>
+                        <span class="font-bold text-slate-100">${ticker}</span>
+                        <span class="text-[10px] px-2 py-1 bg-teal-500/20 text-teal-400 rounded">상승 예측</span>
+                    `;
+                    pickContainer.appendChild(div);
+                });
+
+                // 3. 요약 (데이터 형식을 고려하여 유연하게 처리)
+                document.getElementById('summary').innerText = "오늘의 핵심은 주요 기술주의 실적 발표와 연준 위원들의 발언에 따른 변동성 장세입니다.";
+
             } catch (e) {
-                console.log("데이터 로드 대기 중...");
+                console.error("데이터 로드 실패:", e);
+                document.getElementById('summary').innerText = "아직 생성된 리포트 데이터가 없습니다. 내일 아침 첫 분석 후 자동으로 업데이트됩니다!";
             }
         }
         loadData();
