@@ -2,13 +2,14 @@ name: Daily Economic Analysis
 
 on:
   schedule:
-    # 한국 시간(KST) 오전 8시는 UTC 기준으로 전날 오후 11시(23:00)입니다.
     - cron: '0 23 * * *'
-  workflow_dispatch: # 수동 실행 버튼 활성화
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: # 중요: 쓰기 권한 추가
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -16,16 +17,22 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install feedparser yfinance google-generativeai requests
+        run: pip install feedparser google-generativeai requests yfinance
 
       - name: Run script
         env:
-          # GitHub Secrets에 저장한 키들을 파이썬 코드로 전달합니다.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python insight_engine.py
+
+      - name: Commit and Push changes # 중요: 변경된 JSON 파일을 다시 저장소에 올림
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add recommendations.json
+          git commit -m "Update recommendations" || echo "No changes to commit"
+          git push
