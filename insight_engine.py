@@ -3,108 +3,91 @@ import feedparser
 import google.generativeai as genai
 import requests
 import yfinance as yf
-from datetime import datetime
+import json
+from datetime import datetime, timedelta
 
-# 1. 설정값 가져오기
+# 1. 설정값
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-MODEL_NAME = 'gemini-2.5-flash' 
+MODEL_NAME = 'gemini-2.5-flash'
+REC_FILE = 'recommendations.json'
 
 def send_telegram_message(message):
-    """텔레그램 메시지 전송 (Markdown 지원)"""
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
     try:
         requests.post(url, json=payload)
-    except Exception as e:
-        print(f"텔레그램 전송 오류: {e}")
+    except Exception as e: print(f"전송 오류: {e}")
 
-def get_combined_news():
-    """글로벌 및 국내 핵심 뉴스 수집"""
-    print("글로벌 뉴스 수집 중...")
-    kr_url = "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko"
-    us_url = "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US&ceid=US:en"
+def get_performance_report():
+    """어제 추천했던 종목들의 실제 수익률 검증"""
+    if not os.path.exists(REC_FILE):
+        return "*[정합성 검증]*: 이전 기록이 없습니다.\n\n"
     
-    kr_feed = feedparser.parse(kr_url)
-    us_feed = feedparser.parse(us_url)
-    
-    combined = []
-    # 한국 뉴스 상위 10개, 미국 뉴스 상위 10개 수집
-    for entry in kr_feed.entries[:10]:
-        combined.append(f"[KR] {entry.title}")
-    for entry in us_feed.entries[:10]:
-        combined.append(f"[US] {entry.title}")
-    
-    return "\n".join(combined)
-
-def get_market_performance():
-    """실시간 시장 주요 지표 및 전일 등락 자동 확인"""
-    print("시장 지표 데이터 갱신 중...")
-    # 주요 지수 및 관심 종목 (매일 최신가 반영)
-    tickers = ["^IXIC", "^GSPC", "NVDA", "AAPL", "TSLA"] # 나스닥, S&P500, 엔비디아, 애플, 테슬라
-    perf_report = "*[실시간 전일 대비 시장 현황]*\n"
-    
-    for t in tickers:
-        try:
+    try:
+        with open(REC_FILE, 'r') as f:
+            data = json.load(f)
+        
+        last_date = data.get('date', '알 수 없음')
+        last_recs = data.get('tickers', []) # 예: ["NVDA", "AAPL", "005930.KS"]
+        
+        report = f"🎯 *[{last_date}] 추천 종목 성적표*\n"
+        for t in last_recs:
             stock = yf.Ticker(t)
-            history = stock.history(period="2d")
-            if len(history) >= 2:
-                prev_close = history['Close'].iloc[-2]
-                curr_close = history['Close'].iloc[-1]
-                change = ((curr_close - prev_close) / prev_close) * 100
-                emoji = "📈" if change > 0 else "📉"
-                name = "나스닥" if t=="^IXIC" else "S&P500" if t=="^GSPC" else t
-                perf_report += f"- {name}: {change:+.2f}% {emoji}\n"
-        except:
-            continue
-    return perf_report + "\n"
+            # 어제 종가 대비 오늘 현재가 비교
+            hist = stock.history(period="2d")
+            if len(hist) >= 2:
+                change = ((hist['Close'].iloc[-1] - hist['Close'].iloc[-2]) / hist['Close'].iloc[-2]) * 100
+                emoji = "✅" if change > 0 else "❌"
+                report += f"- {t}: {change:+.2f}% {emoji}\n"
+        return report + "\n"
+    except Exception as e:
+        return f"*[정합성 검증 오류]*: {e}\n\n"
 
 def run_analysis():
-    print("시스템 가동...")
+    print("분석 및 기록 시스템 가동...")
     
-    # 1. 뉴스 및 시장 데이터 준비
-    market_data = get_market_performance()
-    news_text = get_combined_news()
+    # 1. 어제 성적표 생성
+    accuracy_report = get_performance_report()
     
-    if not news_text:
-        print("뉴스 수집 실패")
-        return
+    # 2. 뉴스 수집 (기존 동일)
+    kr_url = "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko"
+    us_url = "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US&ceid=US:en"
+    news_text = "\n".join([e.title for e in feedparser.parse(kr_url).entries[:10] + feedparser.parse(us_url).entries[:10]])
 
-    # 2. Gemini 분석
+    # 3. Gemini 분석 (JSON 출력을 유도하여 티커만 추출)
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel(MODEL_NAME)
     
     prompt = f"""
-    당신은 전 세계 자산 흐름을 꿰뚫어 보는 글로벌 투자 전략가입니다. 
-    아래 뉴스 리스트를 바탕으로 오늘 아침의 핵심 리포트를 작성하세요.
-    
-    [분석 데이터]:
-    {news_text}
-    
-    [리포트 작성 가이드라인]:
-    1. **글로벌 마켓 핵심 요약**: 현재 시장의 흐름을 정확히 3줄로 요약하세요.
-    2. **오늘의 영향력 TOP 10 뉴스**: 뉴스 중 한국과 글로벌 경제에 파급력이 가장 큰 이슈 10개를 선정하여 리스트 형태로 보여주세요.
-    3. **상승 예측 종목 3선**: 수집된 뉴스를 근거로, 오늘 하루 '가장 큰 폭의 상승'이 기대되는 종목 3개를 순위별로 선정하세요. 
-       - 형식: 순위. 종목명(티커) - 기대 등락폭(%) 및 선정 이유
-    
-    반드시 한국어로 작성하고, 가독성을 위해 볼드(**)와 기호를 적절히 사용하세요.
+    당신은 전문 투자 전략가입니다. 아래 뉴스를 분석하여 리포트를 작성하고, 
+    마지막에 오늘 가장 큰 상승이 기대되는 종목 3개의 티커만 JSON 형식으로 한 줄로 적어주세요.
+    예: TICKERS: ["NVDA", "005930.KS", "TSLA"]
+
+    뉴스: {news_text}
     """
     
-    try:
-        response = model.generate_content(prompt)
-        report_content = response.text
-    except Exception as e:
-        print(f"분석 오류: {e}")
-        return
-
-    # 3. 최종 메시지 전송
-    final_report = f"📅 *{datetime.now().strftime('%Y-%m-%d')} 글로벌 경제 인사이트*\n\n"
-    final_report += market_data
-    final_report += report_content
+    response = model.generate_content(prompt)
+    full_text = response.text
     
-    send_telegram_message(final_report)
-    print("전체 공정 완료 및 텔레그램 전송 성공!")
+    # 4. 티커 추출 및 저장
+    try:
+        # 텍스트에서 TICKERS: [...] 부분만 찾아냅니다.
+        import re
+        match = re.search(r'TICKERS:\s*(\[.*?\])', full_text)
+        if match:
+            tickers = json.loads(match.group(1))
+            with open(REC_FILE, 'w') as f:
+                json.dump({'date': datetime.now().strftime('%Y-%m-%d'), 'tickers': tickers}, f)
+            # 리포트 본문에서 JSON 태그 부분 제거
+            full_text = full_text.replace(match.group(0), "").strip()
+    except:
+        print("티커 추출 실패")
+
+    # 5. 전송
+    final_msg = f"📅 *{datetime.now().strftime('%Y-%m-%d')} 글로벌 리포트*\n\n{accuracy_report}{full_text}"
+    send_telegram_message(final_msg)
 
 if __name__ == "__main__":
     run_analysis()
