@@ -63,18 +63,57 @@
     </div>
 
     <script>
-        async function loadData() {
-            try {
-                const response = await fetch('recommendations.json?v=' + Math.random());
-                const data = await response.json();
-                
-                document.getElementById('update-date').innerText = `마지막 업데이트: ${data.date}`;
+    async function loadData() {
+        try {
+            // 1. 이 부분을 본인의 GitHub 정보로 수정하세요!
+            // 예: https://prism.github.io/prism-economy-bot/recommendations.json
+            // 주소 끝에 ?v=... 는 캐시 방지를 위해 꼭 유지하세요.
+            const GITHUB_ID = "cobwebsmh"; // 예: prism
+            const REPO_NAME = "prism-economy-bot"; // 예: prism-economy-bot
+            const url = `https://${GITHUB_ID}.github.io/${REPO_NAME}/recommendations.json?v=${Math.random()}`;
+            
+            const response = await fetch(url);
+            
+            if (!response.ok) throw new Error('네트워크 응답 에러');
+            
+            const data = await response.json();
+            console.log("데이터 로드 성공:", data); // 확인용 로그
 
-                // 2. 종목 렌더링
-                const pickContainer = document.getElementById('top-picks');
-                pickContainer.innerHTML = '';
-                data.tickers.forEach((ticker, index) => {
-                    const div = document.createElement('div');
-                    div.className = "flex justify-between items-center bg-slate-800/30 p-2 rounded-md";
-                    div.innerHTML = `
-                        <span class="text-slate-40
+            // ... 나머지 렌더링 코드는 동일 ...
+            document.getElementById('update-date').innerText = `마지막 업데이트: ${data.date}`;
+
+            // 종목 렌더링
+            const pickContainer = document.getElementById('top-picks');
+            pickContainer.innerHTML = '';
+            data.tickers.forEach((ticker, index) => {
+                const div = document.createElement('div');
+                div.className = "flex justify-between items-center bg-slate-800/30 p-2 rounded-md";
+                div.innerHTML = `
+                    <span class="text-slate-400 font-mono text-xs">0${index+1}</span>
+                    <span class="font-bold text-slate-100">${ticker}</span>
+                    <span class="text-[10px] px-2 py-1 bg-teal-500/20 text-teal-400 rounded">상승 예측</span>
+                `;
+                pickContainer.appendChild(div);
+            });
+
+            // 요약 및 뉴스 연동
+            document.getElementById('summary').innerText = data.summary || "분석 리포트가 준비되었습니다.";
+
+            const newsContainer = document.getElementById('news-list');
+            newsContainer.innerHTML = '';
+            if (data.news_list && data.news_list.length > 0) {
+                data.news_list.forEach((news) => {
+                    const li = document.createElement('li');
+                    li.className = "border-b border-slate-800 pb-2 last:border-0";
+                    li.innerHTML = `<span class="text-teal-400 mr-2">•</span>${news}`;
+                    newsContainer.appendChild(li);
+                });
+            }
+
+        } catch (e) {
+            console.error("데이터 로드 실패:", e);
+            document.getElementById('summary').innerText = "데이터 주소를 확인해주세요: " + e.message;
+        }
+    }
+    loadData();
+</script>
