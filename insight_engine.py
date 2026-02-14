@@ -92,7 +92,7 @@ def run_analysis():
 
     # 3. 모델 자동 전환 (Fallback) 로직
     genai.configure(api_key=GEMINI_API_KEY)
-    model_candidates = ['gemini-2.0-flash', 'gemini-1.5-flash']
+    model_candidates = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-8b']
     full_text = ""
     
     for model_name in model_candidates:
