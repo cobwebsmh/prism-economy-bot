@@ -26,7 +26,7 @@ def get_market_indices():
     """세계 주요 지수 및 거래 상태 수집"""
     indices = {
         "S&P 500": "^GSPC", "나스닥": "^IXIC", "코스피": "^KS11",
-        "상해종합": "000001.SS", "닛케이225": "^N225", "유로스톡스50": "^FEZ"
+        "상해종합": "000001.SS", "닛케이225": "^N225", "유로스톡스": "^STOXX50E"  # ^FEZ 대신 수정
     }
     market_data = []
     for name, ticker in indices.items():
