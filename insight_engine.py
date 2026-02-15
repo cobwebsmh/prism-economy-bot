@@ -4,7 +4,7 @@ import requests
 import yfinance as yf
 import json
 import re
-from datetime import datetimeㅁ
+from datetime import datetime
 import pytz
 
 # 라이브러리 임포트
