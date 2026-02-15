@@ -4,7 +4,7 @@ import requests
 import yfinance as yf
 import json
 import re
-from datetime import datetime
+from datetime import datetimeㅁ
 import pytz
 
 # 라이브러리 임포트
@@ -92,20 +92,21 @@ def run_analysis():
         # 요약 부분 추출 (첫 번째 줄 또는 '요약:' 뒤의 텍스트)
         summary_match = re.search(r'요약:\s*(.*)', full_text)
         summary = summary_match.group(1).strip() if summary_match else full_text.split('\n')[0][:50]
-
-        # 5. 데이터 저장 (Dashboard용)
+        
+        # 4. 데이터 저장 (기본값 설정으로 에러 방지)
         dashboard_data = {
             'date': datetime.now(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M'),
-            'indices': market_indices,
-            'tickers': tickers,
-            'summary': summary,
-            'news_list': mixed_news[:5]
+            'indices': market_indices if market_indices else [], # 비어있어도 리스트 유지
+            'tickers': tickers if tickers else [],
+            'summary': summary if summary else "분석 결과 요약 중입니다.",
+            'news_list': mixed_news[:5] if mixed_news else []
         }
         
+        # 파일 저장 (이 위치가 중요합니다!)
         with open(REC_FILE, 'w', encoding='utf-8') as f:
             json.dump(dashboard_data, f, ensure_ascii=False, indent=4)
-        print("💾 Dashboard 데이터 저장 완료")
-        
+        print(f"💾 Dashboard 데이터 저장 완료: {REC_FILE}")
+   
         # 6. 전송
         report_msg = f"📅 *프리즘 마켓 인사이트 ({dashboard_data['date']})*\n\n{full_text}"
         send_telegram_message(report_msg)
