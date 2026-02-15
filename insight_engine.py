@@ -100,11 +100,11 @@ def run_analysis():
         'models/gemini-1.5-flash-8b'
     ]
     full_text = ""
-    
+
     for model_name in model_candidates:
         try:
             print(f"[{model_name}] 분석 시도 중...")
-            model = genai.GenerativeModel(model_name)
+            model = genai.GenerativeModel(model_name) # 여기서 리스트의 models/ 명칭을 그대로 사용
             response = model.generate_content(prompt)
             full_text = response.text
             print(f"✅ [{model_name}] 분석 성공!")
@@ -112,7 +112,7 @@ def run_analysis():
         except Exception as e:
             print(f"⚠️ [{model_name}] 실패: {e}")
             continue
-
+  
     if not full_text:
         print("❌ 모든 AI 모델 호출에 실패했습니다.")
         return
