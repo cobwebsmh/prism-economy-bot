@@ -5,113 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prism Insight Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#3B82F6">
     <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js');
-      }
+        if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
     </script>
+    <style>
+        body { background-color: #0f172a; color: white; font-family: 'Inter', sans-serif; }
+        .card { background: #1e293b; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    </style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen p-5">
-    <div class="max-w-4xl mx-auto">
-        <header class="mb-10 text-center">
-            <h1 class="text-4xl font-bold text-blue-400 mb-2">💎 Prism Insight</h1>
-            <p id="update-time" class="text-gray-400">데이터 동기화 중...</p>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto space-y-6">
+        <header class="flex justify-between items-center border-b border-gray-700 pb-4">
+            <h1 class="text-3xl font-bold text-blue-400">💎 Prism Insight</h1>
+            <span id="update-date" class="text-sm text-gray-400">로딩 중...</span>
         </header>
 
-        <div id="indices-container" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-            <div class="bg-gray-800 p-4 rounded-lg text-center animate-pulse">지수 로딩 중...</div>
-            <div class="bg-gray-800 p-4 rounded-lg text-center animate-pulse">지수 로딩 중...</div>
-        </div>
+        <div id="market-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            </div>
 
-        <section class="bg-gray-800 p-6 rounded-xl mb-10 shadow-lg border-l-4 border-blue-500">
-            <h2 class="text-xl font-semibold mb-4 text-blue-300">오늘의 시장 요약</h2>
-            <p id="market-summary" class="text-lg leading-relaxed text-gray-200 font-medium">
-                분석 데이터를 불러오는 중입니다...
-            </p>
+        <section class="card border-l-4 border-blue-500">
+            <h2 class="text-xl font-bold mb-2 text-blue-300">💡 오늘의 시장 요약</h2>
+            <p id="summary" class="text-gray-300 leading-relaxed"></p>
         </section>
 
-        <section class="mb-10">
-            <h2 class="text-xl font-semibold mb-4 text-blue-300">AI 추천 티커</h2>
-            <div id="ticker-container" class="flex flex-wrap gap-3">
-                </div>
+        <section class="card">
+            <h2 class="text-xl font-bold mb-4 text-purple-300">🌍 영향력이 큰 뉴스 (Global)</h2>
+            <ul id="news-list" class="list-disc list-inside space-y-2 text-sm text-gray-400"></ul>
         </section>
 
-        <div id="error-log" class="hidden mt-10 p-4 bg-red-900/30 border border-red-500/50 rounded-lg text-red-200 text-sm">
-        </div>
+        <section class="card border-l-4 border-yellow-500">
+            <h2 class="text-xl font-bold mb-2 text-yellow-300">🚀 AI 추천 종목</h2>
+            <div id="ticker-list" class="flex gap-4 mb-4"></div>
+            <p id="reason" class="text-sm text-gray-400 italic"></p>
+        </section>
+
+        <section class="card border-l-4 border-green-500">
+            <h2 class="text-xl font-bold mb-2 text-green-300">🎯 예측 정합성 (어제 추천 결과)</h2>
+            <div id="accuracy-list" class="space-y-2"></div>
+        </section>
     </div>
 
     <script>
         async function loadData() {
-            const errorLog = document.getElementById('error-log');
-            const summaryEl = document.getElementById('market-summary');
+            const res = await fetch('recommendations.json?t=' + Date.now());
+            const data = await res.json();
+            
+            document.getElementById('update-date').innerText = "최근 업데이트: " + data.date;
+            document.getElementById('summary').innerText = data.summary;
+            document.getElementById('reason').innerText = "이유: " + data.reason;
 
-            try {
-                // 캐시 방지를 위해 타임스탬프 추가
-                const response = await fetch('recommendations.json?t=' + Date.now());
-                
-                if (!response.ok) {
-                    throw new Error(`파일을 찾을 수 없습니다. (Status: ${response.status})`);
-                }
-                
-                const data = await response.json();
-                console.log("Loaded Data:", data);
+            // 지수 렌더링
+            const grid = document.getElementById('market-grid');
+            grid.innerHTML = Object.entries(data.market_info).map(([name, info]) => `
+                <div class="card p-3 text-center">
+                    <div class="text-xs text-gray-400">${name} ${info.status}</div>
+                    <div class="text-lg font-bold">${info.price}</div>
+                    <div class="${info.change >= 0 ? 'text-red-400' : 'text-blue-400'} text-sm">${info.change}%</div>
+                </div>
+            `).join('');
 
-                // 1. 업데이트 시간
-                document.getElementById('update-time').innerText = `최근 업데이트: ${data.date || '알 수 없음'}`;
+            // 뉴스 렌더링
+            document.getElementById('news-list').innerHTML = data.news_headlines.map(h => `<li>${h}</li>`).join('');
 
-                // 2. 지수 렌더링 (데이터가 없을 경우 방어)
-                const indicesContainer = document.getElementById('indices-container');
-                if (data.indices && Array.isArray(data.indices) && data.indices.length > 0) {
-                    indicesContainer.innerHTML = data.indices.map(item => `
-                        <div class="bg-gray-800 p-4 rounded-lg text-center border border-gray-700">
-                            <div class="text-xs text-gray-400 uppercase tracking-wider">${item.name}</div>
-                            <div class="text-xl font-bold mt-1 ${item.change >= 0 ? 'text-red-400' : 'text-blue-400'}">
-                                ${item.change >= 0 ? '▲' : '▼'} ${Math.abs(item.change)}%
-                            </div>
-                        </div>
-                    `).join('');
-                } else {
-                    indicesContainer.innerHTML = '<p class="text-gray-500 col-span-4 text-center">지수 데이터가 없습니다.</p>';
-                }
+            // 티커 렌더링
+            document.getElementById('ticker-list').innerHTML = data.tickers.map(t => `
+                <span class="bg-yellow-900/50 text-yellow-200 px-4 py-2 rounded-full font-bold border border-yellow-700">${t}</span>
+            `).join('');
 
-                // 3. 시장 요약 렌더링
-                summaryEl.innerText = data.summary || "분석 요약 내용이 비어 있습니다.";
-
-                // 4. 티커 렌더링
-                const tickerContainer = document.getElementById('ticker-container');
-                if (data.tickers && Array.isArray(data.tickers) && data.tickers.length > 0) {
-                    tickerContainer.innerHTML = data.tickers.map(ticker => `
-                        <span class="bg-blue-600/20 text-blue-300 px-5 py-2 rounded-full font-bold border border-blue-500/30 hover:bg-blue-600/40 transition-all cursor-default">
-                            ${ticker}
-                        </span>
-                    `).join('');
-                } else {
-                    tickerContainer.innerHTML = '<p class="text-gray-500 font-italic">현재 추천된 티커가 없습니다.</p>';
-                }
-
-            } catch (error) {
-                console.error('Display Error:', error);
-                summaryEl.classList.add('text-red-400');
-                summaryEl.innerText = "데이터 로드 중 오류가 발생했습니다.";
-                
-                errorLog.classList.remove('hidden');
-                errorLog.innerHTML = `
-                    <strong>⚠️ 대시보드 오류 알림:</strong><br>
-                    - 원인: ${error.message}<br>
-                    - 조치: GitHub Actions의 'Workflow permissions'가 'Read and write'인지 확인해주세요.
-                `;
-            }
+            // 정합성 렌더링
+            document.getElementById('accuracy-list').innerHTML = data.past_results.length > 0 
+                ? data.past_results.map(r => `
+                    <div class="flex justify-between border-b border-gray-700 py-2">
+                        <span>${r.ticker}</span>
+                        <span class="${r.change >= 0 ? 'text-red-400' : 'text-blue-400'} font-mono">${r.change}%</span>
+                    </div>`).join('')
+                : "<p class='text-gray-500'>기록된 데이터가 없습니다.</p>";
         }
-
-        // 페이지 로드 후 실행
-        window.onload = loadData;
+        loadData();
     </script>
 </body>
 </html>
