@@ -91,14 +91,10 @@ def run_analysis():
 """
     # 3. 모델 자동 전환 (Fallback) 로직
     genai.configure(api_key=GEMINI_API_KEY)
-    
-    # 404 에러를 방지하기 위해 'models/'를 제거한 표준 명칭으로 재시도
-    model_candidates = [
-        'gemini-1.5-flash',      # 가장 표준적인 이름
-        'gemini-1.5-flash-latest', # 최신 고정 경로
-        'gemini-pro'             # 구형이지만 가장 안정적인 경로
-    ]
-    
+
+    # 가장 깔끔하고 최신인 명칭으로 세팅
+    model_candidates = ['gemini-1.5-flash', 'gemini-1.5-flash-8b']
+        
     full_text = ""
 
     for model_name in model_candidates:
