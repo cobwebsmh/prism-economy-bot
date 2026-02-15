@@ -92,7 +92,13 @@ def run_analysis():
 
     # 3. 모델 자동 전환 (Fallback) 로직
     genai.configure(api_key=GEMINI_API_KEY)
-    model_candidates = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-8b']
+   
+    # 모델 후보군 리스트 (경로를 포함한 명칭으로 수정하여 404 에러 방지)
+    model_candidates = [
+        'models/gemini-2.0-flash', 
+        'models/gemini-1.5-flash', 
+        'models/gemini-1.5-flash-8b'
+    ]
     full_text = ""
     
     for model_name in model_candidates:
