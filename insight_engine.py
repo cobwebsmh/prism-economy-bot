@@ -89,16 +89,16 @@ def run_analysis():
 3. 반드시 마지막 줄에 다음 형식을 포함하세요: TICKERS: ["티커1", "티커2", "티커3"]
    - 한국 종목은 반드시 '005930.KS' 처럼 시장 구분자를 붙이고, 미국은 심볼만 쓰세요.
 """
-
     # 3. 모델 자동 전환 (Fallback) 로직
     genai.configure(api_key=GEMINI_API_KEY)
-   
-    # 모델 후보군 리스트 (경로를 포함한 명칭으로 수정하여 404 에러 방지)
+    
+    # 404 에러를 방지하기 위해 'models/'를 제거한 표준 명칭으로 재시도
     model_candidates = [
-        'models/gemini-2.0-flash', 
-        'models/gemini-1.5-flash', 
-        'models/gemini-1.5-flash-8b'
+        'gemini-1.5-flash',      # 가장 표준적인 이름
+        'gemini-1.5-flash-latest', # 최신 고정 경로
+        'gemini-pro'             # 구형이지만 가장 안정적인 경로
     ]
+    
     full_text = ""
 
     for model_name in model_candidates:
