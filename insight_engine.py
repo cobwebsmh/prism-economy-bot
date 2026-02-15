@@ -3,116 +3,108 @@ import feedparser
 import requests
 import yfinance as yf
 import json
-import re
 from datetime import datetime
 import pytz
+from google import genai
 
-# 라이브러리 임포트
-try:
-    from google import genai
-except ImportError:
-    from google.genai import Client
-
-# [설정값]
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+# [설정]
 REC_FILE = 'recommendations.json'
 
-def send_telegram_message(message):
-    """텔레그램 메시지 전송"""
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    if len(message) > 3800:
-        message = message[:3800] + "\n\n...(중략)"
+def get_market_data():
+    """지수 데이터 및 시장 상태 확인"""
+    indices = {
+        "KOSPI": "^KS11", "KOSDAQ": "^KQ11", 
+        "S&P500": "^GSPC", "NASDAQ": "^IXIC"
+    }
+    result = {}
+    now_utc = datetime.now(pytz.utc)
     
-    # parse_mode를 제거하여 특수 기호 충돌을 원천 차단합니다.
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message} 
-    
-    try:
-        response = requests.post(url, json=payload)
-        if response.json().get("ok"):
-            print("✅ 텔레그램 전송 성공!")
-        else:
-            print(f"❌ 전송 실패: {response.json().get('description')}")
-    except Exception as e:
-        print(f"전송 오류: {e}")
-
-def get_market_indices():
-    """세계 주요 지수 수집"""
-    indices = {"S&P 500": "^GSPC", "나스닥": "^IXIC", "코스피": "^KS11", "닛케이225": "^N225"}
-    market_data = []
     for name, ticker in indices.items():
-        try:
-            stock = yf.Ticker(ticker)
-            hist = stock.history(period="2d")
-            if not hist.empty:
-                change = ((hist['Close'].iloc[-1] - hist['Close'].iloc[-2]) / hist['Close'].iloc[-2]) * 100
-                market_data.append({"name": name, "change": round(change, 2)})
-        except: continue
-    return market_data
+        stock = yf.Ticker(ticker)
+        hist = stock.history(period="2d")
+        if len(hist) >= 2:
+            current = hist['Close'].iloc[-1]
+            prev = hist['Close'].iloc[-2]
+            change = ((current - prev) / prev) * 100
+            
+            # 시장 상태 (한국/미국 구분)
+            is_open = False
+            if name in ["KOSPI", "KOSDAQ"]:
+                kst = now_utc.astimezone(pytz.timezone('Asia/Seoul'))
+                is_open = kst.weekday() < 5 and 9 <= kst.hour < 16
+            else:
+                est = now_utc.astimezone(pytz.timezone('US/Eastern'))
+                is_open = est.weekday() < 5 and 9 <= est.hour < 17 # 장외 포함 넉넉히
 
-def run_analysis():
-    print("🚀 프리즘 인사이트 엔진 가동...")
-    
-    # 1. 데이터 수집
-    market_indices = get_market_indices()
-    kr_feed = feedparser.parse("https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko")
-    us_feed = feedparser.parse("https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US&ceid=US:en")
-    
-    mixed_news = [f"[국내] {e.title}" for e in kr_feed.entries[:5]] + [f"[글로벌] {e.title}" for e in us_feed.entries[:5]]
-    news_text = "\n".join(mixed_news)
+            result[name] = {
+                "price": round(current, 2),
+                "change": round(change, 2),
+                "status": "🟢" if is_open else "⚪"
+            }
+    return result
 
-    # 2. 유연한 분석 프롬프트 (JSON 형식 강제)
-    prompt = f"""
-전략가로서 다음 뉴스를 분석해 시장 흐름 요약과 추천 종목 3개를 제시하세요.
-[뉴스]: {news_text}
+def verify_past():
+    """어제 추천 종목 성적 확인"""
+    try:
+        with open(REC_FILE, 'r', encoding='utf-8') as f:
+            old_data = json.load(f)
+            past_tickers = old_data.get('tickers', [])
+            results = []
+            for t in past_tickers:
+                s = yf.Ticker(t)
+                h = s.history(period="2d")
+                if len(h) >= 2:
+                    c = ((h['Close'].iloc[-1] - h['Close'].iloc[-2]) / h['Close'].iloc[-2]) * 100
+                    results.append({"ticker": t, "change": round(c, 2)})
+            return results
+    except: return []
 
-반드시 다음 형식을 지켜주세요:
-1. 요약: (시장 흐름 한 문장 요약)
-2. 종목: (종목명과 이유)
-3. TICKERS: ["티커1", "티커2", "티커3"]
+def fetch_global_news():
+    """한국 및 글로벌 뉴스 수집"""
+    feeds = [
+        "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR",
+        "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US"
+    ]
+    news_list = []
+    for url in feeds:
+        f = feedparser.parse(url)
+        for entry in f.entries[:10]:
+            news_list.append(entry.title)
+    return news_list
+
+# 메인 실행부
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+market_info = get_market_data()
+past_results = verify_past()
+news_data = fetch_global_news()
+
+# AI 프롬프트 (프리즘님의 요청 반영)
+prompt = f"""
+전략가로서 다음 데이터를 분석하세요:
+1. 뉴스: {news_data[:15]}
+2. 어제 성적: {past_results}
+
+다음 형식의 JSON으로만 답하세요:
+{{
+  "summary": "시장 요약 3문장 이내",
+  "news_headlines": ["핵심뉴스1", "핵심뉴스2", ... "핵심뉴스7"],
+  "tickers": ["추천티커1", "추천티커2", "추천티커3"],
+  "reason": "추천 이유 요약"
+}}
 """
 
-    # 3. AI 분석
-    try:
-        client = genai.Client(api_key=GEMINI_API_KEY)
-        response = client.models.generate_content(model='gemini-2.0-flash', contents=prompt)
-        full_text = response.text
-        print("✅ AI 분석 완료")
+response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+ai_data = json.loads(response.text.replace('```json', '').replace('```', ''))
 
-        # 4. 파싱 보완 (TICKERS 및 요약 추출)
-        # TICKERS: ["AAPL", "TSLA"...] 형태를 찾음
-        match = re.search(r'TICKERS:\s*\[(.*?)\]', full_text, re.IGNORECASE)
-        if match:
-            raw_tickers = match.group(1).replace('"', '').replace("'", "").split(',')
-            tickers = [t.strip() for t in raw_tickers]
-        else:
-            tickers = []
+# 최종 데이터 병합
+final_data = {
+    "date": datetime.now(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M'),
+    "market_info": market_info,
+    "past_results": past_results,
+    **ai_data
+}
 
-        # 요약 부분 추출 (첫 번째 줄 또는 '요약:' 뒤의 텍스트)
-        summary_match = re.search(r'요약:\s*(.*)', full_text)
-        summary = summary_match.group(1).strip() if summary_match else full_text.split('\n')[0][:50]
-        
-        # 4. 데이터 저장 (기본값 설정으로 에러 방지)
-        dashboard_data = {
-            'date': datetime.now(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M'),
-            'indices': market_indices if market_indices else [], # 비어있어도 리스트 유지
-            'tickers': tickers if tickers else [],
-            'summary': summary if summary else "분석 결과 요약 중입니다.",
-            'news_list': mixed_news[:5] if mixed_news else []
-        }
-        
-        # 파일 저장 (이 위치가 중요합니다!)
-        with open(REC_FILE, 'w', encoding='utf-8') as f:
-            json.dump(dashboard_data, f, ensure_ascii=False, indent=4)
-        print(f"💾 Dashboard 데이터 저장 완료: {REC_FILE}")
-   
-        # 6. 전송
-        report_msg = f"📅 *프리즘 마켓 인사이트 ({dashboard_data['date']})*\n\n{full_text}"
-        send_telegram_message(report_msg)
+with open(REC_FILE, 'w', encoding='utf-8') as f:
+    json.dump(final_data, f, ensure_ascii=False, indent=2)
 
-    except Exception as e:
-        print(f"❌ 오류: {e}")
-
-if __name__ == "__main__":
-    run_analysis()
+print("✅ 분석 완료 및 저장됨")
