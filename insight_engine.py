@@ -89,10 +89,11 @@ def run_analysis():
 3. 반드시 마지막 줄에 다음 형식을 포함하세요: TICKERS: ["티커1", "티커2", "티커3"]
    - 한국 종목은 반드시 '005930.KS' 처럼 시장 구분자를 붙이고, 미국은 심볼만 쓰세요.
 """
-
-    # 3. 모델 자동 전환 (가장 기본 모델 하나로만 먼저 테스트)
+    # 3. 모델 자동 전환
     genai.configure(api_key=GEMINI_API_KEY)
-    model_candidates = ['gemini-1.5-flash'] # 리스트에 이거 하나만 넣어보세요
+    
+    # 최신 라이브러리에서는 이 명칭이 가장 정확합니다.
+    model_candidates = ['gemini-1.5-flash', 'gemini-1.5-flash-8b']
  
     full_text = ""
 
