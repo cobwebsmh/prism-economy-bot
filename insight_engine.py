@@ -24,7 +24,10 @@ def send_telegram_message(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     if len(message) > 3800:
         message = message[:3800] + "\n\n...(중략)"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
+    
+    # parse_mode를 제거하여 특수 기호 충돌을 원천 차단합니다.
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message} 
+    
     try:
         response = requests.post(url, json=payload)
         if response.json().get("ok"):
