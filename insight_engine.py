@@ -7,14 +7,11 @@ import re
 from datetime import datetime
 import pytz
 
-# 최신 google-genai 라이브러리 임포트 (충돌 방지 로직)
+# 라이브러리 임포트
 try:
     from google import genai
 except ImportError:
-    try:
-        from google.genai import Client
-    except ImportError:
-        print("❌ google-genai 라이브러리가 설치되지 않았습니다. requirements.txt를 확인하세요.")
+    from google.genai import Client
 
 # [설정값]
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -23,13 +20,21 @@ TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 REC_FILE = 'recommendations.json'
 
 def send_telegram_message(message):
-    """텔레그램 메시지 전송"""
+    """텔레그램 메시지 전송 및 결과 로그 출력"""
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     if len(message) > 3800:
         message = message[:3800] + "\n\n...(중략)"
+    
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message, "parse_mode": "Markdown"}
+    
     try:
-        requests.post(url, json=payload)
+        response = requests.post(url, json=payload)
+        res_json = response.json()
+        if res_json.get("ok"):
+            print("✅ 텔레그램 전송 성공!")
+        else:
+            print(f"❌ 텔레그램 전송 실패: {res_json.get('description')}")
+            # 팁: 여기서 'Forbidden: bot was blocked by the user'라고 뜨면 봇 대화방에서 /start를 안 누른 겁니다.
     except Exception as e:
         print(f"전송 오류: {e}")
 
@@ -48,10 +53,7 @@ def get_market_indices():
                 current_price = hist['Close'].iloc[-1]
                 prev_price = hist['Close'].iloc[-2]
                 change_pct = ((current_price - prev_price) / prev_price) * 100
-                last_time = hist.index[-1].to_pydatetime()
-                now = datetime.now(pytz.timezone('UTC'))
-                is_open = (now - last_time.replace(tzinfo=pytz.UTC)).total_seconds() < 1200 
-                market_data.append({"name": name, "change": round(change_pct, 2), "is_open": is_open})
+                market_data.append({"name": name, "change": round(change_pct, 2)})
         except: continue
     return market_data
 
@@ -78,15 +80,9 @@ def run_analysis():
 
     # 3. AI 클라이언트 생성 및 분석 시도
     try:
-        # 두 가지 임포트 방식 모두에 대응
-        try:
-            client = genai.Client(api_key=GEMINI_API_KEY)
-        except:
-            from google.genai import Client
-            client = Client(api_key=GEMINI_API_KEY)
-
-        # 가장 안정적인 풀 네임으로 경로 지정
-        model_candidates = ['gemini-1.5-flash', 'gemini-1.5-flash-8b', 'gemini-2.0-flash']
+        client = genai.Client(api_key=GEMINI_API_KEY)
+        # 이제 유료 등급(Tier 1)이시니까 2.0 모델을 가장 먼저 시도합니다!
+        model_candidates = ['gemini-2.0-flash', 'gemini-1.5-flash']
         full_text = ""
 
         for model_id in model_candidates:
@@ -121,9 +117,10 @@ def run_analysis():
             json.dump(dashboard_data, f, ensure_ascii=False, indent=4)
         
         # 5. 텔레그램 전송
+        print(f"✅ 분석 결과 길이: {len(full_text)}자")
+        print("🚀 텔레그램으로 전송을 시도합니다...")
         report_msg = f"📅 *{dashboard_data['date']} 리포트*\n\n{full_text}"
         send_telegram_message(report_msg)
-        print("🎉 모든 작업이 완료되었습니다!")
 
     except Exception as e:
         print(f"❌ 실행 중 오류 발생: {e}")
