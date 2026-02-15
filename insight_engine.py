@@ -85,7 +85,8 @@ def run_analysis():
             from google.genai import Client
             client = Client(api_key=GEMINI_API_KEY)
 
-        model_candidates = ['gemini-2.0-flash', 'gemini-1.5-flash']
+        # 가장 안정적인 풀 네임으로 경로 지정
+        model_candidates = ['gemini-1.5-flash', 'gemini-1.5-flash-8b', 'gemini-2.0-flash']
         full_text = ""
 
         for model_id in model_candidates:
