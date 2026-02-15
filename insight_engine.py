@@ -1,6 +1,10 @@
 import os
 import feedparser
-from google import genai # 최신 라이브러리 방식
+try:
+    from google import genai
+except ImportError:
+    # 혹시 모를 충돌을 방지하기 위한 보조 경로
+    from google.genai import Client
 import requests
 import yfinance as yf
 import json
