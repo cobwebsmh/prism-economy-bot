@@ -2,97 +2,70 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prism Insight Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { background-color: #0f172a; color: white; font-family: -apple-system, system-ui, sans-serif; }
-        .card { background-color: #1e293b; border-radius: 1.2rem; padding: 1.25rem; margin-bottom: 1rem; border: 1px solid #334155; }
-        .accent-red { color: #f87171; }
-        .accent-green { color: #4ade80; }
-    </style>
 </head>
-<body class="p-4 pb-10">
-    <header class="mb-6">
-        <h1 class="text-2xl font-bold italic tracking-tight uppercase">Prism <span class="text-teal-400">Insight</span></h1>
-        <p id="update-date" class="text-[10px] text-slate-500 mt-1">CONNECTING DATA...</p>
-    </header>
+<body class="bg-gray-900 text-white min-h-screen p-5">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl font-bold text-blue-400 mb-2">💎 Prism Insight</h1>
+            <p id="update-time" class="text-gray-400">데이터를 불러오는 중...</p>
+        </header>
 
-    <div class="card">
-        <h2 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Global Market Overview</h2>
-        <div id="index-grid" class="grid grid-cols-2 gap-3">
-            </div>
-    </div>
+        <div id="indices-container" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10"></div>
 
-    <div class="card bg-gradient-to-br from-slate-800 to-indigo-950 border-none shadow-2xl">
-        <h2 class="text-[10px] font-bold text-teal-400 uppercase mb-2">Today's Focus</h2>
-        <p id="summary" class="text-sm leading-relaxed text-slate-200 font-medium">분석 데이터를 불러오는 중입니다...</p>
-    </div>
+        <section class="bg-gray-800 p-6 rounded-xl mb-10 shadow-lg border-l-4 border-blue-500">
+            <h2 class="text-xl font-semibold mb-4 text-blue-300">오늘의 시장 요약</h2>
+            <p id="market-summary" class="text-lg leading-relaxed text-gray-200">AI 분석 결과를 기다리고 있습니다...</p>
+        </section>
 
-    <div class="card border-l-4 border-amber-500">
-        <h2 class="text-[10px] font-bold text-amber-500 uppercase mb-3">🔥 AI Top Picks</h2>
-        <div id="top-picks" class="space-y-3"></div>
-    </div>
-
-    <div class="card">
-        <h2 class="text-[10px] font-bold text-slate-400 uppercase mb-3">📰 Breaking News (Mixed)</h2>
-        <ul id="news-list" class="text-[13px] space-y-3 text-slate-300"></ul>
+        <section class="mb-10">
+            <h2 class="text-xl font-semibold mb-4 text-blue-300">AI 추천 티커</h2>
+            <div id="ticker-container" class="flex flex-wrap gap-3"></div>
+        </section>
     </div>
 
     <script>
         async function loadData() {
             try {
-                // 본인의 GitHub 정보로 주소를 수정하세요!
-                const url = `https://프리즘ID.github.io/저장소명/recommendations.json?v=${Math.random()}`;
-                const response = await fetch(url);
+                // 브라우저 캐시 방지를 위해 랜덤 쿼리 추가
+                const response = await fetch('recommendations.json?t=' + new Date().getTime());
+                if (!response.ok) throw new Error('데이터 파일을 찾을 수 없습니다.');
+                
                 const data = await response.json();
                 
-                document.getElementById('update-date').innerText = `LAST UPDATE: ${data.date}`;
+                // 1. 업데이트 시간
+                document.getElementById('update-time').innerText = `최근 업데이트: ${data.date || '알 수 없음'}`;
 
-                // 지수 렌더링
-                const indexGrid = document.getElementById('index-grid');
-                indexGrid.innerHTML = '';
-                data.indices.forEach(item => {
-                    const statusColor = item.is_open ? 'bg-green-500' : 'bg-slate-600';
-                    const changeColor = item.change >= 0 ? 'accent-green' : 'accent-red';
-                    const sign = item.change >= 0 ? '▲' : '▼';
-                    const div = document.createElement('div');
-                    div.className = "bg-slate-800/40 p-3 rounded-xl border border-slate-700/50 relative overflow-hidden";
-                    div.innerHTML = `
-                        <div class="absolute top-1 right-1 w-1.5 h-1.5 rounded-full ${statusColor}"></div>
-                        <p class="text-[10px] text-slate-500 font-bold mb-1">${item.name}</p>
-                        <p class="text-sm font-black ${changeColor}">${sign} ${Math.abs(item.change)}%</p>
-                    `;
-                    indexGrid.appendChild(div);
-                });
+                // 2. 지수 렌더링
+                const indicesHtml = data.indices.map(item => `
+                    <div class="bg-gray-800 p-4 rounded-lg text-center">
+                        <div class="text-sm text-gray-400">${item.name}</div>
+                        <div class="text-xl font-bold ${item.change >= 0 ? 'text-red-400' : 'text-blue-400'}">
+                            ${item.change >= 0 ? '▲' : '▼'} ${Math.abs(item.change)}%
+                        </div>
+                    </div>
+                `).join('');
+                document.getElementById('indices-container').innerHTML = indicesHtml;
 
-                // 종목 렌더링
-                const pickContainer = document.getElementById('top-picks');
-                pickContainer.innerHTML = '';
-                data.tickers.forEach((ticker, index) => {
-                    const div = document.createElement('div');
-                    div.className = "flex justify-between items-center bg-slate-900/50 p-3 rounded-lg border border-slate-800";
-                    div.innerHTML = `<span class="text-slate-500 font-mono text-xs">#0${index+1}</span>
-                                     <span class="font-bold text-slate-100">${ticker}</span>
-                                     <span class="text-[9px] font-bold px-2 py-1 bg-amber-500/10 text-amber-500 rounded">STRONG BUY</span>`;
-                    pickContainer.appendChild(div);
-                });
+                // 3. 요약 렌더링
+                document.getElementById('market-summary').innerText = data.summary || "요약 데이터를 찾을 수 없습니다.";
 
-                document.getElementById('summary').innerText = data.summary;
+                // 4. 티커 렌더링
+                const tickerHtml = data.tickers.map(ticker => `
+                    <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full font-mono font-bold border border-blue-700">
+                        ${ticker}
+                    </span>
+                `).join('');
+                document.getElementById('ticker-container').innerHTML = tickerHtml || '<p class="text-gray-500">추천된 티커가 없습니다.</p>';
 
-                // 뉴스 렌더링
-                const newsContainer = document.getElementById('news-list');
-                newsContainer.innerHTML = '';
-                data.news_list.forEach(news => {
-                    const li = document.createElement('li');
-                    li.className = "border-b border-slate-800/50 pb-2 last:border-0";
-                    li.innerHTML = `<span class="text-teal-500 font-bold mr-1">·</span>${news}`;
-                    newsContainer.appendChild(li);
-                });
-            } catch (e) {
-                document.getElementById('summary').innerText = "데이터 로딩 실패. 잠시 후 다시 시도해주세요.";
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('market-summary').innerHTML = `<span class="text-red-400">오류: ${error.message}<br>GitHub Actions가 완료된 후 1~2분 뒤에 다시 확인해주세요.</span>`;
             }
         }
+
         loadData();
     </script>
 </body>
