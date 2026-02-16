@@ -3,94 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prism Insight Dashboard</title>
+    <title>Prism Insight App</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="manifest" href="manifest.json">
-    <script>
-        if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
-    </script>
     <style>
-        body { background-color: #0f172a; color: white; font-family: 'Inter', sans-serif; }
-        .card { background: #1e293b; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        body { background: #0f172a; color: white; font-family: 'Inter', sans-serif; }
+        .card { background: #1e293b; border-radius: 1.25rem; padding: 1.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
     </style>
 </head>
-<body class="p-4 md:p-8">
-    <div class="max-w-4xl mx-auto space-y-6">
-        <header class="flex justify-between items-center border-b border-gray-700 pb-4">
-            <h1 class="text-3xl font-bold text-blue-400">💎 Prism Insight</h1>
-            <span id="update-date" class="text-sm text-gray-400">로딩 중...</span>
+<body class="p-4 md:p-8 bg-slate-950">
+    <div class="max-w-2xl mx-auto space-y-6">
+        <header class="flex justify-between items-center">
+            <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">PRISM INSIGHT</h1>
+            <div id="update-date" class="text-[10px] text-slate-500 font-mono"></div>
         </header>
 
-        <div id="market-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            </div>
+        <div id="market-grid" class="grid grid-cols-2 gap-3"></div>
 
         <section class="card border-l-4 border-blue-500">
-            <h2 class="text-xl font-bold mb-2 text-blue-300">💡 오늘의 시장 요약</h2>
-            <p id="summary" class="text-gray-300 leading-relaxed"></p>
+            <h2 class="text-sm font-bold text-blue-400 mb-2 uppercase tracking-wider">Market Summary</h2>
+            <p id="summary" class="text-slate-300 text-sm leading-relaxed"></p>
+        </section>
+
+        <section class="card relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-10 font-black text-4xl italic text-white">PICK</div>
+            <h2 class="text-sm font-bold text-yellow-500 mb-4 uppercase tracking-wider">AI Top Picks</h2>
+            <div id="ticker-list" class="flex gap-3 mb-4"></div>
+            <p id="reason" class="text-xs text-slate-400 leading-tight italic"></p>
         </section>
 
         <section class="card">
-            <h2 class="text-xl font-bold mb-4 text-purple-300">🌍 영향력이 큰 뉴스 (Global)</h2>
-            <ul id="news-list" class="list-disc list-inside space-y-2 text-sm text-gray-400"></ul>
+            <h2 class="text-sm font-bold text-purple-400 mb-4 uppercase tracking-wider">Global Strategy News</h2>
+            <div id="news-container" class="space-y-3"></div>
         </section>
 
-        <section class="card border-l-4 border-yellow-500">
-            <h2 class="text-xl font-bold mb-2 text-yellow-300">🚀 AI 추천 종목</h2>
-            <div id="ticker-list" class="flex gap-4 mb-4"></div>
-            <p id="reason" class="text-sm text-gray-400 italic"></p>
+        <section class="card bg-gradient-to-br from-slate-800 to-indigo-950 border border-indigo-500/30">
+            <h2 class="text-sm font-bold text-indigo-300 mb-4 uppercase tracking-wider">Performance Analysis</h2>
+            <div class="flex items-end justify-between">
+                <div>
+                    <span class="text-xs text-slate-400">누적 예측 적중률</span>
+                    <div id="accuracy-rate" class="text-4xl font-black text-white">0%</div>
+                </div>
+                <div class="w-1/2 mb-2">
+                    <div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+                        <div id="accuracy-bar" class="h-full bg-gradient-to-r from-indigo-500 to-blue-400 transition-all duration-1000" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="accuracy-detail" class="text-[10px] text-slate-500 mt-2 text-right"></div>
         </section>
 
-        <section class="card border-l-4 border-green-500">
-            <h2 class="text-xl font-bold mb-2 text-green-300">🎯 예측 정합성 (어제 추천 결과)</h2>
-            <div id="accuracy-list" class="space-y-2"></div>
+        <section class="card border-l-4 border-emerald-500">
+            <h2 class="text-sm font-bold text-emerald-400 mb-3 uppercase tracking-wider">Yesterday's Result</h2>
+            <div id="accuracy-list" class="grid grid-cols-1 gap-2"></div>
         </section>
+        
+        <footer class="text-center py-6">
+            <p class="text-[10px] text-slate-600">@prism_economy_bot | AI 기반 투자 전략 가이드</p>
+        </footer>
     </div>
 
     <script>
         async function loadData() {
-            const res = await fetch('recommendations.json?t=' + Date.now());
-            const data = await res.json();
-            
-            document.getElementById('update-date').innerText = "최근 업데이트: " + data.date;
-            document.getElementById('summary').innerText = data.summary;
-            document.getElementById('reason').innerText = "이유: " + data.reason;
+            try {
+                const res = await fetch('recommendations.json?t=' + Date.now());
+                const data = await res.json();
+                
+                document.getElementById('update-date').innerText = data.date;
+                document.getElementById('summary').innerText = data.summary;
+                document.getElementById('reason').innerText = "Insight: " + data.reason;
 
-            // 지수 렌더링
-            const grid = document.getElementById('market-grid');
-            grid.innerHTML = Object.entries(data.market_info).map(([name, info]) => `
-                <div class="card p-3 text-center">
-                    <div class="text-xs text-gray-400">${name} ${info.status}</div>
-                    <div class="text-lg font-bold">${info.price}</div>
-                    <div class="${info.change >= 0 ? 'text-red-400' : 'text-blue-400'} text-sm">${info.change}%</div>
-                </div>
-            `).join('');
-
-            // 뉴스 렌더링
-            document.getElementById('news-list').innerHTML = data.news_headlines.map(h => `<li>${h}</li>`).join('');
-
-            // 티커 렌더링 (종목명만 강조)
-            document.getElementById('ticker-list').innerHTML = data.tickers.map(t => {
-                // 혹시 AI가 괄호를 포함했을 경우를 대비해 괄호 앞부분만 추출
-                const cleanName = t.split('(')[0].trim(); 
-                return `
-                    <div class="flex-1 min-w-[100px] h-24 flex items-center justify-center bg-gradient-to-br from-gray-700 to-gray-800 border border-yellow-500/30 rounded-2xl p-2 text-center shadow-lg">
-                        <span class="text-yellow-400 font-bold text-base md:text-lg leading-tight">
-                            ${cleanName}
-                        </span>
-                    </div>
-                `;
-            }).join('');
-           
-            // 정합성 렌더링
-            document.getElementById('accuracy-list').innerHTML = data.past_results.length > 0 
-                ? data.past_results.map(r => `
-                    <div class="flex justify-between border-b border-gray-700 py-2">
-                        <span>${r.ticker}</span>
-                        <span class="${r.change >= 0 ? 'text-red-400' : 'text-blue-400'} font-mono">${r.change}%</span>
-                    </div>`).join('')
-                : "<p class='text-gray-500'>기록된 데이터가 없습니다.</p>";
-        }
-        loadData();
-    </script>
-</body>
-</html>
+                // 지수 렌더링
+                document.getElementById('market-grid').innerHTML = Object.entries(data.market_info).map(([name, info]) => `
+                    <div class="glass p-3 rounded-2xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-[10px] text-slate-4
