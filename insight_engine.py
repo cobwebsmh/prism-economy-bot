@@ -67,8 +67,9 @@ def verify_past():
             return results
     except: return []
 
+
 def fetch_global_news():
-    """글로벌 뉴스 수집"""
+    """뉴스 제목과 링크를 함께 수집"""
     feeds = [
         "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR",
         "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US"
@@ -77,10 +78,14 @@ def fetch_global_news():
     for url in feeds:
         try:
             f = feedparser.parse(url)
-            for entry in f.entries[:8]:
-                news_list.append(entry.title)
+            for entry in f.entries[:5]: # 각 소스당 5개씩
+                news_list.append({
+                    "title": entry.title,
+                    "link": entry.link # 링크 추가!
+                })
         except: continue
     return news_list
+
 
 # --- 메인 실행 로직 ---
 try:
