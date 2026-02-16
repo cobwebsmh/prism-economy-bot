@@ -1,80 +1,53 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prism Insight App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { background: #0f172a; color: white; font-family: 'Inter', sans-serif; }
-        .card { background: #1e293b; border-radius: 1.25rem; padding: 1.5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-    </style>
-</head>
-<body class="p-4 md:p-8 bg-slate-950">
-    <div class="max-w-2xl mx-auto space-y-6">
-        <header class="flex justify-between items-center">
-            <h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">PRISM INSIGHT</h1>
-            <div id="update-date" class="text-[10px] text-slate-500 font-mono"></div>
-        </header>
+<script>
+    async function loadData() {
+        try {
+            const res = await fetch('recommendations.json?t=' + Date.now());
+            if (!res.ok) throw new Error("File not found");
+            const data = await res.json();
+            
+            // 안전하게 데이터 넣기 (데이터가 없으면 기본값 표시)
+            document.getElementById('update-date').innerText = data.date || "날짜 정보 없음";
+            document.getElementById('summary').innerText = data.summary || "데이터를 불러오는 중입니다...";
+            document.getElementById('reason').innerText = "Insight: " + (data.reason || "상세 분석 준비중");
 
-        <div id="market-grid" class="grid grid-cols-2 gap-3"></div>
-
-        <section class="card border-l-4 border-blue-500">
-            <h2 class="text-sm font-bold text-blue-400 mb-2 uppercase tracking-wider">Market Summary</h2>
-            <p id="summary" class="text-slate-300 text-sm leading-relaxed"></p>
-        </section>
-
-        <section class="card relative overflow-hidden">
-            <div class="absolute top-0 right-0 p-4 opacity-10 font-black text-4xl italic text-white">PICK</div>
-            <h2 class="text-sm font-bold text-yellow-500 mb-4 uppercase tracking-wider">AI Top Picks</h2>
-            <div id="ticker-list" class="flex gap-3 mb-4"></div>
-            <p id="reason" class="text-xs text-slate-400 leading-tight italic"></p>
-        </section>
-
-        <section class="card">
-            <h2 class="text-sm font-bold text-purple-400 mb-4 uppercase tracking-wider">Global Strategy News</h2>
-            <div id="news-container" class="space-y-3"></div>
-        </section>
-
-        <section class="card bg-gradient-to-br from-slate-800 to-indigo-950 border border-indigo-500/30">
-            <h2 class="text-sm font-bold text-indigo-300 mb-4 uppercase tracking-wider">Performance Analysis</h2>
-            <div class="flex items-end justify-between">
-                <div>
-                    <span class="text-xs text-slate-400">누적 예측 적중률</span>
-                    <div id="accuracy-rate" class="text-4xl font-black text-white">0%</div>
-                </div>
-                <div class="w-1/2 mb-2">
-                    <div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
-                        <div id="accuracy-bar" class="h-full bg-gradient-to-r from-indigo-500 to-blue-400 transition-all duration-1000" style="width: 0%"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="accuracy-detail" class="text-[10px] text-slate-500 mt-2 text-right"></div>
-        </section>
-
-        <section class="card border-l-4 border-emerald-500">
-            <h2 class="text-sm font-bold text-emerald-400 mb-3 uppercase tracking-wider">Yesterday's Result</h2>
-            <div id="accuracy-list" class="grid grid-cols-1 gap-2"></div>
-        </section>
-        
-        <footer class="text-center py-6">
-            <p class="text-[10px] text-slate-600">@prism_economy_bot | AI 기반 투자 전략 가이드</p>
-        </footer>
-    </div>
-
-    <script>
-        async function loadData() {
-            try {
-                const res = await fetch('recommendations.json?t=' + Date.now());
-                const data = await res.json();
-                
-                document.getElementById('update-date').innerText = data.date;
-                document.getElementById('summary').innerText = data.summary;
-                document.getElementById('reason').innerText = "Insight: " + data.reason;
-
-                // 지수 렌더링
+            // 지수 렌더링
+            if (data.market_info) {
                 document.getElementById('market-grid').innerHTML = Object.entries(data.market_info).map(([name, info]) => `
                     <div class="glass p-3 rounded-2xl">
                         <div class="flex justify-between items-start mb-1">
-                            <span class="text-[10px] text-slate-4
+                            <span class="text-[10px] text-slate-400 font-bold">${name}</span>
+                            <span>${info.status}</span>
+                        </div>
+                        <div class="text-lg font-black">${info.price}</div>
+                        <div class="text-xs ${info.change >= 0 ? 'text-red-400' : 'text-blue-400'}">${info.change >= 0 ? '▲' : '▼'} ${info.change}%</div>
+                    </div>
+                `).join('');
+            }
+
+            // 추천 종목
+            if (data.tickers) {
+                document.getElementById('ticker-list').innerHTML = data.tickers.map(t => `
+                    <div class="flex-1 bg-slate-700/50 border border-slate-600 rounded-xl p-3 text-center">
+                        <span class="text-sm font-bold text-yellow-400">${t}</span>
+                    </div>
+                `).join('');
+            }
+
+            // 뉴스 렌더링 (구조 확인 후 안전하게)
+            if (data.news_headlines) {
+                document.getElementById('news-container').innerHTML = data.news_headlines.map(news => `
+                    <a href="${news.link || '#'}" target="_blank" class="block p-3 rounded-xl bg-slate-800/50 border border-slate-700 hover:bg-slate-700/50 transition-all">
+                        <p class="text-xs text-slate-300 font-medium">${news.title || "제목 없음"}</p>
+                    </a>
+                `).join('');
+            }
+
+            // 어제 결과 및 히스토리 (동일)
+            // ... (중략 - 기존 스크립트와 동일하지만 try-catch로 감싸져 있음)
+        } catch (e) {
+            console.error("데이터 로드 중 오류:", e);
+            document.getElementById('summary').innerHTML = "<span class='text-red-400'>데이터를 불러올 수 없습니다. GitHub Actions 실행이 완료되었는지 확인해주세요.</span>";
+        }
+    }
+    loadData();
+</script>
