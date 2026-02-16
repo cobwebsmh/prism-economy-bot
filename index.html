@@ -7,39 +7,41 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background: #020617; color: white; font-family: sans-serif; }
-        .card { background: #1e293b; border-radius: 1rem; padding: 1.2rem; margin-bottom: 1rem; }
+        .card { background: #1e293b; border-radius: 1rem; padding: 1.2rem; margin-bottom: 1rem; border: 1px solid rgba(255,255,255,0.05); }
     </style>
 </head>
-<body class="p-4 max-w-lg mx-auto">
-    <h1 class="text-2xl font-black text-blue-400 mb-6">PRISM INSIGHT</h1>
+<body class="p-4 max-w-lg mx-auto bg-slate-950">
+    <header class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-black text-blue-400">PRISM INSIGHT</h1>
+        <span id="update-date" class="text-[10px] text-slate-500"></span>
+    </header>
 
-    <div id="market-grid" class="grid grid-cols-2 gap-2 mb-4">
-        <div class="card animate-pulse h-20 bg-slate-800"></div>
-        <div class="card animate-pulse h-20 bg-slate-800"></div>
-    </div>
+    <div id="market-grid" class="grid grid-cols-2 gap-2 mb-4"></div>
 
     <div class="card">
-        <h2 class="text-blue-300 font-bold text-sm mb-2">MARKET SUMMARY</h2>
-        <p id="summary" class="text-sm text-slate-400">데이터 로딩 중...</p>
+        <h2 class="text-blue-300 font-bold text-[10px] mb-2 tracking-widest">MARKET SUMMARY</h2>
+        <p id="summary" class="text-sm text-slate-300 leading-relaxed"></p>
     </div>
 
     <div class="card border-l-4 border-yellow-500">
-        <h2 class="text-yellow-500 font-bold text-sm mb-3">AI TOP PICKS</h2>
+        <h2 class="text-yellow-500 font-bold text-[10px] mb-3 tracking-widest">AI TOP PICKS</h2>
         <div id="ticker-list" class="flex gap-2 mb-3"></div>
-        <p id="reason" class="text-xs text-slate-500 italic"></p>
+        <p id="reason" class="text-xs text-slate-400 italic"></p>
     </div>
 
     <div class="card">
-        <h2 class="text-purple-400 font-bold text-sm mb-3">GLOBAL NEWS</h2>
-        <div id="news-container" class="space-y-2"></div>
+        <h2 class="text-purple-400 font-bold text-[10px] mb-3 tracking-widest">GLOBAL NEWS</h2>
+        <div id="news-container" class="space-y-2 text-xs text-slate-500">
+            뉴스를 불러오는 중이거나 데이터가 없습니다.
+        </div>
     </div>
 
-    <div class="card bg-slate-800/50">
-        <h2 class="text-indigo-300 font-bold text-sm mb-2">PERFORMANCE</h2>
+    <div class="card bg-slate-900/50">
+        <h2 class="text-indigo-300 font-bold text-[10px] mb-2 tracking-widest">PERFORMANCE</h2>
         <div class="flex items-end justify-between">
             <span id="accuracy-rate" class="text-3xl font-black">0%</span>
-            <div class="w-2/3 h-2 bg-slate-700 rounded-full overflow-hidden">
-                <div id="accuracy-bar" class="h-full bg-blue-500" style="width: 0%"></div>
+            <div class="w-2/3 h-2 bg-slate-800 rounded-full overflow-hidden mb-2">
+                <div id="accuracy-bar" class="h-full bg-blue-500 transition-all duration-1000" style="width: 0%"></div>
             </div>
         </div>
     </div>
@@ -50,46 +52,59 @@
                 const res = await fetch('recommendations.json?t=' + Date.now());
                 const data = await res.json();
                 
-                if(data.summary) document.getElementById('summary').innerText = data.summary;
-                if(data.reason) document.getElementById('reason').innerText = data.reason;
+                document.getElementById('update-date').innerText = data.date || "";
+                document.getElementById('summary').innerText = data.summary || "분석 데이터가 없습니다.";
+                document.getElementById('reason').innerText = data.reason || "";
 
-                // 지수 표시
-                if(data.market_info) {
+                // 1. 지수 렌더링
+                if (data.market_info) {
                     document.getElementById('market-grid').innerHTML = Object.entries(data.market_info).map(([name, info]) => `
-                        <div class="card mb-0 bg-slate-800/50">
-                            <p class="text-[10px] text-slate-400">${name}</p>
-                            <p class="font-bold">${info.price}</p>
-                            <p class="text-[10px] ${info.change >= 0 ? 'text-red-400' : 'text-blue-400'}">${info.change}%</p>
+                        <div class="card mb-0 py-3 bg-slate-900/50">
+                            <p class="text-[10px] text-slate-500">${name}</p>
+                            <p class="font-bold text-slate-200">${info.price}</p>
+                            <p class="text-[10px] ${info.change >= 0 ? 'text-red-400' : 'text-blue-400'}">
+                                ${info.change >= 0 ? '▲' : '▼'} ${Math.abs(info.change)}%
+                            </p>
                         </div>
                     `).join('');
                 }
 
-                // 종목 표시
-                if(data.tickers) {
+                // 2. 추천 종목 렌더링
+                if (data.tickers && data.tickers.length > 0) {
                     document.getElementById('ticker-list').innerHTML = data.tickers.map(t => `
-                        <div class="flex-1 bg-slate-700 p-2 rounded text-center text-xs font-bold text-yellow-400">${t}</div>
+                        <div class="flex-1 bg-slate-800 p-2 rounded-lg text-center text-xs font-bold text-yellow-400 border border-slate-700">${t}</div>
                     `).join('');
                 }
 
-                // 뉴스 표시
-                if(data.news_headlines) {
+                // 3. 뉴스 렌더링 (비어있는 경우 방어)
+                if (data.news_headlines && data.news_headlines.length > 0) {
                     document.getElementById('news-container').innerHTML = data.news_headlines.map(n => `
-                        <a href="${n.link}" target="_blank" class="block p-2 bg-slate-900/50 rounded text-xs text-slate-300 hover:text-white">${n.title}</a>
+                        <a href="${n.link}" target="_blank" class="block p-3 bg-slate-800/50 rounded-lg text-slate-300 hover:bg-slate-800 transition-all border border-slate-800">
+                            ${n.title}
+                        </a>
                     `).join('');
+                } else {
+                    document.getElementById('news-container').innerText = "현재 수집된 뉴스가 없습니다.";
                 }
 
-                // 히스토리 로드
-                const hRes = await fetch('history.json?t=' + Date.now());
-                const history = await hRes.json();
-                let total = 0, success = 0;
-                history.forEach(d => d.performance.forEach(p => { total++; if(p.change > 0) success++; }));
-                const rate = total > 0 ? ((success/total)*100).toFixed(1) : 0;
-                document.getElementById('accuracy-rate').innerText = rate + "%";
-                document.getElementById('accuracy-bar').style.width = rate + "%";
+                // 4. 히스토리 기반 적중률
+                try {
+                    const hRes = await fetch('history.json?t=' + Date.now());
+                    const history = await hRes.json();
+                    let total = 0, success = 0;
+                    history.forEach(d => {
+                        if(d.performance) {
+                            d.performance.forEach(p => { total++; if(p.change > 0) success++; });
+                        }
+                    });
+                    const rate = total > 0 ? ((success / total) * 100).toFixed(1) : 0;
+                    document.getElementById('accuracy-rate').innerText = rate + "%";
+                    document.getElementById('accuracy-bar').style.width = rate + "%";
+                } catch(e) { console.log("History load skip"); }
 
             } catch (e) {
-                console.error(e);
-                document.getElementById('summary').innerText = "데이터를 불러오는 데 실패했습니다. 파이썬 스크립트 실행 결과를 확인해주세요.";
+                console.error("Main load error:", e);
+                document.body.innerHTML += '<p class="text-red-500 text-xs p-4">데이터 로드 오류: 파일 형식을 확인하세요.</p>';
             }
         }
         loadData();
