@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-16 20:37",
+  "date": "2026-02-17 08:18",
   "market_info": {
     "KOSPI": {
       "price": 5507.01,
@@ -30,39 +30,39 @@
     {
       "ticker": "SK하이닉스",
       "change": -0.9
-    },
-    {
-      "ticker": "NVDA",
-      "change": -2.21
     }
   ],
-  "summary": "최근 시장은 반도체 섹터의 변동성과 부동산 시장의 불확실성이 혼재된 양상을 보이고 있습니다. 고액 자산가들의 반도체 투자 지속에도 불구하고, 일부 전문가들은 집값 상승세 둔화를 예상하며 보유세 변화에 주목하고 있습니다. AI 수요 증가에 따른 메모리 칩 부족 현상과 휴머노이드 로봇 개발 경쟁 역시 주요 이슈로 부상하며 투자자들의 관심이 집중되고 있습니다.",
+  "summary": "최근 글로벌 펀드매니저들의 달러 투매 현상이 나타나며 '킹달러' 시대의 종말 가능성이 제기되고 있습니다. 미 연준은 모기지 대출 확대를 위해 은행 규제 완화를 고려 중이며, AI 인재 순유출 심화 문제는 한국의 경쟁력 약화로 이어질 수 있습니다. 특정 산업군에서는 제약사 영업 인력의 중요성이 다시 부각되고 있습니다.",
   "news_headlines": [
     {
-      "title": "전문가 90% '집값 상승 주춤'…1주택자 보유세 강화여부 촉각 - 매일경제",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Pbm0wcnRHZHlOTHJTbFRWdHVoV1dBUzVpdmZjbUxaWnpzd1VTdGl4Z19ldGNnUExNdXloaGpQUjdJeTJXejhHcUItSU5IOGc4Y2FhRUoxdXc?oc=5"
+      "title": "글로벌 펀드매니저 '달러 투매'… 14년 만에 최저치, '킹달러' 시대 종말 고하나 - 글로벌이코노믹",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYWo0bzdBanNwNVA4ZXkwbGNvSGdKM3FrM2kwNXlyV0lVOGRLQzdhY0M3NVRaOFQ2OEN1YV96UW9QRnlnc3VQS3NsQ3ZjLW9Jc1ZYVmE5aXVsVHc5R0hEYUR2b0cxajlxT3pQbTJsY3JxYUxoZ3BmMFZiX0RIbG8tX3cyTUlzVXdk?oc=5"
     },
     {
-      "title": "엔비디아 혹평에 '비상'…SK하이닉스 살린 '뜻밖의 행운' 정체 [황정수의 반도체 이슈 짚어보기] - 한국경제",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xeFdhSnNlQlN5SThRajBwZFlBamxDMTZCbmVxWURyMVV6bEo3eThZNnNIWHJ4ckZ2OGYzb1daYXhRNGZRTTBFLUZRbmUxY25oZDVjbnZCdkRDUdIBVEFVX3lxTE9PNl9xQUpsWktvNjVXQUFLSEFXZWpIcFBZVS03NldQTE1TWW1QdTl1QmM3Z1NkbnRnVEVyTTcyZVl4QThWN3U0b3N4bkp4UzJmRmdwUw?oc=5"
+      "title": "하루만 맡겨도 최고 연 8%… 세뱃돈, 파킹 통장에 넣어볼까 - 조선비즈 - Chosunbiz",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON3RRRjZaR2tyVTItdzNwaG9OYTdHUUtPazVJQkY5YnUxZHFnRVhSTDNGWDFpUWtPVFhuLUl0NmJ2SWVPbVNtaTNsS00xdDdKRGRNSHZHSHdheEdTeFROLVJZcFFnQzdzYTJzOHY5bUV0a0trSTdFcnFSSXRxXzlZNdIBlAFBVV95cUxOc25sMENPWU5mbTMwUkJVWkRWaVYwX28zbE5TX0p1UDF6MV9BOFMtMHE0N0VYaElmZzY3ejY5VUV3YlUtZWtSenJOTlFldVdHUm81Q1gwcUZHbjlJMUh2a0RkVFJLU3RRaFZ1YW9zUU8zTVdmVXpLODJOa2NCTUVOTnFkazNmanUtLTBnUmFHYlFmczcy?oc=5"
     },
     {
-      "title": "고액 자산가도 업어 탄 ‘반도체 슈퍼사이클’...연초 매수 절반은 삼전·하이닉스 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTDZTQmExUDRrM3RmaTdidm92M0g2SFIzZUU4R1NKSVpPRWFGY2U3NHRiZ09uZUdoTGp5eVllTkJMeTdRWTlyZDNyQktKVXF4TmNPOTdZSjlmcVVmMUNvdWZieFljSGNrQ1N2ODJkd29BeUl6MEtZeElXTHV4WENZRdIBlAFBVV95cUxPUmpYZFRWN1QwUVlQbXBvcS0xcVdGd3dNV3Z6ZFAwVjAtcWdqZk9HbEVyZ2ppNEdlUlh4T3lqdWszZ1VPcXk2QVVNZjZBX2VXS0d2clhKcnVjNFhQQ2VORzhzWkxDTEhYaG1Yb0tiWmJ2cnlSVThiRlJiZFYycnIzektIQmhaTVM0bUFOM2FhOXJCOXYx?oc=5"
+      "title": "AI 인재 순유출 심화…한국 매력도 30위권 정체 - 한국무역협회-KITA.NET",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV3pkN3paeVpxTjRndkRNdVVVM1NXdFFTb0gtaEs3Q3dBOWthRkJKYnRmNHV5Yno0Z2g2VnFSQlZPUDdrQk9KYnZLYnZENEhqN0FwMlJBZzNTRHVJOFIydHZ1bFZpeE9YZVB5VnYxQU11ZzlLOEhMczU0b25Rc2VmclN4amloOUthTDFqTURXdTBmcXhyN0k4eE9aZXozbUxVcktVVUpvYXJ4cjhqVGFLVXRjbjQwM1hnZjEweDlJbWFZOURUWVRSLUk1N3NlaEkwZzRDbw?oc=5"
     },
     {
-      "title": "Rampant AI Demand for Memory Is Fueling a Growing Chip Crisis - Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNm9sQk9jTXp4dHcwalZsMFRtTDFrVDJuZHhiT0QyeGJ4M05GeElvTmpWT1M4Zl9oaHI2UUZZaXlTcnhrSHg3SnE2N1dNTXdYeWN4cng2aXh6V2VsOFFjVlpuNjZKeDdOV1dyVTl4WUZ5U1hKQXBzRkFfMmF4RTFRYWhGWmVPQlZKREZCNUMwZlNRTUp0MV9NazZyRjl4YUQ0UEhmb3FHWEd3QzlXNmZFVXVB?oc=5"
+      "title": "[비즈톡톡] 공채 1기에서 임원까지…다시 돌아온 제약사 영업맨 전성시대 - Chosunbiz",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPU29ESTlUakFQaGZ4SGM5bWVFU1BqYnVDY0tnVDRma0dmMGZsTXZqdkpLdU5jRzVRMGhISjlaVGo0NEw1ck5zUkxHMWJuNWhFRUt1VE1oT21hNTFZNlJ6R0NPSmplVlE1OFdOLXJZLVBYeS0tRjJGRlpkQk5YUXBSZnY4a2pkcTQ?oc=5"
     },
     {
-      "title": "'휴일도 쉬지 않는 노동'…아틀라스 vs 옵티머스, 휴머노이드 로봇 전쟁 - edaily.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeGYxXzhTWlZDZUliMEkwaVdadXA4bndDWE5sOWFRQ1NjRGQyeXhlR2QxUjRXRmpWVWcyenZ5eGF5QXh3cEZjYm1URll3V0NETXZrc1J4Tkg2Y1UxeGMzMTlXSWtLTE5qeEN2QnE5ajBwTHFzWTJGTFFSZVlHTHRPZw?oc=5"
+      "title": "Federal Reserve set to loosen US bank rules in attempt to boost mortgage lending - Financial Times",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxMWRwdWFOZTFWUlAyODFXTnJRT1FCLVlKQXY1eUNrc2ZaNF9Sam1Hc0R6VFZ5WWs3cFBUNEtjVjNsOVRiV1k2a2FVcU82ZnNPZXRFUGp0ck9VbjdPS1NjYXFrVlFobk9LeVBkZEpfSVc?oc=5"
+    },
+    {
+      "title": "Hapag-Lloyd to Buy Israeli Rival Zim for $4.2 Billion - The Wall Street Journal",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOalBib096S2lEMjNuUzRiQkNqOUh3NElGS01LbzRDS1dQQzVtVElmSmJwREJCVWNpNnM2M0h4U0dUVW1oSFByQzhRU016cF9ZQ0JGNm1DSGxack1uZ1VhOHFTZHVURjl2UFp1Ti1OZTBUNDlia1FzdU56b3EwQk83ZzdBMmw2c1NNUzdxQm44UmwwYkpGZkVCMWdOdHRBYm9MYkFSYTVjS2dZOVNibzZDZTljTWdnWHJKMkJaR3R3?oc=5"
     }
   ],
   "tickers": [
     "삼성전자",
-    "SK하이닉스",
-    "KT&G"
+    "현대차",
+    "기아"
   ],
-  "reason": "삼성전자와 SK하이닉스는 고액 자산가들의 매수세와 AI 메모리 수요 증가로 인한 수혜가 예상됩니다. 다만, SK하이닉스는 엔비디아 관련 이슈를 주의해야 합니다. KT&G는 신진 작가 육성 프로그램과 같은 문화 사업을 통해 브랜드 이미지를 제고하고 있으며, 안정적인 배당 수익을 기대할 수 있습니다. 반도체 섹터는 변동성이 크므로 분할 매수 전략을 추천하며, KT&G는 장기적인 관점에서 접근하는 것이 좋습니다."
+  "reason": "삼성전자는 반도체 업황 회복 기대감과 함께 꾸준한 성장세를 보일 것으로 예상됩니다. 현대차와 기아는 글로벌 전기차 시장 확대와 함께 정부의 친환경차 지원 정책에 힘입어 성장 가능성이 높습니다. 과거 성적을 고려하여 긍정적인 흐름을 이어갈 것으로 판단됩니다. 다만, 시장 변동성에 유의하며 분할 매수를 추천합니다."
 }
