@@ -1,30 +1,27 @@
-
-
 {
-  "date": "2026-02-16 17:34",
+  "date": "2026-02-16 20:37",
   "market_info": {
     "KOSPI": {
       "price": 5507.01,
       "change": -0.28,
-      "is_open": false
+      "status": "⚪"
     },
     "KOSDAQ": {
       "price": 1106.08,
       "change": -1.77,
-      "is_open": false
+      "status": "⚪"
     },
     "S&P500": {
       "price": 6836.17,
       "change": 0.05,
-      "is_open": true
+      "status": "⚪"
     },
     "NASDAQ": {
       "price": 22546.67,
       "change": -0.22,
-      "is_open": true
+      "status": "⚪"
     }
   },
-  
   "past_results": [
     {
       "ticker": "삼성전자",
@@ -39,37 +36,33 @@
       "change": -2.21
     }
   ],
-  "summary": "최근 시장은 반도체 업황 호조 기대감과 AI 기술 확산에 대한 우려가 공존하고 있습니다. 삼성전자와 SK하이닉스를 중심으로 반도체 투자가 활발하며, HBM 시장 경쟁이 심화될 것으로 예상됩니다. 한편, AI 기술 발전은 청년층 고용 감소와 저작권 침해 문제 등 새로운 과제를 야기하고 있습니다.",
+  "summary": "최근 시장은 반도체 섹터의 변동성과 부동산 시장의 불확실성이 혼재된 양상을 보이고 있습니다. 고액 자산가들의 반도체 투자 지속에도 불구하고, 일부 전문가들은 집값 상승세 둔화를 예상하며 보유세 변화에 주목하고 있습니다. AI 수요 증가에 따른 메모리 칩 부족 현상과 휴머노이드 로봇 개발 경쟁 역시 주요 이슈로 부상하며 투자자들의 관심이 집중되고 있습니다.",
   "news_headlines": [
+    {
+      "title": "전문가 90% '집값 상승 주춤'…1주택자 보유세 강화여부 촉각 - 매일경제",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Pbm0wcnRHZHlOTHJTbFRWdHVoV1dBUzVpdmZjbUxaWnpzd1VTdGl4Z19ldGNnUExNdXloaGpQUjdJeTJXejhHcUItSU5IOGc4Y2FhRUoxdXc?oc=5"
+    },
+    {
+      "title": "엔비디아 혹평에 '비상'…SK하이닉스 살린 '뜻밖의 행운' 정체 [황정수의 반도체 이슈 짚어보기] - 한국경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xeFdhSnNlQlN5SThRajBwZFlBamxDMTZCbmVxWURyMVV6bEo3eThZNnNIWHJ4ckZ2OGYzb1daYXhRNGZRTTBFLUZRbmUxY25oZDVjbnZCdkRDUdIBVEFVX3lxTE9PNl9xQUpsWktvNjVXQUFLSEFXZWpIcFBZVS03NldQTE1TWW1QdTl1QmM3Z1NkbnRnVEVyTTcyZVl4QThWN3U0b3N4bkp4UzJmRmdwUw?oc=5"
+    },
     {
       "title": "고액 자산가도 업어 탄 ‘반도체 슈퍼사이클’...연초 매수 절반은 삼전·하이닉스 - 조선일보",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTDZTQmExUDRrM3RmaTdidm92M0g2SFIzZUU4R1NKSVpPRWFGY2U3NHRiZ09uZUdoTGp5eVllTkJMeTdRWTlyZDNyQktKVXF4TmNPOTdZSjlmcVVmMUNvdWZieFljSGNrQ1N2ODJkd29BeUl6MEtZeElXTHV4WENZRdIBlAFBVV95cUxPUmpYZFRWN1QwUVlQbXBvcS0xcVdGd3dNV3Z6ZFAwVjAtcWdqZk9HbEVyZ2ppNEdlUlh4T3lqdWszZ1VPcXk2QVVNZjZBX2VXS0d2clhKcnVjNFhQQ2VORzhzWkxDTEhYaG1Yb0tiWmJ2cnlSVThiRlJiZFYycnIzektIQmhaTVM0bUFOM2FhOXJCOXYx?oc=5"
     },
     {
-      "title": "도전받는 `SK하이닉스 천하`… 삼성전자·마이크론 동시 협공, HBM시장 `3파전` 전환 - 디지털데일리",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5URFNFN2FCVlltQWRMMGoxN2YwdW5ITFZkd2t6U0RxVGRtdTdkTVhrRXRHWDljSUNmMW9vYjRXQi1WZnA3SFlQSWlwVXNILVdGanhjOV9yWm9Za2lLY0kyak5GMjA?oc=5"
+      "title": "Rampant AI Demand for Memory Is Fueling a Growing Chip Crisis - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNm9sQk9jTXp4dHcwalZsMFRtTDFrVDJuZHhiT0QyeGJ4M05GeElvTmpWT1M4Zl9oaHI2UUZZaXlTcnhrSHg3SnE2N1dNTXdYeWN4cng2aXh6V2VsOFFjVlpuNjZKeDdOV1dyVTl4WUZ5U1hKQXBzRkFfMmF4RTFRYWhGWmVPQlZKREZCNUMwZlNRTUp0MV9NazZyRjl4YUQ0UEhmb3FHWEd3QzlXNmZFVXVB?oc=5"
     },
     {
-      "title": "취업문 더 좁아진 청년층…고용 감소에 AI 확산까지 '이중 한파' - 아시아경제",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE14WU9pcFM5MDdmXzVxMlBtRGVVLVBvV0xwZ05lRDNpN2lRbjltNXY3eDNwZlFvYmxBWVpTaGVKclZVOVg5U3FmVUVOM0hDTVhpM3BKaFBDNjZ3dWkwOUNJ?oc=5"
-    },
-    {
-      "title": "할리우드, 바이트댄스 AI 동영상 생성기 ‘시드댄스 2.0’에 저작권 침해 주장 - 지디넷코리아",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5YLWhNVzRSdnFtbXVzaXh2WVVRTDNCTW02a2sxWXI0NUZ1Zm4ya3NTX0RDZm9UUHp4Z0d0cDNob3FDVTFHaWluekszRmRObG5rZVBtdDJR?oc=5"
-    },
-    {
-      "title": "반도체 호황에…삼성전자, 분기 영업익 30兆 시대 여나 - 매일일보",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yaUNpeXhFc1RGaFVvX1JDTUNfTTAyQ3BsckRTNE9IWFo1N1k1RXNWc3RiMTFPLTlHTVBKWjNPOG1Uc0dyNVQ3NC0wUFFrRDVJN0pVQmJXZnJObWRZVUZwcWt2a24?oc=5"
-    },
-    {
-      "title": "Tom Lee Says AI Killed Software And Job Losses Are 'Soon To Follow' - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10QXRncnZWXzJXWE5Jbks3R29jQlB6UkRKWFB1WHZFU2VmRUtWa2g4dGtHY3BZVkljWnhlVTk5UUNfZjhQRFVfWGt6SEZVVXMxUEFyZ2pScHdHTi1kYkV2SDNzQ1plS2RKQ1UxbThuVFZQRDZCMUkw?oc=5"
+      "title": "'휴일도 쉬지 않는 노동'…아틀라스 vs 옵티머스, 휴머노이드 로봇 전쟁 - edaily.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeGYxXzhTWlZDZUliMEkwaVdadXA4bndDWE5sOWFRQ1NjRGQyeXhlR2QxUjRXRmpWVWcyenZ5eGF5QXh3cEZjYm1URll3V0NETXZrc1J4Tkg2Y1UxeGMzMTlXSWtLTE5qeEN2QnE5ajBwTHFzWTJGTFFSZVlHTHRPZw?oc=5"
     }
   ],
   "tickers": [
     "삼성전자",
     "SK하이닉스",
-    "NVDA"
+    "KT&G"
   ],
-  "reason": "삼성전자와 SK하이닉스는 반도체 슈퍼사이클 기대감과 HBM 시장 경쟁 심화 속에서 긍정적인 모멘텀을 얻을 것으로 예상됩니다. NVDA는 AI 시장 성장과 함께 지속적인 수혜를 누릴 것으로 전망되나, 최근 하락세를 감안하여 신중한 접근이 필요합니다. 분할 매수를 통해 리스크를 관리하는 전략을 추천합니다."
+  "reason": "삼성전자와 SK하이닉스는 고액 자산가들의 매수세와 AI 메모리 수요 증가로 인한 수혜가 예상됩니다. 다만, SK하이닉스는 엔비디아 관련 이슈를 주의해야 합니다. KT&G는 신진 작가 육성 프로그램과 같은 문화 사업을 통해 브랜드 이미지를 제고하고 있으며, 안정적인 배당 수익을 기대할 수 있습니다. 반도체 섹터는 변동성이 크므로 분할 매수 전략을 추천하며, KT&G는 장기적인 관점에서 접근하는 것이 좋습니다."
 }
