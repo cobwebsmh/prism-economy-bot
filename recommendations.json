@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-16 17:30",
+  "date": "2026-02-16 17:34",
   "market_info": {
     "KOSPI": {
       "price": 5507.01,
@@ -36,15 +36,15 @@
       "change": -2.21
     }
   ],
-  "summary": "최근 시장은 반도체 업황 개선 기대감과 AI 기술 확산에 대한 우려가 공존하고 있습니다. 일본 경제는 기술적 경기 침체를 피했지만 기대에 못 미치는 회복세를 보였으며, 고용 시장에서는 청년층의 어려움이 가중되고 있습니다. 유럽중앙은행(ECB)은 유로화 유동성 강화를 위한 조치를 발표했지만, 전반적인 시장 변동성은 여전히 높은 상황입니다.",
+  "summary": "최근 시장은 반도체 업황 호조 기대감과 AI 기술 확산에 대한 우려가 공존하고 있습니다. 삼성전자와 SK하이닉스를 중심으로 반도체 투자가 활발하며, HBM 시장 경쟁이 심화될 것으로 예상됩니다. 한편, AI 기술 발전은 청년층 고용 감소와 저작권 침해 문제 등 새로운 과제를 야기하고 있습니다.",
   "news_headlines": [
     {
       "title": "고액 자산가도 업어 탄 ‘반도체 슈퍼사이클’...연초 매수 절반은 삼전·하이닉스 - 조선일보",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTDZTQmExUDRrM3RmaTdidm92M0g2SFIzZUU4R1NKSVpPRWFGY2U3NHRiZ09uZUdoTGp5eVllTkJMeTdRWTlyZDNyQktKVXF4TmNPOTdZSjlmcVVmMUNvdWZieFljSGNrQ1N2ODJkd29BeUl6MEtZeElXTHV4WENZRdIBlAFBVV95cUxPUmpYZFRWN1QwUVlQbXBvcS0xcVdGd3dNV3Z6ZFAwVjAtcWdqZk9HbEVyZ2ppNEdlUlh4T3lqdWszZ1VPcXk2QVVNZjZBX2VXS0d2clhKcnVjNFhQQ2VORzhzWkxDTEhYaG1Yb0tiWmJ2cnlSVThiRlJiZFYycnIzektIQmhaTVM0bUFOM2FhOXJCOXYx?oc=5"
     },
     {
-      "title": "또 3파전 HBM4 주도권 싸움 - 중소기업신문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE91Y1pQWG5idlZXaVI0Q0tVbXJlSHR0Z09hdmlrNXk5WGFLeElIa3JaZXJIR215NWxyNGdtWWZnUDVuOHFOWXZ3RUc3NXdpdkkydzQyX21DYV9qb2VsV3Rid0pHdVB6aUlpZmRzYnFR?oc=5"
+      "title": "도전받는 `SK하이닉스 천하`… 삼성전자·마이크론 동시 협공, HBM시장 `3파전` 전환 - 디지털데일리",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5URFNFN2FCVlltQWRMMGoxN2YwdW5ITFZkd2t6U0RxVGRtdTdkTVhrRXRHWDljSUNmMW9vYjRXQi1WZnA3SFlQSWlwVXNILVdGanhjOV9yWm9Za2lLY0kyak5GMjA?oc=5"
     },
     {
       "title": "취업문 더 좁아진 청년층…고용 감소에 AI 확산까지 '이중 한파' - 아시아경제",
@@ -55,12 +55,12 @@
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5YLWhNVzRSdnFtbXVzaXh2WVVRTDNCTW02a2sxWXI0NUZ1Zm4ya3NTX0RDZm9UUHp4Z0d0cDNob3FDVTFHaWluekszRmRObG5rZVBtdDJR?oc=5"
     },
     {
-      "title": "OpenAI hires OpenClaw founder Peter Steinberger - Financial Times",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zSFVjQ2RzZzdsbXBqT3VQSTNvLTAzMzV5ZVRSVnJIQVF6YS11Qk95Uk80aW1SNDZsSmxsUDlBTjRvNGlSU2UwT3M3aEpOWWxEcGhCdmlqenhRWUVkdWVSZ1dFcTh5Rmx1Mnhia0ZjcEI?oc=5"
+      "title": "반도체 호황에…삼성전자, 분기 영업익 30兆 시대 여나 - 매일일보",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yaUNpeXhFc1RGaFVvX1JDTUNfTTAyQ3BsckRTNE9IWFo1N1k1RXNWc3RiMTFPLTlHTVBKWjNPOG1Uc0dyNVQ3NC0wUFFrRDVJN0pVQmJXZnJObWRZVUZwcWt2a24?oc=5"
     },
     {
-      "title": "Japan's economy avoids technical recession, but fourth-quarter rebound misses expectations - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNYkstUVc5VktxNEhiUmZveTFyWnNSZ0FEbDFoclpVMmUyRGd3SHRtNl83V05yME1WSlA5NUVjQUgxcm1lSXhZSnJKbVNBWVRLSE1yMVM2YWlNam1sSDhGdmZVUkxoVGxMZTFIZHVWdF96djBZMExyVU5NOEM1Y09kZGdTS0hFV3FJWUVrY1RSQzBwVU9PT0p0dk5JVUI2VWlFVmt0dl9pSVRlTDNseWt3bW9FdUVzcFZHQVRHaGp1SUpfa2ZrM1BkeNIBzgFBVV95cUxPZmVhbnNEWHM2SmFyY1h3cDJUWGpSclFfUFdXQldNSnhlaF9Mb01sS0tnTzJlSjdlT0V6NUNFb09ZVGY0YVFtaHZhaGdUU2J1YkRJSmY2M0Z6cXFFYWNUdFlHU0ZJWk9teFFwNzZsSW9VdVRiaVIyQWl1bHM5aHlRaEd3dFhFSW8xN21QWTNOa3VhSENpbV9RMTRGMk9ZdGctYmtPby1NUkxaS3c4YS1nSDdWMXF5ZGM2YUJVdUhxUnpIZVhCbHU4R2VTSFhidw?oc=5"
+      "title": "Tom Lee Says AI Killed Software And Job Losses Are 'Soon To Follow' - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10QXRncnZWXzJXWE5Jbks3R29jQlB6UkRKWFB1WHZFU2VmRUtWa2g4dGtHY3BZVkljWnhlVTk5UUNfZjhQRFVfWGt6SEZVVXMxUEFyZ2pScHdHTi1kYkV2SDNzQ1plS2RKQ1UxbThuVFZQRDZCMUkw?oc=5"
     }
   ],
   "tickers": [
@@ -68,5 +68,5 @@
     "SK하이닉스",
     "NVDA"
   ],
-  "reason": "삼성전자와 SK하이닉스는 반도체 슈퍼사이클에 대한 기대감과 HBM4 주도권 경쟁의 핵심 기업으로서의 성장 잠재력을 보유하고 있습니다. NVDA는 고성능 GPU 시장을 선도하며 AI 기술 확산의 직접적인 수혜를 받을 것으로 예상되나, 변동성이 클 수 있으므로 투자에 유의해야 합니다. 과거 성적을 고려하여 분할 매수 전략을 추천합니다."
+  "reason": "삼성전자와 SK하이닉스는 반도체 슈퍼사이클 기대감과 HBM 시장 경쟁 심화 속에서 긍정적인 모멘텀을 얻을 것으로 예상됩니다. NVDA는 AI 시장 성장과 함께 지속적인 수혜를 누릴 것으로 전망되나, 최근 하락세를 감안하여 신중한 접근이 필요합니다. 분할 매수를 통해 리스크를 관리하는 전략을 추천합니다."
 }
