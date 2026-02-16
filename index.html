@@ -64,9 +64,17 @@
                 document.getElementById('reason').innerText = data.reason || "";
 
                 // 지수 렌더링
+                // 지수 렌더링 (신호등 추가 버전)
                 if (data.market_info) {
                     document.getElementById('market-grid').innerHTML = Object.entries(data.market_info).map(([name, info]) => `
-                        <div class="card mb-0 py-3 bg-slate-900/50">
+                        <div class="card mb-0 py-3 bg-slate-900/50 relative overflow-hidden">
+                            <div class="absolute top-2 right-2 flex items-center gap-1">
+                                <span class="text-[8px] font-bold ${info.is_open ? 'text-emerald-400' : 'text-slate-500'}">
+                                    ${info.is_open ? 'OPEN' : 'CLOSED'}
+                                </span>
+                                <div class="w-1.5 h-1.5 rounded-full ${info.is_open ? 'bg-emerald-500 shadow-[0_0_5px_#10b981]' : 'bg-slate-600'}"></div>
+                            </div>
+                
                             <p class="text-[9px] text-slate-500 font-bold">${name}</p>
                             <p class="text-base font-black text-slate-200">${info.price}</p>
                             <p class="text-[10px] ${info.change >= 0 ? 'text-red-400' : 'text-blue-400'} font-mono">
@@ -75,7 +83,7 @@
                         </div>
                     `).join('');
                 }
-
+           
                 // 종목 렌더링
                 if (data.tickers) {
                     document.getElementById('ticker-list').innerHTML = data.tickers.map(t => `
