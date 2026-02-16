@@ -12,7 +12,6 @@ REC_FILE = 'recommendations.json'
 HISTORY_FILE = 'history.json'
 
 def get_market_data():
-    """지수 데이터 및 시장 상태 확인"""
     indices = {"KOSPI": "^KS11", "KOSDAQ": "^KQ11", "S&P500": "^GSPC", "NASDAQ": "^IXIC"}
     result = {}
     now_utc = datetime.now(pytz.utc)
@@ -20,7 +19,7 @@ def get_market_data():
         try:
             stock = yf.Ticker(ticker)
             hist = stock.history(period="2d")
-            if len(hist) >= 2:
+            if not hist.empty and len(hist) >= 2:
                 current = hist['Close'].iloc[-1]
                 prev = hist['Close'].iloc[-2]
                 change = ((current - prev) / prev) * 100
@@ -35,7 +34,10 @@ def get_market_data():
     return result
 
 def verify_past():
-    """어제 추천 종목 수익률 확인"""
+    """어제 추천 종목 수익률 확인 (한글명 대응)"""
+    # 한글 종목명을 티커로 변환하는 간단한 매핑 (주요 종목 위주)
+    ticker_map = {"삼성전자": "005930.KS", "SK하이닉스": "000660.KS", "NAVER": "035420.KS", "카카오": "035720.KS", "현대차": "005380.KS"}
+    
     try:
         if not os.path.exists(REC_FILE): return []
         with open(REC_FILE, 'r', encoding='utf-8') as f:
@@ -43,22 +45,23 @@ def verify_past():
             past_tickers = old_data.get('tickers', [])
             results = []
             for t in past_tickers:
-                clean_t = t.split('(')[-1].replace(')', '') if '(' in t else t
+                # 1. 매핑 테이블 확인 2. 괄호 안 숫자 확인 3. 영문 티커 그대로 사용
+                clean_t = ticker_map.get(t, t)
+                if '(' in clean_t: clean_t = clean_t.split('(')[-1].replace(')', '')
                 if clean_t.isdigit() and len(clean_t) == 6: clean_t += ".KS"
-                s = yf.Ticker(clean_t)
-                h = s.history(period="2d")
-                if len(h) >= 2:
-                    c = ((h['Close'].iloc[-1] - h['Close'].iloc[-2]) / h['Close'].iloc[-2]) * 100
-                    results.append({"ticker": t.split('(')[0], "change": round(c, 2)})
+                
+                try:
+                    s = yf.Ticker(clean_t)
+                    h = s.history(period="2d")
+                    if not h.empty and len(h) >= 2:
+                        c = ((h['Close'].iloc[-1] - h['Close'].iloc[-2]) / h['Close'].iloc[-2]) * 100
+                        results.append({"ticker": t.split('(')[0], "change": round(c, 2)})
+                except: continue
             return results
     except: return []
 
 def fetch_global_news():
-    """뉴스 제목과 원문 링크 수집"""
-    feeds = [
-        "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR",
-        "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US"
-    ]
+    feeds = ["https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR", "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US"]
     news_list = []
     for url in feeds:
         try:
@@ -68,26 +71,19 @@ def fetch_global_news():
         except: continue
     return news_list
 
-# --- 실행 로직 ---
+# --- 메인 로직 ---
 try:
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     market_info = get_market_data()
     past_results = verify_past()
     news_data = fetch_global_news()
 
-    prompt = f"""
-    전략가로서 다음 데이터를 분석하세요:
-    1. 뉴스 데이터(제목과 링크): {news_data}
-    2. 어제 성적: {past_results}
+    # 프롬프트에서 중괄호 꼬임 방지를 위해 f-string 대신 별도 변수 처리
+    prompt = "전략가로서 다음 데이터를 분석하세요.\n"
+    prompt += f"1. 뉴스: {news_data}\n2. 어제 성적: {past_results}\n\n"
+    prompt += "반드시 다음 형식의 JSON으로만 답하세요:\n"
+    prompt += '{"summary": "시장 요약", "news_headlines": [{"title": "제목", "link": "링크"}], "tickers": ["종목명"], "reason": "이유"}'
 
-    다음 형식의 JSON으로만 답하세요. news_headlines에는 객체(title, link) 리스트를 넣으세요:
-    {{
-      "summary": "시장 요약 3문장 이내",
-      "news_headlines": [{"title": "뉴스제목", "link": "링크"}, ...],
-      "tickers": ["종목명1", "종목명2", "종목명3"], 
-      "reason": "종목 선정 이유와 상세 분석"
-    }}
-    """
     response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     ai_data = json.loads(response.text.strip().replace('```json', '').replace('```', ''))
 
@@ -103,11 +99,15 @@ try:
 
     history = []
     if os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
-            history = json.load(f)
+        try:
+            with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
+                history = json.load(f)
+        except: history = []
+    
     history.append({"date": final_data["date"], "performance": past_results, "predictions": ai_data["tickers"]})
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
         json.dump(history[-30:], f, ensure_ascii=False, indent=2)
+    
     print("✅ 작업 완료")
 except Exception as e:
     print(f"❌ 오류: {e}")
