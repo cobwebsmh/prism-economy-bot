@@ -78,5 +78,27 @@
       "SK하이닉스",
       "NVDA"
     ]
+  },
+  {
+    "date": "2026-02-16 17:30",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 1.46
+      },
+      {
+        "ticker": "SK하이닉스",
+        "change": -0.9
+      },
+      {
+        "ticker": "NVDA",
+        "change": -2.21
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "SK하이닉스",
+      "NVDA"
+    ]
   }
 ]
