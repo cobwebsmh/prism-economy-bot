@@ -68,14 +68,18 @@
             // 뉴스 렌더링
             document.getElementById('news-list').innerHTML = data.news_headlines.map(h => `<li>${h}</li>`).join('');
 
-            // 티커 렌더링 (균형 잡힌 카드 스타일)
-            document.getElementById('ticker-list').innerHTML = data.tickers.map(t => `
-                <div class="flex-1 min-w-[80px] aspect-square flex flex-col items-center justify-center bg-gray-700/50 border border-yellow-600/50 rounded-2xl p-2 text-center shadow-inner">
-                    <span class="text-yellow-400 font-bold text-sm md:text-base break-words w-full">
-                        ${t}
-                    </span>
-                </div>
-            `).join('');
+            // 티커 렌더링 (종목명만 강조)
+            document.getElementById('ticker-list').innerHTML = data.tickers.map(t => {
+                // 혹시 AI가 괄호를 포함했을 경우를 대비해 괄호 앞부분만 추출
+                const cleanName = t.split('(')[0].trim(); 
+                return `
+                    <div class="flex-1 min-w-[100px] h-24 flex items-center justify-center bg-gradient-to-br from-gray-700 to-gray-800 border border-yellow-500/30 rounded-2xl p-2 text-center shadow-lg">
+                        <span class="text-yellow-400 font-bold text-base md:text-lg leading-tight">
+                            ${cleanName}
+                        </span>
+                    </div>
+                `;
+            }).join('');
            
             // 정합성 렌더링
             document.getElementById('accuracy-list').innerHTML = data.past_results.length > 0 
