@@ -32,8 +32,9 @@ jobs:
       # ⭐ 여기서부터가 대시보드 업데이트의 핵심입니다!
       - name: Commit and Push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add recommendations.json
-          git commit -m "Update recommendations.json [skip ci]" || echo "No changes to commit"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          # 아래 줄에 history.json을 명시적으로 추가합니다.
+          git add recommendations.json history.json || echo "No changes to add"
+          git commit -m "Update dashboard and history" || echo "No changes to commit"
           git push
