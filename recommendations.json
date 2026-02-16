@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-16 17:16",
+  "date": "2026-02-16 17:19",
   "market_info": {
     "KOSPI": {
       "price": 5507.01,
@@ -36,37 +36,12 @@
       "change": -2.21
     }
   ],
-  "summary": "반도체 업황 호조 기대감과 AI 기술 발전 및 그에 따른 고용 감소 우려가 공존하는 시장 상황입니다. 삼성전자와 SK하이닉스는 개인 투자자들의 매수세가 이어지고 있지만, SK하이닉스는 경쟁 심화에 대한 우려도 존재합니다. AI 기술 발전은 일자리 감소에 대한 잠재적 위협으로 부각되고 있습니다.",
-  "news_headlines": [
-    {
-      "title": "고액 자산가도 업어 탄 ‘반도체 슈퍼사이클’...연초 매수 절반은 삼전·하이닉스 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTDZTQmExUDRrM3RmaTdidm92M0g2SFIzZUU4R1NKSVpPRWFGY2U3NHRiZ09uZUdoTGp5eVllTkJMeTdRWTlyZDNyQktKVXF4TmNPOTdZSjlmcVVmMUNvdWZieFljSGNrQ1N2ODJkd29BeUl6MEtZeElXTHV4WENZRdIBlAFBVV95cUxPUmpYZFRWN1QwUVlQbXBvcS0xcVdGd3dNV3Z6ZFAwVjAtcWdqZk9HbEVyZ2ppNEdlUlh4T3lqdWszZ1VPcXk2QVVNZjZBX2VXS0d2clhKcnVjNFhQQ2VORzhzWkxDTEhYaG1Yb0tiWmJ2cnlSVThiRlJiZFYycnIzektIQmhaTVM0bUFOM2FhOXJCOXYx?oc=5"
-    },
-    {
-      "title": "도전받는 `SK하이닉스 천하`… 삼성전자·마이크론 동시 협공, HBM시장 `3파전` 전환 - 디지털데일리",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5URFNFN2FCVlltQWRMMGoxN2YwdW5ITFZkd2t6U0RxVGRtdTdkTVhrRXRHWDljSUNmMW9vYjRXQi1WZnA3SFlQSWlwVXNILVdGanhjOV9yWm9Za2lLY0kyak5GMjA?oc=5"
-    },
-    {
-      "title": "취업문 더 좁아진 청년층…고용 감소에 AI 확산까지 '이중 한파' - 아시아경제",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE14WU9pcFM5MDdmXzVxMlBtRGVVLVBvV0xwZ05lRDNpN2lRbjltNXY3eDNwZlFvYmxBWVpTaGVKclZVOVg5U3FmVUVOM0hDTVhpM3BKaFBDNjZ3dWkwOUNJ?oc=5"
-    },
-    {
-      "title": "할리우드, 바이트댄스 AI 동영상 생성기 ‘시드댄스 2.0’에 저작권 침해 주장 - 지디넷코리아",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5YLWhNVzRSdnFtbXVzaXh2WVVRTDNCTW02a2sxWXI0NUZ1Zm4ya3NTX0RDZm9UUHp4Z0d0cDNob3FDVTFHaWluekszRmRObG5rZVBtdDJR?oc=5"
-    },
-    {
-      "title": "반도체 호황에…삼성전자, 분기 영업익 30兆 시대 여나 - 매일일보",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yaUNpeXhFc1RGaFVvX1JDTUNfTTAyQ3BsckRTNE9IWFo1N1k1RXNWc3RiMTFPLTlHTVBKWjNPOG1Uc0dyNVQ3NC0wUFFrRDVJN0pVQmJXZnJObWRZVUZwcWt2a24?oc=5"
-    },
-    {
-      "title": "Tom Lee Says AI Killed Software And Job Losses Are 'Soon To Follow' - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10QXRncnZWXzJXWE5Jbks3R29jQlB6UkRKWFB1WHZFU2VmRUtWa2g4dGtHY3BZVkljWnhlVTk5UUNfZjhQRFVfWGt6SEZVVXMxUEFyZ2pScHdHTi1kYkV2SDNzQ1plS2RKQ1UxbThuVFZQRDZCMUkw?oc=5"
-    }
-  ],
+  "summary": "삼성전자는 상승, SK하이닉스와 NVDA는 하락했습니다. 전반적인 시장은 혼조세를 보였습니다. 투자에 유의해야 합니다.",
+  "news_headlines": [],
   "tickers": [
     "삼성전자",
     "SK하이닉스",
     "NVDA"
   ],
-  "reason": "주요 반도체 기업들의 실적 기대감과 HBM 시장 경쟁 심화, 그리고 AI 기술 발전이 시장에 미치는 영향 등을 종합적으로 고려했습니다."
+  "reason": "어제 성적을 기반으로 주요 종목들의 등락을 파악하고, 투자 판단에 참고하기 위함입니다."
 }
