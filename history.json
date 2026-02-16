@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-02-16 16:50",
+    "performance": [
+      {
+        "ticker": "NVDA",
+        "change": -2.21
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "SK하이닉스",
+      "NVDA"
+    ]
+  }
+]
