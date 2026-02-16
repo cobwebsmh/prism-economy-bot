@@ -1,27 +1,30 @@
+
+
 {
   "date": "2026-02-16 17:34",
   "market_info": {
     "KOSPI": {
       "price": 5507.01,
       "change": -0.28,
-      "status": "⚪"
+      "is_open": false
     },
     "KOSDAQ": {
       "price": 1106.08,
       "change": -1.77,
-      "status": "⚪"
+      "is_open": false
     },
     "S&P500": {
       "price": 6836.17,
       "change": 0.05,
-      "status": "⚪"
+      "is_open": true
     },
     "NASDAQ": {
       "price": 22546.67,
       "change": -0.22,
-      "status": "⚪"
+      "is_open": true
     }
   },
+  
   "past_results": [
     {
       "ticker": "삼성전자",
