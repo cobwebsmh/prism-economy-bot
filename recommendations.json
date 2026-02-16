@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-16 17:19",
+  "date": "2026-02-16 17:24",
   "market_info": {
     "KOSPI": {
       "price": 5507.01,
@@ -36,12 +36,25 @@
       "change": -2.21
     }
   ],
-  "summary": "삼성전자는 상승, SK하이닉스와 NVDA는 하락했습니다. 전반적인 시장은 혼조세를 보였습니다. 투자에 유의해야 합니다.",
-  "news_headlines": [],
+  "summary": "금일 시장은 반도체 업황 개선 기대감과 AI 기술 확산에 대한 우려가 공존하는 모습입니다. 고액 자산가들의 반도체 주식 매수세가 지속되는 가운데, HBM4 경쟁이 심화되며 관련 기업들의 투자가 확대되고 있습니다. 한편, AI 기술 발전으로 인한 고용 감소 우려와 일부 기술 기업에 대한 규제 리스크가 시장의 변동성을 키우고 있습니다.",
+  "news_headlines": [
+    {
+      "title": "고액 자산가도 업어 탄 ‘반도체 슈퍼사이클’...연초 매수 절반은 삼전·하이닉스 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTDZTQmExUDRrM3RmaTdidm92M0g2SFIzZUU4R1NKSVpPRWFGY2U3NHRiZ09uZUdoTGp5eVllTkJMeTdRWTlyZDNyQktKVXF4TmNPOTdZSjlmcVVmMUNvdWZieFljSGNrQ1N2ODJkd29BeUl6MEtZeElXTHV4WENZRdIBlAFBVV95cUxPUmpYZFRWN1QwUVlQbXBvcS0xcVdGd3dNV3Z6ZFAwVjAtcWdqZk9HbEVyZ2ppNEdlUlh4T3lqdWszZ1VPcXk2QVVNZjZBX2VXS0d2clhKcnVjNFhQQ2VORzhzWkxDTEhYaG1Yb0tiWmJ2cnlSVThiRlJiZFYycnIzektIQmhaTVM0bUFOM2FhOXJCOXYx?oc=5"
+    },
+    {
+      "title": "HBM4 선점 총력…불 안꺼지는 삼성·SK 공장 - 뉴스토마토",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBGUTVKOGtjbWlXUFdYMXFFbkhKSFo1NnZ2RFFTaVlfRmlYVkNUM25JY2xkdzFsLUswTkZYR1Z4cWw1RnJGWmtBZmRFc0J2V3JqbElqQURneDNGdEU?oc=5"
+    },
+    {
+      "title": "취업문 더 좁아진 청년층…고용 감소에 AI 확산까지 '이중 한파' - 아시아경제",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE14WU9pcFM5MDdmXzVxMlBtRGVVLVBvV0xwZ05lRDNpN2lRbjltNXY3eDNwZlFvYmxBWVpTaGVKclZVOVg5U3FmVUVOM0hDTVhpM3BKaFBDNjZ3dWkwOUNJ?oc=5"
+    }
+  ],
   "tickers": [
     "삼성전자",
     "SK하이닉스",
     "NVDA"
   ],
-  "reason": "어제 성적을 기반으로 주요 종목들의 등락을 파악하고, 투자 판단에 참고하기 위함입니다."
+  "reason": "삼성전자와 SK하이닉스는 고액 자산가 매수세 및 HBM 경쟁 심화로 인한 투자 확대 기대감, NVDA는 AI 시장 성장 수혜 기대감 및 긍정적 실적 전망"
 }
