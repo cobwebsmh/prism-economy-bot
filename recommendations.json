@@ -1,24 +1,28 @@
 {
-  "date": "2026-02-17 08:18",
+  "date": "2026-02-17 10:05",
   "market_info": {
     "KOSPI": {
       "price": 5507.01,
       "change": -0.28,
-      "status": "⚪"
+      "is_open": true,
+      "status": "🟢"
     },
     "KOSDAQ": {
       "price": 1106.08,
       "change": -1.77,
-      "status": "⚪"
+      "is_open": true,
+      "status": "🟢"
     },
     "S&P500": {
       "price": 6836.17,
       "change": 0.05,
+      "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
       "price": 22546.67,
       "change": -0.22,
+      "is_open": false,
       "status": "⚪"
     }
   },
@@ -28,11 +32,11 @@
       "change": 1.46
     },
     {
-      "ticker": "SK하이닉스",
-      "change": -0.9
+      "ticker": "현대차",
+      "change": -1.38
     }
   ],
-  "summary": "최근 글로벌 펀드매니저들의 달러 투매 현상이 나타나며 '킹달러' 시대의 종말 가능성이 제기되고 있습니다. 미 연준은 모기지 대출 확대를 위해 은행 규제 완화를 고려 중이며, AI 인재 순유출 심화 문제는 한국의 경쟁력 약화로 이어질 수 있습니다. 특정 산업군에서는 제약사 영업 인력의 중요성이 다시 부각되고 있습니다.",
+  "summary": "한국 시장은 개장했지만 미국 시장은 휴장입니다. 최근 뉴스 헤드라인은 달러 약세 가능성, 파킹 통장의 높은 금리, 그리고 국내 상장사 목표 주가 상향 조정 등을 보여줍니다. 증시 호황 속에서 현대차를 비롯한 국내 상장사들의 목표 주가가 상승하고 있습니다.",
   "news_headlines": [
     {
       "title": "글로벌 펀드매니저 '달러 투매'… 14년 만에 최저치, '킹달러' 시대 종말 고하나 - 글로벌이코노믹",
@@ -43,26 +47,42 @@
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxON3RRRjZaR2tyVTItdzNwaG9OYTdHUUtPazVJQkY5YnUxZHFnRVhSTDNGWDFpUWtPVFhuLUl0NmJ2SWVPbVNtaTNsS00xdDdKRGRNSHZHSHdheEdTeFROLVJZcFFnQzdzYTJzOHY5bUV0a0trSTdFcnFSSXRxXzlZNdIBlAFBVV95cUxOc25sMENPWU5mbTMwUkJVWkRWaVYwX28zbE5TX0p1UDF6MV9BOFMtMHE0N0VYaElmZzY3ejY5VUV3YlUtZWtSenJOTlFldVdHUm81Q1gwcUZHbjlJMUh2a0RkVFJLU3RRaFZ1YW9zUU8zTVdmVXpLODJOa2NCTUVOTnFkazNmanUtLTBnUmFHYlFmczcy?oc=5"
     },
     {
-      "title": "AI 인재 순유출 심화…한국 매력도 30위권 정체 - 한국무역협회-KITA.NET",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQV3pkN3paeVpxTjRndkRNdVVVM1NXdFFTb0gtaEs3Q3dBOWthRkJKYnRmNHV5Yno0Z2g2VnFSQlZPUDdrQk9KYnZLYnZENEhqN0FwMlJBZzNTRHVJOFIydHZ1bFZpeE9YZVB5VnYxQU11ZzlLOEhMczU0b25Rc2VmclN4amloOUthTDFqTURXdTBmcXhyN0k4eE9aZXozbUxVcktVVUpvYXJ4cjhqVGFLVXRjbjQwM1hnZjEweDlJbWFZOURUWVRSLUk1N3NlaEkwZzRDbw?oc=5"
+      "title": "검술에 콩트까지…중국 휴머노이드는 왜 무대에 설까 - 노컷뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBXY1Nfc1NnYjl0ejlGUUhLdFh4MG5qYy1YZ2hBUTdfbEJ4dldTbEhMS2NINTJNT1FudjlubThIMDUxUFh5YVc2aVRWQUVrMFQtbVE?oc=5"
     },
     {
-      "title": "[비즈톡톡] 공채 1기에서 임원까지…다시 돌아온 제약사 영업맨 전성시대 - Chosunbiz",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPU29ESTlUakFQaGZ4SGM5bWVFU1BqYnVDY0tnVDRma0dmMGZsTXZqdkpLdU5jRzVRMGhISjlaVGo0NEw1ck5zUkxHMWJuNWhFRUt1VE1oT21hNTFZNlJ6R0NPSmplVlE1OFdOLXJZLVBYeS0tRjJGRlpkQk5YUXBSZnY4a2pkcTQ?oc=5"
+      "title": "해외주식 사면서 국장도 대거 산다…환율 하향 가능성[주末머니] - 아시아경제",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1YVjN0N0hibEJvZ0FFZ1JWZklQR2gyOThTRkRCMDlMRnVJOEFOZklyQ2pNbVV6dzA1djdXNlVCRDA2RTYzdENOQ3FONEVTZWJNU3ZiLUU3cnVhTEI0SlZYcm1n?oc=5"
+    },
+    {
+      "title": "증시 호황에 국내 상장사 66% 목표주가 올라… 상향폭 1위는 현대차 - 조선비즈 - Chosunbiz",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUjVQUXpFdS1oQnZFNjRnVmNFLWtwWDliSmcwQTRQQnpQdHU2MmRqOU9vUF9zRTh4VTBkQ1Fpb1lYNUNYU0JnQ0RVbUxkaEsxbXowcHZBUHNlVnVCQlB1UC1McEdwaXE1enVxVG5GNW1zSTMwcld1ODd6c2lFdHFMWXFud0pIS2tt0gGcAUFVX3lxTE43UDNzNEJHaEljMHI3cl91Unh0U1FFQ3c4Rm9mU29paVBTdDVaTlNpZUEyVjNSY0hzdnJ1WDVOLXhMRGt4SVZJTzZFcmNQRjJoWUlJTFFldEYwZDFJY1loR09Fek9EUEE2YmlGaW9xUDhMNWFmS212ZEhqektEMTg4dUdNVG56dzJQejF6eHloWXRLZ3BnZTFTbWlwMQ?oc=5"
+    },
+    {
+      "title": "Hyatt Chairman Pritzker leaves board over Epstein ties - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWVRUcDhlX01BenN2dkk3dkxuYTFhSkVzNjVYdEYzbWx3dUpSdGs2MHVFSDVjUTVXSHZ3d3N4N1RNc2Q0ZXZ2WW1JUlU4ZllVUW1vRWZpYXpLaXVjbERWNTNNR1BMejd4UmptM2R2bk5hWmMxMHl2YVpfNXFsZVpjNG9hRHY1bGtGT3NNXzA1VlY0MFMyTGfSAZsBQVVfeXFMTkxFMnlpZXhXR0VnSkdJaGVCS01UOThVdUJ2NXNzN2dOMGk3dXU3QkFtUkJvb1o2LVBtWDJpa0NkRjduTktBZmVCNlFocVZYUnZBSTZtU3pBMG5ORkZXMW84N05sT3lqX2p3LV9MMUg2a2FsUjVjdWNRaWpWRDBtOUtPRHZIWUVJRjVVT2UzQ2FHUXZUWlhTZklqY0E?oc=5"
+    },
+    {
+      "title": "Trader Joe’s Is Exploding Across New York With New Stores - Hudson Valley Post",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOXzVjaHdwR2NHYmE3NVg2ampLR2NUWjVZZW1OX05sR0lMOWNid2tGYXBMZHE3VTNfUUVyaWJSRW5ZdHh6LUFrUUNpR3AzVUt5WkFmSWN0bE9RU21rRU9NY0hRanFvZnI0M3hQWWpWSXc5a0tIZEZ0eGVHTDBNU0p1MjRNdWFSX2ZrelptaE1GWmNPN3lnN1ZN?oc=5"
+    },
+    {
+      "title": "Ford is asking the Trump Administration to allow Chinese EV tech in the US - Electrek",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNelRabjlRQmVHVEdhWWlaRU1lSC1SOElVRzlBTkpoZFUzam1hNk81MllXY1Zyd1R3WExPaWxsUDRJN081QUtXVFZWaklhRHFQdFo5Z2o5b0JUZnM2d0otdTBSZmd0VTE2VGpZbGJRQ3BzT2t5bU0xT280TERjLWc4cExuQUZuUjFqWng0M0lvbU1TdlpyZGsxVmJR?oc=5"
     },
     {
       "title": "Federal Reserve set to loosen US bank rules in attempt to boost mortgage lending - Financial Times",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBxMWRwdWFOZTFWUlAyODFXTnJRT1FCLVlKQXY1eUNrc2ZaNF9Sam1Hc0R6VFZ5WWs3cFBUNEtjVjNsOVRiV1k2a2FVcU82ZnNPZXRFUGp0ck9VbjdPS1NjYXFrVlFobk9LeVBkZEpfSVc?oc=5"
     },
     {
-      "title": "Hapag-Lloyd to Buy Israeli Rival Zim for $4.2 Billion - The Wall Street Journal",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOalBib096S2lEMjNuUzRiQkNqOUh3NElGS01LbzRDS1dQQzVtVElmSmJwREJCVWNpNnM2M0h4U0dUVW1oSFByQzhRU016cF9ZQ0JGNm1DSGxack1uZ1VhOHFTZHVURjl2UFp1Ti1OZTBUNDlia1FzdU56b3EwQk83ZzdBMmw2c1NNUzdxQm44UmwwYkpGZkVCMWdOdHRBYm9MYkFSYTVjS2dZOVNibzZDZTljTWdnWHJKMkJaR3R3?oc=5"
+      "title": "Meta largely fails to protect kids from AI chatbots, per its own tests - Axios",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0ydHl4SkJWLU14Tk1TczJMMXNwRjZHaTNqZ1NZWUNuZkRoSkM2NHN5Ql9QRm1RLVBiRDhkNGdUWWttZk9rbnlNNFFuSkJKbE5MTXIwaWYwcDBreXFxX1EzU0VOa1Q?oc=5"
     }
   ],
   "tickers": [
-    "삼성전자",
     "현대차",
-    "기아"
+    "삼성전자",
+    "SK하이닉스"
   ],
-  "reason": "삼성전자는 반도체 업황 회복 기대감과 함께 꾸준한 성장세를 보일 것으로 예상됩니다. 현대차와 기아는 글로벌 전기차 시장 확대와 함께 정부의 친환경차 지원 정책에 힘입어 성장 가능성이 높습니다. 과거 성적을 고려하여 긍정적인 흐름을 이어갈 것으로 판단됩니다. 다만, 시장 변동성에 유의하며 분할 매수를 추천합니다."
+  "reason": "미국 시장이 휴장이므로, 현재 개장 중인 한국 시장의 주요 종목인 현대차(목표 주가 상향폭 1위), 삼성전자, SK하이닉스를 추천합니다. 최근 증시 호황과 국내 상장사들의 긍정적인 전망이 이들 종목에 대한 투자 매력을 높이고 있습니다."
 }
