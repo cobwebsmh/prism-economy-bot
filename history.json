@@ -202,5 +202,19 @@
       "Ford",
       "Trader Joe's"
     ]
+  },
+  {
+    "date": "2026-02-18 08:18",
+    "performance": [
+      {
+        "ticker": "SK하이닉스",
+        "change": -0.9
+      }
+    ],
+    "predictions": [
+      "SK하이닉스",
+      "TSLA",
+      "COIN"
+    ]
   }
 ]
