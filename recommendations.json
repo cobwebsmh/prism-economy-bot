@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-18 08:18",
+  "date": "2026-02-18 19:21",
   "market_info": {
     "KOSPI": {
       "price": 5507.01,
@@ -30,27 +30,49 @@
     {
       "ticker": "SK하이닉스",
       "change": -0.9
+    },
+    {
+      "ticker": "TSLA",
+      "change": -1.63
+    },
+    {
+      "ticker": "COIN",
+      "change": 1.03
     }
   ],
-  "summary": "한국과 미국 시장 모두 휴장 상태입니다. 뉴스 기사를 분석한 결과, 반도체, 암호화폐, 투자 관련 키워드가 두드러집니다. 특히 일론 머스크의 한국 채용 소식은 국내 투자 심리에 긍정적인 영향을 줄 수 있습니다.",
+  "summary": "한국과 미국 시장은 휴장이며, 설 연휴 이후 코스피의 방향성은 불확실합니다. 삼성전자와 SK하이닉스의 시가총액이 코스피에서 큰 비중을 차지하고 있습니다. 워렌 버핏은 아마존, 애플 등의 주식을 일부 처분했습니다.",
   "news_headlines": [
     {
-      "title": "반도체 대신 피스타치오…‘두쫀쿠’가 바꾼 하늘길 풍경 - v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkd1lXR1hWeFVtaW0wYldUc1BveVRpRXBOSXBTTHZ1UDZnX2ttNEFIQk4wdER4Z3RRZ1ZfdGxmM1hodTNGQ0wwYzN2Wmx0TjA?oc=5"
+      "title": "삼성전자·SK하이닉스, 합산 시총 '2000조원' 향해 질주…코스피 비중도 40% '근접' - 글로벌이코노믹",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdW14UEI0UHVFOHZJZzVESnVCMllqVmJIXzNJSFo4aGVsVkZFcXJDM3NsLURiN0xNcmRCM29MX1QtNllVaTlZYUppUV9aODNKUzZxNGtUR3pmY1p1NmJuRmFLemxqUEtqY0VhcTVna0dybk93bkZybFRmLUp6N1otcE5RcFJvTnVy?oc=5"
     },
     {
-      "title": "비트코인 ' 곧 10분의 1 토막 추락' ... 블룸버그 긴급보고서 ' 뉴욕증시 암호화폐 서사의 종말' - 글로벌이코노믹",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMkJqRVlOMzViU2xQVWV4cW9DaTZzbHdENlFkSnkxeGNqS3kyRWtQU3gtVlZXcld6TmJIQWtYTmlCWlE2UUhpTHlXbzJMY0hsTmZoMVI4VlpmUmVKajk0bGJJcFpiS0FabUVQQkFsZER4aHhtak02RTBCWjM1MHV6NUZReXpjdjlV?oc=5"
+      "title": "Warren Buffett Dumped Shares of Amazon, Apple, and Bank of America, and Added One Brand-New Stock in His Final Quarter Before Retirement - The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZU8yRjdTQmU0Umlpcm8ydDFVNGZrYnNlUFY4cFY3Rk1WNEUtNEtYYWJCQmFBMXk1eVFDb3ZTczZyRDZxRG5PWnNwVU1taTNpMDl6RlJPbXl2WjBYUmluSi0wLTNUX0NrbU1Bb2RwV0FNOEpjQWI5ZDhLSlQ5VFkzODJqOXJxaUdpS2hWbTVCd25BeE12ZXdyXw?oc=5"
+    }
+  ],
+  "sectors": [
+    {
+      "name": "반도체",
+      "sentiment": "HOT",
+      "reason": "삼성전자와 SK하이닉스의 시총 비중 증가 및 주가 상승 기대감"
     },
     {
-      "title": "일론 머스크, 태극기 휘날리며 한국인 채용나서 - 문화일보",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9yOEJzZ3pQanEwQzZQV2txaVhyWkVjTXVkbjVscGp5a1YzMWx6dGd2RVBiR19jUHM3U0tKcG1ZLVZTS0l4bU10cnJlS2MtNUFN?oc=5"
+      "name": "풍력 에너지",
+      "sentiment": "COOL",
+      "reason": "한국 풍력 산업이 미국, 유럽 핵심 공급망으로 부상 가능성, 성장 잠재력 존재하나 불확실성 존재."
+    },
+    {
+      "name": "증권",
+      "sentiment": "HOT",
+      "reason": "자사주 소각 기대감으로 인한 증권주 상승세"
     }
   ],
   "tickers": [
+    "삼성전자",
     "SK하이닉스",
-    "TSLA",
-    "COIN"
+    "대신증권"
   ],
-  "reason": "한국과 미국 시장이 모두 휴장 중이므로, 뉴스 분석을 통해 투자 아이디어를 도출했습니다. SK하이닉스는 과거 성적이 좋지 않았지만, 반도체 시장에 대한 꾸준한 관심과 일론 머스크의 한국 채용 소식으로 인해 긍정적인 영향을 기대하며 선정했습니다. TSLA(테슬라)는 일론 머스크 관련주로 함께 묶었고, COIN(코인베이스)는 비트코인 관련 뉴스에 대한 간접적인 투자 대상으로 고려했습니다."
+  "reason": "반도체 섹터의 주도 기업, 자사주 소각 이슈가 있는 증권주에 주목",
+  "push_message": "반도체, 증권주 주목! 설 연휴 후 투자 전략"
 }
