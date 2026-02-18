@@ -256,5 +256,23 @@
       "SK하이닉스",
       "두산에너빌리티"
     ]
+  },
+  {
+    "date": "2026-02-18 21:39",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 1.46
+      },
+      {
+        "ticker": "SK하이닉스",
+        "change": -0.9
+      }
+    ],
+    "predictions": [
+      "NVDA",
+      "TSM",
+      "GE"
+    ]
   }
 ]
