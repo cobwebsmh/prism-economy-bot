@@ -3,138 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prism Insight</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Prism Insight - AI Report</title>
     <style>
-        body { background: #020617; color: white; font-family: sans-serif; }
-        .card { background: #1e293b; border-radius: 1rem; padding: 1.2rem; margin-bottom: 1rem; border: 1px solid rgba(255,255,255,0.05); }
-        .glass { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(10px); }
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #ffffff;
+            --text-sub: #aaaaaa;
+            --accent-hot: #ff4b2b;
+            --accent-cool: #00c6ff;
+            --green: #4caf50;
+            --red: #f44336;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 500px; margin: 0 auto; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: -1px; }
+        .date { font-size: 12px; color: var(--text-sub); }
+
+        /* Market Indices */
+        .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 25px; }
+        .market-card { background: var(--card-bg); padding: 15px; border-radius: 15px; border: 1px solid #333; }
+        .m-name { font-size: 12px; color: var(--text-sub); }
+        .m-price { font-size: 18px; font-weight: bold; margin: 5px 0; }
+        .m-change { font-size: 12px; font-weight: 500; }
+
+        /* Summary */
+        .section-title { font-size: 18px; font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; }
+        .section-title::before { content: '💎'; margin-right: 8px; }
+        .summary-box { background: var(--card-bg); padding: 20px; border-radius: 15px; line-height: 1.6; margin-bottom: 25px; font-size: 14px; }
+
+        /* Sector Analysis (New) */
+        .sectors-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 25px; }
+        .sector-card { background: #252525; padding: 12px; border-radius: 12px; border-left: 4px solid #444; }
+        .sector-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .sector-name { font-size: 13px; font-weight: bold; }
+        .sentiment-badge { font-size: 9px; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+        .HOT { background: var(--accent-hot); color: #fff; }
+        .COOL { background: var(--accent-cool); color: #fff; }
+        .sector-reason { font-size: 11px; color: var(--text-sub); line-height: 1.4; }
+
+        /* Top Picks */
+        .pick-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px; }
+        .pick-item { background: var(--card-bg); padding: 15px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; }
+        .pick-name { font-weight: bold; }
+        .pick-tag { font-size: 10px; background: #333; padding: 3px 8px; border-radius: 20px; color: var(--text-sub); }
+
+        .up { color: var(--red); }
+        .down { color: var(--accent-cool); }
     </style>
 </head>
-<body class="p-4 max-w-lg mx-auto bg-slate-950">
-    <header class="flex justify-between items-center mb-6">
-        <h1 class="text-2xl font-black text-blue-400">PRISM INSIGHT</h1>
-        <span id="update-date" class="text-[10px] text-slate-500 font-mono"></span>
-    </header>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">PRISM 💎</div>
+            <div id="report-date" class="date">-</div>
+        </header>
 
-    <div id="market-grid" class="grid grid-cols-2 gap-2 mb-4"></div>
+        <div id="market-indices" class="market-grid"></div>
 
-    <div class="card border-l-4 border-blue-500">
-        <h2 class="text-blue-300 font-bold text-[10px] mb-2 tracking-widest uppercase">Market Summary</h2>
-        <p id="summary" class="text-sm text-slate-300 leading-relaxed"></p>
-    </div>
+        <div class="section-title">AI Summary</div>
+        <div id="summary" class="summary-box">데이터를 불러오는 중...</div>
 
-    <div class="card border-l-4 border-yellow-500">
-        <h2 class="text-yellow-500 font-bold text-[10px] mb-3 tracking-widest uppercase">AI Top Picks</h2>
-        <div id="ticker-list" class="flex gap-2 mb-3"></div>
-        <p id="reason" class="text-xs text-slate-400 leading-normal italic"></p>
-    </div>
+        <div class="section-title">Sector Analysis</div>
+        <div id="sectors-container" class="sectors-grid"></div>
 
-    <div class="card">
-        <h2 class="text-purple-400 font-bold text-[10px] mb-3 tracking-widest uppercase">Global Strategy News</h2>
-        <div id="news-container" class="space-y-3"></div>
-    </div>
-
-    <div class="card border-l-4 border-emerald-500 bg-emerald-500/5">
-        <h2 class="text-emerald-400 font-bold text-[10px] mb-3 tracking-widest uppercase">Yesterday's Result</h2>
-        <div id="past-results-list" class="space-y-2">
-            <p class="text-[10px] text-slate-500 text-center py-2 italic">데이터 분석 중...</p>
-        </div>
-    </div>
-
-    <div class="card bg-gradient-to-br from-slate-800 to-slate-950 border-indigo-500/30">
-        <h2 class="text-indigo-300 font-bold text-[10px] mb-2 tracking-widest uppercase">Total Performance</h2>
-        <div class="flex items-end justify-between">
-            <span id="accuracy-rate" class="text-4xl font-black text-white">0%</span>
-            <div class="w-2/3 h-2 bg-slate-800 rounded-full overflow-hidden mb-2">
-                <div id="accuracy-bar" class="h-full bg-gradient-to-r from-indigo-500 to-blue-400 transition-all duration-1000" style="width: 0%"></div>
-            </div>
-        </div>
-        <div id="accuracy-detail" class="text-[9px] text-slate-500 mt-2 text-right uppercase tracking-tighter"></div>
+        <div class="section-title">Top Picks</div>
+        <div id="picks-container" class="pick-list"></div>
     </div>
 
     <script>
-        async function loadData() {
+        async function loadReport() {
             try {
-                const res = await fetch('recommendations.json?t=' + Date.now());
-                const data = await res.json();
-                
-                document.getElementById('update-date').innerText = data.date || "";
-                document.getElementById('summary').innerText = data.summary || "";
-                document.getElementById('reason').innerText = data.reason || "";
+                const response = await fetch('recommendations.json');
+                const data = await response.json();
 
-                // 지수 렌더링
-                // 지수 렌더링 (신호등 추가 버전)
-                if (data.market_info) {
-                    document.getElementById('market-grid').innerHTML = Object.entries(data.market_info).map(([name, info]) => `
-                        <div class="card mb-0 py-3 bg-slate-900/50 relative overflow-hidden">
-                            <div class="absolute top-2 right-2 flex items-center gap-1">
-                                <span class="text-[8px] font-bold ${info.is_open ? 'text-emerald-400' : 'text-slate-500'}">
-                                    ${info.is_open ? 'OPEN' : 'CLOSED'}
-                                </span>
-                                <div class="w-1.5 h-1.5 rounded-full ${info.is_open ? 'bg-emerald-500 shadow-[0_0_5px_#10b981]' : 'bg-slate-600'}"></div>
-                            </div>
-                
-                            <p class="text-[9px] text-slate-500 font-bold">${name}</p>
-                            <p class="text-base font-black text-slate-200">${info.price}</p>
-                            <p class="text-[10px] ${info.change >= 0 ? 'text-red-400' : 'text-blue-400'} font-mono">
-                                ${info.change >= 0 ? '▲' : '▼'} ${Math.abs(info.change)}%
-                            </p>
+                // 날짜 업데이트
+                document.getElementById('report-date').innerText = data.date;
+
+                // 지수 업데이트
+                const marketGrid = document.getElementById('market-indices');
+                marketGrid.innerHTML = Object.entries(data.market_info).map(([name, info]) => `
+                    <div class="market-card">
+                        <div class="m-name">${info.status} ${name}</div>
+                        <div class="m-price">${info.price.toLocaleString()}</div>
+                        <div class="m-change ${info.change >= 0 ? 'up' : 'down'}">
+                            ${info.change >= 0 ? '▲' : '▼'} ${Math.abs(info.change)}%
                         </div>
-                    `).join('');
-                }
-           
-                // 종목 렌더링
-                if (data.tickers) {
-                    document.getElementById('ticker-list').innerHTML = data.tickers.map(t => `
-                        <div class="flex-1 bg-slate-800 p-2 rounded-lg text-center text-xs font-bold text-yellow-400 border border-slate-700 shadow-sm">${t}</div>
-                    `).join('');
-                }
+                    </div>
+                `).join('');
 
-                // 뉴스 렌더링
-                if (data.news_headlines && data.news_headlines.length > 0) {
-                    document.getElementById('news-container').innerHTML = data.news_headlines.map(n => `
-                        <a href="${n.link}" target="_blank" class="block p-3 bg-slate-800/30 rounded-xl text-xs text-slate-300 hover:bg-slate-800 transition-all border border-slate-800/50 leading-snug">
-                            ${n.title}
-                        </a>
-                    `).join('');
-                } else {
-                    document.getElementById('news-container').innerHTML = "<p class='text-[10px] text-slate-600 italic'>수집된 뉴스가 없습니다.</p>";
-                }
+                // 요약 업데이트
+                document.getElementById('summary').innerText = data.summary;
 
-                // 어제 결과 리스트 복구 부분
-                if (data.past_results && data.past_results.length > 0) {
-                    document.getElementById('past-results-list').innerHTML = data.past_results.map(r => `
-                        <div class="flex justify-between items-center bg-slate-900/40 p-2 px-3 rounded-lg border border-slate-800/50">
-                            <span class="text-xs text-slate-400 font-medium">${r.ticker}</span>
-                            <span class="text-xs font-mono ${r.change >= 0 ? 'text-red-400' : 'text-blue-400'}">
-                                ${r.change >= 0 ? '+' : ''}${r.change}%
-                            </span>
+                // 섹터 분석 업데이트 (New)
+                const sectorsContainer = document.getElementById('sectors-container');
+                sectorsContainer.innerHTML = data.sectors.map(s => `
+                    <div class="sector-card" style="border-left-color: ${s.sentiment === 'HOT' ? '#ff4b2b' : '#00c6ff'}">
+                        <div class="sector-header">
+                            <span class="sector-name">${s.name}</span>
+                            <span class="sentiment-badge ${s.sentiment}">${s.sentiment}</span>
                         </div>
-                    `).join('');
-                } else {
-                    document.getElementById('past-results-list').innerHTML = "<p class='text-[10px] text-slate-600 italic'>검증 데이터가 없습니다.</p>";
-                }
+                        <div class="sector-reason">${s.reason}</div>
+                    </div>
+                `).join('');
 
-                // 히스토리 기반 적중률
-                try {
-                    const hRes = await fetch('history.json?t=' + Date.now());
-                    const history = await hRes.json();
-                    let total = 0, success = 0;
-                    history.forEach(d => {
-                        if(d.performance) {
-                            d.performance.forEach(p => { total++; if(p.change > 0) success++; });
-                        }
-                    });
-                    const rate = total > 0 ? ((success / total) * 100).toFixed(1) : 0;
-                    document.getElementById('accuracy-rate').innerText = rate + "%";
-                    document.getElementById('accuracy-bar').style.width = rate + "%";
-                    document.getElementById('accuracy-detail').innerText = `SUCCESS ${success} / TOTAL ${total}`;
-                } catch(e) { console.log("History fail"); }
+                // 추천 종목 업데이트
+                const picksContainer = document.getElementById('picks-container');
+                picksContainer.innerHTML = data.tickers.map(t => `
+                    <div class="pick-item">
+                        <span class="pick-name">${t}</span>
+                        <span class="pick-tag">BUY</span>
+                    </div>
+                `).join('');
 
-            } catch (e) { console.error("Load error:", e); }
+            } catch (e) {
+                console.error("데이터 로드 실패", e);
+            }
         }
-        loadData();
+
+        loadReport();
     </script>
 </body>
 </html>
