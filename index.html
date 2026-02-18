@@ -6,132 +6,138 @@
     <title>Prism Insight - AI Report</title>
     <style>
         :root {
-            --bg-color: #121212;
-            --card-bg: #1e1e1e;
+            --bg-color: #0b0e14;
+            --card-bg: #161b22;
             --text-main: #ffffff;
-            --text-sub: #aaaaaa;
-            --accent-hot: #ff4b2b;
-            --accent-cool: #00c6ff;
-            --green: #4caf50;
-            --red: #f44336;
+            --text-sub: #8b949e;
+            --accent-hot: #f85149;
+            --accent-cool: #58a6ff;
+            --border-color: #30363d;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 20px;
+            background-color: var(--bg-color); color: var(--text-main);
+            margin: 0; padding: 15px; line-height: 1.5;
         }
 
-        .container { max-width: 500px; margin: 0 auto; }
+        .container { max-width: 480px; margin: 0 auto; }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+        .logo { font-size: 20px; font-weight: 800; color: #58a6ff; }
+        .date { font-size: 11px; color: var(--text-sub); }
+
+        .section-title { font-size: 16px; font-weight: 700; margin: 25px 0 12px 0; color: #c9d1d9; border-left: 4px solid #58a6ff; padding-left: 10px; }
+
+        /* Market Cards */
+        .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .market-card { background: var(--card-bg); padding: 12px; border-radius: 12px; border: 1px solid var(--border-color); }
+        .m-name { font-size: 11px; color: var(--text-sub); }
+        .m-price { font-size: 16px; font-weight: 700; }
+        .up { color: var(--accent-hot); } .down { color: var(--accent-cool); }
+
+        /* Sectors & News */
+        .sectors-container, .news-list { display: flex; flex-direction: column; gap: 10px; }
+        .sector-card, .news-item { background: var(--card-bg); padding: 12px; border-radius: 10px; border: 1px solid var(--border-color); }
+        .sector-card.HOT { border-left: 4px solid var(--accent-hot); }
+        .sector-card.COOL { border-left: 4px solid var(--accent-cool); }
         
-        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
-        .logo { font-size: 24px; font-weight: bold; letter-spacing: -1px; }
-        .date { font-size: 12px; color: var(--text-sub); }
+        .news-item { text-decoration: none; color: inherit; font-size: 13px; display: block; }
+        .news-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
 
-        /* Market Indices */
-        .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 25px; }
-        .market-card { background: var(--card-bg); padding: 15px; border-radius: 15px; border: 1px solid #333; }
-        .m-name { font-size: 12px; color: var(--text-sub); }
-        .m-price { font-size: 18px; font-weight: bold; margin: 5px 0; }
-        .m-change { font-size: 12px; font-weight: 500; }
+        /* Summary & Picks */
+        .summary-box { background: rgba(88, 166, 255, 0.05); padding: 15px; border-radius: 12px; border: 1px dashed #30363d; font-size: 13.5px; }
+        .pick-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        .pick-item { background: #21262d; padding: 10px; border-radius: 8px; text-align: center; border: 1px solid #30363d; font-size: 12px; font-weight: 600; }
 
-        /* Summary */
-        .section-title { font-size: 18px; font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; }
-        .section-title::before { content: '💎'; margin-right: 8px; }
-        .summary-box { background: var(--card-bg); padding: 20px; border-radius: 15px; line-height: 1.6; margin-bottom: 25px; font-size: 14px; }
-
-        /* Sector Analysis (New) */
-        .sectors-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 25px; }
-        .sector-card { background: #252525; padding: 12px; border-radius: 12px; border-left: 4px solid #444; }
-        .sector-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-        .sector-name { font-size: 13px; font-weight: bold; }
-        .sentiment-badge { font-size: 9px; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
-        .HOT { background: var(--accent-hot); color: #fff; }
-        .COOL { background: var(--accent-cool); color: #fff; }
-        .sector-reason { font-size: 11px; color: var(--text-sub); line-height: 1.4; }
-
-        /* Top Picks */
-        .pick-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px; }
-        .pick-item { background: var(--card-bg); padding: 15px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; }
-        .pick-name { font-weight: bold; }
-        .pick-tag { font-size: 10px; background: #333; padding: 3px 8px; border-radius: 20px; color: var(--text-sub); }
-
-        .up { color: var(--red); }
-        .down { color: var(--accent-cool); }
+        /* Hit Rate */
+        .hit-rate-box { text-align: center; padding: 20px; background: var(--card-bg); border-radius: 15px; margin-bottom: 30px; border: 1px solid var(--border-color); }
+        .hit-value { font-size: 36px; font-weight: 900; color: var(--accent-hot); }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">PRISM 💎</div>
-            <div id="report-date" class="date">-</div>
+            <div class="logo">PRISM INSIGHT 💎</div>
+            <div id="report-date" class="date">Loading...</div>
         </header>
 
         <div id="market-indices" class="market-grid"></div>
 
-        <div class="section-title">AI Summary</div>
-        <div id="summary" class="summary-box">데이터를 불러오는 중...</div>
+        <div class="section-title">시장 요약</div>
+        <div id="summary" class="summary-box"></div>
 
-        <div class="section-title">Sector Analysis</div>
-        <div id="sectors-container" class="sectors-grid"></div>
+        <div class="section-title">주요 섹터 현황</div>
+        <div id="sectors-list" class="sectors-container"></div>
 
-        <div class="section-title">Top Picks</div>
-        <div id="picks-container" class="pick-list"></div>
+        <div class="section-title">글로벌 주요 뉴스</div>
+        <div id="news-list" class="news-list"></div>
+
+        <div class="section-title">오늘의 AI 추천 종목</div>
+        <div id="picks-list" class="pick-list"></div>
+
+        <div class="section-title">전일 추천 수익률</div>
+        <div id="past-results" class="pick-list"></div>
+
+        <div class="section-title">누적 상승 적중률</div>
+        <div class="hit-rate-box">
+            <div id="hit-rate-value" class="hit-value">0%</div>
+            <div style="font-size: 11px; color: var(--text-sub);">최근 30일 데이터 분석 기준</div>
+        </div>
     </div>
 
     <script>
-        async function loadReport() {
+        async function updateUI() {
             try {
-                const response = await fetch('recommendations.json');
-                const data = await response.json();
+                const [res, hRes] = await Promise.all([fetch('recommendations.json'), fetch('history.json')]);
+                const data = await res.json();
+                const history = await hRes.json();
 
-                // 날짜 업데이트
                 document.getElementById('report-date').innerText = data.date;
-
-                // 지수 업데이트
-                const marketGrid = document.getElementById('market-indices');
-                marketGrid.innerHTML = Object.entries(data.market_info).map(([name, info]) => `
-                    <div class="market-card">
-                        <div class="m-name">${info.status} ${name}</div>
-                        <div class="m-price">${info.price.toLocaleString()}</div>
-                        <div class="m-change ${info.change >= 0 ? 'up' : 'down'}">
-                            ${info.change >= 0 ? '▲' : '▼'} ${Math.abs(info.change)}%
-                        </div>
-                    </div>
-                `).join('');
-
-                // 요약 업데이트
                 document.getElementById('summary').innerText = data.summary;
 
-                // 섹터 분석 업데이트 (New)
-                const sectorsContainer = document.getElementById('sectors-container');
-                sectorsContainer.innerHTML = data.sectors.map(s => `
-                    <div class="sector-card" style="border-left-color: ${s.sentiment === 'HOT' ? '#ff4b2b' : '#00c6ff'}">
-                        <div class="sector-header">
-                            <span class="sector-name">${s.name}</span>
-                            <span class="sentiment-badge ${s.sentiment}">${s.sentiment}</span>
+                // 지수 렌더링
+                document.getElementById('market-indices').innerHTML = Object.entries(data.market_info).map(([k, v]) => `
+                    <div class="market-card">
+                        <div class="m-name">${v.status} ${k}</div>
+                        <div class="m-price">${v.price.toLocaleString()}</div>
+                        <div class="m-change ${v.change >= 0 ? 'up' : 'down'}">${v.change >= 0 ? '▲' : '▼'} ${Math.abs(v.change)}%</div>
+                    </div>
+                `).join('');
+
+                // 섹터 렌더링
+                document.getElementById('sectors-list').innerHTML = data.sectors.map(s => `
+                    <div class="sector-card ${s.sentiment}">
+                        <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:bold; margin-bottom:5px;">
+                            <span>${s.name}</span><span style="color:${s.sentiment==='HOT'?'#f85149':'#58a6ff'}">${s.sentiment}</span>
                         </div>
-                        <div class="sector-reason">${s.reason}</div>
+                        <div style="font-size:11px; color:#8b949e;">${s.reason}</div>
                     </div>
                 `).join('');
 
-                // 추천 종목 업데이트
-                const picksContainer = document.getElementById('picks-container');
-                picksContainer.innerHTML = data.tickers.map(t => `
+                // 뉴스 렌더링 (복구!)
+                document.getElementById('news-list').innerHTML = data.news_headlines.map(n => `
+                    <a href="${n.link}" class="news-item" target="_blank">
+                        <span class="news-title">📰 ${n.title}</span>
+                    </a>
+                `).join('');
+
+                // 종목 및 과거 수익률
+                document.getElementById('picks-list').innerHTML = data.tickers.map(t => `<div class="pick-item">${t}</div>`).join('');
+                document.getElementById('past-results').innerHTML = data.past_results.map(r => `
                     <div class="pick-item">
-                        <span class="pick-name">${t}</span>
-                        <span class="pick-tag">BUY</span>
+                        <div>${r.ticker}</div>
+                        <div class="${r.change >= 0 ? 'up' : 'down'}" style="font-size:10px;">${r.change}%</div>
                     </div>
                 `).join('');
 
-            } catch (e) {
-                console.error("데이터 로드 실패", e);
-            }
-        }
+                // 적중률 계산
+                let total = 0, hits = 0;
+                history.forEach(day => day.performance.forEach(p => { total++; if(p.change > 0) hits++; }));
+                document.getElementById('hit-rate-value').innerText = (total > 0 ? (hits/total*100).toFixed(1) : 0) + "%";
 
-        loadReport();
+            } catch (err) { console.error(err); }
+        }
+        updateUI();
     </script>
 </body>
 </html>
