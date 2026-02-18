@@ -6,10 +6,42 @@ import json
 from datetime import datetime
 import pytz
 from google import genai
+import firebase_admin
+from firebase_admin import credentials, messaging
 
 # [설정]
 REC_FILE = 'recommendations.json'
 HISTORY_FILE = 'history.json'
+
+def send_push_notification(title, body):
+    """Firebase를 통해 모든 앱 사용자(all_users 토픽 구독자)에게 알림 전송"""
+    try:
+        # GitHub Secrets에 저장한 JSON 문자열을 로드
+        service_account_str = os.environ.get("FIREBASE_SERVICE_ACCOUNT")
+        if not service_account_str:
+            print("⚠️ FIREBASE_SERVICE_ACCOUNT Secret이 설정되지 않았습니다.")
+            return
+
+        service_account_info = json.loads(service_account_str)
+        
+        # Firebase 초기화 (중복 초기화 방지)
+        if not firebase_admin._apps:
+            cred = credentials.Certificate(service_account_info)
+            firebase_admin.initialize_app(cred)
+        
+        # 'all_users' 토픽을 구독한 모든 기기에 메시지 구성
+        message = messaging.Message(
+            notification=messaging.Notification(
+                title=title,
+                body=body,
+            ),
+            topic="all_users", 
+        )
+        
+        response = messaging.send(message)
+        print(f"✅ 푸시 알림 발송 성공: {response}")
+    except Exception as e:
+        print(f"❌ 푸시 알림 발송 실패: {e}")
 
 def get_market_data():
     """주요 시장 지수 데이터 수집 및 '날짜 기반' 개장 여부 판단"""
@@ -29,7 +61,6 @@ def get_market_data():
                 prev_price = prev_day['Close']
                 change_pct = ((current_price - prev_price) / prev_price) * 100
                 
-                # 데이터의 날짜와 현재 날짜를 비교하여 휴장 여부 판단
                 if name in ["KOSPI", "KOSDAQ"]:
                     kst_now = now_utc.astimezone(pytz.timezone('Asia/Seoul'))
                     data_date = hist.index[-1].astimezone(pytz.timezone('Asia/Seoul')).date()
@@ -103,7 +134,6 @@ try:
     kr_status = "개장" if market_info.get("KOSPI", {}).get("is_open") else "휴장"
     us_status = "개장" if market_info.get("S&P500", {}).get("is_open") else "휴장"
 
-    # [프롬프트] 섹터 분석 추가
     prompt = f"""
     당신은 프리즘(Prism) AI 금융 분석가입니다.
     현재 시장 상태: 한국({kr_status}), 미국({us_status})
@@ -111,7 +141,7 @@ try:
 
     [지침]
     1. 현재 개장 상태인 시장 위주로 분석하되, 양쪽 개장 시 균형 있게 추천하세요.
-    2. **[섹터 분석]** 현재 뉴스 흐름상 가장 중요한 산업 섹터 3개를 뽑아 감도(HOT/COOL)와 이유를 분석하세요.
+    2. [섹터 분석] 현재 뉴스 흐름상 가장 중요한 산업 섹터 3개를 뽑아 감도(HOT/COOL)와 이유를 분석하세요.
     3. 반드시 아래 JSON 형식으로만 출력하세요.
 
     {{
@@ -122,7 +152,7 @@ try:
       ],
       "tickers": ["종목1", "종목2", "종목3"],
       "reason": "추천 사유",
-      "push_message": "푸시 알림용 짧은 한 줄 요약 (20자 이내)"
+      "push_message": "오늘의 핵심 요약 (20자 이내)"
     }}
     """
 
@@ -154,7 +184,12 @@ try:
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
         json.dump(history[-30:], f, ensure_ascii=False, indent=2)
 
-    print(f"✅ 엔진 가동 완료 (KR:{kr_status} / US:{us_status})")
+    # --- [핵심] 푸시 알림 발송 ---
+    push_title = "💎 프리즘 인사이트 리포트"
+    push_msg = ai_data.get("push_message", "오늘의 시장 분석이 완료되었습니다.")
+    send_push_notification(push_title, push_msg)
+
+    print(f"✅ 엔진 가동 및 푸시 알림 전송 완료!")
 
 except Exception as e:
     print(f"❌ 오류 발생: {e}")
