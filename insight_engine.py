@@ -134,25 +134,27 @@ try:
     kr_status = "개장" if market_info.get("KOSPI", {}).get("is_open") else "휴장"
     us_status = "개장" if market_info.get("S&P500", {}).get("is_open") else "휴장"
 
+    # [수정된 프롬프트]
     prompt = f"""
     당신은 프리즘(Prism) AI 금융 분석가입니다.
     현재 시장 상태: 한국({kr_status}), 미국({us_status})
     데이터: 뉴스({news_data}), 과거성적({past_results})
 
-    [지침]
-    1. 현재 개장 상태인 시장 위주로 분석하되, 양쪽 개장 시 균형 있게 추천하세요.
-    2. [섹터 분석] 현재 뉴스 흐름상 가장 중요한 산업 섹터 3개를 뽑아 감도(HOT/COOL)와 이유를 분석하세요.
-    3. 반드시 아래 JSON 형식으로만 출력하세요.
+    [투자 전략 지침]
+    1. **추천 종목 선정 최우선 순위**:
+       - 한국 또는 미국이 오늘/내일 휴장이라면, 휴장예정인 시장의 종목은 분석에서 제외하세요.
+       - 한국이 오늘/내일 휴장이고 오늘 밤(또는 현재) 미국장이 열린다면, 반드시 미국 시장(NASDAQ, S&P500) 종목 위주로 3개를 추천하세요.
+       - 한국 및 global 경제 뉴스를 면밀히 분석하여 이를 바탕으로 투자자가 바로 거래할 수 있는 시장의 종목을 추천하는 것이 핵심입니다.
+    2. [뉴스] 수집된 뉴스 데이터를 기반으로 가장 중요한 헤드라인 5~10개를 정리하세요.
+    3. [섹터] 현재 유망한 섹터 3개를 HOT/COOL로 분류하세요.
 
     {{
-      "summary": "시장 상황 3문장 요약",
-      "news_headlines": [ {{"title": "제목", "link": "링크"}} ],
-      "sectors": [
-        {{"name": "섹터명", "sentiment": "HOT", "reason": "이유 요약"}}
-      ],
-      "tickers": ["종목1", "종목2", "종목3"],
+      "summary": "시장 요약 3문장",
+      "news_headlines": [ {{"title": "뉴스제목", "link": "링크"}} ],
+      "sectors": [ {{"name": "섹터명", "sentiment": "HOT", "reason": "이유"}} ],
+      "tickers": ["추천 종목 3개"],
       "reason": "추천 사유",
-      "push_message": "오늘의 핵심 요약 (20자 이내)"
+      "push_message": "알림용 요약"
     }}
     """
 
