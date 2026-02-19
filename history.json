@@ -1,2 +1,24 @@
 [
+  {
+    "date": "2026-02-20 08:19",
+    "performance": [
+      {
+        "ticker": "MSFT",
+        "change": -0.29
+      },
+      {
+        "ticker": "NVDA",
+        "change": -0.04
+      },
+      {
+        "ticker": "GOOGL",
+        "change": -0.16
+      }
+    ],
+    "predictions": [
+      "MSFT",
+      "NVDA",
+      "AMZN"
+    ]
+  }
 ]

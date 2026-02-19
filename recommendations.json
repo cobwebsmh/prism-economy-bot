@@ -1,85 +1,94 @@
 {
-  "date": "2026-02-19 15:45",
+  "date": "2026-02-20 08:19",
   "market_info": {
     "KOSPI": {
-      "price": 5671.16,
-      "change": 2.98,
-      "is_open": true,
-      "status": "🟢"
+      "price": 5677.25,
+      "change": 3.09,
+      "is_open": false,
+      "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1161.2,
-      "change": 4.98,
-      "is_open": true,
-      "status": "🟢"
+      "price": 1160.71,
+      "change": 4.94,
+      "is_open": false,
+      "status": "⚪"
     },
     "S&P500": {
-      "price": 6881.31,
-      "change": 0.56,
+      "price": 6861.89,
+      "change": -0.28,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22753.63,
-      "change": 0.78,
+      "price": 22682.73,
+      "change": -0.31,
       "is_open": false,
       "status": "⚪"
     }
   },
-  "past_results": [],
-  "summary": "한국 시장은 국고채 금리 하락 기대감과 코스닥 급등세를 보이며 강세를 나타내고 있습니다. 특히 반도체 업황 호조에 대한 기대감이 코스피 상승 전망을 견인하고 있으며, 삼성전자의 강세가 두드러집니다. 다만, 백년가게도 경기 한파를 이겨내지 못하는 등 소상공인들의 어려움은 지속되고 있습니다.",
+  "past_results": [
+    {
+      "ticker": "MSFT",
+      "change": -0.29
+    },
+    {
+      "ticker": "NVDA",
+      "change": -0.04
+    },
+    {
+      "ticker": "GOOGL",
+      "change": -0.16
+    }
+  ],
+  "summary": "미국 증시는 기술주 약세로 하락 출발했으며, 트럼프 전 대통령의 관세 관련 발언이 시장에 영향을 줄 수 있습니다. 월마트를 포함한 유통 공룡들이 K-소비재 입점 확대에 나서고 있으며, 아마존은 연간 매출에서 월마트를 처음으로 넘어섰습니다. AI 분야에서는 배경훈 부총리의 인도 AI 정상회의 참석과 Altman vs. Amodei의 경쟁 구도가 주목받고 있습니다.",
   "news_headlines": [
     {
-      "title": "한은 기대감에 外人 순매수까지…국고채 금리 하락 - 연합인포맥스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TMlNKajZNN3BNdUVlbm9NNEtueWJDbmFMYkRHdlpjSGhHdGYtTGxnaDlDRElDOU53RHVwMUEwdk03dXlIS0lYRS1ObXktb1d2UVRqWHFzQWJIVF9TN1FjdURad3V1b19wNG9WaWdBQUU?oc=5"
+      "title": "뉴욕증시, 기술주 약세에 하락 출발 - 연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Pc1BzbVNRVXFJWmdGTE9uaHlPVTdpVHduQThhdHQzUlhXSjhWd1FrbkxlbTl3cVF3WURfcGpjakswNWF2U2prMks2V1lBWkphMWRxSEtXWGt1VVQ2bjFCRmF3TnhSUHJuZ09sdnc5U2w?oc=5"
     },
     {
-      "title": "반도체 호황 업고 목표치 ‘쭉쭉’...'코스피 7900도 가능' 역대급 전망 - JTBC",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE15TXBQTEF3WHlYYWZ2Rkg2WGlmRWlkQmFfQ243SVhiMWZOeEwtb0pEcXp1R1J0XzhrRmdJUkYyRlllNnkyRG1zU3l4WlBNUVFKdFB4Vw?oc=5"
+      "title": "세계적 ‘유통공룡’ 월마트·까르푸도 결국…‘K-소비재’ 입점 확대 나서 - 문화일보",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9IdnlBWFJTd1ZuazZTWEU3ZHhsRTB2QURZemRMV2dfTEtRSWZ2cGhBM0I4WVN0QVA4YkdjQks2V1AzVGl0QXZRWi1wMnZmVHA3?oc=5"
     },
     {
-      "title": "수십년 업력 ‘백년가게’도 경기 한파 못 버텼다 - edaily.co.kr",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdVJUa3VQclQtU0YxeXNLUWo5LUE4VXlVU3JXdWNHblkwcFpDWU9saS1aOENnRzIxanhIMko0UExOVG9BMWNsbEowUGJNeXhkT3R6ZkVfaTNIMUhjSXZDNHJQakVrcGhUbjBIc2VmZG15TjQ0VWNhRnk3dlRqN1BiSQ?oc=5"
+      "title": "관세 성적표는 최악인데…트럼프 “내가 가장 좋아하는 단어는 관세” 또 반복 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSmVZN1IzWDYxWWJodm1jUzhFV3JkNWhmWl9iaUV5VndJbEVxTzFnemRmUGVFUjZDRGdPYVRydksxdnNJLXhibTRYd2Q5T3FjUE9NU2dZNVpSZFhMYnB3WFVUVm5iWWVkTTJ3LXJmU2labzZNYU1TSUppeVhPRTFZRm1zMzZLeW9DYkFZdzdpV1ZpblJLTTh0MnFjQmd5QdIBsgFBVV95cUxQUVNweTc5SWFheTlRT1hRY0RESWZkdDduaHZQQk14ckJNbGs5S21ZckViVkF0bURNRndHU0EzSkFxajNMU0xhaDc3bkNRb2ZVd2NzZy1QLWNrN3J5ODNrZkhHVkllbDI3cVY1YmVhWUZuQWVBUXlfNEZTdDV0LXlTQnFKZlZwTWVTMXB1TFBhSTVOQ1E0bVRLZi1XTWxBR3dWYl9ZSGZtUk1WUlpPUEdBOWxR?oc=5"
     },
     {
-      "title": "코스닥 급등에 매수 사이드카 발동…코스닥150선물 6% 이상 ↑ - KBS 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6WG1nSWFHQk1DRHJwU1BxbUdiNmJWRzk5LUhPVmVydVNLY2NUS3ZpOXl4VlpCd3c5dy1WY0Y3aWE0aWhtR0xkd0cxc0tvTkhIWjRRR2hQcFEyUU0?oc=5"
+      "title": "[사이언스게시판] 배경훈 부총리, 인도 AI 정상회의 참석…글로벌 빅테크와 면담 外 - 동아사이언스",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5NaFIxOGdIUGhnekgyOU5ud2NweWhEcDRDSFY3RkpqekZPSGx2V3hvRnVTVXRuQlVmdmlmMExLR2FJQllqaFc0TEJkT1JGLS1H?oc=5"
     },
     {
-      "title": "(특징주)삼성전자, 4%대 강세…'19만원' 찍기도 - 뉴스토마토",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SOVpkaC0tUmJFRUdPMmtTUUFYQUNFR2M3NXNMaldDSmwzNEV0ME10RktmNGZXT2poN0dmbGpzQVpybmZJYVlqckR3NFlBNTI0dk9rZ1VMOXBRNmtPMzJBcQ?oc=5"
+      "title": "Amazon surpasses Walmart in annual revenue for first time, as both chase AI-fueled growth - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUGt5dHdCRXE3cVZJUlJiRDRyVUY4cHBXRmNCUEhQd0FOS1k0MmdYczd6NXFOVHZjNHB4UEFQNzNPUDVFTDdqQmJPOURDU1NzVVR2SjlWeW9VcUJKQmJadnlMM3pNU3pseG9qejZDbFJueW82TWcybkRxYTRsUUNLOVpuMVNRUDJwcW1F0gGQAUFVX3lxTFBQM0VFM0xHT3hTa2d2SDN1Q25HeTJONlpWVktzVmd3ZWtTYnZPUUdGbjhWaVdtSGxsWFFfa2VCeFFpS0c1YVdSUUhQZHU2aXlSNHJTTzlvUVpDMVVrenFRLWdiSDliY0FHalJaVVlXYVBwOG02YXR1UEk0TE1nekYybW5PYmNsTmxOQmIyellVRA?oc=5"
     },
     {
-      "title": "OpenAI Funding on Track to Top $100 Billion With Latest Round - Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeHQ5ZklUd3hYRVhoWV91LUlLTzNUNGt6endnM1FRMW9QZkZsYVFqTXVrX25tRzRMRnNkZmVESVYwczU5cUxqd3BORm04MFhnZ1hTRjQ0NllycGdrRDVzWmozV1hvVEtkYW5HU1hvZVVtTHhyMy1zSmxHTFBBNWFSLTltdDE5RFRfX29HTGFtVVRuZ25iMzJmdGwxanlybVYwUG1oc2VMYjdmZl9ySllXZQ?oc=5"
-    },
-    {
-      "title": "Federal Reserve officials discussed interest rate hike scenarios at their last meeting - NBC News",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQY2pYLXcxUFpnOHB0Sm90aTg2V3pMQ0RlY2JqRWdKclRIUm1jcVZCdUFxU1ZLX2VfYmpxTlJYQUtaWmt1SnNLel9XckN4dk1HaHMtQk5Pek0tOWpZaVFXZXFPNkk1Q2JsTUNSQmtNcUZ2eE8wZ1QxN1pBNTZmZEJfUFc3UWtSME9EXzNEZw?oc=5"
+      "title": "Altman vs. Amodei: AI Rivals Refuse to Hold Hands at Modi Summit - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdmhNU2JYbXFDY3N4MUFXZ1NZUUxEYndDTUVWSFFKZDJVeGF3SElhZ0FSZzNrYm5nM1ZGcHVBZm05bGc0WkVBbVBpSTdqd3lna1J4QkM5c2FMQ3NLMXBEQ3N6UkJnLWFQZ2ZjTk9yQnlEWG5mU0Eyd0lYenhsUGZkVy1wQjZoWGlHRGtyTHlINE4yV2JGcnQ3WU10OC1KVzhRT0dXQm5YSDV1QzhSd3hORGNUYw?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체",
-      "sentiment": "HOT",
-      "reason": "코스피 상승 전망 및 삼성전자 강세"
+      "name": "기술주",
+      "sentiment": "WEAK",
+      "reason": "뉴욕 증시 하락 출발의 주요 원인"
+    },
+    {
+      "name": "소비재",
+      "sentiment": "NEUTRAL",
+      "reason": "월마트 등 유통 공룡의 K-소비재 입점 확대 움직임"
     },
     {
       "name": "AI",
       "sentiment": "HOT",
-      "reason": "OpenAI 대규모 투자 유치"
-    },
-    {
-      "name": "소비재",
-      "sentiment": "COLD",
-      "reason": "경기 한파로 백년가게 어려움"
+      "reason": "배경훈 부총리 인도 AI 정상회의 참석 및 Altman vs. Amodei 경쟁 심화"
     }
   ],
   "tickers": [
     "MSFT",
     "NVDA",
-    "GOOGL"
+    "AMZN"
   ],
-  "reason": "미국 시장 개장 대비, AI, 반도체, 기술주 강세 예상 및 OpenAI 투자 유치, Nvidia 긍정적 전망",
-  "push_message": "미국 개장 대비 AI, 반도체, 기술주 주목! MSFT, NVDA, GOOGL 매수 고려"
+  "reason": "미국 시장 개장 예정이며, 과거 성적과 현재 뉴스 기반으로 MSFT, NVDA는 기술주 하락세에 따라 하락 가능성, AMZN은 월마트 매출 추월 및 AI 투자 확대로 성장 기대",
+  "push_message": "미국 기술주 약세, K-소비재 약진, AI 경쟁 심화. MSFT, NVDA 매도, AMZN 매수 고려"
 }
