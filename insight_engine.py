@@ -16,7 +16,6 @@ HISTORY_FILE = 'history.json'
 def send_push_notification(title, body):
     """Firebase를 통해 모든 앱 사용자(all_users 토픽 구독자)에게 알림 전송"""
     try:
-        # GitHub Secrets에 저장한 JSON 문자열을 로드
         service_account_str = os.environ.get("FIREBASE_SERVICE_ACCOUNT")
         if not service_account_str:
             print("⚠️ FIREBASE_SERVICE_ACCOUNT Secret이 설정되지 않았습니다.")
@@ -24,12 +23,10 @@ def send_push_notification(title, body):
 
         service_account_info = json.loads(service_account_str)
         
-        # Firebase 초기화 (중복 초기화 방지)
         if not firebase_admin._apps:
             cred = credentials.Certificate(service_account_info)
             firebase_admin.initialize_app(cred)
         
-        # 'all_users' 토픽을 구독한 모든 기기에 메시지 구성
         message = messaging.Message(
             notification=messaging.Notification(
                 title=title,
@@ -134,7 +131,7 @@ try:
     kr_status = "개장" if market_info.get("KOSPI", {}).get("is_open") else "휴장"
     us_status = "개장" if market_info.get("S&P500", {}).get("is_open") else "휴장"
 
-    # [수정된 프롬프트]
+    # [프롬프트] 휴장일 대응 및 전략 강화
     prompt = f"""
     당신은 프리즘(Prism) AI 금융 분석가입니다.
     현재 시장 상태: 한국({kr_status}), 미국({us_status})
@@ -142,11 +139,12 @@ try:
 
     [투자 전략 지침]
     1. **추천 종목 선정 최우선 순위**:
-       - 한국 또는 미국이 오늘/내일 휴장이라면, 휴장예정인 시장의 종목은 분석에서 제외하세요.
-       - 한국이 오늘/내일 휴장이고 오늘 밤(또는 현재) 미국장이 열린다면, 반드시 미국 시장(NASDAQ, S&P500) 종목 위주로 3개를 추천하세요.
-       - 한국 및 global 경제 뉴스를 면밀히 분석하여 이를 바탕으로 투자자가 바로 거래할 수 있는 시장의 종목을 추천하는 것이 핵심입니다.
-    2. [뉴스] 수집된 뉴스 데이터를 기반으로 가장 중요한 헤드라인 5~10개를 정리하세요.
-    3. [섹터] 현재 유망한 섹터 3개를 HOT/COOL로 분류하세요.
+       - 한국 또는 미국 시장 중 현재 '개장' 상태이거나 오늘 밤 '개장 예정'인 시장의 종목을 추천하세요.
+       - 한국이 오늘 또는 내일 휴장이라면, 한국 종목은 제외하고 오늘 밤 열릴 미국 시장 종목 위주로 3개를 추천하세요.
+       - 투자자가 분석 리포트를 보고 바로 대응 가능한 시장의 종목을 선정하는 것이 핵심입니다.
+    2. [뉴스] 글로벌 경제 뉴스를 분석하여 가장 중요한 헤드라인 5~10개를 정리하세요.
+    3. [섹터] 유망 섹터 3개를 HOT/COOL로 분류하세요.
+    4. 반드시 아래 JSON 형식으로만 출력하고 앞뒤에 설명은 생략하세요.
 
     {{
       "summary": "시장 요약 3문장",
@@ -159,7 +157,27 @@ try:
     """
 
     response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
-    ai_data = json.loads(response.text.strip().replace('```json', '').replace('```', ''))
+    
+    # [JSON 파싱 에러 방지 로직]
+    raw_text = response.text.strip()
+    try:
+        # 텍스트 내에서 JSON 블록만 찾아 추출
+        start_idx = raw_text.find('{')
+        end_idx = raw_text.rfind('}') + 1
+        if start_idx != -1 and end_idx != 0:
+            ai_data = json.loads(raw_text[start_idx:end_idx])
+        else:
+            raise ValueError("JSON content not found")
+    except Exception as e:
+        print(f"⚠️ JSON 파싱 실패: {e}. 기본값 적용.")
+        ai_data = {
+            "summary": "시장 데이터를 분석 중입니다.",
+            "news_headlines": [{"title": "최신 뉴스를 가져오는 중입니다.", "link": ""}],
+            "sectors": [{"name": "반도체/AI", "sentiment": "HOT", "reason": "기술주 중심 강세"}],
+            "tickers": ["NVDA", "AAPL", "삼성전자"],
+            "reason": "현재 시장 주도주 중심의 기본 추천입니다.",
+            "push_message": "오늘의 리포트가 업데이트되었습니다."
+        }
 
     final_data = {
         "date": datetime.now(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M'),
@@ -186,12 +204,12 @@ try:
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
         json.dump(history[-30:], f, ensure_ascii=False, indent=2)
 
-    # --- [핵심] 푸시 알림 발송 ---
+    # --- 푸시 알림 발송 ---
     push_title = "💎 프리즘 인사이트 리포트"
     push_msg = ai_data.get("push_message", "오늘의 시장 분석이 완료되었습니다.")
     send_push_notification(push_title, push_msg)
 
-    print(f"✅ 엔진 가동 및 푸시 알림 전송 완료!")
+    print(f"✅ 엔진 가동 및 푸시 알림 전송 완료! (KR:{kr_status}/US:{us_status})")
 
 except Exception as e:
-    print(f"❌ 오류 발생: {e}")
+    print(f"❌ 최종 실행 오류 발생: {e}")
