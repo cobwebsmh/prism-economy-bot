@@ -1,7 +1,85 @@
 {
-  "date": "2026-02-19 11:58",
+  "date": "2026-02-19 15:45",
   "market_info": {
     "KOSPI": {
-      "price": 5669.38,
-      "change": 2.95,
-      "is_open": 
+      "price": 5671.16,
+      "change": 2.98,
+      "is_open": true,
+      "status": "🟢"
+    },
+    "KOSDAQ": {
+      "price": 1161.2,
+      "change": 4.98,
+      "is_open": true,
+      "status": "🟢"
+    },
+    "S&P500": {
+      "price": 6881.31,
+      "change": 0.56,
+      "is_open": false,
+      "status": "⚪"
+    },
+    "NASDAQ": {
+      "price": 22753.63,
+      "change": 0.78,
+      "is_open": false,
+      "status": "⚪"
+    }
+  },
+  "past_results": [],
+  "summary": "한국 시장은 국고채 금리 하락 기대감과 코스닥 급등세를 보이며 강세를 나타내고 있습니다. 특히 반도체 업황 호조에 대한 기대감이 코스피 상승 전망을 견인하고 있으며, 삼성전자의 강세가 두드러집니다. 다만, 백년가게도 경기 한파를 이겨내지 못하는 등 소상공인들의 어려움은 지속되고 있습니다.",
+  "news_headlines": [
+    {
+      "title": "한은 기대감에 外人 순매수까지…국고채 금리 하락 - 연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TMlNKajZNN3BNdUVlbm9NNEtueWJDbmFMYkRHdlpjSGhHdGYtTGxnaDlDRElDOU53RHVwMUEwdk03dXlIS0lYRS1ObXktb1d2UVRqWHFzQWJIVF9TN1FjdURad3V1b19wNG9WaWdBQUU?oc=5"
+    },
+    {
+      "title": "반도체 호황 업고 목표치 ‘쭉쭉’...'코스피 7900도 가능' 역대급 전망 - JTBC",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE15TXBQTEF3WHlYYWZ2Rkg2WGlmRWlkQmFfQ243SVhiMWZOeEwtb0pEcXp1R1J0XzhrRmdJUkYyRlllNnkyRG1zU3l4WlBNUVFKdFB4Vw?oc=5"
+    },
+    {
+      "title": "수십년 업력 ‘백년가게’도 경기 한파 못 버텼다 - edaily.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdVJUa3VQclQtU0YxeXNLUWo5LUE4VXlVU3JXdWNHblkwcFpDWU9saS1aOENnRzIxanhIMko0UExOVG9BMWNsbEowUGJNeXhkT3R6ZkVfaTNIMUhjSXZDNHJQakVrcGhUbjBIc2VmZG15TjQ0VWNhRnk3dlRqN1BiSQ?oc=5"
+    },
+    {
+      "title": "코스닥 급등에 매수 사이드카 발동…코스닥150선물 6% 이상 ↑ - KBS 뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6WG1nSWFHQk1DRHJwU1BxbUdiNmJWRzk5LUhPVmVydVNLY2NUS3ZpOXl4VlpCd3c5dy1WY0Y3aWE0aWhtR0xkd0cxc0tvTkhIWjRRR2hQcFEyUU0?oc=5"
+    },
+    {
+      "title": "(특징주)삼성전자, 4%대 강세…'19만원' 찍기도 - 뉴스토마토",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9SOVpkaC0tUmJFRUdPMmtTUUFYQUNFR2M3NXNMaldDSmwzNEV0ME10RktmNGZXT2poN0dmbGpzQVpybmZJYVlqckR3NFlBNTI0dk9rZ1VMOXBRNmtPMzJBcQ?oc=5"
+    },
+    {
+      "title": "OpenAI Funding on Track to Top $100 Billion With Latest Round - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeHQ5ZklUd3hYRVhoWV91LUlLTzNUNGt6endnM1FRMW9QZkZsYVFqTXVrX25tRzRMRnNkZmVESVYwczU5cUxqd3BORm04MFhnZ1hTRjQ0NllycGdrRDVzWmozV1hvVEtkYW5HU1hvZVVtTHhyMy1zSmxHTFBBNWFSLTltdDE5RFRfX29HTGFtVVRuZ25iMzJmdGwxanlybVYwUG1oc2VMYjdmZl9ySllXZQ?oc=5"
+    },
+    {
+      "title": "Federal Reserve officials discussed interest rate hike scenarios at their last meeting - NBC News",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQY2pYLXcxUFpnOHB0Sm90aTg2V3pMQ0RlY2JqRWdKclRIUm1jcVZCdUFxU1ZLX2VfYmpxTlJYQUtaWmt1SnNLel9XckN4dk1HaHMtQk5Pek0tOWpZaVFXZXFPNkk1Q2JsTUNSQmtNcUZ2eE8wZ1QxN1pBNTZmZEJfUFc3UWtSME9EXzNEZw?oc=5"
+    }
+  ],
+  "sectors": [
+    {
+      "name": "반도체",
+      "sentiment": "HOT",
+      "reason": "코스피 상승 전망 및 삼성전자 강세"
+    },
+    {
+      "name": "AI",
+      "sentiment": "HOT",
+      "reason": "OpenAI 대규모 투자 유치"
+    },
+    {
+      "name": "소비재",
+      "sentiment": "COLD",
+      "reason": "경기 한파로 백년가게 어려움"
+    }
+  ],
+  "tickers": [
+    "MSFT",
+    "NVDA",
+    "GOOGL"
+  ],
+  "reason": "미국 시장 개장 대비, AI, 반도체, 기술주 강세 예상 및 OpenAI 투자 유치, Nvidia 긍정적 전망",
+  "push_message": "미국 개장 대비 AI, 반도체, 기술주 주목! MSFT, NVDA, GOOGL 매수 고려"
+}
