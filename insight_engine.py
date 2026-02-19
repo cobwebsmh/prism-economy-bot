@@ -36,12 +36,12 @@ def send_push_notification(title, body):
         )
         
         response = messaging.send(message)
-        print(f"✅ 푸시 알림 발송 성공: {response}")
+        print(f"✅ 푸시 알림 발송 성공")
     except Exception as e:
         print(f"❌ 푸시 알림 발송 실패: {e}")
 
 def get_market_data():
-    """주요 시장 지수 데이터 수집 및 '날짜 기반' 개장 여부 판단"""
+    """주요 시장 지수 데이터 수집 및 안전한 데이터 타입 변환"""
     indices = {"KOSPI": "^KS11", "KOSDAQ": "^KQ11", "S&P500": "^GSPC", "NASDAQ": "^IXIC"}
     result = {}
     now_utc = datetime.now(pytz.utc)
@@ -50,36 +50,32 @@ def get_market_data():
         try:
             stock = yf.Ticker(ticker)
             hist = stock.history(period="5d")
-            if not hist.empty and len(hist) >= 1:
-                current_day = hist.iloc[-1]
-                prev_day = hist.iloc[-2] if len(hist) >= 2 else current_day
+            if not hist.empty:
+                curr = hist.iloc[-1]
+                prev = hist.iloc[-2] if len(hist) >= 2 else curr
                 
-                current_price = current_day['Close']
-                prev_price = prev_day['Close']
-                change_pct = ((current_price - prev_price) / prev_price) * 100
+                change_val = ((curr['Close'] - prev['Close']) / prev['Close']) * 100
                 
+                # 개장 여부 판단 및 bool 타입 강제 변환
+                is_open_val = False
                 if name in ["KOSPI", "KOSDAQ"]:
-                    kst_now = now_utc.astimezone(pytz.timezone('Asia/Seoul'))
-                    data_date = hist.index[-1].astimezone(pytz.timezone('Asia/Seoul')).date()
-                    is_today = (data_date == kst_now.date())
-                    is_open = is_today and (9 <= kst_now.hour < 16) and (current_day['Volume'] > 0)
+                    kst = now_utc.astimezone(pytz.timezone('Asia/Seoul'))
+                    is_open_val = bool((9 <= kst.hour < 16) and (curr['Volume'] > 0))
                 else:
-                    est_now = now_utc.astimezone(pytz.timezone('US/Eastern'))
-                    data_date_us = hist.index[-1].astimezone(pytz.timezone('US/Eastern')).date()
-                    is_today_us = (data_date_us == est_now.date())
-                    is_open = is_today_us and (9 <= est_now.hour < 17) and (current_day['Volume'] > 0)
+                    est = now_utc.astimezone(pytz.timezone('US/Eastern'))
+                    is_open_val = bool((9 <= est.hour < 17) and (curr['Volume'] > 0))
                 
                 result[name] = {
-                    "price": round(current_price, 2), 
-                    "change": round(change_pct, 2), 
-                    "is_open": is_open,
-                    "status": "🟢" if is_open else "⚪"
+                    "price": float(round(curr['Close'], 2)), 
+                    "change": float(round(change_val, 2)), 
+                    "is_open": is_open_val,
+                    "status": "🟢" if is_open_val else "⚪"
                 }
         except: continue
     return result
 
 def verify_past():
-    """어제 추천 종목의 오늘 수익률 확인"""
+    """어제 추천 종목의 오늘 수익률 확인 및 타입 변환"""
     ticker_map = {
         "삼성전자": "005930.KS", "SK하이닉스": "000660.KS", "NAVER": "035420.KS", 
         "카카오": "035720.KS", "현대차": "005380.KS", "NVDA": "NVDA", "AAPL": "AAPL", "TSLA": "TSLA"
@@ -96,12 +92,9 @@ def verify_past():
                 try:
                     s = yf.Ticker(clean_t)
                     h = s.history(period="2d")
-                    if not h.empty and len(h) >= 2:
-                        if h['Volume'].iloc[-1] == 0:
-                            results.append({"ticker": t, "change": 0.0})
-                        else:
-                            c = ((h['Close'].iloc[-1] - h['Close'].iloc[-2]) / h['Close'].iloc[-2]) * 100
-                            results.append({"ticker": t, "change": round(c, 2)})
+                    if len(h) >= 2:
+                        c = ((h['Close'].iloc[-1] - h['Close'].iloc[-2]) / h['Close'].iloc[-2]) * 100
+                        results.append({"ticker": str(t), "change": float(round(c, 2))})
                 except: continue
             return results
     except: return []
@@ -116,8 +109,8 @@ def fetch_global_news():
     for url in feeds:
         try:
             f = feedparser.parse(url)
-            for entry in f.entries[:5]:
-                news_list.append({"title": entry.title.replace('"', "'"), "link": entry.link})
+            for entry in f.entries[:7]: # 뉴스 개수 7개로 상향
+                news_list.append({"title": str(entry.title).replace('"', "'"), "link": str(entry.link)})
         except: continue
     return news_list
 
@@ -128,10 +121,10 @@ try:
     past_results = verify_past()
     news_data = fetch_global_news()
 
+    # 시장 상태 텍스트화
     kr_status = "개장" if market_info.get("KOSPI", {}).get("is_open") else "휴장"
     us_status = "개장" if market_info.get("S&P500", {}).get("is_open") else "휴장"
 
-    # [프롬프트] 휴장일 대응 및 전략 강화
     prompt = f"""
     당신은 프리즘(Prism) AI 금융 분석가입니다.
     현재 시장 상태: 한국({kr_status}), 미국({us_status})
@@ -139,80 +132,66 @@ try:
 
     [투자 전략 지침]
     1. **추천 종목 선정 최우선 순위**:
-       - 한국 또는 미국 시장 중 현재 '개장' 상태이거나 오늘 밤 '개장 예정'인 시장의 종목을 추천하세요.
-       - 한국이 오늘 또는 내일 휴장이라면, 한국 종목은 제외하고 오늘 밤 열릴 미국 시장 종목 위주로 3개를 추천하세요.
-       - 투자자가 분석 리포트를 보고 바로 대응 가능한 시장의 종목을 선정하는 것이 핵심입니다.
-    2. [뉴스] 글로벌 경제 뉴스를 분석하여 가장 중요한 헤드라인 5~10개를 정리하세요.
-    3. [섹터] 유망 섹터 3개를 HOT/COOL로 분류하세요.
-    4. 반드시 아래 JSON 형식으로만 출력하고 앞뒤에 설명은 생략하세요.
+       - 한국이 오늘/내일 휴장이라면 한국 종목은 제외하고 오늘 밤 열릴 미국 시장 종목 위주로 3개를 추천하세요.
+       - 현재 개장 중인 시장({kr_status})의 기회를 우선 분석하세요.
+    2. [뉴스] 글로벌 경제 뉴스를 기반으로 중요한 헤드라인 5~10개를 정리하세요.
+    3. [출력] 반드시 아래 JSON 형식으로만 답변하고 앞뒤 설명은 생략하세요.
 
     {{
       "summary": "시장 요약 3문장",
       "news_headlines": [ {{"title": "뉴스제목", "link": "링크"}} ],
       "sectors": [ {{"name": "섹터명", "sentiment": "HOT", "reason": "이유"}} ],
-      "tickers": ["추천 종목 3개"],
+      "tickers": ["종목1", "종목2", "종목3"],
       "reason": "추천 사유",
       "push_message": "알림용 요약"
     }}
     """
 
     response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
-    
-    # [JSON 파싱 에러 방지 로직]
     raw_text = response.text.strip()
-    try:
-        # 텍스트 내에서 JSON 블록만 찾아 추출
-        start_idx = raw_text.find('{')
-        end_idx = raw_text.rfind('}') + 1
-        if start_idx != -1 and end_idx != 0:
-            ai_data = json.loads(raw_text[start_idx:end_idx])
-        else:
-            raise ValueError("JSON content not found")
-    except Exception as e:
-        print(f"⚠️ JSON 파싱 실패: {e}. 기본값 적용.")
-        ai_data = {
-            "summary": "시장 데이터를 분석 중입니다.",
-            "news_headlines": [{"title": "최신 뉴스를 가져오는 중입니다.", "link": ""}],
-            "sectors": [{"name": "반도체/AI", "sentiment": "HOT", "reason": "기술주 중심 강세"}],
-            "tickers": ["NVDA", "AAPL", "삼성전자"],
-            "reason": "현재 시장 주도주 중심의 기본 추천입니다.",
-            "push_message": "오늘의 리포트가 업데이트되었습니다."
-        }
+    
+    # 안전한 JSON 추출
+    start_idx = raw_text.find('{')
+    end_idx = raw_text.rfind('}') + 1
+    ai_data = json.loads(raw_text[start_idx:end_idx])
 
-    final_data = {
-        "date": datetime.now(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M'),
+    # 최종 데이터 구조 생성 (모든 타입 str, float, bool 확인)
+    final_output = {
+        "date": str(datetime.now(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M')),
         "market_info": market_info,
         "past_results": past_results,
-        **ai_data
+        "summary": str(ai_data.get("summary", "")),
+        "news_headlines": ai_data.get("news_headlines", []),
+        "sectors": ai_data.get("sectors", []),
+        "tickers": [str(t) for t in ai_data.get("tickers", [])],
+        "reason": str(ai_data.get("reason", "")),
+        "push_message": str(ai_data.get("push_message", "오늘의 분석 완료"))
     }
 
+    # 파일 저장
     with open(REC_FILE, 'w', encoding='utf-8') as f:
-        json.dump(final_data, f, ensure_ascii=False, indent=2)
+        json.dump(final_output, f, ensure_ascii=False, indent=2)
 
-    # 히스토리 업데이트 (history.json) - 이 부분이 에러의 원인이었음
-    history = []
+    # 히스토리 업데이트
+    history_list = []
     if os.path.exists(HISTORY_FILE):
-        with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
-            try:
-                history = json.load(f)
-            except: history = []
+        try:
+            with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
+                history_list = json.load(f)
+        except: history_list = []
     
-    # 불필요한 bool 객체 등을 배제하고 순수 텍스트/숫자만 저장
-    history.append({
-        "date": final_data["date"],
-        "performance": [{"ticker": r["ticker"], "change": float(r["change"])} for r in past_results if r.get('change', 0) != 0],
-        "predictions": [str(t) for t in ai_data.get("tickers", [])]
+    history_list.append({
+        "date": final_output["date"],
+        "performance": past_results,
+        "predictions": final_output["tickers"]
     })
     
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
-        json.dump(history[-30:], f, ensure_ascii=False, indent=2)
+        json.dump(history_list[-30:], f, ensure_ascii=False, indent=2)
 
-    # --- 푸시 알림 발송 ---
-    push_title = "💎 프리즘 인사이트 리포트"
-    push_msg = ai_data.get("push_message", "오늘의 시장 분석이 완료되었습니다.")
-    send_push_notification(push_title, push_msg)
-
-    print(f"✅ 엔진 가동 및 푸시 알림 전송 완료! (KR:{kr_status}/US:{us_status})")
+    # 푸시 알림 발송
+    send_push_notification("💎 프리즘 인사이트", final_output["push_message"])
+    print(f"✅ 모든 공정 성공 완료 (KR:{kr_status}/US:{us_status})")
 
 except Exception as e:
     print(f"❌ 최종 실행 오류 발생: {e}")
