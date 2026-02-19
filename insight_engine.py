@@ -189,16 +189,19 @@ try:
     with open(REC_FILE, 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=2)
 
-    # 히스토리 업데이트
+    # 히스토리 업데이트 (history.json) - 이 부분이 에러의 원인이었음
     history = []
     if os.path.exists(HISTORY_FILE):
         with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
-            history = json.load(f)
+            try:
+                history = json.load(f)
+            except: history = []
     
+    # 불필요한 bool 객체 등을 배제하고 순수 텍스트/숫자만 저장
     history.append({
         "date": final_data["date"],
-        "performance": [r for r in past_results if r['change'] != 0],
-        "predictions": ai_data["tickers"]
+        "performance": [{"ticker": r["ticker"], "change": float(r["change"])} for r in past_results if r.get('change', 0) != 0],
+        "predictions": [str(t) for t in ai_data.get("tickers", [])]
     })
     
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
