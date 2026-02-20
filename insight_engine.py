@@ -14,28 +14,19 @@ REC_FILE = 'recommendations.json'
 HISTORY_FILE = 'history.json'
 
 def send_push_notification(title, body):
-    """Firebase를 통해 모든 앱 사용자(all_users 토픽 구독자)에게 알림 전송"""
+    """Firebase를 통해 모든 앱 사용자에게 알림 전송"""
     try:
         service_account_str = os.environ.get("FIREBASE_SERVICE_ACCOUNT")
-        if not service_account_str:
-            print("⚠️ FIREBASE_SERVICE_ACCOUNT Secret이 설정되지 않았습니다.")
-            return
-
+        if not service_account_str: return
         service_account_info = json.loads(service_account_str)
-        
         if not firebase_admin._apps:
             cred = credentials.Certificate(service_account_info)
             firebase_admin.initialize_app(cred)
-        
         message = messaging.Message(
-            notification=messaging.Notification(
-                title=title,
-                body=body,
-            ),
+            notification=messaging.Notification(title=title, body=body),
             topic="all_users", 
         )
-        
-        response = messaging.send(message)
+        messaging.send(message)
         print(f"✅ 푸시 알림 발송 성공")
     except Exception as e:
         print(f"❌ 푸시 알림 발송 실패: {e}")
@@ -53,10 +44,9 @@ def get_market_data():
             if not hist.empty:
                 curr = hist.iloc[-1]
                 prev = hist.iloc[-2] if len(hist) >= 2 else curr
-                
                 change_val = ((curr['Close'] - prev['Close']) / prev['Close']) * 100
                 
-                # 개장 여부 판단 및 bool 타입 강제 변환
+                # 개장 여부 판단
                 is_open_val = False
                 if name in ["KOSPI", "KOSDAQ"]:
                     kst = now_utc.astimezone(pytz.timezone('Asia/Seoul'))
@@ -74,11 +64,26 @@ def get_market_data():
         except: continue
     return result
 
+def check_trading_day():
+    """오늘이 한국/미국의 실제 거래 가능일(평일)인지 확인"""
+    now_kst = datetime.now(pytz.timezone('Asia/Seoul'))
+    # 월(0)~일(6) 중 토(5), 일(6)이 아니면 거래일로 간주 (공휴일은 뉴스/볼륨으로 AI가 추가 판단)
+    is_kr_trading_day = now_kst.weekday() < 5 
+    
+    # 미국 시장은 한국 시간 기준 당일 밤 혹은 익일 새벽에 열리므로 동일하게 평일 여부 판단
+    is_us_trading_day = now_kst.weekday() < 5
+    
+    kr_status_msg = "정상 거래일(개장 예정)" if is_kr_trading_day else "휴장(주말)"
+    us_status_msg = "정상 거래일(개장 예정)" if is_us_trading_day else "휴장(주말)"
+    
+    return kr_status_msg, us_status_msg
+
 def verify_past():
-    """어제 추천 종목의 오늘 수익률 확인 및 타입 변환"""
+    """어제 추천 종목 수익률 확인"""
     ticker_map = {
         "삼성전자": "005930.KS", "SK하이닉스": "000660.KS", "NAVER": "035420.KS", 
-        "카카오": "035720.KS", "현대차": "005380.KS", "NVDA": "NVDA", "AAPL": "AAPL", "TSLA": "TSLA"
+        "카카오": "035720.KS", "현대차": "005380.KS", "NVDA": "NVDA", "AAPL": "AAPL", "TSLA": "TSLA",
+        "MSFT": "MSFT", "GOOGL": "GOOGL", "GOOG": "GOOG"
     }
     try:
         if not os.path.exists(REC_FILE): return []
@@ -100,16 +105,12 @@ def verify_past():
     except: return []
 
 def fetch_global_news():
-    """뉴스 데이터 수집"""
-    feeds = [
-        "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR",
-        "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US"
-    ]
+    feeds = ["https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR", "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-US&gl=US"]
     news_list = []
     for url in feeds:
         try:
             f = feedparser.parse(url)
-            for entry in f.entries[:7]: # 뉴스 개수 7개로 상향
+            for entry in f.entries[:7]:
                 news_list.append({"title": str(entry.title).replace('"', "'"), "link": str(entry.link)})
         except: continue
     return news_list
@@ -121,21 +122,21 @@ try:
     past_results = verify_past()
     news_data = fetch_global_news()
 
-    # 시장 상태 텍스트화
-    kr_status = "개장" if market_info.get("KOSPI", {}).get("is_open") else "휴장"
-    us_status = "개장" if market_info.get("S&P500", {}).get("is_open") else "휴장"
+    # [수정 포인트] 시점 기반이 아닌 '날짜 기반' 거래일 판단
+    kr_trading_status, us_trading_status = check_trading_day()
 
     prompt = f"""
     당신은 프리즘(Prism) AI 금융 분석가입니다.
-    현재 시장 상태: 한국({kr_status}), 미국({us_status})
+    오늘의 시장 거래 가능 상태: 한국({kr_trading_status}), 미국({us_trading_status})
     데이터: 뉴스({news_data}), 과거성적({past_results})
 
-    [투자 전략 지침]
-    1. **추천 종목 선정 최우선 순위**:
-       - 한국이 오늘/내일 휴장이라면 한국 종목은 제외하고 오늘 밤 열릴 미국 시장 종목 위주로 3개를 추천하세요.
-       - 현재 개장 중인 시장({kr_status})의 기회를 우선 분석하고, 오늘 한국이 개장 예정이면 한국시장 종목 1개는 꼭 포함시켜주세요
-    2. [뉴스] 글로벌 경제 뉴스를 기반으로 중요한 헤드라인 5~10개를 정리하세요.
-    3. [출력] 반드시 아래 JSON 형식으로만 답변하고 앞뒤 설명은 생략하세요.
+    [투자 전략 및 종목 선정 규칙]
+    1. **종목 구성 비율 강제 규칙**:
+       - 한국이 '{kr_trading_status}' 상태라면, **무조건 한국 종목 1개**는 꼭 포함시켜서 추천하세요.
+       - 한국 시장이 '휴장(주말)'인 경우에만 미국 종목으로 3개를 채우세요.
+       - 오늘 한국 시장이 열리는 날임에도 미국 종목만 추천하는 것은 금지됩니다.
+    2. [종목 선정]: 글로벌 뉴스 데이터를 기반으로 가장 유망한 섹터의 대장주를 선정하세요.
+    3. [출력]: 반드시 아래 JSON 형식으로만 답변하고 앞뒤 설명은 생략하세요.
 
     {{
       "summary": "시장 요약 3문장",
@@ -150,12 +151,10 @@ try:
     response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     raw_text = response.text.strip()
     
-    # 안전한 JSON 추출
     start_idx = raw_text.find('{')
     end_idx = raw_text.rfind('}') + 1
     ai_data = json.loads(raw_text[start_idx:end_idx])
 
-    # 최종 데이터 구조 생성 (모든 타입 str, float, bool 확인)
     final_output = {
         "date": str(datetime.now(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M')),
         "market_info": market_info,
@@ -168,11 +167,9 @@ try:
         "push_message": str(ai_data.get("push_message", "오늘의 분석 완료"))
     }
 
-    # 파일 저장
     with open(REC_FILE, 'w', encoding='utf-8') as f:
         json.dump(final_output, f, ensure_ascii=False, indent=2)
 
-    # 히스토리 업데이트
     history_list = []
     if os.path.exists(HISTORY_FILE):
         try:
@@ -189,9 +186,8 @@ try:
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
         json.dump(history_list[-30:], f, ensure_ascii=False, indent=2)
 
-    # 푸시 알림 발송
     send_push_notification("💎 프리즘 인사이트", final_output["push_message"])
-    print(f"✅ 모든 공정 성공 완료 (KR:{kr_status}/US:{us_status})")
+    print(f"✅ 모든 공정 성공 완료 (KR:{kr_trading_status}/US:{us_trading_status})")
 
 except Exception as e:
     print(f"❌ 최종 실행 오류 발생: {e}")
