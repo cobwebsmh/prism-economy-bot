@@ -20,5 +20,25 @@
       "NVDA",
       "AMZN"
     ]
+  },
+  {
+    "date": "2026-02-21 08:18",
+    "performance": [
+      {
+        "ticker": "MSFT",
+        "change": -0.31
+      },
+      {
+        "ticker": "NVDA",
+        "change": 1.02
+      },
+      {
+        "ticker": "AMZN",
+        "change": 2.56
+      }
+    ],
+    "predictions": [
+      "모티프테크"
+    ]
   }
 ]
