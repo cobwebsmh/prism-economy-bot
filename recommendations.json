@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-21 08:18",
+  "date": "2026-02-22 08:14",
   "market_info": {
     "KOSPI": {
       "price": 5808.53,
@@ -26,45 +26,39 @@
       "status": "⚪"
     }
   },
-  "past_results": [
-    {
-      "ticker": "MSFT",
-      "change": -0.31
-    },
-    {
-      "ticker": "NVDA",
-      "change": 1.02
-    },
-    {
-      "ticker": "AMZN",
-      "change": 2.56
-    }
-  ],
-  "summary": "주말 휴장으로 인해 국내외 증시 거래가 중단된 가운데, 인공지능 관련 성장 기대감과 일부 기업의 어려움이 혼재된 시장 상황입니다. 전반적으로 기술주 중심의 상승세가 관찰되지만, 사모대출 펀드의 환매 중단 사례는 투자 심리 위축 가능성을 시사합니다. 따라서 단기적인 과열보다는 장기적인 성장 가능성에 초점을 맞춘 신중한 접근이 필요합니다.",
+  "past_results": [],
+  "summary": "주말 휴장으로 국내외 증시 모두 거래가 없습니다. 지난주 후반 미국 증시는 상승세를 보였으나, 국내 증시는 혼조세를 나타냈습니다. 투자 심리는 전반적으로 관망세가 우세하며, 단기 과열에 대한 경계감이 존재합니다.",
   "news_headlines": [
     {
-      "title": "모디 총리, 인도 AI 정상회의서 글로벌 인공지능 허브 구상 강조 - 헬로티",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBrV3lodzNhZmR4NkZORUZodXhGc1E5YzVOVkxJak1QbmNUdEtLUlBmMGlVMTRwRXgyZDZENHp5NE83S2R2MHVOVXFxaFVEUkRGeVFFQWg0UUFFcEFUd2JV?oc=5"
+      "title": "삼성전자, 런던거래소서 3.79% 급등…美 관세 판결에 글로벌 자금 몰려 - 뉴스핌",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4zcWdYVVRuMzJEckpWNlk4V3dHTjR5QUsyV0pnZGc1Wk1EQnY3cXZTZ0NQUFRiMUp1MjVTdjRtTC1SZjQ0eXFYZnlFTGJldk9jdC01VjcwNi0zb2dF?oc=5"
     },
     {
-      "title": "블루 아울 캐피털, 사모대출 펀드 환매 중단…주가↓ - 마켓인",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iUzlLdndtaGp6R0JrYlFBMUV2TjBHaVY5Yjdhbm1GSUVtZnFQVkJ5dTVyWElZb05uUy1JMW05MkZDam41VF9ELW04VXlHUEIydWJuNi1kWTdtQlY0bk9hXzdIVEFtWU9OX05hQmxBMlRwUGM?oc=5"
+      "title": "印, 'AI 활용 수도' 도전...농업·중소기업 적용이 관건 - 글로벌이코노믹",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbFU5c0pBWklPWUk1VDdXUEFlMWphTzhTYVNkb3dtVGdZMUZ6YVd2WVJnZUVEaDFvQ0FVRzRSVFRyc1JXSXprQ0xlWGtDVTZFVTVLRW43RVdQQTY1Z2tBRjVJcjBrUEpCaURlOUFxZFl3Z3FWVnZFVDdHMTlGZEE3V0t2RVVBbFE?oc=5"
     },
     {
-      "title": "모티프테크놀로지스, 독파모 정예팀 합류…'K-AI' 독자 모델 경쟁 가속 - 지디넷코리아",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NUWNZRzZsdzk0cVIxWlJaOXBQRG9mTC1jUmg4WlF6N0hsa2dXa3p4RXdMdGFVWEM1SEM2WmIwUmdBWVFjUWotQUdMTjh2Y3BQajdGVlV3?oc=5"
+      "title": "[헬로DX] 똑똑한 AI보다 무서운 ‘현장 관습’...다쏘시스템이 제시한 AX 성공 방정식 - 헬로티",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE03cnFBVFpvT2pPeUZJaG5lbHBvWDJORExnRTJENHpPVGpBUUpNVFFIcE1BRmpyb25FWmlzTVZuX2NpekdEdmRGS3JlZWVIOXJKREJxb05hdzYyM0d0TFJB?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "인공지능(AI)",
+      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "모디 총리의 AI 허브 구상 발표 및 국내 기업의 AI 모델 경쟁 심화로 지속적인 성장 기대"
+      "reason": "삼성전자 런던 거래소 급등 및 미국 관세 판결 호재"
+    },
+    {
+      "name": "AI",
+      "sentiment": "관심",
+      "reason": "인도 AI 활용 수도 도전 및 AX 성공 방정식 제시"
     }
   ],
   "tickers": [
-    "모티프테크"
+    "005930",
+    "NVDA",
+    "MSFT"
   ],
-  "reason": "모티프테크놀로지스는 독파모 팀 합류를 통해 K-AI 경쟁에 합류하며 성장 모멘텀을 확보했습니다. 최근 AI 섹터 전반의 과열 우려에도 불구하고, 동사는 기술력 강화 및 시장 확대 가능성이 큽니다. 또한, 국내 주식 의무 편입 규칙에 따라 선정되었습니다.",
-  "push_message": "AI 섹터 주목! 모티프테크, K-AI 경쟁 합류로 성장 기대. 🚀"
+  "reason": "삼성전자는 런던 거래소 급등 소식으로 투자 심리가 개선될 가능성이 높고, 미국 관세 판결로 인한 수혜가 예상됩니다. 엔비디아와 마이크로소프트는 AI 산업의 성장과 함께 꾸준한 실적을 보이고 있으며, 추가적인 상승 여력이 있다고 판단됩니다. 특히 최근 시장의 변동성 확대로 인해 기술주들의 옥석 가리기가 진행될 것으로 예상되는 만큼, 펀더멘털이 튼튼한 대형 기술주 중심으로 포트폴리오를 구성하는 것이 유리합니다.",
+  "push_message": "주말 휴장, 삼성전자 런던 급등! 반도체, AI 관심. 삼성전자, 엔비디아, 마이크로소프트 추천."
 }
