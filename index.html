@@ -28,14 +28,12 @@
 
         .section-title { font-size: 16px; font-weight: 700; margin: 25px 0 12px 0; color: #c9d1d9; border-left: 4px solid #58a6ff; padding-left: 10px; }
 
-        /* Market Cards */
         .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
         .market-card { background: var(--card-bg); padding: 12px; border-radius: 12px; border: 1px solid var(--border-color); }
         .m-name { font-size: 11px; color: var(--text-sub); }
         .m-price { font-size: 16px; font-weight: 700; }
         .up { color: var(--accent-hot); } .down { color: var(--accent-cool); }
 
-        /* Sectors & News */
         .sectors-container, .news-list { display: flex; flex-direction: column; gap: 10px; }
         .sector-card, .news-item { background: var(--card-bg); padding: 12px; border-radius: 10px; border: 1px solid var(--border-color); }
         .sector-card.HOT { border-left: 4px solid var(--accent-hot); }
@@ -44,14 +42,21 @@
         .news-item { text-decoration: none; color: inherit; font-size: 13px; display: block; }
         .news-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
 
-        /* Summary & Picks */
         .summary-box { background: rgba(88, 166, 255, 0.05); padding: 15px; border-radius: 12px; border: 1px dashed #30363d; font-size: 13.5px; }
         .pick-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
         .pick-item { background: #21262d; padding: 10px; border-radius: 8px; text-align: center; border: 1px solid #30363d; font-size: 12px; font-weight: 600; }
 
-        /* Hit Rate */
         .hit-rate-box { text-align: center; padding: 20px; background: var(--card-bg); border-radius: 15px; margin-bottom: 30px; border: 1px solid var(--border-color); }
         .hit-value { font-size: 36px; font-weight: 900; color: var(--accent-hot); }
+
+        /* 트리맵 영역 스타일 */
+        #chart_div { 
+            background: var(--card-bg); 
+            border-radius: 12px; 
+            border: 1px solid var(--border-color); 
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -78,6 +83,9 @@
         <div class="section-title">전일 추천 수익률</div>
         <div id="past-results" class="pick-list"></div>
 
+        <div class="section-title">AI 분석 핵심 키워드 비중</div>
+        <div id="chart_div" style="width: 100%; height: 250px;"></div>
+
         <div class="section-title">누적 상승 적중률</div>
         <div class="hit-rate-box">
             <div id="hit-rate-value" class="hit-value">0%</div>
@@ -85,13 +93,18 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
+        // 차트 패키지 로드
+        google.charts.load('current', {'packages':['treemap']});
+
         async function updateUI() {
             try {
                 const [res, hRes] = await Promise.all([fetch('recommendations.json'), fetch('history.json')]);
                 const data = await res.json();
                 const history = await hRes.json();
 
+                // 기본 정보 렌더링
                 document.getElementById('report-date').innerText = data.date;
                 document.getElementById('summary').innerText = data.summary;
 
@@ -114,15 +127,17 @@
                     </div>
                 `).join('');
 
-                // 뉴스 렌더링 (복구!)
+                // 뉴스 렌더링
                 document.getElementById('news-list').innerHTML = data.news_headlines.map(n => `
                     <a href="${n.link}" class="news-item" target="_blank">
                         <span class="news-title">📰 ${n.title}</span>
                     </a>
                 `).join('');
 
-                // 종목 및 과거 수익률
+                // 종목 렌더링
                 document.getElementById('picks-list').innerHTML = data.tickers.map(t => `<div class="pick-item">${t}</div>`).join('');
+                
+                // 전일 결과 렌더링
                 document.getElementById('past-results').innerHTML = data.past_results.map(r => `
                     <div class="pick-item">
                         <div>${r.ticker}</div>
@@ -130,39 +145,46 @@
                     </div>
                 `).join('');
 
+                // [핵심] 트리맵 그리기 호출
+                if (data.keywords && data.keywords.length > 0) {
+                    google.charts.setOnLoadCallback(() => drawTreeMap(data.keywords));
+                }
+
                 // 적중률 계산
                 let total = 0, hits = 0;
                 history.forEach(day => day.performance.forEach(p => { total++; if(p.change > 0) hits++; }));
                 document.getElementById('hit-rate-value').innerText = (total > 0 ? (hits/total*100).toFixed(1) : 0) + "%";
 
-            } catch (err) { console.error(err); }
+            } catch (err) { console.error("UI 업데이트 실패:", err); }
         }
+
+        function drawTreeMap(keywords) {
+            const chartData = [['Keyword', 'Parent', 'Weight']];
+            chartData.push(['Global Market', null, 0]);
+            
+            keywords.forEach(k => {
+                chartData.push([k.name, 'Global Market', k.weight]);
+            });
+
+            const dataTable = google.visualization.arrayToDataTable(chartData);
+            const tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+
+            tree.draw(dataTable, {
+                minColor: '#1a1f26',
+                midColor: '#1f6feb',
+                maxColor: '#58a6ff',
+                headerHeight: 0,
+                showScale: false,
+                fontColor: '#ffffff',
+                fontSize: 12,
+                generateTooltip: (row, size, value) => {
+                    return '<div style="background:#21262d; padding:10px; border:1px solid #30363d; color:white;">' +
+                           '<b>' + dataTable.getValue(row, 0) + '</b>: ' + size + '%</div>';
+                }
+            });
+        }
+
         updateUI();
     </script>
-    
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['treemap']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Location', 'Parent', 'Market Trade Volume (size)'],
-          ['Global Market', null, 0],
-          // AI가 생성한 keywords 데이터를 기반으로 동적 생성
-          ['AI반도체', 'Global Market', 25],
-          ['금리동결', 'Global Market', 20],
-          ['엔비디아', 'Global Market', 15]
-        ]);
-
-        var tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
-        tree.draw(data, {
-          minColor: '#f00', midColor: '#ddd', maxColor: '#0d0',
-          headerHeight: 15, fontColor: 'black', showScale: true
-        });
-      }
-    </script>
-
-<div id="chart_div" style="width: 100%; height: 300px;"></div>
 </body>
 </html>
