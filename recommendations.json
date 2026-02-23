@@ -1,82 +1,111 @@
 {
-  "date": "2026-02-23 08:15",
+  "date": "2026-02-24 00:42",
   "market_info": {
     "KOSPI": {
-      "price": 5808.53,
-      "change": 2.31,
+      "price": 5846.09,
+      "change": 0.65,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1154.0,
-      "change": -0.58,
+      "price": 1151.99,
+      "change": -0.17,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6909.51,
-      "change": 0.69,
-      "is_open": false,
-      "status": "⚪"
+      "price": 6856.81,
+      "change": -0.76,
+      "is_open": true,
+      "status": "🟢"
     },
     "NASDAQ": {
-      "price": 22886.07,
-      "change": 0.9,
-      "is_open": false,
-      "status": "⚪"
+      "price": 22712.06,
+      "change": -0.76,
+      "is_open": true,
+      "status": "🟢"
     }
   },
-  "past_results": [
-    {
-      "ticker": "005930",
-      "change": 0.05
-    },
-    {
-      "ticker": "NVDA",
-      "change": 1.02
-    },
-    {
-      "ticker": "MSFT",
-      "change": -0.31
-    }
-  ],
-  "summary": "미국 시장은 소폭 상승세를 보였으나, 국내 코스피는 상승, 코스닥은 하락하며 혼조세를 나타내고 있습니다. 전반적으로 시장은 뚜렷한 방향성을 보이지 않고 있으며, 개별 종목 이슈에 따라 등락이 엇갈리는 모습입니다. 투자 심리는 여전히 신중한 분위기 속에 관망세가 유지되고 있습니다.",
+  "past_results": [],
+  "summary": "한국 증시는 개장 예정이며, 미국 증시는 하락세로 개장했습니다. 긍정적인 소식으로는 한국의 수출이 역대 최대를 기록하고 반도체 호조세가 지속될 것이라는 전망이 있습니다. 그러나 미-중 기술 격차 심화, 임금근로소득 증가율 둔화 등의 경제적 어려움도 존재하며, 아마존 해킹 사례에서 보듯 AI를 이용한 사이버 공격 위험도 커지고 있어 투자 심리 위축 가능성이 있습니다.",
   "news_headlines": [
     {
-      "title": "“포스코 주주입니다, 오래 기다렸어요”…악재 턴 저평가주 더 있다는데 - 매일경제",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE52WF9HcEo5d3lacnlDZXNha1ZLbGRoVTVORUItNGxPY2pyQloybjdMYTdfZWFRZ1BISktGN1J3UDFkcjY5Z3A4R1lkd04ydEx5dFE?oc=5"
+      "title": "이달 1∼20일 수출 435억 달러…′역대 최대′ 기록 - 연합뉴스TV",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB6b1VQbjBJbGVMOTFqcnlPbEJRdnJRTzhfQzI4Mld4N1RZQndFVEJySW45U2NTR09VRmZzYWxvSEx3V0EybE40WGtRN0ljTFVjZnFJTUdSdTdJVnBpZmgyeUNwVm4?oc=5"
     },
     {
-      "title": "자사주 소각·고배당 확산…K제약바이오 ‘주주환원 경쟁’ 본격화 - 이투데이",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0tTHZNWUZNWTlQRERPZUN0dzhPUHAyZkkycFp1ODNiUzVZSGotbHZPVjNNT3VKNFdIUDR1ZzB3VzJKQ3RHcFF0RlM0UzYwa2U4MDNiMA?oc=5"
+      "title": "삼성전자 SK하이닉스 주가 장중 2%대 강세, 미국 기술주 훈풍에 최고가 경신 - 비즈니스포스트",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9hZ3RUbU9DYS0xTDZibk1FRW8wT0lTUjhEMkZIOXJaeXFEaWptMjVaTEpFQUc3cDhYV3pVWkEzR0s1cTJSVERWVGZjY0MzRlpmQWxoZzAzWjFhUnUwdFR2MFJadXd4a3VoQkt3RDRpTUlLU0k?oc=5"
     },
     {
-      "title": "Here's My Highest Conviction AI Stock to Buy Right Now (HINT: It Recently Partnered with Nvidia) - The Motley Fool",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ1UydzdEVW1kd1FHeWNEUmx4Nl83Vi1iNWdnWkZkT3g3N1hzS3N0Wi16bC0wQ25wSHY1b2JNYXJaTFhpODRWb0toQy1pVDM3eVF4Um11bnhOSHZWekRIYjNWeDc5dEdXTUJRUTd0LVhhX3lqWVBGMTNMa2MxS1pqN3BRNndUYXBhVTN3ZmhxckZacVkyWmZn?oc=5"
+      "title": "한은총재 '반도체 호조 등에 성장률 작년보다 상당폭 높아질 것' - 한국무역협회-KITA.NET",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNU3hIX2xmTTJaR2JDWUtlOWNRUV9ld3dUUkp2b0d5RkJPb0FxVHdlaXNCYWdrZzU5SngxMnBiUkFhZkN6bmZrMDNZcmNDRWFMX1JGRXRSeFJmWEF3V19pbWNKLVNYWmY3a1NSWWMzSjB6VFVyR0hGbmZsVjJNS0RheTlQbF9KM1ZOZkdtcENtYUhPN2NmSXZBWXVIc0haVVk2Wm5NV3luUVdRRnVyUmRVN2dkd1BIWWNNb2d2dEFnRlh6TXBxQlNyYXJ0VUNwM3U3NjRNUA?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "제약/바이오",
+      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "주주환원 정책 확대로 투자 매력도 증가 기대"
+      "reason": "삼성전자와 SK하이닉스 주가 강세, 한은총재의 반도체 호조 발언"
     },
     {
-      "name": "반도체 (AI)",
-      "sentiment": "STABLE",
-      "reason": "엔비디아 협력으로 인한 AI 반도체 성장 기대감 지속"
-    },
-    {
-      "name": "저평가 가치주",
+      "name": "자사주 소각",
       "sentiment": "POSITIVE",
-      "reason": "악재 해소 및 실적 개선 기대감"
+      "reason": "자사주 소각 의무화 법안 통과로 주주 가치 상승 기대"
+    },
+    {
+      "name": "헬스케어 (AI)",
+      "sentiment": "NEUTRAL",
+      "reason": "대웅제약의 AI 헬스케어 플랫폼 출시"
     }
   ],
   "tickers": [
-    "포스코",
-    "HLB",
-    "NVIDIA"
+    "삼성전자",
+    "Gilead",
+    "버크셔 해서웨이"
   ],
-  "reason": "포스코는 최근 악재를 딛고 저평가 매력이 부각되고 있으며, HLB는 K-제약바이오 주주환원 경쟁에 따른 수혜가 예상됩니다. NVIDIA는 AI 반도체 시장의 성장과 함께 추가적인 상승 여력이 있다고 판단됩니다. 포스코는 철강 경기 회복에 대한 기대감과 함께 긍정적인 전망이 나오고 있으나, 최근 주가 상승에 따른 과매수 구간은 아니라고 판단했습니다. HLB는 바이오 섹터 전반의 투자 심리 개선과 더불어 무릎 구간에 있다고 판단했습니다. NVIDIA는 AI 반도체 시장의 성장 가능성과 함께 긍정적인 모멘텀을 가지고 있습니다.",
-  "push_message": "오늘의 추천: 포스코(저평가 매력), HLB(주주환원 기대), NVIDIA(AI 반도체 성장)."
+  "keywords": [
+    {
+      "name": "수출",
+      "weight": 15
+    },
+    {
+      "name": "반도체",
+      "weight": 20
+    },
+    {
+      "name": "자사주 소각",
+      "weight": 10
+    },
+    {
+      "name": "AI",
+      "weight": 10
+    },
+    {
+      "name": "헬스케어",
+      "weight": 8
+    },
+    {
+      "name": "미국 기술주",
+      "weight": 12
+    },
+    {
+      "name": "유가",
+      "weight": 8
+    },
+    {
+      "name": "금리",
+      "weight": 7
+    },
+    {
+      "name": "M&A",
+      "weight": 5
+    },
+    {
+      "name": "전기차/2차전지",
+      "weight": 5
+    }
+  ],
+  "reason": "삼성전자는 반도체 업황 회복 기대감과 수출 증가에 힘입어 상승 모멘텀을 확보하고 있으며, 국내 주식 시장을 대표하는 종목으로서 포트폴리오에 필수적으로 포함되어야 합니다. Gilead는 Arcellx 인수합병을 통해 암 치료제 개발에 박차를 가하고 있어 장기적인 성장 가능성이 높습니다. 버크셔 해서웨이는 워렌 버핏의 가치 투자 철학을 대표하는 기업으로, 안정적인 포트폴리오 구성을 위해 적합합니다. 3종목 모두 현재 시장 상황에서 상대적으로 저평가되었다고 판단됩니다.",
+  "push_message": "수출 호조 및 반도체 강세 전망. 삼성전자, Gilead, 버크셔 해서웨이 추천. AI, 헬스케어 섹터 주목."
 }
