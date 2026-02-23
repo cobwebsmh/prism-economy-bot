@@ -89,5 +89,27 @@
       "NVIDIA",
       "길리어드 사이언스"
     ]
+  },
+  {
+    "date": "2026-02-24 08:25",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": -1.52
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": 0.91
+      },
+      {
+        "ticker": "길리어드 사이언스",
+        "change": -1.04
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "NVIDIA",
+      "AbbVie"
+    ]
   }
 ]

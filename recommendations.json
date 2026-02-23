@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-24 00:51",
+  "date": "2026-02-24 08:25",
   "market_info": {
     "KOSPI": {
       "price": 5846.09,
@@ -14,103 +14,120 @@
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6852.06,
-      "change": -0.83,
-      "is_open": true,
-      "status": "🟢"
+      "price": 6837.75,
+      "change": -1.04,
+      "is_open": false,
+      "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22689.16,
-      "change": -0.86,
-      "is_open": true,
-      "status": "🟢"
+      "price": 22627.27,
+      "change": -1.13,
+      "is_open": false,
+      "status": "⚪"
     }
   },
-  "past_results": [],
-  "summary": "금일 시장은 한국 증시의 변동성과 미국 기술주의 강세가 혼재된 모습입니다. 특히 자사주 소각 의무화, 반도체 호황 지속, AI 기술 경쟁 심화 등이 주요 이슈로 부각되고 있습니다. 투자자들은 변동성에 유의하며 성장 모멘텀을 가진 기술주와 정책 수혜 예상 종목에 주목할 필요가 있습니다.",
+  "past_results": [
+    {
+      "ticker": "포스코홀딩스",
+      "change": -1.52
+    },
+    {
+      "ticker": "NVIDIA",
+      "change": 0.91
+    },
+    {
+      "ticker": "길리어드 사이언스",
+      "change": -1.04
+    }
+  ],
+  "summary": "시장 심리는 AI, 반도체, 헬스케어 분야에 대한 기대와 함께 다주택자 규제 및 금리 인상 우려가 혼재된 상황입니다. 뉴욕 증시는 AI와 트럼프 관세에 대한 우려로 동반 하락했지만, 중국 AI 테마주는 성장 가능성에 대한 낙관론으로 강세를 유지하고 있습니다. 기술적으로 KOSPI는 소폭 상승, KOSDAQ, S&P500, NASDAQ은 하락세를 보이며 변동성이 확대될 가능성이 있습니다.",
   "news_headlines": [
     {
-      "title": "‘자사주 소각 의무’ 3차 상법개정안, 국회 법사위 통과 - 한겨레",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9sdmVTQ0YzeWRhTTFPY3BTcFQ2UHdOT2poOUdXV09RbmpTb3I1Y0NLZzdhU2YtQjF5NEtDbVNzTDVOU3hKZEl4eHRydTZKeUhBbTZJY243U1ZoRDNzLTVtM1pwTzlXY0JMdzVkT0k0RTdyWkI0?oc=5"
+      "title": "삼성전자, 1년만에 ‘D램 글로벌 왕좌’ 되찾았다 - 동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OZ08yWm54ZFMxN3dsX2EzdmxsWnRCZDUzLXlLenYtSTRBbjVnekU5SnVMaDF6TzZ6dzVMZkwtV0tsc0F5R1N1TjZoWHpwMXlfcU4ycFdaRE1iWEhpTnoyd1hSMkpmS3ZlcmlLOElUV1N0TkdqU3fSAWZBVV95cUxNZ19zOXNXeldoUERDTFYtQVFsOW9hVUI5eEtMTXF1WHRMRHh4MjVFMzk3d29LTTZTTkVfQ2RrV0FzT3RMbjd3ZlA5dTF2eE9tOHJCQnp4dktjbFVKREtLMjh4Y2tsaUE?oc=5"
     },
     {
-      "title": "삼성전자 SK하이닉스 주가 장중 2%대 강세, 미국 기술주 훈풍에 최고가 경신 - 비즈니스포스트",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9hZ3RUbU9DYS0xTDZibk1FRW8wT0lTUjhEMkZIOXJaeXFEaWptMjVaTEpFQUc3cDhYV3pVWkEzR0s1cTJSVERWVGZjY0MzRlpmQWxoZzAzWjFhUnUwdFR2MFJadXd4a3VoQkt3RDRpTUlLU0k?oc=5"
+      "title": "현대차그룹, 2030년까지 125조 국내 투자…'AI기반 로보틱스 분야 집중' - 인더스트리뉴스",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5QUVVQbU1zMk00dTR6YngyNzF3LVk2TXRSWVN6OWw3UlhGUXJSbHNtd3EyQldpdXZSQ2JBY0UtOU9sbnBnZThHOUd2emFkMUZVc3lmVUEtRURSQmlnVmwtQUxOaHJVa2VzUUJiWUt5U0Ewdw?oc=5"
     },
     {
-      "title": "한은총재 '반도체 호조 등에 성장률 작년보다 상당폭 높아질 것' - 한국무역협회-KITA.NET",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNU3hIX2xmTTJaR2JDWUtlOWNRUV9ld3dUUkp2b0d5RkJPb0FxVHdlaXNCYWdrZzU5SngxMnBiUkFhZkN6bmZrMDNZcmNDRWFMX1JGRXRSeFJmWEF3V19pbWNKLVNYWmY3a1NSWWMzSjB6VFVyR0hGbmZsVjJNS0RheTlQbF9KM1ZOZkdtcENtYUhPN2NmSXZBWXVIc0haVVk2Wm5NV3luUVdRRnVyUmRVN2dkd1BIWWNNb2d2dEFnRlh6TXBxQlNyYXJ0VUNwM3U3NjRNUA?oc=5"
+      "title": "AI·트럼프 관세에 대한 우려가 흔들었다…뉴욕증시 동반 하락 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZjFJWE51WnhUbmlBb2tvNjBXZlY2VWNnM3E2UHdyNUFiRUJsdUJLdVN6OW5hWS1LTmVteXNmUDAtcGRaYUNxQ2lzNmhWT3Q5N0pOLVJmQ3FKczJjMkN1QUVscnU4dmlZLTFwWHI5bHVTZWJJSThEYVhyVXVRZG9LQktCZGNCZnFCeW9iT1haVmk0UzR3a2FUWVB4N1h0d9IBsgFBVV95cUxPOEhTUXVLWE1lN0VPRGdmYzJwelZyQThQV1ViRzFwTkhSYWhaM1Rjb2Y0ZXFFdVJMQWEwM2J4ZXdWQUpQck12dnl4cW15VGN2WVlzNFdqWEhpLXlsMlRBQXo3REVQWHhtVml3NFZPZG9ZM0lwV1FDRjdLWWZvcTZiMVVwZ05PRzZ2Q2dma3BFX05fTnFaZEdZNldVekJaSWJuTXYyeWZEUUdhbTRkMThFV0Jn?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "반도체",
       "sentiment": "HOT",
-      "reason": "한은 총재 발언 및 삼성전자, SK하이닉스 강세로 인한 긍정적 전망"
+      "reason": "삼성전자의 D램 왕좌 탈환 및 중국의 기술 굴기 가속화로 경쟁 심화 예상"
     },
     {
       "name": "AI",
       "sentiment": "Neutral",
-      "reason": "AI를 이용한 해킹 사례 증가 및 AI 헬스케어 플랫폼 개발 등 양면성 존재"
+      "reason": "현대차그룹의 AI 기반 로보틱스 투자 집중, 파킨슨병 초기 진단 AI 개발 등 긍정적이지만, 경제 파괴 우려 및 뉴욕 증시 하락 요인으로 작용"
     },
     {
-      "name": "제약/바이오",
-      "sentiment": "Positive",
-      "reason": "일라이 릴리의 비만 치료제 관련 긍정적 뉴스, 길리어드의 암 치료제 개발사 인수"
+      "name": "헬스케어",
+      "sentiment": "HOT",
+      "reason": "비만 치료제 시장 경쟁 심화, 신약 개발 투자 확대 등 성장 가능성 높음"
     }
   ],
   "tickers": [
     {
-      "name": "포스코홀딩스",
-      "symbol": "005490.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
       "name": "NVIDIA",
       "symbol": "NVDA"
     },
     {
-      "name": "길리어드 사이언스",
-      "symbol": "GILD"
+      "name": "AbbVie",
+      "symbol": "ABBV"
     }
   ],
   "keywords": [
     {
-      "name": "자사주 소각",
-      "weight": 15
-    },
-    {
-      "name": "반도체",
+      "name": "AI",
       "weight": 20
     },
     {
-      "name": "AI",
-      "weight": 12
-    },
-    {
-      "name": "수출",
-      "weight": 8
-    },
-    {
-      "name": "금리",
-      "weight": 5
-    },
-    {
-      "name": "전기차/2차전지",
-      "weight": 10
+      "name": "반도체",
+      "weight": 15
     },
     {
       "name": "헬스케어",
       "weight": 15
     },
     {
-      "name": "유가",
+      "name": "부동산",
+      "weight": 10
+    },
+    {
+      "name": "금리",
+      "weight": 10
+    },
+    {
+      "name": "중국",
+      "weight": 10
+    },
+    {
+      "name": "로보틱스",
       "weight": 5
     },
     {
-      "name": "관세",
-      "weight": 10
+      "name": "ESG",
+      "weight": 5
+    },
+    {
+      "name": "우주항공",
+      "weight": 5
+    },
+    {
+      "name": "암호화폐",
+      "weight": 5
     }
   ],
-  "reason": "포스코홀딩스는 자사주 소각 의무화 정책의 수혜 가능성이 있으며, 상대적으로 저평가된 기술적 위치에 있습니다. NVIDIA는 지속적인 AI 시장 성장에 따른 수혜가 예상되며, 조정 구간에서 매수 기회를 제공할 수 있습니다. 길리어드 사이언스는 암 치료제 개발사 인수를 통해 성장 동력을 확보하고 있으며, 헬스케어 섹터의 긍정적 모멘텀을 활용할 수 있습니다. 3 종목 모두 과매수 구간이 아닌 '무릎' 위치에 있어 안정적인 투자 판단이 가능합니다.",
-  "push_message": "자사주 소각 의무화, 반도체 호황, AI 경쟁 심화! 포스코홀딩스, NVIDIA, 길리어드 사이언스에 주목하세요!"
+  "reason": "삼성전자는 D램 시장에서의 경쟁력 회복으로 꾸준한 성장이 기대됩니다.  NVIDIA는 AI 시장의 성장과 함께 데이터센터 및 게이밍 분야에서의 수요 증가가 예상됩니다. AbbVie는 신약 개발 투자 확대를 통해 미래 성장 동력을 확보하고 있으며, 파이프라인 다변화를 통해 안정적인 성장이 기대됩니다. 세 종목 모두 기술적 분석상 상승 추세에 있으며, 과매수 구간에 진입하지 않은 '무릎' 위치에 있다고 판단됩니다. 특히, 삼성전자는 한국 시장의 대표적인 기술주로서 포트폴리오에 포함하여 안정성을 높일 수 있습니다.",
+  "push_message": "오늘의 주요 뉴스는 삼성전자의 D램 왕좌 탈환, 현대차그룹의 AI 로보틱스 투자, 그리고 AI와 트럼프 관세 우려로 인한 뉴욕 증시 하락입니다. 추천 종목은 삼성전자, NVIDIA, AbbVie입니다."
 }
