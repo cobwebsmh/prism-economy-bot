@@ -67,10 +67,7 @@ def get_market_data():
 def check_trading_day():
     """오늘이 한국/미국의 실제 거래 가능일(평일)인지 확인"""
     now_kst = datetime.now(pytz.timezone('Asia/Seoul'))
-    # 월(0)~일(6) 중 토(5), 일(6)이 아니면 거래일로 간주 (공휴일은 뉴스/볼륨으로 AI가 추가 판단)
     is_kr_trading_day = now_kst.weekday() < 5 
-    
-    # 미국 시장은 한국 시간 기준 당일 밤 혹은 익일 새벽에 열리므로 동일하게 평일 여부 판단
     is_us_trading_day = now_kst.weekday() < 5
     
     kr_status_msg = "정상 거래일(개장 예정)" if is_kr_trading_day else "휴장(주말)"
@@ -114,7 +111,7 @@ def fetch_global_news():
                 news_list.append({
                     "title": str(entry.title).replace('"', "'"), 
                     "link": str(entry.link),
-                    "published": getattr(entry, 'published', 'N/A') # 발행 시간 추가
+                    "published": getattr(entry, 'published', 'N/A')
                 })
         except: continue
     return news_list
@@ -125,46 +122,32 @@ try:
     market_info = get_market_data()
     past_results = verify_past()
     news_data = fetch_global_news()
-
-    # [수정 포인트] 시점 기반이 아닌 '날짜 기반' 거래일 판단
     kr_trading_status, us_trading_status = check_trading_day()
 
     prompt = f"""
     당신은 프리즘(Prism) AI 금융 분석가입니다. 
-    전문가로서 단순히 뉴스를 전달하는 것이 아니라, 시장의 심리와 기술적 위치를 분석하고 제공된 {len(news_data)}개의 최신 뉴스를 교차 분석하여 시장의 핵심 모멘텀을 파악하세요.
+    전문가로서 시장의 심리와 기술적 위치를 분석하고 제공된 {len(news_data)}개의 뉴스를 분석하여 핵심 모멘텀을 파악하세요.
 
     [데이터]
     - 시장 상태: 한국({kr_trading_status}), 미국({us_trading_status})
     - 뉴스 스냅샷: {news_data}
     - 최근 지수 흐름: {market_info}
 
-    [분석 지침]
-    1. **데이터 마이닝**: 많은 뉴스 중 반복적으로 언급되는 키워드나 섹터를 추출하여 '주도 테마'를 설정하세요.
-    2. **필터링**: 뉴스 수집량이 늘어난 만큼, 자극적인 헤드라인보다는 실제 실적이나 기술적 우위, 매크로 지표가 뒷받침되는 종목을 선별하세요.
-    3. **기술적/심리적 필터링 (중요)**:
-    - **과매수 경계**: 최근 며칠간 급등하여 RSI가 높을 것으로 예상되거나 '탐욕'이 지배적인 종목은 피하세요. (고점에서 추천하는 실수를 방지)
-    - **무릎 위치 선정**: 강력한 호재가 있지만 아직 주가가 본격적으로 분출되지 않았거나, 건강한 조정을 거치고 반등 직전인 '무릎' 위치의 종목을 우선하세요.
-    - **매크로 분석**: 뉴스가 개별 호재라 하더라도 금리나 환율 등 거시 경제 흐름에 역행하는 종목은 제외하세요.
-    
-    
-    [투자 전략 및 종목 선정 규칙]
-    1. **종목 구성 비율 강제 규칙**:
-       - 한국이 '{kr_trading_status}' 상태라면, **무조건 한국 종목 1개**는 꼭 포함시켜서 추천하세요.
-       - 한국 시장이 '휴장(주말)'인 경우에만 미국 종목으로 3개를 채우세요.
-       - 오늘 한국 시장이 열리는 날임에도 미국 종목만 추천하는 것은 금지됩니다.
-       - 추천종목 tickers 배열에는 반드시 종목 코드(숫자)가 아닌 사람이 읽을 수 있는 '한글명' 또는 '공식 기업명'(예: '삼성전자', 'SK하이닉스', 'NVIDIA')으로 작성하세요.
+    [분석 및 종목 선정 지침]
+    1. **데이터 마이닝**: 반복 언급되는 키워드나 섹터를 추출하여 '주도 테마'를 설정하세요.
+    2. **필터링**: 고점 추격 매수를 방지하기 위해 RSI가 높은 과매수 종목은 피하고, 호재 대비 저평가된 '무릎' 위치의 종목을 선정하세요.
+    3. **종목 구성**: 한국이 '{kr_trading_status}'라면 한국 종목 1개는 꼭 포함시켜서 미국종목 포함 총 3개의 종목을 추천하세요 (한국이 오늘 내일 모두 휴장 시 미국 3개).
+    4. **출력 형식**: 'tickers' 배열에는 반드시 한글 종목명 또는 공식 기업명(예: 삼성전자)만 사용하세요.
+    5. **트리맵 데이터**: 뉴스 분석을 통해 추출한 핵심 키워드 8~10개의 비중(weight, 합계 100)을 계산하세요.
 
-    2. [출력 양식]: 반드시 아래 JSON 형식으로만 답변하고 앞뒤 설명은 생략하세요.
-
-    3. [키워드 분석]: 수집된 30개의 뉴스에서 가장 많이 언급된 핵심 키워드 8~10개를 추출하고 비중(%)을 계산하세요. 
-    비중의 총합은 100%가 되어야 합니다.
-    
+    [출력 양식: JSON으로만 응답]
     {{
-      "summary": "시장 흐름 및 과열/공포 심리 분석 (3문장)",
+      "summary": "시장 흐름 및 심리 분석 (3문장)",
       "news_headlines": [ {{"title": "뉴스제목", "link": "링크"}} ],
       "sectors": [ {{"name": "섹터명", "sentiment": "HOT", "reason": "이유"}} ],
       "tickers": ["종목1", "종목2", "종목3"],
-      "reason": "기술적 위치(과매수 여부 등)와 호재를 결합한 추천 사유",
+      "keywords": [ {{"name": "키워드", "weight": 비중숫자}} ],
+      "reason": "추천 사유 및 기술적 위치 분석",
       "push_message": "알림용 요약"
     }}
     """
@@ -184,6 +167,7 @@ try:
         "news_headlines": ai_data.get("news_headlines", []),
         "sectors": ai_data.get("sectors", []),
         "tickers": [str(t) for t in ai_data.get("tickers", [])],
+        "keywords": ai_data.get("keywords", []), # 트리맵용 데이터 추가
         "reason": str(ai_data.get("reason", "")),
         "push_message": str(ai_data.get("push_message", "오늘의 분석 완료"))
     }
