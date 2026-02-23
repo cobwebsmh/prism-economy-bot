@@ -134,8 +134,8 @@
                     </a>
                 `).join('');
 
-                // 종목 렌더링
-                document.getElementById('picks-list').innerHTML = data.tickers.map(t => `<div class="pick-item">${t}</div>`).join('');
+                // 종목 렌더링 새로운 코드 (t.name 사용)
+                document.getElementById('picks-list').innerHTML = data.tickers.map(t => `<div class="pick-item">${t.name}</div>`).join('');
                 
                 // 전일 결과 렌더링
                 document.getElementById('past-results').innerHTML = data.past_results.map(r => `
