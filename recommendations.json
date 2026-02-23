@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-24 00:42",
+  "date": "2026-02-24 00:51",
   "market_info": {
     "KOSPI": {
       "price": 5846.09,
@@ -14,24 +14,24 @@
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6856.81,
-      "change": -0.76,
+      "price": 6852.06,
+      "change": -0.83,
       "is_open": true,
       "status": "🟢"
     },
     "NASDAQ": {
-      "price": 22712.06,
-      "change": -0.76,
+      "price": 22689.16,
+      "change": -0.86,
       "is_open": true,
       "status": "🟢"
     }
   },
   "past_results": [],
-  "summary": "한국 증시는 개장 예정이며, 미국 증시는 하락세로 개장했습니다. 긍정적인 소식으로는 한국의 수출이 역대 최대를 기록하고 반도체 호조세가 지속될 것이라는 전망이 있습니다. 그러나 미-중 기술 격차 심화, 임금근로소득 증가율 둔화 등의 경제적 어려움도 존재하며, 아마존 해킹 사례에서 보듯 AI를 이용한 사이버 공격 위험도 커지고 있어 투자 심리 위축 가능성이 있습니다.",
+  "summary": "금일 시장은 한국 증시의 변동성과 미국 기술주의 강세가 혼재된 모습입니다. 특히 자사주 소각 의무화, 반도체 호황 지속, AI 기술 경쟁 심화 등이 주요 이슈로 부각되고 있습니다. 투자자들은 변동성에 유의하며 성장 모멘텀을 가진 기술주와 정책 수혜 예상 종목에 주목할 필요가 있습니다.",
   "news_headlines": [
     {
-      "title": "이달 1∼20일 수출 435억 달러…′역대 최대′ 기록 - 연합뉴스TV",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB6b1VQbjBJbGVMOTFqcnlPbEJRdnJRTzhfQzI4Mld4N1RZQndFVEJySW45U2NTR09VRmZzYWxvSEx3V0EybE40WGtRN0ljTFVjZnFJTUdSdTdJVnBpZmgyeUNwVm4?oc=5"
+      "title": "‘자사주 소각 의무’ 3차 상법개정안, 국회 법사위 통과 - 한겨레",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9sdmVTQ0YzeWRhTTFPY3BTcFQ2UHdOT2poOUdXV09RbmpTb3I1Y0NLZzdhU2YtQjF5NEtDbVNzTDVOU3hKZEl4eHRydTZKeUhBbTZJY243U1ZoRDNzLTVtM1pwTzlXY0JMdzVkT0k0RTdyWkI0?oc=5"
     },
     {
       "title": "삼성전자 SK하이닉스 주가 장중 2%대 강세, 미국 기술주 훈풍에 최고가 경신 - 비즈니스포스트",
@@ -46,27 +46,36 @@
     {
       "name": "반도체",
       "sentiment": "HOT",
-      "reason": "삼성전자와 SK하이닉스 주가 강세, 한은총재의 반도체 호조 발언"
+      "reason": "한은 총재 발언 및 삼성전자, SK하이닉스 강세로 인한 긍정적 전망"
     },
     {
-      "name": "자사주 소각",
-      "sentiment": "POSITIVE",
-      "reason": "자사주 소각 의무화 법안 통과로 주주 가치 상승 기대"
+      "name": "AI",
+      "sentiment": "Neutral",
+      "reason": "AI를 이용한 해킹 사례 증가 및 AI 헬스케어 플랫폼 개발 등 양면성 존재"
     },
     {
-      "name": "헬스케어 (AI)",
-      "sentiment": "NEUTRAL",
-      "reason": "대웅제약의 AI 헬스케어 플랫폼 출시"
+      "name": "제약/바이오",
+      "sentiment": "Positive",
+      "reason": "일라이 릴리의 비만 치료제 관련 긍정적 뉴스, 길리어드의 암 치료제 개발사 인수"
     }
   ],
   "tickers": [
-    "삼성전자",
-    "Gilead",
-    "버크셔 해서웨이"
+    {
+      "name": "포스코홀딩스",
+      "symbol": "005490.KS"
+    },
+    {
+      "name": "NVIDIA",
+      "symbol": "NVDA"
+    },
+    {
+      "name": "길리어드 사이언스",
+      "symbol": "GILD"
+    }
   ],
   "keywords": [
     {
-      "name": "수출",
+      "name": "자사주 소각",
       "weight": 15
     },
     {
@@ -74,38 +83,34 @@
       "weight": 20
     },
     {
-      "name": "자사주 소각",
-      "weight": 10
-    },
-    {
       "name": "AI",
-      "weight": 10
-    },
-    {
-      "name": "헬스케어",
-      "weight": 8
-    },
-    {
-      "name": "미국 기술주",
       "weight": 12
     },
     {
-      "name": "유가",
+      "name": "수출",
       "weight": 8
     },
     {
       "name": "금리",
-      "weight": 7
-    },
-    {
-      "name": "M&A",
       "weight": 5
     },
     {
       "name": "전기차/2차전지",
+      "weight": 10
+    },
+    {
+      "name": "헬스케어",
+      "weight": 15
+    },
+    {
+      "name": "유가",
       "weight": 5
+    },
+    {
+      "name": "관세",
+      "weight": 10
     }
   ],
-  "reason": "삼성전자는 반도체 업황 회복 기대감과 수출 증가에 힘입어 상승 모멘텀을 확보하고 있으며, 국내 주식 시장을 대표하는 종목으로서 포트폴리오에 필수적으로 포함되어야 합니다. Gilead는 Arcellx 인수합병을 통해 암 치료제 개발에 박차를 가하고 있어 장기적인 성장 가능성이 높습니다. 버크셔 해서웨이는 워렌 버핏의 가치 투자 철학을 대표하는 기업으로, 안정적인 포트폴리오 구성을 위해 적합합니다. 3종목 모두 현재 시장 상황에서 상대적으로 저평가되었다고 판단됩니다.",
-  "push_message": "수출 호조 및 반도체 강세 전망. 삼성전자, Gilead, 버크셔 해서웨이 추천. AI, 헬스케어 섹터 주목."
+  "reason": "포스코홀딩스는 자사주 소각 의무화 정책의 수혜 가능성이 있으며, 상대적으로 저평가된 기술적 위치에 있습니다. NVIDIA는 지속적인 AI 시장 성장에 따른 수혜가 예상되며, 조정 구간에서 매수 기회를 제공할 수 있습니다. 길리어드 사이언스는 암 치료제 개발사 인수를 통해 성장 동력을 확보하고 있으며, 헬스케어 섹터의 긍정적 모멘텀을 활용할 수 있습니다. 3 종목 모두 과매수 구간이 아닌 '무릎' 위치에 있어 안정적인 투자 판단이 가능합니다.",
+  "push_message": "자사주 소각 의무화, 반도체 호황, AI 경쟁 심화! 포스코홀딩스, NVIDIA, 길리어드 사이언스에 주목하세요!"
 }
