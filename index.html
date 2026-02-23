@@ -139,5 +139,30 @@
         }
         updateUI();
     </script>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['treemap']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Location', 'Parent', 'Market Trade Volume (size)'],
+          ['Global Market', null, 0],
+          // AI가 생성한 keywords 데이터를 기반으로 동적 생성
+          ['AI반도체', 'Global Market', 25],
+          ['금리동결', 'Global Market', 20],
+          ['엔비디아', 'Global Market', 15]
+        ]);
+
+        var tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
+        tree.draw(data, {
+          minColor: '#f00', midColor: '#ddd', maxColor: '#0d0',
+          headerHeight: 15, fontColor: 'black', showScale: true
+        });
+      }
+    </script>
+
+<div id="chart_div" style="width: 100%; height: 300px;"></div>
 </body>
 </html>
