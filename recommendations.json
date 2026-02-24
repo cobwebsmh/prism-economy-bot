@@ -1,133 +1,133 @@
 {
-  "date": "2026-02-24 08:25",
+  "date": "2026-02-25 08:20",
   "market_info": {
     "KOSPI": {
-      "price": 5846.09,
-      "change": 0.65,
+      "price": 5969.64,
+      "change": 2.11,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1151.99,
-      "change": -0.17,
+      "price": 1165.0,
+      "change": 1.13,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6837.75,
-      "change": -1.04,
+      "price": 6890.07,
+      "change": 0.77,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22627.27,
-      "change": -1.13,
+      "price": 22863.68,
+      "change": 1.04,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "포스코홀딩스",
-      "change": -1.52
+      "ticker": "삼성전자",
+      "change": 3.63
     },
     {
       "ticker": "NVIDIA",
-      "change": 0.91
+      "change": 0.68
     },
     {
-      "ticker": "길리어드 사이언스",
-      "change": -1.04
+      "ticker": "AbbVie",
+      "change": -0.45
     }
   ],
-  "summary": "시장 심리는 AI, 반도체, 헬스케어 분야에 대한 기대와 함께 다주택자 규제 및 금리 인상 우려가 혼재된 상황입니다. 뉴욕 증시는 AI와 트럼프 관세에 대한 우려로 동반 하락했지만, 중국 AI 테마주는 성장 가능성에 대한 낙관론으로 강세를 유지하고 있습니다. 기술적으로 KOSPI는 소폭 상승, KOSDAQ, S&P500, NASDAQ은 하락세를 보이며 변동성이 확대될 가능성이 있습니다.",
+  "summary": "전반적으로 시장은 기술적 반등을 시도하는 분위기이며, 특히 AI와 관련된 기술주들의 움직임이 두드러집니다. 다만, 가상자산 시장의 변동성과 일부 경제 지표에 대한 우려가 혼재하며 투자 심리는 다소 불안정한 모습을 보입니다. 한국 시장은 코스피 6000선 돌파에 대한 기대감이 형성되고 있으며, 성장 펀드를 통한 투자와 협력사 상생 노력이 긍정적인 영향을 줄 것으로 예상됩니다.",
   "news_headlines": [
     {
-      "title": "삼성전자, 1년만에 ‘D램 글로벌 왕좌’ 되찾았다 - 동아일보",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OZ08yWm54ZFMxN3dsX2EzdmxsWnRCZDUzLXlLenYtSTRBbjVnekU5SnVMaDF6TzZ6dzVMZkwtV0tsc0F5R1N1TjZoWHpwMXlfcU4ycFdaRE1iWEhpTnoyd1hSMkpmS3ZlcmlLOElUV1N0TkdqU3fSAWZBVV95cUxNZ19zOXNXeldoUERDTFYtQVFsOW9hVUI5eEtMTXF1WHRMRHh4MjVFMzk3d29LTTZTTkVfQ2RrV0FzT3RMbjd3ZlA5dTF2eE9tOHJCQnp4dktjbFVKREtLMjh4Y2tsaUE?oc=5"
+      "title": "20만전자·100만닉스 현실로... 코스피 6000 코앞에 왔다 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcW1ib0RMWVhuc0pWRDlnQjlNT29kVmFTT1g1TnNVNEJORHFMVS1xVGg1dHg0QUVGRTlIamMycU9pQjY2S3B6RlhYUDhVMnI2aUkwakYxWWNNWklKdlFrNEc0RGlBVGt0YVVlUm9vLVdZVTlJYV9pVjdGRkxWdjlHUNIBlAFBVV95cUxPNHJvMmxwNmE0MlFWOTViNVZnMUlTTDFxOUYwejRINFlTVVNNM1RNRjVXZGR4ejBObkxtNzNWZ1NsclcxczExTkFIUjZtRVJ6V0RmWjZpVUdiVEJfdlVXbmcyNUREanV5bWYyVldJWGd2c1l6YjBCenp3UnU0T0JNd3E3VERRdk9wSkM2aVFUaG1FakdX?oc=5"
     },
     {
-      "title": "현대차그룹, 2030년까지 125조 국내 투자…'AI기반 로보틱스 분야 집중' - 인더스트리뉴스",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5QUVVQbU1zMk00dTR6YngyNzF3LVk2TXRSWVN6OWw3UlhGUXJSbHNtd3EyQldpdXZSQ2JBY0UtOU9sbnBnZThHOUd2emFkMUZVc3lmVUEtRURSQmlnVmwtQUxOaHJVa2VzUUJiWUt5U0Ewdw?oc=5"
+      "title": "AMD Stock Surges After AI Chip Maker Agrees to Meta Deal. It's a Big Win. - Barron's",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWGxub2RudFhBV0duM2p1aFBhNDlCLVhxTzRPV1AwMjFxc3N2S0l5MGhaVnB5dTFONTcxRnBpTC1JbGdaTW83ZUFNY0FIZ2RwcEFpOFktcV91Yk8yaXBKNGZpS3VvNGRTMGU0el85VVB4SS12OHI5emZ4QjJVdmF0RmNR?oc=5"
     },
     {
-      "title": "AI·트럼프 관세에 대한 우려가 흔들었다…뉴욕증시 동반 하락 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZjFJWE51WnhUbmlBb2tvNjBXZlY2VWNnM3E2UHdyNUFiRUJsdUJLdVN6OW5hWS1LTmVteXNmUDAtcGRaYUNxQ2lzNmhWT3Q5N0pOLVJmQ3FKczJjMkN1QUVscnU4dmlZLTFwWHI5bHVTZWJJSThEYVhyVXVRZG9LQktCZGNCZnFCeW9iT1haVmk0UzR3a2FUWVB4N1h0d9IBsgFBVV95cUxPOEhTUXVLWE1lN0VPRGdmYzJwelZyQThQV1ViRzFwTkhSYWhaM1Rjb2Y0ZXFFdVJMQWEwM2J4ZXdWQUpQck12dnl4cW15VGN2WVlzNFdqWEhpLXlsMlRBQXo3REVQWHhtVml3NFZPZG9ZM0lwV1FDRjdLWWZvcTZiMVVwZ05PRzZ2Q2dma3BFX05fTnFaZEdZNldVekJaSWJuTXYyeWZEUUdhbTRkMThFV0Jn?oc=5"
+      "title": "Dow closes more than 350 points higher as software stocks bounce back from AI disruption sell-off: Live updates - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51eVA4NjlEaEFLbTBtWkZuR0Qyam1FSllHN2ZrYUVtQnhkbjgwamh5eTFlQ0JuTmFDbklfWFR2Qkl0akl4OWZ3c2xlQTQ4RFBwenlqdTdTcDF2c0ZqaGFzQUI2RGp2T19jN2lNcE4tUjBTaks1NnlF0gF8QVVfeXFMTXAxaHYtYjFScmJCR2p1TmJZZDhaTTdibDJLS2pvX0xZeWJwejZBOHMwSWZQRjdpN042MmRrSHlzeVN3THBzRXYxN1hiNGVJQm9HaXJyMlFrMUlqa3V4aEI0MkZCUlY1ZWY1aDF6dGs2elZ4Y29wVXBuZUpsSw?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체",
-      "sentiment": "HOT",
-      "reason": "삼성전자의 D램 왕좌 탈환 및 중국의 기술 굴기 가속화로 경쟁 심화 예상"
-    },
-    {
       "name": "AI",
-      "sentiment": "Neutral",
-      "reason": "현대차그룹의 AI 기반 로보틱스 투자 집중, 파킨슨병 초기 진단 AI 개발 등 긍정적이지만, 경제 파괴 우려 및 뉴욕 증시 하락 요인으로 작용"
+      "sentiment": "HOT",
+      "reason": "AI 칩 제조업체 AMD의 Meta와의 계약, 다쏘시스템의 산업용 AI 동반자 공개, AI 악용 사이버 공격 급증 등 AI 관련 뉴스가 다수 발생."
     },
     {
-      "name": "헬스케어",
+      "name": "로봇",
       "sentiment": "HOT",
-      "reason": "비만 치료제 시장 경쟁 심화, 신약 개발 투자 확대 등 성장 가능성 높음"
+      "reason": "중국의 로봇 기술 우위, AI와 휴머노이드의 결합 등 로봇 관련 기술 발전 및 시장 확대 기대감."
+    },
+    {
+      "name": "반도체",
+      "sentiment": "POSITIVE",
+      "reason": "삼성전자의 성장펀드 '초저리 대출 1호' 선정, AMD의 AI칩 관련 호재 등 반도체 산업 전반에 대한 긍정적 전망."
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "포스코홀딩스",
+      "symbol": "005490.KS"
     },
     {
       "name": "NVIDIA",
       "symbol": "NVDA"
     },
     {
-      "name": "AbbVie",
-      "symbol": "ABBV"
+      "name": "Apple",
+      "symbol": "AAPL"
     }
   ],
   "keywords": [
     {
       "name": "AI",
-      "weight": 20
+      "weight": 25
+    },
+    {
+      "name": "로봇",
+      "weight": 15
     },
     {
       "name": "반도체",
       "weight": 15
     },
     {
-      "name": "헬스케어",
-      "weight": 15
-    },
-    {
-      "name": "부동산",
+      "name": "전기차",
       "weight": 10
     },
     {
-      "name": "금리",
-      "weight": 10
+      "name": "배터리",
+      "weight": 8
     },
     {
-      "name": "중국",
-      "weight": 10
+      "name": "자율주행",
+      "weight": 7
     },
     {
-      "name": "로보틱스",
+      "name": "가상자산",
       "weight": 5
     },
     {
-      "name": "ESG",
+      "name": "제약/바이오",
       "weight": 5
     },
     {
-      "name": "우주항공",
+      "name": "소프트웨어",
       "weight": 5
     },
     {
-      "name": "암호화폐",
+      "name": "성장펀드",
       "weight": 5
     }
   ],
-  "reason": "삼성전자는 D램 시장에서의 경쟁력 회복으로 꾸준한 성장이 기대됩니다.  NVIDIA는 AI 시장의 성장과 함께 데이터센터 및 게이밍 분야에서의 수요 증가가 예상됩니다. AbbVie는 신약 개발 투자 확대를 통해 미래 성장 동력을 확보하고 있으며, 파이프라인 다변화를 통해 안정적인 성장이 기대됩니다. 세 종목 모두 기술적 분석상 상승 추세에 있으며, 과매수 구간에 진입하지 않은 '무릎' 위치에 있다고 판단됩니다. 특히, 삼성전자는 한국 시장의 대표적인 기술주로서 포트폴리오에 포함하여 안정성을 높일 수 있습니다.",
-  "push_message": "오늘의 주요 뉴스는 삼성전자의 D램 왕좌 탈환, 현대차그룹의 AI 로보틱스 투자, 그리고 AI와 트럼프 관세 우려로 인한 뉴욕 증시 하락입니다. 추천 종목은 삼성전자, NVIDIA, AbbVie입니다."
+  "reason": "포스코홀딩스: 한국 주식 시장의 대표적인 소재 기업으로, 코스피 상승 기대감에 따라 수혜를 받을 가능성이 높습니다. 성장 펀드를 통한 삼성전자의 협력사 상생안 뉴스는 긍정적입니다. 기술적으로는 최근 조정을 거쳐 무릎 위치에 있다고 판단됩니다.\nNVIDIA: AI 칩 시장의 선두 주자로, AMD의 Meta 계약 소식에도 불구하고 여전히 강력한 성장 잠재력을 보유하고 있습니다. AI 관련 뉴스들의 중심에 있으며, 소프트웨어 주식 반등 흐름에 따라 추가 상승 여력이 있습니다.\nApple: 꾸준한 실적과 신제품 출시 기대감, 그리고 샌프란시스코 언팩 행사 열기로 인해 긍정적인 흐름을 이어갈 것으로 예상됩니다. 휴스턴 지역 대규모 투자 확장 뉴스도 장기적인 성장 동력으로 작용할 수 있습니다. 세 종목 모두 RSI 과열 구간을 피하고, 기술적 지지선 부근에서 매수 기회를 엿볼 수 있는 위치에 있다고 판단됩니다.",
+  "push_message": "오늘의 시장은 AI, 로봇, 반도체 섹터에 주목! 포스코홀딩스(005490.KS), 엔비디아(NVDA), 애플(AAPL) 매수 기회 포착! 코스피 6000선 돌파 기대감, AI 기술주 반등, 그리고 삼성전자 협력사 상생안을 주목하세요."
 }
