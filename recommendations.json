@@ -1,89 +1,89 @@
 {
-  "date": "2026-02-25 08:20",
+  "date": "2026-02-26 08:19",
   "market_info": {
     "KOSPI": {
-      "price": 5969.64,
-      "change": 2.11,
+      "price": 6083.86,
+      "change": 1.91,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1165.0,
-      "change": 1.13,
+      "price": 1165.25,
+      "change": 0.02,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6890.07,
-      "change": 0.77,
+      "price": 6946.13,
+      "change": 0.81,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22863.68,
-      "change": 1.04,
+      "price": 23152.08,
+      "change": 1.26,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": 3.63
+      "ticker": "포스코홀딩스",
+      "change": 1.75
     },
     {
       "ticker": "NVIDIA",
-      "change": 0.68
+      "change": 1.41
     },
     {
-      "ticker": "AbbVie",
-      "change": -0.45
+      "ticker": "Apple",
+      "change": 0.77
     }
   ],
-  "summary": "전반적으로 시장은 기술적 반등을 시도하는 분위기이며, 특히 AI와 관련된 기술주들의 움직임이 두드러집니다. 다만, 가상자산 시장의 변동성과 일부 경제 지표에 대한 우려가 혼재하며 투자 심리는 다소 불안정한 모습을 보입니다. 한국 시장은 코스피 6000선 돌파에 대한 기대감이 형성되고 있으며, 성장 펀드를 통한 투자와 협력사 상생 노력이 긍정적인 영향을 줄 것으로 예상됩니다.",
+  "summary": "코스피가 6000선을 돌파하며 사상 최고치를 기록하고 시가총액이 5000조원을 넘어섰다. 미국 증시는 엔비디아 실적 기대감에 힘입어 강세를 보였다. AI, 로봇, 클라우드 등 미래 기술 관련 투자 및 개발이 활발하게 진행되고 있으며, 이는 시장의 긍정적인 모멘텀으로 작용하고 있다.",
   "news_headlines": [
     {
-      "title": "20만전자·100만닉스 현실로... 코스피 6000 코앞에 왔다 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcW1ib0RMWVhuc0pWRDlnQjlNT29kVmFTT1g1TnNVNEJORHFMVS1xVGg1dHg0QUVGRTlIamMycU9pQjY2S3B6RlhYUDhVMnI2aUkwakYxWWNNWklKdlFrNEc0RGlBVGt0YVVlUm9vLVdZVTlJYV9pVjdGRkxWdjlHUNIBlAFBVV95cUxPNHJvMmxwNmE0MlFWOTViNVZnMUlTTDFxOUYwejRINFlTVVNNM1RNRjVXZGR4ejBObkxtNzNWZ1NsclcxczExTkFIUjZtRVJ6V0RmWjZpVUdiVEJfdlVXbmcyNUREanV5bWYyVldJWGd2c1l6YjBCenp3UnU0T0JNd3E3VERRdk9wSkM2aVFUaG1FakdX?oc=5"
+      "title": "기세등등 코스피, 6000마저 뚫었다…시가총액 첫 5천조원 넘어 - 한겨레",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBxbTF4Ty14UThWYzl4Y1c0T1VPRFRLOFh3Vjg5eWQxSGQxZS00RVZtMTN4RUE5WDgxdzhYbTUtREJ6MnRQekRMZ1R4VkJnYVczRGs3LXM4S0toZ0xrVldud25Ib1B6NVNaR2JjcEt0elpyZw?oc=5"
     },
     {
-      "title": "AMD Stock Surges After AI Chip Maker Agrees to Meta Deal. It's a Big Win. - Barron's",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWGxub2RudFhBV0duM2p1aFBhNDlCLVhxTzRPV1AwMjFxc3N2S0l5MGhaVnB5dTFONTcxRnBpTC1JbGdaTW83ZUFNY0FIZ2RwcEFpOFktcV91Yk8yaXBKNGZpS3VvNGRTMGU0el85VVB4SS12OHI5emZ4QjJVdmF0RmNR?oc=5"
+      "title": "엔비디아 실적 기대에 뉴욕증시 강세 마감 - 경향신문",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MS2plVHRUelB4SjNrcHJ5UUprTXB0Wkw4ZUJFRlFRaGNnaGQ3bHBjWWdqYzF3VE5QQ2JBb2xHeUcwMmdLaWlIOHd4SjFIR2dvXzgzWVpCZ0pVd9IBX0FVX3lxTFB6SjZuT0pDZHlfQXVhOWtCUnhCSUdfdFhnSGlOdGo4dVRjWDVCYnUxWDZjcW5TN3MtSHBIR25tdnBLdmVzaVF4cDlmTW1fNE5KQlBUYUE4MjZkUXZGVDBr?oc=5"
     },
     {
-      "title": "Dow closes more than 350 points higher as software stocks bounce back from AI disruption sell-off: Live updates - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51eVA4NjlEaEFLbTBtWkZuR0Qyam1FSllHN2ZrYUVtQnhkbjgwamh5eTFlQ0JuTmFDbklfWFR2Qkl0akl4OWZ3c2xlQTQ4RFBwenlqdTdTcDF2c0ZqaGFzQUI2RGp2T19jN2lNcE4tUjBTaks1NnlF0gF8QVVfeXFMTXAxaHYtYjFScmJCR2p1TmJZZDhaTTdibDJLS2pvX0xZeWJwejZBOHMwSWZQRjdpN042MmRrSHlzeVN3THBzRXYxN1hiNGVJQm9HaXJyMlFrMUlqa3V4aEI0MkZCUlY1ZWY1aDF6dGs2elZ4Y29wVXBuZUpsSw?oc=5"
+      "title": "AI·휴머노이드 집결…'로봇 물결' 올라탄 AW 2026 - 지디넷코리아",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA4ZnhndDQ3UldjM2t2ZkN3ZUVTQ1BUVDVjN01ROGVzLVVtcDVxRVdUQWNFNlp5SlpjSkR0aHVBZEdEcWhreEhhSGF2Tm9NNkFPZ05mbFh3?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "AI",
       "sentiment": "HOT",
-      "reason": "AI 칩 제조업체 AMD의 Meta와의 계약, 다쏘시스템의 산업용 AI 동반자 공개, AI 악용 사이버 공격 급증 등 AI 관련 뉴스가 다수 발생."
+      "reason": "AI 데이터센터 투자 확대, AI 칩 수요 증가"
+    },
+    {
+      "name": "반도체",
+      "sentiment": "HOT",
+      "reason": "엔비디아 실적 기대감, AMD의 AI 칩 공급 계약"
     },
     {
       "name": "로봇",
       "sentiment": "HOT",
-      "reason": "중국의 로봇 기술 우위, AI와 휴머노이드의 결합 등 로봇 관련 기술 발전 및 시장 확대 기대감."
-    },
-    {
-      "name": "반도체",
-      "sentiment": "POSITIVE",
-      "reason": "삼성전자의 성장펀드 '초저리 대출 1호' 선정, AMD의 AI칩 관련 호재 등 반도체 산업 전반에 대한 긍정적 전망."
+      "reason": "휴머노이드 로봇 기술 발전 및 시장 확대"
     }
   ],
   "tickers": [
     {
-      "name": "포스코홀딩스",
-      "symbol": "005490.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
       "name": "NVIDIA",
       "symbol": "NVDA"
     },
     {
-      "name": "Apple",
-      "symbol": "AAPL"
+      "name": "Advanced Micro Devices Inc",
+      "symbol": "AMD"
     }
   ],
   "keywords": [
@@ -92,42 +92,38 @@
       "weight": 25
     },
     {
+      "name": "반도체",
+      "weight": 20
+    },
+    {
       "name": "로봇",
       "weight": 15
     },
     {
-      "name": "반도체",
-      "weight": 15
-    },
-    {
-      "name": "전기차",
+      "name": "데이터센터",
       "weight": 10
     },
     {
-      "name": "배터리",
-      "weight": 8
+      "name": "클라우드",
+      "weight": 10
     },
     {
-      "name": "자율주행",
-      "weight": 7
-    },
-    {
-      "name": "가상자산",
+      "name": "주가조작",
       "weight": 5
     },
     {
-      "name": "제약/바이오",
+      "name": "디저트 위생",
       "weight": 5
     },
     {
-      "name": "소프트웨어",
+      "name": "석유화학",
       "weight": 5
     },
     {
-      "name": "성장펀드",
+      "name": "코인",
       "weight": 5
     }
   ],
-  "reason": "포스코홀딩스: 한국 주식 시장의 대표적인 소재 기업으로, 코스피 상승 기대감에 따라 수혜를 받을 가능성이 높습니다. 성장 펀드를 통한 삼성전자의 협력사 상생안 뉴스는 긍정적입니다. 기술적으로는 최근 조정을 거쳐 무릎 위치에 있다고 판단됩니다.\nNVIDIA: AI 칩 시장의 선두 주자로, AMD의 Meta 계약 소식에도 불구하고 여전히 강력한 성장 잠재력을 보유하고 있습니다. AI 관련 뉴스들의 중심에 있으며, 소프트웨어 주식 반등 흐름에 따라 추가 상승 여력이 있습니다.\nApple: 꾸준한 실적과 신제품 출시 기대감, 그리고 샌프란시스코 언팩 행사 열기로 인해 긍정적인 흐름을 이어갈 것으로 예상됩니다. 휴스턴 지역 대규모 투자 확장 뉴스도 장기적인 성장 동력으로 작용할 수 있습니다. 세 종목 모두 RSI 과열 구간을 피하고, 기술적 지지선 부근에서 매수 기회를 엿볼 수 있는 위치에 있다고 판단됩니다.",
-  "push_message": "오늘의 시장은 AI, 로봇, 반도체 섹터에 주목! 포스코홀딩스(005490.KS), 엔비디아(NVDA), 애플(AAPL) 매수 기회 포착! 코스피 6000선 돌파 기대감, AI 기술주 반등, 그리고 삼성전자 협력사 상생안을 주목하세요."
+  "reason": "삼성전자는 갤럭시 S26 출시를 앞두고 있으며, AI 및 반도체 시장의 성장과 더불어 수혜를 기대할 수 있다. NVIDIA는 AI 칩 시장을 선도하고 있으며, 지속적인 성장 가능성이 높다. AMD는 메타에 AI 칩을 공급하는 계약을 체결하여 성장 모멘텀을 확보했다. 이들 종목은 기술적 분석상 과매수 구간을 벗어나 상승 추세에 진입할 가능성이 높다고 판단된다. 특히 삼성전자는 국내 시장의 상승세와 함께 추가적인 상승 여력이 있을 것으로 보인다.",
+  "push_message": "코스피 6000 돌파! AI, 반도체, 로봇 섹터 주목. 삼성전자(005930.KS), NVIDIA(NVDA), AMD 매수 기회!"
 }

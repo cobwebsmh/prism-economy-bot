@@ -133,5 +133,27 @@
       "NVIDIA",
       "Apple"
     ]
+  },
+  {
+    "date": "2026-02-26 08:19",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": 1.75
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": 1.41
+      },
+      {
+        "ticker": "Apple",
+        "change": 0.77
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "NVIDIA",
+      "Advanced Micro Devices Inc"
+    ]
   }
 ]
