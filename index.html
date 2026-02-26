@@ -49,17 +49,23 @@
         .hit-rate-box { text-align: center; padding: 20px; background: var(--card-bg); border-radius: 15px; margin-bottom: 30px; border: 1px solid var(--border-color); }
         .hit-value { font-size: 36px; font-weight: 900; color: var(--accent-hot); }
 
-        /* 트리맵 영역 스타일 */
-        #chart_div { 
-            background: var(--card-bg); 
-            border-radius: 12px; 
-            border: 1px solid var(--border-color); 
-            overflow: hidden;
-            margin-bottom: 20px;
+        #chart_div { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden; margin-bottom: 20px; }
+
+        /* 뉴스 팝업 레이어 */
+        #news-overlay {
+            display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            width: 85%; max-width: 380px; background: #1c2128; border: 1px solid var(--accent-cool);
+            border-radius: 16px; padding: 20px; z-index: 1000; box-shadow: 0 10px 30px rgba(0,0,0,0.8);
         }
+        #overlay-bg { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:999; }
+        .overlay-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .overlay-close { cursor: pointer; font-size: 24px; color: var(--text-sub); }
     </style>
 </head>
 <body>
+    <div id="overlay-bg" onclick="closeNews()"></div>
+    <div id="news-overlay"></div>
+
     <div class="container">
         <header>
             <div class="logo">PRISM INSIGHT 💎</div>
@@ -74,6 +80,9 @@
         <div class="section-title">주요 섹터 현황</div>
         <div id="sectors-list" class="sectors-container"></div>
 
+        <div class="section-title">AI 분석 핵심 키워드 비중</div>
+        <div id="chart_div" style="width: 100%; height: 250px;"></div>
+
         <div class="section-title">글로벌 주요 뉴스</div>
         <div id="news-list" class="news-list"></div>
 
@@ -82,9 +91,6 @@
 
         <div class="section-title">전일 추천 수익률</div>
         <div id="past-results" class="pick-list"></div>
-
-        <div class="section-title">AI 분석 핵심 키워드 비중</div>
-        <div id="chart_div" style="width: 100%; height: 250px;"></div>
 
         <div class="section-title">누적 상승 적중률</div>
         <div class="hit-rate-box">
@@ -95,93 +101,109 @@
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
-        // 차트 패키지 로드
         google.charts.load('current', {'packages':['treemap']});
+        let cachedData = null;
 
         async function updateUI() {
             try {
                 const [res, hRes] = await Promise.all([fetch('recommendations.json'), fetch('history.json')]);
-                const data = await res.json();
+                cachedData = await res.json();
                 const history = await hRes.json();
 
-                // 기본 정보 렌더링
-                document.getElementById('report-date').innerText = data.date;
-                document.getElementById('summary').innerText = data.summary;
+                document.getElementById('report-date').innerText = cachedData.date;
+                document.getElementById('summary').innerText = cachedData.summary;
 
                 // 지수 렌더링
-                document.getElementById('market-indices').innerHTML = Object.entries(data.market_info).map(([k, v]) => `
+                document.getElementById('market-indices').innerHTML = Object.entries(cachedData.market_info).map(([k, v]) => `
                     <div class="market-card">
                         <div class="m-name">${v.status} ${k}</div>
                         <div class="m-price">${v.price.toLocaleString()}</div>
-                        <div class="m-change ${v.change >= 0 ? 'up' : 'down'}">${v.change >= 0 ? '▲' : '▼'} ${Math.abs(v.change)}%</div>
+                        <div class="${v.change >= 0 ? 'up' : 'down'}">${v.change >= 0 ? '▲' : '▼'} ${Math.abs(v.change)}%</div>
                     </div>
                 `).join('');
 
                 // 섹터 렌더링
-                document.getElementById('sectors-list').innerHTML = data.sectors.map(s => `
+                document.getElementById('sectors-list').innerHTML = cachedData.sectors.map(s => `
                     <div class="sector-card ${s.sentiment}">
-                        <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:bold; margin-bottom:5px;">
+                        <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:bold;">
                             <span>${s.name}</span><span style="color:${s.sentiment==='HOT'?'#f85149':'#58a6ff'}">${s.sentiment}</span>
                         </div>
-                        <div style="font-size:11px; color:#8b949e;">${s.reason}</div>
+                        <div style="font-size:11px; color:#8b949e; margin-top:5px;">${s.reason}</div>
                     </div>
                 `).join('');
 
                 // 뉴스 렌더링
-                document.getElementById('news-list').innerHTML = data.news_headlines.map(n => `
+                document.getElementById('news-list').innerHTML = cachedData.news_headlines.map(n => `
                     <a href="${n.link}" class="news-item" target="_blank">
                         <span class="news-title">📰 ${n.title}</span>
                     </a>
                 `).join('');
 
-                // 종목 렌더링 새로운 코드 (t.name 사용)
-                document.getElementById('picks-list').innerHTML = data.tickers.map(t => `<div class="pick-item">${t.name}</div>`).join('');
-                
-                // 전일 결과 렌더링
-                document.getElementById('past-results').innerHTML = data.past_results.map(r => `
+                // 종목 및 결과 (객체 구조 대응)
+                document.getElementById('picks-list').innerHTML = cachedData.tickers.map(t => `<div class="pick-item">${t.name}</div>`).join('');
+                document.getElementById('past-results').innerHTML = cachedData.past_results.map(r => `
                     <div class="pick-item">
                         <div>${r.ticker}</div>
                         <div class="${r.change >= 0 ? 'up' : 'down'}" style="font-size:10px;">${r.change}%</div>
                     </div>
                 `).join('');
 
-                // [핵심] 트리맵 그리기 호출
-                if (data.keywords && data.keywords.length > 0) {
-                    google.charts.setOnLoadCallback(() => drawTreeMap(data.keywords));
+                // 트리맵 그리기
+                if (cachedData.keywords) {
+                    google.charts.setOnLoadCallback(() => drawTreeMap(cachedData.keywords));
                 }
 
-                // 적중률 계산
+                // 적중률
                 let total = 0, hits = 0;
                 history.forEach(day => day.performance.forEach(p => { total++; if(p.change > 0) hits++; }));
                 document.getElementById('hit-rate-value').innerText = (total > 0 ? (hits/total*100).toFixed(1) : 0) + "%";
 
-            } catch (err) { console.error("UI 업데이트 실패:", err); }
+            } catch (err) { console.error(err); }
         }
 
         function drawTreeMap(keywords) {
             const chartData = [['Keyword', 'Parent', 'Weight']];
             chartData.push(['Global Market', null, 0]);
-            
-            keywords.forEach(k => {
-                chartData.push([k.name, 'Global Market', k.weight]);
-            });
+            keywords.forEach(k => chartData.push([k.name, 'Global Market', k.weight]));
 
             const dataTable = google.visualization.arrayToDataTable(chartData);
             const tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
 
             tree.draw(dataTable, {
-                minColor: '#1a1f26',
-                midColor: '#1f6feb',
-                maxColor: '#58a6ff',
-                headerHeight: 0,
-                showScale: false,
-                fontColor: '#ffffff',
-                fontSize: 12,
-                generateTooltip: (row, size, value) => {
-                    return '<div style="background:#21262d; padding:10px; border:1px solid #30363d; color:white;">' +
-                           '<b>' + dataTable.getValue(row, 0) + '</b>: ' + size + '%</div>';
+                minColor: '#1a1f26', midColor: '#1f6feb', maxColor: '#58a6ff',
+                headerHeight: 0, showScale: false, fontColor: '#ffffff', fontSize: 12,
+                maxPostDepth: 0, // 클릭 시 파고들기(확대) 방지
+                useWeightedAverageForColor: true
+            });
+
+            google.visualization.events.addListener(tree, 'select', () => {
+                const sel = tree.getSelection();
+                if (sel.length > 0) {
+                    const kw = dataTable.getValue(sel[0].row, 0);
+                    if (kw !== 'Global Market') showKeywordNews(kw);
+                    tree.setSelection([]); // 선택 상태 초기화 (다시 클릭 가능하게)
                 }
             });
+        }
+
+        function showKeywordNews(kw) {
+            const filtered = cachedData.news_headlines.filter(n => n.title.toLowerCase().includes(kw.toLowerCase()));
+            let html = `<div class="overlay-header"><b style="color:var(--accent-cool)">#${kw} 관련 뉴스</b><span class="overlay-close" onclick="closeNews()">×</span></div>`;
+            
+            if (filtered.length > 0) {
+                html += filtered.map(n => `<a href="${n.link}" target="_blank" class="news-item" style="background:#21262d; margin-bottom:8px;">${n.title}</a>`).join('');
+            } else {
+                html += `<p style="font-size:12px; color:var(--text-sub); text-align:center;">관련 뉴스를 찾을 수 없습니다.</p>`;
+            }
+
+            document.getElementById('news-overlay').innerHTML = html;
+            document.getElementById('news-overlay').style.display = 'block';
+            document.getElementById('overlay-bg').style.display = 'block';
+        }
+
+        function closeNews() {
+            document.getElementById('news-overlay').style.display = 'none';
+            document.getElementById('overlay-bg').style.display = 'none';
         }
 
         updateUI();
