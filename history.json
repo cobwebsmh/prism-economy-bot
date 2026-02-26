@@ -155,5 +155,27 @@
       "NVIDIA",
       "Advanced Micro Devices Inc"
     ]
+  },
+  {
+    "date": "2026-02-26 23:22",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 7.13
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": 1.41
+      },
+      {
+        "ticker": "Advanced Micro Devices Inc",
+        "change": -1.39
+      }
+    ],
+    "predictions": [
+      "포스코홀딩스",
+      "NVIDIA",
+      "뱅가드 성장 ETF"
+    ]
   }
 ]
