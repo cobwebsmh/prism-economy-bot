@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-26 23:22",
+  "date": "2026-02-27 08:19",
   "market_info": {
     "KOSPI": {
       "price": 6307.27,
@@ -14,62 +14,62 @@
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6946.13,
-      "change": 0.81,
-      "is_open": true,
-      "status": "🟢"
+      "price": 6908.86,
+      "change": -0.54,
+      "is_open": false,
+      "status": "⚪"
     },
     "NASDAQ": {
-      "price": 23152.08,
-      "change": 1.26,
-      "is_open": true,
-      "status": "🟢"
+      "price": 22878.38,
+      "change": -1.18,
+      "is_open": false,
+      "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": 7.13
+      "ticker": "포스코홀딩스",
+      "change": 0.25
     },
     {
       "ticker": "NVIDIA",
-      "change": 1.41
+      "change": -5.46
     },
     {
-      "ticker": "Advanced Micro Devices Inc",
-      "change": -1.39
+      "ticker": "뱅가드 성장 ETF",
+      "change": -1.03
     }
   ],
-  "summary": "시장 심리는 전반적으로 긍정적입니다. 코스피가 3% 급등하며 6,300을 돌파하고, 삼성전자가 시총 1조 달러 클럽에 입성하는 등 한국 시장에 대한 기대감이 높습니다. 미국 시장 역시 S&P500과 나스닥이 상승하며 좋은 흐름을 이어가고 있으며, 특히 Nvidia와 같은 기술주의 실적 발표에 대한 기대감이 투자 심리를 자극하고 있습니다.",
+  "summary": "전반적으로 시장은 긍정적인 모멘텀을 보이고 있지만, 일부 기술 기업에 대한 우려와 거시 경제 상황에 대한 신중한 접근이 필요합니다. 한국 시장은 코스피 급등과 금리 동결로 상승세를 보이고 있으며, 정부 정책의 영향으로 소비 관련 분야도 주목할 만합니다. 미국 시장은 엔비디아를 비롯한 기술주에 대한 투자 심리가 엇갈리고 있으며, 금리 하락과 부동산 시장의 변화가 복합적으로 작용하고 있습니다.",
   "news_headlines": [
     {
       "title": "코스피 3% 급등 6,300 돌파...한은 6번째 금리 동결 - YTN",
       "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0yQlRTVkM5Zklac29qVHpSdWp6ekxTYUVieGQ2WThWbWc2aDI2eHVCenBsaC1EWDctV1BmWmtPd2NLZXJ6aWp1ajlDdlh3VHJqbzBNR1J5TTIxczhNWEHSAYMBQVVfeXFMT3JCNy1iYTR4Q1BOYXFzR1JxdVdlZjZCMDg1Q1dUb2FxT2xmUGkwanZfSVVoV2E3MDhqeXEtQVhjM1JKNkp0Vk1ESHJzWmdlWGsyMDVjTjJaQXdBUmNTRGh3WEVRa0FOZFdQV2sxOXhRMGxzTlRydHdDNDczbDQ3OTVpSW8?oc=5"
     },
     {
-      "title": "삼성전자, 꿈의 시총 1조달러 클럽 입성…'글로벌 빅테크' 어깨 나란히 - 연합인포맥스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BUWc3ekJvd0pMSWdSR0ZmRHNxZHF1RzNoczIyVEk2RS1CSVB1N253QjMzLWRETjZCcDZQRlNwX2cxRTNqZmVTcF80YmZ1NGNrQzYtdUVhUk1qU2lZYUFlM1UwdU5wVzB0OC03N0Q1YWk?oc=5"
+      "title": "엔비디아, 실적 성장보다 AI 투자 지속 '우려'…184달러서 마감 - 마켓인",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAzVHBwU2YzZk9yVHRIUmtlWEk3MFhRUW0xQWRoQUFYSVU5ZDhXREt4dUNiTW42YmhXY0cxczFNTE9mN0Z1NDdLWUYyODBoSC1YLXFMUzU0eVRXQTg3Q1UyRGRTWHJxTTVSRGNJcFhlYTBIanM?oc=5"
     },
     {
-      "title": "Nvidia, Salesforce 실적 발표; 미국-이란 핵 협상 - 시장 움직임 By Investing.com - Investing.com 한국어",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBEcHlXNElVd0J5bnpWRHFxaVM2YVRsaGFmNU1RdE1KbE1HV2t5aTcyckctVGhZcUxsS29sRG9FSTl0b1JMWEc4d2VBM3VqSUtkWkpxM1FZdTBCWmxFTFVsSml4Um1od2NicFE?oc=5"
+      "title": "U.S. Mortgage Rates Fall Below 6% for First Time in Years - The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZZ2hsMnJRYTJGcFlvQzE0cVVvR05NUWU5WVlmallsNUcxbU5oakJ5bEk2UDdDcll2Tmlma2VTZTVPWXNDTFNVMElmWGRaTE1FV1pvZ19jZTdvSThLMW5qY0VxdDZUOHlfQkk2Z28wT2UxeENqQmZraDBLaw?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "반도체",
-      "sentiment": "HOT",
-      "reason": "이창용 총재 발언과 삼성전자 시총 1조 달러 돌파 뉴스, Nvidia 실적 발표 예정 등 반도체 섹터에 대한 관심이 매우 높음"
-    },
-    {
-      "name": "AI",
       "sentiment": "Neutral",
-      "reason": "AI 관련 일자리 감소 우려와 AI 기업의 규제 준수 노력 등 긍정적, 부정적 뉴스가 혼재"
+      "reason": "엔비디아 실적 발표에도 불구하고 AI 투자 지속에 대한 우려가 존재."
     },
     {
-      "name": "로봇",
+      "name": "소비재",
       "sentiment": "Positive",
-      "reason": "AW 2026에서 AI 휴머노이드 로봇 관련 기술 전시 등 로봇 산업 성장 기대감 존재"
+      "reason": "파리바게뜨, 뚜레쥬르 빵값 인하 및 CJ제일제당 밀가루 가격 인하 등 긍정적 신호."
+    },
+    {
+      "name": "금융",
+      "sentiment": "Positive",
+      "reason": "국민연금 수익 증가 및 국민성장펀드 출시 기대감."
     }
   ],
   "tickers": [
@@ -78,56 +78,56 @@
       "symbol": "005490.KS"
     },
     {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
+      "name": "Warner Bros. Discovery",
+      "symbol": "WBD"
     },
     {
-      "name": "뱅가드 성장 ETF",
-      "symbol": "VUG"
+      "name": "State Farm",
+      "symbol": "UNM"
     }
   ],
   "keywords": [
     {
-      "name": "반도체",
+      "name": "AI 투자",
       "weight": 20
     },
     {
-      "name": "AI",
+      "name": "금리 동결",
       "weight": 15
     },
     {
-      "name": "금리",
+      "name": "소비자 가격 인하",
       "weight": 10
     },
     {
-      "name": "삼성전자",
+      "name": "국민연금",
       "weight": 10
     },
     {
-      "name": "부동산",
+      "name": "주택 시장",
       "weight": 10
     },
     {
-      "name": "고용",
+      "name": "자사주 소각",
       "weight": 10
     },
     {
-      "name": "소비자",
+      "name": "영업이익 증가",
       "weight": 10
     },
     {
-      "name": "로봇",
+      "name": "고용 감축",
       "weight": 5
     },
     {
-      "name": "자사주",
+      "name": "라이센스 계약",
       "weight": 5
     },
     {
-      "name": "핵협상",
+      "name": "소프트웨어 이슈",
       "weight": 5
     }
   ],
-  "reason": "코스피 상승과 삼성전자 시총 1조 달러 돌파 모멘텀을 고려하여, 국내 주식 중 철강 섹터에서 꾸준한 성장세를 보이는 포스코홀딩스를 선정했습니다. 최근 주가가 상승 추세에 있으며, 2차 전지 소재 사업 확장 기대감도 유효합니다. 미국 주식은 AI, 로봇 섹터에 대한 전반적인 관심을 반영하여 NVIDIA를 선정했습니다. NVIDIA는 실적 발표를 앞두고 있으며, AI 반도체 시장의 선두 주자로서 지속적인 성장 가능성이 높습니다. 또한 VUG ETF는 성장주에 투자하는 ETF로, AI, 반도체, 기술 혁신과 관련된 다양한 기업에 분산 투자할 수 있어 안정적인 포트폴리오 구성에 도움이 될 수 있습니다.",
-  "push_message": "코스피 3% 급등, 삼성전자 시총 1조 달러 돌파! 추천 종목: 포스코홀딩스(005490.KS), NVIDIA(NVDA), VUG ETF. 반도체, AI 섹터 주목!"
+  "reason": "포스코홀딩스는 코스피 상승의 수혜를 받을 것으로 예상되며, 2차 전지 소재 사업 확장 기대감이 있습니다. Warner Bros. Discovery는 Paramount Skydance 인수 가능성으로 상승 모멘텀을 기대해 볼 수 있습니다. State Farm은 대규모 배당 발표로 주주 가치 제고에 기여할 것으로 예상됩니다. 기술적 분석으로는, 세 종목 모두 과매수 구간은 아니며, 최근 하락 추세에서 반등하는 '무릎' 구간에 진입할 가능성이 있습니다.",
+  "push_message": "코스피 급등, 금리 동결, 소비자 가격 인하, AI 투자 우려 혼재. 관심 종목: 포스코홀딩스, Warner Bros. Discovery, State Farm."
 }

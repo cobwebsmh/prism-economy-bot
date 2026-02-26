@@ -177,5 +177,27 @@
       "NVIDIA",
       "뱅가드 성장 ETF"
     ]
+  },
+  {
+    "date": "2026-02-27 08:19",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": 0.25
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": -5.46
+      },
+      {
+        "ticker": "뱅가드 성장 ETF",
+        "change": -1.03
+      }
+    ],
+    "predictions": [
+      "포스코홀딩스",
+      "Warner Bros. Discovery",
+      "State Farm"
+    ]
   }
 ]
