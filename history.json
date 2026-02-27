@@ -199,5 +199,27 @@
       "Warner Bros. Discovery",
       "State Farm"
     ]
+  },
+  {
+    "date": "2026-02-28 08:14",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": 1.35
+      },
+      {
+        "ticker": "Warner Bros. Discovery",
+        "change": -2.19
+      },
+      {
+        "ticker": "State Farm",
+        "change": -2.83
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "Microsoft",
+      "Alphabet"
+    ]
   }
 ]
