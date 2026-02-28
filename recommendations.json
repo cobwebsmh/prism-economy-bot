@@ -1,17 +1,17 @@
 {
-  "date": "2026-02-28 15:33",
+  "date": "2026-02-28 22:23",
   "market_info": {
     "KOSPI": {
       "price": 6244.13,
       "change": -1.0,
-      "is_open": true,
-      "status": "🟢"
+      "is_open": false,
+      "status": "⚪"
     },
     "KOSDAQ": {
       "price": 1192.78,
       "change": 0.39,
-      "is_open": true,
-      "status": "🟢"
+      "is_open": false,
+      "status": "⚪"
     },
     "S&P500": {
       "price": 6878.88,
@@ -32,94 +32,102 @@
       "change": -0.69
     },
     {
-      "ticker": "NVIDIA",
-      "change": -4.16
+      "ticker": "애플",
+      "change": -3.21
     },
     {
-      "ticker": "Advanced Micro Devices Inc.",
-      "change": -1.7
+      "ticker": "마이크로소프트",
+      "change": -2.24
     }
   ],
-  "summary": "주말 휴장으로 인해 시장은 관망세가 유지되는 가운데, 지난 금요일 코스피는 외국인 투매에도 불구하고 낙폭을 일부 만회하며 마감했습니다. 주요 뉴스는 AI, 반도체, 그리고 에너지 섹터에 집중되어 있으며, 개별 기업 이슈도 부각되고 있습니다. 특히 AI 관련 고용 변화와 대규모 투자 소식이 시장의 관심을 끌고 있습니다.",
+  "summary": "최근 뉴스는 AI 기술의 발전과 그에 따른 고용 불안, 지정학적 리스크, 그리고 기업들의 실적 및 투자 관련 소식을 다루고 있습니다. 특히 AI 파괴론 우려와 함께 AI 기술 경쟁 심화, 그리고 일부 기업들의 과도한 투자 논란이 시장 심리를 위축시키는 요인으로 작용하고 있습니다. 다만, 긍정적인 부분은 삼성전자의 메모리 시장 점유율 회복과 정의선 회장의 대규모 투자 결정 등이 투자 심리를 일부 개선할 수 있다는 점입니다.",
   "news_headlines": [
     {
-      "title": "삼성전자, 말귀 알아듣는 갤럭시 S26 공개…기술력으로 ‘초고속 충전 3.0’ 시대 개막 - 전기신문",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1pd3VrUFlnazBZekphcUtMRGlLVzh0Y0Y0TzZvOHFXcnNSYmNuNDNRWUZJbGN5ZnkzS3dGdE4tZ1lRSThEYXRnT2VLc1MxalVIMnlTZlgxVkowcnR3SnhxZkhzWWZkQ0laR1ozX9IBcEFVX3lxTE5WZGQ5T01uQjI0Z3lXdFpoNlVCQXBBV05RTGFtcW9YakpmU2VCVnVyLTNzSDJ1aVh2YW50cUZ1cFYzdzRJN0lmWFA2ZnlBdlZ2NDh6bnBwM1RMc0FyUUR5NE4yeGxwN3ltUDV0Tnd2WXY?oc=5"
+      "title": "뉴욕증시 3대 지수 하락···‘AI 파괴론’ 우려 확산 - 시사저널e",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA0N2d0QURCREdvbC1RM1NjaThvVmpPTUV5b2hmMTBMRkxjd0lzaGl4MW90b0I4UU5DaFVMZGpjZ0R6cHFXTTJETkF1TUMxeVhQWUpGek1oaXhwbDZFYV9qYTk4NElwZFEzWEZHNHVibTVYZ9IBdkFVX3lxTE9NV2otN05VTDZIRnlOUmdrdF9JaWI4Q2VndV8wcngyQm15elFNWHBuMm9nZmQ1a29BYTM3djJHUFQ4YmFoX3NtcThHb0xHMXlyalBoTWhEcWtPcWdOcWppeldyUUVRcG9NeFlZbXlra1WidlBPaXc?oc=5"
     },
     {
-      "title": "OpenAI Raises $110 Billion as It Races Toward IPO - WSJ",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfTzdFQklvWG84MFc2Q2pHYk1JS1FxbW1aOVBId2h0OHZXSHlOcEVSclVDbVZ2cnQ0NGp0eTdaVEVOUW5mNHJyakUyejF6X0htN0Mwal9mSFBUTVZxZWxHMDRwMkdvRmF3WDJn?oc=5"
+      "title": "호르무즈 해협 막히면... ‘이란 리스크’ 현실로 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQzRGRHA4OWlNNGZVR1c4eVJzRW4wUDRyQ1QzblJ2bDJNU2themJtbG9DUy1pTlhERG1INXc4SGJxck5QaVlFQzFtUThFV2FhSHdnWm9LdHN6Wk55QnE3c3J0ZWM3S2E1aUhBanZuNUE5cl9KWnJFMmZJNUMtVnpBZms0ZXcyZ0JHLWNuTmxDNNIBowFBVV95cUxQNTYySng5bWVFUVhvRDg4YnFSMjlqTGY1NklTMUQ4YjFfbU05WVJTZlZXM1Vjbm95dy16NmpKdGlTaC1NNjZTeU9NWlZ1X1ItQ0JMa2pYLVNabncwb2pJYWtwTlYwTWZKMHJQVGxfUjdMejQwdzBCM0RiWUNaZjdPcXJ2eVkxZVJWTnRqcm9RYnNpTUxPc2JkRWNXcEY5cXR4QVVB?oc=5"
     },
     {
-      "title": "직원 절반 해고 발표했더니 오히려 주가 25% 폭등…AI발 고용 위협 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3dJcGFvTzVwWGN2U1Rld2Z3clFYNG5pb1A0RVhHbTNhR1cwMFFENlh1M29BaENtMkdBOTZEOEQ5c2RvOHZrZkhzX2lQdTB4U1VLNkJKbG9BSklpR3RtaHR5OTZBa3l2V0dtbW8tRk1zMlJEMm5JTi1RSDI3dkRTdkFtU0FvSWdvLTlCOGtrOWh2Um9kVlREVTJMR1dFZ9IBsgFBVV95cUxNQUNmeHJ2WDktejRzOGZ3ZnpXQ0tEMkMyZlktTzNHNGs2dVQxTTNlWVkxTGZuYUtwdVQ5cGdGano0Nk1XdldnNWZpNGRSY3pBQnpJRzNIYUw1a1BSNlhQcHJ0bWt6QjBmbDRmeEVVcWlnMmVRd0haaEJjVnpvRU56dkRZN2xwaGVlbFhURDZNbU93VDVaNlJ2ZW1PMlhNLTlmRFk1UVE1anBYRVBOc1hxMVpR?oc=5"
+      "title": "삼성, ‘메모리 최강자’ 타이틀 되찾았다…1년 만에 SK하이닉스 추월 ‘명예회복’ - CEO스코어데일리",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXVm1uSS1uRmZ0Q0JBVDM0enBNc2VhRUplRTR1SVk4aHNSZnJ3VlhQSzVZcEN3Rk5nd3NVbTM0S0FQdnd4ZFpyNTE4U1ZzYlVpZENWRm0yZTJuMTlweEw4NTNVTXU0N05H?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "AI",
-      "sentiment": "HOT",
-      "reason": "OpenAI의 대규모 투자 유치 및 AI 관련 고용 변화 소식으로 투자 심리 자극"
+      "sentiment": "Neutral",
+      "reason": "AI 기술 발전과 파괴론 우려 공존"
     },
     {
       "name": "반도체",
       "sentiment": "HOT",
-      "reason": "삼성전자 갤럭시 S26 공개 및 중국의 K-반도체 수요 증가"
+      "reason": "삼성전자 메모리 시장 점유율 회복"
     },
     {
       "name": "에너지",
-      "sentiment": "NEUTRAL",
-      "reason": "주유소 기름값 상승 및 미래 도시로서의 새만금 투자 기대"
+      "sentiment": "Negative",
+      "reason": "이란 리스크로 인한 불확실성 증가"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "포스코홀딩스",
+      "symbol": "005490.KS"
     },
     {
-      "name": "애플",
-      "symbol": "AAPL"
+      "name": "NVIDIA",
+      "symbol": "NVDA"
     },
     {
-      "name": "마이크로소프트",
-      "symbol": "MSFT"
+      "name": "Amazon",
+      "symbol": "AMZN"
     }
   ],
   "keywords": [
     {
-      "name": "AI",
-      "weight": 25
+      "name": "AI 파괴론",
+      "weight": 18
     },
     {
-      "name": "반도체",
-      "weight": 20
-    },
-    {
-      "name": "투자",
+      "name": "삼성전자",
       "weight": 15
     },
     {
-      "name": "고용",
+      "name": "지정학적 리스크",
+      "weight": 12
+    },
+    {
+      "name": "투자",
       "weight": 10
     },
     {
-      "name": "에너지",
+      "name": "해고",
+      "weight": 10
+    },
+    {
+      "name": "메모리 반도체",
+      "weight": 10
+    },
+    {
+      "name": "사과",
       "weight": 8
     },
     {
-      "name": "지도",
+      "name": "규제",
       "weight": 7
     },
     {
-      "name": "OTT",
-      "weight": 7
+      "name": "마케팅 경쟁",
+      "weight": 6
     },
     {
-      "name": "세금",
-      "weight": 8
+      "name": "전기 요금",
+      "weight": 4
     }
   ],
-  "reason": "삼성전자는 갤럭시 S26 출시를 통해 기술 혁신을 주도하며, 국내 증시의 대표 종목으로서 안정적인 투자 기반을 제공합니다. 애플과 마이크로소프트는 AI 기술 경쟁의 선두주자로서, 꾸준한 성장 가능성을 보여줍니다. 현재 주가는 과매수 구간을 벗어나 조정을 거치고 있어, 장기적인 관점에서 매수 기회로 판단됩니다.",
-  "push_message": "AI, 반도체 섹터 주목! 삼성전자, 애플, 마이크로소프트 매수 기회. 자세한 분석은 리포트 확인!"
+  "reason": "포스코홀딩스(005490.KS)는 2차 전지 소재 사업 확장 기대감과 함께 상대적으로 낮은 밸류에이션 매력을 보유하고 있습니다. 휴장일에도 국내 주식 하나를 포함하는 것이 중요하다고 판단했습니다.\n엔비디아(NVDA)는 AI 반도체 시장의 선두 주자로서 지속적인 성장 가능성이 높지만, 최근 주가 변동성을 고려하여 신중한 접근이 필요합니다. 눌림목 구간에서 매수 기회를 엿보는 전략이 유효합니다.\n아마존(AMZN)은 OpenAI와의 협력을 통해 AI 분야에서 경쟁력을 강화하고 있으며, 클라우드 및 전자상거래 사업의 꾸준한 성장세를 유지하고 있습니다. 기술적으로도 안정적인 흐름을 보이고 있어 매수 적기로 판단됩니다.",
+  "push_message": "AI 파괴론 우려, 삼성전자 부활, 지정학적 리스크 속 포스코홀딩스, 엔비디아, 아마존 추천"
 }

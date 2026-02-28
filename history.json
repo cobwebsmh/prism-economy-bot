@@ -331,5 +331,27 @@
       "애플",
       "마이크로소프트"
     ]
+  },
+  {
+    "date": "2026-02-28 22:23",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -0.69
+      },
+      {
+        "ticker": "애플",
+        "change": -3.21
+      },
+      {
+        "ticker": "마이크로소프트",
+        "change": -2.24
+      }
+    ],
+    "predictions": [
+      "포스코홀딩스",
+      "NVIDIA",
+      "Amazon"
+    ]
   }
 ]
