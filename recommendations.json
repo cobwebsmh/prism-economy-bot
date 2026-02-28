@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-28 14:32",
+  "date": "2026-02-28 15:33",
   "market_info": {
     "KOSPI": {
       "price": 6244.13,
@@ -28,48 +28,48 @@
   },
   "past_results": [
     {
-      "ticker": "현대차",
-      "change": 10.67
+      "ticker": "삼성전자",
+      "change": -0.69
     },
     {
       "ticker": "NVIDIA",
       "change": -4.16
     },
     {
-      "ticker": "Alphabet",
-      "change": 1.39
+      "ticker": "Advanced Micro Devices Inc.",
+      "change": -1.7
     }
   ],
-  "summary": "최근 시장은 AI 기술 발전과 관련된 고용 불안정, 특정 기업 실적 이슈, 그리고 환율 변동성에 주목하고 있습니다. 특히 AI 관련 투자가 활발하게 이루어지고 있으며, 이로 인한 기존 산업 구조 변화에 대한 우려가 공존하고 있습니다. 또한, 일부 기업의 실적 발표와 관련된 논란이 투자 심리에 부정적인 영향을 미치고 있으며, 환율 변동에 대한 전망 역시 시장의 불확실성을 키우고 있습니다.",
+  "summary": "주말 휴장으로 인해 시장은 관망세가 유지되는 가운데, 지난 금요일 코스피는 외국인 투매에도 불구하고 낙폭을 일부 만회하며 마감했습니다. 주요 뉴스는 AI, 반도체, 그리고 에너지 섹터에 집중되어 있으며, 개별 기업 이슈도 부각되고 있습니다. 특히 AI 관련 고용 변화와 대규모 투자 소식이 시장의 관심을 끌고 있습니다.",
   "news_headlines": [
     {
-      "title": "직원 절반 해고 발표했더니 오히려 주가 25% 폭등…AI발 고용 위협 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3dJcGFvTzVwWGN2U1Rld2Z3clFYNG5pb1A0RVhHbTNhR1cwMFFENlh1M29BaENtMkdBOTZEOEQ5c2RvOHZrZkhzX2lQdTB4U1VLNkJKbG9BSklpR3RtaHR5OTZBa3l2V0dtbW8tRk1zMlJEMm5JTi1RSDI3dkRTdkFtU0FvSWdvLTlCOGtrOWh2Um9kVlREVTJMR1dFZ9IBsgFBVV95cUxNQUNmeHJ2WDktejRzOGZ3ZnpXQ0tEMkMyZlktTzNHNGs2dVQxTTNlWVkxTGZuYUtwdVQ5cGdGano0Nk1XdldnNWZpNGRSY3pBQnpJRzNIYUw1a1BSNlhQcHJ0bWt6QjBmbDRmeEVVcWlnMmVRd0haaEJjVnpvRU56dkRZN2xwaGVlbFhURDZNbU93VDVaNlJ2ZW1PMlhNLTlmRFk1UVE1anBYRVBOc1hxMVpR?oc=5"
+      "title": "삼성전자, 말귀 알아듣는 갤럭시 S26 공개…기술력으로 ‘초고속 충전 3.0’ 시대 개막 - 전기신문",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1pd3VrUFlnazBZekphcUtMRGlLVzh0Y0Y0TzZvOHFXcnNSYmNuNDNRWUZJbGN5ZnkzS3dGdE4tZ1lRSThEYXRnT2VLc1MxalVIMnlTZlgxVkowcnR3SnhxZkhzWWZkQ0laR1ozX9IBcEFVX3lxTE5WZGQ5T01uQjI0Z3lXdFpoNlVCQXBBV05RTGFtcW9YakpmU2VCVnVyLTNzSDJ1aVh2YW50cUZ1cFYzdzRJN0lmWFA2ZnlBdlZ2NDh6bnBwM1RMc0FyUUR5NE4yeGxwN3ltUDV0Tnd2WXY?oc=5"
     },
     {
       "title": "OpenAI Raises $110 Billion as It Races Toward IPO - WSJ",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfTzdFQklvWG84MFc2Q2pHYk1JS1FxbW1aOVBId2h0OHZXSHlOcEVSclVDbVZ2cnQ0NGp0eTdaVEVOUW5mNHJyakUyejF6X0htN0Mwal9mSFBUTVZxZWxHMDRwMkdvRmF3WDJn?oc=5"
     },
     {
-      "title": "1,400원대 환율 깨질까…서울환시, 1,300원대 전망 '솔솔' - 연합인포맥스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9GVXNSUUFBb1pINGVEWWJBdTFqdGs0SzFscVVRZS1haWs0ZXg1bWNqUUpjR1Z6Z3RYYWk1Ui1ld0lXd1FnWEVITS14OUVVVzNOYlRrNkM3eEhYcE9UeExUX1ZXZzNZOS1EYnZnTWU4SE0?oc=5"
+      "title": "직원 절반 해고 발표했더니 오히려 주가 25% 폭등…AI발 고용 위협 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3dJcGFvTzVwWGN2U1Rld2Z3clFYNG5pb1A0RVhHbTNhR1cwMFFENlh1M29BaENtMkdBOTZEOEQ5c2RvOHZrZkhzX2lQdTB4U1VLNkJKbG9BSklpR3RtaHR5OTZBa3l2V0dtbW8tRk1zMlJEMm5JTi1RSDI3dkRTdkFtU0FvSWdvLTlCOGtrOWh2Um9kVlREVTJMR1dFZ9IBsgFBVV95cUxNQUNmeHJ2WDktejRzOGZ3ZnpXQ0tEMkMyZlktTzNHNGs2dVQxTTNlWVkxTGZuYUtwdVQ5cGdGano0Nk1XdldnNWZpNGRSY3pBQnpJRzNIYUw1a1BSNlhQcHJ0bWt6QjBmbDRmeEVVcWlnMmVRd0haaEJjVnpvRU56dkRZN2xwaGVlbFhURDZNbU93VDVaNlJ2ZW1PMlhNLTlmRFk1UVE1anBYRVBOc1hxMVpR?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "AI",
       "sentiment": "HOT",
-      "reason": "OpenAI 투자 유치, AI 관련 고용 위협 기사 등 AI 기술 발전과 투자에 대한 관심 집중"
+      "reason": "OpenAI의 대규모 투자 유치 및 AI 관련 고용 변화 소식으로 투자 심리 자극"
     },
     {
       "name": "반도체",
       "sentiment": "HOT",
-      "reason": "중국의 K-반도체 수요 증가, 현대차의 새만금 투자 등 긍정적 모멘텀 지속"
+      "reason": "삼성전자 갤럭시 S26 공개 및 중국의 K-반도체 수요 증가"
     },
     {
-      "name": "환율",
-      "sentiment": "Neutral",
-      "reason": "1,300원대 환율 전망 등 변동성에 대한 시장의 주목"
+      "name": "에너지",
+      "sentiment": "NEUTRAL",
+      "reason": "주유소 기름값 상승 및 미래 도시로서의 새만금 투자 기대"
     }
   ],
   "tickers": [
@@ -78,12 +78,12 @@
       "symbol": "005930.KS"
     },
     {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
+      "name": "애플",
+      "symbol": "AAPL"
     },
     {
-      "name": "Advanced Micro Devices Inc.",
-      "symbol": "AMD"
+      "name": "마이크로소프트",
+      "symbol": "MSFT"
     }
   ],
   "keywords": [
@@ -100,30 +100,26 @@
       "weight": 15
     },
     {
-      "name": "환율",
-      "weight": 10
-    },
-    {
       "name": "고용",
       "weight": 10
     },
     {
-      "name": "실적",
-      "weight": 5
-    },
-    {
-      "name": "전기차",
-      "weight": 5
+      "name": "에너지",
+      "weight": 8
     },
     {
       "name": "지도",
-      "weight": 5
+      "weight": 7
     },
     {
-      "name": "퇴직연금",
-      "weight": 5
+      "name": "OTT",
+      "weight": 7
+    },
+    {
+      "name": "세금",
+      "weight": 8
     }
   ],
-  "reason": "삼성전자는 한국 주식 시장 대표 종목으로, 기술적 분석상 현재 가격 조정 후 반등 가능성이 있습니다. NVIDIA는 AI 반도체 시장을 선도하며 지속적인 성장세를 보이고 있으며, AMD 또한 경쟁력을 강화하며 시장 점유율을 확대하고 있습니다. 이들 종목은 미래 성장 동력을 확보하고 있으며, 현재 '무릎' 위치에서 매수 기회를 제공할 수 있습니다.",
-  "push_message": "AI, 반도체 섹터 주목! 삼성전자, NVIDIA, AMD 매수 기회 포착! 환율 변동성 주의!"
+  "reason": "삼성전자는 갤럭시 S26 출시를 통해 기술 혁신을 주도하며, 국내 증시의 대표 종목으로서 안정적인 투자 기반을 제공합니다. 애플과 마이크로소프트는 AI 기술 경쟁의 선두주자로서, 꾸준한 성장 가능성을 보여줍니다. 현재 주가는 과매수 구간을 벗어나 조정을 거치고 있어, 장기적인 관점에서 매수 기회로 판단됩니다.",
+  "push_message": "AI, 반도체 섹터 주목! 삼성전자, 애플, 마이크로소프트 매수 기회. 자세한 분석은 리포트 확인!"
 }
