@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-28 14:29",
+  "date": "2026-02-28 14:32",
   "market_info": {
     "KOSPI": {
       "price": 6244.13,
@@ -28,62 +28,62 @@
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -0.69
+      "ticker": "현대차",
+      "change": 10.67
     },
     {
       "ticker": "NVIDIA",
       "change": -4.16
     },
     {
-      "ticker": "Advanced Micro Devices Inc.",
-      "change": -1.7
+      "ticker": "Alphabet",
+      "change": 1.39
     }
   ],
-  "summary": "이번 주말 휴장으로 인해 시장은 전반적으로 관망세가 예상되지만, 지난 금요일 코스피는 외국인 투매에도 불구하고 상승 마감하며 강한 회복력을 보였다. 미국 시장은 이란 관련 지정학적 리스크, 사모신용 문제, PPI 지표 부진 등으로 하락 마감했지만, AI 기술 발전과 관련된 기업들의 움직임은 긍정적인 투자 심리를 자극하고 있다. 특히 국내에서는 현대차의 새만금 투자 발표와 K-반도체에 대한 중국의 높은 수요가 주요 모멘텀으로 작용할 가능성이 있다.",
+  "summary": "최근 시장은 AI 기술 발전과 관련된 고용 불안정, 특정 기업 실적 이슈, 그리고 환율 변동성에 주목하고 있습니다. 특히 AI 관련 투자가 활발하게 이루어지고 있으며, 이로 인한 기존 산업 구조 변화에 대한 우려가 공존하고 있습니다. 또한, 일부 기업의 실적 발표와 관련된 논란이 투자 심리에 부정적인 영향을 미치고 있으며, 환율 변동에 대한 전망 역시 시장의 불확실성을 키우고 있습니다.",
   "news_headlines": [
     {
-      "title": "코스피, 외인 5조원대 투매에도 상승 전환…최고치 경신 - 한국경제",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1vX3Jxbk1UQUVNako3QlNqM3hQV3FZbEFQR1VHdGtIZ05RTjQ1YjJ3YmNpQ2loaVVQc2Zldk5JU1F2aXpfUmlyZWgzZU5heFhKRkViaTdYV3c3UdIBVEFVX3lxTE1qZTgyZVRNVkpyc0dpVXVhbVFRZjVmaVRwU0hVTHFuVm0tbWdkVERHSTFwU3RqUFN3S0Y2WUdMZnpDQlhKRFd2T1hQZ0ZkRlVYenhjeg?oc=5"
+      "title": "직원 절반 해고 발표했더니 오히려 주가 25% 폭등…AI발 고용 위협 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3dJcGFvTzVwWGN2U1Rld2Z3clFYNG5pb1A0RVhHbTNhR1cwMFFENlh1M29BaENtMkdBOTZEOEQ5c2RvOHZrZkhzX2lQdTB4U1VLNkJKbG9BSklpR3RtaHR5OTZBa3l2V0dtbW8tRk1zMlJEMm5JTi1RSDI3dkRTdkFtU0FvSWdvLTlCOGtrOWh2Um9kVlREVTJMR1dFZ9IBsgFBVV95cUxNQUNmeHJ2WDktejRzOGZ3ZnpXQ0tEMkMyZlktTzNHNGs2dVQxTTNlWVkxTGZuYUtwdVQ5cGdGano0Nk1XdldnNWZpNGRSY3pBQnpJRzNIYUw1a1BSNlhQcHJ0bWt6QjBmbDRmeEVVcWlnMmVRd0haaEJjVnpvRU56dkRZN2xwaGVlbFhURDZNbU93VDVaNlJ2ZW1PMlhNLTlmRFk1UVE1anBYRVBOc1hxMVpR?oc=5"
     },
     {
-      "title": "뉴욕증시, 이란 전운·사모신용·PPI 삼중고…하락 마감 - 연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZcExMelpMeEEwY09jbXJfdDVxdGlkdC1QUHg3ZmRIRDRkejY5WGN5dUhIVWNkc0JvRWJvelo2NXJYdTlYS1ZCbE5GMFo0dHhadnNHemw0YTBURmfSAWBBVV95cUxOM0g3LWtNaVQtUlJGcDg3MnZPSFNta3JUWjQ3aU1jZ0J0MUM4cmdSaEFGekthT3diLW5SaXVCQ0dNRHNIT0xMTUJZQTRickNMbklKLWV6bHR4OGNsZDdsNEs?oc=5"
+      "title": "OpenAI Raises $110 Billion as It Races Toward IPO - WSJ",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfTzdFQklvWG84MFc2Q2pHYk1JS1FxbW1aOVBId2h0OHZXSHlOcEVSclVDbVZ2cnQ0NGp0eTdaVEVOUW5mNHJyakUyejF6X0htN0Mwal9mSFBUTVZxZWxHMDRwMkdvRmF3WDJn?oc=5"
     },
     {
-      "title": "“피지컬 AI·수소 인프라 구축”… 현대차, 새만금 9조 투자 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNU3djc3NUSFdlcE5BTkVTQ0NoOEZCRzhIbk1FcXZYSzVibU5iZTYxWkxwX25xSnNJZkhDM0JZTnJQdldzMFh2S1liZ2prOF8tZVBXalEzUktsZkZSVlgtcGdHeHdxOWpvNzhZQWxLYUx3YVlORkkwbFhEY2F0dUZqS25OcmwxTmhJbzZHdHpHY9IBowFBVV95cUxORlMycXB0bDBqUlJQQVpPSXY3a3JfbzhtcGRJNTZndTFWMS03NjJPVEE0M0FQLUQ0STNHTkdpVVBVWGNTMU5OT1hnRURFalpLaFJfbndLbzhEN3FXc3Q0VEp3Qm9qYkpkWDZTYlFka3RqZzhaRkpsUDBVamZoR2JfYUswWEhKYzJzQjVrOUZTQ19VLUpadmQ1MTR1NXlVbjRBMm1z?oc=5"
+      "title": "1,400원대 환율 깨질까…서울환시, 1,300원대 전망 '솔솔' - 연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9GVXNSUUFBb1pINGVEWWJBdTFqdGs0SzFscVVRZS1haWs0ZXg1bWNqUUpjR1Z6Z3RYYWk1Ui1ld0lXd1FnWEVITS14OUVVVzNOYlRrNkM3eEhYcE9UeExUX1ZXZzNZOS1EYnZnTWU4SE0?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "AI",
       "sentiment": "HOT",
-      "reason": "AI 기술 발전 및 관련 기업 투자 확대 (OpenAI 자금 조달, 블록 감원, 현대차 AI 투자 등)"
+      "reason": "OpenAI 투자 유치, AI 관련 고용 위협 기사 등 AI 기술 발전과 투자에 대한 관심 집중"
     },
     {
       "name": "반도체",
       "sentiment": "HOT",
-      "reason": "중국의 K-반도체 수요 증가 및 관련 기업 성장 기대"
+      "reason": "중국의 K-반도체 수요 증가, 현대차의 새만금 투자 등 긍정적 모멘텀 지속"
     },
     {
-      "name": "자동차",
-      "sentiment": "POSITIVE",
-      "reason": "현대차의 새만금 대규모 투자 및 수소 인프라 구축 계획"
+      "name": "환율",
+      "sentiment": "Neutral",
+      "reason": "1,300원대 환율 전망 등 변동성에 대한 시장의 주목"
     }
   ],
   "tickers": [
     {
-      "name": "현대차",
-      "symbol": "005380.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
       "name": "NVIDIA",
       "symbol": "NVDA"
     },
     {
-      "name": "Alphabet",
-      "symbol": "GOOG"
+      "name": "Advanced Micro Devices Inc.",
+      "symbol": "AMD"
     }
   ],
   "keywords": [
@@ -93,41 +93,37 @@
     },
     {
       "name": "반도체",
-      "weight": 18
-    },
-    {
-      "name": "현대차",
-      "weight": 15
+      "weight": 20
     },
     {
       "name": "투자",
-      "weight": 10
+      "weight": 15
     },
     {
       "name": "환율",
-      "weight": 8
+      "weight": 10
     },
     {
       "name": "고용",
-      "weight": 7
+      "weight": 10
     },
     {
-      "name": "리밸런싱",
-      "weight": 6
+      "name": "실적",
+      "weight": 5
+    },
+    {
+      "name": "전기차",
+      "weight": 5
     },
     {
       "name": "지도",
       "weight": 5
     },
     {
-      "name": "결제",
-      "weight": 3
-    },
-    {
       "name": "퇴직연금",
-      "weight": 3
+      "weight": 5
     }
   ],
-  "reason": "현대차(005380.KS)는 새만금 투자 발표로 인한 성장 기대감이 높으며, AI와 수소 인프라 구축이라는 미래 지향적인 사업 확장 측면에서 긍정적이다. NVIDIA(NVDA)는 AI 분야의 선두 주자로 지속적인 성장 모멘텀을 보유하고 있으며, Alphabet(GOOG)는 구글 지도 데이터 반출 허가로 인해 국내 시장에서 새로운 기회를 창출할 수 있을 것으로 기대된다. 이들 종목은 AI 기술 발전, 한국 정부의 정책 지원, 해외 시장 확장 등 다양한 긍정적 요인을 가지고 있어 '무릎' 위치에서 매수하기에 적합하다고 판단된다.",
-  "push_message": "AI, 반도체, 자동차 섹터 주목! 현대차 새만금 투자, NVIDIA, Alphabet 매수 기회!"
+  "reason": "삼성전자는 한국 주식 시장 대표 종목으로, 기술적 분석상 현재 가격 조정 후 반등 가능성이 있습니다. NVIDIA는 AI 반도체 시장을 선도하며 지속적인 성장세를 보이고 있으며, AMD 또한 경쟁력을 강화하며 시장 점유율을 확대하고 있습니다. 이들 종목은 미래 성장 동력을 확보하고 있으며, 현재 '무릎' 위치에서 매수 기회를 제공할 수 있습니다.",
+  "push_message": "AI, 반도체 섹터 주목! 삼성전자, NVIDIA, AMD 매수 기회 포착! 환율 변동성 주의!"
 }
