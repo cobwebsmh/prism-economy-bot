@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Prism Insight - AI Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
             --bg-color: #0b0e14;
@@ -19,7 +20,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color); color: var(--text-main);
             margin: 0; padding: 15px; line-height: 1.5;
-            overscroll-behavior-y: contain; /* 기본 브라우저 새로고침 방지 (커스텀 구현용) */
+            overscroll-behavior-y: contain;
         }
 
         .container { max-width: 480px; margin: 0 auto; }
@@ -30,7 +31,6 @@
         .logo { font-size: 20px; font-weight: 800; color: #58a6ff; }
         .date { font-size: 11px; color: var(--text-sub); margin-bottom: 4px; }
 
-        /* 당겨서 새로고침 인디케이터 */
         #pull-indicator {
             position: fixed; top: -50px; left: 50%; transform: translateX(-50%);
             width: 40px; height: 40px; background: var(--card-bg);
@@ -53,7 +53,6 @@
         .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
         .market-card { background: var(--card-bg); padding: 12px; border-radius: 12px; border: 1px solid var(--border-color); }
         .m-name { font-size: 11px; color: var(--text-sub); }
-        .m-price { font-size: 16px; font-weight: 700; }
         .up { color: var(--accent-hot); } .down { color: var(--accent-cool); }
 
         .sector-card, .news-item { background: var(--card-bg); padding: 12px; border-radius: 10px; border: 1px solid var(--border-color); margin-bottom: 10px; }
@@ -62,13 +61,13 @@
         .sector-card.Neutral { border-left: 4px solid var(--text-sub); }
         
         .news-item { text-decoration: none; color: inherit; font-size: 13px; display: block; }
-        .news-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
-
         .summary-box { background: rgba(88, 166, 255, 0.05); padding: 15px; border-radius: 12px; border: 1px dashed #30363d; font-size: 13.5px; }
         .pick-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
         .pick-item { background: #21262d; padding: 10px; border-radius: 8px; text-align: center; border: 1px solid #30363d; font-size: 12px; font-weight: 600; }
 
-        #chart_div { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden; }
+        /* 그래프 전용 스타일 */
+        .chart-container { background: var(--card-bg); border-radius: 15px; padding: 15px; border: 1px solid var(--border-color); margin-bottom: 30px; height: 260px; }
+        .hit-value { font-size: 28px; font-weight: 900; color: var(--accent-hot); margin-top: 5px; }
 
         #news-overlay {
             display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
@@ -78,9 +77,6 @@
         #overlay-bg { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:999; }
         .overlay-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
         .overlay-close { cursor: pointer; font-size: 24px; color: var(--text-sub); }
-
-        .hit-rate-box { text-align: center; padding: 20px; background: var(--card-bg); border-radius: 15px; margin-bottom: 30px; border: 1px solid var(--border-color); }
-        .hit-value { font-size: 36px; font-weight: 900; color: var(--accent-hot); }
     </style>
 </head>
 <body>
@@ -105,17 +101,21 @@
         <div class="section-title">주요 섹터 현황</div>
         <div id="sectors-list"></div>
         <div class="section-title">AI 분석 핵심 키워드 비중</div>
-        <div id="chart_div" style="width: 100%; height: 250px;"></div>
+        <div id="chart_div" style="width: 100%; height: 250px; background: var(--card-bg); border-radius:12px; border:1px solid var(--border-color); overflow:hidden;"></div>
         <div class="section-title">글로벌 주요 뉴스</div>
         <div id="news-list"></div>
         <div class="section-title">오늘의 AI 추천 종목</div>
         <div id="picks-list" class="pick-list"></div>
         <div class="section-title">전일 추천 수익률</div>
         <div id="past-results" class="pick-list"></div>
-        <div class="section-title">누적 상승 적중률</div>
-        <div class="hit-rate-box">
-            <div id="hit-rate-value" class="hit-value">0%</div>
-            <div style="font-size: 11px; color: var(--text-sub);">최근 30일 데이터 분석 기준</div>
+
+        <div class="section-title">누적 적중률 히스토리 (30일)</div>
+        <div class="chart-container">
+            <canvas id="hitRateChart"></canvas>
+            <div style="text-align: center; border-top: 1px solid #30363d; margin-top: 10px; padding-top: 10px;">
+                <div id="hit-rate-value" class="hit-value">0%</div>
+                <div style="font-size: 11px; color: var(--text-sub);">현재 누적 적중률</div>
+            </div>
         </div>
     </div>
 
@@ -123,6 +123,7 @@
     <script>
         google.charts.load('current', {'packages':['treemap']});
         let cachedData = null;
+        let myChart = null;
 
         async function updateUI() {
             const v = new Date().getTime();
@@ -137,40 +138,86 @@
                 document.getElementById('report-date').innerText = cachedData.date;
                 document.getElementById('summary').innerText = cachedData.summary;
 
-                // 지수/섹터/뉴스/종목 등 렌더링 (기존 로직 동일)
+                // 지수 렌더링
                 document.getElementById('market-indices').innerHTML = Object.entries(cachedData.market_info).map(([k, v]) => `
                     <div class="market-card">
                         <div class="m-name">${v.status} ${k}</div>
-                        <div class="m-price">${v.price.toLocaleString()}</div>
+                        <div style="font-size:16px; font-weight:700;">${v.price.toLocaleString()}</div>
                         <div class="${v.change >= 0 ? 'up' : 'down'}">${v.change >= 0 ? '▲' : '▼'} ${Math.abs(v.change)}%</div>
                     </div>
                 `).join('');
 
+                // 섹터 렌더링
                 document.getElementById('sectors-list').innerHTML = cachedData.sectors.map(s => `
                     <div class="sector-card ${s.sentiment}">
                         <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:bold;">
-                            <span>${s.name}</span>
-                            <span style="color:${s.sentiment==='HOT'?'#f85149':(s.sentiment==='Positive'?'#58a6ff':'#8b949e')}">${s.sentiment}</span>
+                            <span>${s.name}</span><span style="color:${s.sentiment==='HOT'?'#f85149':(s.sentiment==='Positive'?'#58a6ff':'#8b949e')}">${s.sentiment}</span>
                         </div>
                         <div style="font-size:11px; color:#8b949e; margin-top:5px;">${s.reason}</div>
                     </div>
                 `).join('');
 
+                // 뉴스 렌더링
                 document.getElementById('news-list').innerHTML = cachedData.news_headlines.map(n => `
                     <a href="${n.link}" class="news-item" target="_blank"><span class="news-title">📰 ${n.title}</span></a>
                 `).join('');
 
+                // 추천 종목 및 결과
                 document.getElementById('picks-list').innerHTML = cachedData.tickers.map(t => `<div class="pick-item">${t.name}</div>`).join('');
                 document.getElementById('past-results').innerHTML = cachedData.past_results.map(r => `
                     <div class="pick-item"><div>${r.ticker}</div><div class="${r.change >= 0 ? 'up' : 'down'}" style="font-size:10px;">${r.change}%</div></div>
                 `).join('');
 
+                // 트리맵
                 if (cachedData.keywords) google.charts.setOnLoadCallback(() => drawTreeMap(cachedData.keywords));
 
-                let total = 0, hits = 0;
-                history.forEach(day => day.performance.forEach(p => { total++; if(p.change > 0) hits++; }));
-                document.getElementById('hit-rate-value').innerText = (total > 0 ? (hits/total*100).toFixed(1) : 0) + "%";
+                // 적중률 계산 및 그래프 (최근 30일)
+                processHitRate(history);
+
             } catch (err) { console.error(err); }
+        }
+
+        function processHitRate(history) {
+            let totalPicks = 0, totalHits = 0;
+            const labels = [];
+            const dataPoints = [];
+
+            history.slice(-30).forEach(day => {
+                day.performance.forEach(p => {
+                    totalPicks++;
+                    if(p.change > 0) totalHits++;
+                });
+                labels.push(day.date.split(' ')[0].substring(5)); // MM-DD
+                dataPoints.push(totalPicks > 0 ? (totalHits / totalPicks * 100).toFixed(1) : 0);
+            });
+
+            document.getElementById('hit-rate-value').innerText = dataPoints[dataPoints.length-1] + "%";
+            drawChart(labels, dataPoints);
+        }
+
+        function drawChart(labels, dataPoints) {
+            const ctx = document.getElementById('hitRateChart').getContext('2d');
+            if (myChart) myChart.destroy();
+            myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: dataPoints,
+                        borderColor: '#58a6ff',
+                        backgroundColor: 'rgba(88, 166, 255, 0.1)',
+                        fill: true, tension: 0.4, borderWidth: 2, pointRadius: 2
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { grid: { color: '#30363d' }, ticks: { color: '#8b949e', font: {size: 10} } },
+                        x: { grid: { display: false }, ticks: { color: '#8b949e', font: {size: 10} } }
+                    }
+                }
+            });
         }
 
         async function manualRefresh() {
@@ -180,39 +227,28 @@
             setTimeout(() => icon.classList.remove('spinning'), 800);
         }
 
-        /* --- 당겨서 새로고침 로직 --- */
+        /* --- 당겨서 새로고침 --- */
         let tStart = 0;
         const pullInd = document.getElementById('pull-indicator');
-        const THRESHOLD = 90;
-
-        window.addEventListener('touchstart', (e) => {
-            if (window.scrollY === 0) tStart = e.touches[0].clientY;
-        }, { passive: true });
-
+        window.addEventListener('touchstart', (e) => { if (window.scrollY === 0) tStart = e.touches[0].clientY; }, { passive: true });
         window.addEventListener('touchmove', (e) => {
             if (tStart === 0 || window.scrollY > 0) return;
             const dist = e.touches[0].clientY - tStart;
             if (dist > 0) {
-                const move = Math.min(dist * 0.4, THRESHOLD + 20);
+                const move = Math.min(dist * 0.4, 110);
                 pullInd.style.opacity = '1';
                 pullInd.style.transform = `translateX(-50%) translateY(${move}px) rotate(${dist * 2}deg)`;
-                pullInd.style.color = dist > THRESHOLD ? 'var(--accent-hot)' : 'var(--accent-cool)';
             }
         }, { passive: true });
-
-        window.addEventListener('touchend', async () => {
-            const dist = event.changedTouches[0].clientY - tStart;
-            if (dist > THRESHOLD && window.scrollY === 0) {
-                pullInd.style.transform = `translateX(-50%) translateY(${THRESHOLD}px)`;
+        window.addEventListener('touchend', async (e) => {
+            const dist = e.changedTouches[0].clientY - tStart;
+            if (dist > 90 && window.scrollY === 0) {
+                pullInd.style.transform = `translateX(-50%) translateY(90px)`;
                 pullInd.classList.add('spinning');
                 await manualRefresh();
             }
             tStart = 0;
-            setTimeout(() => {
-                pullInd.style.opacity = '0';
-                pullInd.style.transform = `translateX(-50%) translateY(-50px)`;
-                pullInd.classList.remove('spinning');
-            }, 600);
+            setTimeout(() => { pullInd.style.opacity = '0'; pullInd.style.transform = `translateX(-50%) translateY(-50px)`; pullInd.classList.remove('spinning'); }, 600);
         });
 
         /* --- 트리맵 & 팝업 --- */
