@@ -1,17 +1,17 @@
 {
-  "date": "2026-02-28 08:14",
+  "date": "2026-02-28 14:16",
   "market_info": {
     "KOSPI": {
       "price": 6244.13,
       "change": -1.0,
-      "is_open": false,
-      "status": "⚪"
+      "is_open": true,
+      "status": "🟢"
     },
     "KOSDAQ": {
       "price": 1192.78,
       "change": 0.39,
-      "is_open": false,
-      "status": "⚪"
+      "is_open": true,
+      "status": "🟢"
     },
     "S&P500": {
       "price": 6878.88,
@@ -28,107 +28,106 @@
   },
   "past_results": [
     {
-      "ticker": "포스코홀딩스",
-      "change": 1.35
+      "ticker": "삼성전자",
+      "change": -0.69
     },
     {
-      "ticker": "Warner Bros. Discovery",
-      "change": -2.19
+      "ticker": "Microsoft",
+      "change": -2.24
     },
     {
-      "ticker": "State Farm",
-      "change": -2.83
+      "ticker": "Alphabet",
+      "change": 1.39
     }
   ],
-  "summary": "시장은 금리 인상 가능성과 AI 기술 발전의 영향에 대한 우려로 인해 하락세를 보이고 있습니다. 특히, 뜨거운 도매 물가 지수 발표 이후 다우 지수가 크게 하락하며 투자 심리가 위축되었습니다. 하지만, 일부 긍정적인 소식(모기지 금리 하락, 국민연금 수익률 증가)도 존재하며, 특정 분야(로봇, AI, 수소 에너지)에 대한 투자는 미래 성장 동력으로 작용할 수 있습니다.",
+  "summary": "이번 주말 휴장으로 인해 시장은 관망세를 유지하고 있으며, AI 기술 발전과 관련된 긍정적 전망과 고용 시장에 대한 우려가 공존하고 있습니다. 코스피는 외국인 매도세에도 불구하고 상승 전환을 시도하며 저력을 보였고, 미국 시장은 이란 관련 지정학적 리스크와 사모신용, PPI 등의 영향으로 하락 마감했습니다. 투자자들은 변동성에 대비하며 펀더멘털이 튼튼한 종목을 중심으로 포트폴리오를 재정비하는 전략이 필요해 보입니다.",
   "news_headlines": [
     {
-      "title": "Dow closes more than 500 points lower after hot inflation report, mounting concerns about AI impact - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1md19zMWZDRkdXWXJPR2pEb2EyZGszb2lIelFjMlhaZi0tM2ttb3V5MzBTYmFpVmE3Y0xWcm05S0liRVA0ei1Qdko2dGZNNkd4M1ZNQzZGYzJpRzUxUkRPcmhOTTVuRkRaUkoxNmRZZmtpLTJ5YXh30gF8QVVfeXFMUHk0X3VvR0ZXUzRxUURDcEt5UG1yRThzNFZJMHZ1ZEVsWk01N1M2RU5ZcGp2MXEyTmNHLUg4aDlPNnE1ZGlVaHdtR0psVFMwSlhBYjMtelRycGtNNnFEay11eXlURnNGM3pyODFzeV9LMmpxU3dJMVJXV3JIWA?oc=5"
+      "title": "직원 절반 해고 발표했더니 오히려 주가 25% 폭등…AI발 고용 위협 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3dJcGFvTzVwWGN2U1Rld2Z3clFYNG5pb1A0RVhHbTNhR1cwMFFENlh1M29BaENtMkdBOTZEOEQ5c2RvOHZrZkhzX2lQdTB4U1VLNkJKbG9BSklpR3RtaHR5OTZBa3l2V0dtbW8tRk1zMlJEMm5JTi1RSDI3dkRTdkFtU0FvSWdvLTlCOGtrOWh2Um9kVlREVTJMR1dFZ9IBsgFBVV95cUxNQUNmeHJ2WDktejRzOGZ3ZnpXQ0tEMkMyZlktTzNHNGs2dVQxTTNlWVkxTGZuYUtwdVQ5cGdGano0Nk1XdldnNWZpNGRSY3pBQnpJRzNIYUw1a1BSNlhQcHJ0bWt6QjBmbDRmeEVVcWlnMmVRd0haaEJjVnpvRU56dkRZN2xwaGVlbFhURDZNbU93VDVaNlJ2ZW1PMlhNLTlmRFk1UVE1anBYRVBOc1hxMVpR?oc=5"
     },
     {
-      "title": "OpenAI raises $110B in one of the largest private funding rounds in history - TechCrunch",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUGN4c3NILVRIYjZVand5Z1FoTDhqTUphTVhIWVVuNFhOSjF2WEd0NU5aQlJDT1Njby1qUHNuRlRodExUSzA4d1JUd3ZNT2ZYeExDbWhqdGlfR1lsOTd6UUF1aW9Ca3BQYl8xOWpfYURFOWR0ZU4yZk5idl9JRXE0UmZzb2VNUmJ0YURYd3F5RjdGRDRxVktuLUNhTWxwVjBPcHRzZnFOYXROWDVYVlE?oc=5"
+      "title": "OpenAI Raises $110 Billion as It Races Toward IPO - WSJ",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfTzdFQklvWG84MFc2Q2pHYk1JS1FxbW1aOVBId2h0OHZXSHlOcEVSclVDbVZ2cnQ0NGp0eTdaVEVOUW5mNHJyakUyejF6X0htN0Mwal9mSFBUTVZxZWxHMDRwMkdvRmF3WDJn?oc=5"
     },
     {
-      "title": "현대차그룹, 새만금 로봇·AI·수소 거점에 총 9조원 투자…'미래기업 도약' - 지디넷코리아",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tZ1lBaUd6UFhRNHlJemZJejM2d3RGcldVV2hWV24xbUZSZGl5b2VsUU1xRmdpSS1RMndISnpKWGpSU3h0ZjNQYW55Szk2OGhNQU5uYXdR?oc=5"
+      "title": "코스피, 외인 5조원대 투매에도 상승 전환…최고치 경신 - 한국경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1vX3Jxbk1UQUVNako3QlNqM3hQV3FZbEFQR1VHdGtIZ05RTjQ1YjJ3YmNpQ2loaVVQc2Zldk5JU1F2aXpfUmlyZWgzZU5heFhKRkViaTdYV3c3UdIBVEFVX3lxTE1qZTgyZVRNVkpyc0dpVXVhbVFRZjVmaVRwU0hVTHFuVm0tbWdkVERHSTFwU3RqUFN3S0Y2WUdMZnpDQlhKRFd2T1hQZ0ZkRlVYenhjeg?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "AI",
       "sentiment": "HOT",
-      "reason": "OpenAI의 대규모 투자 유치 및 AI 에이전트 확산 관련 뉴스가 긍정적인 전망을 제시하지만, 일자리 감소 우려도 존재"
+      "reason": "OpenAI 투자 유치, AI 관련 기업 주가 급등 등 긍정적 뉴스 다수"
     },
     {
-      "name": "제약/바이오",
-      "sentiment": "HOT",
-      "reason": "삼천당제약의 '먹는 위고비' 독점 계약 관련 급등 소식은 해당 섹터에 대한 투자 심리를 자극"
+      "name": "반도체",
+      "sentiment": "Neutral",
+      "reason": "AI 연관되어 수혜 기대되나, 전반적인 시장 상황 주시 필요"
     },
     {
-      "name": "로봇/수소에너지",
-      "sentiment": "Positive",
-      "reason": "현대차그룹의 새만금 투자 뉴스는 해당 분야의 성장 가능성을 보여줌"
-    },
-    {
-      "name": "은행",
-      "sentiment": "Negative",
-      "reason": "사모신용 위험 증가에 따른 미국 은행주 하락은 금융 시장 전반에 대한 불안감을 야기"
+      "name": "이차전지",
+      "sentiment": "Neutral",
+      "reason": "현대차 새만금 투자 계획 발표, 장기적 성장 기대"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "POSCO Holdings",
+      "symbol": "005490.KS"
+    },
+    {
+      "name": "NVIDIA",
+      "symbol": "NVDA"
     },
     {
       "name": "Microsoft",
       "symbol": "MSFT"
-    },
-    {
-      "name": "Alphabet",
-      "symbol": "GOOG"
     }
   ],
   "keywords": [
     {
       "name": "AI",
-      "weight": 20
-    },
-    {
-      "name": "금리",
-      "weight": 15
+      "weight": 25
     },
     {
       "name": "투자",
       "weight": 15
     },
     {
-      "name": "기술",
+      "name": "고용",
       "weight": 10
     },
     {
-      "name": "인플레이션",
+      "name": "환율",
+      "weight": 8
+    },
+    {
+      "name": "반도체",
+      "weight": 12
+    },
+    {
+      "name": "이차전지",
       "weight": 10
     },
     {
-      "name": "에너지",
-      "weight": 10
-    },
-    {
-      "name": "주식",
-      "weight": 10
-    },
-    {
-      "name": "해고",
+      "name": "리밸런싱",
       "weight": 5
     },
     {
-      "name": "합병",
+      "name": "OTT",
+      "weight": 5
+    },
+    {
+      "name": "부동산",
+      "weight": 5
+    },
+    {
+      "name": "갤럭시S26",
       "weight": 5
     }
   ],
-  "reason": "추천 종목 선정 이유:\n\n*   **삼성전자 (005930.KS):** 한국 주식 시장이 휴장인 점을 고려하여 선정되었습니다. 갤럭시 S26에 엑시노스 칩 탑재 뉴스는 삼성전자의 기술 경쟁력 강화에 대한 기대를 높입니다. 기술적으로는 최근 하락세를 멈추고 지지선을 확인하는 단계로, 추가 하락 위험이 제한적이라고 판단됩니다.\n*   **Microsoft (MSFT):** AI 에이전트 확산에 따른 SaaS 시장의 변화 속에서, Microsoft는 Azure 클라우드 플랫폼과 AI 기술을 통해 경쟁력을 유지할 것으로 예상됩니다. 기술적으로는 50일 이동평균선 부근에서 지지를 받고 반등을 시도하는 모습입니다.\n*   **Alphabet (GOOG):** AI 기술 경쟁 심화 속에서 Google의 Gemini 모델은 중요한 역할을 할 것으로 보입니다. 또한, Waymo 등 자율주행 기술 분야에서도 꾸준한 성장이 기대됩니다. 기술적으로는 최근 하락으로 인해 200일 이동평균선 부근까지 하락하여 매수 기회를 제공하고 있습니다.",
-  "push_message": "오늘 시장은 인플레이션 우려 속 다우 지수 급락, AI 기술 발전과 일자리 감소 우려가 공존합니다. 삼성전자, Microsoft, Alphabet에 주목하세요."
+  "reason": "포스코홀딩스(005490.KS): 최근 주가 하락으로 밸류에이션 매력이 부각되고 있으며, 철강 시황 회복 및 리튬 사업 성장 기대감이 있습니다. 현재 주가는 무릎 위치로 판단됩니다. NVIDIA(NVDA): AI 칩 시장을 선도하고 있으며, 데이터 센터 수요 증가와 함께 지속적인 성장 모멘텀을 확보하고 있습니다. 기술적 분석상 상승 추세는 유지되고 있으나, 과매수 구간은 아닙니다. Microsoft(MSFT): AI 기술 투자와 클라우드 서비스 Azure의 성장으로 꾸준한 실적 개선이 기대됩니다. 밸류에이션 부담은 있지만, 장기적인 성장 가능성을 고려했을 때 여전히 매력적인 투자 대상입니다.",
+  "push_message": "AI, 반도체, 이차전지 관련 뉴스 주목. 포스코홀딩스(005490.KS), NVIDIA(NVDA), Microsoft(MSFT) 관심 가져볼 만."
 }

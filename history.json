@@ -221,5 +221,27 @@
       "Microsoft",
       "Alphabet"
     ]
+  },
+  {
+    "date": "2026-02-28 14:16",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -0.69
+      },
+      {
+        "ticker": "Microsoft",
+        "change": -2.24
+      },
+      {
+        "ticker": "Alphabet",
+        "change": 1.39
+      }
+    ],
+    "predictions": [
+      "POSCO Holdings",
+      "NVIDIA",
+      "Microsoft"
+    ]
   }
 ]
