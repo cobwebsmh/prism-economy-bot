@@ -14,7 +14,8 @@
             --text-sub: #8b949e;
             --accent-hot: #f85149;
             --accent-cool: #58a6ff;
-            --accent-wait: #d29922; /* 휴장 상태용 주황/금색 */
+            --accent-wait: #d29922; 
+            --accent-open: #2ea043; /* 개장 상태용 녹색 */
             --border-color: #30363d;
         }
 
@@ -33,7 +34,6 @@
         .logo { font-size: 20px; font-weight: 800; color: #58a6ff; }
         .date { font-size: 11px; color: var(--text-sub); margin-bottom: 4px; }
 
-        /* 당겨서 새로고침 인디케이터 */
         #pull-indicator {
             position: fixed; top: -50px; left: 50%; transform: translateX(-50%);
             width: 40px; height: 40px; background: var(--card-bg);
@@ -56,7 +56,7 @@
         .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
         .market-card { background: var(--card-bg); padding: 12px; border-radius: 12px; border: 1px solid var(--border-color); position: relative; overflow: hidden; }
         .m-name { font-size: 11px; color: var(--text-sub); display: flex; align-items: center; }
-        .status-dot { width: 7px; height: 7px; border-radius: 50%; margin-right: 6px; }
+        .status-dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
         
         .up { color: var(--accent-hot); } .down { color: var(--accent-cool); }
 
@@ -75,7 +75,6 @@
         .chart-container { background: var(--card-bg); border-radius: 15px; padding: 15px; border: 1px solid var(--border-color); margin-bottom: 30px; height: 260px; }
         .hit-value { font-size: 28px; font-weight: 900; color: var(--accent-hot); margin-top: 5px; }
 
-        /* 팝업 오버레이 */
         #news-overlay {
             display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
             width: 85%; max-width: 380px; background: #1c2128; border: 1px solid var(--accent-cool);
@@ -144,20 +143,21 @@
                 document.getElementById('report-date').innerText = cachedData.date;
                 document.getElementById('summary').innerText = cachedData.summary;
 
-                // [보완] 지수 렌더링: Open/Closed 상태 대응
+                // [보완] 지수 렌더링: 중복 신호등 제거 및 단일화
                 document.getElementById('market-indices').innerHTML = Object.entries(cachedData.market_info).map(([k, v]) => {
-                    let dotColor = 'var(--text-sub)'; // 기본 회색
-                    if (v.status === 'Open') {
-                        dotColor = v.change >= 0 ? 'var(--accent-hot)' : 'var(--accent-cool)';
-                    } else if (v.status === 'Closed') {
-                        dotColor = 'var(--accent-wait)'; // 휴장 시 주황색
-                    }
+                    // 1. 서버 문구에서 기호 제거 (글자만 추출)
+                    const pureStatus = v.status.replace(/[●○]/g, '').trim();
+                    
+                    // 2. 상태에 따른 단일 신호등 색상
+                    let dotColor = 'var(--text-sub)'; 
+                    if (pureStatus === 'Open') dotColor = 'var(--accent-open)';
+                    else if (pureStatus === 'Closed') dotColor = 'var(--accent-wait)';
 
                     return `
                     <div class="market-card" style="border-top: 2px solid ${dotColor}">
                         <div class="m-name">
                             <span class="status-dot" style="background:${dotColor}; box-shadow: 0 0 5px ${dotColor}"></span>
-                            ${k} <span style="font-size:9px; margin-left:4px; opacity:0.6;">${v.status}</span>
+                            ${k} <span style="font-size:9px; margin-left:4px; opacity:0.6;">(${pureStatus})</span>
                         </div>
                         <div style="font-size:16px; font-weight:700; margin: 4px 0;">${v.price.toLocaleString()}</div>
                         <div class="${v.change >= 0 ? 'up' : 'down'}" style="font-size:12px;">
@@ -187,8 +187,6 @@
                 `).join('');
 
                 if (cachedData.keywords) google.charts.setOnLoadCallback(() => drawTreeMap(cachedData.keywords));
-                
-                // 적중률 프로세스 실행
                 processHitRate(history);
 
             } catch (err) { console.error(err); }
