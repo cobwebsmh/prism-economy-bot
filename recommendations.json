@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-28 14:25",
+  "date": "2026-02-28 14:29",
   "market_info": {
     "KOSPI": {
       "price": 6244.13,
@@ -28,69 +28,106 @@
   },
   "past_results": [
     {
-      "ticker": "POSCO Holdings",
-      "change": 1.35
+      "ticker": "삼성전자",
+      "change": -0.69
     },
     {
       "ticker": "NVIDIA",
       "change": -4.16
     },
     {
-      "ticker": "Microsoft",
-      "change": -2.24
+      "ticker": "Advanced Micro Devices Inc.",
+      "change": -1.7
     }
   ],
-  "summary": "이번 주말은 한국과 미국 시장 모두 휴장입니다. KOSDAQ은 소폭 상승했지만, KOSPI, S&P500, NASDAQ은 하락 마감했습니다. 뉴스 데이터가 없어 시장 심리 파악에 제한이 있지만, 지수 변동 추이를 통해 보수적인 관점을 유지하는 것이 좋겠습니다.",
-  "news_headlines": [],
-  "sectors": [],
+  "summary": "이번 주말 휴장으로 인해 시장은 전반적으로 관망세가 예상되지만, 지난 금요일 코스피는 외국인 투매에도 불구하고 상승 마감하며 강한 회복력을 보였다. 미국 시장은 이란 관련 지정학적 리스크, 사모신용 문제, PPI 지표 부진 등으로 하락 마감했지만, AI 기술 발전과 관련된 기업들의 움직임은 긍정적인 투자 심리를 자극하고 있다. 특히 국내에서는 현대차의 새만금 투자 발표와 K-반도체에 대한 중국의 높은 수요가 주요 모멘텀으로 작용할 가능성이 있다.",
+  "news_headlines": [
+    {
+      "title": "코스피, 외인 5조원대 투매에도 상승 전환…최고치 경신 - 한국경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1vX3Jxbk1UQUVNako3QlNqM3hQV3FZbEFQR1VHdGtIZ05RTjQ1YjJ3YmNpQ2loaVVQc2Zldk5JU1F2aXpfUmlyZWgzZU5heFhKRkViaTdYV3c3UdIBVEFVX3lxTE1qZTgyZVRNVkpyc0dpVXVhbVFRZjVmaVRwU0hVTHFuVm0tbWdkVERHSTFwU3RqUFN3S0Y2WUdMZnpDQlhKRFd2T1hQZ0ZkRlVYenhjeg?oc=5"
+    },
+    {
+      "title": "뉴욕증시, 이란 전운·사모신용·PPI 삼중고…하락 마감 - 연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZcExMelpMeEEwY09jbXJfdDVxdGlkdC1QUHg3ZmRIRDRkejY5WGN5dUhIVWNkc0JvRWJvelo2NXJYdTlYS1ZCbE5GMFo0dHhadnNHemw0YTBURmfSAWBBVV95cUxOM0g3LWtNaVQtUlJGcDg3MnZPSFNta3JUWjQ3aU1jZ0J0MUM4cmdSaEFGekthT3diLW5SaXVCQ0dNRHNIT0xMTUJZQTRickNMbklKLWV6bHR4OGNsZDdsNEs?oc=5"
+    },
+    {
+      "title": "“피지컬 AI·수소 인프라 구축”… 현대차, 새만금 9조 투자 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNU3djc3NUSFdlcE5BTkVTQ0NoOEZCRzhIbk1FcXZYSzVibU5iZTYxWkxwX25xSnNJZkhDM0JZTnJQdldzMFh2S1liZ2prOF8tZVBXalEzUktsZkZSVlgtcGdHeHdxOWpvNzhZQWxLYUx3YVlORkkwbFhEY2F0dUZqS25OcmwxTmhJbzZHdHpHY9IBowFBVV95cUxORlMycXB0bDBqUlJQQVpPSXY3a3JfbzhtcGRJNTZndTFWMS03NjJPVEE0M0FQLUQ0STNHTkdpVVBVWGNTMU5OT1hnRURFalpLaFJfbndLbzhEN3FXc3Q0VEp3Qm9qYkpkWDZTYlFka3RqZzhaRkpsUDBVamZoR2JfYUswWEhKYzJzQjVrOUZTQ19VLUpadmQ1MTR1NXlVbjRBMm1z?oc=5"
+    }
+  ],
+  "sectors": [
+    {
+      "name": "AI",
+      "sentiment": "HOT",
+      "reason": "AI 기술 발전 및 관련 기업 투자 확대 (OpenAI 자금 조달, 블록 감원, 현대차 AI 투자 등)"
+    },
+    {
+      "name": "반도체",
+      "sentiment": "HOT",
+      "reason": "중국의 K-반도체 수요 증가 및 관련 기업 성장 기대"
+    },
+    {
+      "name": "자동차",
+      "sentiment": "POSITIVE",
+      "reason": "현대차의 새만금 대규모 투자 및 수소 인프라 구축 계획"
+    }
+  ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "현대차",
+      "symbol": "005380.KS"
     },
     {
       "name": "NVIDIA",
       "symbol": "NVDA"
     },
     {
-      "name": "Advanced Micro Devices Inc.",
-      "symbol": "AMD"
+      "name": "Alphabet",
+      "symbol": "GOOG"
     }
   ],
   "keywords": [
     {
-      "name": "불확실성",
-      "weight": 20
-    },
-    {
-      "name": "변동성",
-      "weight": 15
-    },
-    {
-      "name": "관망세",
-      "weight": 15
-    },
-    {
-      "name": "기술주",
-      "weight": 10
+      "name": "AI",
+      "weight": 25
     },
     {
       "name": "반도체",
+      "weight": 18
+    },
+    {
+      "name": "현대차",
+      "weight": 15
+    },
+    {
+      "name": "투자",
       "weight": 10
     },
     {
-      "name": "금리",
-      "weight": 10
+      "name": "환율",
+      "weight": 8
     },
     {
-      "name": "인플레이션",
-      "weight": 10
+      "name": "고용",
+      "weight": 7
     },
     {
-      "name": "경기침체",
-      "weight": 10
+      "name": "리밸런싱",
+      "weight": 6
+    },
+    {
+      "name": "지도",
+      "weight": 5
+    },
+    {
+      "name": "결제",
+      "weight": 3
+    },
+    {
+      "name": "퇴직연금",
+      "weight": 3
     }
   ],
-  "reason": "뉴스 데이터 부재로 일반적인 투자 전략에 기반하여 종목을 추천합니다. 한국 시장 휴장으로 삼성전자를 포함, 반도체 섹터의 성장 가능성에 주목하여 NVIDIA와 AMD를 선정했습니다. 삼성전자는 국내 대표 기업으로, 기술적 분석보다는 포트폴리오 안정성 확보 차원에서 포함했습니다. NVIDIA와 AMD는 AI 및 데이터 센터 수요 증가의 수혜를 받을 것으로 예상됩니다. 현재 과매수 구간에 진입하지 않은 '무릎' 위치에 있다고 판단됩니다.",
-  "push_message": "주말 휴장으로 보수적인 관점 유지, 삼성전자, NVIDIA, AMD 추천"
+  "reason": "현대차(005380.KS)는 새만금 투자 발표로 인한 성장 기대감이 높으며, AI와 수소 인프라 구축이라는 미래 지향적인 사업 확장 측면에서 긍정적이다. NVIDIA(NVDA)는 AI 분야의 선두 주자로 지속적인 성장 모멘텀을 보유하고 있으며, Alphabet(GOOG)는 구글 지도 데이터 반출 허가로 인해 국내 시장에서 새로운 기회를 창출할 수 있을 것으로 기대된다. 이들 종목은 AI 기술 발전, 한국 정부의 정책 지원, 해외 시장 확장 등 다양한 긍정적 요인을 가지고 있어 '무릎' 위치에서 매수하기에 적합하다고 판단된다.",
+  "push_message": "AI, 반도체, 자동차 섹터 주목! 현대차 새만금 투자, NVIDIA, Alphabet 매수 기회!"
 }

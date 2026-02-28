@@ -265,5 +265,27 @@
       "NVIDIA",
       "Advanced Micro Devices Inc."
     ]
+  },
+  {
+    "date": "2026-02-28 14:29",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -0.69
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": -4.16
+      },
+      {
+        "ticker": "Advanced Micro Devices Inc.",
+        "change": -1.7
+      }
+    ],
+    "predictions": [
+      "현대차",
+      "NVIDIA",
+      "Alphabet"
+    ]
   }
 ]
