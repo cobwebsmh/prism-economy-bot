@@ -243,5 +243,27 @@
       "NVIDIA",
       "Microsoft"
     ]
+  },
+  {
+    "date": "2026-02-28 14:25",
+    "performance": [
+      {
+        "ticker": "POSCO Holdings",
+        "change": 1.35
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": -4.16
+      },
+      {
+        "ticker": "Microsoft",
+        "change": -2.24
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "NVIDIA",
+      "Advanced Micro Devices Inc."
+    ]
   }
 ]
