@@ -34,7 +34,6 @@
         .logo { font-size: 20px; font-weight: 800; color: #58a6ff; }
         .date { font-size: 11px; color: var(--text-sub); margin-bottom: 4px; }
 
-        /* 당겨서 새로고침 */
         #pull-indicator {
             position: fixed; top: -50px; left: 50%; transform: translateX(-50%);
             width: 40px; height: 40px; background: var(--card-bg);
@@ -65,7 +64,9 @@
         .sector-card.HOT { border-left: 4px solid var(--accent-hot); }
         .sector-card.Positive { border-left: 4px solid var(--accent-cool); }
         
-        .news-item { text-decoration: none; color: inherit; font-size: 13px; display: block; border: 1px solid #30363d; }
+        .news-item { text-decoration: none; color: inherit; font-size: 13px; display: block; border: 1px solid #30363d; transition: background 0.2s; }
+        .news-item:active { background: #30363d; }
+        
         .summary-box { background: rgba(88, 166, 255, 0.05); padding: 15px; border-radius: 12px; border: 1px dashed #30363d; font-size: 13.5px; }
         .pick-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
         .pick-item { background: #21262d; padding: 10px; border-radius: 8px; text-align: center; border: 1px solid #30363d; font-size: 12px; font-weight: 600; }
@@ -73,17 +74,18 @@
         .chart-container { background: var(--card-bg); border-radius: 15px; padding: 15px; border: 1px solid var(--border-color); margin-bottom: 30px; height: 260px; }
         .hit-value { font-size: 28px; font-weight: 900; color: var(--accent-hot); margin-top: 5px; }
 
-        /* 팝업 오버레이 (근거 중심 디자인) */
+        /* 팝업 오버레이 수정: 출처 강조형 */
         #news-overlay {
             display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            width: 88%; max-width: 400px; background: #1c2128; border: 1px solid var(--accent-cool);
+            width: 90%; max-width: 420px; background: #1c2128; border: 1px solid var(--accent-cool);
             border-radius: 16px; padding: 20px; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.9);
-            max-height: 80vh; overflow-y: auto;
+            max-height: 85vh; overflow-y: auto;
         }
         #overlay-bg { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:999; }
-        .ai-reason-box { background: rgba(88, 166, 255, 0.1); border-radius: 10px; padding: 12px; margin-bottom: 15px; border-left: 3px solid var(--accent-cool); font-size: 13px; color: #c9d1d9; }
-        .overlay-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
-        .overlay-close { cursor: pointer; font-size: 28px; color: var(--text-sub); line-height: 1; }
+        .source-label { font-size: 10px; font-weight: bold; color: var(--accent-cool); background: rgba(88, 166, 255, 0.1); padding: 2px 6px; border-radius: 4px; margin-right: 8px; border: 0.5px solid var(--accent-cool); }
+        .overlay-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
+        .overlay-close { cursor: pointer; font-size: 32px; color: var(--text-sub); line-height: 0.8; }
+        .external-btn { display: block; text-align: center; background: #238636; color: white; text-decoration: none; padding: 12px; border-radius: 10px; font-size: 14px; font-weight: bold; margin-top: 15px; }
     </style>
 </head>
 <body>
@@ -107,14 +109,14 @@
         <div id="summary" class="summary-box"></div>
         <div class="section-title">주요 섹터 현황</div>
         <div id="sectors-list"></div>
-        <div class="section-title">AI 분석 핵심 키워드 비중 (클릭 시 분석 근거)</div>
+        
+        <div class="section-title">AI 분석 핵심 키워드 (클릭 시 출처 확인)</div>
         <div id="chart_div" style="width: 100%; height: 250px; background: var(--card-bg); border-radius:12px; border:1px solid var(--border-color); overflow:hidden;"></div>
+        
         <div class="section-title">글로벌 주요 뉴스</div>
         <div id="news-list"></div>
         <div class="section-title">오늘의 AI 추천 종목</div>
         <div id="picks-list" class="pick-list"></div>
-        <div class="section-title">전일 추천 수익률</div>
-        <div id="past-results" class="pick-list"></div>
 
         <div class="section-title">누적 적중률 히스토리 (30일)</div>
         <div class="chart-container">
@@ -144,107 +146,104 @@
                 document.getElementById('report-date').innerText = cachedData.date;
                 document.getElementById('summary').innerText = cachedData.summary;
 
-                // 지수 렌더링 (단일 신호등)
+                // 지수 렌더링
                 document.getElementById('market-indices').innerHTML = Object.entries(cachedData.market_info).map(([k, v]) => {
                     const pureStatus = v.status.replace(/[●○()]/g, '').trim();
-                    let dotColor = 'var(--text-sub)'; 
-                    if (pureStatus.toLowerCase().includes('open')) dotColor = 'var(--accent-open)';
-                    else if (pureStatus.toLowerCase().includes('closed')) dotColor = 'var(--accent-wait)';
+                    let dotColor = pureStatus.toLowerCase().includes('open') ? 'var(--accent-open)' : 'var(--accent-wait)';
                     return `
                     <div class="market-card" style="border-top: 2px solid ${dotColor}">
-                        <div class="m-name">
-                            <span class="status-dot" style="background:${dotColor}; box-shadow: 0 0 5px ${dotColor}"></span>
-                            ${k}
-                        </div>
+                        <div class="m-name"><span class="status-dot" style="background:${dotColor}"></span>${k}</div>
                         <div style="font-size:16px; font-weight:700; margin: 4px 0;">${v.price.toLocaleString()}</div>
-                        <div class="${v.change >= 0 ? 'up' : 'down'}" style="font-size:12px;">
-                            ${v.change >= 0 ? '▲' : '▼'} ${Math.abs(v.change)}%
-                        </div>
-                    </div>
-                    `;
+                        <div class="${v.change >= 0 ? 'up' : 'down'}" style="font-size:12px;">${v.change >= 0 ? '▲' : '▼'} ${Math.abs(v.change)}%</div>
+                    </div>`;
                 }).join('');
 
-                // 섹터, 뉴스, 종목 등
+                // 섹터 및 뉴스
                 document.getElementById('sectors-list').innerHTML = cachedData.sectors.map(s => `
                     <div class="sector-card ${s.sentiment}">
                         <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:bold;">
                             <span>${s.name}</span><span style="color:${s.sentiment==='HOT'?'#f85149':'#58a6ff'}">${s.sentiment}</span>
                         </div>
                         <div style="font-size:11px; color:#8b949e; margin-top:5px;">${s.reason}</div>
-                    </div>
-                `).join('');
+                    </div>`).join('');
 
                 document.getElementById('news-list').innerHTML = cachedData.news_headlines.map(n => `
-                    <a href="${n.link}" class="news-item" target="_blank"><span class="news-title">📰 ${n.title}</span></a>
-                `).join('');
+                    <a href="${n.link}" class="news-item" target="_blank">📰 ${n.title}</a>`).join('');
 
                 document.getElementById('picks-list').innerHTML = cachedData.tickers.map(t => `<div class="pick-item">${t.name}</div>`).join('');
-                document.getElementById('past-results').innerHTML = cachedData.past_results.map(r => `
-                    <div class="pick-item"><div>${r.ticker}</div><div class="${r.change >= 0 ? 'up' : 'down'}" style="font-size:10px;">${r.change}%</div></div>
-                `).join('');
 
                 if (cachedData.keywords) google.charts.setOnLoadCallback(() => drawTreeMap(cachedData.keywords));
                 processHitRate(history);
             } catch (err) { console.error(err); }
         }
 
-        /* --- 트리맵 & 스마트 분석 팝업 --- */
+        /* --- 트리맵 & 정보 출처 중심 팝업 --- */
         function drawTreeMap(keywords) {
             const chartData = [['Keyword', 'Parent', 'Weight']];
-            chartData.push(['Global Market', null, 0]);
-            keywords.forEach(k => chartData.push([k.name, 'Global Market', k.weight]));
+            chartData.push(['Global', null, 0]);
+            keywords.forEach(k => chartData.push([k.name, 'Global', k.weight]));
             const tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
             tree.draw(google.visualization.arrayToDataTable(chartData), {
                 minColor: '#1a1f26', midColor: '#1f6feb', maxColor: '#58a6ff',
-                headerHeight: 0, showScale: false, fontColor: '#ffffff', fontSize: 12, maxPostDepth: 0, useWeightedAverageForColor: true
+                headerHeight: 0, fontColor: '#ffffff', fontSize: 12, useWeightedAverageForColor: true
             });
             google.visualization.events.addListener(tree, 'select', () => {
                 const sel = tree.getSelection();
                 if (sel.length > 0) {
                     const kwName = google.visualization.arrayToDataTable(chartData).getValue(sel[0].row, 0);
-                    if (kwName !== 'Global Market') showKeywordAnalysis(kwName);
+                    if (kwName !== 'Global') showKeywordSources(kwName);
                     tree.setSelection([]);
                 }
             });
         }
 
-        function showKeywordAnalysis(kwName) {
-            // 1. AI 분석 근거 찾기 (keywords 데이터에 reason 필드가 있다고 가정)
-            const keywordData = cachedData.keywords.find(k => k.name === kwName);
-            const aiReason = keywordData && keywordData.reason ? keywordData.reason : "AI가 뉴스, 지표, 수급 동향을 종합 분석하여 도출한 핵심 키워드입니다.";
-
-            // 2. 관련 뉴스 필터링
-            const relatedNews = cachedData.news_headlines.filter(n => n.title.toLowerCase().includes(kwName.toLowerCase()));
+        function showKeywordSources(kwName) {
+            // 1. 내부 뉴스에서 키워드 매칭
+            const matchingNews = cachedData.news_headlines.filter(n => n.title.toLowerCase().includes(kwName.toLowerCase()));
+            
+            // 2. 외부 공신력 있는 사이트 매핑
+            const siteMap = {
+                "반도체": "https://finance.naver.com/news/news_search.naver?q=반도체",
+                "금리": "https://search.naver.com/search.naver?query=미국+기준금리",
+                "환율": "https://finance.naver.com/marketindex/",
+                "AI": "https://www.google.com/search?q=AI+산업+뉴스&tbm=nws"
+            };
+            const externalUrl = siteMap[kwName] || `https://www.google.com/search?q=${encodeURIComponent(kwName)}+현황+뉴스`;
 
             let html = `
                 <div class="overlay-header">
-                    <b style="color:var(--accent-cool); font-size:16px;"># ${kwName} 분석 리포트</b>
+                    <b style="color:var(--accent-cool); font-size:18px;"># ${kwName} 데이터 근거</b>
                     <span class="overlay-close" onclick="closeNews()">&times;</span>
                 </div>
-                <div style="font-size:11px; color:var(--text-sub); margin-bottom:5px;">💡 AI 분석 근거</div>
-                <div class="ai-reason-box">${aiReason}</div>
             `;
 
-            if (relatedNews.length > 0) {
-                html += `<div style="font-size:11px; color:var(--text-sub); margin-bottom:8px;">📰 관련 뉴스</div>`;
-                html += relatedNews.map(n => `<a href="${n.link}" target="_blank" class="news-item" style="margin-bottom:8px; background:#21262d;">${n.title}</a>`).join('');
+            if (matchingNews.length > 0) {
+                html += `<div style="font-size:11px; color:var(--text-sub); margin-bottom:10px;">📌 수집된 관련 뉴스</div>`;
+                html += matchingNews.map(n => `
+                    <a href="${n.link}" target="_blank" class="news-item" style="margin-bottom:8px; padding:12px;">
+                        <span class="source-label">REPORT NEWS</span> ${n.title}
+                    </a>`).join('');
             } else {
                 html += `
-                    <div style="text-align:center; padding: 15px 0;">
-                        <p style="color:var(--text-sub); font-size:12px;">현재 수집된 뉴스 중 제목에 키워드가 직접 포함된 기사가 없습니다.</p>
-                        <a href="https://www.google.com/search?q=${encodeURIComponent(kwName)}+뉴스" target="_blank" 
-                           style="color:var(--accent-cool); text-decoration:none; font-size:13px; border:1px solid; padding:4px 10px; border-radius:6px; display:inline-block;">
-                           🌐 외부 실시간 뉴스 검색
-                        </a>
-                    </div>`;
+                    <div style="background:rgba(210, 153, 34, 0.1); border-radius:8px; padding:12px; margin-bottom:15px; border-left:3px solid var(--accent-wait);">
+                        <p style="margin:0; font-size:13px; color:#d29922;">보고서 내 직접 기사는 없으나, 시장 지표 및 거시 지표에서 포착된 핵심 키워드입니다.</p>
+                    </div>
+                `;
             }
+
+            html += `
+                <div style="font-size:11px; color:var(--text-sub); margin-top:20px; margin-bottom:10px;">🌐 외부 전문 정보 출처</div>
+                <a href="${externalUrl}" target="_blank" class="external-btn">
+                    🔎 '${kwName}' 실시간 데이터 확인하기
+                </a>
+            `;
 
             document.getElementById('news-overlay').innerHTML = html;
             document.getElementById('news-overlay').style.display = 'block';
             document.getElementById('overlay-bg').style.display = 'block';
         }
 
-        /* --- 기존 기능 (리프레쉬, 그래프 등) --- */
+        /* --- 기타 시스템 함수 --- */
         function processHitRate(history) {
             let totalPicks = 0, totalHits = 0;
             const labels = [];
@@ -292,30 +291,6 @@
             document.getElementById('news-overlay').style.display = 'none';
             document.getElementById('overlay-bg').style.display = 'none';
         }
-
-        // 당겨서 새로고침 로직
-        let tStart = 0;
-        const pullInd = document.getElementById('pull-indicator');
-        window.addEventListener('touchstart', (e) => { if (window.scrollY === 0) tStart = e.touches[0].clientY; }, { passive: true });
-        window.addEventListener('touchmove', (e) => {
-            if (tStart === 0 || window.scrollY > 0) return;
-            const dist = e.touches[0].clientY - tStart;
-            if (dist > 0) {
-                const move = Math.min(dist * 0.4, 110);
-                pullInd.style.opacity = '1';
-                pullInd.style.transform = `translateX(-50%) translateY(${move}px) rotate(${dist * 2}deg)`;
-            }
-        }, { passive: true });
-        window.addEventListener('touchend', async (e) => {
-            const dist = e.changedTouches[0].clientY - tStart;
-            if (dist > 90 && window.scrollY === 0) {
-                pullInd.style.transform = `translateX(-50%) translateY(90px)`;
-                pullInd.classList.add('spinning');
-                await manualRefresh();
-            }
-            tStart = 0;
-            setTimeout(() => { pullInd.style.opacity = '0'; pullInd.style.transform = `translateX(-50%) translateY(-50px)`; pullInd.classList.remove('spinning'); }, 600);
-        });
 
         updateUI();
     </script>
