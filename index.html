@@ -15,7 +15,7 @@
             --accent-hot: #f85149;
             --accent-cool: #58a6ff;
             --accent-wait: #d29922; 
-            --accent-open: #2ea043; /* 개장 상태용 녹색 */
+            --accent-open: #2ea043; 
             --border-color: #30363d;
         }
 
@@ -66,8 +66,6 @@
         .sector-card.Neutral { border-left: 4px solid var(--text-sub); }
         
         .news-item { text-decoration: none; color: inherit; font-size: 13px; display: block; }
-        .news-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
-
         .summary-box { background: rgba(88, 166, 255, 0.05); padding: 15px; border-radius: 12px; border: 1px dashed #30363d; font-size: 13.5px; }
         .pick-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
         .pick-item { background: #21262d; padding: 10px; border-radius: 8px; text-align: center; border: 1px solid #30363d; font-size: 12px; font-weight: 600; }
@@ -143,21 +141,21 @@
                 document.getElementById('report-date').innerText = cachedData.date;
                 document.getElementById('summary').innerText = cachedData.summary;
 
-                // [보완] 지수 렌더링: 중복 신호등 제거 및 단일화
+                // [지수 렌더링] - 오른쪽 괄호 및 중복 제거
                 document.getElementById('market-indices').innerHTML = Object.entries(cachedData.market_info).map(([k, v]) => {
-                    // 1. 서버 문구에서 기호 제거 (글자만 추출)
-                    const pureStatus = v.status.replace(/[●○]/g, '').trim();
+                    // 상태 문구에서 특수 기호 제거
+                    const pureStatus = v.status.replace(/[●○()]/g, '').trim();
                     
-                    // 2. 상태에 따른 단일 신호등 색상
+                    // 신호등 색상 로직
                     let dotColor = 'var(--text-sub)'; 
-                    if (pureStatus === 'Open') dotColor = 'var(--accent-open)';
-                    else if (pureStatus === 'Closed') dotColor = 'var(--accent-wait)';
+                    if (pureStatus.toLowerCase().includes('open')) dotColor = 'var(--accent-open)';
+                    else if (pureStatus.toLowerCase().includes('closed')) dotColor = 'var(--accent-wait)';
 
                     return `
                     <div class="market-card" style="border-top: 2px solid ${dotColor}">
                         <div class="m-name">
                             <span class="status-dot" style="background:${dotColor}; box-shadow: 0 0 5px ${dotColor}"></span>
-                            ${k} <span style="font-size:9px; margin-left:4px; opacity:0.6;">(${pureStatus})</span>
+                            ${k}
                         </div>
                         <div style="font-size:16px; font-weight:700; margin: 4px 0;">${v.price.toLocaleString()}</div>
                         <div class="${v.change >= 0 ? 'up' : 'down'}" style="font-size:12px;">
@@ -167,7 +165,7 @@
                     `;
                 }).join('');
 
-                // 섹터/뉴스/종목 등 렌더링
+                // 나머지 렌더링 (섹터, 뉴스 등)
                 document.getElementById('sectors-list').innerHTML = cachedData.sectors.map(s => `
                     <div class="sector-card ${s.sentiment}">
                         <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:bold;">
