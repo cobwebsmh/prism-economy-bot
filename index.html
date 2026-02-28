@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Prism Insight - AI Report</title>
     <style>
         :root {
@@ -19,25 +19,47 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color); color: var(--text-main);
             margin: 0; padding: 15px; line-height: 1.5;
+            overscroll-behavior-y: contain; /* 기본 브라우저 새로고침 방지 (커스텀 구현용) */
         }
 
         .container { max-width: 480px; margin: 0 auto; }
-        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+        header { 
+            display: flex; justify-content: space-between; align-items: center; 
+            margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; 
+        }
         .logo { font-size: 20px; font-weight: 800; color: #58a6ff; }
-        .date { font-size: 11px; color: var(--text-sub); }
+        .date { font-size: 11px; color: var(--text-sub); margin-bottom: 4px; }
+
+        /* 당겨서 새로고침 인디케이터 */
+        #pull-indicator {
+            position: fixed; top: -50px; left: 50%; transform: translateX(-50%);
+            width: 40px; height: 40px; background: var(--card-bg);
+            border: 2px solid var(--accent-cool); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            z-index: 2000; transition: transform 0.1s linear, opacity 0.2s;
+            opacity: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .refresh-btn {
+            background: rgba(88, 166, 255, 0.1); border: 1px solid var(--border-color);
+            color: var(--accent-cool); border-radius: 12px; padding: 5px 10px;
+            font-size: 11px; cursor: pointer; display: flex; align-items: center; gap: 4px;
+        }
+
+        @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .spinning { animation: spin 1s linear infinite; }
 
         .section-title { font-size: 16px; font-weight: 700; margin: 25px 0 12px 0; color: #c9d1d9; border-left: 4px solid #58a6ff; padding-left: 10px; }
-
         .market-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
         .market-card { background: var(--card-bg); padding: 12px; border-radius: 12px; border: 1px solid var(--border-color); }
         .m-name { font-size: 11px; color: var(--text-sub); }
         .m-price { font-size: 16px; font-weight: 700; }
         .up { color: var(--accent-hot); } .down { color: var(--accent-cool); }
 
-        .sectors-container, .news-list { display: flex; flex-direction: column; gap: 10px; }
-        .sector-card, .news-item { background: var(--card-bg); padding: 12px; border-radius: 10px; border: 1px solid var(--border-color); }
+        .sector-card, .news-item { background: var(--card-bg); padding: 12px; border-radius: 10px; border: 1px solid var(--border-color); margin-bottom: 10px; }
         .sector-card.HOT { border-left: 4px solid var(--accent-hot); }
-        .sector-card.COOL { border-left: 4px solid var(--accent-cool); }
+        .sector-card.Positive { border-left: 4px solid var(--accent-cool); }
+        .sector-card.Neutral { border-left: 4px solid var(--text-sub); }
         
         .news-item { text-decoration: none; color: inherit; font-size: 13px; display: block; }
         .news-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
@@ -46,52 +68,50 @@
         .pick-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
         .pick-item { background: #21262d; padding: 10px; border-radius: 8px; text-align: center; border: 1px solid #30363d; font-size: 12px; font-weight: 600; }
 
-        .hit-rate-box { text-align: center; padding: 20px; background: var(--card-bg); border-radius: 15px; margin-bottom: 30px; border: 1px solid var(--border-color); }
-        .hit-value { font-size: 36px; font-weight: 900; color: var(--accent-hot); }
+        #chart_div { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden; }
 
-        #chart_div { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden; margin-bottom: 20px; }
-
-        /* 뉴스 팝업 레이어 */
         #news-overlay {
             display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
             width: 85%; max-width: 380px; background: #1c2128; border: 1px solid var(--accent-cool);
             border-radius: 16px; padding: 20px; z-index: 1000; box-shadow: 0 10px 30px rgba(0,0,0,0.8);
         }
         #overlay-bg { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:999; }
-        .overlay-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .overlay-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
         .overlay-close { cursor: pointer; font-size: 24px; color: var(--text-sub); }
+
+        .hit-rate-box { text-align: center; padding: 20px; background: var(--card-bg); border-radius: 15px; margin-bottom: 30px; border: 1px solid var(--border-color); }
+        .hit-value { font-size: 36px; font-weight: 900; color: var(--accent-hot); }
     </style>
 </head>
 <body>
+    <div id="pull-indicator">🔄</div>
     <div id="overlay-bg" onclick="closeNews()"></div>
     <div id="news-overlay"></div>
 
     <div class="container">
         <header>
             <div class="logo">PRISM INSIGHT 💎</div>
-            <div id="report-date" class="date">Loading...</div>
+            <div style="text-align: right;">
+                <div id="report-date" class="date">연결 중...</div>
+                <button id="refresh-btn" class="refresh-btn" onclick="manualRefresh()">
+                    <span id="refresh-icon">🔄</span> 업데이트
+                </button>
+            </div>
         </header>
 
         <div id="market-indices" class="market-grid"></div>
-
         <div class="section-title">시장 요약</div>
         <div id="summary" class="summary-box"></div>
-
         <div class="section-title">주요 섹터 현황</div>
-        <div id="sectors-list" class="sectors-container"></div>
-
+        <div id="sectors-list"></div>
         <div class="section-title">AI 분석 핵심 키워드 비중</div>
         <div id="chart_div" style="width: 100%; height: 250px;"></div>
-
         <div class="section-title">글로벌 주요 뉴스</div>
-        <div id="news-list" class="news-list"></div>
-
+        <div id="news-list"></div>
         <div class="section-title">오늘의 AI 추천 종목</div>
         <div id="picks-list" class="pick-list"></div>
-
         <div class="section-title">전일 추천 수익률</div>
         <div id="past-results" class="pick-list"></div>
-
         <div class="section-title">누적 상승 적중률</div>
         <div class="hit-rate-box">
             <div id="hit-rate-value" class="hit-value">0%</div>
@@ -105,15 +125,19 @@
         let cachedData = null;
 
         async function updateUI() {
+            const v = new Date().getTime();
             try {
-                const [res, hRes] = await Promise.all([fetch('recommendations.json'), fetch('history.json')]);
+                const [res, hRes] = await Promise.all([
+                    fetch(`recommendations.json?v=${v}`),
+                    fetch(`history.json?v=${v}`)
+                ]);
                 cachedData = await res.json();
                 const history = await hRes.json();
 
                 document.getElementById('report-date').innerText = cachedData.date;
                 document.getElementById('summary').innerText = cachedData.summary;
 
-                // 지수 렌더링
+                // 지수/섹터/뉴스/종목 등 렌더링 (기존 로직 동일)
                 document.getElementById('market-indices').innerHTML = Object.entries(cachedData.market_info).map(([k, v]) => `
                     <div class="market-card">
                         <div class="m-name">${v.status} ${k}</div>
@@ -122,66 +146,91 @@
                     </div>
                 `).join('');
 
-                // 섹터 렌더링
                 document.getElementById('sectors-list').innerHTML = cachedData.sectors.map(s => `
                     <div class="sector-card ${s.sentiment}">
                         <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:bold;">
-                            <span>${s.name}</span><span style="color:${s.sentiment==='HOT'?'#f85149':'#58a6ff'}">${s.sentiment}</span>
+                            <span>${s.name}</span>
+                            <span style="color:${s.sentiment==='HOT'?'#f85149':(s.sentiment==='Positive'?'#58a6ff':'#8b949e')}">${s.sentiment}</span>
                         </div>
                         <div style="font-size:11px; color:#8b949e; margin-top:5px;">${s.reason}</div>
                     </div>
                 `).join('');
 
-                // 뉴스 렌더링
                 document.getElementById('news-list').innerHTML = cachedData.news_headlines.map(n => `
-                    <a href="${n.link}" class="news-item" target="_blank">
-                        <span class="news-title">📰 ${n.title}</span>
-                    </a>
+                    <a href="${n.link}" class="news-item" target="_blank"><span class="news-title">📰 ${n.title}</span></a>
                 `).join('');
 
-                // 종목 및 결과 (객체 구조 대응)
                 document.getElementById('picks-list').innerHTML = cachedData.tickers.map(t => `<div class="pick-item">${t.name}</div>`).join('');
                 document.getElementById('past-results').innerHTML = cachedData.past_results.map(r => `
-                    <div class="pick-item">
-                        <div>${r.ticker}</div>
-                        <div class="${r.change >= 0 ? 'up' : 'down'}" style="font-size:10px;">${r.change}%</div>
-                    </div>
+                    <div class="pick-item"><div>${r.ticker}</div><div class="${r.change >= 0 ? 'up' : 'down'}" style="font-size:10px;">${r.change}%</div></div>
                 `).join('');
 
-                // 트리맵 그리기
-                if (cachedData.keywords) {
-                    google.charts.setOnLoadCallback(() => drawTreeMap(cachedData.keywords));
-                }
+                if (cachedData.keywords) google.charts.setOnLoadCallback(() => drawTreeMap(cachedData.keywords));
 
-                // 적중률
                 let total = 0, hits = 0;
                 history.forEach(day => day.performance.forEach(p => { total++; if(p.change > 0) hits++; }));
                 document.getElementById('hit-rate-value').innerText = (total > 0 ? (hits/total*100).toFixed(1) : 0) + "%";
-
             } catch (err) { console.error(err); }
         }
 
+        async function manualRefresh() {
+            const icon = document.getElementById('refresh-icon');
+            icon.classList.add('spinning');
+            await updateUI();
+            setTimeout(() => icon.classList.remove('spinning'), 800);
+        }
+
+        /* --- 당겨서 새로고침 로직 --- */
+        let tStart = 0;
+        const pullInd = document.getElementById('pull-indicator');
+        const THRESHOLD = 90;
+
+        window.addEventListener('touchstart', (e) => {
+            if (window.scrollY === 0) tStart = e.touches[0].clientY;
+        }, { passive: true });
+
+        window.addEventListener('touchmove', (e) => {
+            if (tStart === 0 || window.scrollY > 0) return;
+            const dist = e.touches[0].clientY - tStart;
+            if (dist > 0) {
+                const move = Math.min(dist * 0.4, THRESHOLD + 20);
+                pullInd.style.opacity = '1';
+                pullInd.style.transform = `translateX(-50%) translateY(${move}px) rotate(${dist * 2}deg)`;
+                pullInd.style.color = dist > THRESHOLD ? 'var(--accent-hot)' : 'var(--accent-cool)';
+            }
+        }, { passive: true });
+
+        window.addEventListener('touchend', async () => {
+            const dist = event.changedTouches[0].clientY - tStart;
+            if (dist > THRESHOLD && window.scrollY === 0) {
+                pullInd.style.transform = `translateX(-50%) translateY(${THRESHOLD}px)`;
+                pullInd.classList.add('spinning');
+                await manualRefresh();
+            }
+            tStart = 0;
+            setTimeout(() => {
+                pullInd.style.opacity = '0';
+                pullInd.style.transform = `translateX(-50%) translateY(-50px)`;
+                pullInd.classList.remove('spinning');
+            }, 600);
+        });
+
+        /* --- 트리맵 & 팝업 --- */
         function drawTreeMap(keywords) {
             const chartData = [['Keyword', 'Parent', 'Weight']];
             chartData.push(['Global Market', null, 0]);
             keywords.forEach(k => chartData.push([k.name, 'Global Market', k.weight]));
-
-            const dataTable = google.visualization.arrayToDataTable(chartData);
             const tree = new google.visualization.TreeMap(document.getElementById('chart_div'));
-
-            tree.draw(dataTable, {
+            tree.draw(google.visualization.arrayToDataTable(chartData), {
                 minColor: '#1a1f26', midColor: '#1f6feb', maxColor: '#58a6ff',
-                headerHeight: 0, showScale: false, fontColor: '#ffffff', fontSize: 12,
-                maxPostDepth: 0, // 클릭 시 파고들기(확대) 방지
-                useWeightedAverageForColor: true
+                headerHeight: 0, showScale: false, fontColor: '#ffffff', fontSize: 12, maxPostDepth: 0, useWeightedAverageForColor: true
             });
-
             google.visualization.events.addListener(tree, 'select', () => {
                 const sel = tree.getSelection();
                 if (sel.length > 0) {
-                    const kw = dataTable.getValue(sel[0].row, 0);
+                    const kw = google.visualization.arrayToDataTable(chartData).getValue(sel[0].row, 0);
                     if (kw !== 'Global Market') showKeywordNews(kw);
-                    tree.setSelection([]); // 선택 상태 초기화 (다시 클릭 가능하게)
+                    tree.setSelection([]);
                 }
             });
         }
@@ -189,13 +238,7 @@
         function showKeywordNews(kw) {
             const filtered = cachedData.news_headlines.filter(n => n.title.toLowerCase().includes(kw.toLowerCase()));
             let html = `<div class="overlay-header"><b style="color:var(--accent-cool)">#${kw} 관련 뉴스</b><span class="overlay-close" onclick="closeNews()">×</span></div>`;
-            
-            if (filtered.length > 0) {
-                html += filtered.map(n => `<a href="${n.link}" target="_blank" class="news-item" style="background:#21262d; margin-bottom:8px;">${n.title}</a>`).join('');
-            } else {
-                html += `<p style="font-size:12px; color:var(--text-sub); text-align:center;">관련 뉴스를 찾을 수 없습니다.</p>`;
-            }
-
+            html += filtered.length > 0 ? filtered.map(n => `<a href="${n.link}" target="_blank" class="news-item" style="background:#21262d; margin-bottom:10px;">${n.title}</a>`).join('') : `<p style="text-align:center; color:var(--text-sub);">뉴스가 없습니다.</p>`;
             document.getElementById('news-overlay').innerHTML = html;
             document.getElementById('news-overlay').style.display = 'block';
             document.getElementById('overlay-bg').style.display = 'block';
