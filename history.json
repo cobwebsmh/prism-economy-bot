@@ -353,5 +353,27 @@
       "NVIDIA",
       "Amazon"
     ]
+  },
+  {
+    "date": "2026-03-01 08:11",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": 1.35
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": -4.16
+      },
+      {
+        "ticker": "Amazon",
+        "change": 1.0
+      }
+    ],
+    "predictions": [
+      "포스코홀딩스",
+      "AMD",
+      "Amazon"
+    ]
   }
 ]

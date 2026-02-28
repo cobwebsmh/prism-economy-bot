@@ -1,5 +1,5 @@
 {
-  "date": "2026-02-28 22:23",
+  "date": "2026-03-01 08:11",
   "market_info": {
     "KOSPI": {
       "price": 6244.13,
@@ -28,48 +28,43 @@
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -0.69
+      "ticker": "포스코홀딩스",
+      "change": 1.35
     },
     {
-      "ticker": "애플",
-      "change": -3.21
+      "ticker": "NVIDIA",
+      "change": -4.16
     },
     {
-      "ticker": "마이크로소프트",
-      "change": -2.24
+      "ticker": "Amazon",
+      "change": 1.0
     }
   ],
-  "summary": "최근 뉴스는 AI 기술의 발전과 그에 따른 고용 불안, 지정학적 리스크, 그리고 기업들의 실적 및 투자 관련 소식을 다루고 있습니다. 특히 AI 파괴론 우려와 함께 AI 기술 경쟁 심화, 그리고 일부 기업들의 과도한 투자 논란이 시장 심리를 위축시키는 요인으로 작용하고 있습니다. 다만, 긍정적인 부분은 삼성전자의 메모리 시장 점유율 회복과 정의선 회장의 대규모 투자 결정 등이 투자 심리를 일부 개선할 수 있다는 점입니다.",
+  "summary": "주말 휴장으로 인해 시장은 관망세가 짙은 가운데, AI 기술 발전과 관련된 기대감과 고용 위협에 대한 우려가 공존하고 있습니다. 기업들의 투자 결정과 실적 발표에 따라 주가 변동성이 커질 수 있으며, 특히 AI, 로봇, 수소 등의 미래 산업에 대한 관심이 높아지고 있습니다. 지정학적 리스크와 금리 인상 가능성 등 불확실성이 상존하므로 신중한 투자 전략이 요구됩니다.",
   "news_headlines": [
     {
-      "title": "뉴욕증시 3대 지수 하락···‘AI 파괴론’ 우려 확산 - 시사저널e",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA0N2d0QURCREdvbC1RM1NjaThvVmpPTUV5b2hmMTBMRkxjd0lzaGl4MW90b0I4UU5DaFVMZGpjZ0R6cHFXTTJETkF1TUMxeVhQWUpGek1oaXhwbDZFYV9qYTk4NElwZFEzWEZHNHVibTVYZ9IBdkFVX3lxTE9NV2otN05VTDZIRnlOUmdrdF9JaWI4Q2VndV8wcngyQm15elFNWHBuMm9nZmQ1a29BYTM3djJHUFQ4YmFoX3NtcThHb0xHMXlyalBoTWhEcWtPcWdOcWppeldyUUVRcG9NeFlZbXlra1WidlBPaXc?oc=5"
+      "title": "현대차그룹, 새만금에 9조원 투자… 로봇·AI·수소 '미래산업 메가 프로젝트' 시동 - 프라임경제",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40VjRDM3NSdF9VdUVsWjl5NV9ZdEJkR003cWRnQlROemVBTnRwUTNsc1ZHTWpSbnB5eENHWlBIYU0za181aDVkUXVlMjJ2Nk80SFhzcFdFZkNKZlYtb3R0c21DQktTUThqelB1ZA?oc=5"
     },
     {
-      "title": "호르무즈 해협 막히면... ‘이란 리스크’ 현실로 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQzRGRHA4OWlNNGZVR1c4eVJzRW4wUDRyQ1QzblJ2bDJNU2themJtbG9DUy1pTlhERG1INXc4SGJxck5QaVlFQzFtUThFV2FhSHdnWm9LdHN6Wk55QnE3c3J0ZWM3S2E1aUhBanZuNUE5cl9KWnJFMmZJNUMtVnpBZms0ZXcyZ0JHLWNuTmxDNNIBowFBVV95cUxQNTYySng5bWVFUVhvRDg4YnFSMjlqTGY1NklTMUQ4YjFfbU05WVJTZlZXM1Vjbm95dy16NmpKdGlTaC1NNjZTeU9NWlZ1X1ItQ0JMa2pYLVNabncwb2pJYWtwTlYwTWZKMHJQVGxfUjdMejQwdzBCM0RiWUNaZjdPcXJ2eVkxZVJWTnRqcm9RYnNpTUxPc2JkRWNXcEY5cXR4QVVB?oc=5"
+      "title": "Amazon deal with OpenAI shakes up AI landscape - Axios",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuV1FPcUUyakhnMXoxYWhwSTZtek41bF8wcFlNV25VV01Ca0N0bl80QUg5VXpoYUpnT2RmVFMxSWRITy10M1BEdHdHS0lGdElFZ3hybGNwTmFfMkRmMjQ4aE9ORnhrZw?oc=5"
     },
     {
-      "title": "삼성, ‘메모리 최강자’ 타이틀 되찾았다…1년 만에 SK하이닉스 추월 ‘명예회복’ - CEO스코어데일리",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXVm1uSS1uRmZ0Q0JBVDM0enBNc2VhRUplRTR1SVk4aHNSZnJ3VlhQSzVZcEN3Rk5nd3NVbTM0S0FQdnd4ZFpyNTE4U1ZzYlVpZENWRm0yZTJuMTlweEw4NTNVTXU0N05H?oc=5"
+      "title": "직원 절반 해고 발표했더니 오히려 주가 25% 폭등…AI발 고용 위협 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3dJcGFvTzVwWGN2U1Rld2Z3clFYNG5pb1A0RVhHbTNhR1cwMFFENlh1M29BaENtMkdBOTZEOEQ5c2RvOHZrZkhzX2lQdTB4U1VLNkJKbG9BSklpR3RtaHR5OTZBa3l2V0dtbW8tRk1zMlJEMm5JTi1RSDI3dkRTdkFtU0FvSWdvLTlCOGtrOWh2Um9kVlREVTJMR1dFZ9IBsgFBVV95cUxNQUNmeHJ2WDktejRzOGZ3ZnpXQ0tEMkMyZlktTzNHNGs2dVQxTTNlWVkxTGZuYUtwdVQ5cGdGano0Nk1XdldnNWZpNGRSY3pBQnpJRzNIYUw1a1BSNlhQcHJ0bWt6QjBmbDRmeEVVcWlnMmVRd0haaEJjVnpvRU56dkRZN2xwaGVlbFhURDZNbU93VDVaNlJ2ZW1PMlhNLTlmRFk1UVE1anBYRVBOc1hxMVpR?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "AI",
-      "sentiment": "Neutral",
-      "reason": "AI 기술 발전과 파괴론 우려 공존"
-    },
-    {
-      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "삼성전자 메모리 시장 점유율 회복"
+      "reason": "세이지, 보는 AI에서 행동하는 AI로...AW 2026서 기술 선봬"
     },
     {
-      "name": "에너지",
-      "sentiment": "Negative",
-      "reason": "이란 리스크로 인한 불확실성 증가"
+      "name": "미래산업 (로봇, 수소)",
+      "sentiment": "HOT",
+      "reason": "현대차그룹, 새만금에 9조원 투자… 로봇·AI·수소 '미래산업 메가 프로젝트' 시동"
     }
   ],
   "tickers": [
@@ -78,8 +73,8 @@
       "symbol": "005490.KS"
     },
     {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
+      "name": "AMD",
+      "symbol": "AMD"
     },
     {
       "name": "Amazon",
@@ -88,46 +83,42 @@
   ],
   "keywords": [
     {
-      "name": "AI 파괴론",
-      "weight": 18
-    },
-    {
-      "name": "삼성전자",
-      "weight": 15
-    },
-    {
-      "name": "지정학적 리스크",
-      "weight": 12
+      "name": "AI",
+      "weight": 25
     },
     {
       "name": "투자",
+      "weight": 15
+    },
+    {
+      "name": "미래산업",
+      "weight": 12
+    },
+    {
+      "name": "고용",
       "weight": 10
     },
     {
-      "name": "해고",
+      "name": "기술",
       "weight": 10
     },
     {
-      "name": "메모리 반도체",
-      "weight": 10
-    },
-    {
-      "name": "사과",
+      "name": "가격",
       "weight": 8
     },
     {
-      "name": "규제",
+      "name": "에너지",
       "weight": 7
     },
     {
-      "name": "마케팅 경쟁",
-      "weight": 6
+      "name": "전기",
+      "weight": 7
     },
     {
-      "name": "전기 요금",
-      "weight": 4
+      "name": "반도체",
+      "weight": 6
     }
   ],
-  "reason": "포스코홀딩스(005490.KS)는 2차 전지 소재 사업 확장 기대감과 함께 상대적으로 낮은 밸류에이션 매력을 보유하고 있습니다. 휴장일에도 국내 주식 하나를 포함하는 것이 중요하다고 판단했습니다.\n엔비디아(NVDA)는 AI 반도체 시장의 선두 주자로서 지속적인 성장 가능성이 높지만, 최근 주가 변동성을 고려하여 신중한 접근이 필요합니다. 눌림목 구간에서 매수 기회를 엿보는 전략이 유효합니다.\n아마존(AMZN)은 OpenAI와의 협력을 통해 AI 분야에서 경쟁력을 강화하고 있으며, 클라우드 및 전자상거래 사업의 꾸준한 성장세를 유지하고 있습니다. 기술적으로도 안정적인 흐름을 보이고 있어 매수 적기로 판단됩니다.",
-  "push_message": "AI 파괴론 우려, 삼성전자 부활, 지정학적 리스크 속 포스코홀딩스, 엔비디아, 아마존 추천"
+  "reason": "포스코홀딩스: 2차전지 소재 사업 확장 및 정부 정책 수혜 기대감. AMD: 메타와의 협력으로 인한 성장 기대감. Amazon: OpenAI와의 협력으로 AI 경쟁력 강화. 이들 종목은 최근 시장 변동성에도 불구하고 상대적으로 안정적인 흐름을 보이고 있으며, 장기적인 성장 가능성이 높다고 판단됩니다. 특히, 기술적으로 과매수 구간을 벗어나 무릎 위치에 있다고 판단되어, 추가 상승 여력이 있을 것으로 예상됩니다.",
+  "push_message": "AI, 미래산업 투자 활발! 포스코홀딩스, AMD, Amazon 주목. 기술적 무릎 구간, 추가 상승 기대!"
 }
