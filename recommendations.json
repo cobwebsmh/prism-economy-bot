@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-01 08:11",
+  "date": "2026-03-02 08:13",
   "market_info": {
     "KOSPI": {
       "price": 6244.13,
@@ -32,93 +32,94 @@
       "change": 1.35
     },
     {
-      "ticker": "NVIDIA",
-      "change": -4.16
+      "ticker": "AMD",
+      "change": -1.7
     },
     {
       "ticker": "Amazon",
       "change": 1.0
     }
   ],
-  "summary": "주말 휴장으로 인해 시장은 관망세가 짙은 가운데, AI 기술 발전과 관련된 기대감과 고용 위협에 대한 우려가 공존하고 있습니다. 기업들의 투자 결정과 실적 발표에 따라 주가 변동성이 커질 수 있으며, 특히 AI, 로봇, 수소 등의 미래 산업에 대한 관심이 높아지고 있습니다. 지정학적 리스크와 금리 인상 가능성 등 불확실성이 상존하므로 신중한 투자 전략이 요구됩니다.",
+  "summary": "시장은 중동 지역의 지정학적 긴장 고조와 암호화폐 시장의 변동성 확대 속에서 혼조세를 보이고 있습니다. 특히 호르무즈 해협 봉쇄 가능성, 이란 관련 지정학적 리스크, 그리고 OPEC+의 증산 결정 등이 유가 변동성을 키우며 시장에 영향을 주고 있습니다. AI, 반도체, 우주 통신 등 미래 기술 분야는 긍정적인 모멘텀을 유지하고 있지만, 전반적인 투자 심리는 지정학적 리스크에 의해 억눌린 상황입니다.",
   "news_headlines": [
     {
-      "title": "현대차그룹, 새만금에 9조원 투자… 로봇·AI·수소 '미래산업 메가 프로젝트' 시동 - 프라임경제",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40VjRDM3NSdF9VdUVsWjl5NV9ZdEJkR003cWRnQlROemVBTnRwUTNsc1ZHTWpSbnB5eENHWlBIYU0za181aDVkUXVlMjJ2Nk80SFhzcFdFZkNKZlYtb3R0c21DQktTUThqelB1ZA?oc=5"
+      "title": "'호르무즈 봉쇄 시 해상운임 최대 80% 폭증 가능성도' - 연합뉴스TV",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fM2xHN0tFaXNPellHS2M3TlJJNFA2YnRTTUYxQ1pFUDQwQ2RzU0dqUDY3Qjlzcm13SU1mMkRtS3NkWmpvVm1zSkhHcDNfYS04Uk9odmdQQWJqWGJRNTQ1Umd5bEI3emM?oc=5"
     },
     {
-      "title": "Amazon deal with OpenAI shakes up AI landscape - Axios",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuV1FPcUUyakhnMXoxYWhwSTZtek41bF8wcFlNV25VV01Ca0N0bl80QUg5VXpoYUpnT2RmVFMxSWRITy10M1BEdHdHS0lGdElFZ3hybGNwTmFfMkRmMjQ4aE9ORnhrZw?oc=5"
+      "title": "[속보] 암호화폐, 전쟁 발발에 수직하락 … 하메네이 사망 소식에 상승 반전 - 뉴데일리 경제",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBtUk5NeUNIRzZTTnFEMzFQRXlaSU8xTEVPQnM2Yl9URmxSaVNBMS1ETDBTLW0wd1c4X2JwUllWYWQyOVdFQkpJN0hMLUZPMnhrbExNcnlWWjg1Ti0zblIzVnRVSE5QMFJDTnVvRXpTVEZQa2Z1QU80RWhydw?oc=5"
     },
     {
-      "title": "직원 절반 해고 발표했더니 오히려 주가 25% 폭등…AI발 고용 위협 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM3dJcGFvTzVwWGN2U1Rld2Z3clFYNG5pb1A0RVhHbTNhR1cwMFFENlh1M29BaENtMkdBOTZEOEQ5c2RvOHZrZkhzX2lQdTB4U1VLNkJKbG9BSklpR3RtaHR5OTZBa3l2V0dtbW8tRk1zMlJEMm5JTi1RSDI3dkRTdkFtU0FvSWdvLTlCOGtrOWh2Um9kVlREVTJMR1dFZ9IBsgFBVV95cUxNQUNmeHJ2WDktejRzOGZ3ZnpXQ0tEMkMyZlktTzNHNGs2dVQxTTNlWVkxTGZuYUtwdVQ5cGdGano0Nk1XdldnNWZpNGRSY3pBQnpJRzNIYUw1a1BSNlhQcHJ0bWt6QjBmbDRmeEVVcWlnMmVRd0haaEJjVnpvRU56dkRZN2xwaGVlbFhURDZNbU93VDVaNlJ2ZW1PMlhNLTlmRFk1UVE1anBYRVBOc1hxMVpR?oc=5"
+      "title": "2월 수출 29% 증가... 반도체는 160% 늘며 역대 최대 실적 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcC0wUHdudlJjVXNpWHpVR2xoWUZRUWJZa09VLWlmVUR5eTBDSWlyQ3pmRDh3UWRwb0xieDdGQ2lSM01WQXlhQTZLT2dRWm44NHNFYzVfSnNyVnRjUDlUR3BxNFZuMGpkbklmQlpJa3c0QlNqS3hOWVY5eWdCQ0d1U0ROemhxY09LZHBKWE1B0gGiAUFVX3lxTE9mZTRVQ204RGY1UmtZZ0dfN0RweVVDMlJ2dnJiUWxVTzloM1hFd1pxNGRtdWFZSHIzb3JvQ2tFcVFyRlFVMVRXZHdBSnNxdVFHbjEwcFQ1MUtpUl9uaTRTZURidW53NEpFZ3BMNkZveV9kbUg3alhTczE3c3dhVjFJWWhTdkY5ZlF6eDZuYVBKR180YU1uOG1fUXRkV2kwWVNWUQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "AI",
+      "name": "에너지",
       "sentiment": "HOT",
-      "reason": "세이지, 보는 AI에서 행동하는 AI로...AW 2026서 기술 선봬"
+      "reason": "중동 긴장 고조로 인한 유가 상승 기대감"
     },
     {
-      "name": "미래산업 (로봇, 수소)",
+      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "현대차그룹, 새만금에 9조원 투자… 로봇·AI·수소 '미래산업 메가 프로젝트' 시동"
+      "reason": "2월 수출 호조 및 AI 기술 발전의 핵심 동력"
+    },
+    {
+      "name": "AI",
+      "sentiment": "POSITIVE",
+      "reason": "다양한 산업 분야에 적용 확대 및 기술 혁신 지속"
     }
   ],
   "tickers": [
     {
-      "name": "포스코홀딩스",
-      "symbol": "005490.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "AMD",
-      "symbol": "AMD"
+      "name": "마이크로소프트",
+      "symbol": "MSFT"
     },
     {
-      "name": "Amazon",
-      "symbol": "AMZN"
+      "name": "NVIDIA",
+      "symbol": "NVDA"
     }
   ],
   "keywords": [
     {
-      "name": "AI",
+      "name": "지정학적 리스크",
       "weight": 25
     },
     {
-      "name": "투자",
+      "name": "AI",
       "weight": 15
     },
     {
-      "name": "미래산업",
-      "weight": 12
+      "name": "반도체",
+      "weight": 15
     },
     {
-      "name": "고용",
+      "name": "수출 증가",
       "weight": 10
-    },
-    {
-      "name": "기술",
-      "weight": 10
-    },
-    {
-      "name": "가격",
-      "weight": 8
     },
     {
       "name": "에너지",
-      "weight": 7
+      "weight": 10
     },
     {
-      "name": "전기",
-      "weight": 7
+      "name": "우주 통신",
+      "weight": 5
     },
     {
-      "name": "반도체",
-      "weight": 6
+      "name": "금리",
+      "weight": 10
+    },
+    {
+      "name": "암호화폐",
+      "weight": 10
     }
   ],
-  "reason": "포스코홀딩스: 2차전지 소재 사업 확장 및 정부 정책 수혜 기대감. AMD: 메타와의 협력으로 인한 성장 기대감. Amazon: OpenAI와의 협력으로 AI 경쟁력 강화. 이들 종목은 최근 시장 변동성에도 불구하고 상대적으로 안정적인 흐름을 보이고 있으며, 장기적인 성장 가능성이 높다고 판단됩니다. 특히, 기술적으로 과매수 구간을 벗어나 무릎 위치에 있다고 판단되어, 추가 상승 여력이 있을 것으로 예상됩니다.",
-  "push_message": "AI, 미래산업 투자 활발! 포스코홀딩스, AMD, Amazon 주목. 기술적 무릎 구간, 추가 상승 기대!"
+  "reason": "삼성전자는 2월 반도체 수출 급증의 수혜를 직접적으로 받을 것으로 예상되며, 최근 주가 조정으로 매수 매력이 높아졌습니다. (기술적 분석 필요). MSFT는 OpenAI와의 협력 강화 및 아마존과의 경쟁 구도 속에서 AI 분야의 리더십을 유지하고 있어 장기적인 성장 가능성이 높습니다. NVDA는 AI 반도체 시장의 압도적인 점유율을 바탕으로 지속적인 성장이 기대됩니다. 다만, 최근 주가 급등에 따른 변동성에 유의해야 합니다. 이 종목들은 시장의 변동성 속에서도 비교적 안정적인 수익을 기대할 수 있으며, 기술적 분석을 통해 매수 시점을 포착하는 것이 중요합니다.",
+  "push_message": "지정학적 리스크 속 삼성전자, MSFT, NVDA 주목. AI, 반도체 섹터 긍정적. 단기 변동성 주의."
 }
