@@ -397,5 +397,27 @@
       "마이크로소프트",
       "NVIDIA"
     ]
+  },
+  {
+    "date": "2026-03-03 08:15",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -0.69
+      },
+      {
+        "ticker": "마이크로소프트",
+        "change": 1.48
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": 2.99
+      }
+    ],
+    "predictions": [
+      "포스코홀딩스",
+      "Lockheed Martin",
+      "Microsoft"
+    ]
   }
 ]

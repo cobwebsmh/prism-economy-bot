@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-02 08:13",
+  "date": "2026-03-03 08:15",
   "market_info": {
     "KOSPI": {
       "price": 6244.13,
@@ -14,93 +14,97 @@
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6878.88,
-      "change": -0.43,
+      "price": 6881.62,
+      "change": 0.04,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22668.21,
-      "change": -0.92,
+      "price": 22748.86,
+      "change": 0.36,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "포스코홀딩스",
-      "change": 1.35
+      "ticker": "삼성전자",
+      "change": -0.69
     },
     {
-      "ticker": "AMD",
-      "change": -1.7
+      "ticker": "마이크로소프트",
+      "change": 1.48
     },
     {
-      "ticker": "Amazon",
-      "change": 1.0
+      "ticker": "NVIDIA",
+      "change": 2.99
     }
   ],
-  "summary": "시장은 중동 지역의 지정학적 긴장 고조와 암호화폐 시장의 변동성 확대 속에서 혼조세를 보이고 있습니다. 특히 호르무즈 해협 봉쇄 가능성, 이란 관련 지정학적 리스크, 그리고 OPEC+의 증산 결정 등이 유가 변동성을 키우며 시장에 영향을 주고 있습니다. AI, 반도체, 우주 통신 등 미래 기술 분야는 긍정적인 모멘텀을 유지하고 있지만, 전반적인 투자 심리는 지정학적 리스크에 의해 억눌린 상황입니다.",
+  "summary": "이란 사태로 인한 지정학적 리스크가 고조되며 유가 및 천연가스 가격이 급등하고, 유럽 증시가 급락하는 등 시장 심리가 위축되었습니다. 방산, 에너지 섹터에 대한 관심이 높아지는 가운데, AI 기술 발전과 스마트폰 시장 경쟁 심화에 대한 뉴스도 주목할 만합니다. 기술적으로는 유가 급등으로 인한 증시 조정 가능성을 염두에 두고, AI 및 5G 관련 기술주에 대한 장기적인 관점에서의 접근이 필요합니다.",
   "news_headlines": [
     {
-      "title": "'호르무즈 봉쇄 시 해상운임 최대 80% 폭증 가능성도' - 연합뉴스TV",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fM2xHN0tFaXNPellHS2M3TlJJNFA2YnRTTUYxQ1pFUDQwQ2RzU0dqUDY3Qjlzcm13SU1mMkRtS3NkWmpvVm1zSkhHcDNfYS04Uk9odmdQQWJqWGJRNTQ1Umd5bEI3emM?oc=5"
+      "title": "이란 사태에 유럽 증시 일제히 급락…유가·천연가스 급등 - 마켓인",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iM0N6Si15ejRBTHcyaEFMSV85akFTSGg0Q1l1eDFWWVFGZ2hhZHRPVi0xMlJmWVdPcHl4ZnJsdGdjTUFPUGlfcWZTZlAyQUNlQ0NSUVdZRnl0R1dvUFY2RTEwWkUyMUtFR3lQRV94c3I2NTg?oc=5"
     },
     {
-      "title": "[속보] 암호화폐, 전쟁 발발에 수직하락 … 하메네이 사망 소식에 상승 반전 - 뉴데일리 경제",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBtUk5NeUNIRzZTTnFEMzFQRXlaSU8xTEVPQnM2Yl9URmxSaVNBMS1ETDBTLW0wd1c4X2JwUllWYWQyOVdFQkpJN0hMLUZPMnhrbExNcnlWWjg1Ti0zblIzVnRVSE5QMFJDTnVvRXpTVEZQa2Z1QU80RWhydw?oc=5"
+      "title": "중동 정세 불안에 글로벌 방산 공급망 재편 속 K방산 기회 확대 - 글로벌이코노믹",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNXNLV1AwYU1BSlJCV0s0RGdFMDdOUF9QZkR3M2syRDJTTGtjWmFVSEctVjUzdTBZSXRRLXFTTDhzcjVOdFdfVnZYR1BXN0w1N1QyVUNfVXFKNWNaNzdDVHIyZ09RZzlMbjBaNFRZMmpqelpNZm5DOG5kZV9LeURsMm9teDctQQ?oc=5"
     },
     {
-      "title": "2월 수출 29% 증가... 반도체는 160% 늘며 역대 최대 실적 - 조선일보",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcC0wUHdudlJjVXNpWHpVR2xoWUZRUWJZa09VLWlmVUR5eTBDSWlyQ3pmRDh3UWRwb0xieDdGQ2lSM01WQXlhQTZLT2dRWm44NHNFYzVfSnNyVnRjUDlUR3BxNFZuMGpkbklmQlpJa3c0QlNqS3hOWVY5eWdCQ0d1U0ROemhxY09LZHBKWE1B0gGiAUFVX3lxTE9mZTRVQ204RGY1UmtZZ0dfN0RweVVDMlJ2dnJiUWxVTzloM1hFd1pxNGRtdWFZSHIzb3JvQ2tFcVFyRlFVMVRXZHdBSnNxdVFHbjEwcFQ1MUtpUl9uaTRTZURidW53NEpFZ3BMNkZveV9kbUg3alhTczE3c3dhVjFJWWhTdkY5ZlF6eDZuYVBKR180YU1uOG1fUXRkV2kwWVNWUQ?oc=5"
+      "title": "中 아너, 세계 최초 ‘로봇 폰’ 공개… 정체된 스마트폰 시장에 승부수 - 글로벌이코노믹",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUVNQWEkyWXAtZ1UxX3k3SFJYR2xobkZaUkpNbFpBUWRzY052bnBsWkV0ME9iTlFpQ29mRGxKYkdLMXdRRGRDR0ZWbENiODUtUVpJTDg1Z3FiN3MwajRPWTFfNVVrTDZmWnBzWHd2U0xPQ3pKdUMyUWViVWp1NFpucUIybm9zVHho?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "에너지",
       "sentiment": "HOT",
-      "reason": "중동 긴장 고조로 인한 유가 상승 기대감"
+      "reason": "이란 사태로 인한 유가 급등 및 에너지 공급 불안정"
     },
     {
-      "name": "반도체",
+      "name": "방산",
       "sentiment": "HOT",
-      "reason": "2월 수출 호조 및 AI 기술 발전의 핵심 동력"
+      "reason": "중동 정세 불안으로 인한 글로벌 방산 공급망 재편 및 K방산 기회 확대"
     },
     {
       "name": "AI",
-      "sentiment": "POSITIVE",
-      "reason": "다양한 산업 분야에 적용 확대 및 기술 혁신 지속"
+      "sentiment": "Positive",
+      "reason": "AI 기술이 스마트폰, 자동차 등 다양한 산업에 융합되며 성장 가능성 증대"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "포스코홀딩스",
+      "symbol": "005490.KS"
     },
     {
-      "name": "마이크로소프트",
+      "name": "Lockheed Martin",
+      "symbol": "LMT"
+    },
+    {
+      "name": "Microsoft",
       "symbol": "MSFT"
-    },
-    {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
     }
   ],
   "keywords": [
     {
-      "name": "지정학적 리스크",
+      "name": "이란",
       "weight": 25
+    },
+    {
+      "name": "유가",
+      "weight": 20
     },
     {
       "name": "AI",
       "weight": 15
     },
     {
-      "name": "반도체",
-      "weight": 15
+      "name": "방산",
+      "weight": 10
     },
     {
-      "name": "수출 증가",
+      "name": "스마트폰",
       "weight": 10
     },
     {
@@ -108,18 +112,14 @@
       "weight": 10
     },
     {
-      "name": "우주 통신",
+      "name": "금리",
       "weight": 5
     },
     {
-      "name": "금리",
-      "weight": 10
-    },
-    {
-      "name": "암호화폐",
-      "weight": 10
+      "name": "부동산",
+      "weight": 5
     }
   ],
-  "reason": "삼성전자는 2월 반도체 수출 급증의 수혜를 직접적으로 받을 것으로 예상되며, 최근 주가 조정으로 매수 매력이 높아졌습니다. (기술적 분석 필요). MSFT는 OpenAI와의 협력 강화 및 아마존과의 경쟁 구도 속에서 AI 분야의 리더십을 유지하고 있어 장기적인 성장 가능성이 높습니다. NVDA는 AI 반도체 시장의 압도적인 점유율을 바탕으로 지속적인 성장이 기대됩니다. 다만, 최근 주가 급등에 따른 변동성에 유의해야 합니다. 이 종목들은 시장의 변동성 속에서도 비교적 안정적인 수익을 기대할 수 있으며, 기술적 분석을 통해 매수 시점을 포착하는 것이 중요합니다.",
-  "push_message": "지정학적 리스크 속 삼성전자, MSFT, NVDA 주목. AI, 반도체 섹터 긍정적. 단기 변동성 주의."
+  "reason": "포스코홀딩스는 리튬 등 2차전지 소재 사업을 추진 중이며, 최근 주가 조정으로 인해 기술적으로 매력적인 위치에 있습니다. LMT(Lockheed Martin)는 지정학적 리스크 증가에 따른 수혜가 예상되며, MSFT(Microsoft)는 AI 기술 경쟁력 강화 및 클라우드 사업 성장 지속으로 장기적인 투자 가치가 높다고 판단됩니다. 세 종목 모두 과매수 구간을 벗어나 안정적인 투자 포트폴리오를 구성하는데 기여할 수 있습니다.",
+  "push_message": "이란 사태로 인한 시장 불안정, 에너지/방산 섹터 주목. 포스코홀딩스, 록히드마틴, 마이크로소프트 추천."
 }
