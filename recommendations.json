@@ -1,75 +1,75 @@
 {
-  "date": "2026-03-03 08:15",
+  "date": "2026-03-04 08:15",
   "market_info": {
     "KOSPI": {
-      "price": 6244.13,
-      "change": -1.0,
+      "price": 5791.91,
+      "change": -7.24,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1192.78,
-      "change": 0.39,
+      "price": 1137.7,
+      "change": -4.62,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6881.62,
-      "change": 0.04,
+      "price": 6816.63,
+      "change": -0.94,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22748.86,
-      "change": 0.36,
+      "price": 22516.69,
+      "change": -1.02,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -0.69
+      "ticker": "포스코홀딩스",
+      "change": -9.32
     },
     {
-      "ticker": "마이크로소프트",
-      "change": 1.48
+      "ticker": "Lockheed Martin",
+      "change": -1.31
     },
     {
-      "ticker": "NVIDIA",
-      "change": 2.99
+      "ticker": "Microsoft",
+      "change": 1.35
     }
   ],
-  "summary": "이란 사태로 인한 지정학적 리스크가 고조되며 유가 및 천연가스 가격이 급등하고, 유럽 증시가 급락하는 등 시장 심리가 위축되었습니다. 방산, 에너지 섹터에 대한 관심이 높아지는 가운데, AI 기술 발전과 스마트폰 시장 경쟁 심화에 대한 뉴스도 주목할 만합니다. 기술적으로는 유가 급등으로 인한 증시 조정 가능성을 염두에 두고, AI 및 5G 관련 기술주에 대한 장기적인 관점에서의 접근이 필요합니다.",
+  "summary": "현재 시장은 중동의 지정학적 리스크, 특히 이란의 공습과 호르무즈 해협 봉쇄 가능성으로 인해 불안정한 모습을 보이고 있습니다. 이는 유가 급등과 인플레이션 우려를 자극하며, 뉴욕 증시의 하락을 초래했습니다. 동시에, AI 기술 발전과 6G 통신 경쟁, 그리고 기업들의 혁신적인 시도들이 긍정적인 모멘텀으로 작용하고 있습니다.",
   "news_headlines": [
     {
-      "title": "이란 사태에 유럽 증시 일제히 급락…유가·천연가스 급등 - 마켓인",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9iM0N6Si15ejRBTHcyaEFMSV85akFTSGg0Q1l1eDFWWVFGZ2hhZHRPVi0xMlJmWVdPcHl4ZnJsdGdjTUFPUGlfcWZTZlAyQUNlQ0NSUVdZRnl0R1dvUFY2RTEwWkUyMUtFR3lQRV94c3I2NTg?oc=5"
+      "title": "원·달러 환율 한때 1500원 돌파…금융위기 이후 17년만 - 한겨레",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9RYV9jVHJsNU9LU0dyX25Ydlc0RU1odk1RcEhzeXVZTWdXQW5DTndjZWVOREZOcXg4c09XVGp2d1c4Umdob3ktTmMyVU9MOWFUZ1lOUjZzQmNidkgxR0FrTXVKbV9hSkhnNThDbS1YTQ?oc=5"
     },
     {
-      "title": "중동 정세 불안에 글로벌 방산 공급망 재편 속 K방산 기회 확대 - 글로벌이코노믹",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNXNLV1AwYU1BSlJCV0s0RGdFMDdOUF9QZkR3M2syRDJTTGtjWmFVSEctVjUzdTBZSXRRLXFTTDhzcjVOdFdfVnZYR1BXN0w1N1QyVUNfVXFKNWNaNzdDVHIyZ09RZzlMbjBaNFRZMmpqelpNZm5DOG5kZV9LeURsMm9teDctQQ?oc=5"
+      "title": "호르무즈 해협 봉쇄 충격파···뉴욕 증시 3대 지수 일제히 하락 마감 - 경향신문",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSTGZxQkNoQ1puUGQwUVhlekExUmFMNE41dU9IMTZIYl9uQWNsZm5CRzFZXzlxRjMxZDA1QzRmOVd6NkRGRmVMajJKejJXYzVnemlsRXEwdDFOQdIBX0FVX3lxTE94dGdBNkx6WFlkd0picy1HamZRWWtmVURDLWtYRXBtcDJpTnJaYl90ZVFkZ0ZDYldFLThfTHlXYTFtN0kzOW5FbFYzeGpBNjVHOVhOclRLb3FDRS01Y3Nn?oc=5"
     },
     {
-      "title": "中 아너, 세계 최초 ‘로봇 폰’ 공개… 정체된 스마트폰 시장에 승부수 - 글로벌이코노믹",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUVNQWEkyWXAtZ1UxX3k3SFJYR2xobkZaUkpNbFpBUWRzY052bnBsWkV0ME9iTlFpQ29mRGxKYkdLMXdRRGRDR0ZWbENiODUtUVpJTDg1Z3FiN3MwajRPWTFfNVVrTDZmWnBzWHd2U0xPQ3pKdUMyUWViVWp1NFpucUIybm9zVHho?oc=5"
+      "title": "[속보] “호르무즈 해협 폐쇄 이어 세계 2위 유전 원유 생산 전면 중단” - 천지일보",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1UZWFyc21teFVubC1tNXpQaUhaQ3FaVXVPcEROMXBsZHVIWWRXLTlkOHl5M25uMDZpZ09BTklVSlhISFNneUFuRDNfaVBsWlVCeDhWakdaTnV2UFEwWmR5a3A0OEJQaURvVmc?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "에너지",
       "sentiment": "HOT",
-      "reason": "이란 사태로 인한 유가 급등 및 에너지 공급 불안정"
-    },
-    {
-      "name": "방산",
-      "sentiment": "HOT",
-      "reason": "중동 정세 불안으로 인한 글로벌 방산 공급망 재편 및 K방산 기회 확대"
+      "reason": "중동 불안으로 인한 유가 상승 및 관련 기업 주가 강세"
     },
     {
       "name": "AI",
-      "sentiment": "Positive",
-      "reason": "AI 기술이 스마트폰, 자동차 등 다양한 산업에 융합되며 성장 가능성 증대"
+      "sentiment": "HOT",
+      "reason": "AI 기술 경쟁 심화 및 새로운 기능 출시 경쟁"
+    },
+    {
+      "name": "통신 (6G)",
+      "sentiment": "Neutral",
+      "reason": "차세대 통신 기술 개발 경쟁 본격화"
     }
   ],
   "tickers": [
@@ -78,48 +78,56 @@
       "symbol": "005490.KS"
     },
     {
-      "name": "Lockheed Martin",
-      "symbol": "LMT"
+      "name": "NVIDIA",
+      "symbol": "NVDA"
     },
     {
-      "name": "Microsoft",
-      "symbol": "MSFT"
+      "name": "애플",
+      "symbol": "AAPL"
     }
   ],
   "keywords": [
     {
-      "name": "이란",
-      "weight": 25
-    },
-    {
-      "name": "유가",
+      "name": "이란 공습",
       "weight": 20
     },
     {
-      "name": "AI",
+      "name": "호르무즈 해협",
       "weight": 15
     },
     {
-      "name": "방산",
+      "name": "유가 상승",
+      "weight": 15
+    },
+    {
+      "name": "AI 기술",
+      "weight": 12
+    },
+    {
+      "name": "6G 통신",
       "weight": 10
     },
     {
-      "name": "스마트폰",
-      "weight": 10
+      "name": "인플레이션",
+      "weight": 8
     },
     {
-      "name": "에너지",
-      "weight": 10
+      "name": "스페이스X",
+      "weight": 7
     },
     {
-      "name": "금리",
+      "name": "소비 위축",
       "weight": 5
     },
     {
-      "name": "부동산",
-      "weight": 5
+      "name": "금리 급등",
+      "weight": 4
+    },
+    {
+      "name": "로봇",
+      "weight": 4
     }
   ],
-  "reason": "포스코홀딩스는 리튬 등 2차전지 소재 사업을 추진 중이며, 최근 주가 조정으로 인해 기술적으로 매력적인 위치에 있습니다. LMT(Lockheed Martin)는 지정학적 리스크 증가에 따른 수혜가 예상되며, MSFT(Microsoft)는 AI 기술 경쟁력 강화 및 클라우드 사업 성장 지속으로 장기적인 투자 가치가 높다고 판단됩니다. 세 종목 모두 과매수 구간을 벗어나 안정적인 투자 포트폴리오를 구성하는데 기여할 수 있습니다.",
-  "push_message": "이란 사태로 인한 시장 불안정, 에너지/방산 섹터 주목. 포스코홀딩스, 록히드마틴, 마이크로소프트 추천."
+  "reason": "포스코홀딩스(005490.KS): 원자재 가격 상승 수혜 및 정부의 자원 개발 정책 기대감으로 상승 여력 존재. 현재 주가는 상승 추세 초입 단계로 판단.\nNVIDIA(NVDA): AI 기술 발전의 핵심 수혜주로서, 데이터센터 수요 증가 및 신제품 출시 기대감. 기술적 분석상, 최근 조정 이후 재상승 가능성이 높음.\n애플(AAPL): MWC 2026에서 공개된 새로운 모바일 기술의 잠재적 수혜. 기술적 분석상, 견조한 실적과 혁신적인 제품 출시 기대로 꾸준한 성장 기대.",
+  "push_message": "중동 리스크 지속, 유가 급등 및 AI 기술 발전 주목. 포스코홀딩스, NVIDIA, 애플 매수 고려."
 }
