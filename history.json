@@ -441,5 +441,27 @@
       "NVIDIA",
       "애플"
     ]
+  },
+  {
+    "date": "2026-03-05 08:19",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": -14.15
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": 1.66
+      },
+      {
+        "ticker": "애플",
+        "change": -0.47
+      }
+    ],
+    "predictions": [
+      "포스코홀딩스",
+      "NVIDIA",
+      "Amazon"
+    ]
   }
 ]
