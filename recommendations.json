@@ -1,27 +1,27 @@
 {
-  "date": "2026-03-05 08:19",
+  "date": "2026-03-06 08:43",
   "market_info": {
     "KOSPI": {
-      "price": 5093.54,
-      "change": -12.06,
+      "price": 5583.9,
+      "change": 9.63,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 978.44,
-      "change": -14.0,
+      "price": 1116.41,
+      "change": 14.1,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6869.5,
-      "change": 0.78,
+      "price": 6830.71,
+      "change": -0.56,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22807.48,
-      "change": 1.29,
+      "price": 22748.99,
+      "change": -0.26,
       "is_open": false,
       "status": "⚪"
     }
@@ -29,47 +29,47 @@
   "past_results": [
     {
       "ticker": "포스코홀딩스",
-      "change": -14.15
+      "change": 7.78
     },
     {
       "ticker": "NVIDIA",
-      "change": 1.66
+      "change": 0.16
     },
     {
-      "ticker": "애플",
-      "change": -0.47
+      "ticker": "Amazon",
+      "change": 0.98
     }
   ],
-  "summary": "시장은 극심한 변동성을 보이고 있으며, 지정학적 리스크와 금리 인상 우려가 투자 심리를 위축시키고 있습니다. 특히 한국 증시는 9·11 테러 당시보다 더 큰 폭으로 하락하며 투자자들의 불안감이 고조되고 있습니다. 다만, 일부 전문가들은 증시의 추세적 하락 가능성은 낮다고 전망하며, 금융 당국도 시장 안정화를 위해 적극적으로 대응할 것으로 예상됩니다.",
+  "summary": "최근 시장은 이란 갈등과 유가 상승으로 인해 변동성이 확대되는 모습입니다. 국내 시장은 반도체 수출 호조와 경상수지 흑자에도 불구하고 글로벌 리스크에 영향을 받고 있으며, 투자 심리는 다소 위축된 상태입니다. 하지만, 일부 투자자들은 지수 폭락을 저가 매수의 기회로 활용하며 레버리지 ETF를 매수하는 등 긍정적인 움직임도 보이고 있습니다.",
   "news_headlines": [
     {
-      "title": "[증시-마감] 9·11 때보다 더 빠진 코스피…시총 672조 증발 '아비규환' - 연합인포맥스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1VY0JUREx4UGJrQTNMNDE3X1VuSXkwZC1tcmlvWnNYNzJpb1UzWUl6OXliXy00QmQzTTVZZUk4N2k1RHdOUV9zZnQ1SkZnZ0VHQmNGYzFrc19HaklGM0tWeHhxMTVmemFmSEl6VmJwa1Y?oc=5"
+      "title": "뉴욕증시, 이란 갈등·유가 상승에 하락 출발 - 연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51NDBlLV9jSjF4Yld4SE1UcGRmQ3NkYXBaZHF4MzhqalFMYWUtZXRpZTB2bkV5aVFWbDZ5NDI3d0hsOWRCWUJZT3RUM0ZKXzBhYzFGUG5PYTdDSFVnMkgxMkJRSzJ5S2V2M2o4dmtacW4?oc=5"
     },
     {
-      "title": "‘금융위기 이후 처음’ 환율도 쇼크…한은 총재 긴급회의 - JTBC",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5PWWlyczZjWUVsSmZWVUZiZko5NmVfbVhZakhveGhaYWFCRDNEcXdVSXpVdXZzN3lYVGRrdUIxYlUtdVpSYU9ScERreXpNZXF5NXp1dA?oc=5"
+      "title": "'나도 살걸' 지수폭락 4일 1조3800억 레버리지ETF 산 개미들 - v.daum.net",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VeXJYQlkxOUpIWFEtWHY0UG5QM0h1blBTVFFjNUxIdEl5Sk5USFdzQTRTLUctQThFa3NBdlVLMTR5V0UyUUFoNkcxUGxaUmc?oc=5"
     },
     {
-      "title": "금융위 '증시 추세적 하락 가능성 낮아…시장 교란행위 엄단' - 한국경제",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB2cnhFV2VHcG9DUjNDQTRoRWE2ZFVhUzQyUTN0Q3JUc0JpRnYwd0lFTHhUNHNvRkZFM1FQazBuY2FtQU04QkN4STQ1QjRxcUlKbmZIVVhOanpYUdIBVEFVX3lxTE9INUJZSTdndkt4VTUzZWJzLWdFbEZaWWR6b1VSV3UtNEpkaHFHRTdWdDJCLXhldWh2cVQxblpQem9zY3FiWXdiRFpBMGEya2tzUjZXcg?oc=5"
+      "title": "반도체 수출 103%↑…1월 경상수지 133억달러 흑자 - 한국경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVUDZuZHVGV2hjYUhYamM4TmRiQmRGMTQxT20wVFdDZXpCSG9kN2lLZDA5dTk4TmxraEU0bGNYcGVLbTZTNGYwTE03SXpOQWZOdkJPcUpVTXBMUdIBVEFVX3lxTFAxUGRURlZETUZZUkxNYWp2R3Ffb2M4Y0VNQ09JT1JKaGZJZVVMcU9IeDBCcXNEME5iT0FWODhMa2hJamNVMTJTeHU0N2NhS2t2bjRFUA?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "로봇",
+      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "휴머노이드 로봇 개발 및 상용화 관련 뉴스가 다수 보도되며 성장 기대감을 높이고 있음"
+      "reason": "수출 증가율이 높고, 관련 기업들의 실적 개선 기대감이 높음."
     },
     {
-      "name": "디지털 자산",
-      "sentiment": "HOT",
-      "reason": "트럼프 전 대통령의 디지털 자산 법안 통과 압박 및 관련 기업 주가 상승"
+      "name": "에너지",
+      "sentiment": "Neutral",
+      "reason": "이란 갈등으로 인한 유가 상승 가능성이 존재하지만, 주병기 공정위원장의 주유소 판매가 모니터링 발언으로 가격 상승이 제한될 수 있음."
     },
     {
-      "name": "기술 인프라",
-      "sentiment": "NEUTRAL",
-      "reason": "AI 데이터센터 구축 경쟁 및 클라우드 이전 가속화"
+      "name": "AI",
+      "sentiment": "Positive",
+      "reason": "SKT의 AI 혁신 전략 제안, 뉴로모픽 비전 기술 발전 등 지속적인 성장 가능성이 엿보임."
     }
   ],
   "tickers": [
@@ -78,56 +78,56 @@
       "symbol": "005490.KS"
     },
     {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
+      "name": "Broadcom",
+      "symbol": "AVGO"
     },
     {
-      "name": "Amazon",
-      "symbol": "AMZN"
+      "name": "United Airlines Holdings Inc",
+      "symbol": "UAL"
     }
   ],
   "keywords": [
     {
-      "name": "증시 폭락",
-      "weight": 20
-    },
-    {
-      "name": "휴머노이드 로봇",
+      "name": "이란 갈등",
       "weight": 15
     },
     {
-      "name": "디지털 자산",
-      "weight": 12
-    },
-    {
-      "name": "이란",
+      "name": "유가 상승",
       "weight": 10
     },
     {
-      "name": "AI 데이터센터",
-      "weight": 10
+      "name": "반도체 수출",
+      "weight": 20
     },
     {
-      "name": "금리 인상",
-      "weight": 8
-    },
-    {
-      "name": "클라우드 이전",
-      "weight": 8
-    },
-    {
-      "name": "식품 리콜",
-      "weight": 7
-    },
-    {
-      "name": "특허 소송",
+      "name": "경상수지 흑자",
       "weight": 5
     },
     {
-      "name": "CEO",
+      "name": "AI",
+      "weight": 15
+    },
+    {
+      "name": "레버리지 ETF",
+      "weight": 10
+    },
+    {
+      "name": "물가 상승",
+      "weight": 10
+    },
+    {
+      "name": "환율 하락",
+      "weight": 5
+    },
+    {
+      "name": "주가 조작",
+      "weight": 5
+    },
+    {
+      "name": "테라파워",
       "weight": 5
     }
   ],
-  "reason": "포스코홀딩스는 2차전지 소재 사업 확장에 대한 기대감이 있으며, 최근 주가 하락으로 인해 기술적으로 '무릎' 위치에 있다고 판단됩니다. NVIDIA는 AI 데이터센터 구축 경쟁 심화의 수혜주로, 장기적인 성장 가능성이 높습니다. Amazon은 클라우드 서비스 시장을 선도하고 있으며, AI 데이터센터 관련 투자 확대로 추가적인 성장 동력을 확보할 것으로 예상됩니다. 특히 이란의 아마존 데이터센터 공격 뉴스는 오히려 아마존의 클라우드 보안 강화에 대한 필요성을 부각시키며 장기적인 투자 관점에서 매력적입니다.",
-  "push_message": "금일 시장은 변동성이 크며, 지정학적 리스크와 금리 인상 우려가 있습니다. 관심 섹터는 로봇, 디지털 자산이며, 포스코홀딩스, NVIDIA, Amazon을 추천합니다."
+  "reason": "포스코홀딩스(005490.KS)는 건설, 에너지 관련 이슈로 꾸준한 관심을 받을 수 있으며, 국내 주식 시장의 반등 시 수혜를 기대할 수 있습니다. Broadcom(AVGO)은 Nvidia의 실적 부진에도 불구하고 견조한 주가 흐름을 보이고 있으며, 기술적 분석 상 '무릎' 위치에 있다고 판단됩니다. United Airlines Holdings Inc(UAL)은 헤드폰 미착용 승객 영구적 탑승 금지라는 특이한 이슈가 있었지만, 이는 오히려 항공사의 안전 및 질서 유지 노력을 보여주는 것으로 해석될 수 있습니다.",
+  "push_message": "오늘 시장은 이란 갈등, 유가 상승 등 불안정한 요인에도 불구하고 반도체 수출 호조 등 긍정적인 신호도 보이고 있습니다. 포스코홀딩스, Broadcom, United Airlines Holdings Inc 관심 가져보세요."
 }
