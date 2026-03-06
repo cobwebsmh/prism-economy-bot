@@ -485,5 +485,27 @@
       "Broadcom",
       "United Airlines Holdings Inc"
     ]
+  },
+  {
+    "date": "2026-03-07 08:17",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": 2.02
+      },
+      {
+        "ticker": "Broadcom",
+        "change": -0.69
+      },
+      {
+        "ticker": "United Airlines Holdings Inc",
+        "change": -3.52
+      }
+    ],
+    "predictions": [
+      "포스코홀딩스",
+      "Chevron",
+      "iRobot"
+    ]
   }
 ]

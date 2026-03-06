@@ -1,27 +1,27 @@
 {
-  "date": "2026-03-06 08:43",
+  "date": "2026-03-07 08:17",
   "market_info": {
     "KOSPI": {
-      "price": 5583.9,
-      "change": 9.63,
+      "price": 5584.87,
+      "change": 0.02,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1116.41,
-      "change": 14.1,
+      "price": 1154.67,
+      "change": 3.43,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6830.71,
-      "change": -0.56,
+      "price": 6740.02,
+      "change": -1.33,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22748.99,
-      "change": -0.26,
+      "price": 22387.68,
+      "change": -1.59,
       "is_open": false,
       "status": "⚪"
     }
@@ -29,47 +29,47 @@
   "past_results": [
     {
       "ticker": "포스코홀딩스",
-      "change": 7.78
+      "change": 2.02
     },
     {
-      "ticker": "NVIDIA",
-      "change": 0.16
+      "ticker": "Broadcom",
+      "change": -0.69
     },
     {
-      "ticker": "Amazon",
-      "change": 0.98
+      "ticker": "United Airlines Holdings Inc",
+      "change": -3.52
     }
   ],
-  "summary": "최근 시장은 이란 갈등과 유가 상승으로 인해 변동성이 확대되는 모습입니다. 국내 시장은 반도체 수출 호조와 경상수지 흑자에도 불구하고 글로벌 리스크에 영향을 받고 있으며, 투자 심리는 다소 위축된 상태입니다. 하지만, 일부 투자자들은 지수 폭락을 저가 매수의 기회로 활용하며 레버리지 ETF를 매수하는 등 긍정적인 움직임도 보이고 있습니다.",
+  "summary": "주말 휴장으로 인해 시장은 관망세가 짙은 가운데, 유가 급등 및 고용 지표 악화로 인해 투자 심리가 위축되고 있습니다. 특히 이란 관련 지정학적 리스크와 카타르 헬륨 공급 차질 우려가 복합적으로 작용하며 불확실성이 증폭되고 있습니다. 다만, 일부에서는 AI 및 로봇 관련 기술 발전, 그리고 일부 품목의 가격 인상 가능성이 긍정적으로 작용할 수 있다는 분석도 제기됩니다.",
   "news_headlines": [
     {
-      "title": "뉴욕증시, 이란 갈등·유가 상승에 하락 출발 - 연합인포맥스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51NDBlLV9jSjF4Yld4SE1UcGRmQ3NkYXBaZHF4MzhqalFMYWUtZXRpZTB2bkV5aVFWbDZ5NDI3d0hsOWRCWUJZT3RUM0ZKXzBhYzFGUG5PYTdDSFVnMkgxMkJRSzJ5S2V2M2o4dmtacW4?oc=5"
+      "title": "비트코인 6만8천달러선으로…美 고용지표 악화에 3.5% 급락 - 연합인포맥스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8zSk16THk3RUkxcGRLUXVQWEpMNGtFNEdlNXZCb1o5Z0hILXZGaTRHN21EUnNCV0Y2V0J1cDE3ZmRJbnk1eUxSRHp6RWp4bEd2N0RKZlY4VDdvSEFnZS13LUcxQ2ozTFhMLUd4WDRJd2g?oc=5"
     },
     {
-      "title": "'나도 살걸' 지수폭락 4일 1조3800억 레버리지ETF 산 개미들 - v.daum.net",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5VeXJYQlkxOUpIWFEtWHY0UG5QM0h1blBTVFFjNUxIdEl5Sk5USFdzQTRTLUctQThFa3NBdlVLMTR5V0UyUUFoNkcxUGxaUmc?oc=5"
+      "title": "뉴욕증시, 유가급등·고용위축에 하락 마감…다우 1%↓ - KBS 뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92WjVoZ2k4NXNLWGozNmoxVzNmbms0d2ZCMV9FZ3dsVUlLWEluVDNQVUZWY2Z4UVhGLUNRTDNsS1RjbVBBRHRIam9lMWZEeEIxeWY4M1E1YmtHLTQ?oc=5"
     },
     {
-      "title": "반도체 수출 103%↑…1월 경상수지 133억달러 흑자 - 한국경제",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVUDZuZHVGV2hjYUhYamM4TmRiQmRGMTQxT20wVFdDZXpCSG9kN2lLZDA5dTk4TmxraEU0bGNYcGVLbTZTNGYwTE03SXpOQWZOdkJPcUpVTXBMUdIBVEFVX3lxTFAxUGRURlZETUZZUkxNYWp2R3Ffb2M4Y0VNQ09JT1JKaGZJZVVMcU9IeDBCcXNEME5iT0FWODhMa2hJamNVMTJTeHU0N2NhS2t2bjRFUA?oc=5"
+      "title": "이란 전쟁 터지자 “석탄 미리 사두자” 난리…가스 가격 뛰니 덩달아 급등 - 매일경제",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MV2x5eUNWS0p5SmE4dFY2akpLQUJQRHFKbGtHR2RLaHpJOGZTcm51eVU4NVZFMGhtQTIxVjB3ME1yY2c3dFBuQUpRcVdyODFQUXpKWXJB?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체",
+      "name": "에너지 (석유, 석탄)",
       "sentiment": "HOT",
-      "reason": "수출 증가율이 높고, 관련 기업들의 실적 개선 기대감이 높음."
+      "reason": "이란 갈등, 유가 급등, 카타르 생산 중단 가능성 등으로 인한 가격 상승 기대"
     },
     {
-      "name": "에너지",
-      "sentiment": "Neutral",
-      "reason": "이란 갈등으로 인한 유가 상승 가능성이 존재하지만, 주병기 공정위원장의 주유소 판매가 모니터링 발언으로 가격 상승이 제한될 수 있음."
+      "name": "AI & 로봇",
+      "sentiment": "중립",
+      "reason": "기술 발전 지속, 산업 전반에 걸친 활용 확대 기대"
     },
     {
-      "name": "AI",
-      "sentiment": "Positive",
-      "reason": "SKT의 AI 혁신 전략 제안, 뉴로모픽 비전 기술 발전 등 지속적인 성장 가능성이 엿보임."
+      "name": "반도체",
+      "sentiment": "경계",
+      "reason": "헬륨 공급 차질 우려, 메모리 수요 견인 기대 혼재"
     }
   ],
   "tickers": [
@@ -78,56 +78,48 @@
       "symbol": "005490.KS"
     },
     {
-      "name": "Broadcom",
-      "symbol": "AVGO"
+      "name": "Chevron",
+      "symbol": "CVX"
     },
     {
-      "name": "United Airlines Holdings Inc",
-      "symbol": "UAL"
+      "name": "iRobot",
+      "symbol": "IRBT"
     }
   ],
   "keywords": [
     {
-      "name": "이란 갈등",
+      "name": "유가급등",
+      "weight": 25
+    },
+    {
+      "name": "고용지표악화",
       "weight": 15
     },
     {
-      "name": "유가 상승",
-      "weight": 10
-    },
-    {
-      "name": "반도체 수출",
-      "weight": 20
-    },
-    {
-      "name": "경상수지 흑자",
-      "weight": 5
+      "name": "이란갈등",
+      "weight": 15
     },
     {
       "name": "AI",
-      "weight": 15
-    },
-    {
-      "name": "레버리지 ETF",
       "weight": 10
     },
     {
-      "name": "물가 상승",
+      "name": "로봇",
       "weight": 10
     },
     {
-      "name": "환율 하락",
-      "weight": 5
+      "name": "헬륨대란",
+      "weight": 10
     },
     {
-      "name": "주가 조작",
-      "weight": 5
+      "name": "인플레이션",
+      "weight": 10
     },
     {
-      "name": "테라파워",
+      "name": "반도체",
       "weight": 5
     }
   ],
-  "reason": "포스코홀딩스(005490.KS)는 건설, 에너지 관련 이슈로 꾸준한 관심을 받을 수 있으며, 국내 주식 시장의 반등 시 수혜를 기대할 수 있습니다. Broadcom(AVGO)은 Nvidia의 실적 부진에도 불구하고 견조한 주가 흐름을 보이고 있으며, 기술적 분석 상 '무릎' 위치에 있다고 판단됩니다. United Airlines Holdings Inc(UAL)은 헤드폰 미착용 승객 영구적 탑승 금지라는 특이한 이슈가 있었지만, 이는 오히려 항공사의 안전 및 질서 유지 노력을 보여주는 것으로 해석될 수 있습니다.",
-  "push_message": "오늘 시장은 이란 갈등, 유가 상승 등 불안정한 요인에도 불구하고 반도체 수출 호조 등 긍정적인 신호도 보이고 있습니다. 포스코홀딩스, Broadcom, United Airlines Holdings Inc 관심 가져보세요."
+  "reason": "포스코홀딩스: 한국 주식 시장의 대표적인 기업으로, 철강 산업 외에도 리튬 등 신성장 동력 확보에 나서고 있어 장기적인 성장 가능성이 있습니다. 최근 주가 조정으로 인해 밸류에이션 매력이 부각될 수 있습니다.\nChevron: 유가 급등의 수혜를 직접적으로 받을 수 있는 에너지 기업입니다. 이란 갈등 심화 시 유가 상승은 더욱 가팔라질 수 있으며, Chevron은 안정적인 생산 능력을 바탕으로 이익을 확보할 것으로 예상됩니다. \niRobot: 로봇 산업의 성장과 함께 가정용 로봇 시장을 선도하는 기업입니다. 최근 주가 하락으로 인해 매수 기회가 발생할 수 있으며, 기술 혁신을 통해 시장 점유율을 확대해 나갈 것으로 기대됩니다.",
+  "push_message": "유가 급등, 고용 지표 악화, 이란 갈등 심화 등 시장 불확실성 증대. 포스코홀딩스, Chevron, iRobot 관심 필요."
 }
