@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-07 08:17",
+  "date": "2026-03-08 08:12",
   "market_info": {
     "KOSPI": {
       "price": 5584.87,
@@ -32,44 +32,40 @@
       "change": 2.02
     },
     {
-      "ticker": "Broadcom",
-      "change": -0.69
-    },
-    {
-      "ticker": "United Airlines Holdings Inc",
-      "change": -3.52
+      "ticker": "Chevron",
+      "change": 0.02
     }
   ],
-  "summary": "주말 휴장으로 인해 시장은 관망세가 짙은 가운데, 유가 급등 및 고용 지표 악화로 인해 투자 심리가 위축되고 있습니다. 특히 이란 관련 지정학적 리스크와 카타르 헬륨 공급 차질 우려가 복합적으로 작용하며 불확실성이 증폭되고 있습니다. 다만, 일부에서는 AI 및 로봇 관련 기술 발전, 그리고 일부 품목의 가격 인상 가능성이 긍정적으로 작용할 수 있다는 분석도 제기됩니다.",
+  "summary": "주말 휴장으로 인해 시장은 관망세가 유지되고 있으며, 국제 유가 급등과 이란 관련 지정학적 리스크가 시장의 주요 불안 요인으로 작용하고 있습니다. 동시에 AI 기술 발전과 관련된 긍정적인 뉴스도 혼재하며, 투자 심리는 변동성이 큰 상황입니다. 특히, 유가 상승은 인플레이션 우려를 자극하며 연준의 금리 인하 기대감을 약화시키는 요인으로 작용하고 있습니다.",
   "news_headlines": [
     {
-      "title": "비트코인 6만8천달러선으로…美 고용지표 악화에 3.5% 급락 - 연합인포맥스",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8zSk16THk3RUkxcGRLUXVQWEpMNGtFNEdlNXZCb1o5Z0hILXZGaTRHN21EUnNCV0Y2V0J1cDE3ZmRJbnk1eUxSRHp6RWp4bEd2N0RKZlY4VDdvSEFnZS13LUcxQ2ozTFhMLUd4WDRJd2g?oc=5"
+      "title": "'기름값 2천원 시대' 눈앞…정부, 30년만에 가격상한제 꺼내나 - 연합뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PUEdUMzk1cjgtMjRCcDZ5eGR4R2h4bVljQUwtQW4wOXZnaDFRdFdEVUxueEk5em1FbTY0ODBDZ3BDNXBVb0k4ODlVODVvY0FDTDJHNnNNek9rREnSAWBBVV95cUxQalQ1b2JwUTFQTkhXckd2ZWJxQ1ZHN0p4R3RiUUNBdlZNdTY5ZUxaSC1EMTVNd0ZfbG9KTUJfZXRxczFIVmpOdWxqV2cydjItUnAtTEVNN1RzaXNiWmhPbkg?oc=5"
     },
     {
-      "title": "뉴욕증시, 유가급등·고용위축에 하락 마감…다우 1%↓ - KBS 뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92WjVoZ2k4NXNLWGozNmoxVzNmbms0d2ZCMV9FZ3dsVUlLWEluVDNQVUZWY2Z4UVhGLUNRTDNsS1RjbVBBRHRIam9lMWZEeEIxeWY4M1E1YmtHLTQ?oc=5"
+      "title": "국제유가 90달러 돌파에 70년대식 오일쇼크 우려…세계 경제 흔드나 - 문화일보",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qOWN4WHR0blJsdm9qVkRYaXk5YTk2ZndERkpMTERGN1JKc3ZSZHh2bWdlVmZPUU1DUHlMZ2xwVlhfZWt1bExBZERHUzlDN2hE?oc=5"
     },
     {
-      "title": "이란 전쟁 터지자 “석탄 미리 사두자” 난리…가스 가격 뛰니 덩달아 급등 - 매일경제",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MV2x5eUNWS0p5SmE4dFY2akpLQUJQRHFKbGtHR2RLaHpJOGZTcm51eVU4NVZFMGhtQTIxVjB3ME1yY2c3dFBuQUpRcVdyODFQUXpKWXJB?oc=5"
+      "title": "티엑스알로보틱스, ‘AI 피스피킹 로봇’ 공개… 물류 자동화 확장 전략 제시 - 산업일보",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9FWmlwUXJsUFR3NHNhc3RLb1pCV0hTaVQ2aFdIWXplclVFb0lXM2QwRmF6TlVYQm1QX3lGejh4S1kyYjZN?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지 (석유, 석탄)",
+      "name": "에너지",
       "sentiment": "HOT",
-      "reason": "이란 갈등, 유가 급등, 카타르 생산 중단 가능성 등으로 인한 가격 상승 기대"
+      "reason": "국제 유가 급등 및 공급망 불안"
     },
     {
-      "name": "AI & 로봇",
-      "sentiment": "중립",
-      "reason": "기술 발전 지속, 산업 전반에 걸친 활용 확대 기대"
+      "name": "AI & 로보틱스",
+      "sentiment": "HOT",
+      "reason": "물류 자동화 및 기술 혁신"
     },
     {
-      "name": "반도체",
-      "sentiment": "경계",
-      "reason": "헬륨 공급 차질 우려, 메모리 수요 견인 기대 혼재"
+      "name": "바이오",
+      "sentiment": "NEUTRAL",
+      "reason": "인벤티지랩 자금 조달 성공 등 개별 이슈 존재"
     }
   ],
   "tickers": [
@@ -78,48 +74,48 @@
       "symbol": "005490.KS"
     },
     {
-      "name": "Chevron",
-      "symbol": "CVX"
+      "name": "Advanced Micro Devices Inc",
+      "symbol": "AMD"
     },
     {
-      "name": "iRobot",
-      "symbol": "IRBT"
+      "name": "Palantir Technologies Inc",
+      "symbol": "PLTR"
     }
   ],
   "keywords": [
     {
       "name": "유가급등",
-      "weight": 25
-    },
-    {
-      "name": "고용지표악화",
-      "weight": 15
-    },
-    {
-      "name": "이란갈등",
-      "weight": 15
-    },
-    {
-      "name": "AI",
-      "weight": 10
-    },
-    {
-      "name": "로봇",
-      "weight": 10
-    },
-    {
-      "name": "헬륨대란",
-      "weight": 10
+      "weight": 30
     },
     {
       "name": "인플레이션",
+      "weight": 15
+    },
+    {
+      "name": "금리인하 후퇴",
       "weight": 10
     },
     {
-      "name": "반도체",
+      "name": "AI 로봇",
+      "weight": 15
+    },
+    {
+      "name": "지정학적 리스크 (이란)",
+      "weight": 15
+    },
+    {
+      "name": "메모리 슈퍼사이클",
+      "weight": 5
+    },
+    {
+      "name": "비트코인",
+      "weight": 5
+    },
+    {
+      "name": "백신",
       "weight": 5
     }
   ],
-  "reason": "포스코홀딩스: 한국 주식 시장의 대표적인 기업으로, 철강 산업 외에도 리튬 등 신성장 동력 확보에 나서고 있어 장기적인 성장 가능성이 있습니다. 최근 주가 조정으로 인해 밸류에이션 매력이 부각될 수 있습니다.\nChevron: 유가 급등의 수혜를 직접적으로 받을 수 있는 에너지 기업입니다. 이란 갈등 심화 시 유가 상승은 더욱 가팔라질 수 있으며, Chevron은 안정적인 생산 능력을 바탕으로 이익을 확보할 것으로 예상됩니다. \niRobot: 로봇 산업의 성장과 함께 가정용 로봇 시장을 선도하는 기업입니다. 최근 주가 하락으로 인해 매수 기회가 발생할 수 있으며, 기술 혁신을 통해 시장 점유율을 확대해 나갈 것으로 기대됩니다.",
-  "push_message": "유가 급등, 고용 지표 악화, 이란 갈등 심화 등 시장 불확실성 증대. 포스코홀딩스, Chevron, iRobot 관심 필요."
+  "reason": "포스코홀딩스는 2차전지 소재 관련주로, 장기적인 성장 가능성을 보유하고 있으며, 최근 조정으로 인해 기술적으로 '무릎' 위치에 있다고 판단됩니다. AMD는 AI 반도체 시장의 성장과 함께 꾸준한 성장세를 보이고 있으며, 최근 조정을 받고 있어 매력적인 매수 기회입니다. Palantir는 데이터 분석 플랫폼 기업으로, AI 기술 발전과 함께 성장 가능성이 높으며, 최근 주가 조정으로 인해 진입 시점으로 판단됩니다.",
+  "push_message": "유가 급등 및 지정학적 리스크 지속, AI 로봇 기술 발전 주목. 포스코홀딩스, AMD, Palantir 매수 고려."
 }

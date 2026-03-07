@@ -507,5 +507,23 @@
       "Chevron",
       "iRobot"
     ]
+  },
+  {
+    "date": "2026-03-08 08:12",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": 2.02
+      },
+      {
+        "ticker": "Chevron",
+        "change": 0.02
+      }
+    ],
+    "predictions": [
+      "포스코홀딩스",
+      "Advanced Micro Devices Inc",
+      "Palantir Technologies Inc"
+    ]
   }
 ]
