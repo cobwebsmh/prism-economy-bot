@@ -145,7 +145,7 @@ try:
     }}
     """
     
-    response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+    response = client.models.generate_content(model="gemini-3.1-flash-lite-preview", contents=prompt)
     raw_text = response.text.strip()
     ai_data = json.loads(raw_text[raw_text.find('{'):raw_text.rfind('}') + 1])
 
