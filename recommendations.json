@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-08 08:12",
+  "date": "2026-03-08 21:54",
   "market_info": {
     "KOSPI": {
       "price": 5584.87,
@@ -32,90 +32,98 @@
       "change": 2.02
     },
     {
-      "ticker": "Chevron",
-      "change": 0.02
+      "ticker": "Advanced Micro Devices Inc",
+      "change": -3.52
+    },
+    {
+      "ticker": "Palantir Technologies Inc",
+      "change": 2.94
     }
   ],
-  "summary": "주말 휴장으로 인해 시장은 관망세가 유지되고 있으며, 국제 유가 급등과 이란 관련 지정학적 리스크가 시장의 주요 불안 요인으로 작용하고 있습니다. 동시에 AI 기술 발전과 관련된 긍정적인 뉴스도 혼재하며, 투자 심리는 변동성이 큰 상황입니다. 특히, 유가 상승은 인플레이션 우려를 자극하며 연준의 금리 인하 기대감을 약화시키는 요인으로 작용하고 있습니다.",
+  "summary": "이란 관련 지정학적 리스크 고조로 인한 유가 급등, 미국 스태그플레이션 우려 심화, 삼성전자 HBM5 개발 착수 등 기술 경쟁 심화가 주요 시장 심리 요인으로 작용하고 있습니다. 유가 급등은 전반적인 물가 상승을 야기하며 소비 심리 위축을 초래할 수 있으며, 삼성전자의 HBM5 개발은 반도체 섹터의 경쟁 심화를 예고합니다. 노동 시장의 불안정성 또한 투자 심리에 부정적인 영향을 미칠 수 있습니다.",
   "news_headlines": [
     {
-      "title": "'기름값 2천원 시대' 눈앞…정부, 30년만에 가격상한제 꺼내나 - 연합뉴스",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PUEdUMzk1cjgtMjRCcDZ5eGR4R2h4bVljQUwtQW4wOXZnaDFRdFdEVUxueEk5em1FbTY0ODBDZ3BDNXBVb0k4ODlVODVvY0FDTDJHNnNNek9rREnSAWBBVV95cUxQalQ1b2JwUTFQTkhXckd2ZWJxQ1ZHN0p4R3RiUUNBdlZNdTY5ZUxaSC1EMTVNd0ZfbG9KTUJfZXRxczFIVmpOdWxqV2cydjItUnAtTEVNN1RzaXNiWmhPbkg?oc=5"
+      "title": "유가 천정부지에 원달러 환율 '1500원' 넘어 '1600원 공포' 눈 앞에 - 뉴데일리 경제",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE42cG9MZjF2cEZHQlJLOWotSUhyT29sSUhieEp5dmUwcExtM3FfS09mYjNTbWtxdi1VdlpKWnR0T0RETmVvZ1FHbWhXSE9fWHg2WTdEd2NjWEhObTRpQmRKeWJNYjdwUGpSWXViN3BjUXo1UGg2WDJKY2dtSQ?oc=5"
     },
     {
-      "title": "국제유가 90달러 돌파에 70년대식 오일쇼크 우려…세계 경제 흔드나 - 문화일보",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1qOWN4WHR0blJsdm9qVkRYaXk5YTk2ZndERkpMTERGN1JKc3ZSZHh2bWdlVmZPUU1DUHlMZ2xwVlhfZWt1bExBZERHUzlDN2hE?oc=5"
+      "title": "[단독] 삼성전자, HBM5 비밀병기 B1b 칩 개발 착수 - 아주경제",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91NHpKVV8yNGVhS1ZCSlFvdDBOMUJSaF9jV3gxOTFLcUQxbzVocUlFQzQ1QnBNWHdOSkRieGhYandOWkRJdnVhY0stYmd6LXRvcHFXN3lWWDZwZ9IBWEFVX3lxTE5NeEFuNXlLaVV0dl83WklyVjloelYxUFEtalBXQWtOUkFNZTV2WVlhRGhqeDRvaUZfbVhjSnZQRDVzalV3Y1BjWkpLcWtadFM5YTA5NzdOTkY?oc=5"
     },
     {
-      "title": "티엑스알로보틱스, ‘AI 피스피킹 로봇’ 공개… 물류 자동화 확장 전략 제시 - 산업일보",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9FWmlwUXJsUFR3NHNhc3RLb1pCV0hTaVQ2aFdIWXplclVFb0lXM2QwRmF6TlVYQm1QX3lGejh4S1kyYjZN?oc=5"
+      "title": "미 유가 폭등, 고용 추락…스태그플레이션 우려 급부상 - 세상을 바꾸는 시민언론 민들레",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5ZN3pKdUdpdnBsdXpON3N2TXZ1STR1MHRyQjJZZEJGY2p1MFpjTXVSMld2S09CMTRxNXdUaUJIQUFDd002WWlsdlRHMnNKeXl2Q0h3MmQydURwV3NremZDcEgxTnN0QnhNY1JRdA?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "에너지",
       "sentiment": "HOT",
-      "reason": "국제 유가 급등 및 공급망 불안"
+      "reason": "이란발 지정학적 리스크로 인한 유가 급등"
     },
     {
-      "name": "AI & 로보틱스",
+      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "물류 자동화 및 기술 혁신"
+      "reason": "삼성전자 HBM5 개발 착수 및 엔비디아 차세대 AI 칩 관련 뉴스"
     },
     {
-      "name": "바이오",
-      "sentiment": "NEUTRAL",
-      "reason": "인벤티지랩 자금 조달 성공 등 개별 이슈 존재"
+      "name": "가상화폐",
+      "sentiment": "Neutral",
+      "reason": "미국 트럼프 행정부의 가상화폐 지원 정책"
     }
   ],
   "tickers": [
     {
-      "name": "포스코홀딩스",
-      "symbol": "005490.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
       "name": "Advanced Micro Devices Inc",
       "symbol": "AMD"
     },
     {
-      "name": "Palantir Technologies Inc",
-      "symbol": "PLTR"
+      "name": "Microsoft",
+      "symbol": "MSFT"
     }
   ],
   "keywords": [
     {
-      "name": "유가급등",
-      "weight": 30
+      "name": "유가",
+      "weight": 25
     },
     {
-      "name": "인플레이션",
+      "name": "이란",
       "weight": 15
     },
     {
-      "name": "금리인하 후퇴",
+      "name": "HBM",
+      "weight": 15
+    },
+    {
+      "name": "삼성전자",
       "weight": 10
     },
     {
-      "name": "AI 로봇",
-      "weight": 15
+      "name": "스태그플레이션",
+      "weight": 10
     },
     {
-      "name": "지정학적 리스크 (이란)",
-      "weight": 15
+      "name": "반도체",
+      "weight": 10
     },
     {
-      "name": "메모리 슈퍼사이클",
+      "name": "미국 노동 시장",
       "weight": 5
     },
     {
-      "name": "비트코인",
+      "name": "가상화폐",
       "weight": 5
     },
     {
-      "name": "백신",
+      "name": "전쟁",
       "weight": 5
     }
   ],
-  "reason": "포스코홀딩스는 2차전지 소재 관련주로, 장기적인 성장 가능성을 보유하고 있으며, 최근 조정으로 인해 기술적으로 '무릎' 위치에 있다고 판단됩니다. AMD는 AI 반도체 시장의 성장과 함께 꾸준한 성장세를 보이고 있으며, 최근 조정을 받고 있어 매력적인 매수 기회입니다. Palantir는 데이터 분석 플랫폼 기업으로, AI 기술 발전과 함께 성장 가능성이 높으며, 최근 주가 조정으로 인해 진입 시점으로 판단됩니다.",
-  "push_message": "유가 급등 및 지정학적 리스크 지속, AI 로봇 기술 발전 주목. 포스코홀딩스, AMD, Palantir 매수 고려."
+  "reason": "삼성전자는 HBM5 개발 착수 소식으로 기술 경쟁력을 강화할 것으로 예상됩니다. AMD는 반도체 섹터 전반의 성장 기대감과 함께, 상대적으로 저평가되었다고 판단되어 '무릎' 위치에 있다고 판단됩니다. MSFT는 클라우드 및 AI 분야에서의 지속적인 성장 가능성과 안정적인 실적을 바탕으로 포트폴리오의 안정성을 높일 수 있습니다. 기술적 분석은 시장 상황에 따라 다르지만, 현재 시장 변동성을 고려하여 장기적인 관점에서 투자할 가치가 있다고 판단됩니다.",
+  "push_message": "유가 급등, 스태그플레이션 우려, 삼성전자 HBM5 개발 착수. 삼성전자, AMD, MSFT 관심."
 }

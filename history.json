@@ -525,5 +525,27 @@
       "Advanced Micro Devices Inc",
       "Palantir Technologies Inc"
     ]
+  },
+  {
+    "date": "2026-03-08 21:54",
+    "performance": [
+      {
+        "ticker": "포스코홀딩스",
+        "change": 2.02
+      },
+      {
+        "ticker": "Advanced Micro Devices Inc",
+        "change": -3.52
+      },
+      {
+        "ticker": "Palantir Technologies Inc",
+        "change": 2.94
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "Advanced Micro Devices Inc",
+      "Microsoft"
+    ]
   }
 ]
