@@ -547,5 +547,27 @@
       "Advanced Micro Devices Inc",
       "Microsoft"
     ]
+  },
+  {
+    "date": "2026-03-08 22:04",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -1.77
+      },
+      {
+        "ticker": "Advanced Micro Devices Inc",
+        "change": -3.52
+      },
+      {
+        "ticker": "Microsoft",
+        "change": -0.42
+      }
+    ],
+    "predictions": [
+      "SK하이닉스",
+      "엑손모빌",
+      "록히드 마틴"
+    ]
   }
 ]

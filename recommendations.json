@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-08 21:54",
+  "date": "2026-03-08 22:04",
   "market_info": {
     "KOSPI": {
       "price": 5584.87,
@@ -16,114 +16,110 @@
     "S&P500": {
       "price": 6740.02,
       "change": -1.33,
-      "is_open": false,
-      "status": "⚪"
+      "is_open": true,
+      "status": "🟢"
     },
     "NASDAQ": {
       "price": 22387.68,
       "change": -1.59,
-      "is_open": false,
-      "status": "⚪"
+      "is_open": true,
+      "status": "🟢"
     }
   },
   "past_results": [
     {
-      "ticker": "포스코홀딩스",
-      "change": 2.02
+      "ticker": "삼성전자",
+      "change": -1.77
     },
     {
       "ticker": "Advanced Micro Devices Inc",
       "change": -3.52
     },
     {
-      "ticker": "Palantir Technologies Inc",
-      "change": 2.94
+      "ticker": "Microsoft",
+      "change": -0.42
     }
   ],
-  "summary": "이란 관련 지정학적 리스크 고조로 인한 유가 급등, 미국 스태그플레이션 우려 심화, 삼성전자 HBM5 개발 착수 등 기술 경쟁 심화가 주요 시장 심리 요인으로 작용하고 있습니다. 유가 급등은 전반적인 물가 상승을 야기하며 소비 심리 위축을 초래할 수 있으며, 삼성전자의 HBM5 개발은 반도체 섹터의 경쟁 심화를 예고합니다. 노동 시장의 불안정성 또한 투자 심리에 부정적인 영향을 미칠 수 있습니다.",
+  "summary": "이란발 지정학적 리스크가 유가 급등과 글로벌 물가 상승 우려를 증폭시키며 금융 시장 전반에 안전자산 선호 심리를 강화하고 있습니다. 미국 증시의 조정과 한국 시장의 '블랙먼데이' 우려가 공존하는 가운데, 공급망 불안이 에너지 및 반도체 섹터의 변동성을 키우고 있습니다. 투자자들은 단기적인 패닉 셀링보다는 지정학적 리스크 완화 시점과 CPI 발표를 앞둔 방어적 포트폴리오 재구성이 필요한 시점입니다.",
   "news_headlines": [
     {
-      "title": "유가 천정부지에 원달러 환율 '1500원' 넘어 '1600원 공포' 눈 앞에 - 뉴데일리 경제",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE42cG9MZjF2cEZHQlJLOWotSUhyT29sSUhieEp5dmUwcExtM3FfS09mYjNTbWtxdi1VdlpKWnR0T0RETmVvZ1FHbWhXSE9fWHg2WTdEd2NjWEhObTRpQmRKeWJNYjdwUGpSWXViN3BjUXo1UGg2WDJKY2dtSQ?oc=5"
+      "title": "이란發 퍼펙트스톰, 한국 반도체 산업마저 덮쳤다",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBGdngxZVJDSXBiaVNUNHpKbUN6QndOWncwdjZaNm5XVzB3S3dmT3Mydmg1ekFET2dOYVVGam5KWkMyZm52enpBZy1pemU0aTZEMHctbm55c0NDejVhbk05R3dEM2YtZXh3UHBZRXFsbHBobjQ5VW5fMHdwWQ?oc=5"
     },
     {
-      "title": "[단독] 삼성전자, HBM5 비밀병기 B1b 칩 개발 착수 - 아주경제",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91NHpKVV8yNGVhS1ZCSlFvdDBOMUJSaF9jV3gxOTFLcUQxbzVocUlFQzQ1QnBNWHdOSkRieGhYandOWkRJdnVhY0stYmd6LXRvcHFXN3lWWDZwZ9IBWEFVX3lxTE5NeEFuNXlLaVV0dl83WklyVjloelYxUFEtalBXQWtOUkFNZTV2WVlhRGhqeDRvaUZfbVhjSnZQRDVzalV3Y1BjWkpLcWtadFM5YTA5NzdOTkY?oc=5"
+      "title": "엔비디아 차세대 AI 칩, 삼성·SK HBM4만 쓴다",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFcF80MmVscXpHQVA0YnhFM2F4UXl3a1BWMmxycEs3VjJmSnE1U1ZVT3c2YzdlMURKUFlDRzRSMzJpelRYZmx1NW9kaVU0OF9hdFFjQm9TeXZnQdIBVEFVX3lxTE1Udmxub1dZVEhFeTFpcWMydDBENnRSdmFKN2lNaEd4WDNpRDJzOW81bkIwZjRwOHBNN216b2J6RjNUUGQxdVFuQ3pFTE1UbmxRalY5cQ?oc=5"
     },
     {
-      "title": "미 유가 폭등, 고용 추락…스태그플레이션 우려 급부상 - 세상을 바꾸는 시민언론 민들레",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5ZN3pKdUdpdnBsdXpON3N2TXZ1STR1MHRyQjJZZEJGY2p1MFpjTXVSMld2S09CMTRxNXdUaUJIQUFDd002WWlsdlRHMnNKeXl2Q0h3MmQydURwV3NremZDcEgxTnN0QnhNY1JRdA?oc=5"
+      "title": "Oil and gas prices rise rapidly as Iran war escalates",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQlZibmNueG9SNUoyT0YxUmVvREpXT2Q2M2FEZ2xVU3dHMlNUZWtxNU1zR3Q2QzdBUlk4eHFrTERlRHIwSzNhZEtCNlhOeTVRQ0xFWkY0QXluRmY0c2NockJQWVhTX1BlYUpJZm9NRXJmZEFMdUoyenBEdjBudFlWaW5fVnN5c3VvdzdBZ2ZlMEZKUdIBlwFBVV95cUxQd3BOQ2tWTXR0YTNEbW9ZY20yUElfRU5CTXpFZ3oyalMwSXpGbWswdlg3VXJXRThkVFBkMXFxdmczUDlJN3MyOWNObm5SbG1nNFBETlh2N3IxUEpXOVg3eWk4Y1RUT1AtNWRZY2U0bFVfYjhoYl9yZ1pFUG1UOUhiRC1KdnhSQnA4SkRLa0VxOVZBdVVXbDc4?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지",
+      "name": "에너지(Energy)",
       "sentiment": "HOT",
-      "reason": "이란발 지정학적 리스크로 인한 유가 급등"
+      "reason": "이란 사태로 인한 공급망 차질 및 유가 급등세 지속"
     },
     {
-      "name": "반도체",
-      "sentiment": "HOT",
-      "reason": "삼성전자 HBM5 개발 착수 및 엔비디아 차세대 AI 칩 관련 뉴스"
+      "name": "반도체(Semiconductor)",
+      "sentiment": "CAUTION",
+      "reason": "지정학적 리스크 노출 및 삼성전자 파업 우려 등 복합 악재"
     },
     {
-      "name": "가상화폐",
-      "sentiment": "Neutral",
-      "reason": "미국 트럼프 행정부의 가상화폐 지원 정책"
+      "name": "방위산업(Defense)",
+      "sentiment": "BULLISH",
+      "reason": "전쟁 리스크 확산에 따른 글로벌 국방비 지출 확대 기대"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "SK하이닉스",
+      "symbol": "000660.KS"
     },
     {
-      "name": "Advanced Micro Devices Inc",
-      "symbol": "AMD"
+      "name": "엑손모빌",
+      "symbol": "XOM"
     },
     {
-      "name": "Microsoft",
-      "symbol": "MSFT"
+      "name": "록히드 마틴",
+      "symbol": "LMT"
     }
   ],
   "keywords": [
     {
-      "name": "유가",
-      "weight": 25
+      "name": "이란 전쟁",
+      "weight": 20
     },
     {
-      "name": "이란",
-      "weight": 15
-    },
-    {
-      "name": "HBM",
-      "weight": 15
-    },
-    {
-      "name": "삼성전자",
-      "weight": 10
-    },
-    {
-      "name": "스태그플레이션",
-      "weight": 10
+      "name": "유가 급등",
+      "weight": 18
     },
     {
       "name": "반도체",
+      "weight": 15
+    },
+    {
+      "name": "지정학적 리스크",
+      "weight": 12
+    },
+    {
+      "name": "물가/CPI",
       "weight": 10
     },
     {
-      "name": "미국 노동 시장",
-      "weight": 5
+      "name": "HBM",
+      "weight": 9
     },
     {
-      "name": "가상화폐",
-      "weight": 5
+      "name": "공급망",
+      "weight": 8
     },
     {
-      "name": "전쟁",
-      "weight": 5
+      "name": "안전자산",
+      "weight": 8
     }
   ],
-  "reason": "삼성전자는 HBM5 개발 착수 소식으로 기술 경쟁력을 강화할 것으로 예상됩니다. AMD는 반도체 섹터 전반의 성장 기대감과 함께, 상대적으로 저평가되었다고 판단되어 '무릎' 위치에 있다고 판단됩니다. MSFT는 클라우드 및 AI 분야에서의 지속적인 성장 가능성과 안정적인 실적을 바탕으로 포트폴리오의 안정성을 높일 수 있습니다. 기술적 분석은 시장 상황에 따라 다르지만, 현재 시장 변동성을 고려하여 장기적인 관점에서 투자할 가치가 있다고 판단됩니다.",
-  "push_message": "유가 급등, 스태그플레이션 우려, 삼성전자 HBM5 개발 착수. 삼성전자, AMD, MSFT 관심."
+  "reason": "SK하이닉스는 HBM4 독점 공급 기대감으로 시장 하락기에도 강력한 펀더멘털을 유지하며, 단기 조정 시 매수하기 좋은 무릎 위치입니다. XOM(엑손모빌)은 유가 급등의 직접적인 수혜주로 포트폴리오 방어 기능을 합니다. LMT(록히드 마틴)는 전쟁 리스크 장기화 시 안정적인 매출 성장이 기대되는 저평가 구간의 방산 우량주입니다.",
+  "push_message": "[프리즘 금융 알림] 이란 전쟁 리스크로 유가 급등, 시장 변동성 확대! 방어적인 에너지·방산 섹터 비중 확대 및 반도체 핵심주(SK하이닉스) 분할 매수 고려."
 }
