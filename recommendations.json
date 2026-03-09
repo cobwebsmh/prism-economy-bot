@@ -1,125 +1,125 @@
 {
-  "date": "2026-03-09 08:13",
+  "date": "2026-03-10 08:16",
   "market_info": {
     "KOSPI": {
-      "price": 5584.87,
-      "change": 0.02,
+      "price": 5251.87,
+      "change": -5.96,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1154.67,
-      "change": 3.43,
+      "price": 1102.28,
+      "change": -4.54,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6740.02,
-      "change": -1.33,
+      "price": 6795.99,
+      "change": 0.83,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22387.68,
-      "change": -1.59,
+      "price": 22695.95,
+      "change": 1.38,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "SK하이닉스",
-      "change": -1.81
+      "ticker": "한화에어로스페이스",
+      "change": -3.17
     },
     {
       "ticker": "엑손모빌",
-      "change": 0.3
+      "change": -0.51
     },
     {
-      "ticker": "록히드 마틴",
-      "change": 2.56
+      "ticker": "쉐브론",
+      "change": -0.26
     }
   ],
-  "summary": "이란발 지정학적 리스크로 인한 국제 유가 100달러 돌파가 글로벌 시장의 퍼펙트스톰을 예고하며 투자 심리가 급격히 위축되고 있습니다. 공급망 차질 우려와 인플레이션 재점화 가능성이 부각되면서 안전 자산 선호와 에너지 섹터로의 자금 쏠림이 뚜렷합니다. 한국과 미국 시장 모두 유가 급등에 따른 변동성 확대가 예상되는 가운데, 방어적 포지션과 에너지 수혜주에 대한 전략적 접근이 필요한 시점입니다.",
+  "summary": "중동발 지정학적 리스크가 유가 급등과 증시 변동성을 증폭시키며 투자 심리가 극도로 위축된 상태입니다. 트럼프의 전쟁 마무리 발언이 시장의 기술적 반등을 이끌었으나, 여전히 환율 급등과 공급망 불안이 시장의 상단을 제한하고 있습니다. 안전자산 선호와 변동성 장세 속에서 정책 수혜가 예상되는 방어주 및 저평가 성장주 위주의 선별적 대응이 필요한 시점입니다.",
   "news_headlines": [
     {
-      "title": "[속보] 국제 유가 배럴당 100달러 돌파...공급 차질 영향",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdVlHWTNoa3NqYUEzem9NVXpaSjZsbURhdmk1OWxiX2plc0w5akJCdnduZnh0VF95VVk1S19UczV3MDRXSzRwSVZoYi1HbHhhYVZCekUzYnB1V3JiTXRHSDNUSnp2WUk0ZG1tbVJaeVFkTUNYM19VcVc3cWpScWtKbUxjWHd1dHFycERJY2o1ZUp3dW1oMWRXUkYxNTE4UdIBsgFBVV95cUxOUEw1dFZBNTYtc3ZybW1xNU1ocjYtS3NBanYwdmxhb3lXWXlrdVh1R0R2cUk5MXJ5ME9UZlBqV01XckhZWTBLcEM1dTU4VGs1UHotSzI2cjZ6SGxUdk1zc2JicllnMHhsMk1FbXdJRm5SWXcxYkVSZzR6cmJHVE5ab0FhUnhzSnlfS1FRWU02Ynh1WmtGbDBWRkhQWHFOYl9XVnNwMDdGUnkyWnZDYS11ZkRR?oc=5"
+      "title": "“전쟁 마무리 수순” 트럼프 발언에 뉴욕증시 급반등",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xMU9hVk04cE9hT2VJMnRWTGRZYXVKTGdHOXA2dEd0U2I0N01GMHZhWWVlbmVvQWF1YWQzVDM2dUp2UERPNTh4SkpKUmlubWdxdEM0TW5zRnhOV1U?oc=5"
     },
     {
-      "title": "실전 경쟁력 K방산 주가 쑥…한화, LG 제치고 그룹시총 4위",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBiT05uVG9EM19aaHNWYm9OaGpIVUVucFVSbVFfelZDR3hHYkRyM3FreFlHU2NTLUZoeGNUQ3lHcFNoVFNPSk5zTk5fb3ZSUE5Qd2c?oc=5"
+      "title": "‘폭등’ 국제유가 배럴당 100달러대로 하락…G7 비축유 방출 검토 영향",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ncURmdFhqdng5LU1Ma0NCRV80SjdYSkZLVFpqbGdNSjdkZWpMeUNSOGNCNWpJelZKOGtqR2V0Z0c0dDM1TEZLcVZtMzl3bDFtS1pXUy13YXhmSnFuYkVZZTR0Y0cyQUl0dzlpam9BMA?oc=5"
     },
     {
-      "title": "'조선·해운·원전株 수혜…반도체株는 타격 작을 것'",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yam1BY0NNMkZuNExCSGlyODBjaWVGcVNWMVpqdjZhSnZianJSUGd5NHV4VTBGWFBCMmpzcVRuVmVaVXBMZEc3SU9RWlRiMmQyMVdQOGtJNHgyQdIBVEFVX3lxTE9qOWJDX3N5Rk9nRk1aMGI2X1pGT0xNMWNZaG5ZRE51Wl9KQy1FUUFEQ3laZzJHeUNvUm9YbWJYOXVLeWRtNndHS2JEa1VIR1JFTU1PRw?oc=5"
+      "title": "일라이릴리, 한국에 7000억원 투자",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZWTVCTGFMckRSNF83Y2RxRjRuUzZoZUxmQ2h0Z1VKYWZ4aGswWUpLb2QtdTdpbFFpeWNaS3FaREpOcm5va1FwNFliV0VlQXRud0xEZm1GZ0VKd9IBVEFVX3lxTE10ckJ0eVdPdjcxamE4clJoUDd2a2IyTHNCRU56Y01NQTZkeXNiTU9wZjE3VzBPaHNaalNmZHYzZFBuZk9NSC0tTHdBRmZmZ1BnS3FTbg?oc=5"
     }
   ],
   "sectors": [
     {
+      "name": "제약/바이오",
+      "sentiment": "HOT",
+      "reason": "일라이릴리 한국 대규모 투자 및 글로벌 파이프라인 성장세 확인"
+    },
+    {
       "name": "에너지",
-      "sentiment": "HOT",
-      "reason": "유가 100달러 돌파에 따른 직접적 수혜 및 인플레이션 헤지 수요"
+      "sentiment": "NEUTRAL",
+      "reason": "유가 변동성 확대에 따른 G7 비축유 방출 등 정부 개입 리스크"
     },
     {
-      "name": "방산",
-      "sentiment": "HOT",
-      "reason": "중동 전쟁 리스크 심화로 인한 지정학적 가치 상승"
-    },
-    {
-      "name": "조선",
-      "sentiment": "HOT",
-      "reason": "에너지 공급망 변화와 지정학적 긴장에 따른 수주 기대감"
+      "name": "반도체",
+      "sentiment": "COLD",
+      "reason": "전쟁 리스크 및 공급망 타격으로 인한 단기 조정 불가피"
     }
   ],
   "tickers": [
     {
-      "name": "한화에어로스페이스",
-      "symbol": "012450.KS"
+      "name": "삼성바이오로직스",
+      "symbol": "207940.KS"
     },
     {
-      "name": "엑손모빌",
+      "name": "Eli Lilly",
+      "symbol": "LLY"
+    },
+    {
+      "name": "Exxon Mobil",
       "symbol": "XOM"
-    },
-    {
-      "name": "쉐브론",
-      "symbol": "CVX"
     }
   ],
   "keywords": [
     {
-      "name": "국제유가",
-      "weight": 25
-    },
-    {
-      "name": "지정학적리스크",
+      "name": "지정학적 리스크",
       "weight": 20
     },
     {
-      "name": "인플레이션",
-      "weight": 15
+      "name": "국제유가",
+      "weight": 18
     },
     {
-      "name": "공급망차질",
+      "name": "트럼프 발언",
+      "weight": 12
+    },
+    {
+      "name": "반도체 급락",
+      "weight": 12
+    },
+    {
+      "name": "바이오 투자",
       "weight": 10
     },
     {
-      "name": "방산주",
+      "name": "환율 급등",
       "weight": 10
     },
     {
-      "name": "에너지섹터",
-      "weight": 8
+      "name": "G7",
+      "weight": 9
     },
     {
-      "name": "금리전망",
-      "weight": 7
-    },
-    {
-      "name": "기술주변동성",
-      "weight": 5
+      "name": "공급망 불안",
+      "weight": 9
     }
   ],
-  "reason": "한화에어로스페이스는 최근 K방산의 수출 모멘텀과 지정학적 긴장으로 인한 수혜를 입고 있으나, 단기 급등 후 기술적 조정 구간을 거치며 무릎 높이의 안정적 진입 위치를 형성하고 있습니다. 미국 에너지 대형주인 XOM과 CVX는 유가 100달러 돌파라는 매크로 환경 변화에 따라 하방 경직성을 확보했으며, 포트폴리오의 안정성을 높이는 핵심 종목으로 판단됩니다.",
-  "push_message": "🚨 [유가 쇼크] 국제 유가 100달러 돌파! 에너지·방산 섹터 주목, 리스크 관리가 최우선입니다."
+  "reason": "시장의 공포감이 최고조에 달한 상황에서 과매도된 우량주와 정책적 모멘텀이 확실한 종목을 선정했습니다. 삼성바이오로직스는 제약/바이오 섹터의 투자 활성화 수혜를 입을 위치이며, LLY는 글로벌 바이오 주도주로서 견조함을 유지하고 있습니다. XOM은 에너지 가격의 변동성 속에서도 안정적인 현금 흐름과 기술적 반등 가능성이 높은 '무릎' 구간에 위치합니다.",
+  "push_message": "[Prism 분석] 시장 변동성 확대, 방어적 포트폴리오로 전환하세요. 바이오 및 우량 에너지주가 대안이 될 수 있습니다."
 }

@@ -591,5 +591,27 @@
       "엑손모빌",
       "쉐브론"
     ]
+  },
+  {
+    "date": "2026-03-10 08:16",
+    "performance": [
+      {
+        "ticker": "한화에어로스페이스",
+        "change": -3.17
+      },
+      {
+        "ticker": "엑손모빌",
+        "change": -0.51
+      },
+      {
+        "ticker": "쉐브론",
+        "change": -0.26
+      }
+    ],
+    "predictions": [
+      "삼성바이오로직스",
+      "Eli Lilly",
+      "Exxon Mobil"
+    ]
   }
 ]
