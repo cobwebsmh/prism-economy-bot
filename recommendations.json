@@ -1,89 +1,89 @@
 {
-  "date": "2026-03-10 08:16",
+  "date": "2026-03-11 08:16",
   "market_info": {
     "KOSPI": {
-      "price": 5251.87,
-      "change": -5.96,
+      "price": 5532.59,
+      "change": 5.35,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1102.28,
-      "change": -4.54,
+      "price": 1137.68,
+      "change": 3.21,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6795.99,
-      "change": 0.83,
+      "price": 6781.48,
+      "change": -0.21,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22695.95,
-      "change": 1.38,
+      "price": 22697.1,
+      "change": 0.01,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "한화에어로스페이스",
-      "change": -3.17
+      "ticker": "삼성바이오로직스",
+      "change": 0.82
     },
     {
-      "ticker": "엑손모빌",
-      "change": -0.51
+      "ticker": "Eli Lilly",
+      "change": -0.7
     },
     {
-      "ticker": "쉐브론",
-      "change": -0.26
+      "ticker": "Exxon Mobil",
+      "change": -1.54
     }
   ],
-  "summary": "중동발 지정학적 리스크가 유가 급등과 증시 변동성을 증폭시키며 투자 심리가 극도로 위축된 상태입니다. 트럼프의 전쟁 마무리 발언이 시장의 기술적 반등을 이끌었으나, 여전히 환율 급등과 공급망 불안이 시장의 상단을 제한하고 있습니다. 안전자산 선호와 변동성 장세 속에서 정책 수혜가 예상되는 방어주 및 저평가 성장주 위주의 선별적 대응이 필요한 시점입니다.",
+  "summary": "글로벌 시장은 호르무즈 해협발 지정학적 리스크 심화로 에너지 가격 급등과 공급망 우려가 공존하며 변동성이 확대되고 있습니다. 반면 반도체와 AI 섹터는 견고한 실적과 대규모 투자를 바탕으로 시장의 하방을 지지하는 핵심 모멘텀으로 작용 중입니다. 투자 심리는 중동 분쟁에 따른 경계감과 기업들의 기술 혁신 기대감이 팽팽하게 맞서는 혼조세를 보이고 있습니다.",
   "news_headlines": [
     {
-      "title": "“전쟁 마무리 수순” 트럼프 발언에 뉴욕증시 급반등",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8xMU9hVk04cE9hT2VJMnRWTGRZYXVKTGdHOXA2dEd0U2I0N01GMHZhWWVlbmVvQWF1YWQzVDM2dUp2UERPNTh4SkpKUmlubWdxdEM0TW5zRnhOV1U?oc=5"
+      "title": "호르무즈 봉쇄에 비상 걸린 IEA…전략비축유 12억 배럴 방출 '초읽기’",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPa2R0ZnAxelJfYzhPNGtmQlNmLU5WNFlrcDBySkhYNmRsRmR3d0paWTJQOHJ0d3hrTUo1eEc1SVlLUG1WNzRwNEN2QzdhcUZwSm0xb19hZnlSNUtNTmtPUGRNMTdJTXhoSTNmTVZUMFZGd1BCNWtMZEJFQjNnTDR6SmM3eTRhQ0pm?oc=5"
     },
     {
-      "title": "‘폭등’ 국제유가 배럴당 100달러대로 하락…G7 비축유 방출 검토 영향",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ncURmdFhqdng5LU1Ma0NCRV80SjdYSkZLVFpqbGdNSjdkZWpMeUNSOGNCNWpJelZKOGtqR2V0Z0c0dDM1TEZLcVZtMzl3bDFtS1pXUy13YXhmSnFuYkVZZTR0Y0cyQUl0dzlpam9BMA?oc=5"
+      "title": "삼성SDI, 로봇 특화 '파우치 전고체' 배터리 공개한다",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVSkxNVFZiZ21td25JTmFFZmhOb0stV0tFbzNTZFZQUDVPam5lZDhJR2lqVjlwZDNhV09JVFJCTnJfSU5DZFUwaG13N2ZCSGRMS2xlZGV3?oc=5"
     },
     {
-      "title": "일라이릴리, 한국에 7000억원 투자",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ZWTVCTGFMckRSNF83Y2RxRjRuUzZoZUxmQ2h0Z1VKYWZ4aGswWUpLb2QtdTdpbFFpeWNaS3FaREpOcm5va1FwNFliV0VlQXRud0xEZm1GZ0VKd9IBVEFVX3lxTE10ckJ0eVdPdjcxamE4clJoUDd2a2IyTHNCRU56Y01NQTZkeXNiTU9wZjE3VzBPaHNaalNmZHYzZFBuZk9NSC0tTHdBRmZmZ1BnS3FTbg?oc=5"
+      "title": "Oracle Stock Jumps After Earnings Beat Expectations",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ndTF6YWg2SW1XeDR4YzBuQVE1U2x4QS1BV0I0bjBGUm92WWE4YTk1RVRzMG5KTTA0NHNjN2xFTzJhTDdoYTBDOVU3MVkzcUtZZG8wZEs4akhNUHkwYlFubDBrQmJVYTdWbnp4dlZBaDJxQWhERkVxRQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "제약/바이오",
+      "name": "반도체/AI",
       "sentiment": "HOT",
-      "reason": "일라이릴리 한국 대규모 투자 및 글로벌 파이프라인 성장세 확인"
+      "reason": "기업 실적 호조 및 대규모 R&D 투자가 시장 주도권 유지 중"
     },
     {
       "name": "에너지",
-      "sentiment": "NEUTRAL",
-      "reason": "유가 변동성 확대에 따른 G7 비축유 방출 등 정부 개입 리스크"
+      "sentiment": "OVERHEATED",
+      "reason": "지정학적 리스크로 인한 급등세, 단기 변동성 주의 필요"
     },
     {
-      "name": "반도체",
-      "sentiment": "COLD",
-      "reason": "전쟁 리스크 및 공급망 타격으로 인한 단기 조정 불가피"
+      "name": "로봇/이차전지",
+      "sentiment": "POSITIVE",
+      "reason": "전고체 배터리 등 차세대 기술 상용화 기대감"
     }
   ],
   "tickers": [
     {
-      "name": "삼성바이오로직스",
-      "symbol": "207940.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "Eli Lilly",
-      "symbol": "LLY"
+      "name": "Oracle",
+      "symbol": "ORCL"
     },
     {
-      "name": "Exxon Mobil",
-      "symbol": "XOM"
+      "name": "Ford Motor",
+      "symbol": "F"
     }
   ],
   "keywords": [
@@ -92,34 +92,34 @@
       "weight": 20
     },
     {
-      "name": "국제유가",
-      "weight": 18
+      "name": "반도체 호황",
+      "weight": 15
     },
     {
-      "name": "트럼프 발언",
+      "name": "AI 혁신",
+      "weight": 15
+    },
+    {
+      "name": "에너지 가격",
       "weight": 12
     },
     {
-      "name": "반도체 급락",
-      "weight": 12
-    },
-    {
-      "name": "바이오 투자",
+      "name": "전고체 배터리",
       "weight": 10
-    },
-    {
-      "name": "환율 급등",
-      "weight": 10
-    },
-    {
-      "name": "G7",
-      "weight": 9
     },
     {
       "name": "공급망 불안",
-      "weight": 9
+      "weight": 10
+    },
+    {
+      "name": "기업 실적",
+      "weight": 10
+    },
+    {
+      "name": "변동성",
+      "weight": 8
     }
   ],
-  "reason": "시장의 공포감이 최고조에 달한 상황에서 과매도된 우량주와 정책적 모멘텀이 확실한 종목을 선정했습니다. 삼성바이오로직스는 제약/바이오 섹터의 투자 활성화 수혜를 입을 위치이며, LLY는 글로벌 바이오 주도주로서 견조함을 유지하고 있습니다. XOM은 에너지 가격의 변동성 속에서도 안정적인 현금 흐름과 기술적 반등 가능성이 높은 '무릎' 구간에 위치합니다.",
-  "push_message": "[Prism 분석] 시장 변동성 확대, 방어적 포트폴리오로 전환하세요. 바이오 및 우량 에너지주가 대안이 될 수 있습니다."
+  "reason": "삼성전자는 반도체 업황 회복과 역대급 연봉 체계로 내부 동력이 강화된 '무릎' 위치로 판단되며, 오라클(ORCL)은 실적 서프라이즈를 통한 AI 클라우드 시장 점유율 확대로 기술적 반등 추세가 뚜렷합니다. 포드(F)는 새로운 챗봇 도입을 통한 디지털 전환 가속화로 주가가 이제 막 상승 탄력을 받고 있어 저평가 매력이 높습니다.",
+  "push_message": "[프리즘 금융] 호르무즈 리스크 속 반도체와 AI 실적주 중심의 대응이 필요합니다. 오늘 주목할 종목: 삼성전자(005930.KS), 오라클(ORCL), 포드(F)"
 }
