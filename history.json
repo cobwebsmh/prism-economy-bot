@@ -1,25 +1,5 @@
 [
   {
-    "date": "2026-02-21 08:18",
-    "performance": [
-      {
-        "ticker": "MSFT",
-        "change": -0.31
-      },
-      {
-        "ticker": "NVDA",
-        "change": 1.02
-      },
-      {
-        "ticker": "AMZN",
-        "change": 2.56
-      }
-    ],
-    "predictions": [
-      "모티프테크"
-    ]
-  },
-  {
     "date": "2026-02-22 08:14",
     "performance": [],
     "predictions": [
@@ -612,6 +592,28 @@
       "삼성전자",
       "Oracle",
       "Ford Motor"
+    ]
+  },
+  {
+    "date": "2026-03-12 08:15",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 1.12
+      },
+      {
+        "ticker": "Oracle",
+        "change": 9.18
+      },
+      {
+        "ticker": "Ford Motor",
+        "change": -1.06
+      }
+    ],
+    "predictions": [
+      "현대자동차",
+      "Oracle",
+      "Exxon Mobil"
     ]
   }
 ]

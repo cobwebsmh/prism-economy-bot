@@ -1,125 +1,125 @@
 {
-  "date": "2026-03-11 08:16",
+  "date": "2026-03-12 08:15",
   "market_info": {
     "KOSPI": {
-      "price": 5532.59,
-      "change": 5.35,
+      "price": 5609.95,
+      "change": 1.4,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1137.68,
-      "change": 3.21,
+      "price": 1136.83,
+      "change": -0.07,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6781.48,
-      "change": -0.21,
+      "price": 6775.8,
+      "change": -0.08,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22697.1,
-      "change": 0.01,
+      "price": 22716.13,
+      "change": 0.08,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성바이오로직스",
-      "change": 0.82
+      "ticker": "삼성전자",
+      "change": 1.12
     },
     {
-      "ticker": "Eli Lilly",
-      "change": -0.7
+      "ticker": "Oracle",
+      "change": 9.18
     },
     {
-      "ticker": "Exxon Mobil",
-      "change": -1.54
+      "ticker": "Ford Motor",
+      "change": -1.06
     }
   ],
-  "summary": "글로벌 시장은 호르무즈 해협발 지정학적 리스크 심화로 에너지 가격 급등과 공급망 우려가 공존하며 변동성이 확대되고 있습니다. 반면 반도체와 AI 섹터는 견고한 실적과 대규모 투자를 바탕으로 시장의 하방을 지지하는 핵심 모멘텀으로 작용 중입니다. 투자 심리는 중동 분쟁에 따른 경계감과 기업들의 기술 혁신 기대감이 팽팽하게 맞서는 혼조세를 보이고 있습니다.",
+  "summary": "이란발 지정학적 리스크 심화로 인해 국제 유가가 급등하며 전 세계 경제에 공급망 불안과 물가 상승 공포가 확산되고 있습니다. 시장은 변동성 확대를 경계하며 안전 자산 및 에너지 섹터에 주목하는 가운데, 기술주는 AI 관련 실적 기대감과 규제 리스크 사이에서 차별화된 흐름을 보이고 있습니다. 한국 시장은 지수 5600선 방어에 성공하며 견고함을 보였으나, 글로벌 에너지 가격 변동에 따른 수출 기업들의 비용 관리 능력이 향후 핵심 변수로 작용할 전망입니다.",
   "news_headlines": [
     {
-      "title": "호르무즈 봉쇄에 비상 걸린 IEA…전략비축유 12억 배럴 방출 '초읽기’",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPa2R0ZnAxelJfYzhPNGtmQlNmLU5WNFlrcDBySkhYNmRsRmR3d0paWTJQOHJ0d3hrTUo1eEc1SVlLUG1WNzRwNEN2QzdhcUZwSm0xb19hZnlSNUtNTmtPUGRNMTdJTXhoSTNmTVZUMFZGd1BCNWtMZEJFQjNnTDR6SmM3eTRhQ0pm?oc=5"
+      "title": "국제유가, 사상최대 비축유 방출에도 5%↑…브렌트 92달러",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYVJybmFOWWIxSklxUUZHanhIMTdLREhIQ3A3WTlCUDMwb2I3Vkt3cS1rTjBqcjZ6aWltRi1PeGNrZWJjN2ZfZ1FpZC0wY1JIUmxCMm1leUZkSUYzUkhtRjNnVk1lZGxwSEVBSnFMUkI2aEd0WnNzY0h2RDZYYlctN0d4WEp1MGtScWZIb0N2cWVObnRLUUhILUJQOTZqVTVFZnhsMEI3MHpzNHQ0Q1d4VkhQcWtHd21veGphdVBBbUtoQm1FeGd5TC1SZkg1ZDNIazF2Tg?oc=5"
     },
     {
-      "title": "삼성SDI, 로봇 특화 '파우치 전고체' 배터리 공개한다",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVSkxNVFZiZ21td25JTmFFZmhOb0stV0tFbzNTZFZQUDVPam5lZDhJR2lqVjlwZDNhV09JVFJCTnJfSU5DZFUwaG13N2ZCSGRMS2xlZGV3?oc=5"
+      "title": "‘현대차 새만금 9조 투자’ 추진 본격화…5월 중 범정부 지원계획 발표",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE40MlNTSXlFZXZWSnZudzlfU2wyTWRxWUctWmcwSmFjSmFYREZ5WWJjMTdmNktURFJvcUVsRDE5SUNCM1RKNG94bmc5VEIxTUxjcDRFbDJOSk11dzVXenBNUGV2ei0zMUtoMjJRVVlaZ1M5N05NVVl0ODdpVjVOLXPSAZMBQVVfeXFMTTNTZElzdWI2U0ZmMHJ5Wm5pZFpRY1o1eTZ6U1NaVEEzTW40OVVCY0doYXl0MlBremxGYjVXT0psYmhhX3I2YkRwUk9ndXlhdU9XVGJYeWpwbEhwVkc5NjJmZzlEaU40WjRZenZwajFIVU5uSEthMG1fdkNqZ1pSR1BUcGFyaFpMc0g0UENNMElzbmpv?oc=5"
     },
     {
-      "title": "Oracle Stock Jumps After Earnings Beat Expectations",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ndTF6YWg2SW1XeDR4YzBuQVE1U2x4QS1BV0I0bjBGUm92WWE4YTk1RVRzMG5KTTA0NHNjN2xFTzJhTDdoYTBDOVU3MVkzcUtZZG8wZEs4akhNUHkwYlFubDBrQmJVYTdWbnp4dlZBaDJxQWhERkVxRQ?oc=5"
+      "title": "Oracle Stock Jumps After Earnings Beat. How Tech Giant Is Answering Worries About AI Costs.",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNX3RGdzZ3ZUhscXZQSDdBSU5kcEdWcGY4WmQ2ZTJJbUxxYndON3lDZFg4RlJfa1dxNXFNRlE2T3FfWHNyYUhzZFhEdkRQcTFjeXNjNkxkVm1wRzgyby05UU5MMDhDLXMyWUx1LXlYdmMwRlhfVkFscUVYdXBDZ29yZ0JubG1nZ2xZUXc?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체/AI",
+      "name": "에너지/정유",
       "sentiment": "HOT",
-      "reason": "기업 실적 호조 및 대규모 R&D 투자가 시장 주도권 유지 중"
+      "reason": "이란-미국 긴장 고조로 인한 국제 유가 급등으로 실적 수혜 예상"
     },
     {
-      "name": "에너지",
-      "sentiment": "OVERHEATED",
-      "reason": "지정학적 리스크로 인한 급등세, 단기 변동성 주의 필요"
+      "name": "AI/소프트웨어",
+      "sentiment": "STABLE",
+      "reason": "오라클 등 실적 호조 기업 중심의 펀더멘털 방어력 입증"
     },
     {
-      "name": "로봇/이차전지",
-      "sentiment": "POSITIVE",
-      "reason": "전고체 배터리 등 차세대 기술 상용화 기대감"
+      "name": "자동차",
+      "sentiment": "GROWTH",
+      "reason": "현대차의 대규모 투자 및 생산 거점 확대 정책에 따른 밸류체인 강화"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "현대자동차",
+      "symbol": "005380.KS"
     },
     {
       "name": "Oracle",
       "symbol": "ORCL"
     },
     {
-      "name": "Ford Motor",
-      "symbol": "F"
+      "name": "Exxon Mobil",
+      "symbol": "XOM"
     }
   ],
   "keywords": [
     {
-      "name": "지정학적 리스크",
+      "name": "이란 전쟁",
       "weight": 20
     },
     {
-      "name": "반도체 호황",
+      "name": "국제유가",
+      "weight": 18
+    },
+    {
+      "name": "AI 수익성",
       "weight": 15
     },
     {
-      "name": "AI 혁신",
-      "weight": 15
-    },
-    {
-      "name": "에너지 가격",
+      "name": "지정학적 리스크",
       "weight": 12
     },
     {
-      "name": "전고체 배터리",
+      "name": "기업 투자",
       "weight": 10
     },
     {
-      "name": "공급망 불안",
-      "weight": 10
+      "name": "물가 불안",
+      "weight": 9
     },
     {
-      "name": "기업 실적",
-      "weight": 10
+      "name": "공급망",
+      "weight": 8
     },
     {
-      "name": "변동성",
+      "name": "기술주 변동성",
       "weight": 8
     }
   ],
-  "reason": "삼성전자는 반도체 업황 회복과 역대급 연봉 체계로 내부 동력이 강화된 '무릎' 위치로 판단되며, 오라클(ORCL)은 실적 서프라이즈를 통한 AI 클라우드 시장 점유율 확대로 기술적 반등 추세가 뚜렷합니다. 포드(F)는 새로운 챗봇 도입을 통한 디지털 전환 가속화로 주가가 이제 막 상승 탄력을 받고 있어 저평가 매력이 높습니다.",
-  "push_message": "[프리즘 금융] 호르무즈 리스크 속 반도체와 AI 실적주 중심의 대응이 필요합니다. 오늘 주목할 종목: 삼성전자(005930.KS), 오라클(ORCL), 포드(F)"
+  "reason": "지정학적 리스크로 인한 시장 불확실성을 고려하여 1) 에너지 섹터의 대장주(XOM)를 통해 인플레이션 헤지, 2) AI 산업 내에서 실적으로 가치를 증명한 오라클(ORCL)을 통한 성장 확보, 3) 대규모 투자 계획이 확정된 현대차(005380.KS)를 통해 한국 시장 내 저평가 구간 공략을 추천합니다. 현대차는 정부 정책 지원과 맞물려 기술적 반등이 기대되는 '무릎' 위치에 있습니다.",
+  "push_message": "🚨 [프리즘 시황] 이란발 리스크로 유가 급등! 에너지주 집중 및 실적 기반 기술주 중심의 보수적 대응 권고."
 }
