@@ -1,121 +1,120 @@
 {
-  "date": "2026-03-13 08:17",
+  "date": "2026-03-14 08:16",
   "market_info": {
     "KOSPI": {
-      "price": 5583.25,
-      "change": -0.48,
+      "price": 5487.24,
+      "change": -1.72,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1148.4,
-      "change": 1.02,
+      "price": 1152.96,
+      "change": 0.4,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6672.62,
-      "change": -1.52,
+      "price": 6632.19,
+      "change": -0.61,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22311.98,
-      "change": -1.78,
+      "price": 22105.36,
+      "change": -0.93,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "현대자동차",
-      "change": -1.7
+      "ticker": "한국가스공사",
+      "change": -1.8
     },
     {
-      "ticker": "Oracle",
-      "change": -2.43
+      "ticker": "엑손모빌",
+      "change": 1.69
     },
     {
-      "ticker": "Exxon Mobil",
-      "change": 1.29
+      "ticker": "록히드마틴",
+      "change": -1.05
     }
   ],
-  "summary": "이란-중동 전쟁 리스크가 글로벌 공급망과 에너지 시장을 강타하며 유가가 100달러를 돌파, 시장 전반에 극도의 투자 심리 위축이 나타나고 있습니다. 인플레이션 재점화 공포로 인해 뉴욕증시는 급락세를 보이고 있으며, 안전자산 선호 심리와 에너지 섹터로의 자금 이동이 가속화되고 있습니다. 지정학적 불확실성이 단기적 이슈를 넘어 구조적 변화로 인식되면서 투자자들은 공격적 매수보다는 리스크 관리에 집중하고 있습니다.",
+  "summary": "이란 전쟁 긴장감 지속에 따른 국제유가 급등과 에너지 위기 공포가 시장의 위험 회피 심리를 극대화하고 있습니다. 고물가와 소비 위축 우려로 연내 금리 인하 기대감이 약화되면서 미국과 한국 증시 모두 하락 압력을 강하게 받고 있습니다. 투자자들은 지정학적 리스크와 거시경제 불안 속에서 실물 자산과 방어주 중심으로 포트폴리오를 재편하려는 움직임을 보입니다.",
   "news_headlines": [
     {
-      "title": "[속보] 국제유가 또 '마의 100달러 돌파' 호르무즈 유조선 폭파",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLUFNWDZKSGYxOFNDS19qSFhwY0Q5NzRPVXVRcXp5TGpkSEV1NVM3M1JZYzlDZTNaM01CRkJ3NWRmRDNVaE13NFFfUlJKOXRYODhpQ3FQZ2pBbk5udDBsNDRfbjZLRllmQm1sT1Bkd0tNcmJxOHN6UTFoS1ZWYlp6ZWJCYTFsSmxn?oc=5"
+      "title": "브렌트유 이틀째 100달러선...월가 “이란전 장기화땐 에너지 위기 현실화”",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE15Tkp0QlJrQ2dRU1lHalhPLTl2b3BITEZQSnVhY2pEZHpfazJXb0tnbC1pMTlvT0pNZmFlNzQ4cmlValpNbmt2SlVKdkhIbnFiVlFEWm1qTHVidGJ5TjJKLU9DTGhtLXJVZEtuYWVDdVNXVTQ?oc=5"
     },
     {
-      "title": "Dow tumbles more than 700 points as oil jumps, closing at new 2026 low",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5paHdBWjNhaGdxNmdBM1pNQWFWbFBqVHNNVXdDTlFKc2w5c1ZMUDNpUmwwaGttc1R0S3IxekQ1NUxXdEFZanVmdERMdzZkMlZkaWhUY2pVc3dxSHZ0VEdkVkd0SkVOUFZGVmtzS3lXcFV1cXdFaTM00gF8QVVfeXFMUDBWTEFlRDFhUXdyRGhRYUZuLXJEOVhkTUhHalpXbnNoNzFsWk4wdW5HT3l4ZjAzdjV5bVg2MGFGa3Z1LWV6cWRwdW12cVBPdG4wMVF3Q3pETTVOTEZYTEFqcDFyOG52RksxQkdZNGlKSG5lQkFfcXk3UUNldA?oc=5"
+      "title": "선박용 소형원전 띄운다…'K사이언스' 속도",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVNmp0X1FLQmwtYlJ2N25NSGQ2ZkFUV2Rrb05OZUxuQ3VmRzhSbVpzMFBSSE9NNEtJT1I2UTNpajAwdEZQMnljcUowTnBDZ3pRb1VsUktoUU10UdIBVEFVX3lxTE9NV3JKcmQxSDlCVEJzenNtNGkyVWhIUW5VdzctT3RjcS02N1UwNkhZeWxVbkg1Vm5wQlhsR0RoR3hDV09zb3poemtDYWNaZ0tQM2djNA?oc=5"
+    },
+    {
+      "title": "삼성SDI, “전고체 배터리, 휴머노이드 '게임체인저' 될 것”",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBZZHVCZW94alktRGs2bWlJWWtLaE5KeTJsUnhpd0xqR0tFWUt2S1BzYWt2OGdzU2FjbUNfb3hsWEtIaDVvNVdNYzllcXh0QQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지(Oil & Gas)",
+      "name": "에너지/원자력",
       "sentiment": "HOT",
-      "reason": "호르무즈 해협 위기 고조로 인한 국제유가 급등 수혜"
+      "reason": "지정학적 리스크에 따른 유가 급등과 에너지 자립을 위한 원전 기술의 중요성 부각"
     },
     {
-      "name": "반도체(Semiconductor)",
-      "sentiment": "COLD",
-      "reason": "메모리 품귀 현상에도 불구하고 시장 전반의 매도세로 인한 동반 하락"
-    },
-    {
-      "name": "방위산업(Defense)",
-      "sentiment": "HOT",
-      "reason": "중동 분쟁 격화에 따른 글로벌 국방비 지출 증가 및 실적 개선 기대"
+      "name": "차세대 배터리",
+      "sentiment": "GROWTH",
+      "reason": "휴머노이드 로봇 등 미래 산업 핵심 동력으로서의 전고체 배터리 기대감"
     }
   ],
   "tickers": [
     {
-      "name": "한국가스공사",
-      "symbol": "036460.KS"
+      "name": "삼성SDI",
+      "symbol": "006400.KS"
     },
     {
-      "name": "엑손모빌",
+      "name": "Exxon Mobil",
       "symbol": "XOM"
     },
     {
-      "name": "록히드마틴",
-      "symbol": "LMT"
+      "name": "Cameco Corporation",
+      "symbol": "CCJ"
     }
   ],
   "keywords": [
     {
-      "name": "유가급등",
+      "name": "이란 전쟁",
       "weight": 20
     },
     {
-      "name": "호르무즈전쟁",
+      "name": "국제유가",
       "weight": 20
     },
     {
-      "name": "공급망교란",
-      "weight": 15
+      "name": "금리 인하",
+      "weight": 12
     },
     {
-      "name": "인플레이션",
+      "name": "에너지 위기",
       "weight": 10
     },
     {
-      "name": "반도체품귀",
+      "name": "전고체 배터리",
       "weight": 10
     },
     {
-      "name": "비축유방출",
+      "name": "소형원전",
       "weight": 10
     },
     {
-      "name": "금리인상",
+      "name": "물가상승",
       "weight": 8
     },
     {
-      "name": "방산수혜",
-      "weight": 7
+      "name": "지정학적 리스크",
+      "weight": 10
     }
   ],
-  "reason": "시장 전체가 공포감에 휩싸여 기술주 중심의 투매가 이어지고 있습니다. 따라서 지수와 상관관계가 낮고, 원자재 가격 상승기에 직접적인 수혜를 입는 에너지 섹터와 안보 불안에 따른 방산주를 포트폴리오의 중심으로 잡았습니다. 한국가스공사는 유가 급등에 따른 정책적 대안 및 실적 방어가 기대되는 '무릎' 위치이며, XOM과 LMT는 시장 하락기에도 강력한 현금흐름과 지정학적 헤지 기능을 제공할 것으로 판단됩니다.",
-  "push_message": "⚠️ [위험] 국제유가 100달러 돌파, 시장 변동성 극대화! 에너지 및 방산 섹터로 리스크 관리 전략이 필요한 시점입니다."
+  "reason": "추천 종목들은 과열권을 벗어나 반등을 모색하는 '무릎' 위치의 우량주입니다. 삼성SDI(006400.KS)는 전고체 배터리 기술력으로 미래 모빌리티 시장의 게임체인저 역할을 할 것으로 보이며 기술적 조정 후 지지력을 확인했습니다. XOM(엑손모빌)은 고유가 수혜의 직접적 대상이며, CCJ(카메코)는 에너지 위기 대응을 위한 원자력 수요 증가로 안정적인 우상향 흐름을 기대할 수 있는 위치에 있습니다.",
+  "push_message": "🚨 [프리즘 시황] 이란 전쟁발 에너지 위기 고조! 유가 급등에 따른 에너지/원전주 주목 및 조정 구간의 전고체 배터리 대표주를 확인하세요."
 }
