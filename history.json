@@ -1,14 +1,5 @@
 [
   {
-    "date": "2026-02-24 00:42",
-    "performance": [],
-    "predictions": [
-      "삼성전자",
-      "Gilead",
-      "버크셔 해서웨이"
-    ]
-  },
-  {
     "date": "2026-02-24 00:51",
     "performance": [],
     "predictions": [
@@ -627,6 +618,28 @@
       "삼성SDI",
       "Exxon Mobil",
       "Cameco Corporation"
+    ]
+  },
+  {
+    "date": "2026-03-15 08:16",
+    "performance": [
+      {
+        "ticker": "삼성SDI",
+        "change": -3.0
+      },
+      {
+        "ticker": "Exxon Mobil",
+        "change": 1.69
+      },
+      {
+        "ticker": "Cameco Corporation",
+        "change": -6.4
+      }
+    ],
+    "predictions": [
+      "S-Oil",
+      "Exxon Mobil",
+      "Lockheed Martin"
     ]
   }
 ]
