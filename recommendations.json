@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-15 08:16",
+  "date": "2026-03-16 08:18",
   "market_info": {
     "KOSPI": {
       "price": 5487.24,
@@ -28,58 +28,62 @@
   },
   "past_results": [
     {
-      "ticker": "삼성SDI",
-      "change": -3.0
+      "ticker": "S-Oil",
+      "change": -8.47
     },
     {
       "ticker": "Exxon Mobil",
       "change": 1.69
     },
     {
-      "ticker": "Cameco Corporation",
-      "change": -6.4
+      "ticker": "Lockheed Martin",
+      "change": -1.05
     }
   ],
-  "summary": "중동 전쟁 격화에 따른 국제 유가 급등과 이로 인한 스태그플레이션 공포가 시장 전반을 강타하며 투자 심리가 급격히 위축되었습니다. 글로벌 증시는 주요 지지선이 붕괴하며 하향 추세를 보이고 있으며, 원/달러 환율 상승과 인플레이션 우려로 변동성이 극대화된 상태입니다. 보수적인 포트폴리오 재구성이 필요한 시점으로, 에너지 안보와 필수 방어주 위주의 접근이 요구됩니다.",
+  "summary": "이란발 지정학적 리스크 심화와 유가 급등으로 인해 글로벌 금융시장의 변동성이 크게 확대된 상태입니다. 투자자들은 에너지 안보 강화와 금리 상승 압박 속에서 방어적 자산과 AI 기반의 성장주를 병행하는 전략을 취하고 있습니다. 전반적으로 경계감이 고조된 가운데, 에너지 공급난의 수혜주와 기술 혁신을 주도하는 AI 섹터가 시장의 핵심 모멘텀으로 작용하고 있습니다.",
   "news_headlines": [
     {
-      "title": "중동전쟁에 원화 하락폭 주요국 최상위…평균 환율 환란 후 최고",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5FQS0yRVZVa3pBbWJGRlJQOUpLUlMxeDdhUmZodkJqSnJPVFE2QllSVzlSZlpnWm9ldzBvMGNITTJETUN3aExja3BuVlR6QTBPencxZDRPeHpVTVXSAWBBVV95cUxNNGxXbXpET21CRW00akZZdm41SEJRMWxiSnFZLS1XOGpfNXg1VEFxcFNTdFFza0loRmhSVUlaRlR0NDI0UWg3TzdLV0d1QnRDbGRKaU1jVUhTWEFidnI2VEc?oc=5"
+      "title": "SK하이닉스, 시총 648조에도…증권가 “더 간다”",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBnRldpSG9KdzhUcmxtZ0JjdHdkRDBrYkhyTDhaYlZiYWVKS3VXRkVnRXpqZGtQWkx2Z20tbTN3RHhmSHlUX05lbXM4UDJ6aGNoN3QyZDZ2c1RFczBRRWN3Y2VkcGl5OEt2aXBvWm5nVQ?oc=5"
     },
     {
-      "title": "S&P500, 유가 급등·스태그플레이션 공포에 연저점 경신…3주 연속 하락",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51SndMMVFuY1BaeF9NTzNoUldtNzlSSm1uSmxBX3JaMGVMS1ktTTJ0VFA1em9xbGdoc3BUWUlBSFZHSDk4RUV2LXBwbGNLcDdtTURLTEdRT2lVcndKMGc?oc=5"
+      "title": "Futures Due, Oil Eyes $100; 4 AI Stocks Near Buy Points",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbFdhTjVtelZ1alNONWtuamZzZi1qSm9laHhRRmdBbWdidUlCVWs3al93N21vYVNnSGVHLXpWYjV2YnIzVzlaMFkyV2RJb2hleC1Xanc5M0sydjRyQ2ZCNFZPTlBwdmwzR183TkZpY0FabExKME5VM2hmdDB6bUxJRE4zUklsYkdwT0w1RFZYLWlIUS1kek1oWGIyYS1OTEcwOUZkT3ZpVXR1a2xqR3FpcExTajFnd2RCZ0twRzNBOVU?oc=5"
+    },
+    {
+      "title": "‘Only Getting Started’: Top Analyst Bangs the Drum for Nvidia Stock",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSWtHWnpTeEF4cWJlTU5tbkl4enVwOGhGY21PUVhNN2xQZXFBc1NXVHlOOUdnczN6SmNjUmtldGZwR3pZSVAzTHRHamgxdGIzZlJ6X3hxU1I3dXJMV2k2eExxVmZHQ193aHFXNzAxUl8xNDJDX0VmVmtQLUo4TU55MFoxZzlYOGNUX2JZT3FXamlfajZkWUE?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지",
+      "name": "에너지/자원",
       "sentiment": "HOT",
-      "reason": "호르무즈 해협 봉쇄 및 중동 전쟁에 따른 유가 급등으로 실적 수혜 기대감 증대"
+      "reason": "이란 전쟁 장기화에 따른 원유 공급 차질 및 유가 상승세 지속"
     },
     {
-      "name": "방산/안보",
+      "name": "반도체/AI",
       "sentiment": "HOT",
-      "reason": "지정학적 리스크 확산에 따른 국가별 방위비 증액 및 에너지 안보 강화"
+      "reason": "기술적 주도권 강화 및 공급망 재편 속에서 실적 모멘텀 유지"
     }
   ],
   "tickers": [
     {
-      "name": "S-Oil",
-      "symbol": "010950.KS"
+      "name": "SK하이닉스",
+      "symbol": "000660.KS"
     },
     {
-      "name": "Exxon Mobil",
-      "symbol": "XOM"
+      "name": "NVIDIA",
+      "symbol": "NVDA"
     },
     {
-      "name": "Lockheed Martin",
-      "symbol": "LMT"
+      "name": "Microsoft",
+      "symbol": "MSFT"
     }
   ],
   "keywords": [
     {
-      "name": "중동전쟁",
+      "name": "이란전쟁",
       "weight": 20
     },
     {
@@ -87,30 +91,30 @@
       "weight": 18
     },
     {
-      "name": "스태그플레이션",
+      "name": "AI반도체",
       "weight": 15
     },
     {
-      "name": "환율",
+      "name": "지정학적리스크",
       "weight": 12
     },
     {
-      "name": "인플레이션",
+      "name": "SK하이닉스",
       "weight": 10
     },
     {
-      "name": "호르무즈",
-      "weight": 9
+      "name": "에너지안보",
+      "weight": 10
     },
     {
-      "name": "지정학적리스크",
+      "name": "금리인상",
       "weight": 8
     },
     {
-      "name": "안전자산",
-      "weight": 8
+      "name": "테슬라",
+      "weight": 7
     }
   ],
-  "reason": "현재 시장은 과도한 공포 구간에 진입해 있으나, 추천 종목들은 에너지 가격 상승과 안보 이슈로부터 직접적인 실적 방어력을 가집니다. S-Oil은 유가 변동성 속에서도 견고한 정제마진을 확보할 수 있는 위치이며, XOM과 LMT는 글로벌 에너지 공급난과 지정학적 불안 속에서 '무릎' 위치에서 하방 경직성을 확보하고 있어 변동성 장세의 피난처로 적합합니다.",
-  "push_message": "[Prism 분석] 중동發 유가 급등으로 인한 스태그플레이션 공포가 증시를 덮쳤습니다. 위험 관리와 에너지·방산 섹터 위주의 방어적 전략이 필요한 시점입니다."
+  "reason": "SK하이닉스는 반도체 슈퍼사이클과 AI 수요 증가로 인해 과열권 진입 전의 탄탄한 상승 기조를 유지하고 있어 눌림목 대응이 유효합니다. NVIDIA는 최근 분석가들의 강력 매수 권고가 이어지는 가운데, 글로벌 AI 인프라 확장의 핵심주로 조정 시 '무릎' 위치에서 매수 전략이 유효합니다. MSFT는 소프트웨어 전반의 AI 재작성 트렌드 중심에 있어 시장 변동성 속에서도 견고한 펀더멘털을 기반으로 한 중장기 우상향이 기대됩니다.",
+  "push_message": "[프리즘 금융 알림] 이란 리스크로 유가 급등, 시장 변동성 확대! 방어적 에너지 자산과 견고한 AI 대장주(SK하이닉스, NVDA, MSFT) 중심의 포트폴리오 관리가 필요합니다."
 }

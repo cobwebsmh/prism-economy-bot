@@ -1,14 +1,5 @@
 [
   {
-    "date": "2026-02-24 00:51",
-    "performance": [],
-    "predictions": [
-      "포스코홀딩스",
-      "NVIDIA",
-      "길리어드 사이언스"
-    ]
-  },
-  {
     "date": "2026-02-24 08:25",
     "performance": [
       {
@@ -640,6 +631,28 @@
       "S-Oil",
       "Exxon Mobil",
       "Lockheed Martin"
+    ]
+  },
+  {
+    "date": "2026-03-16 08:18",
+    "performance": [
+      {
+        "ticker": "S-Oil",
+        "change": -8.47
+      },
+      {
+        "ticker": "Exxon Mobil",
+        "change": 1.69
+      },
+      {
+        "ticker": "Lockheed Martin",
+        "change": -1.05
+      }
+    ],
+    "predictions": [
+      "SK하이닉스",
+      "NVIDIA",
+      "Microsoft"
     ]
   }
 ]
