@@ -1,70 +1,75 @@
 {
-  "date": "2026-03-16 08:18",
+  "date": "2026-03-17 08:20",
   "market_info": {
     "KOSPI": {
-      "price": 5487.24,
-      "change": -1.72,
+      "price": 5549.85,
+      "change": 1.14,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1152.96,
-      "change": 0.4,
+      "price": 1138.29,
+      "change": -1.27,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6632.19,
-      "change": -0.61,
+      "price": 6699.38,
+      "change": 1.01,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22105.36,
-      "change": -0.93,
+      "price": 22374.18,
+      "change": 1.22,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "S-Oil",
-      "change": -8.47
+      "ticker": "SK하이닉스",
+      "change": 7.03
     },
     {
-      "ticker": "Exxon Mobil",
-      "change": 1.69
+      "ticker": "NVIDIA",
+      "change": 1.65
     },
     {
-      "ticker": "Lockheed Martin",
-      "change": -1.05
+      "ticker": "Microsoft",
+      "change": 1.11
     }
   ],
-  "summary": "이란발 지정학적 리스크 심화와 유가 급등으로 인해 글로벌 금융시장의 변동성이 크게 확대된 상태입니다. 투자자들은 에너지 안보 강화와 금리 상승 압박 속에서 방어적 자산과 AI 기반의 성장주를 병행하는 전략을 취하고 있습니다. 전반적으로 경계감이 고조된 가운데, 에너지 공급난의 수혜주와 기술 혁신을 주도하는 AI 섹터가 시장의 핵심 모멘텀으로 작용하고 있습니다.",
+  "summary": "호르무즈 해협의 일부 선박 통행 재개 소식으로 급등했던 국제 유가가 하락하며 인플레이션 우려가 다소 완화된 투자 심리가 증시에 반영되고 있습니다. 글로벌 AI 산업의 확장세와 맞물려 엔비디아 GTC 등 주요 이벤트가 시장의 핵심 모멘텀으로 작용하며 기술주 중심의 반등을 이끌고 있습니다. 다만, 고금리 환경과 지정학적 리스크가 상존하고 있어 변동성 관리가 필요한 시점입니다.",
   "news_headlines": [
     {
-      "title": "SK하이닉스, 시총 648조에도…증권가 “더 간다”",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBnRldpSG9KdzhUcmxtZ0JjdHdkRDBrYkhyTDhaYlZiYWVKS3VXRkVnRXpqZGtQWkx2Z20tbTN3RHhmSHlUX05lbXM4UDJ6aGNoN3QyZDZ2c1RFczBRRWN3Y2VkcGl5OEt2aXBvWm5nVQ?oc=5"
+      "title": "엔비디아 GTC에 최태원·곽노정 참석…SK하이닉스, 협력 과시",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLWVRMX3E3MFcyQVY4RGloeGJuSFJIa2xzMTNjd241SGxGejZBQ3lQWTFtXzBXSGxxeHozWVNqSHZ5cUJpY0dIZHJzb3RzMUtCOGhzSVVMajZIZHZJOEVPZFJ2SFVFNk0wcVV0VVlXMDA?oc=5"
     },
     {
-      "title": "Futures Due, Oil Eyes $100; 4 AI Stocks Near Buy Points",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbFdhTjVtelZ1alNONWtuamZzZi1qSm9laHhRRmdBbWdidUlCVWs3al93N21vYVNnSGVHLXpWYjV2YnIzVzlaMFkyV2RJb2hleC1Xanc5M0sydjRyQ2ZCNFZPTlBwdmwzR183TkZpY0FabExKME5VM2hmdDB6bUxJRE4zUklsYkdwT0w1RFZYLWlIUS1kek1oWGIyYS1OTEcwOUZkT3ZpVXR1a2xqR3FpcExTajFnd2RCZ0twRzNBOVU?oc=5"
+      "title": "호르무즈 개방 기대감…유가 하락·뉴욕증시 상승",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9wQjljbklGNG1CRWk4QUxWQlp1UFY2ekFQMm5CenVyaUc0cDl6ZkFFeHJwWUg3NUdjRXNjMTVHM1hIOFpvQm1HMzhkR2tERmxNWWhoOTJTZWdTN3c?oc=5"
     },
     {
-      "title": "‘Only Getting Started’: Top Analyst Bangs the Drum for Nvidia Stock",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSWtHWnpTeEF4cWJlTU5tbkl4enVwOGhGY21PUVhNN2xQZXFBc1NXVHlOOUdnczN6SmNjUmtldGZwR3pZSVAzTHRHamgxdGIzZlJ6X3hxU1I3dXJMV2k2eExxVmZHQ193aHFXNzAxUl8xNDJDX0VmVmtQLUo4TU55MFoxZzlYOGNUX2JZT3FXamlfajZkWUE?oc=5"
+      "title": "신세계, 국내 최대 규모 AI 데이터센터 짓는다",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE53SG9BMTVpeG1RU0JaRTRNVEZ0bEhnRHVuNklkUlVBaGUtSmxFSVpzejJWWTQzclBlWEo3STRGeFBUemRjRkEyS1RFN1cwVVVwbVRobkJB?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지/자원",
+      "name": "AI/반도체",
       "sentiment": "HOT",
-      "reason": "이란 전쟁 장기화에 따른 원유 공급 차질 및 유가 상승세 지속"
+      "reason": "엔비디아 GTC 개최와 데이터센터 구축 가속화로 관련 하드웨어 수요 지속"
     },
     {
-      "name": "반도체/AI",
-      "sentiment": "HOT",
-      "reason": "기술적 주도권 강화 및 공급망 재편 속에서 실적 모멘텀 유지"
+      "name": "해운/물류",
+      "sentiment": "NEUTRAL",
+      "reason": "호르무즈 봉쇄 리스크 완화로 단기 급등 후 안정화 단계 진입"
+    },
+    {
+      "name": "금융",
+      "sentiment": "BULLISH",
+      "reason": "주주환원 정책(자사주 소각) 강화에 따른 저평가 메리트 부각"
     }
   ],
   "tickers": [
@@ -77,44 +82,44 @@
       "symbol": "NVDA"
     },
     {
-      "name": "Microsoft",
-      "symbol": "MSFT"
+      "name": "Meta Platforms",
+      "symbol": "META"
     }
   ],
   "keywords": [
     {
-      "name": "이란전쟁",
+      "name": "AI",
       "weight": 20
     },
     {
-      "name": "유가급등",
-      "weight": 18
-    },
-    {
-      "name": "AI반도체",
+      "name": "호르무즈",
       "weight": 15
     },
     {
-      "name": "지정학적리스크",
+      "name": "유가",
+      "weight": 15
+    },
+    {
+      "name": "엔비디아",
       "weight": 12
     },
     {
-      "name": "SK하이닉스",
+      "name": "데이터센터",
       "weight": 10
     },
     {
-      "name": "에너지안보",
+      "name": "지정학적리스크",
       "weight": 10
     },
     {
-      "name": "금리인상",
-      "weight": 8
+      "name": "금리",
+      "weight": 9
     },
     {
-      "name": "테슬라",
-      "weight": 7
+      "name": "반도체",
+      "weight": 9
     }
   ],
-  "reason": "SK하이닉스는 반도체 슈퍼사이클과 AI 수요 증가로 인해 과열권 진입 전의 탄탄한 상승 기조를 유지하고 있어 눌림목 대응이 유효합니다. NVIDIA는 최근 분석가들의 강력 매수 권고가 이어지는 가운데, 글로벌 AI 인프라 확장의 핵심주로 조정 시 '무릎' 위치에서 매수 전략이 유효합니다. MSFT는 소프트웨어 전반의 AI 재작성 트렌드 중심에 있어 시장 변동성 속에서도 견고한 펀더멘털을 기반으로 한 중장기 우상향이 기대됩니다.",
-  "push_message": "[프리즘 금융 알림] 이란 리스크로 유가 급등, 시장 변동성 확대! 방어적 에너지 자산과 견고한 AI 대장주(SK하이닉스, NVDA, MSFT) 중심의 포트폴리오 관리가 필요합니다."
+  "reason": "SK하이닉스는 엔비디아와의 견고한 HBM 파트너십을 통해 AI 모멘텀을 주도하고 있으며, 기술적 조정 이후 다시 상승 탄력을 받는 무릎 구간에 위치합니다. NVDA는 신제품 Vera CPU 출시와 GTC 기대감이 반영되고 있으나, 강세장 속 추가 상승 여력이 충분합니다. META는 270억 달러 규모의 AI 인프라 투자와 효율적인 AI 모델 도입으로 빅테크 중 밸류에이션 매력이 돋보이는 위치입니다.",
+  "push_message": "시장 심리 개선: 유가 하락으로 증시 활력 회복. 주목할 섹터는 AI/반도체와 금융주입니다."
 }

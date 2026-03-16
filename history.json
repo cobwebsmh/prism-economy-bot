@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-02-24 08:25",
-    "performance": [
-      {
-        "ticker": "포스코홀딩스",
-        "change": -1.52
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": 0.91
-      },
-      {
-        "ticker": "길리어드 사이언스",
-        "change": -1.04
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "NVIDIA",
-      "AbbVie"
-    ]
-  },
-  {
     "date": "2026-02-25 08:20",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "SK하이닉스",
       "NVIDIA",
       "Microsoft"
+    ]
+  },
+  {
+    "date": "2026-03-17 08:20",
+    "performance": [
+      {
+        "ticker": "SK하이닉스",
+        "change": 7.03
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": 1.65
+      },
+      {
+        "ticker": "Microsoft",
+        "change": 1.11
+      }
+    ],
+    "predictions": [
+      "SK하이닉스",
+      "NVIDIA",
+      "Meta Platforms"
     ]
   }
 ]
