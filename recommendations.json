@@ -1,27 +1,27 @@
 {
-  "date": "2026-03-17 08:20",
+  "date": "2026-03-18 08:21",
   "market_info": {
     "KOSPI": {
-      "price": 5549.85,
-      "change": 1.14,
+      "price": 5640.48,
+      "change": 1.63,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1138.29,
-      "change": -1.27,
+      "price": 1136.94,
+      "change": -0.12,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6699.38,
-      "change": 1.01,
+      "price": 6716.09,
+      "change": 0.25,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22374.18,
-      "change": 1.22,
+      "price": 22479.53,
+      "change": 0.47,
       "is_open": false,
       "status": "⚪"
     }
@@ -29,97 +29,97 @@
   "past_results": [
     {
       "ticker": "SK하이닉스",
-      "change": 7.03
+      "change": -0.41
     },
     {
       "ticker": "NVIDIA",
-      "change": 1.65
+      "change": -0.7
     },
     {
-      "ticker": "Microsoft",
-      "change": 1.11
+      "ticker": "Meta Platforms",
+      "change": -0.76
     }
   ],
-  "summary": "호르무즈 해협의 일부 선박 통행 재개 소식으로 급등했던 국제 유가가 하락하며 인플레이션 우려가 다소 완화된 투자 심리가 증시에 반영되고 있습니다. 글로벌 AI 산업의 확장세와 맞물려 엔비디아 GTC 등 주요 이벤트가 시장의 핵심 모멘텀으로 작용하며 기술주 중심의 반등을 이끌고 있습니다. 다만, 고금리 환경과 지정학적 리스크가 상존하고 있어 변동성 관리가 필요한 시점입니다.",
+  "summary": "글로벌 시장은 지정학적 리스크에 따른 에너지 가격 상승과 인공지능(AI) 반도체 공급망 재편이라는 상반된 흐름 속에서 변동성을 보이고 있습니다. 연준의 금리 인하 경로에 대한 불확실성이 상존하나, AI 인프라 확장에 따른 삼성전자와 엔비디아 중심의 기술주 모멘텀은 여전히 시장의 핵심 동력으로 작용 중입니다. 기술적으로는 주요 지수가 전고점 부근에서 숨 고르기를 거치며, 낙폭 과대나 실적 대비 저평가된 우량주로의 순환매가 기대되는 시점입니다.",
   "news_headlines": [
     {
-      "title": "엔비디아 GTC에 최태원·곽노정 참석…SK하이닉스, 협력 과시",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLWVRMX3E3MFcyQVY4RGloeGJuSFJIa2xzMTNjd241SGxGejZBQ3lQWTFtXzBXSGxxeHozWVNqSHZ5cUJpY0dIZHJzb3RzMUtCOGhzSVVMajZIZHZJOEVPZFJ2SFVFNk0wcVV0VVlXMDA?oc=5"
+      "title": "‘땡큐 삼성’ 외친 젠슨 황, “삼성이 그록 LPU 생산한다”",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORFpKdWpoWVNiSEx4dUo5T3ZVTXlIRUREd2tRNWVaYks0OFNmNk0yM0R3MTc1a0tfRDVKekwtVkV3TFN1Y28wQTl4dUdZWVFmN1FJd2hvbS04YkV3V05BUDd4eHVtaWY4VDlPXy0zTGxGa0RCU2Y0YnlxSmlfb2VYM216UdIBlwFBVV95cUxPV2Vmbm5zMDBhLXp2TkV3T05BUkRoU0d0Y2g5TWFYUHd6eWl0d3VNc0Q2TFJ5UUVEaThFMHd6ODNhSjItbmJZLU5INTlNN0xhQ2E3MFNEN0NYUXRwZkd2VHMzYS1QRWkxOElaSTZFbkZMTFFtZkNBaW9CaGZ1QzNaU3VXdkJSUVdNbmN2WG1kbWw2a3JTTVo4?oc=5"
     },
     {
-      "title": "호르무즈 개방 기대감…유가 하락·뉴욕증시 상승",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9wQjljbklGNG1CRWk4QUxWQlp1UFY2ekFQMm5CenVyaUc0cDl6ZkFFeHJwWUg3NUdjRXNjMTVHM1hIOFpvQm1HMzhkR2tERmxNWWhoOTJTZWdTN3c?oc=5"
+      "title": "US confirms Tesla (TSLA) is buyer in LG’s $4.3B LFP battery deal for Megapack 3",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQa0JPWmZWZlFWdTFpdUt0Tk9MSmwzTTV3c0xmX3FLSjYxcEZoS3h6OU5xXzlUWTdsUGRJMC1UWmQ0RjJTNzZrWFlCZmJhX1RXX1J1QklfUzlrbjV3THU1LXY3OTBidFZ0eWNfek1GU2xZSmwxVGxMTzc0Y3JpWERnMHR1UWVxb3JfaFNTSEJTczNUZHhESmVMU1F6MDBhWkYxR3RBMmxLcw?oc=5"
     },
     {
-      "title": "신세계, 국내 최대 규모 AI 데이터센터 짓는다",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE53SG9BMTVpeG1RU0JaRTRNVEZ0bEhnRHVuNklkUlVBaGUtSmxFSVpzejJWWTQzclBlWEo3STRGeFBUemRjRkEyS1RFN1cwVVVwbVRobkJB?oc=5"
+      "title": "국제유가, 다시 상승…호르무즈 유조선 호위 연합 구성 난항",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80dWd2RUczVG1uVlZQVW1ITllZZ0dFdExPTWJVYWxEbldGdHlMemtuZzZrRzA2X2VxbzZNblFFSHFzaTYweTI0dGJobmhwZ3dGcGVuWGR1aElWX0FtbUZuNWJya0t2dXo1Y0NNdFMxWGIyYTg?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "AI/반도체",
+      "name": "반도체/AI 파운드리",
       "sentiment": "HOT",
-      "reason": "엔비디아 GTC 개최와 데이터센터 구축 가속화로 관련 하드웨어 수요 지속"
+      "reason": "삼성전자의 파운드리 위상 회복과 엔비디아 협력 강화로 공급망의 핵심 축으로 부상"
     },
     {
-      "name": "해운/물류",
+      "name": "에너지/방산",
       "sentiment": "NEUTRAL",
-      "reason": "호르무즈 봉쇄 리스크 완화로 단기 급등 후 안정화 단계 진입"
+      "reason": "중동 긴장 고조로 인한 유가 상승 및 방산 수요 증가가 상존"
     },
     {
-      "name": "금융",
-      "sentiment": "BULLISH",
-      "reason": "주주환원 정책(자사주 소각) 강화에 따른 저평가 메리트 부각"
+      "name": "이차전지/전기차",
+      "sentiment": "STABLE",
+      "reason": "테슬라-LG에너지솔루션 등 대규모 공급 계약을 통한 실적 가시성 확보"
     }
   ],
   "tickers": [
     {
-      "name": "SK하이닉스",
-      "symbol": "000660.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "NVIDIA",
+      "name": "엔비디아",
       "symbol": "NVDA"
     },
     {
-      "name": "Meta Platforms",
-      "symbol": "META"
+      "name": "LG에너지솔루션",
+      "symbol": "373220.KS"
     }
   ],
   "keywords": [
     {
-      "name": "AI",
+      "name": "AI반도체",
       "weight": 20
     },
     {
-      "name": "호르무즈",
+      "name": "파운드리",
       "weight": 15
     },
     {
-      "name": "유가",
+      "name": "유가상승",
       "weight": 15
     },
     {
-      "name": "엔비디아",
+      "name": "이차전지",
       "weight": 12
     },
     {
-      "name": "데이터센터",
+      "name": "중동리스크",
       "weight": 10
     },
     {
-      "name": "지정학적리스크",
+      "name": "공급망",
       "weight": 10
     },
     {
-      "name": "금리",
+      "name": "금리인하",
       "weight": 9
     },
     {
-      "name": "반도체",
+      "name": "실적전망",
       "weight": 9
     }
   ],
-  "reason": "SK하이닉스는 엔비디아와의 견고한 HBM 파트너십을 통해 AI 모멘텀을 주도하고 있으며, 기술적 조정 이후 다시 상승 탄력을 받는 무릎 구간에 위치합니다. NVDA는 신제품 Vera CPU 출시와 GTC 기대감이 반영되고 있으나, 강세장 속 추가 상승 여력이 충분합니다. META는 270억 달러 규모의 AI 인프라 투자와 효율적인 AI 모델 도입으로 빅테크 중 밸류에이션 매력이 돋보이는 위치입니다.",
-  "push_message": "시장 심리 개선: 유가 하락으로 증시 활력 회복. 주목할 섹터는 AI/반도체와 금융주입니다."
+  "reason": "삼성전자는 젠슨 황 CEO의 언급으로 파운드리 사업의 기술적 해자가 재확인되었으며, 현재 주가는 장기 박스권 상단 돌파를 시도하는 무릎 위치로 판단됩니다. 엔비디아는 H200 생산 재개와 AI 생태계 지배력을 고려할 때 단기 조정을 거친 후 강세가 예상됩니다. LG에너지솔루션은 테슬라와의 대규모 LFP 배터리 공급 계약을 통해 불확실성을 해소하며 안정적인 우상향 흐름을 기대할 수 있는 기술적 지지 구간에 위치해 있습니다.",
+  "push_message": "금융 분석: 젠슨 황의 삼성 파운드리 지원 사격! AI 반도체와 배터리 섹터 중심의 포트폴리오 재편이 필요한 시점입니다."
 }
