@@ -1,75 +1,75 @@
 {
-  "date": "2026-03-18 08:21",
+  "date": "2026-03-19 08:21",
   "market_info": {
     "KOSPI": {
-      "price": 5640.48,
-      "change": 1.63,
+      "price": 5925.03,
+      "change": 5.04,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1136.94,
-      "change": -0.12,
+      "price": 1164.38,
+      "change": 2.41,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6716.09,
-      "change": 0.25,
+      "price": 6624.7,
+      "change": -1.36,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22479.53,
-      "change": 0.47,
+      "price": 22152.42,
+      "change": -1.46,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "SK하이닉스",
-      "change": -0.41
+      "ticker": "삼성전자",
+      "change": 7.53
     },
     {
-      "ticker": "NVIDIA",
-      "change": -0.7
+      "ticker": "엔비디아",
+      "change": -0.84
     },
     {
-      "ticker": "Meta Platforms",
-      "change": -0.76
+      "ticker": "LG에너지솔루션",
+      "change": 0.79
     }
   ],
-  "summary": "글로벌 시장은 지정학적 리스크에 따른 에너지 가격 상승과 인공지능(AI) 반도체 공급망 재편이라는 상반된 흐름 속에서 변동성을 보이고 있습니다. 연준의 금리 인하 경로에 대한 불확실성이 상존하나, AI 인프라 확장에 따른 삼성전자와 엔비디아 중심의 기술주 모멘텀은 여전히 시장의 핵심 동력으로 작용 중입니다. 기술적으로는 주요 지수가 전고점 부근에서 숨 고르기를 거치며, 낙폭 과대나 실적 대비 저평가된 우량주로의 순환매가 기대되는 시점입니다.",
+  "summary": "미국 연준의 금리 동결과 올해 1회 인하 전망으로 인해 시장의 긴축 공포가 지속되며 글로벌 투자 심리가 위축된 상태입니다. 중동발 지정학적 리스크로 인한 유가 급등과 인플레이션 우려가 기술주 중심의 차익 실현 매물을 유도하고 있습니다. 한국 시장은 반도체 및 AI 기술 혁신에 대한 기대감과 노동 이슈가 공존하며 신중한 탐색 흐름이 예상됩니다.",
   "news_headlines": [
     {
-      "title": "‘땡큐 삼성’ 외친 젠슨 황, “삼성이 그록 LPU 생산한다”",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORFpKdWpoWVNiSEx4dUo5T3ZVTXlIRUREd2tRNWVaYks0OFNmNk0yM0R3MTc1a0tfRDVKekwtVkV3TFN1Y28wQTl4dUdZWVFmN1FJd2hvbS04YkV3V05BUDd4eHVtaWY4VDlPXy0zTGxGa0RCU2Y0YnlxSmlfb2VYM216UdIBlwFBVV95cUxPV2Vmbm5zMDBhLXp2TkV3T05BUkRoU0d0Y2g5TWFYUHd6eWl0d3VNc0Q2TFJ5UUVEaThFMHd6ODNhSjItbmJZLU5INTlNN0xhQ2E3MFNEN0NYUXRwZkd2VHMzYS1QRWkxOElaSTZFbkZMTFFtZkNBaW9CaGZ1QzNaU3VXdkJSUVdNbmN2WG1kbWw2a3JTTVo4?oc=5"
+      "title": "중동 사태 불확실성에 미 연준 금리 동결…“올해 인하 1번 가능”",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1iMUh0c0tWSVVXSjM4VWwzVFhMQXB6TXQ4Y2liWFduWlktZktOaWVhdDl1SWljYVdRcktfc3BNWlpqMXUwUi13VDR2YXNjbURkWldxVGMzUzhVck81TDdTZnZ1Z2J2Zw?oc=5"
     },
     {
-      "title": "US confirms Tesla (TSLA) is buyer in LG’s $4.3B LFP battery deal for Megapack 3",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQa0JPWmZWZlFWdTFpdUt0Tk9MSmwzTTV3c0xmX3FLSjYxcEZoS3h6OU5xXzlUWTdsUGRJMC1UWmQ0RjJTNzZrWFlCZmJhX1RXX1J1QklfUzlrbjV3THU1LXY3OTBidFZ0eWNfek1GU2xZSmwxVGxMTzc0Y3JpWERnMHR1UWVxb3JfaFNTSEJTczNUZHhESmVMU1F6MDBhWkYxR3RBMmxLcw?oc=5"
+      "title": "'베라 루빈을 선점하라'…GTC 2026서 삼성 vs SK의 HBM 신경전",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wX1k1TFgycXBXSVdCSGkwYXNUNnlqU3pwUXd0ckVhZU5zcEd3UjB4Zkh2YlRmaW1RM3ZxTEdqWHFsU3UzQlIxbjZMdEdJM3ZWMDlPRGt1cVJ6NlJ1N0RvdGMyT29PRGJtQjR0aHRtbFE?oc=5"
     },
     {
-      "title": "국제유가, 다시 상승…호르무즈 유조선 호위 연합 구성 난항",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80dWd2RUczVG1uVlZQVW1ITllZZ0dFdExPTWJVYWxEbldGdHlMemtuZzZrRzA2X2VxbzZNblFFSHFzaTYweTI0dGJobmhwZ3dGcGVuWGR1aElWX0FtbUZuNWJya0t2dXo1Y0NNdFMxWGIyYTg?oc=5"
+      "title": "Nvidia gets China's approval to sell H200 chips: report",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSFA3NDM5YzdRQzI2REpNSW9FTVhjVzhMOHZSYW1nYlNFU0QxbFdubGRrcWVkWTdKYTctS3dQa3hyVzMxZW5sa0IwSkFNT3VpWENOZEV3UFRISFZWN1RCRmJSRTJNLWJsR2dqODBpMV9YQk1ZYVhMcGppcER2YmtBdURFcDdLa2pBUVBzWQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체/AI 파운드리",
+      "name": "반도체/AI",
       "sentiment": "HOT",
-      "reason": "삼성전자의 파운드리 위상 회복과 엔비디아 협력 강화로 공급망의 핵심 축으로 부상"
+      "reason": "GTC 2026 기반 차세대 HBM 수요 및 엔비디아 중국향 매출 재개 기대감"
     },
     {
-      "name": "에너지/방산",
+      "name": "에너지",
+      "sentiment": "HOT",
+      "reason": "호르무즈 해협 리스크에 따른 원유 공급 불확실성 증대"
+    },
+    {
+      "name": "엔터프라이즈 소프트웨어",
       "sentiment": "NEUTRAL",
-      "reason": "중동 긴장 고조로 인한 유가 상승 및 방산 수요 증가가 상존"
-    },
-    {
-      "name": "이차전지/전기차",
-      "sentiment": "STABLE",
-      "reason": "테슬라-LG에너지솔루션 등 대규모 공급 계약을 통한 실적 가시성 확보"
+      "reason": "도큐사인 등 실적 호조 기업 중심의 옥석 가리기 진행"
     }
   ],
   "tickers": [
@@ -78,48 +78,48 @@
       "symbol": "005930.KS"
     },
     {
-      "name": "엔비디아",
-      "symbol": "NVDA"
+      "name": "Micron Technology",
+      "symbol": "MU"
     },
     {
-      "name": "LG에너지솔루션",
-      "symbol": "373220.KS"
+      "name": "DocuSign",
+      "symbol": "DOCU"
     }
   ],
   "keywords": [
     {
-      "name": "AI반도체",
+      "name": "연준(Fed)",
       "weight": 20
     },
     {
-      "name": "파운드리",
+      "name": "금리동결",
       "weight": 15
     },
     {
-      "name": "유가상승",
+      "name": "중동 리스크",
       "weight": 15
     },
     {
-      "name": "이차전지",
+      "name": "반도체(HBM)",
       "weight": 12
     },
     {
-      "name": "중동리스크",
+      "name": "유가상승",
       "weight": 10
     },
     {
-      "name": "공급망",
+      "name": "AI 전환",
       "weight": 10
     },
     {
-      "name": "금리인하",
+      "name": "실적",
       "weight": 9
     },
     {
-      "name": "실적전망",
+      "name": "고용지표",
       "weight": 9
     }
   ],
-  "reason": "삼성전자는 젠슨 황 CEO의 언급으로 파운드리 사업의 기술적 해자가 재확인되었으며, 현재 주가는 장기 박스권 상단 돌파를 시도하는 무릎 위치로 판단됩니다. 엔비디아는 H200 생산 재개와 AI 생태계 지배력을 고려할 때 단기 조정을 거친 후 강세가 예상됩니다. LG에너지솔루션은 테슬라와의 대규모 LFP 배터리 공급 계약을 통해 불확실성을 해소하며 안정적인 우상향 흐름을 기대할 수 있는 기술적 지지 구간에 위치해 있습니다.",
-  "push_message": "금융 분석: 젠슨 황의 삼성 파운드리 지원 사격! AI 반도체와 배터리 섹터 중심의 포트폴리오 재편이 필요한 시점입니다."
+  "reason": "삼성전자는 노조 이슈로 조정받았으나 HBM 공급망에서의 전략적 위치와 주주환원 기대감으로 기술적 '무릎' 구간입니다. 마이크론(MU)은 실적 기대감 대비 상승 탄력이 남아있고, 도큐사인(DOCU)은 최근 강력한 실적 모멘텀을 바탕으로 하락장 속에서도 견조한 기술적 추세를 형성하고 있어 포트폴리오의 안정성을 높여줍니다.",
+  "push_message": "[Prism AI] 시장은 연준 금리 동결과 중동 리스크라는 양대 악재에 노출되었습니다. 반도체 기술주 중심의 저점 매수 전략이 유효하며, 지정학적 이슈로 인한 유가 변동성을 예의주시해야 합니다."
 }

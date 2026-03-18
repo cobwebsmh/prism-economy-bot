@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-02-26 08:19",
-    "performance": [
-      {
-        "ticker": "포스코홀딩스",
-        "change": 1.75
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": 1.41
-      },
-      {
-        "ticker": "Apple",
-        "change": 0.77
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "NVIDIA",
-      "Advanced Micro Devices Inc"
-    ]
-  },
-  {
     "date": "2026-02-26 23:22",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전자",
       "엔비디아",
       "LG에너지솔루션"
+    ]
+  },
+  {
+    "date": "2026-03-19 08:21",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 7.53
+      },
+      {
+        "ticker": "엔비디아",
+        "change": -0.84
+      },
+      {
+        "ticker": "LG에너지솔루션",
+        "change": 0.79
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "Micron Technology",
+      "DocuSign"
     ]
   }
 ]
