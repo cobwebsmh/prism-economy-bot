@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-02-26 23:22",
-    "performance": [
-      {
-        "ticker": "삼성전자",
-        "change": 7.13
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": 1.41
-      },
-      {
-        "ticker": "Advanced Micro Devices Inc",
-        "change": -1.39
-      }
-    ],
-    "predictions": [
-      "포스코홀딩스",
-      "NVIDIA",
-      "뱅가드 성장 ETF"
-    ]
-  },
-  {
     "date": "2026-02-27 08:19",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전자",
       "Micron Technology",
       "DocuSign"
+    ]
+  },
+  {
+    "date": "2026-03-20 08:19",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -3.84
+      },
+      {
+        "ticker": "Micron Technology",
+        "change": -3.78
+      },
+      {
+        "ticker": "DocuSign",
+        "change": -2.35
+      }
+    ],
+    "predictions": [
+      "SK하이닉스",
+      "Eli Lilly",
+      "NVIDIA"
     ]
   }
 ]

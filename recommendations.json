@@ -1,27 +1,27 @@
 {
-  "date": "2026-03-19 08:21",
+  "date": "2026-03-20 08:19",
   "market_info": {
     "KOSPI": {
-      "price": 5925.03,
-      "change": 5.04,
+      "price": 5763.22,
+      "change": -2.73,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1164.38,
-      "change": 2.41,
+      "price": 1143.48,
+      "change": -1.79,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6624.7,
-      "change": -1.36,
+      "price": 6606.49,
+      "change": -0.27,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22152.42,
-      "change": -1.46,
+      "price": 22090.69,
+      "change": -0.28,
       "is_open": false,
       "status": "⚪"
     }
@@ -29,97 +29,97 @@
   "past_results": [
     {
       "ticker": "삼성전자",
-      "change": 7.53
+      "change": -3.84
     },
     {
-      "ticker": "엔비디아",
-      "change": -0.84
+      "ticker": "Micron Technology",
+      "change": -3.78
     },
     {
-      "ticker": "LG에너지솔루션",
-      "change": 0.79
+      "ticker": "DocuSign",
+      "change": -2.35
     }
   ],
-  "summary": "미국 연준의 금리 동결과 올해 1회 인하 전망으로 인해 시장의 긴축 공포가 지속되며 글로벌 투자 심리가 위축된 상태입니다. 중동발 지정학적 리스크로 인한 유가 급등과 인플레이션 우려가 기술주 중심의 차익 실현 매물을 유도하고 있습니다. 한국 시장은 반도체 및 AI 기술 혁신에 대한 기대감과 노동 이슈가 공존하며 신중한 탐색 흐름이 예상됩니다.",
+  "summary": "글로벌 시장은 고유가발 인플레이션 공포와 지정학적 리스크가 맞물리며 투자 심리가 크게 위축된 상태입니다. 에너지 가격 급등으로 각국 중앙은행의 긴축 기조가 유지될 것이라는 우려가 증시 하락을 주도하고 있습니다. 다만, AI 및 비만 치료제와 같은 구조적 성장 섹터로의 자금 쏠림은 여전히 강한 모멘텀을 형성하고 있습니다.",
   "news_headlines": [
     {
-      "title": "중동 사태 불확실성에 미 연준 금리 동결…“올해 인하 1번 가능”",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1iMUh0c0tWSVVXSjM4VWwzVFhMQXB6TXQ4Y2liWFduWlktZktOaWVhdDl1SWljYVdRcktfc3BNWlpqMXUwUi13VDR2YXNjbURkWldxVGMzUzhVck81TDdTZnZ1Z2J2Zw?oc=5"
+      "title": "뉴욕증시, 고유가 부담에 하락 출발",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45RHF1MW5WNG1HTW1PQ21yMDR3RlpGNVpjb0pWTGxKMXJOcWp4QVRsaG5vOC1OZlZZc1FYWGNjLS1ya3Y5Q19NQzlRRGl1Mm5kVE5jeU1uV1ZuWXJRVzlZYXJsOWxXWlRXY3I2U1FBaXg?oc=5"
     },
     {
-      "title": "'베라 루빈을 선점하라'…GTC 2026서 삼성 vs SK의 HBM 신경전",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wX1k1TFgycXBXSVdCSGkwYXNUNnlqU3pwUXd0ckVhZU5zcEd3UjB4Zkh2YlRmaW1RM3ZxTEdqWHFsU3UzQlIxbjZMdEdJM3ZWMDlPRGt1cVJ6NlJ1N0RvdGMyT29PRGJtQjR0aHRtbFE?oc=5"
+      "title": "엔비디아 손잡은 로슈·릴리…AI 슈퍼컴퓨팅으로 신약개발 승부",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9XblYyd3RXOGxsNmxWM2FiR0NZZGJkbnBGcTJRbUtWX28zSmtyeldSUHo0NTkxUnNNUWh4NHJ4dlZjRzJuV2NPWGtfT2loYVFFLTZiaGZmdHpSMHFuMXlwYmJXTGNrWUlOOGVuNg?oc=5"
     },
     {
-      "title": "Nvidia gets China's approval to sell H200 chips: report",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSFA3NDM5YzdRQzI2REpNSW9FTVhjVzhMOHZSYW1nYlNFU0QxbFdubGRrcWVkWTdKYTctS3dQa3hyVzMxZW5sa0IwSkFNT3VpWENOZEV3UFRISFZWN1RCRmJSRTJNLWJsR2dqODBpMV9YQk1ZYVhMcGppcER2YmtBdURFcDdLa2pBUVBzWQ?oc=5"
+      "title": "Eli Lilly Confirms 'Superior Weight Loss' Of Its Next-Generation Obesity Drug",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVTlEWXRFTE5SYlh0RjNndnRzdGFocFg2OUU2SGZWV1NYWUFXRDV5UTA5RjFIRU5jamVMY0F1SkpNQmhjU09KVjNwQUw4dGJMckF5YjRkU2xEYnpfQWZ3RDRBZmF1N2ExczI0SmpzLWppT2pIbEY1d1RmQVY0VFV6NnFrRndJNHJtMnVYWlFTOVo1WWt2NDl1Wkw2Yi1DMVpOaXJjS0tPUVFhZw?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체/AI",
+      "name": "인공지능(AI)",
       "sentiment": "HOT",
-      "reason": "GTC 2026 기반 차세대 HBM 수요 및 엔비디아 중국향 매출 재개 기대감"
+      "reason": "엔비디아와 업스테이지 등 AI 인프라 수요 지속 및 신약 개발과의 융합 가속화"
+    },
+    {
+      "name": "제약/바이오",
+      "sentiment": "HOT",
+      "reason": "비만 치료제 시장 확대 및 AACR 학회 기대감 반영"
     },
     {
       "name": "에너지",
-      "sentiment": "HOT",
-      "reason": "호르무즈 해협 리스크에 따른 원유 공급 불확실성 증대"
-    },
-    {
-      "name": "엔터프라이즈 소프트웨어",
-      "sentiment": "NEUTRAL",
-      "reason": "도큐사인 등 실적 호조 기업 중심의 옥석 가리기 진행"
+      "sentiment": "COLD",
+      "reason": "유가 급등에 따른 인플레이션 우려 및 시장 변동성 확대"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "SK하이닉스",
+      "symbol": "000660.KS"
     },
     {
-      "name": "Micron Technology",
-      "symbol": "MU"
+      "name": "Eli Lilly",
+      "symbol": "LLY"
     },
     {
-      "name": "DocuSign",
-      "symbol": "DOCU"
+      "name": "NVIDIA",
+      "symbol": "NVDA"
     }
   ],
   "keywords": [
     {
-      "name": "연준(Fed)",
+      "name": "AI",
       "weight": 20
     },
     {
-      "name": "금리동결",
+      "name": "고유가",
+      "weight": 18
+    },
+    {
+      "name": "인플레이션",
       "weight": 15
     },
     {
-      "name": "중동 리스크",
-      "weight": 15
-    },
-    {
-      "name": "반도체(HBM)",
+      "name": "비만치료제",
       "weight": 12
     },
     {
-      "name": "유가상승",
+      "name": "지정학적리스크",
       "weight": 10
     },
     {
-      "name": "AI 전환",
-      "weight": 10
-    },
-    {
-      "name": "실적",
+      "name": "실적호조",
       "weight": 9
     },
     {
-      "name": "고용지표",
-      "weight": 9
+      "name": "금리",
+      "weight": 8
+    },
+    {
+      "name": "환율",
+      "weight": 8
     }
   ],
-  "reason": "삼성전자는 노조 이슈로 조정받았으나 HBM 공급망에서의 전략적 위치와 주주환원 기대감으로 기술적 '무릎' 구간입니다. 마이크론(MU)은 실적 기대감 대비 상승 탄력이 남아있고, 도큐사인(DOCU)은 최근 강력한 실적 모멘텀을 바탕으로 하락장 속에서도 견조한 기술적 추세를 형성하고 있어 포트폴리오의 안정성을 높여줍니다.",
-  "push_message": "[Prism AI] 시장은 연준 금리 동결과 중동 리스크라는 양대 악재에 노출되었습니다. 반도체 기술주 중심의 저점 매수 전략이 유효하며, 지정학적 이슈로 인한 유가 변동성을 예의주시해야 합니다."
+  "reason": "SK하이닉스는 AI 반도체 수요의 핵심인 HBM 시장의 주도권을 유지하고 있으며, 최근 조정장에서도 기술적 지지선을 다지며 '무릎' 위치에서 재상승을 준비 중입니다. Eli Lilly는 차세대 비만 치료제 임상 성공으로 실적 성장 동력이 확실하며, 조정 시마다 매수세가 유입되는 우상향 추세입니다. NVIDIA는 고유가라는 매크로 악재에도 불구하고 AI 인프라의 독점적 지위를 바탕으로 시장 하락 방어력이 높고 기술적 과열권에서 벗어나 안정적인 변동성을 보이고 있습니다.",
+  "push_message": "🚨 [프리즘 시황] 유가 급등에 시장은 불안하지만, AI와 바이오 핵심 테마는 견고합니다. SK하이닉스, LLY, NVDA의 조정 시 분할 매수를 추천합니다."
 }
