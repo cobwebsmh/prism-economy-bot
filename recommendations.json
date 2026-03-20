@@ -1,98 +1,98 @@
 {
-  "date": "2026-03-20 08:19",
+  "date": "2026-03-21 08:18",
   "market_info": {
     "KOSPI": {
-      "price": 5763.22,
-      "change": -2.73,
+      "price": 5781.2,
+      "change": 0.31,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1143.48,
-      "change": -1.79,
+      "price": 1161.52,
+      "change": 1.58,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6606.49,
-      "change": -0.27,
+      "price": 6506.48,
+      "change": -1.51,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22090.69,
-      "change": -0.28,
+      "price": 21647.61,
+      "change": -2.01,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -3.84
+      "ticker": "SK하이닉스",
+      "change": -0.59
     },
     {
-      "ticker": "Micron Technology",
-      "change": -3.78
+      "ticker": "Eli Lilly",
+      "change": -1.18
     },
     {
-      "ticker": "DocuSign",
-      "change": -2.35
+      "ticker": "NVIDIA",
+      "change": -3.28
     }
   ],
-  "summary": "글로벌 시장은 고유가발 인플레이션 공포와 지정학적 리스크가 맞물리며 투자 심리가 크게 위축된 상태입니다. 에너지 가격 급등으로 각국 중앙은행의 긴축 기조가 유지될 것이라는 우려가 증시 하락을 주도하고 있습니다. 다만, AI 및 비만 치료제와 같은 구조적 성장 섹터로의 자금 쏠림은 여전히 강한 모멘텀을 형성하고 있습니다.",
+  "summary": "중동발 지정학적 리스크 확산으로 글로벌 인플레이션 우려가 고조되며 뉴욕증시와 안전자산 심리가 급격히 악화되었습니다. 유가 급등은 금리 인하 기대감을 소멸시켰고, 기술주 중심의 투매 현상이 나타나며 시장 변동성이 극대화되고 있습니다. 주말을 앞두고 투자자들은 위험 회피 성향을 강하게 보이며 방어적인 포트폴리오 재편에 집중하는 모습입니다.",
   "news_headlines": [
     {
-      "title": "뉴욕증시, 고유가 부담에 하락 출발",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45RHF1MW5WNG1HTW1PQ21yMDR3RlpGNVpjb0pWTGxKMXJOcWp4QVRsaG5vOC1OZlZZc1FYWGNjLS1ya3Y5Q19NQzlRRGl1Mm5kVE5jeU1uV1ZuWXJRVzlZYXJsOWxXWlRXY3I2U1FBaXg?oc=5"
+      "title": "뉴욕증시, 트럼프 이란 지상군 투입 우려에 하락 마감",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9UeFJrQ1Azd0d2TVhnTnlKaEEyMVRzbXlqRVNzaV9fUWs3WEYzTmptZnRhN0JfVmF1SFFiNWZaMEMxSFNlRTJfeTdnUFZqWDZXbjl6eWoxT1B3QURIYzM5aWtueEQ2TC1fcHBGd2tCeDnSAXRBVV95cUxNbXVMbDAzTWZqT3JuVGxoM1kySkthaFJaM0pUaFVMZmJSREJzVnpjU1huSkFEVHhpS3dReFU5N01LbnotME9xaV9BQmZFSDc2N2pIcURqUmJuUXdlcHZ6LUhUUWJNQ1JhdUl5UHBwRU5xcV9zdQ?oc=5"
     },
     {
-      "title": "엔비디아 손잡은 로슈·릴리…AI 슈퍼컴퓨팅으로 신약개발 승부",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9XblYyd3RXOGxsNmxWM2FiR0NZZGJkbnBGcTJRbUtWX28zSmtyeldSUHo0NTkxUnNNUWh4NHJ4dlZjRzJuV2NPWGtfT2loYVFFLTZiaGZmdHpSMHFuMXlwYmJXTGNrWUlOOGVuNg?oc=5"
+      "title": "글로벌 유가 5주 연속 상승, 지정학적 위기 고조",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRkZtaUEtVU9vbUxWd1o4NUY4cG9rSUJoRVphanhpV3FuZXdiN3VrSnRjckVPUjZHSjdxZ2dxZ2I1SFJqMHU2VXhyVDlXUTI0OEVaUW5ZbEFJdXJWZG52eGpkTFV5UnJaQ0tETU1EUnlHaFpZWC10aS1Xa21wcHg1OGJTQ0JQbUFfSmR4RHVpVlJ6TmxlTWhYcGtWemZzOHc0LTdRUlV1eTQzYXdENHBpMGVIOGQ?oc=5"
     },
     {
-      "title": "Eli Lilly Confirms 'Superior Weight Loss' Of Its Next-Generation Obesity Drug",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVTlEWXRFTE5SYlh0RjNndnRzdGFocFg2OUU2SGZWV1NYWUFXRDV5UTA5RjFIRU5jamVMY0F1SkpNQmhjU09KVjNwQUw4dGJMckF5YjRkU2xEYnpfQWZ3RDRBZmF1N2ExczI0SmpzLWppT2pIbEY1d1RmQVY0VFV6NnFrRndJNHJtMnVYWlFTOVo1WWt2NDl1Wkw2Yi1DMVpOaXJjS0tPUVFhZw?oc=5"
+      "title": "슈퍼마이크로컴퓨터, AI 칩 밀수 혐의로 주가 25% 폭락",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNkxqNkxpTnRHSjM2cDhjUUxaS1hYR3oyZnI0MEJVckdPX2RpQWltWW9VZUZrSW9SaExnSXM3YkNYbVBRTElDeEhocktuaktzdy14aGM4d2d5RE5CTE05OTBhaWt2ako1RklUeTFlNnpBYzBaWkZaZmZRay05YUlwb0VDdTMxUXhLWFExTXRkdERiQjBwMHNLTE5xRlVDVmEya3BiclNjaUpudVhtY2tnTUI0ZEhLNzh1dnUxRnotUmZudDdZZ2UzUFFGRnUzUm84aUw1QUZNamdrdw?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "인공지능(AI)",
-      "sentiment": "HOT",
-      "reason": "엔비디아와 업스테이지 등 AI 인프라 수요 지속 및 신약 개발과의 융합 가속화"
-    },
-    {
-      "name": "제약/바이오",
-      "sentiment": "HOT",
-      "reason": "비만 치료제 시장 확대 및 AACR 학회 기대감 반영"
-    },
-    {
       "name": "에너지",
+      "sentiment": "HOT",
+      "reason": "이란-미국 갈등 격화로 인한 원유 공급 차질 우려 및 유가 상승세"
+    },
+    {
+      "name": "바이오/제약",
+      "sentiment": "STABLE",
+      "reason": "경기 방어적 성격과 더불어 위고비 등 비만치료제 유통망 확대로 실적 견인"
+    },
+    {
+      "name": "기술/AI",
       "sentiment": "COLD",
-      "reason": "유가 급등에 따른 인플레이션 우려 및 시장 변동성 확대"
+      "reason": "지정학적 리스크 및 기업 횡령·밀수 이슈로 인한 변동성 확대"
     }
   ],
   "tickers": [
     {
-      "name": "SK하이닉스",
-      "symbol": "000660.KS"
+      "name": "삼성바이오로직스",
+      "symbol": "207940.KS"
     },
     {
-      "name": "Eli Lilly",
-      "symbol": "LLY"
+      "name": "Chevron",
+      "symbol": "CVX"
     },
     {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
+      "name": "Exxon Mobil",
+      "symbol": "XOM"
     }
   ],
   "keywords": [
     {
-      "name": "AI",
+      "name": "지정학적 리스크",
       "weight": 20
     },
     {
-      "name": "고유가",
+      "name": "유가 상승",
       "weight": 18
     },
     {
@@ -100,26 +100,26 @@
       "weight": 15
     },
     {
-      "name": "비만치료제",
+      "name": "금리인하 지연",
       "weight": 12
     },
     {
-      "name": "지정학적리스크",
+      "name": "AI 규제/이슈",
       "weight": 10
     },
     {
-      "name": "실적호조",
-      "weight": 9
+      "name": "전쟁 피해",
+      "weight": 10
     },
     {
-      "name": "금리",
+      "name": "시장 변동성",
       "weight": 8
     },
     {
-      "name": "환율",
-      "weight": 8
+      "name": "기업 실적",
+      "weight": 7
     }
   ],
-  "reason": "SK하이닉스는 AI 반도체 수요의 핵심인 HBM 시장의 주도권을 유지하고 있으며, 최근 조정장에서도 기술적 지지선을 다지며 '무릎' 위치에서 재상승을 준비 중입니다. Eli Lilly는 차세대 비만 치료제 임상 성공으로 실적 성장 동력이 확실하며, 조정 시마다 매수세가 유입되는 우상향 추세입니다. NVIDIA는 고유가라는 매크로 악재에도 불구하고 AI 인프라의 독점적 지위를 바탕으로 시장 하락 방어력이 높고 기술적 과열권에서 벗어나 안정적인 변동성을 보이고 있습니다.",
-  "push_message": "🚨 [프리즘 시황] 유가 급등에 시장은 불안하지만, AI와 바이오 핵심 테마는 견고합니다. SK하이닉스, LLY, NVDA의 조정 시 분할 매수를 추천합니다."
+  "reason": "지정학적 리스크가 시장을 압도하는 가운데, 방어적 섹터인 바이오(삼성바이오로직스)를 통해 변동성을 방어하고, 유가 상승의 직접적인 수혜를 입는 에너지 메이저 기업(CVX, XOM)을 선정했습니다. 이들은 기술적 조정 구간을 거치며 과매도 혹은 저점 부근에 위치하여 상대적인 안전마진을 확보할 수 있습니다.",
+  "push_message": "중동 긴장 고조로 증시 하락세. 에너지주 주목 및 방어적 자산(삼성바이오로직스 등)으로 리스크 관리 필요."
 }
