@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-21 08:18",
+  "date": "2026-03-22 08:14",
   "market_info": {
     "KOSPI": {
       "price": 5781.2,
@@ -28,98 +28,98 @@
   },
   "past_results": [
     {
-      "ticker": "SK하이닉스",
-      "change": -0.59
+      "ticker": "삼성바이오로직스",
+      "change": 1.01
     },
     {
-      "ticker": "Eli Lilly",
-      "change": -1.18
+      "ticker": "Chevron",
+      "change": 0.14
     },
     {
-      "ticker": "NVIDIA",
-      "change": -3.28
+      "ticker": "Exxon Mobil",
+      "change": 0.95
     }
   ],
-  "summary": "중동발 지정학적 리스크 확산으로 글로벌 인플레이션 우려가 고조되며 뉴욕증시와 안전자산 심리가 급격히 악화되었습니다. 유가 급등은 금리 인하 기대감을 소멸시켰고, 기술주 중심의 투매 현상이 나타나며 시장 변동성이 극대화되고 있습니다. 주말을 앞두고 투자자들은 위험 회피 성향을 강하게 보이며 방어적인 포트폴리오 재편에 집중하는 모습입니다.",
+  "summary": "이란 전쟁 리스크와 에너지 위기 심화로 인해 글로벌 증시는 4주 연속 하락하며 투자 심리가 극도로 위축된 상태입니다. 고유가와 환율 급등이라는 '3중 덫'이 시장의 하방 압력을 키우고 있으나, AI 인프라 확충과 기술 패권 경쟁은 여전히 강력한 모멘텀으로 작용하고 있습니다. 불확실성 속에서 안전 자산 선호와 실적 기반의 핵심 기술주 중심의 보수적인 포트폴리오 재편이 요구되는 시점입니다.",
   "news_headlines": [
     {
-      "title": "뉴욕증시, 트럼프 이란 지상군 투입 우려에 하락 마감",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9UeFJrQ1Azd0d2TVhnTnlKaEEyMVRzbXlqRVNzaV9fUWs3WEYzTmptZnRhN0JfVmF1SFFiNWZaMEMxSFNlRTJfeTdnUFZqWDZXbjl6eWoxT1B3QURIYzM5aWtueEQ2TC1fcHBGd2tCeDnSAXRBVV95cUxNbXVMbDAzTWZqT3JuVGxoM1kySkthaFJaM0pUaFVMZmJSREJzVnpjU1huSkFEVHhpS3dReFU5N01LbnotME9xaV9BQmZFSDc2N2pIcURqUmJuUXdlcHZ6LUhUUWJNQ1JhdUl5UHBwRU5xcV9zdQ?oc=5"
+      "title": "[AI 반도체 동맹 시대] HBM 패권 전쟁, 삼성·SK 승부수",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VOGUxT21iNmk3YnowWVAxY1dnUVVqY2FGS3owOVFnZ1JuX3o3cE1RdC01aklKQVhMdm9vd1ZZT19LSGEzRUZ5ZlBCWjVCcW9xMUp5OHRfZktJQktYY0VyODlFaHU0a1E?oc=5"
     },
     {
-      "title": "글로벌 유가 5주 연속 상승, 지정학적 위기 고조",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRkZtaUEtVU9vbUxWd1o4NUY4cG9rSUJoRVphanhpV3FuZXdiN3VrSnRjckVPUjZHSjdxZ2dxZ2I1SFJqMHU2VXhyVDlXUTI0OEVaUW5ZbEFJdXJWZG52eGpkTFV5UnJaQ0tETU1EUnlHaFpZWC10aS1Xa21wcHg1OGJTQ0JQbUFfSmR4RHVpVlJ6TmxlTWhYcGtWemZzOHc0LTdRUlV1eTQzYXdENHBpMGVIOGQ?oc=5"
+      "title": "이란 war, 에너지 가격 급등으로 인한 글로벌 경제 하방 위험 증대",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85Njl5WEY0Z0pfRU1qbWY0WXFvSW9SOFJZZ3dNYmludkFad0J3OEhmMS1mM3BjNTYyYUhTZFE0WVprM2ZNQThUeVJfa3JhdmtKSHc2djYwa0VpcjV0UHdsbTV4U0E3MHFfUGhIU01FVkZUYVl5Z2hReDFYTQ?oc=5"
     },
     {
-      "title": "슈퍼마이크로컴퓨터, AI 칩 밀수 혐의로 주가 25% 폭락",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNkxqNkxpTnRHSjM2cDhjUUxaS1hYR3oyZnI0MEJVckdPX2RpQWltWW9VZUZrSW9SaExnSXM3YkNYbVBRTElDeEhocktuaktzdy14aGM4d2d5RE5CTE05OTBhaWt2ako1RklUeTFlNnpBYzBaWkZaZmZRay05YUlwb0VDdTMxUXhLWFExTXRkdERiQjBwMHNLTE5xRlVDVmEya3BiclNjaUpudVhtY2tnTUI0ZEhLNzh1dnUxRnotUmZudDdZZ2UzUFFGRnUzUm84aUw1QUZNamdrdw?oc=5"
+      "title": "삼천당제약, 코스닥 대장주 등극",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwUjlGNDRjaXZNQjBldG50TkpUSTFFRUlvanRPamZQY1hTeldEd21uMldvU01aMDc4WHNZMFlNU2stSlRFTE5PLW9TYTRSeXlRRnV3TDFkZy1CZ9IBVEFVX3lxTFAyenpscVJFRFhISW8tcjFSNU9iTmRVY19yNURPNmtKV1ZTTVhmbURNcEFwOUMzaHZqazc3RXB5TEh3MmVtUXJIeC0tRm5Cc3p1N0Q1TQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지",
+      "name": "반도체/HBM",
       "sentiment": "HOT",
-      "reason": "이란-미국 갈등 격화로 인한 원유 공급 차질 우려 및 유가 상승세"
+      "reason": "글로벌 AI 동맹 강화 및 HBM 시장 패권 경쟁 가속화"
     },
     {
-      "name": "바이오/제약",
-      "sentiment": "STABLE",
-      "reason": "경기 방어적 성격과 더불어 위고비 등 비만치료제 유통망 확대로 실적 견인"
+      "name": "에너지",
+      "sentiment": "BEARISH",
+      "reason": "지정학적 리스크에 따른 변동성 확대 및 인플레이션 압력"
     },
     {
-      "name": "기술/AI",
-      "sentiment": "COLD",
-      "reason": "지정학적 리스크 및 기업 횡령·밀수 이슈로 인한 변동성 확대"
+      "name": "제약/바이오",
+      "sentiment": "HOT",
+      "reason": "코스닥 대장주 교체 및 신약 파이프라인 기대감"
     }
   ],
   "tickers": [
     {
-      "name": "삼성바이오로직스",
-      "symbol": "207940.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "Chevron",
-      "symbol": "CVX"
+      "name": "Micron Technology",
+      "symbol": "MU"
     },
     {
-      "name": "Exxon Mobil",
-      "symbol": "XOM"
+      "name": "삼천당제약",
+      "symbol": "000250.KQ"
     }
   ],
   "keywords": [
     {
-      "name": "지정학적 리스크",
+      "name": "이란 전쟁",
       "weight": 20
     },
     {
-      "name": "유가 상승",
+      "name": "HBM",
       "weight": 18
     },
     {
-      "name": "인플레이션",
+      "name": "고유가",
       "weight": 15
     },
     {
-      "name": "금리인하 지연",
+      "name": "AI",
       "weight": 12
     },
     {
-      "name": "AI 규제/이슈",
+      "name": "인플레이션",
       "weight": 10
     },
     {
-      "name": "전쟁 피해",
-      "weight": 10
+      "name": "환율",
+      "weight": 9
     },
     {
-      "name": "시장 변동성",
+      "name": "데이터센터",
       "weight": 8
     },
     {
-      "name": "기업 실적",
-      "weight": 7
+      "name": "바이오",
+      "weight": 8
     }
   ],
-  "reason": "지정학적 리스크가 시장을 압도하는 가운데, 방어적 섹터인 바이오(삼성바이오로직스)를 통해 변동성을 방어하고, 유가 상승의 직접적인 수혜를 입는 에너지 메이저 기업(CVX, XOM)을 선정했습니다. 이들은 기술적 조정 구간을 거치며 과매도 혹은 저점 부근에 위치하여 상대적인 안전마진을 확보할 수 있습니다.",
-  "push_message": "중동 긴장 고조로 증시 하락세. 에너지주 주목 및 방어적 자산(삼성바이오로직스 등)으로 리스크 관리 필요."
+  "reason": "삼성전자는 HBM 동맹 및 파운드리 경쟁력을 통해 하락장에서 견고한 바닥을 다지고 있습니다(무릎 구간). 마이크론(MU)은 반도체 메모리 사이클을 주도하며 글로벌 AI 인프라 확장의 직접적인 수혜가 예상됩니다. 삼천당제약은 최근 코스닥 대장주로 부상하며 모멘텀이 강화되고 있어 기술적 상승 추세 속 안정적인 진입 지점으로 판단됩니다.",
+  "push_message": "[Prism AI] 시장 리스크 확대! 에너지 급등과 지정학적 불안 속에서도 AI/HBM/바이오 섹터는 견고합니다. 포트폴리오를 점검하고 '무릎' 구간 종목에 주목하세요."
 }

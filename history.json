@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-02-28 08:14",
-    "performance": [
-      {
-        "ticker": "포스코홀딩스",
-        "change": 1.35
-      },
-      {
-        "ticker": "Warner Bros. Discovery",
-        "change": -2.19
-      },
-      {
-        "ticker": "State Farm",
-        "change": -2.83
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "Microsoft",
-      "Alphabet"
-    ]
-  },
-  {
     "date": "2026-02-28 14:16",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성바이오로직스",
       "Chevron",
       "Exxon Mobil"
+    ]
+  },
+  {
+    "date": "2026-03-22 08:14",
+    "performance": [
+      {
+        "ticker": "삼성바이오로직스",
+        "change": 1.01
+      },
+      {
+        "ticker": "Chevron",
+        "change": 0.14
+      },
+      {
+        "ticker": "Exxon Mobil",
+        "change": 0.95
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "Micron Technology",
+      "삼천당제약"
     ]
   }
 ]
