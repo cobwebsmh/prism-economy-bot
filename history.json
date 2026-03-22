@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-02-28 14:16",
-    "performance": [
-      {
-        "ticker": "삼성전자",
-        "change": -0.69
-      },
-      {
-        "ticker": "Microsoft",
-        "change": -2.24
-      },
-      {
-        "ticker": "Alphabet",
-        "change": 1.39
-      }
-    ],
-    "predictions": [
-      "POSCO Holdings",
-      "NVIDIA",
-      "Microsoft"
-    ]
-  },
-  {
     "date": "2026-02-28 14:25",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전자",
       "Micron Technology",
       "삼천당제약"
+    ]
+  },
+  {
+    "date": "2026-03-23 08:16",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -0.55
+      },
+      {
+        "ticker": "Micron Technology",
+        "change": -4.81
+      },
+      {
+        "ticker": "삼천당제약",
+        "change": 14.09
+      }
+    ],
+    "predictions": [
+      "S-Oil",
+      "Exxon Mobil",
+      "Tesla"
     ]
   }
 ]
