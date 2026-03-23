@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-02-28 14:25",
-    "performance": [
-      {
-        "ticker": "POSCO Holdings",
-        "change": 1.35
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": -4.16
-      },
-      {
-        "ticker": "Microsoft",
-        "change": -2.24
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "NVIDIA",
-      "Advanced Micro Devices Inc."
-    ]
-  },
-  {
     "date": "2026-02-28 14:29",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "S-Oil",
       "Exxon Mobil",
       "Tesla"
+    ]
+  },
+  {
+    "date": "2026-03-24 08:21",
+    "performance": [
+      {
+        "ticker": "S-Oil",
+        "change": -5.19
+      },
+      {
+        "ticker": "Exxon Mobil",
+        "change": 0.91
+      },
+      {
+        "ticker": "Tesla",
+        "change": 3.5
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "마이크론",
+      "테슬라"
     ]
   }
 ]
