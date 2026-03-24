@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-02-28 14:29",
-    "performance": [
-      {
-        "ticker": "삼성전자",
-        "change": -0.69
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": -4.16
-      },
-      {
-        "ticker": "Advanced Micro Devices Inc.",
-        "change": -1.7
-      }
-    ],
-    "predictions": [
-      "현대차",
-      "NVIDIA",
-      "Alphabet"
-    ]
-  },
-  {
     "date": "2026-02-28 14:32",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전자",
       "마이크론",
       "테슬라"
+    ]
+  },
+  {
+    "date": "2026-03-25 08:20",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 1.83
+      },
+      {
+        "ticker": "마이크론",
+        "change": -2.18
+      },
+      {
+        "ticker": "테슬라",
+        "change": 0.57
+      }
+    ],
+    "predictions": [
+      "SK하이닉스",
+      "셀트리온",
+      "Exxon Mobil"
     ]
   }
 ]

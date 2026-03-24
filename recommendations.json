@@ -1,125 +1,125 @@
 {
-  "date": "2026-03-24 08:21",
+  "date": "2026-03-25 08:20",
   "market_info": {
     "KOSPI": {
-      "price": 5405.75,
-      "change": -6.49,
+      "price": 5553.92,
+      "change": 2.74,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1096.89,
-      "change": -5.56,
+      "price": 1121.44,
+      "change": 2.24,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6581.0,
-      "change": 1.15,
+      "price": 6556.37,
+      "change": -0.37,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 21946.76,
-      "change": 1.38,
+      "price": 21761.89,
+      "change": -0.84,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "S-Oil",
-      "change": -5.19
+      "ticker": "삼성전자",
+      "change": 1.83
     },
     {
-      "ticker": "Exxon Mobil",
-      "change": 0.91
+      "ticker": "마이크론",
+      "change": -2.18
     },
     {
-      "ticker": "Tesla",
-      "change": 3.5
+      "ticker": "테슬라",
+      "change": 0.57
     }
   ],
-  "summary": "이란발 지정학적 리스크 완화 기대감과 유가 하락이 뉴욕 증시의 강한 반등을 이끌며 시장 심리가 회복세로 전환되었습니다. 한국 증시는 수출 호조와 반도체 섹터의 폭발적인 성장세에도 불구하고, 환율 급등과 지정학적 확전 공포에 따른 수급 불안이 여전히 상존하는 복합적인 상황입니다. 전반적으로 AI 및 반도체 중심의 실적 모멘텀이 시장의 하방을 지지하는 가운데, 에너지 및 정책 변화에 따른 변동성 관리가 핵심입니다.",
+  "summary": "이란발 지정학적 리스크가 공급망 불안과 유가 급등을 촉발하며 시장의 인플레이션 우려를 재점화하고 있습니다. 미국 국채 금리 상승과 금리 인상 가능성 대두로 투자 심리가 위축된 가운데, 기술주를 중심으로 변동성이 확대되는 모습입니다. 한국 시장은 이러한 대외 악재에도 불구하고 반도체와 바이오 등 실적 기반 섹터의 차별화된 흐름이 예상됩니다.",
   "news_headlines": [
     {
-      "title": "100달러 아래로 떨어진 국제 유가...일제히 상승한 뉴욕 증시",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNakRtNWE2T01xVnVEVjRQaGVEZ2tvcENaYUREdGhuUzZ3WXJPNWU5NU9rSDBPMWxVMHZ5T1pfbHVJRXBYaW56aVgtUXNFamFQbHU4S1htaEgxWTJyOXl3Vmh2bzZyTXZQYnlDN3pndXlvelZDWm9kY0NGZDNJZDFqUjVJMmVQeGZVSUhNLUhQTWdacnpkUEdlM2VVWlNrZ9IBsgFBVV95cUxPak1WTlZQLWdmb2RGcE1UR2xMM3dEMzFhaTROVnhfMEh0YlJwSjBlOE90YUIzeWZqaEdCQ3pxOVlHai14WHdPRUZkMVoybGxaQ2tBdERFaXg4cEFRN1BvWHNEaHEyNEVVczh2c1hnUmlZSWVSUWJhSEdqNEVteXNvQW8tVVBsck9IWi1JRnpkdDFHd2NZTWlEdU1tX3ktR2pacVU3UTZyT0x3YVcxME5xbkp3?oc=5"
+      "title": "SK하이닉스, 미 증권거래위원회에 ADR 등록 신청서 제출",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXc0QydXptbHl6VTdzTFVYR2dpM0dPRjJnWlVXeUszRHc1SG55ODlhOE5taURRa2syYjNCSVB4M1VlT0NZV1FicFliaDJ5aGxGT1JEbjZITFB5QdIBX0FVX3lxTE1oWTctWkFDTXhyaGhobHlsSkVtaHRZN1lkMGFnY1VzMkxrSXZFXzRKX0psV281VTYxbXdCVHBKcFVHeXRvcTl6dmR6YTBoeFo1V0xiQWpYZ3VkQ2ZHUGk0?oc=5"
     },
     {
-      "title": "3월 1~20일 수출 50.4%↑·역대 최대…반도체 163.9% 급증",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5GNmpLMG5uR0tOSUFpSVpiY0xkTTdUaDl1TUFBc3VMcFY5NEhBMy11TC12dWhYVnlmenE5UjVvQzByR0dtUnlSYkFJVXpuWVNaTFZvMkFId0dLSUtuX2hvQWh0aVY4TFJEWElwUEVlSnc?oc=5"
+      "title": "셀트리온, 송도에 18만 리터 규모 4·5공장 증설…1조2천억원 투자",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBlb3NhNlhCWE9hSTN4ZkZrRklXZXZzWWE0VE5ERTFJT05fQWFwamUwUHJMZkp1Sl9NdUJCc3loc0VBRTE1YVpuZzdTajNKMmxVcUlWLUNR?oc=5"
     },
     {
-      "title": "Micron Set For Massive AI Pricing Upside",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWDRSM3NRaS1vSVJRV1VIaXBWRXNwNDN6RnBmN21FYVY1SDV0U21DdnVFU1hub3o3YXVtWGR4OWZEeE03TlkyN1BoZG5yQ2NaN0pyQXYyY2lxdGtmbGQ0NE9xTFpLcE9vdTFScDIzNkZaaUk2WkJ5TFg3cHh6S0c0NlRGUUNIbUxDYktyX0pUZkpFSjJLRTd3S1Vra3ljTjg?oc=5"
+      "title": "Oil Prices Spike as Iran Denies U.S. Talks and Traders Refocus on Supply Risk",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMTJVdjA3d1hoLWMtaWNJZElta0UtREthYTNROE1zeVVNQjRWZGNMMHFvSWs2ZVF3WnV0X1dQZ2s4TE9zb1ZYMGo1TzVGTl9TX2Z4VDdnYm9RNWZlQVB3OFZvb0lRcDJJOTRYbkdzRmtSSzJYX3IyUkxzMGZBT3NWZU1CN1k4VEpMSFJzampwaUROZ2MwUno4cTUzamtoUmlIbS1IWDBILVpPZUREYkRna3M4RTNidkFBRy1rd0tNX2JYdE93NXpaNGM1Y9IB0AFBVV95cUxOU19XaWwtWUhnbk5zT29PaXI2cEIyMEFSeEJNUHJtWHhtWVVtZ2J5SW5HYjhZSlR3U21UYTZMb1AwaG84bFZ3RjI5dC1WM1QtcTBza0hGRlp6VEVyMnNIa2NHcEdtcFNuam1YalJLSU1oOXc0blpvQi1GZ2NnR0VnbEZTamxjaGc5SEJsbnN6NU5aQ3dIYTJyVnpDWmg2Ym03UVBjaGFLcmRULXhTcGQ0QUlwaDN4N0FTcWQxbW5vUjdMbFRPekpjTlQyQlRxZlh0?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체/AI",
+      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "수출 데이터 급증 및 마이크론의 AI 가격 결정력 확대 기대"
+      "reason": "SK하이닉스의 ADR 등록 등 글로벌 자본시장 진출 가속화 및 AI 수요 지속"
+    },
+    {
+      "name": "바이오",
+      "sentiment": "HOT",
+      "reason": "정부 R&D 지원 및 셀트리온의 대규모 시설 투자로 인한 성장 모멘텀"
     },
     {
       "name": "에너지",
-      "sentiment": "COOL",
-      "reason": "유가 하락 및 지정학적 리스크 완화로 인한 변동성 감소"
-    },
-    {
-      "name": "로봇/스마트팩토리",
       "sentiment": "HOT",
-      "reason": "정부 주도의 국산 AI 실증 및 지능형 공장 패키지 수출 가속화"
+      "reason": "중동 리스크로 인한 브렌트유 100달러 상회 등 공급 불안 지속"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "SK하이닉스",
+      "symbol": "000660.KS"
     },
     {
-      "name": "마이크론",
-      "symbol": "MU"
+      "name": "셀트리온",
+      "symbol": "068270.KS"
     },
     {
-      "name": "테슬라",
-      "symbol": "TSLA"
+      "name": "Exxon Mobil",
+      "symbol": "XOM"
     }
   ],
   "keywords": [
     {
-      "name": "반도체",
+      "name": "지정학적 리스크",
       "weight": 20
     },
     {
-      "name": "AI/로봇",
-      "weight": 18
-    },
-    {
-      "name": "지정학적 리스크",
+      "name": "에너지 공급난",
       "weight": 15
     },
     {
-      "name": "수출 호조",
+      "name": "금리 인상 우려",
       "weight": 12
     },
     {
-      "name": "유가/에너지",
+      "name": "반도체 ADR",
+      "weight": 12
+    },
+    {
+      "name": "바이오 대규모 투자",
+      "weight": 11
+    },
+    {
+      "name": "기술주 변동성",
       "weight": 10
     },
     {
-      "name": "환율 변동성",
+      "name": "식약처 규제 완화",
       "weight": 10
     },
     {
-      "name": "정부 정책",
-      "weight": 8
-    },
-    {
-      "name": "배송/인프라",
-      "weight": 7
+      "name": "스테이블코인 규제",
+      "weight": 10
     }
   ],
-  "reason": "삼성전자는 반도체 수출 급증의 직접적 수혜주로, 최근 조정 국면을 거쳐 기술적 반등이 유효한 '무릎' 위치에 있습니다. 마이크론(MU)은 AI 가격 결정력 확대를 통해 신고가 경신 잠재력을 보유하고 있으며, 테슬라(TSLA)는 최근 테라팩 프로젝트 등 AI 모멘텀 강화로 과매수 구간을 탈피하여 저점 매수 기회를 형성하고 있습니다.",
-  "push_message": "[프리즘 AI] 지정학적 긴장 완화 속 반도체 모멘텀 부각! 금일 반도체와 AI 관련주 중심의 포트폴리오 전략을 제안합니다."
+  "reason": "SK하이닉스는 ADR 발행을 통한 글로벌 유동성 확보로 저평가 해소가 기대되는 '무릎' 구간입니다. 셀트리온은 대규모 설비투자로 차세대 성장을 준비하고 있어 장기적 접근이 유효합니다. 미국 XOM(엑손모빌)은 이란발 전쟁 공포로 인한 유가 급등기에 안정적인 현금 흐름과 기술적 저항선을 돌파하는 모멘텀을 보유하고 있습니다.",
+  "push_message": "[프리즘 분석] 중동 리스크 고조! 유가 상승세 속 반도체 ADR 이슈와 바이오 설비투자 뉴스가 시장의 핵심 동력으로 작용하고 있습니다."
 }
