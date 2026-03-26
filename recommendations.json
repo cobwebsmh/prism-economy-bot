@@ -1,70 +1,75 @@
 {
-  "date": "2026-03-26 08:22",
+  "date": "2026-03-27 08:19",
   "market_info": {
     "KOSPI": {
-      "price": 5642.21,
-      "change": 1.59,
+      "price": 5460.46,
+      "change": -3.22,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1159.55,
-      "change": 3.4,
+      "price": 1136.64,
+      "change": -1.98,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6591.9,
-      "change": 0.54,
+      "price": 6477.16,
+      "change": -1.74,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 21929.83,
-      "change": 0.77,
+      "price": 21408.08,
+      "change": -2.38,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "SK하이닉스",
-      "change": 0.91
+      "ticker": "알테오젠",
+      "change": 6.28
     },
     {
-      "ticker": "셀트리온",
-      "change": 1.95
+      "ticker": "NVIDIA",
+      "change": -4.16
     },
     {
-      "ticker": "Exxon Mobil",
-      "change": -1.28
+      "ticker": "Microsoft",
+      "change": -1.37
     }
   ],
-  "summary": "이란발 지정학적 리스크가 공급망 불안과 경기 침체 우려를 자극하며 글로벌 시장의 변동성을 키우고 있습니다. 주요 기술 기업들의 성장 둔화 경고와 함께 소비 위축 심리가 확산되면서 투자자들은 방어적 태세를 취하는 모습입니다. 시장은 전쟁의 확전 여부와 물류비 상승에 따른 인플레이션 재점화 가능성에 촉각을 곤두세우고 있습니다.",
+  "summary": "중동발 지정학적 리스크 확산으로 인한 브렌트유 100달러 돌파와 인플레이션 우려가 시장 전반의 투자 심리를 급격히 위축시키고 있습니다. 주요 지수는 기술주 중심의 차익 실현과 AI 수요 둔화 우려가 겹치며 조정 국면에 진입했습니다. 불확실성 증대로 안전자산 선호 심리가 강해지며 방어적 자산과 에너지 섹터로의 수급 이동이 관찰됩니다.",
   "news_headlines": [
     {
-      "title": "이란戰에 택배비 오른다…美 우체국 택배에 유류할증료",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBpYmk0MDAyVlI4aXZ4b1phUEIwVk1rQ2ZfaV9tWFA5UHF0NmZSekNTZ1AyeW1rb2xUUGdUTHloaExnbjd3bktIQndZVkgxdkdpdWROU3VsMm01RFhzRTdETFU2UURrSFRZUUxrckUxQnpEUGs?oc=5"
+      "title": "종전 지연 조짐에 브렌트유 100달러 돌파·금융시장 출렁",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RQlJhVzVWazdZRXNwYzUzLVFxdndyTHFYazVCemdNcjJnbTBfc1JieEdvYlVFNFJNLWx2bnhEeGpBbk80OTNSa3RfMUgyS2JoNnFXSnZUekNUOW8?oc=5"
     },
     {
-      "title": "US Recession Risks Begin to Rise as War Dims Economic Outlook",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTUNQYTZnUzB1NzZ0TURqODgxcHo1QTVHN1gtWC1KZ01VdlExMl85c1FKTnU4cDBkN1VNaHJ4NnVRTnN0blhITE5ydGZkckFzT25GQ2x1LW5DYlNvSlBVV3Nua2ljZUJMQ0hNSkQyUGpoUnlPY1QyU1E5R1dVS01QcXRIc0t5R1NfMFIyeWd6dmt4TnpRaEw5VnFlTzVaUENMQU5ybEl3cnZmZ3pQeWJLLTZCSHY?oc=5"
+      "title": "알테오젠, 바이오젠과 기술수출 계약 소식에 '급등'",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtUklxMFlqcDV3WWlic0VLRTVTRFE0c3RzV2J0ZG8yOGNiSGRYZWZfNlFMRnFkdEpZQ0N5S3p2UTB4WTN5T1lhOElyM0s2dHowLUdobmphQWgtQdIBVEFVX3lxTE9UTDk1OHhiUXA0YlpPS0YxVzhjcGN0Mko3RFJMNmk0b2VXUXBEaGtiN2pXbGpqYk9uM3FPX0VuTjhDQzBjaFk4ZTd3UTJQRmJ1dTB0eA?oc=5"
     },
     {
-      "title": "알테오젠-바이오젠, 하이브로자임 기반 SC 제형 개발·상업화 라이선스 계약",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5JVUlmdFdJX3BZeHpPeGY1YlAtOVBVM0ozMllyT2RCbGRUVlBXa0RUcTdlc1AwbGI4NUZoNTRhaUFhQmVBUWFJbU5aQmtHelhFMU0xMGpFaw?oc=5"
+      "title": "OECD, 올해 한국 성장률 2.1→1.7% 대폭 하향···‘중동 전쟁’ 직격탄",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91S2h2SW01ampLZEJON0Z1Smw0RUpFbGdNRy1SbmZqcjh4c1VSeUcybkRMNEQ2VGdnSjBqQTRCZVVuZm9kMTRHMFl1elBjQzZ6SVAyckZkcDhUZ9IBX0FVX3lxTE5IYzhESUQ3bDlUTnVRS1FkQnlvMUV5d1kyQlR4VHlHYmo3cGd0WHZWXzlTMExScUFUWWpmZlVkaHNURV9xZ2JmS2JuOHRvd3dhRjlrY3dPUkRHVC1QeVlv?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "바이오(제약)",
+      "name": "에너지",
       "sentiment": "HOT",
-      "reason": "지정학적 리스크와 무관하게 독자적인 기술 수출 및 라이선스 계약(알테오젠 등)을 통해 개별적 모멘텀이 발생하고 있음."
+      "reason": "유가 급등에 따른 수익성 개선 및 인플레이션 헤지 수요 증가"
     },
     {
-      "name": "에너지/운송",
-      "sentiment": "NEUTRAL",
-      "reason": "중동 전쟁으로 인한 유가 상승 및 물류비 할증료 도입으로 공급망 비용 부담이 커지고 있음."
+      "name": "바이오/제약",
+      "sentiment": "UP",
+      "reason": "기술수출 등 개별 모멘텀이 지수 하락기에도 강력한 주가 방어력 입증"
+    },
+    {
+      "name": "기술/AI",
+      "sentiment": "COOL",
+      "reason": "경기 침체 우려 및 AI 거품론 확산으로 인한 투자 심리 위축"
     }
   ],
   "tickers": [
@@ -73,48 +78,48 @@
       "symbol": "196170.KQ"
     },
     {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
+      "name": "엑손모빌",
+      "symbol": "XOM"
     },
     {
-      "name": "Microsoft",
-      "symbol": "MSFT"
+      "name": "제이피모건 체이스",
+      "symbol": "JPM"
     }
   ],
   "keywords": [
     {
-      "name": "이란 전쟁",
+      "name": "중동 전쟁",
       "weight": 20
     },
     {
-      "name": "지정학적 리스크",
+      "name": "유가 급등",
+      "weight": 18
+    },
+    {
+      "name": "인플레이션",
       "weight": 15
     },
     {
-      "name": "공급망 불안",
-      "weight": 12
-    },
-    {
-      "name": "AI 성장",
+      "name": "AI 둔화",
       "weight": 12
     },
     {
       "name": "경기 침체",
-      "weight": 11
-    },
-    {
-      "name": "물류비 인상",
       "weight": 10
     },
     {
-      "name": "바이오 기술",
-      "weight": 10
+      "name": "기술수출",
+      "weight": 8
     },
     {
-      "name": "주주 환원",
-      "weight": 10
+      "name": "금리/채권",
+      "weight": 9
+    },
+    {
+      "name": "성장률",
+      "weight": 8
     }
   ],
-  "reason": "알테오젠은 기술 수출 모멘텀으로 강한 상승세를 보이나 과열 구간 진입 전 조정 시 매수가 유효합니다. NVIDIA와 MSFT는 최근의 조정장에서 낙폭 과대 현상을 보이고 있으나, AI 산업의 핵심 우량주로서 기술적 반등 시 '무릎' 위치에서 재매집하기 적절한 시점입니다.",
-  "push_message": "[프리즘 리포트] 중동발 지정학 리스크 심화, 바이오 테마의 개별 모멘텀과 기술주의 저점 분할 매수 전략이 필요합니다."
+  "reason": "196170.KQ(알테오젠)은 강력한 기술수출 계약 모멘텀을 보유하여 시장 급락기에도 차별적 상승세를 보이고 있으며, 기술적 위치상 단기 과열권 진입 전의 눌림목이 예상됩니다. XOM(엑손모빌)은 유가 100달러 돌파 국면에서 인플레이션 수혜주로 평가받으며 안정적인 수익 구간에 있습니다. JPM(제이피모건)은 금리 불확실성 속에서도 금융 시스템의 안정성을 기반으로 포트폴리오의 방어적 역할을 수행할 종목으로 선정하였습니다.",
+  "push_message": "[프리즘 리포트] 중동발 악재에 유가 100달러 돌파! 변동성 장세, 바이오와 에너지 섹터로 수급 방어 전략이 필요한 시점입니다."
 }
