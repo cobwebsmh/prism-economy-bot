@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-02 08:13",
-    "performance": [
-      {
-        "ticker": "포스코홀딩스",
-        "change": 1.35
-      },
-      {
-        "ticker": "AMD",
-        "change": -1.7
-      },
-      {
-        "ticker": "Amazon",
-        "change": 1.0
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "마이크로소프트",
-      "NVIDIA"
-    ]
-  },
-  {
     "date": "2026-03-03 08:15",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전자",
       "마이크로소프트",
       "TSMC"
+    ]
+  },
+  {
+    "date": "2026-03-30 08:21",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 0.0
+      },
+      {
+        "ticker": "마이크로소프트",
+        "change": -2.51
+      },
+      {
+        "ticker": "TSMC",
+        "change": 0.19
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "엑손모빌",
+      "코카콜라"
     ]
   }
 ]

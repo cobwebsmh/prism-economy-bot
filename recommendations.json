@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-29 08:19",
+  "date": "2026-03-30 08:21",
   "market_info": {
     "KOSPI": {
       "price": 5438.87,
@@ -28,48 +28,48 @@
   },
   "past_results": [
     {
-      "ticker": "한화솔루션",
+      "ticker": "삼성전자",
       "change": 0.0
     },
     {
-      "ticker": "엑손모빌",
-      "change": 3.36
+      "ticker": "마이크로소프트",
+      "change": -2.51
     },
     {
-      "ticker": "JP모건 체이스",
-      "change": -3.02
+      "ticker": "TSMC",
+      "change": 0.19
     }
   ],
-  "summary": "미-이란 전쟁의 장기화 우려로 유가 급등과 안전자산 선호 심리가 강화되며 글로벌 증시의 하방 압력이 커지고 있습니다. 특히 테크 섹터의 차익 실현 매물 출회와 금리 불확실성으로 인해 시장 전반의 변동성이 확대되는 모습입니다. 주말 동안 투자자들은 리스크 관리 모드로 전환하며 반도체와 에너지 등 핵심 산업의 실적 차별화에 주목하고 있습니다.",
+  "summary": "이란 전쟁의 장기화 우려가 글로벌 에너지 가격 상승과 인플레이션 공포를 자극하며 시장 심리가 크게 위축되었습니다. 주담대 금리 상승과 고물가로 인한 소비 위축이 가시화되면서 투자자들은 변동성이 높은 기술주보다 방어적인 우량 채권 및 필수재 섹터로 눈을 돌리고 있습니다. 증시는 불확실성 속에서 수출 지표와 전쟁 전개 상황에 따라 방향성을 결정하는 좁은 박스권 내에 머물 것으로 보입니다.",
   "news_headlines": [
     {
-      "title": "유가 113달러… 트럼프, 출구 없는 '4주 딜레마' [미·이란 전쟁]",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMGlCWVFlOFhSbS15dEJTV2RnaVRLUG1heWNLQmVVM0RacVZrWTdDVHVYTG9oeFF1WkVQVDdiNnJPZXBfd3BnOS1nTEQ3R0RqMlFrU1RvTXM4RVRlZHYwR2NNN25wY0dMbDhQejFReWFQOTZsSGRyblppUGVTc3diMHRQY05zb3BZ?oc=5"
+      "title": "이란 전쟁, '장기전' 기로…주름 깊어지는 증시",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBLTFU2TDJjeDJaVUlwd2UzZkxITlR4b0RlaktPZnd1NTVXWW9jTXZOa3BzbzByaU1VUHJ1MDhrTWVJeXFKZW53aHpwWXhON2VCUEZib1dxYWNyalHSAWBBVV95cUxNamFzaTdkOUZGa3BVbENUTFJ5ZmdPU3AtUmpWaGRiSTkxWVJoeWJTM2lXUnlzbU5ldC1FMDY2eFFVUnlmMDBHOXZ0bmlWRk95NDRFUWZmbDJmM0c4LS1RSFc?oc=5"
     },
     {
-      "title": "TSMC 3나노 ‘완판’ 쇼크… 삼성·인텔 추격 비상",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1tcmZxc3Z6UlhjX2pmZTJsb2pjSUMxQ0ticjR2ZEpUZy1teXJ2aS1FLVpkNEhqU3NXdmtwWC1YM0FhNjFvdnVWcjFRUmk2WDBjLXJuanNRXzVaRThtd1JaaVI4OHhnSDQ?oc=5"
+      "title": "석유 업계 CEO들 “전쟁 끝나도 기름값 안 떨어진다”",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdFViMEJ6c1VWaE9Ta19PbGpJbU1WM1d1UmM4Q2pfUXR0X3pVT0F6azNmcmpacTBTdlFaWlJmbThyU1dlU3RIVnVWR1ZFNGUydzRVZjMwUUpkWjRlLUhha05HNXdqYXFOYWkzM2VKa2s3UldOWWJLbVBBX3c1bVp4bHRfajZka0Qt0gGcAUFVX3lxTE1kdjJHeEo0T1VUQndNQ3piMHdiMnk4ZXFRV2F0eGRPWEN1TFYta2ozVXc2SVk2ekdKQm16ZERPdlR3VDZnMHhGZFg1Ymh0VXdjbkVZaVdqc09HLXdoNWRidWxvMjNvTG1SOXlabF9UcFZsRWZLdl9hd1VvRXMxbWV0aC1vV3ZWRDFwWGhId2FyRjJNWkRiTklhX3J0Rg?oc=5"
     },
     {
-      "title": "개미 살 때 외국인은 팔았다…삼전, 외인 지분율 12년 만에 최저치",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5wRkNDUDI4WVc4QjRONkM5bkdlRTdwQWtDUUY5cThQN2QwWmZsSE5FUjF4cDkzWVVyMjdxeUR4YWZ5X05rTkZCUDBQTUtsN0tmMHpTdFpn?oc=5"
+      "title": "‘영끌했는데, 이자가 미쳤어요’…주담대 금리 7% 뚫었다",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5zVUhnai1DSUZlRFJOem1nbzBOdHBXMGgzZ1NaelJnRW9WNnVvU2J2SVNVR2VQbHNHTW8zZzNaWUNUSFg3ZjdxTXJjM3F1YnRi?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체",
-      "sentiment": "HOT",
-      "reason": "TSMC의 독점적 3나노 생산 능력과 삼성전자의 파운드리 경쟁력이 부각되는 핵심 섹터"
-    },
-    {
       "name": "에너지",
-      "sentiment": "BEARISH",
-      "reason": "전쟁 리스크에 따른 유가 급등으로 인해 소비자 물가 및 기업 비용 부담 가중"
+      "sentiment": "HOT",
+      "reason": "이란 전쟁 장기화에 따른 원유 공급 차질 및 가격 상승 지속"
     },
     {
-      "name": "기술주",
+      "name": "금융",
       "sentiment": "NEUTRAL",
-      "reason": "차익 실현 매물 출회와 기업 예산 축소로 인한 단기 조정 구간"
+      "reason": "금리 상승기 순이자마진 확대 기대와 경기 침체에 따른 대손 충당금 부담 공존"
+    },
+    {
+      "name": "반도체",
+      "sentiment": "COLD",
+      "reason": "헬륨 등 원자재 공급망 차질 및 전반적인 기술주 투자 심리 악화"
     }
   ],
   "tickers": [
@@ -78,48 +78,48 @@
       "symbol": "005930.KS"
     },
     {
-      "name": "마이크로소프트",
-      "symbol": "MSFT"
+      "name": "엑손모빌",
+      "symbol": "XOM"
     },
     {
-      "name": "TSMC",
-      "symbol": "TSM"
+      "name": "코카콜라",
+      "symbol": "KO"
     }
   ],
   "keywords": [
     {
-      "name": "미-이란 전쟁",
+      "name": "이란 전쟁",
       "weight": 20
     },
     {
-      "name": "반도체",
-      "weight": 18
-    },
-    {
-      "name": "유가급등",
+      "name": "고금리",
       "weight": 15
     },
     {
-      "name": "지정학적 리스크",
+      "name": "원유가",
+      "weight": 15
+    },
+    {
+      "name": "인플레이션",
       "weight": 12
     },
     {
-      "name": "TSMC",
+      "name": "공급망 위기",
       "weight": 10
     },
     {
-      "name": "금리불안",
-      "weight": 9
+      "name": "채권 투자",
+      "weight": 10
     },
     {
-      "name": "외국인매도",
-      "weight": 8
+      "name": "경기 침체",
+      "weight": 10
     },
     {
-      "name": "실적불확실성",
+      "name": "기술주 조정",
       "weight": 8
     }
   ],
-  "reason": "삼성전자는 현재 외국인 지분율 최저치로 과매도 구간(무릎 이하)에 진입해 기술적 반등 가능성이 높습니다. MSFT는 최근 조정으로 고점 대비 가격 매력이 부각되며 AI 섹터 내 견조한 실적 기반을 갖췄습니다. TSM은 반도체 3나노 '완판'이라는 압도적인 펀더멘털을 보유하여, 조정장에서도 시장 방어와 성장을 동시에 기대할 수 있는 기술적 위치에 있습니다.",
-  "push_message": "[프리즘 리포트] 미-이란 전쟁 긴장감 고조! 반도체 과매도 종목과 실적 방어주 중심으로 포트폴리오를 점검하세요."
+  "reason": "삼성전자는 최근 반도체 공급망 이슈와 지수 조정으로 인해 과매도권(무릎 위치)에 진입하여 기술적 반등이 기대됩니다. 엑손모빌은 전쟁으로 인한 에너지 가격 급등의 직접적인 수혜주이나, 단기 과열을 피해 안정적인 배당과 수익성을 보유한 구간을 공략합니다. 코카콜라는 필수 소비재로서 인플레이션 환경에서도 가격 결정력을 갖춰 시장 변동성으로부터 방어적인 포트폴리오 구성을 위해 선정하였습니다.",
+  "push_message": "시장 경고: 이란발 지정학적 리스크로 유가 급등세 지속. 포트폴리오를 필수 소비재와 에너지 등 방어주 위주로 재편하고, 낙폭 과대 우량주(삼성전자)의 저점 매수 기회를 노리세요."
 }
