@@ -1,125 +1,125 @@
 {
-  "date": "2026-03-31 08:25",
+  "date": "2026-04-01 08:22",
   "market_info": {
     "KOSPI": {
-      "price": 5438.87,
-      "change": -0.4,
+      "price": 5277.3,
+      "change": -2.97,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1141.51,
-      "change": 0.43,
+      "price": 1107.05,
+      "change": -3.02,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6343.72,
-      "change": -0.39,
+      "price": 6528.52,
+      "change": 2.91,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 20794.64,
-      "change": -0.73,
+      "price": 21590.63,
+      "change": 3.83,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -2.11
+      "ticker": "S-Oil",
+      "change": -4.36
     },
     {
-      "ticker": "엑손모빌",
-      "change": 0.28
+      "ticker": "Exxon Mobil",
+      "change": -1.06
     },
     {
-      "ticker": "코카콜라",
-      "change": 0.74
+      "ticker": "Chevron",
+      "change": -1.81
     }
   ],
-  "summary": "중동발 지정학적 리스크로 인한 고유가·고환율 쇼크가 글로벌 증시의 하방 압력을 극대화하며 투자 심리가 극도로 위축된 상태입니다. 안전자산 선호 현상과 더불어 반도체 등 핵심 수출주에 대한 경계감이 커지며 기술적 조정이 지속되고 있습니다. 시장은 연준의 금리 인하 기대감과 인플레이션 우려 사이에서 변동성 장세를 이어가고 있습니다.",
+  "summary": "이란-이스라엘 전쟁 종식 기대감이 시장의 공포심을 빠르게 해소하며 뉴욕 증시의 3대 지수가 폭등하는 등 투자 심리가 강력하게 회복되었습니다. 다만, 고환율 및 유가 상승에 따른 기업 비용 부담이 가중되고 있어 실적 기반의 옥석 가리기가 필요한 시점입니다. AI 기술에 대한 투자는 계속되고 있으나, 매크로 불확실성을 고려한 보수적 대응과 성장주 중심의 포트폴리오 재편이 유효해 보입니다.",
   "news_headlines": [
     {
-      "title": "국제유가, 상승 지속… WTI, 4년 만에 100달러 돌파",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQb1dCNDZuRmh3TXh3SmdCTkVMTFlTV19pTC01UUVYXzFON25QS0tFTW1OLWZFbF9yUDVZVG9YajdFZlB2bGRpQVdjRFVaLXZCM0ZHbVhpd3FTOHhzY016WVA1NGJyYW9BU0RXVkd2RkFFaFRySUxaekU0NlhMTm9Vck5DeHlMcVRp?oc=5"
+      "title": "뉴욕증시, “이란 전쟁 끝난다” 기대감에 3대 지수 폭등",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdEFwRHJJYmtWd2RlLUlSYmd3cVJESXdmemZibklHc3hrRW9PLThJa09ybUxreDVMX19IUlJhYmV6cDZTZ1lsdk13TmdMYmJLV19JZ1lkc2pWdVVJTGVESzYybGhCaGs0QjMwN2RXT3RLR0lzUDloNlhwR05IY1BUbmx3VVdhbl9T?oc=5"
     },
     {
-      "title": "환율 1520원 돌파·코스피 급락…정부, 비상 대응 총력전",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9iakg2X0dtRGx1VXpMTEZPRmtLem1zYXZBYXRwN0FLemNLUTdUZzd1aU1pWm9SWjZZVFZuaWRxdUl0VEo1YnRJQWdrVFdIUQ?oc=5"
+      "title": "구글이 그리는 신약 개발 미래... 'AI로 신약 출시 2배 늘린다'",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81WUZHQkxUM1VuNHI4Rks0UGN6OW5kRVVlNGRGSkFHYkM1UDlOWnAyVXY4Q1dBdktqQ2lXUTlxYWRfb25PRGRuSGV3dTN0WmY0b2ozdENfV2ozV0Rzc0pxemVoRjJJejRkaWhF?oc=5"
     },
     {
-      "title": "IMF warns Middle East conflict will lead to higher prices and slower global growth",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPYm1qMFV5R044TmJCRVdoNERqLUZUa0xxRFJYUFRZSkl5YUNhdnF5ZVQxSEJIa0lRbklnNVlWcXVGR0FGV291NklTZUpoV2prOFQwN1VMeExydTUyZGh2UWZLcl82YjFYT3FHSUZJM3hXRHFmZGcwX3IxODYwNFpDYnZndzhCbE1MQm94cTdPOGN4S3VKVEFMMXlHY2l3ek56NGc4Z0NBQmpQWnBuQi11TTRyeUIyWm4xVVo1d2ZseGxOSEdrUEx3?oc=5"
+      "title": "NKE Earnings: Nike’s Financial Results Beat Wall Street Forecasts",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZTE0UGJDZlJjNi1pMHBDb0xyLUhsdXgtREMtVXVBZHExV0ppRUYxZF85QVFuN2ZWVUhXNzFESzhHSkFZbWRMcmNhY0JvcjE0bVNwWXg5MGxubGl0eFlBNEhpM3VvaUdxVDdvSDZxSlJuRGNTS3ZwRnZ5cld0by1rRVV5OGplMm5IMjM3YVZDUWVYRzI1LVRYQW90dXVEVG53NDlQdlhFU2lpOEFfYXFibkFrWFJZb1U1SXVQUlpR?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지(Energy)",
+      "name": "AI/반도체",
       "sentiment": "HOT",
-      "reason": "국제유가 100달러 돌파로 인한 직접적인 수혜 및 인플레이션 압력 가중"
+      "reason": "지정학적 리스크 완화 속에서 엔비디아의 강세와 기업들의 AI 지출 확대가 지속됨."
     },
     {
-      "name": "반도체(Semiconductor)",
-      "sentiment": "COLD",
-      "reason": "지정학적 리스크로 인한 공급망 우려 및 차익 실현 매물 출회"
+      "name": "제약/바이오",
+      "sentiment": "HOT",
+      "reason": "AI 신약 개발 및 전문 경영인 체제 도입으로 인한 효율화 기대감 증대."
     },
     {
-      "name": "항공/운송(Airlines)",
+      "name": "에너지/항공",
       "sentiment": "COLD",
-      "reason": "유류비 급등으로 인한 수익성 악화 및 비용 부담 증가"
+      "reason": "유가 상승으로 인한 운영 비용 압박 및 정부의 비축유 방출 등 불안 요소 상존."
     }
   ],
   "tickers": [
     {
-      "name": "S-Oil",
-      "symbol": "010950.KS"
+      "name": "삼성바이오로직스",
+      "symbol": "207940.KS"
     },
     {
-      "name": "Exxon Mobil",
-      "symbol": "XOM"
+      "name": "NVIDIA",
+      "symbol": "NVDA"
     },
     {
-      "name": "Chevron",
-      "symbol": "CVX"
+      "name": "Nike",
+      "symbol": "NKE"
     }
   ],
   "keywords": [
     {
-      "name": "고유가",
+      "name": "전쟁종식",
       "weight": 20
     },
     {
-      "name": "지정학적 리스크",
+      "name": "AI",
       "weight": 18
     },
     {
-      "name": "고환율",
-      "weight": 15
-    },
-    {
-      "name": "인플레이션",
+      "name": "유가상승",
       "weight": 12
     },
     {
-      "name": "공급망",
-      "weight": 8
-    },
-    {
-      "name": "금리인하",
+      "name": "금리",
       "weight": 10
     },
     {
-      "name": "반도체",
-      "weight": 9
+      "name": "바이오",
+      "weight": 10
     },
     {
-      "name": "에너지안보",
-      "weight": 8
+      "name": "고환율",
+      "weight": 10
+    },
+    {
+      "name": "실적회복",
+      "weight": 10
+    },
+    {
+      "name": "공급망",
+      "weight": 10
     }
   ],
-  "reason": "현재 시장은 유가 급등과 고환율이라는 이중고를 겪고 있습니다. 추천 종목인 S-Oil(010950.KS)과 미국 에너지 거인 XOM, CVX는 유가 상승기에 마진 개선이 기대되며, 기술적으로 과열권에서 벗어나 최근 조정으로 '무릎' 위치에 도달하여 장기적인 에너지 인플레이션 방어주로서 매력적인 진입 구간에 있습니다.",
-  "push_message": "[프리즘 리포트] 유가 100달러 돌파, 에너지 섹터 중심의 포트폴리오 방어 전략이 필요합니다."
+  "reason": "삼성바이오로직스는 글로벌 빅파마와의 협업 및 꾸준한 수주로 국내 바이오 섹터 내 안정적 무릎 위치를 점하고 있습니다. 엔비디아는 최근 조정 후 전쟁 리스크 완화와 함께 강력한 반등 모멘텀을 형성 중이며, 나이키(NKE)는 실적 호조를 통해 주가 회복기에 진입하여 기술적 반등이 기대됩니다.",
+  "push_message": "[Prism] 지정학적 리스크 완화로 시장 심리 급반등! AI와 실적 개선주 중심의 대응이 유효합니다."
 }
