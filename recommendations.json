@@ -1,125 +1,129 @@
 {
-  "date": "2026-04-01 08:22",
+  "date": "2026-04-02 08:26",
   "market_info": {
     "KOSPI": {
-      "price": 5277.3,
-      "change": -2.97,
+      "price": 5052.46,
+      "change": -4.26,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1107.05,
-      "change": -3.02,
+      "price": 1052.39,
+      "change": -4.94,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6528.52,
-      "change": 2.91,
+      "price": 6575.32,
+      "change": 0.72,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 21590.63,
-      "change": 3.83,
+      "price": 21840.95,
+      "change": 1.16,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "S-Oil",
-      "change": -4.36
+      "ticker": "삼성바이오로직스",
+      "change": 4.52
     },
     {
-      "ticker": "Exxon Mobil",
-      "change": -1.06
+      "ticker": "NVIDIA",
+      "change": 0.77
     },
     {
-      "ticker": "Chevron",
-      "change": -1.81
+      "ticker": "Nike",
+      "change": -15.51
     }
   ],
-  "summary": "이란-이스라엘 전쟁 종식 기대감이 시장의 공포심을 빠르게 해소하며 뉴욕 증시의 3대 지수가 폭등하는 등 투자 심리가 강력하게 회복되었습니다. 다만, 고환율 및 유가 상승에 따른 기업 비용 부담이 가중되고 있어 실적 기반의 옥석 가리기가 필요한 시점입니다. AI 기술에 대한 투자는 계속되고 있으나, 매크로 불확실성을 고려한 보수적 대응과 성장주 중심의 포트폴리오 재편이 유효해 보입니다.",
+  "summary": "미국-이란 전쟁 종식 기대감이 시장의 리스크 온 심리를 자극하며 뉴욕 증시가 이틀 연속 상승하는 등 반등 국면을 맞이했습니다. AI 기술의 독립적 주체화 및 신약 개발 혁신이 산업 전반의 모멘텀으로 작용하고 있으나, 유가 상승과 인플레이션 우려는 여전히 변동성을 유발하는 요소입니다. 전반적으로 기술적 과매도를 해소하며 바닥권에서 탈출하는 '무릎' 구간의 매수 기회가 포착되고 있습니다.",
   "news_headlines": [
     {
-      "title": "뉴욕증시, “이란 전쟁 끝난다” 기대감에 3대 지수 폭등",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdEFwRHJJYmtWd2RlLUlSYmd3cVJESXdmemZibklHc3hrRW9PLThJa09ybUxreDVMX19IUlJhYmV6cDZTZ1lsdk13TmdMYmJLV19JZ1lkc2pWdVVJTGVESzYybGhCaGs0QjMwN2RXT3RLR0lzUDloNlhwR05IY1BUbmx3VVdhbl9T?oc=5"
+      "title": "美·이란 종전 기대감에 뉴욕증시 이틀 연속 상승",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE90SzBXTkRVQzhiLWN2UGRIMEU1Qkc4T25EdjFwUVBlTWREUFlaNHR5SWVzSWg1TVZ5MlptbEN2SmNvckh5QTd4bjFpUm5SLWlMb1dFam9vaVRFbWE2ZkpqQ0kxQWkwaDVMVXlVdVY4S3BsWTg?oc=5"
     },
     {
-      "title": "구글이 그리는 신약 개발 미래... 'AI로 신약 출시 2배 늘린다'",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81WUZHQkxUM1VuNHI4Rks0UGN6OW5kRVVlNGRGSkFHYkM1UDlOWnAyVXY4Q1dBdktqQ2lXUTlxYWRfb25PRGRuSGV3dTN0WmY0b2ozdENfV2ozV0Rzc0pxemVoRjJJejRkaWhF?oc=5"
+      "title": "AI, 신약개발 '도구' 넘어 '독립 주체'로...전주기 혁신 가속화",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8ycnlhSWJNamlNRmo0aEVaMlhxZmg2TmxaQ25Mb085WDRZem13U0tGWDRjZnpVTG5ZV29SNl85RzZ4TmdZSGRNTmZ1V0N0VVVqSW1sM3RJajFyaGNRa0d2aWtSQ08zWUhJY29Pbg?oc=5"
     },
     {
-      "title": "NKE Earnings: Nike’s Financial Results Beat Wall Street Forecasts",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZTE0UGJDZlJjNi1pMHBDb0xyLUhsdXgtREMtVXVBZHExV0ppRUYxZF85QVFuN2ZWVUhXNzFESzhHSkFZbWRMcmNhY0JvcjE0bVNwWXg5MGxubGl0eFlBNEhpM3VvaUdxVDdvSDZxSlJuRGNTS3ZwRnZ5cld0by1rRVV5OGplMm5IMjM3YVZDUWVYRzI1LVRYQW90dXVEVG53NDlQdlhFU2lpOEFfYXFibkFrWFJZb1U1SXVQUlpR?oc=5"
+      "title": "롯데바이오, 美 소재 항암 전문 바이오 기업과 '항체 생산 수주' 계약 체결",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9zNF9mekU5UXFyQm80bFktMlFFWFdOLUE4TDktSTUxSzhqNHhvUmpIMXowYW0yb1ZRZXA5dFc0bFEwcjV4a21SUFJnWnJRZkJtZUNtX2h5QQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "AI/반도체",
+      "name": "바이오/제약",
       "sentiment": "HOT",
-      "reason": "지정학적 리스크 완화 속에서 엔비디아의 강세와 기업들의 AI 지출 확대가 지속됨."
+      "reason": "AI 신약 개발 혁신 및 항체 생산 수주 등 대규모 계약과 신약 승인 모멘텀 지속"
     },
     {
-      "name": "제약/바이오",
-      "sentiment": "HOT",
-      "reason": "AI 신약 개발 및 전문 경영인 체제 도입으로 인한 효율화 기대감 증대."
+      "name": "빅테크/AI",
+      "sentiment": "NEUTRAL",
+      "reason": "중동 리스크에도 불구하고 데이터 센터 및 AI 인프라 투자는 구조적 성장세 유지"
     },
     {
-      "name": "에너지/항공",
-      "sentiment": "COLD",
-      "reason": "유가 상승으로 인한 운영 비용 압박 및 정부의 비축유 방출 등 불안 요소 상존."
+      "name": "자동차/전기차",
+      "sentiment": "HOT",
+      "reason": "미국 시장 겨냥 전기차 모델 확대 및 산업 경쟁력 강화 기대감"
     }
   ],
   "tickers": [
     {
-      "name": "삼성바이오로직스",
-      "symbol": "207940.KS"
+      "name": "롯데바이오로직스(관련주: 롯데지주)",
+      "symbol": "004990.KS"
     },
     {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
+      "name": "Eli Lilly",
+      "symbol": "LLY"
     },
     {
-      "name": "Nike",
-      "symbol": "NKE"
+      "name": "Oracle",
+      "symbol": "ORCL"
     }
   ],
   "keywords": [
     {
-      "name": "전쟁종식",
+      "name": "중동 전쟁 종식",
       "weight": 20
     },
     {
-      "name": "AI",
-      "weight": 18
+      "name": "AI 신약개발",
+      "weight": 15
     },
     {
-      "name": "유가상승",
+      "name": "항체 생산",
       "weight": 12
     },
     {
-      "name": "금리",
+      "name": "금리/인플레이션",
       "weight": 10
     },
     {
-      "name": "바이오",
+      "name": "기술적 반등",
       "weight": 10
     },
     {
-      "name": "고환율",
+      "name": "미국 전기차",
       "weight": 10
     },
     {
-      "name": "실적회복",
-      "weight": 10
+      "name": "기업 구조조정",
+      "weight": 8
     },
     {
-      "name": "공급망",
-      "weight": 10
+      "name": "공급망 리스크",
+      "weight": 8
+    },
+    {
+      "name": "빅테크",
+      "weight": 7
     }
   ],
-  "reason": "삼성바이오로직스는 글로벌 빅파마와의 협업 및 꾸준한 수주로 국내 바이오 섹터 내 안정적 무릎 위치를 점하고 있습니다. 엔비디아는 최근 조정 후 전쟁 리스크 완화와 함께 강력한 반등 모멘텀을 형성 중이며, 나이키(NKE)는 실적 호조를 통해 주가 회복기에 진입하여 기술적 반등이 기대됩니다.",
-  "push_message": "[Prism] 지정학적 리스크 완화로 시장 심리 급반등! AI와 실적 개선주 중심의 대응이 유효합니다."
+  "reason": "롯데지주는 롯데바이오의 공격적 수주로 본업 외 신성장 동력 가치가 재평가될 구간이며, Eli Lilly는 신약 승인으로 인한 견고한 우상향 흐름 속 눌림목입니다. Oracle은 클라우드 및 AI 전환을 위한 구조조정과 공격적 투자가 동반되어 중장기적으로 안정적인 '무릎' 가격대에 위치해 있습니다.",
+  "push_message": "[프리즘 AI] 중동 리스크 완화로 뉴욕 증시 반등! 주목해야 할 AI 신약 및 클라우드 핵심 종목을 확인하세요."
 }

@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-05 08:19",
-    "performance": [
-      {
-        "ticker": "포스코홀딩스",
-        "change": -14.15
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": 1.66
-      },
-      {
-        "ticker": "애플",
-        "change": -0.47
-      }
-    ],
-    "predictions": [
-      "포스코홀딩스",
-      "NVIDIA",
-      "Amazon"
-    ]
-  },
-  {
     "date": "2026-03-06 08:43",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성바이오로직스",
       "NVIDIA",
       "Nike"
+    ]
+  },
+  {
+    "date": "2026-04-02 08:26",
+    "performance": [
+      {
+        "ticker": "삼성바이오로직스",
+        "change": 4.52
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": 0.77
+      },
+      {
+        "ticker": "Nike",
+        "change": -15.51
+      }
+    ],
+    "predictions": [
+      "롯데바이오로직스(관련주: 롯데지주)",
+      "Eli Lilly",
+      "Oracle"
     ]
   }
 ]
