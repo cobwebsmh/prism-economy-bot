@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-06 08:43",
-    "performance": [
-      {
-        "ticker": "포스코홀딩스",
-        "change": 7.78
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": 0.16
-      },
-      {
-        "ticker": "Amazon",
-        "change": 0.98
-      }
-    ],
-    "predictions": [
-      "포스코홀딩스",
-      "Broadcom",
-      "United Airlines Holdings Inc"
-    ]
-  },
-  {
     "date": "2026-03-07 08:17",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "롯데바이오로직스(관련주: 롯데지주)",
       "Eli Lilly",
       "Oracle"
+    ]
+  },
+  {
+    "date": "2026-04-04 08:23",
+    "performance": [
+      {
+        "ticker": "롯데바이오로직스(관련주: 롯데지주)",
+        "change": 0.37
+      },
+      {
+        "ticker": "Eli Lilly",
+        "change": -1.98
+      },
+      {
+        "ticker": "Oracle",
+        "change": 0.79
+      }
+    ],
+    "predictions": [
+      "한화에어로스페이스",
+      "일라이 릴리",
+      "엑손 모빌"
     ]
   }
 ]

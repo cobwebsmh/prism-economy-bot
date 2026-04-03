@@ -1,129 +1,125 @@
 {
-  "date": "2026-04-02 08:26",
+  "date": "2026-04-04 08:23",
   "market_info": {
     "KOSPI": {
-      "price": 5052.46,
-      "change": -4.26,
+      "price": NaN,
+      "change": NaN,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1052.39,
-      "change": -4.94,
+      "price": NaN,
+      "change": NaN,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6575.32,
-      "change": 0.72,
+      "price": 6582.69,
+      "change": 0.11,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 21840.95,
-      "change": 1.16,
+      "price": 21879.18,
+      "change": 0.18,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성바이오로직스",
-      "change": 4.52
+      "ticker": "롯데바이오로직스(관련주: 롯데지주)",
+      "change": 0.37
     },
     {
-      "ticker": "NVIDIA",
-      "change": 0.77
+      "ticker": "Eli Lilly",
+      "change": -1.98
     },
     {
-      "ticker": "Nike",
-      "change": -15.51
+      "ticker": "Oracle",
+      "change": 0.79
     }
   ],
-  "summary": "미국-이란 전쟁 종식 기대감이 시장의 리스크 온 심리를 자극하며 뉴욕 증시가 이틀 연속 상승하는 등 반등 국면을 맞이했습니다. AI 기술의 독립적 주체화 및 신약 개발 혁신이 산업 전반의 모멘텀으로 작용하고 있으나, 유가 상승과 인플레이션 우려는 여전히 변동성을 유발하는 요소입니다. 전반적으로 기술적 과매도를 해소하며 바닥권에서 탈출하는 '무릎' 구간의 매수 기회가 포착되고 있습니다.",
+  "summary": "글로벌 시장은 이란발 지정학적 리스크 심화와 트럼프 행정부의 관세 정책 변화로 인해 극심한 변동성을 보이고 있습니다. 고용 지표 호조로 인한 금리 인하 기대감 후퇴와 에너지 가격 상승이 시장의 불안을 가중하는 가운데, 방산 및 바이오 섹터로의 자금 쏠림 현상이 뚜렷합니다. 주말 휴장기 동안 투자자들은 에너지 안보와 대외 통상 압박에 대응할 수 있는 섹터 중심으로 포트폴리오 재편을 고민해야 할 시점입니다.",
   "news_headlines": [
     {
-      "title": "美·이란 종전 기대감에 뉴욕증시 이틀 연속 상승",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE90SzBXTkRVQzhiLWN2UGRIMEU1Qkc4T25EdjFwUVBlTWREUFlaNHR5SWVzSWg1TVZ5MlptbEN2SmNvckh5QTd4bjFpUm5SLWlMb1dFam9vaVRFbWE2ZkpqQ0kxQWkwaDVMVXlVdVY4S3BsWTg?oc=5"
+      "title": "이란 전쟁에 ‘K방산’이 떴다 “천궁-Ⅱ 깜짝 놀랄 명중률”",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSGhzei1PMGk3bThDNXZ3YXl3VmlTZ0hxUDlKX3JlTmQxWmdNTmhYQ0RUbHNpNHVDMXFaU1lKZlR1Rm16UUFGRTkyYVExdmxiWjBGUjFneEJBc3JOU1dfN2tUSVptM0J6V0hXNHpWY2t6aWp4cU9ielFVWlJIWktJZ0drZU9mSl9RYlNSZ2szWExYS2NRQTlwUV9fY1drQdIBsgFBVV95cUxPMnl6bzIxYUxJb05BbVQ4QjJBajM0amFMZnJUNUtmOW40NGxLeUEtSTBQWVpxQzhWMTIwQnFuY3IzMHlqWnVZVzlhc0I4LWhKMUNFaVBTaGJRblh4Z2IzM1FSdmxzaU9VQ0hXbkxfWnA5Y3NKR2pUQ3hXeklBM1lZZVhMZENGbnJLMmtiR0FuNm1TYmh4blRsY3ZReDZKRHFSMzYtSE1SRG9EUDd0andvOHVn?oc=5"
     },
     {
-      "title": "AI, 신약개발 '도구' 넘어 '독립 주체'로...전주기 혁신 가속화",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8ycnlhSWJNamlNRmo0aEVaMlhxZmg2TmxaQ25Mb085WDRZem13U0tGWDRjZnpVTG5ZV29SNl85RzZ4TmdZSGRNTmZ1V0N0VVVqSW1sM3RJajFyaGNRa0d2aWtSQ08zWUhJY29Pbg?oc=5"
+      "title": "트럼프 의약품 관세 100%…한국 15% 적용, K바이오 수출 비상",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSjhmYnVjdTZjOGFxLXZuZHlTa0k3MmU4VFhPQVVQT3BCb3lMS042N216YTJCRng2M3hwOW9fbnZYMlprMC1yc2ZLZEpmeTNuaDlmZWowUzZtRnVWUEFFNC1vX3M1cTN2UTVpZDZXU09LSHg4SWRMMFNFTjN3SzJoOXlnMi1UMm5y?oc=5"
     },
     {
-      "title": "롯데바이오, 美 소재 항암 전문 바이오 기업과 '항체 생산 수주' 계약 체결",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9zNF9mekU5UXFyQm80bFktMlFFWFdOLUE4TDktSTUxSzhqNHhvUmpIMXowYW0yb1ZRZXA5dFc0bFEwcjV4a21SUFJnWnJRZkJtZUNtX2h5QQ?oc=5"
+      "title": "먹는 마운자로 나왔다…美 FDA, 일라이릴리 경구용 비만 치료제 승인",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8yaFhXR3VvTEpGR2dhRVVXYnhoMVhBSkRfN3czUzlLLUVCWDFDS2RDVU1hLUtqZnNnZi1mWmQ1Sl9JMS1kbGktNFBQLXE4eU1YRWRZWg?oc=5"
     }
   ],
   "sectors": [
     {
+      "name": "방위산업",
+      "sentiment": "HOT",
+      "reason": "호르무즈 해협 긴장 고조에 따른 국방비 증액 및 천궁-II 등 한국 무기체계 수출 모멘텀 강화"
+    },
+    {
       "name": "바이오/제약",
-      "sentiment": "HOT",
-      "reason": "AI 신약 개발 혁신 및 항체 생산 수주 등 대규모 계약과 신약 승인 모멘텀 지속"
-    },
-    {
-      "name": "빅테크/AI",
       "sentiment": "NEUTRAL",
-      "reason": "중동 리스크에도 불구하고 데이터 센터 및 AI 인프라 투자는 구조적 성장세 유지"
+      "reason": "일라이릴리의 경구용 비만 치료제 승인 호재와 트럼프 관세 정책이라는 상반된 리스크 공존"
     },
     {
-      "name": "자동차/전기차",
+      "name": "에너지",
       "sentiment": "HOT",
-      "reason": "미국 시장 겨냥 전기차 모델 확대 및 산업 경쟁력 강화 기대감"
+      "reason": "중동 분쟁 장기화에 따른 원유 공급망 차질 우려 및 유가 상승 압력"
     }
   ],
   "tickers": [
     {
-      "name": "롯데바이오로직스(관련주: 롯데지주)",
-      "symbol": "004990.KS"
+      "name": "한화에어로스페이스",
+      "symbol": "012450.KS"
     },
     {
-      "name": "Eli Lilly",
+      "name": "일라이 릴리",
       "symbol": "LLY"
     },
     {
-      "name": "Oracle",
-      "symbol": "ORCL"
+      "name": "엑손 모빌",
+      "symbol": "XOM"
     }
   ],
   "keywords": [
     {
-      "name": "중동 전쟁 종식",
+      "name": "지정학적 리스크",
       "weight": 20
     },
     {
-      "name": "AI 신약개발",
+      "name": "방산",
       "weight": 15
     },
     {
-      "name": "항체 생산",
+      "name": "트럼프 관세",
+      "weight": 15
+    },
+    {
+      "name": "바이오 승인",
       "weight": 12
     },
     {
-      "name": "금리/인플레이션",
+      "name": "유가 급등",
+      "weight": 12
+    },
+    {
+      "name": "환율 변동성",
       "weight": 10
     },
     {
-      "name": "기술적 반등",
-      "weight": 10
-    },
-    {
-      "name": "미국 전기차",
-      "weight": 10
-    },
-    {
-      "name": "기업 구조조정",
+      "name": "금리 정책",
       "weight": 8
     },
     {
-      "name": "공급망 리스크",
+      "name": "AI 수익화",
       "weight": 8
-    },
-    {
-      "name": "빅테크",
-      "weight": 7
     }
   ],
-  "reason": "롯데지주는 롯데바이오의 공격적 수주로 본업 외 신성장 동력 가치가 재평가될 구간이며, Eli Lilly는 신약 승인으로 인한 견고한 우상향 흐름 속 눌림목입니다. Oracle은 클라우드 및 AI 전환을 위한 구조조정과 공격적 투자가 동반되어 중장기적으로 안정적인 '무릎' 가격대에 위치해 있습니다.",
-  "push_message": "[프리즘 AI] 중동 리스크 완화로 뉴욕 증시 반등! 주목해야 할 AI 신약 및 클라우드 핵심 종목을 확인하세요."
+  "reason": "한화에어로스페이스는 글로벌 지정학적 불안 속에서 K-방산의 주도적 역할을 수행하며 견고한 수주 잔고를 보유하여 안정적 우상향 기대됩니다. 일라이릴리는 FDA 승인이라는 명확한 성장 모멘텀을 확보해 시장 조정 시 매력적인 진입 구간에 있습니다. 엑손 모빌은 고유가 환경에서 안정적인 현금 흐름을 창출하는 대형 에너지주로 기술적으로 바닥권에서 반등을 모색하는 무릎 위치에 있습니다.",
+  "push_message": "주말 체크포인트: 중동 리스크와 관세 폭풍 속 '방산·에너지' 집중. 한국 시장 월요일 대응 전략 확인하세요."
 }
