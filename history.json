@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-07 08:17",
-    "performance": [
-      {
-        "ticker": "포스코홀딩스",
-        "change": 2.02
-      },
-      {
-        "ticker": "Broadcom",
-        "change": -0.69
-      },
-      {
-        "ticker": "United Airlines Holdings Inc",
-        "change": -3.52
-      }
-    ],
-    "predictions": [
-      "포스코홀딩스",
-      "Chevron",
-      "iRobot"
-    ]
-  },
-  {
     "date": "2026-03-08 08:12",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "한화에어로스페이스",
       "일라이 릴리",
       "엑손 모빌"
+    ]
+  },
+  {
+    "date": "2026-04-05 08:19",
+    "performance": [
+      {
+        "ticker": "한화에어로스페이스",
+        "change": 2.26
+      },
+      {
+        "ticker": "일라이 릴리",
+        "change": -1.98
+      },
+      {
+        "ticker": "엑손 모빌",
+        "change": -0.06
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "엑손모빌",
+      "록히드마틴"
     ]
   }
 ]

@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-04 08:23",
+  "date": "2026-04-05 08:19",
   "market_info": {
     "KOSPI": {
-      "price": NaN,
-      "change": NaN,
+      "price": 5377.3,
+      "change": 2.74,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": NaN,
-      "change": NaN,
+      "price": 1063.75,
+      "change": 0.7,
       "is_open": false,
       "status": "⚪"
     },
@@ -28,98 +28,93 @@
   },
   "past_results": [
     {
-      "ticker": "롯데바이오로직스(관련주: 롯데지주)",
-      "change": 0.37
+      "ticker": "한화에어로스페이스",
+      "change": 2.26
     },
     {
-      "ticker": "Eli Lilly",
+      "ticker": "일라이 릴리",
       "change": -1.98
     },
     {
-      "ticker": "Oracle",
-      "change": 0.79
+      "ticker": "엑손 모빌",
+      "change": -0.06
     }
   ],
-  "summary": "글로벌 시장은 이란발 지정학적 리스크 심화와 트럼프 행정부의 관세 정책 변화로 인해 극심한 변동성을 보이고 있습니다. 고용 지표 호조로 인한 금리 인하 기대감 후퇴와 에너지 가격 상승이 시장의 불안을 가중하는 가운데, 방산 및 바이오 섹터로의 자금 쏠림 현상이 뚜렷합니다. 주말 휴장기 동안 투자자들은 에너지 안보와 대외 통상 압박에 대응할 수 있는 섹터 중심으로 포트폴리오 재편을 고민해야 할 시점입니다.",
+  "summary": "지정학적 리스크인 호르무즈 해협 봉쇄 우려가 에너지 가격 상승을 견인하며 글로벌 인플레이션 압력이 재점화되고 있습니다. 반도체 섹터의 견고한 랠리에도 불구하고, 고용 지표 호조에 따른 금리 인하 기대감 후퇴가 시장의 변동성을 높이고 있습니다. 주말 휴장기를 거치며 투자자들은 에너지 공급망 차질과 원자재 관세 이슈를 중심으로 포트폴리오를 재정비하는 보수적 심리가 우세합니다.",
   "news_headlines": [
     {
-      "title": "이란 전쟁에 ‘K방산’이 떴다 “천궁-Ⅱ 깜짝 놀랄 명중률”",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSGhzei1PMGk3bThDNXZ3YXl3VmlTZ0hxUDlKX3JlTmQxWmdNTmhYQ0RUbHNpNHVDMXFaU1lKZlR1Rm16UUFGRTkyYVExdmxiWjBGUjFneEJBc3JOU1dfN2tUSVptM0J6V0hXNHpWY2t6aWp4cU9ielFVWlJIWktJZ0drZU9mSl9RYlNSZ2szWExYS2NRQTlwUV9fY1drQdIBsgFBVV95cUxPMnl6bzIxYUxJb05BbVQ4QjJBajM0amFMZnJUNUtmOW40NGxLeUEtSTBQWVpxQzhWMTIwQnFuY3IzMHlqWnVZVzlhc0I4LWhKMUNFaVBTaGJRblh4Z2IzM1FSdmxzaU9VQ0hXbkxfWnA5Y3NKR2pUQ3hXeklBM1lZZVhMZENGbnJLMmtiR0FuNm1TYmh4blRsY3ZReDZKRHFSMzYtSE1SRG9EUDd0andvOHVn?oc=5"
+      "title": "‘호르무즈 봉쇄’ 장기화 전망에 국제유가↑…WTI 111.5달러·브렌트유 109달러",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE80cXVTZ0p4TURRRVgxREVObGtWa0ctZkx0VmkzQmFRVWtLTkRRQzIwcllXNmdfS2FVTG5td2d6RmxjMVdyazRIRjZoVVMtWGlweHZJSTI4YS11QktjeXJvQlFzcXZ3eTRBb3lUYUlqWjVOdw?oc=5"
     },
     {
-      "title": "트럼프 의약품 관세 100%…한국 15% 적용, K바이오 수출 비상",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSjhmYnVjdTZjOGFxLXZuZHlTa0k3MmU4VFhPQVVQT3BCb3lMS042N216YTJCRng2M3hwOW9fbnZYMlprMC1yc2ZLZEpmeTNuaDlmZWowUzZtRnVWUEFFNC1vX3M1cTN2UTVpZDZXU09LSHg4SWRMMFNFTjN3SzJoOXlnMi1UMm5y?oc=5"
+      "title": "또 관세 손 본 美…금속 제품에 관세 25% 일괄 적용",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBnZ3duQURrWGRzNmFDY0NVcUlVRl9qaHZDTDdNTkpkSlBmRlJNZVVyOW1Eb2xnaG14Yzg2Q3k5VVZoc1RuS3Z6ejdGSHM5TE9G?oc=5"
     },
     {
-      "title": "먹는 마운자로 나왔다…美 FDA, 일라이릴리 경구용 비만 치료제 승인",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8yaFhXR3VvTEpGR2dhRVVXYnhoMVhBSkRfN3czUzlLLUVCWDFDS2RDVU1hLUtqZnNnZi1mWmQ1Sl9JMS1kbGktNFBQLXE4eU1YRWRZWg?oc=5"
+      "title": "고리 2호기, 오늘부터 재가동‥'국가에너지 안보 중요 수단'",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhLVl5QlZncFJpYlVuQ1V4T3pET3hLb0tTc01PaVEwNXh4cS1vaWpaWjJQNWVWNmRLX0EwOXNMQjg3X2J0NTMwT0ZjUkhTYVFhVW5VNWpYQWMzekoxMEkwYl9iU1BxZ25wblg4bjd2emp1bVpX0gF0QVVfeXFMTnYxQ3pOQ3E3NkFDNjdDWF9uNlRyb1Ywa25fVmFNbXUyZzRqMjFxN25XdDlvUUlKWmpBWW5BREJLWUt3aHAxM29uaGRTT0ZFT3JSTW9QaDY0UmZJWU9LUExaSXZlTjZfWXpqNTFtZzIzNE45dlI?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "방위산업",
+      "name": "에너지/방산",
       "sentiment": "HOT",
-      "reason": "호르무즈 해협 긴장 고조에 따른 국방비 증액 및 천궁-II 등 한국 무기체계 수출 모멘텀 강화"
+      "reason": "호르무즈 해협 봉쇄 및 지정학적 리스크로 인한 공급망 불안과 에너지 가격 급등"
     },
     {
-      "name": "바이오/제약",
-      "sentiment": "NEUTRAL",
-      "reason": "일라이릴리의 경구용 비만 치료제 승인 호재와 트럼프 관세 정책이라는 상반된 리스크 공존"
-    },
-    {
-      "name": "에너지",
-      "sentiment": "HOT",
-      "reason": "중동 분쟁 장기화에 따른 원유 공급망 차질 우려 및 유가 상승 압력"
+      "name": "반도체",
+      "sentiment": "WARM",
+      "reason": "반도체 랠리는 지속 중이나 미국 금리 정책 불확실성으로 인한 차익 실현 매물 출회 가능성 존재"
     }
   ],
   "tickers": [
     {
-      "name": "한화에어로스페이스",
-      "symbol": "012450.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "일라이 릴리",
-      "symbol": "LLY"
-    },
-    {
-      "name": "엑손 모빌",
+      "name": "엑손모빌",
       "symbol": "XOM"
+    },
+    {
+      "name": "록히드마틴",
+      "symbol": "LMT"
     }
   ],
   "keywords": [
     {
-      "name": "지정학적 리스크",
+      "name": "호르무즈",
       "weight": 20
     },
     {
-      "name": "방산",
+      "name": "에너지",
       "weight": 15
     },
     {
-      "name": "트럼프 관세",
-      "weight": 15
-    },
-    {
-      "name": "바이오 승인",
+      "name": "관세",
       "weight": 12
     },
     {
-      "name": "유가 급등",
+      "name": "반도체",
       "weight": 12
     },
     {
-      "name": "환율 변동성",
+      "name": "금리",
       "weight": 10
     },
     {
-      "name": "금리 정책",
-      "weight": 8
+      "name": "방산",
+      "weight": 11
     },
     {
-      "name": "AI 수익화",
-      "weight": 8
+      "name": "공급망",
+      "weight": 10
+    },
+    {
+      "name": "인플레이션",
+      "weight": 10
     }
   ],
-  "reason": "한화에어로스페이스는 글로벌 지정학적 불안 속에서 K-방산의 주도적 역할을 수행하며 견고한 수주 잔고를 보유하여 안정적 우상향 기대됩니다. 일라이릴리는 FDA 승인이라는 명확한 성장 모멘텀을 확보해 시장 조정 시 매력적인 진입 구간에 있습니다. 엑손 모빌은 고유가 환경에서 안정적인 현금 흐름을 창출하는 대형 에너지주로 기술적으로 바닥권에서 반등을 모색하는 무릎 위치에 있습니다.",
-  "push_message": "주말 체크포인트: 중동 리스크와 관세 폭풍 속 '방산·에너지' 집중. 한국 시장 월요일 대응 전략 확인하세요."
+  "reason": "삼성전자는 최근 반도체 랠리 속에서도 박스권 하단에서 조정을 거치며 기술적 매수 위치(무릎)에 도달했습니다. 엑손모빌(XOM)은 호르무즈 해협 위기로 인한 유가 급등의 직접적 수혜주로, 추세적 상승 국면에 있습니다. 록히드마틴(LMT)은 지정학적 위기 고조 시 안정적인 매출을 확보하는 대표 방산주로, 현재 포트폴리오의 방어적 성격과 성장성을 동시에 고려하여 선정했습니다.",
+  "push_message": "[Prism AI] 지정학적 리스크발 에너지 급등! 유가 상승 수혜주와 반도체 조정기 매수 전략을 확인하세요."
 }
