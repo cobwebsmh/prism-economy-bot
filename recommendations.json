@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-05 08:19",
+  "date": "2026-04-06 08:22",
   "market_info": {
     "KOSPI": {
       "price": 5377.3,
@@ -28,93 +28,98 @@
   },
   "past_results": [
     {
-      "ticker": "한화에어로스페이스",
-      "change": 2.26
+      "ticker": "삼성전자",
+      "change": 4.37
     },
     {
-      "ticker": "일라이 릴리",
-      "change": -1.98
-    },
-    {
-      "ticker": "엑손 모빌",
+      "ticker": "엑손모빌",
       "change": -0.06
+    },
+    {
+      "ticker": "록히드마틴",
+      "change": 0.83
     }
   ],
-  "summary": "지정학적 리스크인 호르무즈 해협 봉쇄 우려가 에너지 가격 상승을 견인하며 글로벌 인플레이션 압력이 재점화되고 있습니다. 반도체 섹터의 견고한 랠리에도 불구하고, 고용 지표 호조에 따른 금리 인하 기대감 후퇴가 시장의 변동성을 높이고 있습니다. 주말 휴장기를 거치며 투자자들은 에너지 공급망 차질과 원자재 관세 이슈를 중심으로 포트폴리오를 재정비하는 보수적 심리가 우세합니다.",
+  "summary": "중동 전쟁 격화에 따른 원유 가격 급등과 지정학적 리스크가 시장의 인플레이션 우려를 극도로 자극하며 투자 심리가 위축되고 있습니다. 트럼프의 강경 대응 경고와 관세 정책이 맞물리며 미국과 한국 증시 모두 하방 압력을 받는 불확실성이 증대된 상태입니다. 이에 따라 안전자산 선호와 공급망 이슈에 직접적인 영향을 받는 에너지 및 방산 섹터로의 자금 쏠림 현상이 관찰됩니다.",
   "news_headlines": [
     {
-      "title": "‘호르무즈 봉쇄’ 장기화 전망에 국제유가↑…WTI 111.5달러·브렌트유 109달러",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE80cXVTZ0p4TURRRVgxREVObGtWa0ctZkx0VmkzQmFRVWtLTkRRQzIwcllXNmdfS2FVTG5td2d6RmxjMVdyazRIRjZoVVMtWGlweHZJSTI4YS11QktjeXJvQlFzcXZ3eTRBb3lUYUlqWjVOdw?oc=5"
+      "title": "트럼프 강경 대응 경고에 美선물 하락…브렌트유 110달러",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9OOEltRXJtX0VtRDRaTzMzQ1RUc3ZkTHBDZVFXcmkwakM3MkszOU5HVmU5UjlOZllfM2s0bWVxaXJOaHdmZWYtS3Zhb2ZtRWtWR2gxLUJfTTVzbzk4NFo3OVF1M2Z3RTVzMzZuZ2dhLTg4d3c?oc=5"
     },
     {
-      "title": "또 관세 손 본 美…금속 제품에 관세 25% 일괄 적용",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBnZ3duQURrWGRzNmFDY0NVcUlVRl9qaHZDTDdNTkpkSlBmRlJNZVVyOW1Eb2xnaG14Yzg2Q3k5VVZoc1RuS3Z6ejdGSHM5TE9G?oc=5"
+      "title": "이란군, 중동 석유화학 시설 난타‥'기반시설 파괴 보복'",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04dUJfWUZEV2NiclhFY3Zuano2Y3BCRzFfck1RRFQ1bnVsb2xfT0U4a0U3UEY0TlVsclplSE1BWFhGcm1OR0g5a05jLUREbmMwUTUwUkxvcXlJanZhT1BCaVJwY1I0VUVwbFJ4T3p1NDB6cWdQ0gF0QVVfeXFMTXZwcTVUWmtEalAzV20tMjhWRl85N1hHb1hXRmE0VVM5ZlhGR0Rra1RVSzVMT3FYN09leTRUZUF4X0ZkbTliUHBNYWFPcUJQdGh2ajJyVmo0WmNpMG9ncUVIdktUcjl0QzAyRk9Yci0tU0k2dzQ?oc=5"
     },
     {
-      "title": "고리 2호기, 오늘부터 재가동‥'국가에너지 안보 중요 수단'",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhLVl5QlZncFJpYlVuQ1V4T3pET3hLb0tTc01PaVEwNXh4cS1vaWpaWjJQNWVWNmRLX0EwOXNMQjg3X2J0NTMwT0ZjUkhTYVFhVW5VNWpYQWMzekoxMEkwYl9iU1BxZ25wblg4bjd2emp1bVpX0gF0QVVfeXFMTnYxQ3pOQ3E3NkFDNjdDWF9uNlRyb1Ywa25fVmFNbXUyZzRqMjFxN25XdDlvUUlKWmpBWW5BREJLWUt3aHAxM29uaGRTT0ZFT3JSTW9QaDY0UmZJWU9LUExaSXZlTjZfWXpqNTFtZzIzNE45dlI?oc=5"
+      "title": "US Inflation Seen Spiking in First Snapshot Since Iran War",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWlYyckpRWU9oRFJpUnNrenE0YjdWbDNTc05SVWhPZERScHMtSS05MFV6dVZnNkRPQVZNTUpjdVNPcVh1ZDQ4Q1B6SmpGUGxqQ1RhLVRMejA4QTBXdGFETUtNWGFJQVNlQ0owWGFRWHE2YjdfNHduYzV1Y0ZheWJzcEZQRjN2eEJ1aVBxcVhQRHhyR1RCblhzc1BfQnlmdzB5ZzRrNHhxTHpsNVdJSmc?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지/방산",
+      "name": "에너지(Energy)",
       "sentiment": "HOT",
-      "reason": "호르무즈 해협 봉쇄 및 지정학적 리스크로 인한 공급망 불안과 에너지 가격 급등"
+      "reason": "이란-중동 전쟁으로 인한 원유 공급 차질 우려로 유가 급등"
     },
     {
-      "name": "반도체",
-      "sentiment": "WARM",
-      "reason": "반도체 랠리는 지속 중이나 미국 금리 정책 불확실성으로 인한 차익 실현 매물 출회 가능성 존재"
+      "name": "방위산업(Defense)",
+      "sentiment": "HOT",
+      "reason": "지정학적 리스크 고조에 따른 국가별 국방 예산 증액 기대감"
+    },
+    {
+      "name": "제약/바이오(Pharma)",
+      "sentiment": "COLD",
+      "reason": "미국 수입 의약품 관세 부과 이슈로 인한 무역 장벽 리스크 발생"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "현대중공업",
+      "symbol": "329180.KS"
     },
     {
-      "name": "엑손모빌",
+      "name": "Exxon Mobil",
       "symbol": "XOM"
     },
     {
-      "name": "록히드마틴",
+      "name": "Lockheed Martin",
       "symbol": "LMT"
     }
   ],
   "keywords": [
     {
-      "name": "호르무즈",
+      "name": "이란전쟁",
       "weight": 20
     },
     {
-      "name": "에너지",
+      "name": "원유급등",
       "weight": 15
     },
     {
-      "name": "관세",
-      "weight": 12
-    },
-    {
-      "name": "반도체",
-      "weight": 12
-    },
-    {
-      "name": "금리",
-      "weight": 10
-    },
-    {
-      "name": "방산",
-      "weight": 11
-    },
-    {
-      "name": "공급망",
-      "weight": 10
-    },
-    {
       "name": "인플레이션",
+      "weight": 15
+    },
+    {
+      "name": "관세정책",
+      "weight": 10
+    },
+    {
+      "name": "방위산업",
+      "weight": 10
+    },
+    {
+      "name": "금리부담",
+      "weight": 10
+    },
+    {
+      "name": "공급망리스크",
+      "weight": 10
+    },
+    {
+      "name": "트럼프변수",
       "weight": 10
     }
   ],
-  "reason": "삼성전자는 최근 반도체 랠리 속에서도 박스권 하단에서 조정을 거치며 기술적 매수 위치(무릎)에 도달했습니다. 엑손모빌(XOM)은 호르무즈 해협 위기로 인한 유가 급등의 직접적 수혜주로, 추세적 상승 국면에 있습니다. 록히드마틴(LMT)은 지정학적 위기 고조 시 안정적인 매출을 확보하는 대표 방산주로, 현재 포트폴리오의 방어적 성격과 성장성을 동시에 고려하여 선정했습니다.",
-  "push_message": "[Prism AI] 지정학적 리스크발 에너지 급등! 유가 상승 수혜주와 반도체 조정기 매수 전략을 확인하세요."
+  "reason": "지정학적 리스크가 시장을 지배하는 가운데, 현대중공업은 조선업 슈퍼사이클과 방산 수출 기대감이 겹쳐 기술적 조정 후 반등 가능한 '무릎' 위치로 판단됩니다. XOM은 에너지 섹터의 대장주로서 유가 상승 시 직접적인 수혜가 예상되며, LMT는 지정학적 불안 속에서 안정적인 수요가 뒷받침되는 방산 포트폴리오의 핵심입니다.",
+  "push_message": "🚨 [Prism AI] 중동 전쟁 격화에 따른 유가 급등, 방산 및 에너지 섹터 주목. 불확실성 증대로 포트폴리오 방어 전략 필요."
 }

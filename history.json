@@ -1,23 +1,5 @@
 [
   {
-    "date": "2026-03-08 08:12",
-    "performance": [
-      {
-        "ticker": "포스코홀딩스",
-        "change": 2.02
-      },
-      {
-        "ticker": "Chevron",
-        "change": 0.02
-      }
-    ],
-    "predictions": [
-      "포스코홀딩스",
-      "Advanced Micro Devices Inc",
-      "Palantir Technologies Inc"
-    ]
-  },
-  {
     "date": "2026-03-08 21:54",
     "performance": [
       {
@@ -653,6 +635,28 @@
       "삼성전자",
       "엑손모빌",
       "록히드마틴"
+    ]
+  },
+  {
+    "date": "2026-04-06 08:22",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 4.37
+      },
+      {
+        "ticker": "엑손모빌",
+        "change": -0.06
+      },
+      {
+        "ticker": "록히드마틴",
+        "change": 0.83
+      }
+    ],
+    "predictions": [
+      "현대중공업",
+      "Exxon Mobil",
+      "Lockheed Martin"
     ]
   }
 ]
