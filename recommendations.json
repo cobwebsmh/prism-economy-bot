@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-06 08:22",
+  "date": "2026-04-07 08:25",
   "market_info": {
     "KOSPI": {
       "price": 5377.3,
@@ -14,112 +14,112 @@
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6582.69,
-      "change": 0.11,
+      "price": 6611.83,
+      "change": 0.44,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 21879.18,
-      "change": 0.18,
+      "price": 21996.34,
+      "change": 0.54,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": 4.37
+      "ticker": "현대중공업",
+      "change": -1.77
     },
     {
-      "ticker": "엑손모빌",
-      "change": -0.06
+      "ticker": "Exxon Mobil",
+      "change": 1.67
     },
     {
-      "ticker": "록히드마틴",
-      "change": 0.83
+      "ticker": "Lockheed Martin",
+      "change": 2.43
     }
   ],
-  "summary": "중동 전쟁 격화에 따른 원유 가격 급등과 지정학적 리스크가 시장의 인플레이션 우려를 극도로 자극하며 투자 심리가 위축되고 있습니다. 트럼프의 강경 대응 경고와 관세 정책이 맞물리며 미국과 한국 증시 모두 하방 압력을 받는 불확실성이 증대된 상태입니다. 이에 따라 안전자산 선호와 공급망 이슈에 직접적인 영향을 받는 에너지 및 방산 섹터로의 자금 쏠림 현상이 관찰됩니다.",
+  "summary": "삼성전자의 역사적인 실적 달성과 글로벌 공급망 안정화 기대감이 시장의 하방 경직성을 확보하며 투자 심리를 지지하고 있습니다. 다만, 중동발 지정학적 리스크로 인한 에너지 가격 급등과 인플레이션 우려가 상존하며 변동성 장세가 이어질 전망입니다. 기술적으로는 주요 지수가 견고한 흐름을 보이는 가운데, 실적 기반의 펀더멘털이 우수한 종목으로의 선별적 대응이 필요한 시점입니다.",
   "news_headlines": [
     {
-      "title": "트럼프 강경 대응 경고에 美선물 하락…브렌트유 110달러",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9OOEltRXJtX0VtRDRaTzMzQ1RUc3ZkTHBDZVFXcmkwakM3MkszOU5HVmU5UjlOZllfM2s0bWVxaXJOaHdmZWYtS3Zhb2ZtRWtWR2gxLUJfTTVzbzk4NFo3OVF1M2Z3RTVzMzZuZ2dhLTg4d3c?oc=5"
+      "title": "[속보] 삼성전자 1분기 잠정 영업이익 57조2000억원...한국 기업史 새로 썼다",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYWhsMHJLVWNFWHFWNlFFRWd6ZjRlWHVicE1maFRka2hmM1NZYmZ3YTE5RXNrTzlOWjlvUnRjUGN0elhMc0RhZXVWM1FGRHYyYkY2OW5mZ0NRdmNoeXcxV1NOLWg0V3V6ZWwyVXdyMWNXekNIT2lmQUVHVElWTjA4cFVjUdIBlwFBVV95cUxQeldfVlZuMzQxeWZYTWI2cnI1N0dMT1J2aUxUZXNweVQyZ1FjazN1d2R5b3VMTkJrZV9sTDZPLVdDcENKWHFZSkpRQ190ZzF4QkYxczlPaEZOMHVTRGhSa1hQYzNFN0x1MVdqNGsyaHhUZlhxNllySEs1X183enMzRmdmWHE0MXhQRjFGVl9jd1FyVVFzY2pV?oc=5"
     },
     {
-      "title": "이란군, 중동 석유화학 시설 난타‥'기반시설 파괴 보복'",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04dUJfWUZEV2NiclhFY3Zuano2Y3BCRzFfck1RRFQ1bnVsb2xfT0U4a0U3UEY0TlVsclplSE1BWFhGcm1OR0g5a05jLUREbmMwUTUwUkxvcXlJanZhT1BCaVJwY1I0VUVwbFJ4T3p1NDB6cWdQ0gF0QVVfeXFMTXZwcTVUWmtEalAzV20tMjhWRl85N1hHb1hXRmE0VVM5ZlhGR0Rra1RVSzVMT3FYN09leTRUZUF4X0ZkbTliUHBNYWFPcUJQdGh2ajJyVmo0WmNpMG9ncUVIdktUcjl0QzAyRk9Yci0tU0k2dzQ?oc=5"
+      "title": "중동 긴장 속 코스피, 5450선 강세 마감…실적 기대감에 '19만전자' 회복",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB1d3JQR21EUkxLUmxOcVZaWUpaWDkzenNoMThuVFk1dnd4TUpkWW9kdy1fVmh3QXY0ZkxOTUp6OVdObm4yRG5YT1BLSV9SYjRHbkNFdTJXZ3JDd9IBVEFVX3lxTE1EZ3BhcW5KT2FNOTNMNFAtemlXaTJHRkZfczdlR0NleDhIZzVScTJtVGZfS24xRkVmdDhEWjNveVZPTDkwOEh0aDRNRzB6NlBSdXZNdw?oc=5"
     },
     {
-      "title": "US Inflation Seen Spiking in First Snapshot Since Iran War",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWlYyckpRWU9oRFJpUnNrenE0YjdWbDNTc05SVWhPZERScHMtSS05MFV6dVZnNkRPQVZNTUpjdVNPcVh1ZDQ4Q1B6SmpGUGxqQ1RhLVRMejA4QTBXdGFETUtNWGFJQVNlQ0owWGFRWHE2YjdfNHduYzV1Y0ZheWJzcEZQRjN2eEJ1aVBxcVhQRHhyR1RCblhzc1BfQnlmdzB5ZzRrNHhxTHpsNVdJSmc?oc=5"
+      "title": "Key Fed official sees possible rate hike amid higher gas prices, inflation concerns",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNS0t3MjZSMlpPbEc2N18xV2VwRlBINm1nR09OeE53U2dSSTZhdHlJd181bGsyNlhzYXY0V1NLcHUwZGtWblNDLW1nTTNOc3pjcnRsRVJNd2YtS0pkNjlsb09YbnpKa2RzZmtBTUdFeTZNUTBmb2Ftd2UtRjJ1QTBaQjg5QlEwdXRLeEF0VWZDOUFmT1g4MFZWMjdBcjY3TVZ1SWc?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지(Energy)",
+      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "이란-중동 전쟁으로 인한 원유 공급 차질 우려로 유가 급등"
+      "reason": "삼성전자 역대급 실적 발표로 인한 섹터 전반의 모멘텀 강화"
     },
     {
-      "name": "방위산업(Defense)",
-      "sentiment": "HOT",
-      "reason": "지정학적 리스크 고조에 따른 국가별 국방 예산 증액 기대감"
+      "name": "에너지",
+      "sentiment": "WARNING",
+      "reason": "중동 긴장 지속에 따른 유가 상승 및 물가 인플레이션 우려"
     },
     {
-      "name": "제약/바이오(Pharma)",
-      "sentiment": "COLD",
-      "reason": "미국 수입 의약품 관세 부과 이슈로 인한 무역 장벽 리스크 발생"
+      "name": "헬스케어",
+      "sentiment": "NEUTRAL",
+      "reason": "미국 메디케어 지급 요율 호조 및 기업 간 인수합병 활성화"
     }
   ],
   "tickers": [
     {
-      "name": "현대중공업",
-      "symbol": "329180.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "Exxon Mobil",
-      "symbol": "XOM"
+      "name": "엔비디아",
+      "symbol": "NVDA"
     },
     {
-      "name": "Lockheed Martin",
-      "symbol": "LMT"
+      "name": "유나이티드헬스 그룹",
+      "symbol": "UNH"
     }
   ],
   "keywords": [
     {
-      "name": "이란전쟁",
+      "name": "삼성전자실적",
       "weight": 20
     },
     {
-      "name": "원유급등",
+      "name": "중동지정학",
       "weight": 15
+    },
+    {
+      "name": "유가급등",
+      "weight": 12
+    },
+    {
+      "name": "AI반도체",
+      "weight": 12
     },
     {
       "name": "인플레이션",
-      "weight": 15
-    },
-    {
-      "name": "관세정책",
       "weight": 10
     },
     {
-      "name": "방위산업",
+      "name": "금리정책",
       "weight": 10
     },
     {
-      "name": "금리부담",
-      "weight": 10
+      "name": "헬스케어",
+      "weight": 11
     },
     {
-      "name": "공급망리스크",
-      "weight": 10
-    },
-    {
-      "name": "트럼프변수",
+      "name": "공급망",
       "weight": 10
     }
   ],
-  "reason": "지정학적 리스크가 시장을 지배하는 가운데, 현대중공업은 조선업 슈퍼사이클과 방산 수출 기대감이 겹쳐 기술적 조정 후 반등 가능한 '무릎' 위치로 판단됩니다. XOM은 에너지 섹터의 대장주로서 유가 상승 시 직접적인 수혜가 예상되며, LMT는 지정학적 불안 속에서 안정적인 수요가 뒷받침되는 방산 포트폴리오의 핵심입니다.",
-  "push_message": "🚨 [Prism AI] 중동 전쟁 격화에 따른 유가 급등, 방산 및 에너지 섹터 주목. 불확실성 증대로 포트폴리오 방어 전략 필요."
+  "reason": "삼성전자는 역대급 실적에도 불구하고 시장의 기대를 반영하며 과열권 진입 전의 안정적인 상승 구간에 위치함. 엔비디아는 AI 인프라 수요의 지속성으로 눌림목 구간에서 재차 반등을 시도 중. 유나이티드헬스는 미국 정부의 메디케어 정책 호재로 인해 밸류에이션 재평가가 예상되는 '무릎' 위치임.",
+  "push_message": "삼성전자 실적 서프라이즈와 글로벌 시장의 인플레이션 경계감 사이, 선별적 종목 장세가 예상됩니다."
 }
