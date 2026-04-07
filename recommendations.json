@@ -1,75 +1,75 @@
 {
-  "date": "2026-04-07 08:25",
+  "date": "2026-04-08 08:27",
   "market_info": {
     "KOSPI": {
-      "price": 5377.3,
-      "change": 2.74,
+      "price": 5450.33,
+      "change": 1.36,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1063.75,
-      "change": 0.7,
+      "price": 1047.37,
+      "change": -1.54,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6611.83,
-      "change": 0.44,
+      "price": 6616.85,
+      "change": 0.08,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 21996.34,
-      "change": 0.54,
+      "price": 22017.85,
+      "change": 0.1,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "현대중공업",
-      "change": -1.77
+      "ticker": "삼성전자",
+      "change": 1.76
     },
     {
-      "ticker": "Exxon Mobil",
-      "change": 1.67
+      "ticker": "엔비디아",
+      "change": 0.26
     },
     {
-      "ticker": "Lockheed Martin",
-      "change": 2.43
+      "ticker": "유나이티드헬스 그룹",
+      "change": 9.37
     }
   ],
-  "summary": "삼성전자의 역사적인 실적 달성과 글로벌 공급망 안정화 기대감이 시장의 하방 경직성을 확보하며 투자 심리를 지지하고 있습니다. 다만, 중동발 지정학적 리스크로 인한 에너지 가격 급등과 인플레이션 우려가 상존하며 변동성 장세가 이어질 전망입니다. 기술적으로는 주요 지수가 견고한 흐름을 보이는 가운데, 실적 기반의 펀더멘털이 우수한 종목으로의 선별적 대응이 필요한 시점입니다.",
+  "summary": "지정학적 리스크(이란 전쟁)와 고유가 장기화 우려로 글로벌 시장의 불안 심리가 최고조에 달하며 '공포 지수'가 기록적인 수치를 보이고 있습니다. 인플레이션 재발과 연준의 추가 금리 인상 가능성이 투자 심리를 억누르고 있으나, 트럼프 협상 타결 기대감이 일시적인 하단 지지력을 제공하고 있습니다. 단기적으로는 변동성을 활용한 방어적 포트폴리오 구축과 기술적 저점에서의 선별적 대응이 요구되는 시점입니다.",
   "news_headlines": [
     {
-      "title": "[속보] 삼성전자 1분기 잠정 영업이익 57조2000억원...한국 기업史 새로 썼다",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYWhsMHJLVWNFWHFWNlFFRWd6ZjRlWHVicE1maFRka2hmM1NZYmZ3YTE5RXNrTzlOWjlvUnRjUGN0elhMc0RhZXVWM1FGRHYyYkY2OW5mZ0NRdmNoeXcxV1NOLWg0V3V6ZWwyVXdyMWNXekNIT2lmQUVHVElWTjA4cFVjUdIBlwFBVV95cUxQeldfVlZuMzQxeWZYTWI2cnI1N0dMT1J2aUxUZXNweVQyZ1FjazN1d2R5b3VMTkJrZV9sTDZPLVdDcENKWHFZSkpRQ190ZzF4QkYxczlPaEZOMHVTRGhSa1hQYzNFN0x1MVdqNGsyaHhUZlhxNllySEs1X183enMzRmdmWHE0MXhQRjFGVl9jd1FyVVFzY2pV?oc=5"
+      "title": "트럼프 협상 시한 몇시간 앞…뉴욕증시 혼조 마감",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9QOGpMaVE5cEt1c3dZbzduMk5MaVp2bXZNNzBIa1V0S1NJejJadDExVV9IbV9hbGx5MzVvVzQ2bXJCVk5EUDh2ODl5TmoxaFhTbkhVaW1nU21hNGvSAWBBVV95cUxQQm9NMnBRS3NybnlrSUQwNm1qVTRVdW43ejdrSEpELThTQWdzakRXOVFpRmRRV3QweWVlMHF1SDBVRjNjVXZuQkZqMDUzOU9kNjhKRkQ2VGJ0aTNaM3JLd2E?oc=5"
     },
     {
-      "title": "중동 긴장 속 코스피, 5450선 강세 마감…실적 기대감에 '19만전자' 회복",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB1d3JQR21EUkxLUmxOcVZaWUpaWDkzenNoMThuVFk1dnd4TUpkWW9kdy1fVmh3QXY0ZkxOTUp6OVdObm4yRG5YT1BLSV9SYjRHbkNFdTJXZ3JDd9IBVEFVX3lxTE1EZ3BhcW5KT2FNOTNMNFAtemlXaTJHRkZfczdlR0NleDhIZzVScTJtVGZfS24xRkVmdDhEWjNveVZPTDkwOEh0aDRNRzB6NlBSdXZNdw?oc=5"
+      "title": "“금융시장 흔들리고 물가·성장률 타격”…경제심리지수 11개월來 최저",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE84RnpRNy1UXzE5MjVyX0pRSVlRd1RiMHJ6SnZtZkhvWVloaXk1REdBdmpNQ213dThOWXBOM25UR2FFT0t0WEpaZTlIRzJUUlBlcE9tdQ?oc=5"
     },
     {
-      "title": "Key Fed official sees possible rate hike amid higher gas prices, inflation concerns",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNS0t3MjZSMlpPbEc2N18xV2VwRlBINm1nR09OeE53U2dSSTZhdHlJd181bGsyNlhzYXY0V1NLcHUwZGtWblNDLW1nTTNOc3pjcnRsRVJNd2YtS0pkNjlsb09YbnpKa2RzZmtBTUdFeTZNUTBmb2Ftd2UtRjJ1QTBaQjg5QlEwdXRLeEF0VWZDOUFmT1g4MFZWMjdBcjY3TVZ1SWc?oc=5"
+      "title": "‘Freak Out’ Indicator Soars to Record With War Sparking Trader Anxiety",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPT1ZMM1MxaXlzLWRmc050QW1GU2tzRWMzNWVXMGdRazdmV2wzZm1zMGlfUVRmVTVGQi1mMWVBYzNjYTVSaW81TkVjRW5JczJiLVRmeUlSd2hweWs0aldnTnFoREZudFRYWjdLbTNLOERHal9kNmZkSTd0LXdmZlBDNE5pVXNKd1AwTjljRDRNclZRQ2QwTXVILWZteFBmUUdSdERzMzl3OFJnc2M0VjZmTmtuSQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체",
-      "sentiment": "HOT",
-      "reason": "삼성전자 역대급 실적 발표로 인한 섹터 전반의 모멘텀 강화"
-    },
-    {
-      "name": "에너지",
-      "sentiment": "WARNING",
-      "reason": "중동 긴장 지속에 따른 유가 상승 및 물가 인플레이션 우려"
+      "name": "에너지/운송",
+      "sentiment": "COLD",
+      "reason": "고유가로 인한 유류비 부담과 운송비 상승, 노선 축소 등 직접적인 수익성 악화 발생"
     },
     {
       "name": "헬스케어",
+      "sentiment": "HOT",
+      "reason": "바이오헬스 지원 사업 및 Medicare 수가 인상 발표로 정책적 수혜 및 방어적 성격 부각"
+    },
+    {
+      "name": "기술/AI",
       "sentiment": "NEUTRAL",
-      "reason": "미국 메디케어 지급 요율 호조 및 기업 간 인수합병 활성화"
+      "reason": "지정학적 리스크에도 불구하고 삼성·애플·앤스로픽 등 개별 기술 혁신 모멘텀 지속"
     }
   ],
   "tickers": [
@@ -78,48 +78,48 @@
       "symbol": "005930.KS"
     },
     {
-      "name": "엔비디아",
-      "symbol": "NVDA"
-    },
-    {
       "name": "유나이티드헬스 그룹",
       "symbol": "UNH"
+    },
+    {
+      "name": "애플",
+      "symbol": "AAPL"
     }
   ],
   "keywords": [
     {
-      "name": "삼성전자실적",
+      "name": "지정학적 리스크",
       "weight": 20
     },
     {
-      "name": "중동지정학",
+      "name": "고유가",
       "weight": 15
     },
     {
-      "name": "유가급등",
-      "weight": 12
-    },
-    {
-      "name": "AI반도체",
-      "weight": 12
-    },
-    {
       "name": "인플레이션",
+      "weight": 15
+    },
+    {
+      "name": "금리 인상",
       "weight": 10
     },
     {
-      "name": "금리정책",
+      "name": "AI 혁신",
       "weight": 10
     },
     {
-      "name": "헬스케어",
-      "weight": 11
+      "name": "헬스케어 정책",
+      "weight": 10
     },
     {
-      "name": "공급망",
+      "name": "변동성(공포)",
+      "weight": 10
+    },
+    {
+      "name": "트럼프 협상",
       "weight": 10
     }
   ],
-  "reason": "삼성전자는 역대급 실적에도 불구하고 시장의 기대를 반영하며 과열권 진입 전의 안정적인 상승 구간에 위치함. 엔비디아는 AI 인프라 수요의 지속성으로 눌림목 구간에서 재차 반등을 시도 중. 유나이티드헬스는 미국 정부의 메디케어 정책 호재로 인해 밸류에이션 재평가가 예상되는 '무릎' 위치임.",
-  "push_message": "삼성전자 실적 서프라이즈와 글로벌 시장의 인플레이션 경계감 사이, 선별적 종목 장세가 예상됩니다."
+  "reason": "삼성전자는 글로벌 반도체 실적 개선세와 기술적 지지 구간에 위치해 있으며, 유나이티드헬스는 미 정부의 Medicare 수가 인상 수혜로 안정적 수익성을 확보했습니다. 애플은 '아이폰 폴드' 양산이라는 강력한 성장 모멘텀이 있어 시장 과열을 피한 '무릎' 위치에서 매력적인 진입 구간으로 판단됩니다.",
+  "push_message": "[금융 프리즘] 전쟁 공포로 시장 불안 지속… 헬스케어·기술주 중심의 방어적 포트폴리오 강화 제언"
 }

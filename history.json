@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-08 22:04",
-    "performance": [
-      {
-        "ticker": "삼성전자",
-        "change": -1.77
-      },
-      {
-        "ticker": "Advanced Micro Devices Inc",
-        "change": -3.52
-      },
-      {
-        "ticker": "Microsoft",
-        "change": -0.42
-      }
-    ],
-    "predictions": [
-      "SK하이닉스",
-      "엑손모빌",
-      "록히드 마틴"
-    ]
-  },
-  {
     "date": "2026-03-09 08:13",
     "performance": [
       {
@@ -657,6 +635,28 @@
       "삼성전자",
       "엔비디아",
       "유나이티드헬스 그룹"
+    ]
+  },
+  {
+    "date": "2026-04-08 08:27",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 1.76
+      },
+      {
+        "ticker": "엔비디아",
+        "change": 0.26
+      },
+      {
+        "ticker": "유나이티드헬스 그룹",
+        "change": 9.37
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "유나이티드헬스 그룹",
+      "애플"
     ]
   }
 ]
