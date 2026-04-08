@@ -1,27 +1,27 @@
 {
-  "date": "2026-04-08 08:27",
+  "date": "2026-04-09 08:28",
   "market_info": {
     "KOSPI": {
-      "price": 5450.33,
-      "change": 1.36,
+      "price": 5494.78,
+      "change": 0.82,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1047.37,
-      "change": -1.54,
+      "price": 1036.73,
+      "change": -1.02,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6616.85,
-      "change": 0.08,
+      "price": 6782.81,
+      "change": 2.51,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 22017.85,
-      "change": 0.1,
+      "price": 22634.99,
+      "change": 2.8,
       "is_open": false,
       "status": "⚪"
     }
@@ -29,47 +29,47 @@
   "past_results": [
     {
       "ticker": "삼성전자",
-      "change": 1.76
-    },
-    {
-      "ticker": "엔비디아",
-      "change": 0.26
+      "change": 7.12
     },
     {
       "ticker": "유나이티드헬스 그룹",
-      "change": 9.37
+      "change": -0.57
+    },
+    {
+      "ticker": "애플",
+      "change": 2.13
     }
   ],
-  "summary": "지정학적 리스크(이란 전쟁)와 고유가 장기화 우려로 글로벌 시장의 불안 심리가 최고조에 달하며 '공포 지수'가 기록적인 수치를 보이고 있습니다. 인플레이션 재발과 연준의 추가 금리 인상 가능성이 투자 심리를 억누르고 있으나, 트럼프 협상 타결 기대감이 일시적인 하단 지지력을 제공하고 있습니다. 단기적으로는 변동성을 활용한 방어적 포트폴리오 구축과 기술적 저점에서의 선별적 대응이 요구되는 시점입니다.",
+  "summary": "미·이란 휴전 합의로 지정학적 리스크가 완화되며 글로벌 증시가 강력한 상승 모멘텀을 확보했습니다. 유가 급락에 따른 인플레이션 우려 완화가 투자 심리에 긍정적으로 작용하며 반도체와 AI 섹터로의 자금 유입이 가속화될 전망입니다. 다만, 기술적 과열권 진입 여부를 살피며 저평가된 우량주 중심의 대응이 필요한 시점입니다.",
   "news_headlines": [
     {
-      "title": "트럼프 협상 시한 몇시간 앞…뉴욕증시 혼조 마감",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9QOGpMaVE5cEt1c3dZbzduMk5MaVp2bXZNNzBIa1V0S1NJejJadDExVV9IbV9hbGx5MzVvVzQ2bXJCVk5EUDh2ODl5TmoxaFhTbkhVaW1nU21hNGvSAWBBVV95cUxQQm9NMnBRS3NybnlrSUQwNm1qVTRVdW43ejdrSEpELThTQWdzakRXOVFpRmRRV3QweWVlMHF1SDBVRjNjVXZuQkZqMDUzOU9kNjhKRkQ2VGJ0aTNaM3JLd2E?oc=5"
+      "title": "미·이란 휴전에 증시 ‘폭등’…코스피 5900선 돌파 눈앞",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1YOUtBdHNMRlZQbXlLTGhZNTZtY0hMYjNPS0dBMG9QR3pkLVpCNTJ4RWI5dTcwQ20tT19FMTQ0ZUFSTFpETDdpYXFPYVlIQ2dmc0JWLXQzVWxIYW9CS1BMZ09ZMTE1RFcyLW5UNVpOYlNCdw?oc=5"
     },
     {
-      "title": "“금융시장 흔들리고 물가·성장률 타격”…경제심리지수 11개월來 최저",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE84RnpRNy1UXzE5MjVyX0pRSVlRd1RiMHJ6SnZtZkhvWVloaXk1REdBdmpNQ213dThOWXBOM25UR2FFT0t0WEpaZTlIRzJUUlBlcE9tdQ?oc=5"
+      "title": "메타, 초지능팀 첫 AI모델 발표…오픈AI·구글 경쟁작에 필적",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB1Z2hkLUZ1YlVldU9lM2lpVGs5dVd1YVNoRHhZUGVNX2hqdjRqbnBhb3Zhekx6OGcyWDZVakhaZlFLSVo0eHFJZmxQUk1oM1hjUG1aUVoyUFk1NVhnRkZkaWJTZE1nVHNuNzNuZXBvTDVCdTRn?oc=5"
     },
     {
-      "title": "‘Freak Out’ Indicator Soars to Record With War Sparking Trader Anxiety",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPT1ZMM1MxaXlzLWRmc050QW1GU2tzRWMzNWVXMGdRazdmV2wzZm1zMGlfUVRmVTVGQi1mMWVBYzNjYTVSaW81TkVjRW5JczJiLVRmeUlSd2hweWs0aldnTnFoREZudFRYWjdLbTNLOERHal9kNmZkSTd0LXdmZlBDNE5pVXNKd1AwTjljRDRNclZRQ2QwTXVILWZteFBmUUdSdERzMzl3OFJnc2M0VjZmTmtuSQ?oc=5"
+      "title": "슈퍼마이크로컴퓨터, '칩 밀반출' 사법 리스크 정면 돌파 의지에…주가 반등",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4xdEk3VUdDSnlucDRMd2pMaTNSczlfbmd2dzJia2lybk1ZcmFXN0lDSGRNZllUaHhUdjR2OEVqYVQ3QTBxbkJwbjVJVGFxenlWdi1pYzVxS2ZyRUJxUnlQSFllekE0czZWcDZ5U2VTSHd0Nzg?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지/운송",
-      "sentiment": "COLD",
-      "reason": "고유가로 인한 유류비 부담과 운송비 상승, 노선 축소 등 직접적인 수익성 악화 발생"
-    },
-    {
-      "name": "헬스케어",
+      "name": "AI/반도체",
       "sentiment": "HOT",
-      "reason": "바이오헬스 지원 사업 및 Medicare 수가 인상 발표로 정책적 수혜 및 방어적 성격 부각"
+      "reason": "메타의 신규 AI 모델 발표 및 글로벌 빅테크들의 인프라 투자 지속"
     },
     {
-      "name": "기술/AI",
-      "sentiment": "NEUTRAL",
-      "reason": "지정학적 리스크에도 불구하고 삼성·애플·앤스로픽 등 개별 기술 혁신 모멘텀 지속"
+      "name": "항공/방산",
+      "sentiment": "HOT",
+      "reason": "지정학적 긴장 완화에 따른 유가 급락으로 비용 절감 및 심리 개선"
+    },
+    {
+      "name": "에너지",
+      "sentiment": "COOL",
+      "reason": "휴전 합의에 따른 공급 우려 해소로 유가 급락세 직격탄"
     }
   ],
   "tickers": [
@@ -78,48 +78,48 @@
       "symbol": "005930.KS"
     },
     {
-      "name": "유나이티드헬스 그룹",
-      "symbol": "UNH"
+      "name": "메타 플랫폼스",
+      "symbol": "META"
     },
     {
-      "name": "애플",
-      "symbol": "AAPL"
+      "name": "GE 에어로스페이스",
+      "symbol": "GE"
     }
   ],
   "keywords": [
     {
-      "name": "지정학적 리스크",
+      "name": "지정학적휴전",
       "weight": 20
     },
     {
-      "name": "고유가",
+      "name": "AI혁신",
+      "weight": 18
+    },
+    {
+      "name": "유가급락",
       "weight": 15
     },
     {
-      "name": "인플레이션",
-      "weight": 15
+      "name": "반도체수출",
+      "weight": 12
     },
     {
-      "name": "금리 인상",
+      "name": "금리정책",
       "weight": 10
     },
     {
-      "name": "AI 혁신",
-      "weight": 10
+      "name": "사법리스크",
+      "weight": 9
     },
     {
-      "name": "헬스케어 정책",
-      "weight": 10
+      "name": "물가안정",
+      "weight": 8
     },
     {
-      "name": "변동성(공포)",
-      "weight": 10
-    },
-    {
-      "name": "트럼프 협상",
-      "weight": 10
+      "name": "실적전망",
+      "weight": 8
     }
   ],
-  "reason": "삼성전자는 글로벌 반도체 실적 개선세와 기술적 지지 구간에 위치해 있으며, 유나이티드헬스는 미 정부의 Medicare 수가 인상 수혜로 안정적 수익성을 확보했습니다. 애플은 '아이폰 폴드' 양산이라는 강력한 성장 모멘텀이 있어 시장 과열을 피한 '무릎' 위치에서 매력적인 진입 구간으로 판단됩니다.",
-  "push_message": "[금융 프리즘] 전쟁 공포로 시장 불안 지속… 헬스케어·기술주 중심의 방어적 포트폴리오 강화 제언"
+  "reason": "삼성전자는 경상수지 흑자 견인 및 반도체 업황 회복 구간에 있어 안정적인 '무릎' 위치로 판단됩니다. 메타는 자체 AI 모델 발표로 기술적 모멘텀이 강화되었으며, GE 에어로스페이스는 유가 하락으로 인한 직접적인 비용 개선 효과가 기대되는 시점입니다.",
+  "push_message": "지정학적 리스크 완화! 유가 급락으로 인한 증시 훈풍이 부는 오늘, 기술주와 항공주 중심의 포트폴리오를 점검하세요."
 }
