@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-11 08:16",
-    "performance": [
-      {
-        "ticker": "삼성바이오로직스",
-        "change": 0.82
-      },
-      {
-        "ticker": "Eli Lilly",
-        "change": -0.7
-      },
-      {
-        "ticker": "Exxon Mobil",
-        "change": -1.54
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "Oracle",
-      "Ford Motor"
-    ]
-  },
-  {
     "date": "2026-03-12 08:15",
     "performance": [
       {
@@ -657,6 +635,28 @@
       "한국항공우주",
       "Meta Platforms",
       "Palantir Technologies"
+    ]
+  },
+  {
+    "date": "2026-04-11 08:24",
+    "performance": [
+      {
+        "ticker": "한국항공우주",
+        "change": 0.0
+      },
+      {
+        "ticker": "Meta Platforms",
+        "change": 0.23
+      },
+      {
+        "ticker": "Palantir Technologies",
+        "change": -1.86
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "서비스나우",
+      "SK하이닉스"
     ]
   }
 ]
