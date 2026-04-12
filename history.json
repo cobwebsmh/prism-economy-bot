@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-13 08:17",
-    "performance": [
-      {
-        "ticker": "현대자동차",
-        "change": -1.7
-      },
-      {
-        "ticker": "Oracle",
-        "change": -2.43
-      },
-      {
-        "ticker": "Exxon Mobil",
-        "change": 1.29
-      }
-    ],
-    "predictions": [
-      "한국가스공사",
-      "엑손모빌",
-      "록히드마틴"
-    ]
-  },
-  {
     "date": "2026-03-14 08:16",
     "performance": [
       {
@@ -656,6 +634,28 @@
     "predictions": [
       "현대차",
       "Exxon Mobil",
+      "Alphabet"
+    ]
+  },
+  {
+    "date": "2026-04-13 08:23",
+    "performance": [
+      {
+        "ticker": "현대차",
+        "change": 0.0
+      },
+      {
+        "ticker": "Exxon Mobil",
+        "change": -1.63
+      },
+      {
+        "ticker": "Alphabet",
+        "change": -0.39
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "LIG넥스원",
       "Alphabet"
     ]
   }
