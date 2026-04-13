@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-14 08:16",
-    "performance": [
-      {
-        "ticker": "한국가스공사",
-        "change": -1.8
-      },
-      {
-        "ticker": "엑손모빌",
-        "change": 1.69
-      },
-      {
-        "ticker": "록히드마틴",
-        "change": -1.05
-      }
-    ],
-    "predictions": [
-      "삼성SDI",
-      "Exxon Mobil",
-      "Cameco Corporation"
-    ]
-  },
-  {
     "date": "2026-03-15 08:16",
     "performance": [
       {
@@ -657,6 +635,28 @@
       "삼성전자",
       "LIG넥스원",
       "Alphabet"
+    ]
+  },
+  {
+    "date": "2026-04-14 08:33",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -2.43
+      },
+      {
+        "ticker": "LIG넥스원",
+        "change": 1.95
+      },
+      {
+        "ticker": "Alphabet",
+        "change": 1.28
+      }
+    ],
+    "predictions": [
+      "LS ELECTRIC",
+      "Amazon",
+      "Dell Technologies"
     ]
   }
 ]
