@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-16 08:18",
-    "performance": [
-      {
-        "ticker": "S-Oil",
-        "change": -8.47
-      },
-      {
-        "ticker": "Exxon Mobil",
-        "change": 1.69
-      },
-      {
-        "ticker": "Lockheed Martin",
-        "change": -1.05
-      }
-    ],
-    "predictions": [
-      "SK하이닉스",
-      "NVIDIA",
-      "Microsoft"
-    ]
-  },
-  {
     "date": "2026-03-17 08:20",
     "performance": [
       {
@@ -657,6 +635,28 @@
       "SK하이닉스",
       "Amazon",
       "JPMorgan Chase"
+    ]
+  },
+  {
+    "date": "2026-04-16 08:32",
+    "performance": [
+      {
+        "ticker": "SK하이닉스",
+        "change": 2.99
+      },
+      {
+        "ticker": "Amazon",
+        "change": -0.21
+      },
+      {
+        "ticker": "JPMorgan Chase",
+        "change": -1.67
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "스타벅스",
+      "스냅"
     ]
   }
 ]

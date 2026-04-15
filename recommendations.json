@@ -1,121 +1,125 @@
 {
-  "date": "2026-04-15 08:33",
+  "date": "2026-04-16 08:32",
   "market_info": {
     "KOSPI": {
-      "price": 5808.62,
-      "change": -0.86,
+      "price": 5967.75,
+      "change": 2.74,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1099.84,
-      "change": 0.57,
+      "price": 1121.88,
+      "change": 2.0,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 6967.38,
-      "change": 1.18,
+      "price": 7022.95,
+      "change": 0.8,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 23639.08,
-      "change": 1.96,
+      "price": 24016.02,
+      "change": 1.59,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "LS ELECTRIC",
-      "change": 3.57
+      "ticker": "SK하이닉스",
+      "change": 2.99
     },
     {
       "ticker": "Amazon",
-      "change": 3.81
+      "change": -0.21
     },
     {
-      "ticker": "Dell Technologies",
-      "change": -2.78
+      "ticker": "JPMorgan Chase",
+      "change": -1.67
     }
   ],
-  "summary": "미-이란 재협상 기대감이 글로벌 증시에 강력한 매수 심리를 견인하며 S&P500이 사상 최고치를 경신할 정도로 시장의 리스크 온(Risk-on) 분위기가 확산되었습니다. 경기 회복에 대한 기대와 기업들의 견조한 실적 발표가 더해지며 기술적 위치상 추가 상승 여력이 충분한 국면입니다. 다만 고용 지표 부진과 일부 소비재 기업의 구조조정 소식은 향후 변동성 요인으로 작용할 가능성이 있습니다.",
+  "summary": "글로벌 시장은 미·이란 지정학적 리스크 완화 기대감과 주요 은행들의 실적 호조에 힘입어 전반적으로 회복 탄력성을 보이고 있습니다. 인공지능(AI) 기술이 하드웨어에서 소프트웨어·서비스 영역으로 확장되며 시장의 핵심 모멘텀을 주도하고 있습니다. 고용 지표의 안정과 경제 연착륙 기대감이 투자 심리를 뒷받침하고 있으나, 에너지 가격 변동성 등 인플레이션 경계감은 여전히 유의해야 할 변수입니다.",
   "news_headlines": [
     {
-      "title": "미·이란 협상 기대에 뉴욕증시 급등…S&P500 사상 최고치 ‘눈앞’",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1XWXpPaWd0amhRdjlnazR3NmNISEpobmoxVzZOaUpqQVRENkZSTENYMXFYZGNGYnIwbWFfQjFLeU4tRUFWS0lpaEd4RTYwb3RaTWNLemNHbHI2a2FsUDREUzhEQl9hMWV1VUVFMm5XT21KYUk?oc=5"
+      "title": "미·이란 2차 협상 기대감에 코스피 종가 ‘6천피’ 탈환",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53NEdybUFiT19ZS29aWXBaQ3MtYjV5QXpxVlpaalRUZTVMOXdvZWFBSl9Kb1RlbUlLSk0tVnVMWWhNN3B5bTd2TW5uQy1peTY0bjdVSFphZmVmUFE?oc=5"
     },
     {
-      "title": "외인 2.7조 순매수에 '육천피' 턱밑까지…'110만닉스' 달성",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE01OVgtSnVrTktrNHhPZG5HSlpqQ1NqQ0U0TW9CVDN0MjlPaDlkVXlfZGk2WGxJbXFjMUpDMUxWdEg4R2xmekVRTGxLaVVMOEhrQUFCZUd1MnBLZ9IBVEFVX3lxTE85QUxFUDNCcE05bFlfd00ycXFzRS1nckhWTGRmTHAtNlNXekRDdUlJZ20xR21kSzhTNktoRkx0amF6U0hJalYwNDdVSUJGU2xtWllueQ?oc=5"
+      "title": "삼성 TV 99%에 AI 탑재...中 추격 따돌린다",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPN0h2NHBGb19VX3hUTkNVbDN3SDdlQnpjWmx0RlhmMFhYUEtCN3QwdDlNbmV4bHUwNFBLVTA1cUJsaXJzZ3BzdEYxbnRSS21YUm91bk1uRFZRQy1VQnVyOVZNOUhIeFhnWXhfWGtjVmFEYUVRYm9uWllWZElHM0UxMmkyaw?oc=5"
+    },
+    {
+      "title": "Stock Market Today: S&P 500 Ticks Higher as Bank Earnings Show U.S. Economy Holding Up",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRVJYcXk1eG9VbkFmcEMtLU50TXBidm84b200OG5SNnpyTmdoWThZTGE4TWpKX2ZRZmR2a0JrRWFIWVN2cTVJZTRXMHduVmV0TmNLaXM3MXpudzljSHNyYTJmVVVnMzJrMjVzTEdSOXlEN0xSRmRSenVLTmZiY2lEaEFNN2xJYTg?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체",
+      "name": "AI 하드웨어/반도체",
       "sentiment": "HOT",
-      "reason": "외국인 대규모 매수세와 실적 기대감으로 주도적 흐름 형성"
+      "reason": "머스크의 AI5 칩 설계 완료 및 삼성전자의 AI 전략 강화로 기술적 주도권 지속"
+    },
+    {
+      "name": "금융",
+      "sentiment": "STABLE",
+      "reason": "미국 은행들의 견조한 실적 발표로 경제 연착륙 신호 확인"
     },
     {
       "name": "에너지",
-      "sentiment": "NEUTRAL",
-      "reason": "미-이란 리스크 완화와 유가 변동성에 따른 전략적 대응 필요"
-    },
-    {
-      "name": "AI/테크",
-      "sentiment": "HOT",
-      "reason": "기업들의 AI 모델 출시와 인프라 투자 지속으로 성장 모멘텀 유지"
+      "sentiment": "CAUTION",
+      "reason": "지정학적 리스크 및 유가 변동성으로 인한 정책 조정 가능성"
     }
   ],
   "tickers": [
     {
-      "name": "SK하이닉스",
-      "symbol": "000660.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "Amazon",
-      "symbol": "AMZN"
+      "name": "스타벅스",
+      "symbol": "SBUX"
     },
     {
-      "name": "JPMorgan Chase",
-      "symbol": "JPM"
+      "name": "스냅",
+      "symbol": "SNAP"
     }
   ],
   "keywords": [
     {
-      "name": "미-이란 협상",
-      "weight": 20
+      "name": "AI 주도권",
+      "weight": 25
     },
     {
-      "name": "글로벌 증시",
+      "name": "지정학적 리스크",
       "weight": 15
+    },
+    {
+      "name": "실적 장세",
+      "weight": 15
+    },
+    {
+      "name": "금리/인플레",
+      "weight": 10
+    },
+    {
+      "name": "고용 지표",
+      "weight": 10
     },
     {
       "name": "반도체",
-      "weight": 15
-    },
-    {
-      "name": "AI 인프라",
-      "weight": 12
-    },
-    {
-      "name": "경기 회복",
       "weight": 10
     },
     {
-      "name": "유가",
-      "weight": 10
-    },
-    {
-      "name": "실적",
-      "weight": 10
-    },
-    {
-      "name": "고용지표",
+      "name": "에너지 정책",
       "weight": 8
+    },
+    {
+      "name": "소비재",
+      "weight": 7
     }
   ],
-  "reason": "SK하이닉스(000660.KS)는 최근 외국인 순매수의 중심에 있으며 기술적으로 전고점 돌파 후 조정기(무릎 위치)에서 재상승 탄력을 받을 준비가 되어 있습니다. Amazon(AMZN)은 Globalstar 인수를 통한 우주 인터넷 역량 강화로 기술적 우위를 점하고 있으며, 상승 추세 중 눌림목 구간입니다. JPMorgan(JPM)은 호실적 발표 후에도 경영진의 신중한 기조로 인해 주가가 합리적인 밸류에이션을 유지하고 있어 금융 섹터의 안정적 성장을 이끌 것으로 판단됩니다.",
-  "push_message": "시장 심리 급격한 개선! 미-이란 리스크 완화로 반도체 및 테크 중심의 강세장 예상. SK하이닉스, AMZN, JPM에 주목하세요."
+  "reason": "삼성전자는 AI 칩과 TV AI 전환 등 실질적인 매출 다변화를 꾀하며 6천피 지수 환경에서 안정적인 무릎 위치를 점하고 있습니다. SBUX(스타벅스)는 챗GPT를 접목한 서비스 혁신으로 고객 경험 강화와 점유율 방어 효과가 기대됩니다. SNAP은 최근 대규모 인력 감축과 AI 효율화 전략을 통해 비용 구조를 개선하고 있어, 반등 모멘텀을 타기에 적합한 기술적 위치에 있습니다.",
+  "push_message": "[Prism AI] 시장 모멘텀 분석: 미·이란 리스크 완화 속 AI 테마가 시장을 견인 중입니다. 삼성전자, SBUX, SNAP에 주목하세요."
 }
