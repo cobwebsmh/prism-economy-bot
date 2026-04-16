@@ -1,75 +1,75 @@
 {
-  "date": "2026-04-16 08:32",
+  "date": "2026-04-17 08:30",
   "market_info": {
     "KOSPI": {
-      "price": 5967.75,
-      "change": 2.74,
+      "price": 6091.39,
+      "change": 2.07,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1121.88,
-      "change": 2.0,
+      "price": 1152.43,
+      "change": 2.72,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7022.95,
-      "change": 0.8,
+      "price": 7041.28,
+      "change": 0.26,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24016.02,
-      "change": 1.59,
+      "price": 24102.7,
+      "change": 0.36,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "SK하이닉스",
-      "change": 2.99
+      "ticker": "삼성전자",
+      "change": 3.08
     },
     {
-      "ticker": "Amazon",
-      "change": -0.21
+      "ticker": "스타벅스",
+      "change": 0.02
     },
     {
-      "ticker": "JPMorgan Chase",
-      "change": -1.67
+      "ticker": "스냅",
+      "change": -0.33
     }
   ],
-  "summary": "글로벌 시장은 미·이란 지정학적 리스크 완화 기대감과 주요 은행들의 실적 호조에 힘입어 전반적으로 회복 탄력성을 보이고 있습니다. 인공지능(AI) 기술이 하드웨어에서 소프트웨어·서비스 영역으로 확장되며 시장의 핵심 모멘텀을 주도하고 있습니다. 고용 지표의 안정과 경제 연착륙 기대감이 투자 심리를 뒷받침하고 있으나, 에너지 가격 변동성 등 인플레이션 경계감은 여전히 유의해야 할 변수입니다.",
+  "summary": "글로벌 시장은 AI 기술의 실질적인 수익화 확인과 거시경제적 불확실성 사이에서 강한 상승 모멘텀을 유지하고 있습니다. S&P500과 나스닥이 사상 최고치를 경신하며 투자 심리는 '낙관' 우위에 있으나, 중동 분쟁과 인플레이션 우려가 상존하여 선별적 접근이 요구됩니다. 특히 AI 반도체와 실적 기반 성장주 중심으로 자금이 집중되는 흐름이 뚜렷합니다.",
   "news_headlines": [
     {
-      "title": "미·이란 2차 협상 기대감에 코스피 종가 ‘6천피’ 탈환",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53NEdybUFiT19ZS29aWXBaQ3MtYjV5QXpxVlpaalRUZTVMOXdvZWFBSl9Kb1RlbUlLSk0tVnVMWWhNN3B5bTd2TW5uQy1peTY0bjdVSFphZmVmUFE?oc=5"
+      "title": "S&P500·나스닥 이틀 연속 최고치...트럼프 '이슬라마바드 갈 수도'",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSUxUQWdsTUEwNmtSZXVrcXN0NG5FYS1OejFXMU5GT2Nva2tIZ2tUaUY5RDRFR2F6RkRsbDRYVTlzWUpoTzU2d2NGdzVOcmY4WC0teU9FZEhybnBsOHEwSVJyakR5WHRGd0pHZVhPaHhFblNHN2RVUEc4VjI3SmgtS0V3Y0NJdGZyOGFNUzJreV8taS1ZWHYtLWh3ZE56dw?oc=5"
     },
     {
-      "title": "삼성 TV 99%에 AI 탑재...中 추격 따돌린다",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPN0h2NHBGb19VX3hUTkNVbDN3SDdlQnpjWmx0RlhmMFhYUEtCN3QwdDlNbmV4bHUwNFBLVTA1cUJsaXJzZ3BzdEYxbnRSS21YUm91bk1uRFZRQy1VQnVyOVZNOUhIeFhnWXhfWGtjVmFEYUVRYm9uWllWZElHM0UxMmkyaw?oc=5"
+      "title": "TSMC, 1분기 영업이익 30.8조원...AI거품론 잠재우며 삼성·SK도 ‘훈풍’",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOEhpeTVtaE1DQzhNRjU3R1AyOFgxV3NjbGJSN0tTbTBMZWQ1LTV4Y25aNTdCaFF6Vl9mTzY0SnAwMjhhbmFnN3gwazdmOWdOWHhjZklESDZBbUFlcEdkZXJuTndzNC1mRXpxM1E3ZmhOS1RyaE9OelduOFJzYkgzU2lWUQ?oc=5"
     },
     {
-      "title": "Stock Market Today: S&P 500 Ticks Higher as Bank Earnings Show U.S. Economy Holding Up",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRVJYcXk1eG9VbkFmcEMtLU50TXBidm84b200OG5SNnpyTmdoWThZTGE4TWpKX2ZRZmR2a0JrRWFIWVN2cTVJZTRXMHduVmV0TmNLaXM3MXpudzljSHNyYTJmVVVnMzJrMjVzTEdSOXlEN0xSRmRSenVLTmZiY2lEaEFNN2xJYTg?oc=5"
+      "title": "美 'K메모리 ETF' 보름만에 1조원 … 돈 빨아들이는 AI반도체",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5KeHNFNWVpdUo2OUtvX3A3NG9FRFVoVU9GMVpwdTJ4V2hiNlBIdVd3LUE4SFVNdF9zTGxsUzlybDRHbmUzRDl4M3hDS3RRVVZpSUE?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "AI 하드웨어/반도체",
+      "name": "반도체/AI",
       "sentiment": "HOT",
-      "reason": "머스크의 AI5 칩 설계 완료 및 삼성전자의 AI 전략 강화로 기술적 주도권 지속"
-    },
-    {
-      "name": "금융",
-      "sentiment": "STABLE",
-      "reason": "미국 은행들의 견조한 실적 발표로 경제 연착륙 신호 확인"
+      "reason": "TSMC의 호실적이 AI 거품론을 일축하며 반도체 전반에 강력한 수급 유입"
     },
     {
       "name": "에너지",
-      "sentiment": "CAUTION",
-      "reason": "지정학적 리스크 및 유가 변동성으로 인한 정책 조정 가능성"
+      "sentiment": "HOT",
+      "reason": "중동 분쟁 장기화에 따른 공급망 불확실성으로 유가 상승세 유지"
+    },
+    {
+      "name": "제약/바이오",
+      "sentiment": "COOL",
+      "reason": "정책 기대감 부재와 임상 데이터 확인 전까지 관망세 지속"
     }
   ],
   "tickers": [
@@ -78,48 +78,48 @@
       "symbol": "005930.KS"
     },
     {
-      "name": "스타벅스",
-      "symbol": "SBUX"
+      "name": "TSMC",
+      "symbol": "TSM"
     },
     {
-      "name": "스냅",
-      "symbol": "SNAP"
+      "name": "일라이 릴리",
+      "symbol": "LLY"
     }
   ],
   "keywords": [
     {
-      "name": "AI 주도권",
-      "weight": 25
+      "name": "AI반도체",
+      "weight": 20
     },
     {
-      "name": "지정학적 리스크",
+      "name": "TSMC실적",
       "weight": 15
     },
     {
-      "name": "실적 장세",
+      "name": "최고치경신",
       "weight": 15
     },
     {
-      "name": "금리/인플레",
+      "name": "중동분쟁",
       "weight": 10
     },
     {
-      "name": "고용 지표",
+      "name": "인플레이션",
       "weight": 10
     },
     {
-      "name": "반도체",
+      "name": "제약바이오",
       "weight": 10
     },
     {
-      "name": "에너지 정책",
-      "weight": 8
+      "name": "금리불확실성",
+      "weight": 10
     },
     {
-      "name": "소비재",
-      "weight": 7
+      "name": "인프라투자",
+      "weight": 10
     }
   ],
-  "reason": "삼성전자는 AI 칩과 TV AI 전환 등 실질적인 매출 다변화를 꾀하며 6천피 지수 환경에서 안정적인 무릎 위치를 점하고 있습니다. SBUX(스타벅스)는 챗GPT를 접목한 서비스 혁신으로 고객 경험 강화와 점유율 방어 효과가 기대됩니다. SNAP은 최근 대규모 인력 감축과 AI 효율화 전략을 통해 비용 구조를 개선하고 있어, 반등 모멘텀을 타기에 적합한 기술적 위치에 있습니다.",
-  "push_message": "[Prism AI] 시장 모멘텀 분석: 미·이란 리스크 완화 속 AI 테마가 시장을 견인 중입니다. 삼성전자, SBUX, SNAP에 주목하세요."
+  "reason": "삼성전자는 AI 메모리 수요 증가의 직접적 수혜가 예상되나 기술적으로 과열권에서 벗어나 횡보하며 '무릎' 위치를 유지 중입니다. TSMC는 실적 서프라이즈를 바탕으로 반도체 생태계의 중심에서 우상향 추세를 견고히 하고 있습니다. 일라이 릴리는 당뇨·비만약 데이터의 지속적인 긍정적 지표와 안전성 입증으로 기술적 조정 시 저점 매수 기회가 유효한 위치입니다.",
+  "push_message": "[프리즘 AI] TSMC 호실적으로 반도체 훈풍! 삼성전자와 AI 핵심 종목들에 주목하세요. 오늘 시장의 주도 테마는 'AI 모멘텀'입니다."
 }

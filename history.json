@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-17 08:20",
-    "performance": [
-      {
-        "ticker": "SK하이닉스",
-        "change": 7.03
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": 1.65
-      },
-      {
-        "ticker": "Microsoft",
-        "change": 1.11
-      }
-    ],
-    "predictions": [
-      "SK하이닉스",
-      "NVIDIA",
-      "Meta Platforms"
-    ]
-  },
-  {
     "date": "2026-03-18 08:21",
     "performance": [
       {
@@ -657,6 +635,28 @@
       "삼성전자",
       "스타벅스",
       "스냅"
+    ]
+  },
+  {
+    "date": "2026-04-17 08:30",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": 3.08
+      },
+      {
+        "ticker": "스타벅스",
+        "change": 0.02
+      },
+      {
+        "ticker": "스냅",
+        "change": -0.33
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "TSMC",
+      "일라이 릴리"
     ]
   }
 ]
