@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-18 08:21",
-    "performance": [
-      {
-        "ticker": "SK하이닉스",
-        "change": -0.41
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": -0.7
-      },
-      {
-        "ticker": "Meta Platforms",
-        "change": -0.76
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "엔비디아",
-      "LG에너지솔루션"
-    ]
-  },
-  {
     "date": "2026-03-19 08:21",
     "performance": [
       {
@@ -657,6 +635,28 @@
       "삼성전자",
       "TSMC",
       "일라이 릴리"
+    ]
+  },
+  {
+    "date": "2026-04-18 08:29",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -0.69
+      },
+      {
+        "ticker": "TSMC",
+        "change": 1.97
+      },
+      {
+        "ticker": "일라이 릴리",
+        "change": 2.55
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "Cerebras Systems",
+      "Eli Lilly and Company"
     ]
   }
 ]
