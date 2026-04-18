@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-19 08:21",
-    "performance": [
-      {
-        "ticker": "삼성전자",
-        "change": 7.53
-      },
-      {
-        "ticker": "엔비디아",
-        "change": -0.84
-      },
-      {
-        "ticker": "LG에너지솔루션",
-        "change": 0.79
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "Micron Technology",
-      "DocuSign"
-    ]
-  },
-  {
     "date": "2026-03-20 08:19",
     "performance": [
       {
@@ -657,6 +635,24 @@
       "삼성전자",
       "Cerebras Systems",
       "Eli Lilly and Company"
+    ]
+  },
+  {
+    "date": "2026-04-19 08:24",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -0.69
+      },
+      {
+        "ticker": "Eli Lilly and Company",
+        "change": 2.55
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "테슬라",
+      "마이크로소프트"
     ]
   }
 ]

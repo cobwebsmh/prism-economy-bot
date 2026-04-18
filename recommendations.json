@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-18 08:29",
+  "date": "2026-04-19 08:24",
   "market_info": {
     "KOSPI": {
-      "price": NaN,
-      "change": NaN,
+      "price": 6191.92,
+      "change": -0.55,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": NaN,
-      "change": NaN,
+      "price": 1170.04,
+      "change": 0.61,
       "is_open": false,
       "status": "⚪"
     },
@@ -32,44 +32,40 @@
       "change": -0.69
     },
     {
-      "ticker": "TSMC",
-      "change": 1.97
-    },
-    {
-      "ticker": "일라이 릴리",
+      "ticker": "Eli Lilly and Company",
       "change": 2.55
     }
   ],
-  "summary": "글로벌 시장은 지정학적 긴장 완화 기대감과 AI 산업의 폭발적 성장에 힘입어 S&P 500이 7,100선을 돌파하는 등 강력한 상승 모멘텀을 형성하고 있습니다. 다만, 유가 변동성에 따른 항공 및 운송 섹터의 불확실성이 상존하며, 시장은 특정 대형주 중심의 랠리와 함께 개별 실적 이슈에 따라 차별화되는 양상을 보입니다. 전반적인 투자 심리는 기술주 위주의 낙관론이 지배하고 있으나, 인플레이션 압력과 에너지 공급망 리스크를 경계하는 신중한 관점도 공존하고 있습니다.",
+  "summary": "글로벌 시장은 지정학적 리스크 완화 기대감과 기업 실적 시즌 진입에 따른 기대가 공존하며 투자 심리가 회복세를 보이고 있습니다. 다만, 유가 변동성에 따른 항공업계의 타격과 전세 시장 불안 등 일부 섹터의 내실 문제가 리스크로 작용하고 있습니다. 기술적 지표는 주요 지수가 사상 최고치 근처에 위치해 있어 추격 매수보다는 펀더멘털이 견고한 우량주 중심의 대응이 유효한 시점입니다.",
   "news_headlines": [
     {
-      "title": "S&P 500 notches first close above 7,100, Nasdaq posts longest win streak since 1992",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4zZkF1MDMyTWp4VDA2UnhBVWxTcDRtYjdrVXlQZk8xTlpBOWgwN0tpSHJjcVFPQWFzWE13NERvaFNVbEhNV1BfVXF6ZjVfbHNPMXY3RHVVUFI1QmpPWGhSUWpzMHZWZ1d4TVN3bU9VM0ZZVVhQLW9B0gF8QVVfeXFMUFZQU0k2MF85UEpnTE9uc0FWcFFLcl9CeWhxYml6S005aE5QNGtRbTNJNy16QUpvRGcwdWR6ek4zSXhITHRYVG9wQ1pVN3Bkb3U1d3R0WFhHR1F3ZGlKaFdKaWViaHF4VERKQmc4aWZUeXN4ZHRWczhIX1FJSA?oc=5"
+      "title": "종전 기대감에 '6천피'와 함께 돌아온 국내 시총 '1조 클럽'",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE15cElQZkhIUVpBVVpRQm1ReWVzbE5mOEdBMkEyLWNScFdYSEVxS0hKZFZHT3ZpVXZzREt2S3ZzOUlxLVZIRUZhc3lPVUk1bE9xR1VrOV9WQVQ2d3fSAWBBVV95cUxNQjZTOE5hYTdPbDNQOTBNNkJmR013WEROZ2piZTBSY3lZMW5pRHozeVROMi1aMXR2VExpTjBYS3hORHhyT21UazVPVGM5azF6eVNoZVQwODRVdUxHLUlJQmg?oc=5"
     },
     {
-      "title": "Nvidia rival Cerebras discloses US IPO filing as AI boom drives listings",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZWotMXdBZ2tfaWJuV25qNGlFSjE1ckpoTHdnRTc0QkpFOXQ5Y2lTenFXeXFFb0hRWHVBUzV0VmUtcElFWkNSeFFmVjVId0daX05EV2dKbXkxRHBOSUQyRWJoNEZCWnk3a0ozcTFwWUVJWDhyZGJ6OWc1S1ZscS1qOGxMc1Q5TE5ubl9LZ2MwVVNCLWtxdmxVTmpxSEpPSnNHaUl0V0thTk9hMG5HRkdKak9HYUM?oc=5"
+      "title": "[뉴욕증시 주간전망] 이란 종전 협상·테슬라 실적 발표에 촉각",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYUlTeUdnUEVFVWZHNHlYQnJPc0NRMU5xQ2Frb3VNUmVOeDlYNGpKVE54ZEMydG9HWXdncGwxSnQ4QkxaYlhyck9tUll2dG5OOWx5UXg4dzktWE5Cdi1Tb0xHMmR2RDBNOTQ0ajdoVVJ6b3l5QVVtSFRRbmtWQ1JnT01jdFp2QQ?oc=5"
     },
     {
-      "title": "코스피, 외인 2조 매물 쏟아내 하락 마감…코스닥은 상승",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NdmNUdkVVVmxNLS1Pc1QtNmdoZDBLQWJoTlB6VjNlaDRGYUlmWmxZMXdCbGpBRFN5bmc4VEpkNnR4UFdyaERRNDR4Mkhzc0J3ZmlQQXJOdHZ6QdIBVEFVX3lxTE5CcEZJTnlxc2FiZjhEUFdIQzI2YlV0RXd6Z0xXLVdLWDJlYVlDVUhQTXdhNGN3OG9ZRFMyc2hjTngxQUMtZ1BpZ1NwWUZxLUdBYnpBZg?oc=5"
+      "title": "'비트코인, 숏스퀴즈에 12만5천달러 회복 전망'",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1LZjJXY0tBS2w0YjN2c1FfVDZzWTRVc0dIYzBkOXdYYjV2VmwzNnQwOUM1a3lrd3N6eFBnaUZuSEVKSmUzbmhLckdoOWRGTlVaalBHZnhma1M0UnRwUENzTm5rdTFjU2I2UmJyc2xVbGvSAXRBVV95cUxNcUI4SWFxV1pLSlJqRmVJaV9JM3Z0Z0k2NERYU3JxNklDVjQwVVQ4bGNPdE1nZ0xiNVlhMFRWVzdCQlVSNHVMcTFkbUdHa3pzenNPWHdfSjFtZU5yUXZwcGVwQ19pVzBLNWkzczdFZjd4ZTNVUw?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "AI/반도체",
+      "name": "지정학적 섹터(에너지/방산)",
       "sentiment": "HOT",
-      "reason": "Cerebras IPO 신청 및 AI 관련 인프라 투자 지속으로 인한 강력한 모멘텀 유지"
+      "reason": "이란 종전 기대감에 따른 유가 급락과 안정세가 시장 전반의 심리를 개선함."
     },
     {
-      "name": "에너지",
+      "name": "IT/AI",
+      "sentiment": "WARM",
+      "reason": "테슬라 실적 발표 및 트럼프-앤트로픽 관계 변화 등 AI 기업의 미래 가치가 시장 모멘텀을 주도."
+    },
+    {
+      "name": "항공/운송",
       "sentiment": "COLD",
-      "reason": "호르무즈 해협 호재로 인한 유가 급락으로 투자 심리 위축 및 항공주 비용 부담 완화"
-    },
-    {
-      "name": "제약/바이오",
-      "sentiment": "NEUTRAL",
-      "reason": "비만 치료제 시장의 경쟁 심화와 일라이 릴리 등 종목별 수익성 전망 엇갈림"
+      "reason": "지속되는 유가 부담과 항공유 소진 우려로 단기 변동성 확대."
     }
   ],
   "tickers": [
@@ -78,48 +74,48 @@
       "symbol": "005930.KS"
     },
     {
-      "name": "Cerebras Systems",
-      "symbol": "CBRS"
+      "name": "테슬라",
+      "symbol": "TSLA"
     },
     {
-      "name": "Eli Lilly and Company",
-      "symbol": "LLY"
+      "name": "마이크로소프트",
+      "symbol": "MSFT"
     }
   ],
   "keywords": [
     {
-      "name": "AI 붐",
+      "name": "지정학적 종전",
       "weight": 20
     },
     {
-      "name": "S&P 7100 돌파",
+      "name": "실적 시즌",
       "weight": 15
     },
     {
-      "name": "유가 폭락",
+      "name": "국제유가",
       "weight": 15
     },
     {
-      "name": "IPO",
+      "name": "AI/테크",
+      "weight": 12
+    },
+    {
+      "name": "비트코인",
       "weight": 10
     },
     {
-      "name": "지정학적 리스크",
+      "name": "항공업계",
       "weight": 10
     },
     {
-      "name": "비만 치료제",
-      "weight": 10
+      "name": "금리/모기지",
+      "weight": 9
     },
     {
-      "name": "금리/인플레",
-      "weight": 10
-    },
-    {
-      "name": "기술주 랠리",
-      "weight": 10
+      "name": "부동산(전세)",
+      "weight": 9
     }
   ],
-  "reason": "삼성전자(005930.KS)는 최근 외국인 매물 출회로 조정받았으나, 메모리 반도체 사이클상 '무릎' 위치에서 재진입 기회를 엿보고 있습니다. Cerebras(CBRS)는 AI 하드웨어 시장의 새로운 도전자로 상장 기대감이 높으며, 일라이 릴리(LLY)는 최근 단기 과열 구간을 해소하고 조정세를 보이고 있어 밸류에이션 매력이 부각되는 시점입니다.",
-  "push_message": "금융 알림: 나스닥 최장 기록 경신 및 S&P 7100 돌파! AI 섹터 IPO 기대감과 유가 하락이 시장의 핵심 테마로 떠올랐습니다. 삼성전자 및 AI 반도체 관련 종목의 전략적 저점 매수 기회를 검토하세요."
+  "reason": "삼성전자는 최근 노조 이슈 등 단기적 악재가 가격에 충분히 반영되어 주가가 무릎 위치에 있으며, 향후 시장 반등 시 탄력적인 회복이 기대됩니다. 테슬라는 실적 발표를 앞두고 변동성이 예상되지만, AI 로보틱스 모멘텀이 견고합니다. 마이크로소프트는 AI 산업의 인프라 핵심으로서 시장 조정 시에도 탄탄한 기술적 지지선을 확보하고 있어 안정적인 포트폴리오를 구성하기에 적합합니다.",
+  "push_message": "주말 간 이란 종전 기대감으로 시장 분위기 긍정적입니다. 삼성전자 등 주요 우량주가 조정 후 기회를 제공하고 있으니, 이번 주 실적 시즌에 주목하세요!"
 }
