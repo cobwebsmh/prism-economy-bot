@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-19 08:24",
+  "date": "2026-04-20 08:25",
   "market_info": {
     "KOSPI": {
       "price": 6191.92,
@@ -32,90 +32,94 @@
       "change": -0.69
     },
     {
-      "ticker": "Eli Lilly and Company",
-      "change": 2.55
+      "ticker": "테슬라",
+      "change": 3.01
+    },
+    {
+      "ticker": "마이크로소프트",
+      "change": 0.6
     }
   ],
-  "summary": "글로벌 시장은 지정학적 리스크 완화 기대감과 기업 실적 시즌 진입에 따른 기대가 공존하며 투자 심리가 회복세를 보이고 있습니다. 다만, 유가 변동성에 따른 항공업계의 타격과 전세 시장 불안 등 일부 섹터의 내실 문제가 리스크로 작용하고 있습니다. 기술적 지표는 주요 지수가 사상 최고치 근처에 위치해 있어 추격 매수보다는 펀더멘털이 견고한 우량주 중심의 대응이 유효한 시점입니다.",
+  "summary": "호르무즈 해협의 지정학적 리스크가 유가 급등과 글로벌 경제 불안을 촉발하며 시장의 안전자산 선호 심리를 자극하고 있습니다. 반면 반도체와 AI 섹터는 견고한 실적 모멘텀을 바탕으로 지수 상승을 주도하며 강한 기술적 회복세를 보이고 있습니다. 거시경제의 불확실성과 AI 기술주의 성장성이 공존하는 변동성 장세가 지속될 것으로 전망됩니다.",
   "news_headlines": [
     {
-      "title": "종전 기대감에 '6천피'와 함께 돌아온 국내 시총 '1조 클럽'",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE15cElQZkhIUVpBVVpRQm1ReWVzbE5mOEdBMkEyLWNScFdYSEVxS0hKZFZHT3ZpVXZzREt2S3ZzOUlxLVZIRUZhc3lPVUk1bE9xR1VrOV9WQVQ2d3fSAWBBVV95cUxNQjZTOE5hYTdPbDNQOTBNNkJmR013WEROZ2piZTBSY3lZMW5pRHozeVROMi1aMXR2VExpTjBYS3hORHhyT21UazVPVGM5azF6eVNoZVQwODRVdUxHLUlJQmg?oc=5"
+      "title": "호르무즈 무력 충돌에 유가 8% 폭등... 미·이란 전면전 위기에 세계 경제 '패닉'",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTFZHN3RwSkEta2lNaFZJM0V3RUpzbEhfOTk1Wi1pOWtOcE1TUndqT0xCZzJpNHUzWmRiSzRONEEwOUNQbTNIamhsZ2dvbUFCSElqYjNOYU5FRVRUVDZ4dkh4MXdyZ2dkS0p6c2h2X3pYT29sVG52NkJzVnhZM2VLUUh0aEZRblZo?oc=5"
     },
     {
-      "title": "[뉴욕증시 주간전망] 이란 종전 협상·테슬라 실적 발표에 촉각",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYUlTeUdnUEVFVWZHNHlYQnJPc0NRMU5xQ2Frb3VNUmVOeDlYNGpKVE54ZEMydG9HWXdncGwxSnQ4QkxaYlhyck9tUll2dG5OOWx5UXg4dzktWE5Cdi1Tb0xHMmR2RDBNOTQ0ajdoVVJ6b3l5QVVtSFRRbmtWQ1JnT01jdFp2QQ?oc=5"
+      "title": "SK하이닉스, 1분기 ‘꿈의 영업이익률’ 70% 전망…연간 실적도 이어질까",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwS0JFV25TRldmb05ESXFqV0h3a1BmNXlMb3lvWmxKeTBUaktOa1VaX0d0amNPM1E0ak9GQ09KdHk2UVBRZnpDME5pMHR0cU13bFpHaHhiM1U4ZTg?oc=5"
     },
     {
-      "title": "'비트코인, 숏스퀴즈에 12만5천달러 회복 전망'",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1LZjJXY0tBS2w0YjN2c1FfVDZzWTRVc0dIYzBkOXdYYjV2VmwzNnQwOUM1a3lrd3N6eFBnaUZuSEVKSmUzbmhLckdoOWRGTlVaalBHZnhma1M0UnRwUENzTm5rdTFjU2I2UmJyc2xVbGvSAXRBVV95cUxNcUI4SWFxV1pLSlJqRmVJaV9JM3Z0Z0k2NERYU3JxNklDVjQwVVQ4bGNPdE1nZ0xiNVlhMFRWVzdCQlVSNHVMcTFkbUdHa3pzenNPWHdfSjFtZU5yUXZwcGVwQ19pVzBLNWkzczdFZjd4ZTNVUw?oc=5"
+      "title": "The S&P 500 has blown past 7,000 in an epic comeback rally. Here’s why it can keep going.",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNU0JJejBpMXNPem9SV1VLTjBzTnQyMW94YTNxTTFEQ1pCVHcyc1NrVWREdXVhZnR2ZGllMlVkb1dudElhSHpUUG5XQU9jSWZZQUpGNzdHZm1Oa0dBNnM5c0ZabENNVDhOY1BnOFRxQkljS1Z0VEJoWlZrQjkzTU0xVkNKYkNadzNFU0pNTG0xWUM0M2I1RUU4ODEtenBrQUxyc0c5bk5VUFZ5QVpwbFdzUkd4YjNvem9jazhWQkMxRTRUZHhRNVFHaUxndC1uUQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "지정학적 섹터(에너지/방산)",
+      "name": "반도체/AI",
       "sentiment": "HOT",
-      "reason": "이란 종전 기대감에 따른 유가 급락과 안정세가 시장 전반의 심리를 개선함."
+      "reason": "SK하이닉스 실적 기대감 및 AI 산업 필수 인프라로서의 독보적 지위 유지"
     },
     {
-      "name": "IT/AI",
-      "sentiment": "WARM",
-      "reason": "테슬라 실적 발표 및 트럼프-앤트로픽 관계 변화 등 AI 기업의 미래 가치가 시장 모멘텀을 주도."
+      "name": "에너지",
+      "sentiment": "HOT",
+      "reason": "호르무즈 해협 충돌에 따른 유가 급등으로 단기 모멘텀 발생"
     },
     {
-      "name": "항공/운송",
+      "name": "금융",
       "sentiment": "COLD",
-      "reason": "지속되는 유가 부담과 항공유 소진 우려로 단기 변동성 확대."
+      "reason": "규제 완화에도 불구하고 고금리 및 경기 불확실성에 따른 수익성 둔화 우려"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "SK하이닉스",
+      "symbol": "000660.KS"
     },
     {
-      "name": "테슬라",
-      "symbol": "TSLA"
+      "name": "NVIDIA",
+      "symbol": "NVDA"
     },
     {
-      "name": "마이크로소프트",
-      "symbol": "MSFT"
+      "name": "Advanced Micro Devices",
+      "symbol": "AMD"
     }
   ],
   "keywords": [
     {
-      "name": "지정학적 종전",
+      "name": "반도체",
       "weight": 20
     },
     {
-      "name": "실적 시즌",
+      "name": "지정학적 리스크",
+      "weight": 18
+    },
+    {
+      "name": "유가급등",
       "weight": 15
     },
     {
-      "name": "국제유가",
-      "weight": 15
+      "name": "AI",
+      "weight": 14
     },
     {
-      "name": "AI/테크",
+      "name": "실적모멘텀",
       "weight": 12
     },
     {
-      "name": "비트코인",
-      "weight": 10
+      "name": "금리",
+      "weight": 8
     },
     {
-      "name": "항공업계",
-      "weight": 10
+      "name": "미국부채",
+      "weight": 7
     },
     {
-      "name": "금리/모기지",
-      "weight": 9
-    },
-    {
-      "name": "부동산(전세)",
-      "weight": 9
+      "name": "휴머노이드",
+      "weight": 6
     }
   ],
-  "reason": "삼성전자는 최근 노조 이슈 등 단기적 악재가 가격에 충분히 반영되어 주가가 무릎 위치에 있으며, 향후 시장 반등 시 탄력적인 회복이 기대됩니다. 테슬라는 실적 발표를 앞두고 변동성이 예상되지만, AI 로보틱스 모멘텀이 견고합니다. 마이크로소프트는 AI 산업의 인프라 핵심으로서 시장 조정 시에도 탄탄한 기술적 지지선을 확보하고 있어 안정적인 포트폴리오를 구성하기에 적합합니다.",
-  "push_message": "주말 간 이란 종전 기대감으로 시장 분위기 긍정적입니다. 삼성전자 등 주요 우량주가 조정 후 기회를 제공하고 있으니, 이번 주 실적 시즌에 주목하세요!"
+  "reason": "SK하이닉스는 70% 영업이익률이라는 압도적 실적 가시성이 돋보이며, 기술적으로 박스권 돌파 후 조정 시마다 우상향 추세가 견고하여 무릎 위치를 점하고 있습니다. NVIDIA는 AI 생태계의 핵심 대장주로 시장의 조정을 견디는 힘이 강하며, AMD는 AI 가속기 시장에서의 점유율 확대가 기대되는 시점으로 추가 상승 여력이 충분한 기술적 위치에 있습니다.",
+  "push_message": "🚨 [시장 경보] 호르무즈 분쟁발 유가 급등! 포트폴리오를 점검하세요. SK하이닉스 등 반도체 실적주는 견고합니다."
 }

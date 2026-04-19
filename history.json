@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-20 08:19",
-    "performance": [
-      {
-        "ticker": "삼성전자",
-        "change": -3.84
-      },
-      {
-        "ticker": "Micron Technology",
-        "change": -3.78
-      },
-      {
-        "ticker": "DocuSign",
-        "change": -2.35
-      }
-    ],
-    "predictions": [
-      "SK하이닉스",
-      "Eli Lilly",
-      "NVIDIA"
-    ]
-  },
-  {
     "date": "2026-03-21 08:18",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전자",
       "테슬라",
       "마이크로소프트"
+    ]
+  },
+  {
+    "date": "2026-04-20 08:25",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -0.69
+      },
+      {
+        "ticker": "테슬라",
+        "change": 3.01
+      },
+      {
+        "ticker": "마이크로소프트",
+        "change": 0.6
+      }
+    ],
+    "predictions": [
+      "SK하이닉스",
+      "NVIDIA",
+      "Advanced Micro Devices"
     ]
   }
 ]
