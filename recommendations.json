@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-20 08:25",
+  "date": "2026-04-21 08:32",
   "market_info": {
     "KOSPI": {
       "price": 6191.92,
@@ -14,112 +14,112 @@
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7126.06,
-      "change": 1.2,
+      "price": 7109.14,
+      "change": -0.24,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24468.48,
-      "change": 1.52,
+      "price": 24404.39,
+      "change": -0.26,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -0.69
+      "ticker": "SK하이닉스",
+      "change": 3.37
     },
     {
-      "ticker": "테슬라",
-      "change": 3.01
+      "ticker": "NVIDIA",
+      "change": 0.19
     },
     {
-      "ticker": "마이크로소프트",
-      "change": 0.6
+      "ticker": "Advanced Micro Devices",
+      "change": -1.24
     }
   ],
-  "summary": "호르무즈 해협의 지정학적 리스크가 유가 급등과 글로벌 경제 불안을 촉발하며 시장의 안전자산 선호 심리를 자극하고 있습니다. 반면 반도체와 AI 섹터는 견고한 실적 모멘텀을 바탕으로 지수 상승을 주도하며 강한 기술적 회복세를 보이고 있습니다. 거시경제의 불확실성과 AI 기술주의 성장성이 공존하는 변동성 장세가 지속될 것으로 전망됩니다.",
+  "summary": "지정학적 리스크로 인한 유가 급등이 글로벌 인플레이션 우려를 재점화하며 시장의 변동성을 키우고 있습니다. 주요 기업들의 경영진 교체와 규제 이슈가 겹치며 투자자들의 경계심이 높아진 상태입니다. 다만, AI 및 에너지 인프라 등 구조적 성장 섹터로의 자금 쏠림은 여전히 시장의 핵심 동력으로 작용하고 있습니다.",
   "news_headlines": [
     {
-      "title": "호르무즈 무력 충돌에 유가 8% 폭등... 미·이란 전면전 위기에 세계 경제 '패닉'",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTFZHN3RwSkEta2lNaFZJM0V3RUpzbEhfOTk1Wi1pOWtOcE1TUndqT0xCZzJpNHUzWmRiSzRONEEwOUNQbTNIamhsZ2dvbUFCSElqYjNOYU5FRVRUVDZ4dkh4MXdyZ2dkS0p6c2h2X3pYT29sVG52NkJzVnhZM2VLUUh0aEZRblZo?oc=5"
+      "title": "[뉴욕유가] 또다시 막힌 호르무즈 해협…WTI 7% 급등",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53Z1RDMVpTSVViWnhBLU04MWdQUXBJTXI4S2Q0RloxMG91WDNTby1mUThILXRqZ1M1OThpZi05VHlUMEt6aHhwbGVWSHU0aERYR1Zoa2RPZ0tsM3V4N2hFS211dUpXdEtjZ0NkMDF3UC0?oc=5"
     },
     {
-      "title": "SK하이닉스, 1분기 ‘꿈의 영업이익률’ 70% 전망…연간 실적도 이어질까",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwS0JFV25TRldmb05ESXFqV0h3a1BmNXlMb3lvWmxKeTBUaktOa1VaX0d0amNPM1E0ak9GQ09KdHk2UVBRZnpDME5pMHR0cU13bFpHaHhiM1U4ZTg?oc=5"
+      "title": "포스코, 인도 일관제철소 합작투자 건설… 미래 경쟁력 확보",
+      "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQTGNOb0otQ1Y3Mmk0V1R6cVdmSVpJU1dsbWUteWZWTVliUlJBVEZFVWpkLUhvQ3ZGOF9MNmhFMnVmcF9CNDBSRmx1LTBVZWltT3dNRmQ4bUZaaENwYmVuamhGVW9RX0htZlhxbFBwZ2Q4eFVqVHBPS3JmcEZrQVdsVHZkUDFja2J2dF8yTy1LX3p0LWpFcWhBaS1JYzNNTzhqYmwyeGZTNjluZk5MTEdEVFoxT2t1VWRDemprcjRvVjhVTl9HdVFOenhFb25HSGIwR21aeGNxclZSWGtmWDZUWm1vQi1MOUQyWkxTLUl2Z2wtMFlWRWt0Y3kxZzd2bEh5WkhvYkxWMXdmSTZlVGxQeTB1U2dNbmRFNklUNU1TV2ZwaGJrOWJBRjZNS2VOZUpBaHBMTlRTcC1UMmVTd0k5RHVrWGotN2pMUmc?oc=5"
     },
     {
-      "title": "The S&P 500 has blown past 7,000 in an epic comeback rally. Here’s why it can keep going.",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNU0JJejBpMXNPem9SV1VLTjBzTnQyMW94YTNxTTFEQ1pCVHcyc1NrVWREdXVhZnR2ZGllMlVkb1dudElhSHpUUG5XQU9jSWZZQUpGNzdHZm1Oa0dBNnM5c0ZabENNVDhOY1BnOFRxQkljS1Z0VEJoWlZrQjkzTU0xVkNKYkNadzNFU0pNTG0xWUM0M2I1RUU4ODEtenBrQUxyc0c5bk5VUFZ5QVpwbFdzUkd4YjNvem9jazhWQkMxRTRUZHhRNVFHaUxndC1uUQ?oc=5"
+      "title": "팀쿡, 애플 CEO에서 15년만에 물러나…후임은 존 터너스",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeWJiWDJPajFMRndXa1RnX2tIR2lqS3JLTWs4SWpfSFN2aXNLRWdaYWJ3T0QtbmhmRVppaDdnTjZGZWx1a0ZkR2U1aFRFcS05OHM0QWpxT0NCN0l1dG4xcG1sNEtRcmtnVkVjaGMwVDhYZHQwTDVwNTNRSmRYb0xzWVVnX1BsQ21BbE1raTljUzJRQng3SnJ0aVF6VVBkZw?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체/AI",
+      "name": "에너지/자원",
       "sentiment": "HOT",
-      "reason": "SK하이닉스 실적 기대감 및 AI 산업 필수 인프라로서의 독보적 지위 유지"
+      "reason": "호르무즈 해협 긴장 고조로 유가 급등하며 관련주 수혜 예상"
     },
     {
-      "name": "에너지",
-      "sentiment": "HOT",
-      "reason": "호르무즈 해협 충돌에 따른 유가 급등으로 단기 모멘텀 발생"
+      "name": "AI/테크",
+      "sentiment": "STABLE",
+      "reason": "기업 경영진 교체 이슈와 전략적 제휴(아마존-앤스로픽) 지속"
     },
     {
-      "name": "금융",
-      "sentiment": "COLD",
-      "reason": "규제 완화에도 불구하고 고금리 및 경기 불확실성에 따른 수익성 둔화 우려"
+      "name": "철강/인프라",
+      "sentiment": "HOT",
+      "reason": "포스코의 인도 대규모 투자 등 신흥국 인프라 확장 모멘텀"
     }
   ],
   "tickers": [
     {
-      "name": "SK하이닉스",
-      "symbol": "000660.KS"
+      "name": "POSCO홀딩스",
+      "symbol": "005490.KS"
     },
     {
-      "name": "NVIDIA",
-      "symbol": "NVDA"
+      "name": "엑슨모빌",
+      "symbol": "XOM"
     },
     {
-      "name": "Advanced Micro Devices",
-      "symbol": "AMD"
+      "name": "알파벳",
+      "symbol": "GOOGL"
     }
   ],
   "keywords": [
     {
-      "name": "반도체",
+      "name": "유가급등",
       "weight": 20
     },
     {
-      "name": "지정학적 리스크",
-      "weight": 18
-    },
-    {
-      "name": "유가급등",
+      "name": "지정학리스크",
       "weight": 15
     },
     {
-      "name": "AI",
-      "weight": 14
+      "name": "AI협업",
+      "weight": 15
     },
     {
-      "name": "실적모멘텀",
-      "weight": 12
+      "name": "경영진교체",
+      "weight": 10
     },
     {
-      "name": "금리",
-      "weight": 8
+      "name": "철강투자",
+      "weight": 10
     },
     {
-      "name": "미국부채",
-      "weight": 7
+      "name": "금리정책",
+      "weight": 10
     },
     {
-      "name": "휴머노이드",
-      "weight": 6
+      "name": "고용시장",
+      "weight": 10
+    },
+    {
+      "name": "기업규제",
+      "weight": 10
     }
   ],
-  "reason": "SK하이닉스는 70% 영업이익률이라는 압도적 실적 가시성이 돋보이며, 기술적으로 박스권 돌파 후 조정 시마다 우상향 추세가 견고하여 무릎 위치를 점하고 있습니다. NVIDIA는 AI 생태계의 핵심 대장주로 시장의 조정을 견디는 힘이 강하며, AMD는 AI 가속기 시장에서의 점유율 확대가 기대되는 시점으로 추가 상승 여력이 충분한 기술적 위치에 있습니다.",
-  "push_message": "🚨 [시장 경보] 호르무즈 분쟁발 유가 급등! 포트폴리오를 점검하세요. SK하이닉스 등 반도체 실적주는 견고합니다."
+  "reason": "POSCO홀딩스는 글로벌 인프라 확장 기조 속에 기술적 눌림목 구간을 형성하고 있어 중장기적 매수 매력이 높습니다. XOM(엑슨모빌)은 유가 급등에 따른 직접적인 수혜와 안정적인 현금흐름으로 시장 변동성을 방어할 최적의 종목입니다. GOOGL은 AI 기술 협력 모멘텀을 보유하고 있으나, 최근 기술주 조정으로 인해 과매수권에서 벗어나 무릎 위치에서 안정적인 상승세를 재타점할 수 있는 구간으로 판단됩니다.",
+  "push_message": "유가 급등으로 인한 에너지 섹터 강세! 포스코의 글로벌 확장과 AI 빅테크의 눌림목 기회를 주목하세요."
 }

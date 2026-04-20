@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-21 08:18",
-    "performance": [
-      {
-        "ticker": "SK하이닉스",
-        "change": -0.59
-      },
-      {
-        "ticker": "Eli Lilly",
-        "change": -1.18
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": -3.28
-      }
-    ],
-    "predictions": [
-      "삼성바이오로직스",
-      "Chevron",
-      "Exxon Mobil"
-    ]
-  },
-  {
     "date": "2026-03-22 08:14",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "SK하이닉스",
       "NVIDIA",
       "Advanced Micro Devices"
+    ]
+  },
+  {
+    "date": "2026-04-21 08:32",
+    "performance": [
+      {
+        "ticker": "SK하이닉스",
+        "change": 3.37
+      },
+      {
+        "ticker": "NVIDIA",
+        "change": 0.19
+      },
+      {
+        "ticker": "Advanced Micro Devices",
+        "change": -1.24
+      }
+    ],
+    "predictions": [
+      "POSCO홀딩스",
+      "엑슨모빌",
+      "알파벳"
     ]
   }
 ]
