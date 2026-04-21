@@ -1,125 +1,125 @@
 {
-  "date": "2026-04-21 08:32",
+  "date": "2026-04-22 08:25",
   "market_info": {
     "KOSPI": {
-      "price": 6191.92,
-      "change": -0.55,
+      "price": 6219.09,
+      "change": 0.44,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1170.04,
-      "change": 0.61,
+      "price": 1174.85,
+      "change": 0.41,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7109.14,
-      "change": -0.24,
+      "price": 7064.01,
+      "change": -0.63,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24404.39,
-      "change": -0.26,
+      "price": 24259.96,
+      "change": -0.59,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "SK하이닉스",
-      "change": 3.37
+      "ticker": "POSCO홀딩스",
+      "change": 8.22
     },
     {
-      "ticker": "NVIDIA",
-      "change": 0.19
+      "ticker": "엑슨모빌",
+      "change": 0.46
     },
     {
-      "ticker": "Advanced Micro Devices",
-      "change": -1.24
+      "ticker": "알파벳",
+      "change": -1.52
     }
   ],
-  "summary": "지정학적 리스크로 인한 유가 급등이 글로벌 인플레이션 우려를 재점화하며 시장의 변동성을 키우고 있습니다. 주요 기업들의 경영진 교체와 규제 이슈가 겹치며 투자자들의 경계심이 높아진 상태입니다. 다만, AI 및 에너지 인프라 등 구조적 성장 섹터로의 자금 쏠림은 여전히 시장의 핵심 동력으로 작용하고 있습니다.",
+  "summary": "중동발 지정학적 리스크가 고조되며 안전자산 선호와 인플레이션 우려가 뉴욕 증시의 하락을 견인하고 있습니다. 그러나 AI 및 바이오 기술 혁신은 여전히 시장의 강력한 모멘텀으로 작용하며 저가 매수의 기회를 제공하고 있습니다. 거시적 불확실성이 지속되는 가운데, 펀더멘털이 견고한 우량 기술주와 성장성 높은 바이오 종목으로의 선별적 대응이 필요한 시점입니다.",
   "news_headlines": [
     {
-      "title": "[뉴욕유가] 또다시 막힌 호르무즈 해협…WTI 7% 급등",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53Z1RDMVpTSVViWnhBLU04MWdQUXBJTXI4S2Q0RloxMG91WDNTby1mUThILXRqZ1M1OThpZi05VHlUMEt6aHhwbGVWSHU0aERYR1Zoa2RPZ0tsM3V4N2hFS211dUpXdEtjZ0NkMDF3UC0?oc=5"
+      "title": "이란 '우리 공격하면 중동 석유와 작별'…뉴욕 증시 하락",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNS0xUNEN6YlBUUGtJWnp4emZNNkFZUzJONzlianZaS0JwZ25wbmRpc3hYNjViN2ZuVjVrdDAyWG14SndPRnpndDEyemZ0ZkZweDFhdWxXWFFoWkZlQmtmdlhZYUFoM3M3TnBpb25UUnBHRFQ4SGFxeVNRTkMxM0VKLWRyMzVGdWJnWDlmay1YUmpFZjA3QTVLdHZOYS1pZw?oc=5"
     },
     {
-      "title": "포스코, 인도 일관제철소 합작투자 건설… 미래 경쟁력 확보",
-      "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQTGNOb0otQ1Y3Mmk0V1R6cVdmSVpJU1dsbWUteWZWTVliUlJBVEZFVWpkLUhvQ3ZGOF9MNmhFMnVmcF9CNDBSRmx1LTBVZWltT3dNRmQ4bUZaaENwYmVuamhGVW9RX0htZlhxbFBwZ2Q4eFVqVHBPS3JmcEZrQVdsVHZkUDFja2J2dF8yTy1LX3p0LWpFcWhBaS1JYzNNTzhqYmwyeGZTNjluZk5MTEdEVFoxT2t1VWRDemprcjRvVjhVTl9HdVFOenhFb25HSGIwR21aeGNxclZSWGtmWDZUWm1vQi1MOUQyWkxTLUl2Z2wtMFlWRWt0Y3kxZzd2bEh5WkhvYkxWMXdmSTZlVGxQeTB1U2dNbmRFNklUNU1TV2ZwaGJrOWJBRjZNS2VOZUpBaHBMTlRTcC1UMmVTd0k5RHVrWGotN2pMUmc?oc=5"
+      "title": "[AACR 2026] '이중항체도 넘었다'…머스트바이오, '삼중기전' 면역항암제 MB7207 공개",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UQWNFckoxZXdoRnNsVVdWM2t6ZGY5UnhlWTQydHVRcEl2V1lzZmxzR2s2bEtOeEpxX0dfQmhvMFpadWVIVzk2OHNqMU1zbGdib2dXVGRzT0s0c1dRWWFMdUlBTDFxdHk0TVhMcXV1RjjSAXNBVV95cUxOd3pxSEZhRjBzRnkzOXJjb1JTQnFpLTUzenE0d1YyMWFsaVVNNkhYQzlwLTVEWTNvSEpOTGh1VFNrTUFjWEdOdjhZQlA0ZkE3bjBqekJndWZyaFRtVmlwcGFmUXhDUmN6alVJcmZnMDl0UVAw?oc=5"
     },
     {
-      "title": "팀쿡, 애플 CEO에서 15년만에 물러나…후임은 존 터너스",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeWJiWDJPajFMRndXa1RnX2tIR2lqS3JLTWs4SWpfSFN2aXNLRWdaYWJ3T0QtbmhmRVppaDdnTjZGZWx1a0ZkR2U1aFRFcS05OHM0QWpxT0NCN0l1dG4xcG1sNEtRcmtnVkVjaGMwVDhYZHQwTDVwNTNRSmRYb0xzWVVnX1BsQ21BbE1raTljUzJRQng3SnJ0aVF6VVBkZw?oc=5"
+      "title": "국제유가, 미·이란 협상 무산 우려에 상승...배럴당 100달러 육박",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcUdLTkRpdXJKVHZTa1NOdkRwS195c3NkNTVYWkk0dV9aQzM1QXhHTkJ6ajN1bmdhTEVxMHRhTktOTkJLc2R2ZmliY0RVd2ZkRXc0R21IREttS05BX3pPM1JDT3doc2ViaDFaVUZfQUZXdW9GUEl3TFRJZEU0b0tSUHFzbTJtQ1FE?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지/자원",
+      "name": "에너지/방산",
       "sentiment": "HOT",
-      "reason": "호르무즈 해협 긴장 고조로 유가 급등하며 관련주 수혜 예상"
+      "reason": "이란-중동 리스크에 따른 국제유가 급등 및 공급망 불안"
     },
     {
-      "name": "AI/테크",
-      "sentiment": "STABLE",
-      "reason": "기업 경영진 교체 이슈와 전략적 제휴(아마존-앤스로픽) 지속"
+      "name": "바이오/제약",
+      "sentiment": "HOT",
+      "reason": "AACR 2026 학회 등 신약 모멘텀 및 기술력 입증 뉴스 지속"
     },
     {
-      "name": "철강/인프라",
-      "sentiment": "HOT",
-      "reason": "포스코의 인도 대규모 투자 등 신흥국 인프라 확장 모멘텀"
+      "name": "항공/운송",
+      "sentiment": "COLD",
+      "reason": "연료비 급등에 따른 실적 전망 하향 우려"
     }
   ],
   "tickers": [
     {
-      "name": "POSCO홀딩스",
-      "symbol": "005490.KS"
+      "name": "유한양행",
+      "symbol": "000100.KS"
     },
     {
-      "name": "엑슨모빌",
-      "symbol": "XOM"
+      "name": "Amazon",
+      "symbol": "AMZN"
     },
     {
-      "name": "알파벳",
-      "symbol": "GOOGL"
+      "name": "Eli Lilly",
+      "symbol": "LLY"
     }
   ],
   "keywords": [
     {
-      "name": "유가급등",
+      "name": "지정학적리스크",
       "weight": 20
     },
     {
-      "name": "지정학리스크",
+      "name": "항암신약",
       "weight": 15
     },
     {
-      "name": "AI협업",
+      "name": "유가상승",
       "weight": 15
     },
     {
-      "name": "경영진교체",
+      "name": "AI기술",
+      "weight": 12
+    },
+    {
+      "name": "바이오헬스",
       "weight": 10
     },
     {
-      "name": "철강투자",
+      "name": "공급망불안",
       "weight": 10
     },
     {
-      "name": "금리정책",
+      "name": "인플레이션",
       "weight": 10
     },
     {
-      "name": "고용시장",
-      "weight": 10
-    },
-    {
-      "name": "기업규제",
-      "weight": 10
+      "name": "기업M&A",
+      "weight": 8
     }
   ],
-  "reason": "POSCO홀딩스는 글로벌 인프라 확장 기조 속에 기술적 눌림목 구간을 형성하고 있어 중장기적 매수 매력이 높습니다. XOM(엑슨모빌)은 유가 급등에 따른 직접적인 수혜와 안정적인 현금흐름으로 시장 변동성을 방어할 최적의 종목입니다. GOOGL은 AI 기술 협력 모멘텀을 보유하고 있으나, 최근 기술주 조정으로 인해 과매수권에서 벗어나 무릎 위치에서 안정적인 상승세를 재타점할 수 있는 구간으로 판단됩니다.",
-  "push_message": "유가 급등으로 인한 에너지 섹터 강세! 포스코의 글로벌 확장과 AI 빅테크의 눌림목 기회를 주목하세요."
+  "reason": "유한양행은 국내 바이오 섹터의 대표주로서 글로벌 학회 데이터 발표를 통해 기술 수출 기대감이 높으나 주가는 최근 숨 고르기를 하며 매력적인 진입 구간에 있습니다. 아마존(AMZN)은 비만 치료제 등 헬스케어 사업 확장으로 펀더멘털을 다지고 있으며, 일라이릴리(LLY)는 GLP-1 시장의 압도적 강자로서 조정 시마다 매수 관점이 유효합니다. 이들 종목은 과매수 구간을 벗어나 안정적인 기술적 지지선을 형성하고 있습니다.",
+  "push_message": "중동발 유가 급등으로 증시 변동성 확대! 방어적 포트폴리오 강화가 필요하며, 신약 모멘텀을 보유한 바이오주 중심의 옥석 가리기가 필요한 시점입니다."
 }

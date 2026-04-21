@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-22 08:14",
-    "performance": [
-      {
-        "ticker": "삼성바이오로직스",
-        "change": 1.01
-      },
-      {
-        "ticker": "Chevron",
-        "change": 0.14
-      },
-      {
-        "ticker": "Exxon Mobil",
-        "change": 0.95
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "Micron Technology",
-      "삼천당제약"
-    ]
-  },
-  {
     "date": "2026-03-23 08:16",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "POSCO홀딩스",
       "엑슨모빌",
       "알파벳"
+    ]
+  },
+  {
+    "date": "2026-04-22 08:25",
+    "performance": [
+      {
+        "ticker": "POSCO홀딩스",
+        "change": 8.22
+      },
+      {
+        "ticker": "엑슨모빌",
+        "change": 0.46
+      },
+      {
+        "ticker": "알파벳",
+        "change": -1.52
+      }
+    ],
+    "predictions": [
+      "유한양행",
+      "Amazon",
+      "Eli Lilly"
     ]
   }
 ]
