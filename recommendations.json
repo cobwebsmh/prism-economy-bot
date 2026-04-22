@@ -1,125 +1,125 @@
 {
-  "date": "2026-04-22 08:25",
+  "date": "2026-04-23 08:37",
   "market_info": {
     "KOSPI": {
-      "price": 6219.09,
-      "change": 0.44,
+      "price": 6388.47,
+      "change": 2.72,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1174.85,
-      "change": 0.41,
+      "price": 1179.03,
+      "change": 0.36,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7064.01,
-      "change": -0.63,
+      "price": 7137.9,
+      "change": 1.05,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24259.96,
-      "change": -0.59,
+      "price": 24657.57,
+      "change": 1.64,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "POSCO홀딩스",
-      "change": 8.22
+      "ticker": "유한양행",
+      "change": -1.45
     },
     {
-      "ticker": "엑슨모빌",
-      "change": 0.46
+      "ticker": "Amazon",
+      "change": 2.18
     },
     {
-      "ticker": "알파벳",
-      "change": -1.52
+      "ticker": "Eli Lilly",
+      "change": 2.04
     }
   ],
-  "summary": "중동발 지정학적 리스크가 고조되며 안전자산 선호와 인플레이션 우려가 뉴욕 증시의 하락을 견인하고 있습니다. 그러나 AI 및 바이오 기술 혁신은 여전히 시장의 강력한 모멘텀으로 작용하며 저가 매수의 기회를 제공하고 있습니다. 거시적 불확실성이 지속되는 가운데, 펀더멘털이 견고한 우량 기술주와 성장성 높은 바이오 종목으로의 선별적 대응이 필요한 시점입니다.",
+  "summary": "글로벌 증시는 견고한 기업 실적 발표와 반도체 주도의 깜짝 GDP 성장률에 힘입어 강력한 상승 모멘텀을 유지하고 있습니다. 다만, 유가 급등에 따른 인플레이션 우려와 트럼프 행정부 관련 정치적 불확실성이 상존하여 시장은 실적 기반의 옥석 가리기에 집중하고 있습니다. 기술적으로는 주요 지수가 전고점 부근에 위치하여 변동성이 확대될 수 있으나, AI와 방산 등 실질적 성과가 증명된 섹터로의 자금 쏠림이 뚜렷합니다.",
   "news_headlines": [
     {
-      "title": "이란 '우리 공격하면 중동 석유와 작별'…뉴욕 증시 하락",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNS0xUNEN6YlBUUGtJWnp4emZNNkFZUzJONzlianZaS0JwZ25wbmRpc3hYNjViN2ZuVjVrdDAyWG14SndPRnpndDEyemZ0ZkZweDFhdWxXWFFoWkZlQmtmdlhZYUFoM3M3TnBpb25UUnBHRFQ4SGFxeVNRTkMxM0VKLWRyMzVGdWJnWDlmay1YUmpFZjA3QTVLdHZOYS1pZw?oc=5"
+      "title": "[속보] SK하이닉스, 1분기 영업이익 1년 전의 405.5%인 37조6100억원 기록",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObWhlMkprMC1yRkw1YnZBM0N0aUNJT1VmY3FhSjF3NXFYU25TaFhfOFNxa1dVNkFPWkxiOUM4RGw3dk9wQXNSNkZtQnZpY0dsWkszV0RhS0pMSTNaVFN1Unplb3d2QldSNDd4c1U5WGNoeDBjSlBlOXdyUlRXMFFyazRLaw?oc=5"
     },
     {
-      "title": "[AACR 2026] '이중항체도 넘었다'…머스트바이오, '삼중기전' 면역항암제 MB7207 공개",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UQWNFckoxZXdoRnNsVVdWM2t6ZGY5UnhlWTQydHVRcEl2V1lzZmxzR2s2bEtOeEpxX0dfQmhvMFpadWVIVzk2OHNqMU1zbGdib2dXVGRzT0s0c1dRWWFMdUlBTDFxdHk0TVhMcXV1RjjSAXNBVV95cUxOd3pxSEZhRjBzRnkzOXJjb1JTQnFpLTUzenE0d1YyMWFsaVVNNkhYQzlwLTVEWTNvSEpOTGh1VFNrTUFjWEdOdjhZQlA0ZkE3bjBqekJndWZyaFRtVmlwcGFmUXhDUmN6alVJcmZnMDl0UVAw?oc=5"
+      "title": "[속보] 1분기 GDP 1.7% 증가…반도체 호황에 ‘깜짝 성장률’",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdHo3QzZYdjZqZVM3U3duSVhVeWJTRGMxc3V3cUxnVFM5S2VPVHl4MmRHTkxhRWFrOHUzdFdfcWZYRFRQYmlOX185WjFwY0xIY0pXN2FNa3pLeF9CWGwxamFNU0kxRm9rT2t6cXFxZW9rZVBLYjFCdXRtT0RSeGUyWkE0MFNrdExMMk4yU3BR?oc=5"
     },
     {
-      "title": "국제유가, 미·이란 협상 무산 우려에 상승...배럴당 100달러 육박",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcUdLTkRpdXJKVHZTa1NOdkRwS195c3NkNTVYWkk0dV9aQzM1QXhHTkJ6ajN1bmdhTEVxMHRhTktOTkJLc2R2ZmliY0RVd2ZkRXc0R21IREttS05BX3pPM1JDT3doc2ViaDFaVUZfQUZXdW9GUEl3TFRJZEU0b0tSUHFzbTJtQ1FE?oc=5"
+      "title": "중동에 ‘천궁’ 판매 LIG D&A, 말레이시아에 ‘해궁’ 1400억 원 수출계약",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBfSGFjUjh3RTZLbkxoeVhSRHpiQ0ZDWkJZeVE5anlIYkZ5NVg5Tmc3bzhZTUtacS10Rlp4WS10NklhcFhhZnd1XzYxTUlDdjNu?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "에너지/방산",
+      "name": "반도체/AI",
       "sentiment": "HOT",
-      "reason": "이란-중동 리스크에 따른 국제유가 급등 및 공급망 불안"
+      "reason": "SK하이닉스의 기록적 실적과 글로벌 AI 수요 폭증이 섹터 전반의 가치 재평가를 주도함."
     },
     {
-      "name": "바이오/제약",
+      "name": "방위산업",
       "sentiment": "HOT",
-      "reason": "AACR 2026 학회 등 신약 모멘텀 및 기술력 입증 뉴스 지속"
+      "reason": "글로벌 지정학적 리스크 지속과 국산 무기 체계의 연이은 수출 계약으로 견조한 성장세 유지."
     },
     {
-      "name": "항공/운송",
-      "sentiment": "COLD",
-      "reason": "연료비 급등에 따른 실적 전망 하향 우려"
+      "name": "전기차",
+      "sentiment": "WARM",
+      "reason": "테슬라의 매출 증가와 Rivian의 공장 재가동 등 긍정적이나 원자재 가격 변동성 영향 존재."
     }
   ],
   "tickers": [
     {
-      "name": "유한양행",
-      "symbol": "000100.KS"
+      "name": "SK하이닉스",
+      "symbol": "000660.KS"
     },
     {
-      "name": "Amazon",
-      "symbol": "AMZN"
+      "name": "LIG넥스원",
+      "symbol": "079550.KS"
     },
     {
-      "name": "Eli Lilly",
-      "symbol": "LLY"
+      "name": "Tesla",
+      "symbol": "TSLA"
     }
   ],
   "keywords": [
     {
-      "name": "지정학적리스크",
+      "name": "반도체",
       "weight": 20
     },
     {
-      "name": "항암신약",
+      "name": "실적호조",
+      "weight": 18
+    },
+    {
+      "name": "AI",
       "weight": 15
     },
     {
-      "name": "유가상승",
-      "weight": 15
-    },
-    {
-      "name": "AI기술",
+      "name": "방산수출",
       "weight": 12
     },
     {
-      "name": "바이오헬스",
+      "name": "GDP성장",
       "weight": 10
     },
     {
-      "name": "공급망불안",
-      "weight": 10
+      "name": "유가급등",
+      "weight": 9
     },
     {
-      "name": "인플레이션",
-      "weight": 10
+      "name": "지정학적리스크",
+      "weight": 8
     },
     {
-      "name": "기업M&A",
+      "name": "전기차",
       "weight": 8
     }
   ],
-  "reason": "유한양행은 국내 바이오 섹터의 대표주로서 글로벌 학회 데이터 발표를 통해 기술 수출 기대감이 높으나 주가는 최근 숨 고르기를 하며 매력적인 진입 구간에 있습니다. 아마존(AMZN)은 비만 치료제 등 헬스케어 사업 확장으로 펀더멘털을 다지고 있으며, 일라이릴리(LLY)는 GLP-1 시장의 압도적 강자로서 조정 시마다 매수 관점이 유효합니다. 이들 종목은 과매수 구간을 벗어나 안정적인 기술적 지지선을 형성하고 있습니다.",
-  "push_message": "중동발 유가 급등으로 증시 변동성 확대! 방어적 포트폴리오 강화가 필요하며, 신약 모멘텀을 보유한 바이오주 중심의 옥석 가리기가 필요한 시점입니다."
+  "reason": "SK하이닉스는 1분기 어닝 서프라이즈를 기록했으나 주가는 기대감이 선반영된 후 조정 구간(무릎)에서 재진입하기 좋은 기술적 위치를 형성하고 있습니다. LIG넥스원은 지속적인 해외 수주 모멘텀이 실적으로 이어지며 방산 섹터의 중추로 자리매김 중입니다. Tesla는 1분기 현금 흐름 개선과 매출 성장이 확인되어, 과매도 이후 반등 추세를 확보한 '무릎' 단계로 판단됩니다.",
+  "push_message": "🚀 [Prism AI] 반도체 슈퍼사이클 확인! SK하이닉스 실적 폭발로 국내외 기술주 전반에 온기 확산 중입니다. 방산 수출 호재와 함께 주목해야 할 핵심 종목 3선을 지금 확인하세요!"
 }
