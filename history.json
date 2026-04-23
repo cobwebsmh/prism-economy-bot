@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-24 08:21",
-    "performance": [
-      {
-        "ticker": "S-Oil",
-        "change": -5.19
-      },
-      {
-        "ticker": "Exxon Mobil",
-        "change": 0.91
-      },
-      {
-        "ticker": "Tesla",
-        "change": 3.5
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "마이크론",
-      "테슬라"
-    ]
-  },
-  {
     "date": "2026-03-25 08:20",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "SK하이닉스",
       "LIG넥스원",
       "Tesla"
+    ]
+  },
+  {
+    "date": "2026-04-24 08:34",
+    "performance": [
+      {
+        "ticker": "SK하이닉스",
+        "change": 0.16
+      },
+      {
+        "ticker": "LIG넥스원",
+        "change": -5.29
+      },
+      {
+        "ticker": "Tesla",
+        "change": -3.56
+      }
+    ],
+    "predictions": [
+      "SK하이닉스",
+      "Intel",
+      "Regeneron"
     ]
   }
 ]
