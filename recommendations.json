@@ -1,27 +1,27 @@
 {
-  "date": "2026-04-24 08:34",
+  "date": "2026-04-25 08:29",
   "market_info": {
     "KOSPI": {
-      "price": 6417.93,
-      "change": 0.46,
+      "price": NaN,
+      "change": NaN,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1181.12,
-      "change": 0.18,
+      "price": NaN,
+      "change": NaN,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7108.4,
-      "change": -0.41,
+      "price": 7165.08,
+      "change": 0.8,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24438.5,
-      "change": -0.89,
+      "price": 24836.6,
+      "change": 1.63,
       "is_open": false,
       "status": "⚪"
     }
@@ -29,43 +29,47 @@
   "past_results": [
     {
       "ticker": "SK하이닉스",
-      "change": 0.16
+      "change": -0.24
     },
     {
-      "ticker": "LIG넥스원",
-      "change": -5.29
+      "ticker": "Intel",
+      "change": 23.6
     },
     {
-      "ticker": "Tesla",
-      "change": -3.56
+      "ticker": "Regeneron",
+      "change": -1.89
     }
   ],
-  "summary": "글로벌 증시는 주요 소프트웨어 및 빅테크 기업들의 인력 감축과 비용 효율화 기조로 인해 투자 심리가 다소 위축된 상태입니다. 한국 시장은 1분기 견조한 경제성장률과 반도체 수출 호조를 바탕으로 사상 최고치 경신 이후 숨 고르기 장세에 진입했습니다. 지정학적 리스크와 기업 내 내부 정보 유출 의혹 등이 상존하여 종목별 차별화가 뚜렷해질 전망입니다.",
+  "summary": "글로벌 시장은 AI 기술 경쟁과 기업들의 실적 개선에 힘입어 신고가 랠리를 이어가고 있으나, 인플레이션 우려와 고금리 장기화 가능성이 투자 심리를 억누르고 있습니다. 특히 미 소비자 신뢰지수 하락과 같은 거시적 악재 속에서도 빅테크 중심의 기술주가 강력한 모멘텀을 형성하며 시장을 견인하는 양상입니다. 주말을 앞두고 투자자들은 지정학적 리스크 완화 기대감과 기업 내부 정보 유출 의혹 등 다양한 변수에 대비하며 숨 고르기에 들어갔습니다.",
   "news_headlines": [
     {
-      "title": "뉴욕증시, 소프트웨어 폭락에 3대 지수 하락…테슬라, 3.56% 급락",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOb0E3YlZ0VV9BRW5Xd3JkQXFOOUxFRlRUenJwYVBmc0x1MXFhS3hQSDJ1czRrcXZLS0hCYzhSUE90U2JXUVg5dERQTFVzYW51bnhRRWtEMXdwNkhHY3I2Yzc5RkxQQXQ4bUxHTmF2WFk2S1NkT3NjcHRsa3QxajVCeGlZYmlzM18z?oc=5"
+      "title": "S&P 500, Nasdaq close at records on tech lift, Iran peace talk hopes",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeFI0QnNnNVVVckNHY3RrNk9MQTd1aS1ZRzFVZ2FzZEIycjhqSjdndzdyYkdXdGNPSThqc1lrSURHeUdQQk9JLW1KTHlUWkZweGxibG1YRVJhN2F6b0dhb0loZGo1NUtWU3FOeVNIcG1oWDY2QnppRXdVTkh5LTE4MkZoaGxWNmFTQ3JoQkxGWWRVb0c2TjRSTnMxUzA3cHp5ZDc2N1d1Z2tMOThqcFE?oc=5"
     },
     {
-      "title": "1분기 경제성장률 5년6개월 만에 최고…‘삼전닉스’ 영익 94조 큰 몫",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBZWGNWVzgxY0xna1BQampzM2dtMVNOdXNYWUFqcy1OTWJDWHFiNElRVmV2VF9Yb2FqYy0tdWpTeU1IeGFsQ2lIZkdxcjB6MkNTdXo3M21SdlVuNXlWNExlTHF1S2VMeWRsV1E?oc=5"
+      "title": "Intel Stock Surges 23% After Earnings, On Track for Record Close.",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbF8zcG5WSDFVVmlwYy13RmZ4V243T0FBNm5HaElfM2xjcm1vdEJzdWpzVkRna1JDQnBDMUNaMThIeEVZcldHS2NKQUVabmJTb0lyeklhSnFMcXVKNmRRbXVqMVIxai1nSUNmUzZ2clVaZE50SVpiWGxHSEF2WTZZRg?oc=5"
+    },
+    {
+      "title": "‘SK하이닉스 234만원 간다’ 일본 투자은행 깜짝 전망",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd0w1SXdiSGkwVFRCM3JXNm1EeFYwY0V5b05Fa1NpQ1pOM2M0dk1yYmMzdlVIeklZRVBRZ2E3MW42N04zcWprbUo0bUUzeVlxTktvZVlpWlNBVFE0QWZkYi1zMlRPZFhtaWRzYXdwYVNrS2hpS3RZLVNHZDl4TEYzQXdMSU9OWC1tLTM5eEt3?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체",
+      "name": "반도체/AI",
       "sentiment": "HOT",
-      "reason": "국내 경제 성장을 견인하는 핵심 산업으로 기술적 위치가 견고함"
+      "reason": "인텔 실적 급등 및 엔비디아 동반 강세로 인한 강력한 밸류에이션 리레이팅 구간"
     },
     {
-      "name": "소프트웨어/AI",
+      "name": "전기차",
+      "sentiment": "NEUTRAL",
+      "reason": "현대차의 전동화 승부수와 포르쉐의 리막 지분 매각 등 산업 내 재편 가속화"
+    },
+    {
+      "name": "지정학/에너지",
       "sentiment": "COOL",
-      "reason": "대규모 해고와 효율화 작업으로 인해 단기적 변동성 확대"
-    },
-    {
-      "name": "제약/바이오",
-      "sentiment": "HOT",
-      "reason": "정부 규제 완화 및 신기술 도입으로 인한 시장 관심 증대"
+      "reason": "유가 하락 베팅 의혹과 이란 전쟁 지속 우려에 따른 불확실성 증대"
     }
   ],
   "tickers": [
@@ -74,48 +78,52 @@
       "symbol": "000660.KS"
     },
     {
-      "name": "Intel",
+      "name": "Intel Corporation",
       "symbol": "INTC"
     },
     {
-      "name": "Regeneron",
-      "symbol": "REGN"
+      "name": "NVIDIA Corporation",
+      "symbol": "NVDA"
     }
   ],
   "keywords": [
     {
-      "name": "반도체",
+      "name": "AI",
       "weight": 20
     },
     {
-      "name": "경제성장률",
+      "name": "반도체",
+      "weight": 18
+    },
+    {
+      "name": "실적",
       "weight": 15
     },
     {
-      "name": "인력감축",
-      "weight": 15
-    },
-    {
-      "name": "물가상승",
+      "name": "금리",
       "weight": 10
     },
     {
-      "name": "지정학적리스크",
+      "name": "신고가",
       "weight": 10
     },
     {
-      "name": "빅테크효율화",
-      "weight": 10
+      "name": "이란",
+      "weight": 8
     },
     {
-      "name": "AI",
-      "weight": 10
+      "name": "노조",
+      "weight": 7
     },
     {
-      "name": "바이오",
-      "weight": 10
+      "name": "소비심리",
+      "weight": 7
+    },
+    {
+      "name": "기타",
+      "weight": 5
     }
   ],
-  "reason": "SK하이닉스는 국내 1분기 성장을 주도하는 핵심주로, 과열권보다는 견조한 실적을 바탕으로 한 추가 상승 모멘텀을 보유한 '무릎' 위치입니다. 인텔(INTC)은 25년래 최고 실적을 기록하며 기술적 조정 이후 재상승 흐름을 보이고 있고, 리제네론(REGN)은 트럼프 행정부와의 협력 및 신약 승인으로 안정적인 우상향 흐름이 예상됩니다.",
-  "push_message": "시장 혼조세 속 반도체 실적주와 바이오 정책 수혜주 주목! SK하이닉스 및 인텔 등 실적 기반 종목 중심의 대응이 유효합니다."
+  "reason": "SK하이닉스는 일본 IB의 고평가 리포트와 함께 강력한 HBM 모멘텀을 보유 중이며, 주가 위치상 장기 상승 추세의 중단부에 위치함. 인텔(INTC)은 최근 실적 서프라이즈로 바닥권에서 강하게 반등하며 기술적 추세 전환을 확립함. 엔비디아(NVDA)는 AI 섹터의 주도주로서 과열 논란이 있으나, 인텔과의 동반 상승으로 전고점을 돌파하며 상승 탄력이 강화되는 단계임.",
+  "push_message": "글로벌 증시 신고가 경신! 반도체 주도의 상승세가 뚜렷하며, SK하이닉스와 인텔의 모멘텀에 주목할 시기입니다."
 }
