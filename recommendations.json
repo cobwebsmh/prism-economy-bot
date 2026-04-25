@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-25 08:29",
+  "date": "2026-04-26 08:27",
   "market_info": {
     "KOSPI": {
-      "price": NaN,
-      "change": NaN,
+      "price": 6475.63,
+      "change": -0.0,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": NaN,
-      "change": NaN,
+      "price": 1203.84,
+      "change": 2.51,
       "is_open": false,
       "status": "⚪"
     },
@@ -32,58 +32,58 @@
       "change": -0.24
     },
     {
-      "ticker": "Intel",
+      "ticker": "Intel Corporation",
       "change": 23.6
     },
     {
-      "ticker": "Regeneron",
-      "change": -1.89
+      "ticker": "NVIDIA Corporation",
+      "change": 4.32
     }
   ],
-  "summary": "글로벌 시장은 AI 기술 경쟁과 기업들의 실적 개선에 힘입어 신고가 랠리를 이어가고 있으나, 인플레이션 우려와 고금리 장기화 가능성이 투자 심리를 억누르고 있습니다. 특히 미 소비자 신뢰지수 하락과 같은 거시적 악재 속에서도 빅테크 중심의 기술주가 강력한 모멘텀을 형성하며 시장을 견인하는 양상입니다. 주말을 앞두고 투자자들은 지정학적 리스크 완화 기대감과 기업 내부 정보 유출 의혹 등 다양한 변수에 대비하며 숨 고르기에 들어갔습니다.",
+  "summary": "글로벌 시장은 중동발 지정학적 리스크로 인한 원유 가격 상승과 인플레이션 우려가 고조되며 투자 심리가 다소 경직된 상태입니다. 그럼에도 불구하고 빅테크 기업들의 강력한 AI 투자와 실적 기대감이 시장을 방어하며 나스닥과 S&P500은 신고가를 경신하는 강세를 보였습니다. 주말 동안 미·이란 협상 무산 소식과 미국 소비자 심리 위축이 발표되어 다음 주 초 변동성 확대에 대비한 포트폴리오 재정비가 필요합니다.",
   "news_headlines": [
     {
-      "title": "S&P 500, Nasdaq close at records on tech lift, Iran peace talk hopes",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeFI0QnNnNVVVckNHY3RrNk9MQTd1aS1ZRzFVZ2FzZEIycjhqSjdndzdyYkdXdGNPSThqc1lrSURHeUdQQk9JLW1KTHlUWkZweGxibG1YRVJhN2F6b0dhb0loZGo1NUtWU3FOeVNIcG1oWDY2QnppRXdVTkh5LTE4MkZoaGxWNmFTQ3JoQkxGWWRVb0c2TjRSTnMxUzA3cHp5ZDc2N1d1Z2tMOThqcFE?oc=5"
+      "title": "“삼성전자 파업 장기화 땐 최대 10조 타격…공급망 회복 불가 훼손”",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE16LWVZZmVrMGpaazN5VExHYWhwSFF6Z3hTR2tmSklMV1lyNm1DZVFLSFhQQUZZSnhKN3Y5ZEVfUFEtdTFtNVRxOEpUS3NETkJsOGtsSnpVOG9oT1k?oc=5"
     },
     {
-      "title": "Intel Stock Surges 23% After Earnings, On Track for Record Close.",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbF8zcG5WSDFVVmlwYy13RmZ4V243T0FBNm5HaElfM2xjcm1vdEJzdWpzVkRna1JDQnBDMUNaMThIeEVZcldHS2NKQUVabmJTb0lyeklhSnFMcXVKNmRRbXVqMVIxai1nSUNmUzZ2clVaZE50SVpiWGxHSEF2WTZZRg?oc=5"
+      "title": "호르무즈 해협 봉쇄에...미국 에너지 수출 신기록",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EWHROeURvMTk3N3gtVHV3MHc5WGtuYjZ6NUVtalRQbjd0ZGVYcXdzNDJpV2FNcW10X2htWF80R1RHamVxX2hOeXNKandIbTViNG95V3JyX2xvS1dQZ1E?oc=5"
     },
     {
-      "title": "‘SK하이닉스 234만원 간다’ 일본 투자은행 깜짝 전망",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd0w1SXdiSGkwVFRCM3JXNm1EeFYwY0V5b05Fa1NpQ1pOM2M0dk1yYmMzdlVIeklZRVBRZ2E3MW42N04zcWprbUo0bUUzeVlxTktvZVlpWlNBVFE0QWZkYi1zMlRPZFhtaWRzYXdwYVNrS2hpS3RZLVNHZDl4TEYzQXdMSU9OWC1tLTM5eEt3?oc=5"
+      "title": "Google's $40B Anthropic move is Big Tech's latest huge AI bet",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5jUVZvUUxUTVlWdzVxMTB3YlhySzd3cmRZbE14dHZKamstdWVwWkJrMGtfUWt0cXZXS2g0X0dXdEpQVjk5Y0IxVUNyQ0U4Z2xJcENnd1E5Ui1ya3NUem1HQ0ZmN1BwNG51elFDenFiMEJIOEU0M1E?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체/AI",
+      "name": "AI 및 반도체",
       "sentiment": "HOT",
-      "reason": "인텔 실적 급등 및 엔비디아 동반 강세로 인한 강력한 밸류에이션 리레이팅 구간"
+      "reason": "구글 등 빅테크의 공격적인 AI 투자 지속 및 기술주 중심의 신고가 경신"
     },
     {
-      "name": "전기차",
-      "sentiment": "NEUTRAL",
-      "reason": "현대차의 전동화 승부수와 포르쉐의 리막 지분 매각 등 산업 내 재편 가속화"
+      "name": "에너지(원유)",
+      "sentiment": "HOT",
+      "reason": "중동 리스크에 따른 공급망 불안으로 유가 상승세 지속"
     },
     {
-      "name": "지정학/에너지",
+      "name": "기업 소프트웨어",
       "sentiment": "COOL",
-      "reason": "유가 하락 베팅 의혹과 이란 전쟁 지속 우려에 따른 불확실성 증대"
+      "reason": "메타 등 인력 구조조정 발표로 인한 비용 절감 기조 확인"
     }
   ],
   "tickers": [
     {
-      "name": "SK하이닉스",
-      "symbol": "000660.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "Intel Corporation",
+      "name": "Intel",
       "symbol": "INTC"
     },
     {
-      "name": "NVIDIA Corporation",
-      "symbol": "NVDA"
+      "name": "Alphabet",
+      "symbol": "GOOGL"
     }
   ],
   "keywords": [
@@ -92,38 +92,34 @@
       "weight": 20
     },
     {
-      "name": "반도체",
-      "weight": 18
-    },
-    {
-      "name": "실적",
+      "name": "중동리스크",
       "weight": 15
     },
     {
-      "name": "금리",
+      "name": "유가상승",
+      "weight": 15
+    },
+    {
+      "name": "빅테크실적",
+      "weight": 12
+    },
+    {
+      "name": "반도체",
       "weight": 10
     },
     {
-      "name": "신고가",
+      "name": "인플레이션",
       "weight": 10
     },
     {
-      "name": "이란",
-      "weight": 8
+      "name": "구조조정",
+      "weight": 9
     },
     {
-      "name": "노조",
-      "weight": 7
-    },
-    {
-      "name": "소비심리",
-      "weight": 7
-    },
-    {
-      "name": "기타",
-      "weight": 5
+      "name": "공급망",
+      "weight": 9
     }
   ],
-  "reason": "SK하이닉스는 일본 IB의 고평가 리포트와 함께 강력한 HBM 모멘텀을 보유 중이며, 주가 위치상 장기 상승 추세의 중단부에 위치함. 인텔(INTC)은 최근 실적 서프라이즈로 바닥권에서 강하게 반등하며 기술적 추세 전환을 확립함. 엔비디아(NVDA)는 AI 섹터의 주도주로서 과열 논란이 있으나, 인텔과의 동반 상승으로 전고점을 돌파하며 상승 탄력이 강화되는 단계임.",
-  "push_message": "글로벌 증시 신고가 경신! 반도체 주도의 상승세가 뚜렷하며, SK하이닉스와 인텔의 모멘텀에 주목할 시기입니다."
+  "reason": "삼성전자는 파업 리스크로 인한 과도한 주가 조정을 겪었으나, 반도체 업황 회복의 핵심 기업으로서 현재 '무릎' 위치에서 매수 접근이 유효합니다. Intel은 최근 실적 관련 반등세를 보이고 있으나 밸류에이션 상 여전히 기술주 중 합리적 구간에 있으며, Alphabet은 Anthropic에 대한 400억 달러 투자 등 AI 생태계 주도권을 유지하고 있어 중장기적 성장 모멘텀이 견고합니다.",
+  "push_message": "[Prism AI] 주말 글로벌 뉴스 요약: 중동발 유가 상승과 AI 투자 전쟁 본격화. 삼성전자 리스크 점검 및 빅테크 실적 기대감에 주목하세요."
 }
