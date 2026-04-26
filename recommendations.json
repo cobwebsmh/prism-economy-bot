@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-26 08:27",
+  "date": "2026-04-27 08:28",
   "market_info": {
     "KOSPI": {
       "price": 6475.63,
@@ -28,98 +28,102 @@
   },
   "past_results": [
     {
-      "ticker": "SK하이닉스",
-      "change": -0.24
+      "ticker": "삼성전자",
+      "change": -2.23
     },
     {
-      "ticker": "Intel Corporation",
+      "ticker": "Intel",
       "change": 23.6
     },
     {
-      "ticker": "NVIDIA Corporation",
-      "change": 4.32
+      "ticker": "Alphabet",
+      "change": 1.63
     }
   ],
-  "summary": "글로벌 시장은 중동발 지정학적 리스크로 인한 원유 가격 상승과 인플레이션 우려가 고조되며 투자 심리가 다소 경직된 상태입니다. 그럼에도 불구하고 빅테크 기업들의 강력한 AI 투자와 실적 기대감이 시장을 방어하며 나스닥과 S&P500은 신고가를 경신하는 강세를 보였습니다. 주말 동안 미·이란 협상 무산 소식과 미국 소비자 심리 위축이 발표되어 다음 주 초 변동성 확대에 대비한 포트폴리오 재정비가 필요합니다.",
+  "summary": "글로벌 시장은 AI 기술의 실질적인 수익화와 빅테크 기업들의 실적 시즌을 앞두고 기대와 신중함이 공존하는 모습입니다. 한국 시장은 파운드리 생산 차질과 잠재성장률 하락 우려 등 내부적 불확실성이 상존하나, 특정 산업군에서의 차별적 성장이 기대됩니다. 전반적으로 거시 경제 변수보다는 개별 기업의 AI 모멘텀과 구조적 변화에 투자 심리가 집중되고 있습니다.",
   "news_headlines": [
     {
-      "title": "“삼성전자 파업 장기화 땐 최대 10조 타격…공급망 회복 불가 훼손”",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE16LWVZZmVrMGpaazN5VExHYWhwSFF6Z3hTR2tmSklMV1lyNm1DZVFLSFhQQUZZSnhKN3Y5ZEVfUFEtdTFtNVRxOEpUS3NETkJsOGtsSnpVOG9oT1k?oc=5"
+      "title": "Big Tech’s $16 Trillion Earnings Week Is Make-Or-Break for Rally",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbjlCQzRpNUhWX1hhb2Y4TlFwMHEyX1Z4SXE2ei12Um9iU3NQYWJrc2xfZVZUYV9FaFFVLUlacnBzajhndWpiSEJyNW1WSFQzaDNRZDA0ZVF5b1RpSjExSWpmRWhjWHlUdUR5VktLU09FTy1SU1FxTHQ4QjNJbGpWTXgzSnJGbnlZaHhWaDJzcVZfYmE1LVJJSkNjbDJHcTkwUHQ3c3pNcUNXMXdyU3p1S3NBdms?oc=5"
     },
     {
-      "title": "호르무즈 해협 봉쇄에...미국 에너지 수출 신기록",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EWHROeURvMTk3N3gtVHV3MHc5WGtuYjZ6NUVtalRQbjd0ZGVYcXdzNDJpV2FNcW10X2htWF80R1RHamVxX2hOeXNKandIbTViNG95V3JyX2xvS1dQZ1E?oc=5"
+      "title": "Alphabet to invest $40 billion in thriving AI company",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT0lNS1hzZFhhb2JVUDM0Tkd1MGNaUnhHaXpMRlp4TXI0LTFpTW9tSkJNU09vWk53RzVndTRnYWp5RDF4aGdISGJ6R0FyUEU0aTZmek9IQW9ERE5lRlhVQWFIZjF1VXNmWHFZb2ttTjl3MHJ6TGk0dGdNYnIycWhtVG53MG5RbW42OERpRnRWaVYzbzRoR3FRQnc4U2g?oc=5"
     },
     {
-      "title": "Google's $40B Anthropic move is Big Tech's latest huge AI bet",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5jUVZvUUxUTVlWdzVxMTB3YlhySzd3cmRZbE14dHZKamstdWVwWkJrMGtfUWt0cXZXS2g0X0dXdEpQVjk5Y0IxVUNyQ0U4Z2xJcENnd1E5Ui1ya3NUem1HQ0ZmN1BwNG51elFDenFiMEJIOEU0M1E?oc=5"
+      "title": "삼성전자, 노조 집회날 파운드리 생산 58% 급락… 파업 우려 커져",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB5d2UzZWd4S1BBLWxycHF6dHRCRmd5SXBOaml1UGZsOVU0RWhKTzRCalNfLWxNak02cDdrNWYzRE5fVmEtNXdCeWt2cnpSNmJEZUEtRWRKMVdLLWhxWS00RGFmSUpDOXZpb1hxeXY3Mi1OZGI2YnfSAWZBVV95cUxPRDJ5YlRaYm5hNVliWVpsaXhpdGxBVnJMZmhFR3hHRGJhMGQyeGhIaU5KRUM5bS1rU2RPbFRoU2dmSHY1UVA4UXhUM3JGVGZuUlNhTm9EcURHYnhNaVlWN3BkZTRJeWc?oc=5"
     }
   ],
   "sectors": [
     {
       "name": "AI 및 반도체",
       "sentiment": "HOT",
-      "reason": "구글 등 빅테크의 공격적인 AI 투자 지속 및 기술주 중심의 신고가 경신"
+      "reason": "Alphabet의 대규모 투자 및 AI 기술 기업 간의 경쟁 심화로 인한 모멘텀 유지"
     },
     {
-      "name": "에너지(원유)",
+      "name": "부동산 및 주거",
+      "sentiment": "COLD",
+      "reason": "전세 수급 불안 및 전세 대란 우려가 경제 전반의 부담 요인으로 작용"
+    },
+    {
+      "name": "전기차/모빌리티",
       "sentiment": "HOT",
-      "reason": "중동 리스크에 따른 공급망 불안으로 유가 상승세 지속"
-    },
-    {
-      "name": "기업 소프트웨어",
-      "sentiment": "COOL",
-      "reason": "메타 등 인력 구조조정 발표로 인한 비용 절감 기조 확인"
+      "reason": "베이징 모터쇼 등을 통해 확인된 완성차 업체의 AI 기술 접목 가속화"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "SK하이닉스",
+      "symbol": "000660.KS"
     },
     {
-      "name": "Intel",
-      "symbol": "INTC"
-    },
-    {
-      "name": "Alphabet",
+      "name": "Alphabet (Google)",
       "symbol": "GOOGL"
+    },
+    {
+      "name": "현대차",
+      "symbol": "005380.KS"
     }
   ],
   "keywords": [
     {
-      "name": "AI",
-      "weight": 20
-    },
-    {
-      "name": "중동리스크",
-      "weight": 15
-    },
-    {
-      "name": "유가상승",
-      "weight": 15
+      "name": "AI기술",
+      "weight": 25
     },
     {
       "name": "빅테크실적",
-      "weight": 12
+      "weight": 20
     },
     {
-      "name": "반도체",
-      "weight": 10
+      "name": "반도체생산",
+      "weight": 15
+    },
+    {
+      "name": "전세수급",
+      "weight": 8
+    },
+    {
+      "name": "잠재성장률",
+      "weight": 7
+    },
+    {
+      "name": "모빌리티",
+      "weight": 7
+    },
+    {
+      "name": "금융규제",
+      "weight": 6
     },
     {
       "name": "인플레이션",
-      "weight": 10
+      "weight": 6
     },
     {
-      "name": "구조조정",
-      "weight": 9
-    },
-    {
-      "name": "공급망",
-      "weight": 9
+      "name": "금리정책",
+      "weight": 6
     }
   ],
-  "reason": "삼성전자는 파업 리스크로 인한 과도한 주가 조정을 겪었으나, 반도체 업황 회복의 핵심 기업으로서 현재 '무릎' 위치에서 매수 접근이 유효합니다. Intel은 최근 실적 관련 반등세를 보이고 있으나 밸류에이션 상 여전히 기술주 중 합리적 구간에 있으며, Alphabet은 Anthropic에 대한 400억 달러 투자 등 AI 생태계 주도권을 유지하고 있어 중장기적 성장 모멘텀이 견고합니다.",
-  "push_message": "[Prism AI] 주말 글로벌 뉴스 요약: 중동발 유가 상승과 AI 투자 전쟁 본격화. 삼성전자 리스크 점검 및 빅테크 실적 기대감에 주목하세요."
+  "reason": "SK하이닉스는 고대역폭메모리(HBM) 경쟁력으로 AI 모멘텀을 주도하고 있으며 최근 조정은 매수 기회로 판단됩니다. GOOGL은 400억 달러 투자 등 AI 생태계 확장에 공격적인 행보를 보이고 있어 장기적 성장궤도에 위치합니다. 현대차는 베이징 모터쇼에서 확인된 기술력과 자율주행 모멘텀을 바탕으로 현재 주가 수준이 기술적 바닥권에서 반등을 준비하는 '무릎' 위치로 분석됩니다.",
+  "push_message": "[Prism 분석] 빅테크 실적 시즌 앞둔 시장, AI 주도 테마 확산 중. SK하이닉스, GOOGL, 현대차 주목 필요."
 }
