@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-27 08:28",
+  "date": "2026-04-28 08:40",
   "market_info": {
     "KOSPI": {
       "price": 6475.63,
@@ -14,116 +14,112 @@
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7165.08,
-      "change": 0.8,
+      "price": 7173.91,
+      "change": 0.12,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24836.6,
-      "change": 1.63,
+      "price": 24887.1,
+      "change": 0.2,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -2.23
+      "ticker": "SK하이닉스",
+      "change": 5.73
     },
     {
-      "ticker": "Intel",
-      "change": 23.6
+      "ticker": "Alphabet (Google)",
+      "change": 1.72
     },
     {
-      "ticker": "Alphabet",
-      "change": 1.63
+      "ticker": "현대차",
+      "change": 2.14
     }
   ],
-  "summary": "글로벌 시장은 AI 기술의 실질적인 수익화와 빅테크 기업들의 실적 시즌을 앞두고 기대와 신중함이 공존하는 모습입니다. 한국 시장은 파운드리 생산 차질과 잠재성장률 하락 우려 등 내부적 불확실성이 상존하나, 특정 산업군에서의 차별적 성장이 기대됩니다. 전반적으로 거시 경제 변수보다는 개별 기업의 AI 모멘텀과 구조적 변화에 투자 심리가 집중되고 있습니다.",
+  "summary": "글로벌 증시는 빅테크 실적 기대감과 AI 인프라 확장에 힘입어 S&P500과 나스닥이 사상 최고치를 경신하며 강한 낙관론을 형성하고 있습니다. 다만, 미국과 이란의 교착상태로 인한 유가 상승 등 지정학적 리스크가 잠재적 변동성 요인으로 부상했습니다. 한국 증시 또한 AI 반도체 및 관련 소재주의 강세에 힘입어 견조한 흐름을 이어가고 있습니다.",
   "news_headlines": [
     {
-      "title": "Big Tech’s $16 Trillion Earnings Week Is Make-Or-Break for Rally",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbjlCQzRpNUhWX1hhb2Y4TlFwMHEyX1Z4SXE2ei12Um9iU3NQYWJrc2xfZVZUYV9FaFFVLUlacnBzajhndWpiSEJyNW1WSFQzaDNRZDA0ZVF5b1RpSjExSWpmRWhjWHlUdUR5VktLU09FTy1SU1FxTHQ4QjNJbGpWTXgzSnJGbnlZaHhWaDJzcVZfYmE1LVJJSkNjbDJHcTkwUHQ3c3pNcUNXMXdyU3p1S3NBdms?oc=5"
+      "title": "S&P500·나스닥, 사상 최고치···빅테크 실적 기대감",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vaTNHMXBwQnJ1SmVaLTBnbmRvQ0FRUXZqdTdFVjZzaDhGRkx6VUwtVGtSMkFHVDVMMVN3ODhpWDIySDJsc0Y0anVOcFdIZTl0bXp0TTctSUY5QdIBX0FVX3lxTE51SnVhSkVGZVNZbXJmdDByRzFiOEdaSXNKa3czb0tkVlpBRFdzXzBfcWJoY2V5Q25XNmdRX1N0R25DT2kydWs4MmNCa1NITW1zWUR3bXh6OFI4OHpicHQ4?oc=5"
     },
     {
-      "title": "Alphabet to invest $40 billion in thriving AI company",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPT0lNS1hzZFhhb2JVUDM0Tkd1MGNaUnhHaXpMRlp4TXI0LTFpTW9tSkJNU09vWk53RzVndTRnYWp5RDF4aGdISGJ6R0FyUEU0aTZmek9IQW9ERE5lRlhVQWFIZjF1VXNmWHFZb2ttTjl3MHJ6TGk0dGdNYnIycWhtVG53MG5RbW42OERpRnRWaVYzbzRoR3FRQnc4U2g?oc=5"
+      "title": "‘스마트폰 D램’도 빨아들이는 AI… HBM 이은 삼성전자·SK하이닉스 효자 상품 ‘소캠2’",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOGxuUkZCMFNXVHNtRDFZU2ZkVVQ5NjJDYkNnZGdxczRTSHBzd2NEUHBEZFFQOGZhZGJ2UWh4WXdyUF9SR3RtQ0ZXS3B2YzBxMnd3dks3aXhMTnZRck5QT1ZvZ190dFlwUXNtTDhYay16am5GRUEzZ1NFMXVSVVQ4YTNB?oc=5"
     },
     {
-      "title": "삼성전자, 노조 집회날 파운드리 생산 58% 급락… 파업 우려 커져",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB5d2UzZWd4S1BBLWxycHF6dHRCRmd5SXBOaml1UGZsOVU0RWhKTzRCalNfLWxNak02cDdrNWYzRE5fVmEtNXdCeWt2cnpSNmJEZUEtRWRKMVdLLWhxWS00RGFmSUpDOXZpb1hxeXY3Mi1OZGI2YnfSAWZBVV95cUxPRDJ5YlRaYm5hNVliWVpsaXhpdGxBVnJMZmhFR3hHRGJhMGQyeGhIaU5KRUM5bS1rU2RPbFRoU2dmSHY1UVA4UXhUM3JGVGZuUlNhTm9EcURHYnhNaVlWN3BkZTRJeWc?oc=5"
+      "title": "[뉴욕유가] 교착상태에 빠진 美·이란 협상…WTI 2% 상승",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DTVVQSURaWXYzZmFsMzdSZjNiOGdxTHh3MENzQnVpOGR3ZzdrdTEzNklldjcxZDhONlMtX0RuRm9wRTk4WUFZSzBqcHBfWjQyVnRSeTJjb2RfQzR2Tk5iQ2JzZTFpZDJGY243TTk1RHQ?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "AI 및 반도체",
+      "name": "AI 반도체",
       "sentiment": "HOT",
-      "reason": "Alphabet의 대규모 투자 및 AI 기술 기업 간의 경쟁 심화로 인한 모멘텀 유지"
+      "reason": "HBM 수요 폭증 및 차세대 D램(소캠2) 도입으로 인한 실적 개선 기대"
     },
     {
-      "name": "부동산 및 주거",
-      "sentiment": "COLD",
-      "reason": "전세 수급 불안 및 전세 대란 우려가 경제 전반의 부담 요인으로 작용"
+      "name": "에너지/전력",
+      "sentiment": "WARM",
+      "reason": "데이터센터 전력 인프라 확장 및 중동 리스크에 따른 유가 상승"
     },
     {
-      "name": "전기차/모빌리티",
-      "sentiment": "HOT",
-      "reason": "베이징 모터쇼 등을 통해 확인된 완성차 업체의 AI 기술 접목 가속화"
+      "name": "바이오",
+      "sentiment": "NEUTRAL",
+      "reason": "영업이익 급증 사례 등장 및 비만 치료제 시장 경쟁 심화"
     }
   ],
   "tickers": [
     {
-      "name": "SK하이닉스",
-      "symbol": "000660.KS"
+      "name": "삼성전기",
+      "symbol": "009150.KS"
     },
     {
-      "name": "Alphabet (Google)",
-      "symbol": "GOOGL"
+      "name": "Intel",
+      "symbol": "INTC"
     },
     {
-      "name": "현대차",
-      "symbol": "005380.KS"
+      "name": "ARM Holdings",
+      "symbol": "ARM"
     }
   ],
   "keywords": [
     {
-      "name": "AI기술",
-      "weight": 25
-    },
-    {
-      "name": "빅테크실적",
+      "name": "AI",
       "weight": 20
     },
     {
-      "name": "반도체생산",
+      "name": "반도체",
       "weight": 15
     },
     {
-      "name": "전세수급",
-      "weight": 8
+      "name": "실적",
+      "weight": 15
     },
     {
-      "name": "잠재성장률",
-      "weight": 7
+      "name": "HBM",
+      "weight": 10
     },
     {
-      "name": "모빌리티",
-      "weight": 7
+      "name": "빅테크",
+      "weight": 10
     },
     {
-      "name": "금융규제",
-      "weight": 6
+      "name": "유가",
+      "weight": 10
     },
     {
-      "name": "인플레이션",
-      "weight": 6
+      "name": "데이터센터",
+      "weight": 10
     },
     {
-      "name": "금리정책",
-      "weight": 6
+      "name": "지정학적리스크",
+      "weight": 10
     }
   ],
-  "reason": "SK하이닉스는 고대역폭메모리(HBM) 경쟁력으로 AI 모멘텀을 주도하고 있으며 최근 조정은 매수 기회로 판단됩니다. GOOGL은 400억 달러 투자 등 AI 생태계 확장에 공격적인 행보를 보이고 있어 장기적 성장궤도에 위치합니다. 현대차는 베이징 모터쇼에서 확인된 기술력과 자율주행 모멘텀을 바탕으로 현재 주가 수준이 기술적 바닥권에서 반등을 준비하는 '무릎' 위치로 분석됩니다.",
-  "push_message": "[Prism 분석] 빅테크 실적 시즌 앞둔 시장, AI 주도 테마 확산 중. SK하이닉스, GOOGL, 현대차 주목 필요."
+  "reason": "삼성전기는 AI 빅테크향 매출 확대로 실적 턴어라운드가 기대되나 주가는 장기 박스권 이후 완만한 상승세를 보여 '무릎' 구간으로 판단됩니다. Intel은 CPU 복귀와 함께 AI 파운드리 전환을 시도 중이며, 최근 급락 이후 기술적 반등이 예상되는 저평가 매력을 보유하고 있습니다. ARM은 AI 설계 자산 가치가 재평가되고 있으나 과열권 진입 전의 조정 구간에서 안정적인 우상향 모멘텀을 기대할 수 있습니다.",
+  "push_message": "AI 인프라 확장이 시장을 주도합니다. 삼성전기의 실적 턴어라운드와 Intel의 기술적 반등 가능성에 주목하세요."
 }

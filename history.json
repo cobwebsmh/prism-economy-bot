@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-28 08:21",
-    "performance": [
-      {
-        "ticker": "알테오젠",
-        "change": 0.0
-      },
-      {
-        "ticker": "엑손모빌",
-        "change": 3.36
-      },
-      {
-        "ticker": "제이피모건 체이스",
-        "change": -3.02
-      }
-    ],
-    "predictions": [
-      "한화솔루션",
-      "엑손모빌",
-      "JP모건 체이스"
-    ]
-  },
-  {
     "date": "2026-03-29 08:19",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "SK하이닉스",
       "Alphabet (Google)",
       "현대차"
+    ]
+  },
+  {
+    "date": "2026-04-28 08:40",
+    "performance": [
+      {
+        "ticker": "SK하이닉스",
+        "change": 5.73
+      },
+      {
+        "ticker": "Alphabet (Google)",
+        "change": 1.72
+      },
+      {
+        "ticker": "현대차",
+        "change": 2.14
+      }
+    ],
+    "predictions": [
+      "삼성전기",
+      "Intel",
+      "ARM Holdings"
     ]
   }
 ]
