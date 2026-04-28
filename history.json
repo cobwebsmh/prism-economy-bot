@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-29 08:19",
-    "performance": [
-      {
-        "ticker": "한화솔루션",
-        "change": 0.0
-      },
-      {
-        "ticker": "엑손모빌",
-        "change": 3.36
-      },
-      {
-        "ticker": "JP모건 체이스",
-        "change": -3.02
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "마이크로소프트",
-      "TSMC"
-    ]
-  },
-  {
     "date": "2026-03-30 08:21",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전기",
       "Intel",
       "ARM Holdings"
+    ]
+  },
+  {
+    "date": "2026-04-29 08:43",
+    "performance": [
+      {
+        "ticker": "삼성전기",
+        "change": 5.67
+      },
+      {
+        "ticker": "Intel",
+        "change": -0.55
+      },
+      {
+        "ticker": "ARM Holdings",
+        "change": -7.98
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "스타벅스",
+      "디즈니"
     ]
   }
 ]

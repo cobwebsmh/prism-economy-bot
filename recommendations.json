@@ -1,125 +1,129 @@
 {
-  "date": "2026-04-28 08:40",
+  "date": "2026-04-29 08:43",
   "market_info": {
     "KOSPI": {
-      "price": 6475.63,
-      "change": -0.0,
+      "price": 6615.03,
+      "change": 2.15,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1203.84,
-      "change": 2.51,
+      "price": 1226.18,
+      "change": 1.86,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7173.91,
-      "change": 0.12,
+      "price": 7138.8,
+      "change": -0.49,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24887.1,
-      "change": 0.2,
+      "price": 24663.8,
+      "change": -0.9,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "SK하이닉스",
-      "change": 5.73
+      "ticker": "삼성전기",
+      "change": 5.67
     },
     {
-      "ticker": "Alphabet (Google)",
-      "change": 1.72
+      "ticker": "Intel",
+      "change": -0.55
     },
     {
-      "ticker": "현대차",
-      "change": 2.14
+      "ticker": "ARM Holdings",
+      "change": -7.98
     }
   ],
-  "summary": "글로벌 증시는 빅테크 실적 기대감과 AI 인프라 확장에 힘입어 S&P500과 나스닥이 사상 최고치를 경신하며 강한 낙관론을 형성하고 있습니다. 다만, 미국과 이란의 교착상태로 인한 유가 상승 등 지정학적 리스크가 잠재적 변동성 요인으로 부상했습니다. 한국 증시 또한 AI 반도체 및 관련 소재주의 강세에 힘입어 견조한 흐름을 이어가고 있습니다.",
+  "summary": "한국 증시는 사상 최고치 경신 행진을 이어가며 강한 상승 모멘텀을 유지하고 있으나, 뉴욕 증시는 빅테크 실적 기대감과 오픈AI 내부 우려 및 반도체 조정 압력이 공존하며 혼조세를 보이고 있습니다. 에너지 가격 상승과 중소형주 연체율 증가 등 거시경제적 불안 요인이 상존하여 투자자들의 신중한 접근이 필요한 시점입니다. 전체적으로 시장은 실적 기반의 차별화 장세가 뚜렷해지며 과열된 종목보다는 실적 가시성이 높은 섹터로 수급이 이동할 것으로 전망됩니다.",
   "news_headlines": [
     {
-      "title": "S&P500·나스닥, 사상 최고치···빅테크 실적 기대감",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vaTNHMXBwQnJ1SmVaLTBnbmRvQ0FRUXZqdTdFVjZzaDhGRkx6VUwtVGtSMkFHVDVMMVN3ODhpWDIySDJsc0Y0anVOcFdIZTl0bXp0TTctSUY5QdIBX0FVX3lxTE51SnVhSkVGZVNZbXJmdDByRzFiOEdaSXNKa3czb0tkVlpBRFdzXzBfcWJoY2V5Q25XNmdRX1N0R25DT2kydWs4MmNCa1NITW1zWUR3bXh6OFI4OHpicHQ4?oc=5"
+      "title": "코스피 이틀 연속 사상 최고치 경신…6641.02 마감",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE50eUdMMlplM3VZMnlucjF4WmJLYWpENUkwZ0Y3SU9HdERhOWlUOXBUYnpzZEpBZGduRTZvSXhkZm1IaGtUdWk0QVgyZm8?oc=5"
     },
     {
-      "title": "‘스마트폰 D램’도 빨아들이는 AI… HBM 이은 삼성전자·SK하이닉스 효자 상품 ‘소캠2’",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOGxuUkZCMFNXVHNtRDFZU2ZkVVQ5NjJDYkNnZGdxczRTSHBzd2NEUHBEZFFQOGZhZGJ2UWh4WXdyUF9SR3RtQ0ZXS3B2YzBxMnd3dks3aXhMTnZRck5QT1ZvZ190dFlwUXNtTDhYay16am5GRUEzZ1NFMXVSVVQ4YTNB?oc=5"
+      "title": "美 S&P500·나스닥 빅테크 실적 앞두고 최고치 마감",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOU0k0LXAtTHUzUDgzcjBKdGFnQTlwbFFTSUQxSloycnVENFBqcjQ3N2djMnhyQ2M3bGlubGtQa0VxM1VKbmVrWk1TclUzSjc2dWdUUk9aNWRUcnPSAWBBVV95cUxQUFVDekRQUElmeGo3dHlBSHpWOVMzVVpSWktYcWMxUVpQM3A3eEUyZllNT1hNNV82eFdUemhKVm1jVHppdlBuY1dpQTdwajF1U0RzR25qYUkxUnNuRk8zbW4?oc=5"
     },
     {
-      "title": "[뉴욕유가] 교착상태에 빠진 美·이란 협상…WTI 2% 상승",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5DTVVQSURaWXYzZmFsMzdSZjNiOGdxTHh3MENzQnVpOGR3ZzdrdTEzNklldjcxZDhONlMtX0RuRm9wRTk4WUFZSzBqcHBfWjQyVnRSeTJjb2RfQzR2Tk5iQ2JzZTFpZDJGY243TTk1RHQ?oc=5"
+      "title": "Nvidia Stock Drops. Why Chip Stocks Keep Getting Hit.",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNkxZUXlIcm1oWFVrS0ZsMWZFX3F3UUFieG5Lc1I0Ql9hX0U4VGJWbU9BYmVYYjF4U3FUSFBYRmd4QS1rWTE2Ymp6RG0yc0h3N2V2bVIzTHpWQ1lrb194X0NnZGM1RnQ0YnNmeFljTWExUmIxd25CamthLTlSNGd4RFdjSUVMclU?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "AI 반도체",
-      "sentiment": "HOT",
-      "reason": "HBM 수요 폭증 및 차세대 D램(소캠2) 도입으로 인한 실적 개선 기대"
-    },
-    {
-      "name": "에너지/전력",
-      "sentiment": "WARM",
-      "reason": "데이터센터 전력 인프라 확장 및 중동 리스크에 따른 유가 상승"
-    },
-    {
-      "name": "바이오",
+      "name": "반도체",
       "sentiment": "NEUTRAL",
-      "reason": "영업이익 급증 사례 등장 및 비만 치료제 시장 경쟁 심화"
+      "reason": "기술적 조정 구간 진입 및 실적 발표 앞두고 변동성 확대"
+    },
+    {
+      "name": "금융/리츠",
+      "sentiment": "COLD",
+      "reason": "중소형 연체율 상승 및 특별검사 이슈로 인한 투자 심리 위축"
+    },
+    {
+      "name": "에너지",
+      "sentiment": "HOT",
+      "reason": "UAE의 OPEC 탈퇴 및 가스 가격 급등에 따른 섹터 관심 증대"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전기",
-      "symbol": "009150.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "Intel",
-      "symbol": "INTC"
+      "name": "스타벅스",
+      "symbol": "SBUX"
     },
     {
-      "name": "ARM Holdings",
-      "symbol": "ARM"
+      "name": "디즈니",
+      "symbol": "DIS"
     }
   ],
   "keywords": [
     {
-      "name": "AI",
-      "weight": 20
-    },
-    {
-      "name": "반도체",
+      "name": "코스피신고가",
       "weight": 15
     },
     {
-      "name": "실적",
+      "name": "빅테크실적",
       "weight": 15
     },
     {
-      "name": "HBM",
+      "name": "반도체조정",
+      "weight": 12
+    },
+    {
+      "name": "에너지상승",
+      "weight": 12
+    },
+    {
+      "name": "실적모멘텀",
       "weight": 10
     },
     {
-      "name": "빅테크",
+      "name": "연체율증가",
       "weight": 10
     },
     {
-      "name": "유가",
-      "weight": 10
+      "name": "오픈AI",
+      "weight": 8
     },
     {
-      "name": "데이터센터",
-      "weight": 10
+      "name": "공급망변화",
+      "weight": 8
     },
     {
-      "name": "지정학적리스크",
+      "name": "금리/인플레이션",
       "weight": 10
     }
   ],
-  "reason": "삼성전기는 AI 빅테크향 매출 확대로 실적 턴어라운드가 기대되나 주가는 장기 박스권 이후 완만한 상승세를 보여 '무릎' 구간으로 판단됩니다. Intel은 CPU 복귀와 함께 AI 파운드리 전환을 시도 중이며, 최근 급락 이후 기술적 반등이 예상되는 저평가 매력을 보유하고 있습니다. ARM은 AI 설계 자산 가치가 재평가되고 있으나 과열권 진입 전의 조정 구간에서 안정적인 우상향 모멘텀을 기대할 수 있습니다.",
-  "push_message": "AI 인프라 확장이 시장을 주도합니다. 삼성전기의 실적 턴어라운드와 Intel의 기술적 반등 가능성에 주목하세요."
+  "reason": "삼성전자는 최근 노조 이슈 등 악재가 존재하나, 주가 30만 원 전망설 등 실적 턴어라운드 기대감이 강해 현재 조정 구간이 장기적 관점에서 '무릎' 위치로 판단됩니다. 스타벅스는 가스 가격 상승 등 원가 부담에도 불구하고 풀-이어 가이던스를 상향하며 턴어라운드 모멘텀을 확인했습니다. 디즈니는 ESPN 분사 계획 철회로 사업 구조 명확성을 확보, 과매수권에서 벗어나 기술적 반등이 기대되는 위치에 있습니다.",
+  "push_message": "[Prism AI] 코스피 신고가 경신 속, 실적 기반 차별화 전략 필요! 삼성전자·스타벅스·디즈니 주가 흐름을 주목하세요."
 }
