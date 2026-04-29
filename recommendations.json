@@ -1,129 +1,125 @@
 {
-  "date": "2026-04-29 08:43",
+  "date": "2026-04-30 08:42",
   "market_info": {
     "KOSPI": {
-      "price": 6615.03,
-      "change": 2.15,
+      "price": 6641.02,
+      "change": 0.39,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1226.18,
-      "change": 1.86,
+      "price": 1215.58,
+      "change": -0.86,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7138.8,
-      "change": -0.49,
+      "price": 7135.95,
+      "change": -0.04,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24663.8,
-      "change": -0.9,
+      "price": 24673.24,
+      "change": 0.04,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전기",
-      "change": 5.67
+      "ticker": "삼성전자",
+      "change": 1.8
     },
     {
-      "ticker": "Intel",
-      "change": -0.55
+      "ticker": "스타벅스",
+      "change": 8.45
     },
     {
-      "ticker": "ARM Holdings",
-      "change": -7.98
+      "ticker": "디즈니",
+      "change": -0.17
     }
   ],
-  "summary": "한국 증시는 사상 최고치 경신 행진을 이어가며 강한 상승 모멘텀을 유지하고 있으나, 뉴욕 증시는 빅테크 실적 기대감과 오픈AI 내부 우려 및 반도체 조정 압력이 공존하며 혼조세를 보이고 있습니다. 에너지 가격 상승과 중소형주 연체율 증가 등 거시경제적 불안 요인이 상존하여 투자자들의 신중한 접근이 필요한 시점입니다. 전체적으로 시장은 실적 기반의 차별화 장세가 뚜렷해지며 과열된 종목보다는 실적 가시성이 높은 섹터로 수급이 이동할 것으로 전망됩니다.",
+  "summary": "글로벌 에너지 위기와 지정학적 긴장감으로 인해 유가가 급등하며 시장의 인플레이션 우려가 재점화되고 있습니다. 주요 빅테크 기업들의 AI 인프라 투자 지속과 성과가 확인되나, 연준의 통화 정책 불확실성과 트럼프 관련 정치적 이슈가 투자 심리를 억누르고 있습니다. 전반적으로 에너지 섹터의 강세와 기술주의 선별적 조정이 공존하는 혼조세 장세가 이어지고 있습니다.",
   "news_headlines": [
     {
-      "title": "코스피 이틀 연속 사상 최고치 경신…6641.02 마감",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE50eUdMMlplM3VZMnlucjF4WmJLYWpENUkwZ0Y3SU9HdERhOWlUOXBUYnpzZEpBZGduRTZvSXhkZm1IaGtUdWk0QVgyZm8?oc=5"
+      "title": "트럼프가 내쫓는 파월 의장, 마지막 작심 비판…“연준 위협 받아”",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5oUDd5RDlLWDlQLTViS0V0OVRKOWtjRDQtQ0hUR3Ryanh2WnROb0F4V1l2SVllVl9Sb2pvQ0wxYV9aN3EySi1zSm9FN1dtbWRxaWNOTnRwMmY0OWFIeGdBOGx5VGZ0TmNuazJFNXMxVQ?oc=5"
     },
     {
-      "title": "美 S&P500·나스닥 빅테크 실적 앞두고 최고치 마감",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOU0k0LXAtTHUzUDgzcjBKdGFnQTlwbFFTSUQxSloycnVENFBqcjQ3N2djMnhyQ2M3bGlubGtQa0VxM1VKbmVrWk1TclUzSjc2dWdUUk9aNWRUcnPSAWBBVV95cUxQUFVDekRQUElmeGo3dHlBSHpWOVMzVVpSWktYcWMxUVpQM3A3eEUyZllNT1hNNV82eFdUemhKVm1jVHppdlBuY1dpQTdwajF1U0RzR25qYUkxUnNuRk8zbW4?oc=5"
+      "title": "[뉴욕유가] 호르무즈 봉쇄 길어지나…WTI 3주來 최고",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1hODBjakJmVG9DOXhBeVdtMWgxY3EtQVZSbjBJY3QwOW5WZkRNU2xOVUJYaHg2eDM4RElLYzNoUkQwOGRqOVVzc0R4RTRpMWozRDQxd0NJQi1QVGt4WmtkMkJ4QldRQmdSdVhHMTk0MmE?oc=5"
     },
     {
-      "title": "Nvidia Stock Drops. Why Chip Stocks Keep Getting Hit.",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNkxZUXlIcm1oWFVrS0ZsMWZFX3F3UUFieG5Lc1I0Ql9hX0U4VGJWbU9BYmVYYjF4U3FUSFBYRmd4QS1rWTE2Ymp6RG0yc0h3N2V2bVIzTHpWQ1lrb194X0NnZGM1RnQ0YnNmeFljTWExUmIxd25CamthLTlSNGd4RFdjSUVMclU?oc=5"
+      "title": "배 엔진이 AI 서버 돌린다, HD현대 AI 인프라 기업으로",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWF9NbkRWSG9kOTVmdFctenpyc2tKYWxna3QzN1g4MTU3cW5WVEhCc1B3NDhVSTVVRmlKMUNuNG5Fa1d2di1qQnlKYnE0X2htc19DVFFBUkJhR29yMHJzaGhQa3gxblVMQTlUdm5JaTFNVU5zYWFaYnlSN1dnaDhUMHBMdUFVLW100gGcAUFVX3lxTE1feEVEMDhjZFFmeVNWR1lMNzJmREZtQlR5VVZQVXNYblBGSWo5MlN5Z0dvc3hIR01fRTA0TXNwQjdUNkVUX2JqME5kRnRNTGduS0JuVWNMWGFrRnhvOHQxYUVMTUdNWUNNSXV3OUVIUnZFOVpCV0tTb1ctbVZ3cm5pcm16ZlFqZWc3Q1NENlZsYnFCZ2NCbTFVYUJtNg?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체",
-      "sentiment": "NEUTRAL",
-      "reason": "기술적 조정 구간 진입 및 실적 발표 앞두고 변동성 확대"
-    },
-    {
-      "name": "금융/리츠",
-      "sentiment": "COLD",
-      "reason": "중소형 연체율 상승 및 특별검사 이슈로 인한 투자 심리 위축"
-    },
-    {
       "name": "에너지",
       "sentiment": "HOT",
-      "reason": "UAE의 OPEC 탈퇴 및 가스 가격 급등에 따른 섹터 관심 증대"
+      "reason": "호르무즈 봉쇄 및 OPEC 탈퇴 이슈로 인한 공급망 불안과 유가 급등"
+    },
+    {
+      "name": "AI 인프라",
+      "sentiment": "HOT",
+      "reason": "빅테크 기업들의 막대한 자본 지출(Capex) 및 클라우드 성장 지속"
+    },
+    {
+      "name": "금융/은행",
+      "sentiment": "COLD",
+      "reason": "연준 의장 교체 및 정치적 압박에 따른 통화 정책 불확실성 증대"
     }
   ],
   "tickers": [
     {
-      "name": "삼성전자",
-      "symbol": "005930.KS"
+      "name": "HD현대중공업",
+      "symbol": "329180.KS"
     },
     {
-      "name": "스타벅스",
-      "symbol": "SBUX"
+      "name": "Alphabet Inc.",
+      "symbol": "GOOGL"
     },
     {
-      "name": "디즈니",
-      "symbol": "DIS"
+      "name": "Exxon Mobil",
+      "symbol": "XOM"
     }
   ],
   "keywords": [
     {
-      "name": "코스피신고가",
-      "weight": 15
+      "name": "AI 인프라",
+      "weight": 20
     },
     {
-      "name": "빅테크실적",
-      "weight": 15
+      "name": "유가 상승",
+      "weight": 18
     },
     {
-      "name": "반도체조정",
+      "name": "연준 파월",
       "weight": 12
     },
     {
-      "name": "에너지상승",
+      "name": "지정학적 리스크",
       "weight": 12
     },
     {
-      "name": "실적모멘텀",
+      "name": "빅테크 투자",
       "weight": 10
     },
     {
-      "name": "연체율증가",
-      "weight": 10
-    },
-    {
-      "name": "오픈AI",
+      "name": "글로벌 공급망",
       "weight": 8
     },
     {
-      "name": "공급망변화",
+      "name": "트럼프 효과",
       "weight": 8
     },
     {
-      "name": "금리/인플레이션",
-      "weight": 10
+      "name": "OPEC 탈퇴",
+      "weight": 12
     }
   ],
-  "reason": "삼성전자는 최근 노조 이슈 등 악재가 존재하나, 주가 30만 원 전망설 등 실적 턴어라운드 기대감이 강해 현재 조정 구간이 장기적 관점에서 '무릎' 위치로 판단됩니다. 스타벅스는 가스 가격 상승 등 원가 부담에도 불구하고 풀-이어 가이던스를 상향하며 턴어라운드 모멘텀을 확인했습니다. 디즈니는 ESPN 분사 계획 철회로 사업 구조 명확성을 확보, 과매수권에서 벗어나 기술적 반등이 기대되는 위치에 있습니다.",
-  "push_message": "[Prism AI] 코스피 신고가 경신 속, 실적 기반 차별화 전략 필요! 삼성전자·스타벅스·디즈니 주가 흐름을 주목하세요."
+  "reason": "HD현대중공업은 전통적인 조선업을 넘어 AI 데이터센터 냉각 및 전력 인프라 전환의 수혜주로, 최근 사상 최고치 경신 흐름 속에서 조정을 거친 후 재도약 단계에 있어 기술적으로 매력적입니다. GOOGL은 클라우드 매출 급증으로 실적 모멘텀이 확인되었으며, 과매수권에서 조정받은 상태라 추가 상승 여력이 충분합니다. XOM은 호르무즈 사태로 인한 에너지 가격 강세의 직접적인 수혜주로, 완만한 상승 추세를 유지하고 있어 안정적인 포트폴리오를 제공합니다.",
+  "push_message": "유가 급등과 AI 인프라 투자 가속화! HD현대중공업, 구글, 엑손모빌에 주목하세요."
 }
