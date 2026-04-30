@@ -1,125 +1,125 @@
 {
-  "date": "2026-04-30 08:42",
+  "date": "2026-05-01 08:40",
   "market_info": {
     "KOSPI": {
-      "price": 6641.02,
-      "change": 0.39,
+      "price": NaN,
+      "change": NaN,
       "is_open": false,
       "status": "⚪"
     },
     "KOSDAQ": {
-      "price": 1215.58,
-      "change": -0.86,
+      "price": 1220.26,
+      "change": 0.39,
       "is_open": false,
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7135.95,
-      "change": -0.04,
+      "price": 7209.01,
+      "change": 1.02,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 24673.24,
-      "change": 0.04,
+      "price": 24892.31,
+      "change": 0.89,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": 1.8
+      "ticker": "HD현대중공업",
+      "change": -0.72
     },
     {
-      "ticker": "스타벅스",
-      "change": 8.45
+      "ticker": "Alphabet Inc.",
+      "change": 9.96
     },
     {
-      "ticker": "디즈니",
-      "change": -0.17
+      "ticker": "Exxon Mobil",
+      "change": -0.22
     }
   ],
-  "summary": "글로벌 에너지 위기와 지정학적 긴장감으로 인해 유가가 급등하며 시장의 인플레이션 우려가 재점화되고 있습니다. 주요 빅테크 기업들의 AI 인프라 투자 지속과 성과가 확인되나, 연준의 통화 정책 불확실성과 트럼프 관련 정치적 이슈가 투자 심리를 억누르고 있습니다. 전반적으로 에너지 섹터의 강세와 기술주의 선별적 조정이 공존하는 혼조세 장세가 이어지고 있습니다.",
+  "summary": "미국 증시는 이란발 지정학적 리스크에도 불구하고 주요 기업들의 실적 호조와 AI 모멘텀이 지수를 사상 최고치로 견인하며 강력한 투자 심리를 유지하고 있습니다. 반면, 국제유가 급등에 따른 인플레이션 우려가 시장의 상단을 제한하는 요인으로 작용하며 변동성이 확대되는 모습입니다. 한국 시장은 이러한 대외 악재와 국내 주요 기업의 파업 리스크가 복합적으로 작용하며 신중한 접근이 필요한 국면입니다.",
   "news_headlines": [
     {
-      "title": "트럼프가 내쫓는 파월 의장, 마지막 작심 비판…“연준 위협 받아”",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5oUDd5RDlLWDlQLTViS0V0OVRKOWtjRDQtQ0hUR3Ryanh2WnROb0F4V1l2SVllVl9Sb2pvQ0wxYV9aN3EySi1zSm9FN1dtbWRxaWNOTnRwMmY0OWFIeGdBOGx5VGZ0TmNuazJFNXMxVQ?oc=5"
+      "title": "이란전 공포 넘은 美 증시, S&P500·나스닥 사상 최고치 경신",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLXRkdWI0dWNNZUY0MnZENzJSRGdEaW9QR0VGVndRWUM5aGxSbHU4V091TnYxNWVFakF1eTFXUk85ZVY3S2MxZDF3VUdqWUs1Y29HbkxKTUMtUHNQS1ZWMmt0TnRHeTBkMGtEVWRrY01UVnI2TGZlSVJXRzZKNHNNcTZLeVFOZldleGZPYWQ2UWVqSDBnaTBleVQwMUF2QQ?oc=5"
     },
     {
-      "title": "[뉴욕유가] 호르무즈 봉쇄 길어지나…WTI 3주來 최고",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1hODBjakJmVG9DOXhBeVdtMWgxY3EtQVZSbjBJY3QwOW5WZkRNU2xOVUJYaHg2eDM4RElLYzNoUkQwOGRqOVVzc0R4RTRpMWozRDQxd0NJQi1QVGt4WmtkMkJ4QldRQmdSdVhHMTk0MmE?oc=5"
+      "title": "국제유가, 4년 만에 최고치…트럼프 ‘이란 공격 재개 검토’ 영향",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRGxHQWdUZmFGa1hOd29ZTGNOLXhLMGZReXZycEhscDl4dUVmRDBkT0ZUWGMtLWZuT09ZeVdLVkh2TmY4akV5M0VJd19ESUhhOGc3aElTN1FHeS16UkN2NE5DWWgxamVLRkJuUzJMbDZQd2QtQ2tFVnBrVllQSUZJa1Jn?oc=5"
     },
     {
-      "title": "배 엔진이 AI 서버 돌린다, HD현대 AI 인프라 기업으로",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWF9NbkRWSG9kOTVmdFctenpyc2tKYWxna3QzN1g4MTU3cW5WVEhCc1B3NDhVSTVVRmlKMUNuNG5Fa1d2di1qQnlKYnE0X2htc19DVFFBUkJhR29yMHJzaGhQa3gxblVMQTlUdm5JaTFNVU5zYWFaYnlSN1dnaDhUMHBMdUFVLW100gGcAUFVX3lxTE1feEVEMDhjZFFmeVNWR1lMNzJmREZtQlR5VVZQVXNYblBGSWo5MlN5Z0dvc3hIR01fRTA0TXNwQjdUNkVUX2JqME5kRnRNTGduS0JuVWNMWGFrRnhvOHQxYUVMTUdNWUNNSXV3OUVIUnZFOVpCV0tTb1ctbVZ3cm5pcm16ZlFqZWc3Q1NENlZsYnFCZ2NCbTFVYUJtNg?oc=5"
+      "title": "미국 1분기 성장률 2.0%로 회복…AI 투자가 성장견인",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ic2VieDdlWHRLaXlVbGJ4akJwdFc1b2tOV1RPTGNzRFRLb3JuSW80eTQwNWFmSEJBNlFsdzJRMzBzYy1NQzdkVXVqVGxZQ2pXVU9FMC0tamhNZUF4Z2V5U1NlNU8wcWlCdzJRcE1qdnV1ZXFC?oc=5"
     }
   ],
   "sectors": [
     {
+      "name": "AI/반도체",
+      "sentiment": "HOT",
+      "reason": "실적 견인 및 경제 성장 핵심 동력 확인"
+    },
+    {
       "name": "에너지",
       "sentiment": "HOT",
-      "reason": "호르무즈 봉쇄 및 OPEC 탈퇴 이슈로 인한 공급망 불안과 유가 급등"
+      "reason": "지정학적 리스크로 인한 유가 급등세"
     },
     {
-      "name": "AI 인프라",
-      "sentiment": "HOT",
-      "reason": "빅테크 기업들의 막대한 자본 지출(Capex) 및 클라우드 성장 지속"
-    },
-    {
-      "name": "금융/은행",
-      "sentiment": "COLD",
-      "reason": "연준 의장 교체 및 정치적 압박에 따른 통화 정책 불확실성 증대"
+      "name": "헬스케어",
+      "sentiment": "NEUTRAL",
+      "reason": "AI 기술 접목으로 인한 생산성 혁신 가능성 주목"
     }
   ],
   "tickers": [
     {
-      "name": "HD현대중공업",
-      "symbol": "329180.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "Alphabet Inc.",
+      "name": "Alphabet (Google)",
       "symbol": "GOOGL"
     },
     {
-      "name": "Exxon Mobil",
-      "symbol": "XOM"
+      "name": "Rivian Automotive",
+      "symbol": "RIVN"
     }
   ],
   "keywords": [
     {
-      "name": "AI 인프라",
+      "name": "AI투자",
       "weight": 20
     },
     {
-      "name": "유가 상승",
+      "name": "국제유가",
       "weight": 18
     },
     {
-      "name": "연준 파월",
+      "name": "지정학적위기",
+      "weight": 15
+    },
+    {
+      "name": "사상최고치",
       "weight": 12
     },
     {
-      "name": "지정학적 리스크",
-      "weight": 12
-    },
-    {
-      "name": "빅테크 투자",
+      "name": "기업실적",
       "weight": 10
     },
     {
-      "name": "글로벌 공급망",
+      "name": "금리정책",
+      "weight": 9
+    },
+    {
+      "name": "인플레이션",
       "weight": 8
     },
     {
-      "name": "트럼프 효과",
+      "name": "전기차",
       "weight": 8
-    },
-    {
-      "name": "OPEC 탈퇴",
-      "weight": 12
     }
   ],
-  "reason": "HD현대중공업은 전통적인 조선업을 넘어 AI 데이터센터 냉각 및 전력 인프라 전환의 수혜주로, 최근 사상 최고치 경신 흐름 속에서 조정을 거친 후 재도약 단계에 있어 기술적으로 매력적입니다. GOOGL은 클라우드 매출 급증으로 실적 모멘텀이 확인되었으며, 과매수권에서 조정받은 상태라 추가 상승 여력이 충분합니다. XOM은 호르무즈 사태로 인한 에너지 가격 강세의 직접적인 수혜주로, 완만한 상승 추세를 유지하고 있어 안정적인 포트폴리오를 제공합니다.",
-  "push_message": "유가 급등과 AI 인프라 투자 가속화! HD현대중공업, 구글, 엑손모빌에 주목하세요."
+  "reason": "삼성전자는 파업 이슈로 인해 단기적 조정을 거치며 기술적 매수 구간인 '무릎' 위치에 진입했습니다. 구글(GOOGL)은 강력한 실적과 AI 주도권을 바탕으로 완만한 상승 추세를 유지하고 있으며, 리비안(RIVN)은 생산 능력 50% 확대 발표를 통해 실적 턴어라운드가 기대되는 저평가 구간에 있습니다.",
+  "push_message": "[Prism AI] 시장은 AI 모멘텀이 견인하는 사상 최고치를 기록 중이나, 지정학적 유가 급등에 따른 인플레 압박이 공존합니다. 삼성전자, GOOGL, RIVN을 통해 기술 혁신과 실적 모멘텀에 집중하세요."
 }

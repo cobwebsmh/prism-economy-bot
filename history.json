@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-03-31 08:25",
-    "performance": [
-      {
-        "ticker": "삼성전자",
-        "change": -2.11
-      },
-      {
-        "ticker": "엑손모빌",
-        "change": 0.28
-      },
-      {
-        "ticker": "코카콜라",
-        "change": 0.74
-      }
-    ],
-    "predictions": [
-      "S-Oil",
-      "Exxon Mobil",
-      "Chevron"
-    ]
-  },
-  {
     "date": "2026-04-01 08:22",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "HD현대중공업",
       "Alphabet Inc.",
       "Exxon Mobil"
+    ]
+  },
+  {
+    "date": "2026-05-01 08:40",
+    "performance": [
+      {
+        "ticker": "HD현대중공업",
+        "change": -0.72
+      },
+      {
+        "ticker": "Alphabet Inc.",
+        "change": 9.96
+      },
+      {
+        "ticker": "Exxon Mobil",
+        "change": -0.22
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "Alphabet (Google)",
+      "Rivian Automotive"
     ]
   }
 ]
