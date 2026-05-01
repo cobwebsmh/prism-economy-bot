@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-04-01 08:22",
-    "performance": [
-      {
-        "ticker": "S-Oil",
-        "change": -4.36
-      },
-      {
-        "ticker": "Exxon Mobil",
-        "change": -1.06
-      },
-      {
-        "ticker": "Chevron",
-        "change": -1.81
-      }
-    ],
-    "predictions": [
-      "삼성바이오로직스",
-      "NVIDIA",
-      "Nike"
-    ]
-  },
-  {
     "date": "2026-04-02 08:26",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전자",
       "Alphabet (Google)",
       "Rivian Automotive"
+    ]
+  },
+  {
+    "date": "2026-05-02 08:40",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -2.43
+      },
+      {
+        "ticker": "Alphabet (Google)",
+        "change": 0.23
+      },
+      {
+        "ticker": "Rivian Automotive",
+        "change": -8.41
+      }
+    ],
+    "predictions": [
+      "삼성SDI",
+      "Alphabet (Google)",
+      "Microsoft"
     ]
   }
 ]
