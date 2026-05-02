@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-02 08:40",
+  "date": "2026-05-03 08:32",
   "market_info": {
     "KOSPI": {
       "price": 6598.87,
@@ -28,98 +28,98 @@
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -2.43
+      "ticker": "삼성SDI",
+      "change": -2.39
     },
     {
       "ticker": "Alphabet (Google)",
       "change": 0.23
     },
     {
-      "ticker": "Rivian Automotive",
-      "change": -8.41
+      "ticker": "Microsoft",
+      "change": 1.63
     }
   ],
-  "summary": "글로벌 증시는 빅테크 중심의 AI 모멘텀과 이란발 지정학적 리스크 완화 기대감이 교차하며 사상 최고치를 경신하는 강세를 보였습니다. 반면, 한국 증시는 유가 급등과 대내외 경제 불확실성으로 인해 하락 마감하며 기술적 조정 구간에 진입했습니다. 주말 동안 투자자들은 에너지 가격 변동성과 AI 인프라 투자 지속 여부에 촉각을 곤두세우고 있습니다.",
+  "summary": "글로벌 증시는 AI 기술 주도의 강세장이 이어지는 가운데, 버크셔 해서웨이의 기록적인 현금 보유와 같은 보수적 관망세가 시장의 변동성을 완충하고 있습니다. 노동절 연휴 이후 고용 지표와 긴축 기조에 대한 우려가 상존하지만, 수출 역대 최대치 기록 등 견고한 펀더멘털이 하방 경직성을 확보하고 있습니다. 주말 동안 발표된 지정학적·거시경제적 뉴스들은 투자자들에게 기술적 숨 고르기와 함께 저평가된 성장주를 찾는 신중한 접근을 요구하고 있습니다.",
   "news_headlines": [
     {
-      "title": "S&P 500·나스닥, 이란 새 협상안·빅테크 덕에 최고치 경신",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9DcHZzUGpTT0tLbm9tbVd4OTg5SVlsM29UX0VMZV9KdGdaaG1fenQzU2c1WFR5S0RlUWhqUmlKYkYtWWdVY0k0SnVDdnBzcEE4eWo0UWwtWVBaOWZQS2c?oc=5"
+      "title": "[AI혁명] AI 역량 평가 글로벌 표준 만들 것…코드프레소",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE04VmtQZTdkZkNoMzRBSWxjWkJkSnRjdURRX28wM3JnbGZYdEUyQjZDM21GN1lPLTVlVy1SVWQyZ192VnFDQmtXVklEZWtNZUNFV3I0?oc=5"
     },
     {
-      "title": "연1조 시장 열리는 美 방산배터리…중국산 일단 아웃, K배터리 표정관리",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ncDh1TDBudG1NZGRRT0QwMzRHYWtrUjE5LVZ0TmZ6TmduZ0o4UUl1X0JRTUg5NmhyeGEzSWd2ZnZOSk1jWjMtTmFqcTZkcHpjOEU2MHB3?oc=5"
+      "title": "4월 수출 859억달러 '역대 최대'…반도체·SSD, 美·中 수출 ↑",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9HdFNMeTY0bWdSMDlJWC1uNmtWS2Z5NThLWDNCR1NMbkxpS1hmRnZNVFRwcEhOZExfN1lrT3lJSVB2bF84aUJnTzVnVThkZw?oc=5"
     },
     {
-      "title": "Top AI companies agree to work with Pentagon on secret data",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVDcxSEctWHMtbkZwdUo5Q2ZBWXF0T0Y5Ql9HX2huMF83UXg1eW9va0I3TV93X25sYWpnYzZkU29uTXJYdUJOdjI1dnAtUzdFYnNNczNCZDdRcTBOYlREVTlBQkRLVlZYR0s2R3AyUTFEVUI5RnkydkdYNzBpNjdQaUtwMHlCanczQjY0M3hfYUNLanRhbGhHRE4zUEpfU3VxVTNCbVU4bjBBejVOUHVkaVdoRzROdw?oc=5"
+      "title": "새 CEO 맞은 버크셔, 현금보유액 ′사상 최대′ 590조원 비축",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBiTHhrbndCYVlvS3ZhRGRxaDdUNDFJd2t0NGlkZUxEOW1TZjRYWW9pT0tKQmNnQS1pT2I2MXhkTWFpdERqWmNweUFGNUp4cnN5bVlNeE1tWjRlRzgtM2VDWlZFdFc?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "AI/반도체",
+      "name": "인공지능(AI)",
       "sentiment": "HOT",
-      "reason": "빅테크 중심의 데이터센터 인프라 투자 가속화 및 국방 분야 AI 도입 확대"
+      "reason": "정부/기업의 군사·산업적 활용 가속화 및 기술 표준화 경쟁 심화"
     },
     {
-      "name": "이차전지/방산",
+      "name": "반도체",
       "sentiment": "HOT",
-      "reason": "미국 방산 배터리 공급망 재편으로 인한 K-배터리 수혜 기대감"
+      "reason": "수출 데이터가 증명하는 실질적 수요 급증과 산업 호황기 지속"
     },
     {
-      "name": "에너지",
-      "sentiment": "COOL",
-      "reason": "이란 협상안 등으로 인한 유가 변동성 확대 및 기업 실적 둔화 우려"
+      "name": "소비재/럭셔리",
+      "sentiment": "NEUTRAL",
+      "reason": "스몰 럭셔리 트렌드 지속으로 인한 매출 방어력 입증"
     }
   ],
   "tickers": [
     {
-      "name": "삼성SDI",
-      "symbol": "006400.KS"
+      "name": "삼성전자",
+      "symbol": "005930.KS"
     },
     {
-      "name": "Alphabet (Google)",
+      "name": "버크셔 해서웨이",
+      "symbol": "BRK-B"
+    },
+    {
+      "name": "알파벳(구글)",
       "symbol": "GOOGL"
-    },
-    {
-      "name": "Microsoft",
-      "symbol": "MSFT"
     }
   ],
   "keywords": [
     {
-      "name": "AI인프라",
+      "name": "AI혁명",
       "weight": 20
     },
     {
-      "name": "빅테크",
+      "name": "반도체수출",
+      "weight": 18
+    },
+    {
+      "name": "버크셔현금",
       "weight": 15
     },
     {
-      "name": "방산배터리",
-      "weight": 15
-    },
-    {
-      "name": "국제유가",
+      "name": "금리/긴축",
       "weight": 12
     },
     {
-      "name": "미국증시",
+      "name": "인건비/노조",
       "weight": 10
     },
     {
-      "name": "공급망",
-      "weight": 10
-    },
-    {
-      "name": "실적",
+      "name": "국제유가",
       "weight": 9
     },
     {
-      "name": "금리",
-      "weight": 9
+      "name": "스몰럭셔리",
+      "weight": 8
+    },
+    {
+      "name": "글로벌표준",
+      "weight": 8
     }
   ],
-  "reason": "삼성SDI는 최근 조정으로 가격 메리트가 발생한 '무릎' 위치로, 미국 방산 배터리 시장 진출에 따른 장기적 수혜가 예상됩니다. GOOGL과 MSFT는 AI 컴퓨팅 파워를 주도하는 핵심 기업으로, 신고가 갱신 후의 견고한 모멘텀을 유지하고 있어 상승 추세 편승 전략이 유효합니다.",
-  "push_message": "[프리즘 AI] 글로벌 AI 모멘텀 지속, 주말간 방산배터리/빅테크 중심 전략적 포트폴리오 재점검 필요."
+  "reason": "삼성전자는 노조 갈등 이슈로 인해 주가가 일시적 조정 구간(무릎)에 진입해 있으나, 4월 반도체 수출 실적 등 펀더멘털은 견고하여 반등 모멘텀이 충분합니다. 버크셔 해서웨이(BRK-B)는 시장의 불확실성 속에서 사상 최대 현금을 보유하며 방어주로서의 가치가 극대화되어 안전한 포트폴리오를 구성합니다. 구글(GOOGL)은 AI 비서 및 검색 혁신을 통해 기술주 밸류에이션 리레이팅이 예상되는 시점으로, 과매수 구간을 피해 완만한 상승세를 탈 것으로 기대됩니다.",
+  "push_message": "주말 시장 분석 완료: 반도체 수출 사상 최대, AI 관련주 저가 매수 기회 포착 및 버크셔 방어 전략 확인 필요."
 }

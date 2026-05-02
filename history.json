@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-04-02 08:26",
-    "performance": [
-      {
-        "ticker": "삼성바이오로직스",
-        "change": 4.52
-      },
-      {
-        "ticker": "NVIDIA",
-        "change": 0.77
-      },
-      {
-        "ticker": "Nike",
-        "change": -15.51
-      }
-    ],
-    "predictions": [
-      "롯데바이오로직스(관련주: 롯데지주)",
-      "Eli Lilly",
-      "Oracle"
-    ]
-  },
-  {
     "date": "2026-04-04 08:23",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성SDI",
       "Alphabet (Google)",
       "Microsoft"
+    ]
+  },
+  {
+    "date": "2026-05-03 08:32",
+    "performance": [
+      {
+        "ticker": "삼성SDI",
+        "change": -2.39
+      },
+      {
+        "ticker": "Alphabet (Google)",
+        "change": 0.23
+      },
+      {
+        "ticker": "Microsoft",
+        "change": 1.63
+      }
+    ],
+    "predictions": [
+      "삼성전자",
+      "버크셔 해서웨이",
+      "알파벳(구글)"
     ]
   }
 ]
