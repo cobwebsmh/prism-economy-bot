@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-04-04 08:23",
-    "performance": [
-      {
-        "ticker": "롯데바이오로직스(관련주: 롯데지주)",
-        "change": 0.37
-      },
-      {
-        "ticker": "Eli Lilly",
-        "change": -1.98
-      },
-      {
-        "ticker": "Oracle",
-        "change": 0.79
-      }
-    ],
-    "predictions": [
-      "한화에어로스페이스",
-      "일라이 릴리",
-      "엑손 모빌"
-    ]
-  },
-  {
     "date": "2026-04-05 08:19",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "삼성전자",
       "버크셔 해서웨이",
       "알파벳(구글)"
+    ]
+  },
+  {
+    "date": "2026-05-04 08:32",
+    "performance": [
+      {
+        "ticker": "삼성전자",
+        "change": -2.43
+      },
+      {
+        "ticker": "버크셔 해서웨이",
+        "change": -0.12
+      },
+      {
+        "ticker": "알파벳(구글)",
+        "change": 0.23
+      }
+    ],
+    "predictions": [
+      "알테오젠",
+      "AMD",
+      "Alphabet"
     ]
   }
 ]
