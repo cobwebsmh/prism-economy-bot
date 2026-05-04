@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-04-05 08:19",
-    "performance": [
-      {
-        "ticker": "한화에어로스페이스",
-        "change": 2.26
-      },
-      {
-        "ticker": "일라이 릴리",
-        "change": -1.98
-      },
-      {
-        "ticker": "엑손 모빌",
-        "change": -0.06
-      }
-    ],
-    "predictions": [
-      "삼성전자",
-      "엑손모빌",
-      "록히드마틴"
-    ]
-  },
-  {
     "date": "2026-04-06 08:22",
     "performance": [
       {
@@ -653,6 +631,28 @@
       "알테오젠",
       "AMD",
       "Alphabet"
+    ]
+  },
+  {
+    "date": "2026-05-05 08:41",
+    "performance": [
+      {
+        "ticker": "알테오젠",
+        "change": 1.22
+      },
+      {
+        "ticker": "AMD",
+        "change": -5.27
+      },
+      {
+        "ticker": "Alphabet",
+        "change": -0.63
+      }
+    ],
+    "predictions": [
+      "삼성전기",
+      "Palantir Technologies",
+      "Eli Lilly"
     ]
   }
 ]

@@ -1,9 +1,9 @@
 {
-  "date": "2026-05-04 08:32",
+  "date": "2026-05-05 08:41",
   "market_info": {
     "KOSPI": {
-      "price": 6598.87,
-      "change": -1.38,
+      "price": NaN,
+      "change": NaN,
       "is_open": false,
       "status": "⚪"
     },
@@ -14,81 +14,80 @@
       "status": "⚪"
     },
     "S&P500": {
-      "price": 7230.12,
-      "change": 0.29,
+      "price": 7200.75,
+      "change": -0.41,
       "is_open": false,
       "status": "⚪"
     },
     "NASDAQ": {
-      "price": 25114.44,
-      "change": 0.89,
+      "price": 25067.8,
+      "change": -0.19,
       "is_open": false,
       "status": "⚪"
     }
   },
   "past_results": [
     {
-      "ticker": "삼성전자",
-      "change": -2.43
+      "ticker": "알테오젠",
+      "change": 1.22
     },
     {
-      "ticker": "버크셔 해서웨이",
-      "change": -0.12
+      "ticker": "AMD",
+      "change": -5.27
     },
     {
-      "ticker": "알파벳(구글)",
-      "change": 0.23
+      "ticker": "Alphabet",
+      "change": -0.63
     }
   ],
-  "summary": "글로벌 시장은 중동 지역의 지정학적 리스크가 공급망과 물류에 지속적인 압박을 가하는 가운데, AI 기술의 실질적인 산업 도입이 가속화되면서 투자자들의 선별적 접근이 요구되는 국면입니다. 한국 증시는 수출 신기록이라는 견고한 펀더멘털을 바탕으로 반도체와 IT 중심의 반등 기회를 모색하고 있습니다. 미국 시장은 고용 및 물류 불확실성 속에서도 기술주 중심의 완만한 회복세를 보이며 변동성에 대비한 보수적 대응이 관찰됩니다.",
+  "summary": "글로벌 지정학적 리스크 심화로 인한 유가 급등과 물가 압력이 시장의 주요 변수로 작용하며 투자 심리가 경계 모드로 전환되고 있습니다. 반면, AI와 반도체 섹터는 기술주 중심의 강력한 실적 기대감을 바탕으로 시장의 하단을 견고하게 지지하는 이중적인 모습을 보입니다. 금리 인상론 대두와 파업 리스크 등 내부 잡음이 존재하나, 핵심 산업의 성장 모멘텀이 지수를 방어하는 국면입니다.",
   "news_headlines": [
     {
-      "title": "韓 수출, 중동 리스크 뚫고 신기록…반도체·IT가 이끌었다",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Yc20wNHU1cWhKZ1YteUQtS3JGVVFLa2xSR243dy0xeDlqQ1A0eUN6WWxiNTVlVGRlbG9CaFgwX09WMWZER0NuRlNUYmFlbzV2N3gxUEdqWU9LVXFKRWFKeTZ2azhLbE5CbGk1SFd6cV9pUTA?oc=5"
+      "title": "이란전 휴전 붕괴 위기 직격탄…국제 유가 5.8% 급등 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNjlNb1VQZmNVbTdTQjl4NHFFZkp0VlRYQ0dKTUhIcFRJcDhYY3l5eDliMWN5Sm41NzQweHNQckNKZk1mbUR5Sng0ZU9FeVhzZWJDNWtVN0hMN09sZ2xtSVMzcGFFdjlCbVNHdGtUTC1XVlhzUWZWbmpYdmV2MTlRVUFrd2N1Q2p2b3RsSXg0UGtIN0tUY1JWaWY2Tlphdw?oc=5"
     },
     {
-      "title": "[Bio Story]'지역의 힘' 딛고 세계로 뛰어오른 알테오젠",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0xVDBreE5rQ1Zkb2w1N3Vtc0R3b3EwYm96WDRUdHNvQ0YyT21iQ1V0RW5XR0pzYTdramx6WU1UX2duVDgwYlJkbHhoLVF5UUFqQWFUMWh2U09XbEpWQTR0cg?oc=5"
+      "title": "물가상승 압력에… 한은 부총재 “금리인상 고민할때” - 동아일보",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8tU1l1c1RXZWdqT0lqLXE1MDlEZXJsNWV2QnB1alVOSTlmQjlfOVhUaDh5TW1XVGxwejFmVk9yMzVOZHY4VUEzVEtQazVXMXVjcE1XaGk5OXR4aGJ0ZFVLaTQ1dzQzM3ZCZTgwRlQ2bHlyOEJlSmfSAWZBVV95cUxPbHVFeE5zeHR5VW40Q3pTRzZ0THAtREZEQUhnLThXaVBPOFNFSGhJYzRYNXNUSHljLTRycnlrOG1JYnNvZVNuSEI1b19XSDF5X2xUZ0pRMXdPejdmQ3l2T00xR3FsOFE?oc=5"
+    },
+    {
+      "title": "“지금 올라타도 안 늦었다”…AI 수요 폭증에 삼성전기 목표가 100만원 - 매일경제",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pOFRVdm1hMGxiNS1FSm1yOHRXVUhVOVU0dExFb29za29VSTFGTWg3Z0lYdTc3SmpYN2lTMXRwMjdlemx6YTdQelhSbkV5bmlLR3c?oc=5"
     }
   ],
   "sectors": [
     {
-      "name": "반도체/IT",
+      "name": "AI/반도체",
       "sentiment": "HOT",
-      "reason": "수출 데이터가 증명하는 강력한 수요와 AI 인프라 확산의 직접적 수혜"
+      "reason": "AI 수요 폭증 및 삼성전기 등 관련주 실적 기대감 지속"
     },
     {
-      "name": "바이오/제약",
-      "sentiment": "STABLE",
-      "reason": "글로벌 기술 수출 성과와 함께 구조적 성장세 지속"
-    },
-    {
-      "name": "에너지/운송",
-      "sentiment": "BEARISH",
-      "reason": "중동 분쟁 리스크에 따른 물류 비용 상승과 공급망 불안"
+      "name": "에너지",
+      "sentiment": "HOT",
+      "reason": "이란 휴전 붕괴로 인한 국제 유가 5.8% 급등"
     }
   ],
   "tickers": [
     {
-      "name": "알테오젠",
-      "symbol": "196170.KQ"
+      "name": "삼성전기",
+      "symbol": "009150.KS"
     },
     {
-      "name": "AMD",
-      "symbol": "AMD"
+      "name": "Palantir Technologies",
+      "symbol": "PLTR"
     },
     {
-      "name": "Alphabet",
-      "symbol": "GOOGL"
+      "name": "Eli Lilly",
+      "symbol": "LLY"
     }
   ],
   "keywords": [
     {
-      "name": "수출신기록",
-      "weight": 15
+      "name": "AI",
+      "weight": 20
     },
     {
-      "name": "AI도입",
+      "name": "유가급등",
       "weight": 15
     },
     {
@@ -96,30 +95,26 @@
       "weight": 15
     },
     {
+      "name": "금리인상",
+      "weight": 10
+    },
+    {
       "name": "반도체",
-      "weight": 12
-    },
-    {
-      "name": "공급망",
       "weight": 10
     },
     {
-      "name": "바이오",
+      "name": "물가압력",
       "weight": 10
     },
     {
-      "name": "상속세",
-      "weight": 8
+      "name": "실적호조",
+      "weight": 10
     },
     {
-      "name": "운송물류",
-      "weight": 8
-    },
-    {
-      "name": "금리",
-      "weight": 7
+      "name": "기타",
+      "weight": 10
     }
   ],
-  "reason": "알테오젠(196170.KQ)은 기술 수출 모멘텀 이후 최근 건전한 조정과 횡보를 거쳐 추세적 상승의 '무릎' 구간에 진입했습니다. AMD는 AI 가속기 시장 점유율 확대로 NVIDIA 대비 밸류에이션 매력이 높고 기술적 지지선이 견고합니다. Alphabet(GOOGL)은 AI 진단 및 검색 시장의 지배력을 바탕으로 최근 조정장에서 기술적 저점을 다지며 반등 준비를 마쳤습니다.",
-  "push_message": "중동 리스크 속 韓 수출은 신기록! 반도체와 바이오 주도 섹터 확인하고, 저평가 구간의 무릎 종목을 선점하세요."
+  "reason": "삼성전기는 AI향 적층세라믹콘덴서(MLCC) 수요 증가로 수혜가 예상되며 기술적으로 과열권에서 조정받은 '무릎' 위치입니다. PLTR은 정부향 매출 성장과 실적 서프라이즈로 추세 상승 중이며, LLY는 노보노디스크와의 GLP-1 경쟁 구도 속에서도 안정적인 포트폴리오를 유지하여 기술적 지지선을 확보한 상태로 판단됩니다.",
+  "push_message": "지정학적 리스크로 인한 유가 급등에 주의하세요. 다만, AI 관련 반도체 섹터의 실적 모멘텀이 견고하여 저점 매수 기회로 활용 가능합니다."
 }
